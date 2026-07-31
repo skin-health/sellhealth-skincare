@@ -1,0 +1,7 @@
+# Local context file
+gemini.md
+
+# OS / Editor temporary files
+.DS_Store
+Thumbs.db
+*.tmp
