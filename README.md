@@ -1,76 +1,88 @@
-# Derm Glow Journal | Clinical Skincare & Anti-Aging Review Portal
+# Derm Glow Journal | Clinical Skincare Affiliate Website
 
-An affiliate review website and buyer's guide designed for **SellHealth** anti-aging and skin brightening products (**Kollagen Intensiv™** and **Illuminatural 6i™**).
-
-Built using high-performance HTML5, Vanilla CSS (UI Designer specification), JavaScript, and JSON-LD Schema structured data for optimal search engine optimization (SEO) and conversion rates.
+This website is a product review portal. It promotes SellHealth skincare products.
+The products are Kollagen Intensiv and Illuminatural 6i.
 
 ---
 
 ## 🌟 Key Features
 
-* **High-Converting Product Reviews**: Features deep-dive analyses, clinical study statistics, key ingredients, pros & cons, and verified editor ratings for **Kollagen Intensiv** and **Illuminatural 6i**.
-* **Interactive Side-by-Side Comparison**: Responsive comparison matrix guiding visitors to the right product.
-* **30-Second Skin Assessment Quiz**: Interactive JavaScript quiz that delivers a personalized product match based on user skin concerns.
-* **Affiliate Link Configurator Modal**: Built-in control panel allowing you to input your SellHealth Affiliate ID / tracking links. Updates every button link across the entire site instantly and persists in local browser storage.
-* **SEO & E-E-A-T Compliance**: Complete JSON-LD Schema markup (`Product`, `Review`, `ItemList`), OpenGraph tags, medical disclaimers, and FTC affiliate disclosures.
-* **Responsive Design**: Designed according to WCAG AA accessibility contrast ratios, fluid mobile grids, and sleek luxury skincare typography (*Playfair Display* & *Inter*).
+* **Product Reviews**: Unbiased analysis and clinical data for Kollagen Intensiv and Illuminatural 6i.
+* **Product Matchup**: Side-by-side comparison table showing active ingredients and prices.
+* **Skin Assessment Quiz**: Three-question interactive quiz that recommends a product.
+* **SEO Optimized**: Valid JSON-LD Schema markup and meta tags for search engines.
+* **Responsive Layout**: Designed for mobile phones, tablets, and desktop computers.
+* **Link Hardening**: Outgoing affiliate links use security attributes to block security exploits.
 
 ---
 
-## 📁 Project Structure
+## 📁 File Structure
 
 ```
 C:\Users\A2\Sellhealth Project\
-├── index.html        # Primary SEO page with structured data & responsive markup
-├── styles.css        # Custom UI design system tokens, layout grids & modal styles
-├── app.js            # Affiliate tracking manager, skin quiz logic, FAQ accordion
-├── Pictures/         # Official product image assets
-│   ├── KollagenIntensiv.jpg
-│   ├── KollagenIntensiv1.jpg
-│   ├── illuminatural.jpg
-│   └── illuminatural2.jpg
-└── README.md         # Deployment & configuration instructions
+├── index.html                    # Main landing page
+├── links.html                    # Link-in-bio page for social media
+├── kollagen-intensiv-review.html # Kollagen Intensiv review article
+├── illuminatural-6i-review.html  # Illuminatural 6i review article
+├── styles.css                    # Design system tokens and layout styles
+├── app.js                        # Quiz and link management script
+├── social_media_assets.md        # Social media post templates
+├── README.md                     # This documentation file
+├── gemini.md                     # Local project memory file (ignored by git)
+├── .gitignore                    # Prevents local files from uploading
+└── Pictures/                     # Product image files
+    ├── KollagenIntensiv.jpg
+    ├── KollagenIntensiv1.jpg
+    ├── illuminatural.jpg
+    └── illuminatural2.jpg
 ```
 
 ---
 
-## 🚀 How to Publish to GitHub Pages (`username.github.io`)
+## 🚀 How to Publish to GitHub Pages
 
-Since you have a GitHub developer account, publishing this site for free takes under 2 minutes:
+You must upload the files to your GitHub account. Follow these steps:
 
 ### Step 1: Create a GitHub Repository
-1. Log into your account on [GitHub.com](https://github.com).
+1. Log in to [GitHub.com](https://github.com).
 2. Click **New Repository**.
-3. Name it `sellhealth-skincare` (or `username.github.io` if you want it as your root site).
-4. Keep it **Public** and click **Create repository**.
+3. Type `sellhealth-skincare` in the repository name field.
+4. Select the **Public** option.
+5. Click **Create repository**.
 
-### Step 2: Push Your Code from Terminal / Command Prompt
-Open your terminal in `C:\Users\A2\Sellhealth Project` and run:
+### Step 2: Upload Your Code with Git
+1. Open your terminal software.
+2. Change the directory to `C:\Users\A2\Sellhealth Project`.
+3. Run the following commands:
+   ```bash
+   git init
+   git add .
+   git commit -m "Add project files"
+   git branch -M main
+   git remote add origin https://github.com/skin-health/sellhealth-skincare.git
+   git push -u origin main
+   ```
 
-```bash
-git init
-git add .
-git commit -m "Initial commit for SellHealth skincare affiliate portal"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/sellhealth-skincare.git
-git push -u origin main
-```
-*(Replace `YOUR_USERNAME` with your actual GitHub username).*
+### Step 3: Enable the Live Website
+1. Open your repository page on GitHub.
+2. Click the **Settings** tab.
+3. Click **Pages** in the left navigation panel.
+4. Go to **Build and deployment**.
+5. Select **Deploy from a branch** in the source list.
+6. Select **main** branch and **/(root)** folder.
+7. Click **Save**.
 
-### Step 3: Enable GitHub Pages
-1. Go to your repository on GitHub.
-2. Click **Settings** > **Pages** (on the left sidebar).
-3. Under **Build and deployment** > **Source**, select **Deploy from a branch**.
-4. Under **Branch**, select `main` and `/ (root)`.
-5. Click **Save**.
-
-🎉 Within 60 seconds, your site will be live at `https://YOUR_USERNAME.github.io/sellhealth-skincare/` with free SSL (`https://`)!
+The website will be live in 60 seconds at `https://skin-health.github.io/sellhealth-skincare/`.
 
 ---
 
-## ⚙️ How to Plug In Your SellHealth Affiliate Link
+## ⚙️ How to Update the Affiliate ID
 
-1. Open your live website in any browser.
-2. Click the **"Set Your SellHealth Link"** button in the top announcement bar.
-3. Paste your SellHealth affiliate tracking URL or affiliate ID for **Kollagen Intensiv** and **Illuminatural 6i**.
-4. Click **Save & Apply**. All "Buy Now" and "Discount" buttons across the site will automatically update to credit commissions to your SellHealth account!
+The website tracks commissions using the SellHealth ID `282956`.
+Follow these steps to change this ID:
+
+1. Open the [app.js](file:///C:/Users/A2/Sellhealth%20Project/app.js) file.
+2. Find the `DEFAULT_LINKS` object on line 18.
+3. Replace the ID `282956` with your new SellHealth ID.
+4. Save the file.
+5. Upload the modified file to your GitHub repository.
