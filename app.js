@@ -21,8 +21,15 @@ const DEFAULT_LINKS = {
 };
 
 function getAffiliateLinks() {
-  const savedKollagen = localStorage.getItem('sellhealth_kollagen_link');
-  const savedIlluminatural = localStorage.getItem('sellhealth_illuminatural_link');
+  let savedKollagen = null;
+  let savedIlluminatural = null;
+  
+  try {
+    savedKollagen = localStorage.getItem('sellhealth_kollagen_link');
+    savedIlluminatural = localStorage.getItem('sellhealth_illuminatural_link');
+  } catch (e) {
+    console.warn('LocalStorage access restricted, using default affiliate links.', e);
+  }
 
   return {
     kollagen: savedKollagen || DEFAULT_LINKS.kollagen,
