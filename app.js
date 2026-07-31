@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
    1. AFFILIATE LINK CONFIGURATOR & LOCAL STORAGE
    ========================================================================== */
 
-// Default Fallback Links (Can be overridden by user in the Settings Modal)
+// Default SellHealth Affiliate Links for User ID 282956
 const DEFAULT_LINKS = {
-  kollagen: 'https://www.kollagenintensiv.com/',
-  illuminatural: 'https://www.illuminatural6i.com/'
+  kollagen: 'https://www.kollagenintensiv.com/ct/282956',
+  illuminatural: 'https://www.illuminatural6i.com/ct/282956'
 };
 
 function getAffiliateLinks() {
