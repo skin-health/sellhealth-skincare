@@ -146,7 +146,7 @@ function showQuizResults() {
         <div style="text-align: left; max-width: 350px;">
           <h4 style="margin-bottom: 0.3rem;">Kollagen Intensiv™</h4>
           <p style="font-size: 0.85rem; color: #64748B; margin-bottom: 0.8rem;">Clinically proven Syn-Coll® formula boosts natural collagen synthesis by 354%.</p>
-          <a href="${links.kollagen}" class="btn btn-gold btn-sm affiliate-link" data-product="kollagen" target="_blank" rel="nofollow sponsored">
+          <a href="${links.kollagen}" class="btn btn-gold btn-sm affiliate-link" data-product="kollagen" target="_blank" rel="noopener noreferrer nofollow sponsored">
             Claim Discount Offer <i class="fa-solid fa-arrow-right"></i>
           </a>
         </div>
@@ -161,7 +161,7 @@ function showQuizResults() {
         <div style="text-align: left; max-width: 350px;">
           <h4 style="margin-bottom: 0.3rem;">Illuminatural 6i™</h4>
           <p style="font-size: 0.85rem; color: #64748B; margin-bottom: 0.8rem;">6-active clinically proven skin lightener designed to fade dark spots in 4 weeks.</p>
-          <a href="${links.illuminatural}" class="btn btn-gold btn-sm affiliate-link" data-product="illuminatural" target="_blank" rel="nofollow sponsored">
+          <a href="${links.illuminatural}" class="btn btn-gold btn-sm affiliate-link" data-product="illuminatural" target="_blank" rel="noopener noreferrer nofollow sponsored">
             Claim Discount Offer <i class="fa-solid fa-arrow-right"></i>
           </a>
         </div>
@@ -177,7 +177,7 @@ function showQuizResults() {
         <div style="text-align: left; max-width: 350px;">
           <h4 style="margin-bottom: 0.3rem;">The Dual Rejuvenation Bundle</h4>
           <p style="font-size: 0.85rem; color: #64748B; margin-bottom: 0.8rem;">Apply Illuminatural 6i for dark spots, followed by Kollagen Intensiv for total wrinkle smoothing.</p>
-          <a href="${links.kollagen}" class="btn btn-gold btn-sm affiliate-link" data-product="kollagen" target="_blank" rel="nofollow sponsored">
+          <a href="${links.kollagen}" class="btn btn-gold btn-sm affiliate-link" data-product="kollagen" target="_blank" rel="noopener noreferrer nofollow sponsored">
             Explore Package Deals <i class="fa-solid fa-arrow-right"></i>
           </a>
         </div>
