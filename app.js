@@ -250,29 +250,48 @@ function initNavigation() {
   }
 }
 
+window.openModal = function() {
+  const modal = document.getElementById('affiliateModal');
+  if (modal) {
+    modal.style.display = 'flex';
+    setTimeout(() => {
+      modal.classList.add('active');
+    }, 10);
+  }
+};
+
+window.closeModal = function() {
+  const modal = document.getElementById('affiliateModal');
+  if (modal) {
+    modal.classList.remove('active');
+    setTimeout(() => {
+      modal.style.display = 'none';
+    }, 250);
+  }
+};
+
 function initModal() {
   const modal = document.getElementById('affiliateModal');
   const openBtn = document.getElementById('openAffiliateModal');
   const closeBtn = document.getElementById('closeAffiliateModal');
 
-  if (openBtn && modal) {
-    openBtn.addEventListener('click', () => {
-      modal.classList.add('active');
+  if (openBtn) {
+    openBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.openModal();
     });
   }
 
-  if (closeBtn && modal) {
-    closeBtn.addEventListener('click', closeModal);
+  if (closeBtn) {
+    closeBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.closeModal();
+    });
   }
 
   if (modal) {
     modal.addEventListener('click', (e) => {
-      if (e.target === modal) closeModal();
+      if (e.target === modal) window.closeModal();
     });
   }
-}
-
-function closeModal() {
-  const modal = document.getElementById('affiliateModal');
-  if (modal) modal.classList.remove('active');
 }
