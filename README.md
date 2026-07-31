@@ -78,11 +78,11 @@ The website will be live in 60 seconds at `https://skin-health.github.io/sellhea
 
 ## ⚙️ How to Update the Affiliate ID
 
-The website tracks commissions using the SellHealth ID `282956`.
+The website tracks commissions using a SellHealth ID.
 Follow these steps to change this ID:
 
 1. Open the [app.js](file:///C:/Users/A2/Sellhealth%20Project/app.js) file.
 2. Find the `DEFAULT_LINKS` object on line 18.
-3. Replace the ID `282956` with your new SellHealth ID.
+3. Replace the default ID in the URLs with your SellHealth ID.
 4. Save the file.
 5. Upload the modified file to your GitHub repository.
