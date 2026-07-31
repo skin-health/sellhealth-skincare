@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Derm Glow Journal | Social Links</title>
+  <meta name="description" content="Access our top anti-aging reviews, clinical comparisons, and interactive skin assessment guides.">
+  <meta name="robots" content="noindex, follow">
+  
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    :root {
+      --color-primary: #C5A059;       /* Rose Gold / Warm Amber */
+      --color-primary-dark: #A47E3B;
+      --color-dark: #111827;          /* Slate Charcoal */
+      --color-light-bg: #FAF9F6;      /* Soft Silk Ivory */
+      --color-white: #FFFFFF;
+      --color-border: #E2E8F0;
+      --color-muted: #64748B;
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --font-sans: 'Inter', sans-serif;
+      --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--color-light-bg);
+      color: var(--color-dark);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 3rem 1.5rem;
+    }
+
+    /* Container */
+    .bio-container {
+      width: 100%;
+      max-width: 480px;
+      text-align: center;
+    }
+
+    /* Profile Header */
+    .profile-header {
+      margin-bottom: 2rem;
+    }
+
+    .profile-logo {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+    }
+
+    .logo-accent {
+      color: var(--color-primary-dark);
+    }
+
+    .profile-bio {
+      color: var(--color-muted);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    /* Links Stack */
+    .links-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .bio-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      padding: 1rem 1.5rem;
+      background-color: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: 50px;
+      color: var(--color-dark);
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.03);
+      transition: var(--transition);
+    }
+
+    .bio-link:hover {
+      border-color: var(--color-primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 15px -3px rgba(197, 160, 89, 0.15);
+    }
+
+    /* Highlighted link */
+    .bio-link-highlight {
+      background: linear-gradient(135deg, #D4AF37 0%, #C5A059 100%);
+      color: var(--color-white);
+      border: none;
+    }
+
+    .bio-link-highlight:hover {
+      background: linear-gradient(135deg, #C5A059 0%, #A47E3B 100%);
+      color: var(--color-white);
+      box-shadow: 0 10px 20px rgba(197, 160, 89, 0.35);
+    }
+
+    /* Social Icons */
+    .social-row {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .social-icon {
+      font-size: 1.5rem;
+      color: var(--color-muted);
+      transition: var(--transition);
+    }
+
+    .social-icon:hover {
+      color: var(--color-primary-dark);
+      transform: scale(1.1);
+    }
+
+    /* Footer */
+    .bio-footer {
+      font-size: 0.75rem;
+      color: var(--color-muted);
+      border-top: 1px solid var(--color-border);
+      padding-top: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bio-container">
+    
+    <!-- Profile Header -->
+    <div class="profile-header">
+      <div class="profile-logo">
+        <span class="logo-accent">DERM</span> GLOW
+      </div>
+      <p class="profile-bio">Independent clinical analyses, ingredient breakdowns, and reviews of top anti-aging collagen creams & dark spot correctors.</p>
+    </div>
+
+    <!-- Links Stack -->
+    <div class="links-stack">
+      <!-- Interactive Quiz -->
+      <a href="index.html#skin-quiz" class="bio-link bio-link-highlight">
+        <i class="fa-solid fa-wand-magic-sparkles"></i> Take the 30-Sec Skin Quiz
+      </a>
+      
+      <!-- Top Picks Comparison -->
+      <a href="index.html" class="bio-link">
+        <i class="fa-solid fa-list-check"></i> 2026 Skincare Comparison Guide
+      </a>
+      
+      <!-- Kollagen Intensiv Review -->
+      <a href="kollagen-intensiv-review.html" class="bio-link">
+        <i class="fa-solid fa-microscope"></i> Kollagen Intensiv Deep Dive Review
+      </a>
+      
+      <!-- Illuminatural 6i Review -->
+      <a href="illuminatural-6i-review.html" class="bio-link">
+        <i class="fa-solid fa-sun"></i> Illuminatural 6i Deep Dive Review
+      </a>
+
+      <!-- Direct Official Kollagen Offer -->
+      <a href="https://www.kollagenintensiv.com/ct/282956" class="bio-link" target="_blank" rel="noopener noreferrer nofollow sponsored">
+        <i class="fa-solid fa-cart-shopping"></i> Order Kollagen Intensiv (Risk-Free)
+      </a>
+
+      <!-- Direct Official Illuminatural Offer -->
+      <a href="https://www.illuminatural6i.com/ct/282956" class="bio-link" target="_blank" rel="noopener noreferrer nofollow sponsored">
+        <i class="fa-solid fa-cart-shopping"></i> Order Illuminatural 6i (Risk-Free)
+      </a>
+    </div>
+
+    <!-- Social Row -->
+    <div class="social-row">
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer nofollow" class="social-icon" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer nofollow" class="social-icon" aria-label="Pinterest">
+        <i class="fa-brands fa-pinterest"></i>
+      </a>
+      <a href="mailto:contact@dermglowjournal.com" class="social-icon" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bio-footer">
+      <p>Derm Glow Journal © 2026 • Hosted on GitHub Pages</p>
+      <p style="margin-top: 0.5rem; font-size: 0.7rem; opacity: 0.8;">FTC Disclosure: We may earn commissions on sales completed via these links.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
