@@ -4,14 +4,12 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initAffiliateLinks();
-  initQuiz();
   initFAQ();
   initNavigation();
-  initModal();
 });
 
 /* ==========================================================================
-   1. AFFILIATE LINK CONFIGURATOR & LOCAL STORAGE
+   1. AFFILIATE LINK MANAGEMENT & STORAGE
    ========================================================================== */
 
 // Default SellHealth Affiliate Links for User ID 282956
@@ -46,7 +44,7 @@ function applyAffiliateLinks() {
     if (productKey && links[productKey]) {
       let finalUrl = links[productKey];
 
-      // If user typed just an ID (e.g., 12345), format it into SellHealth link standard
+      // Format bare ID strings (e.g. 282956) into official SellHealth target URLs
       if (!finalUrl.startsWith('http://') && !finalUrl.startsWith('https://')) {
         if (productKey === 'kollagen') {
           finalUrl = `https://www.kollagenintensiv.com/ct/${finalUrl}`;
@@ -62,37 +60,10 @@ function applyAffiliateLinks() {
 
 function initAffiliateLinks() {
   applyAffiliateLinks();
-
-  const kollagenInput = document.getElementById('kollagenLinkInput');
-  const illuminaturalInput = document.getElementById('illuminaturalLinkInput');
-  const saveBtn = document.getElementById('saveAffiliateBtn');
-
-  if (kollagenInput && illuminaturalInput) {
-    const currentLinks = getAffiliateLinks();
-    kollagenInput.value = currentLinks.kollagen !== DEFAULT_LINKS.kollagen ? currentLinks.kollagen : '';
-    illuminaturalInput.value = currentLinks.illuminatural !== DEFAULT_LINKS.illuminatural ? currentLinks.illuminatural : '';
-  }
-
-  if (saveBtn) {
-    saveBtn.addEventListener('click', () => {
-      const kVal = kollagenInput.value.trim();
-      const iVal = illuminaturalInput.value.trim();
-
-      if (kVal) localStorage.setItem('sellhealth_kollagen_link', kVal);
-      else localStorage.removeItem('sellhealth_kollagen_link');
-
-      if (iVal) localStorage.setItem('sellhealth_illuminatural_link', iVal);
-      else localStorage.removeItem('sellhealth_illuminatural_link');
-
-      applyAffiliateLinks();
-      closeModal();
-      alert('Your SellHealth affiliate links have been updated across the entire site!');
-    });
-  }
 }
 
 /* ==========================================================================
-   2. INTERACTIVE SKIN QUIZ LOGIC
+   2. INTERACTIVE SKIN QUIZ LOGIC (GLOBAL SCOPE)
    ========================================================================== */
 
 let quizAnswers = {
@@ -101,7 +72,7 @@ let quizAnswers = {
   age: ''
 };
 
-function selectQuizOption(step, value) {
+window.selectQuizOption = function(step, value) {
   if (step === 1) quizAnswers.concern = value;
   if (step === 2) quizAnswers.skinType = value;
   if (step === 3) quizAnswers.age = value;
@@ -114,13 +85,11 @@ function selectQuizOption(step, value) {
   if (nextStepEl) {
     nextStepEl.classList.add('active');
   } else {
-    // Show Results
     showQuizResults();
   }
-}
+};
 
 function showQuizResults() {
-  const quizBody = document.getElementById('quizBody');
   const quizResult = document.getElementById('quizResult');
   const resultTitle = document.getElementById('resultTitle');
   const resultDesc = document.getElementById('resultDesc');
@@ -188,7 +157,7 @@ function showQuizResults() {
   quizResult.style.display = 'block';
 }
 
-function resetQuiz() {
+window.resetQuiz = function() {
   quizAnswers = { concern: '', skinType: '', age: '' };
   const steps = document.querySelectorAll('.quiz-step');
   steps.forEach(s => s.classList.remove('active'));
@@ -198,7 +167,7 @@ function resetQuiz() {
 
   const quizResult = document.getElementById('quizResult');
   if (quizResult) quizResult.style.display = 'none';
-}
+};
 
 /* ==========================================================================
    3. FAQ ACCORDION
@@ -228,9 +197,9 @@ function initFAQ() {
 }
 
 /* ==========================================================================
-   4. IMAGE SWITCHER FOR PRODUCT GALLERY
+   4. IMAGE SWITCHER FOR PRODUCT GALLERY (GLOBAL SCOPE)
    ========================================================================== */
-function switchImage(mainImgId, newSrc, thumbEl) {
+window.switchImage = function(mainImgId, newSrc, thumbEl) {
   const mainImg = document.getElementById(mainImgId);
   if (mainImg) {
     mainImg.src = newSrc;
@@ -241,10 +210,10 @@ function switchImage(mainImgId, newSrc, thumbEl) {
     thumbs.forEach(t => t.classList.remove('active'));
     thumbEl.classList.add('active');
   }
-}
+};
 
 /* ==========================================================================
-   5. NAVIGATION & MODAL CONTROLS
+   5. NAVIGATION CONTROLS
    ========================================================================== */
 function initNavigation() {
   const menuToggle = document.getElementById('menuToggle');
@@ -253,52 +222,6 @@ function initNavigation() {
   if (menuToggle && navMenu) {
     menuToggle.addEventListener('click', () => {
       navMenu.classList.toggle('active');
-    });
-  }
-}
-
-window.openModal = function() {
-  const modal = document.getElementById('affiliateModal');
-  if (modal) {
-    modal.style.display = 'flex';
-    setTimeout(() => {
-      modal.classList.add('active');
-    }, 10);
-  }
-};
-
-window.closeModal = function() {
-  const modal = document.getElementById('affiliateModal');
-  if (modal) {
-    modal.classList.remove('active');
-    setTimeout(() => {
-      modal.style.display = 'none';
-    }, 250);
-  }
-};
-
-function initModal() {
-  const modal = document.getElementById('affiliateModal');
-  const openBtn = document.getElementById('openAffiliateModal');
-  const closeBtn = document.getElementById('closeAffiliateModal');
-
-  if (openBtn) {
-    openBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      window.openModal();
-    });
-  }
-
-  if (closeBtn) {
-    closeBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      window.closeModal();
-    });
-  }
-
-  if (modal) {
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) window.closeModal();
     });
   }
 }
