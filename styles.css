@@ -3,22 +3,22 @@
    ========================================================================== */
 
 :root {
-  /* Color Palette Tokens */
-  --color-primary: #C5A059;       /* Rose Gold / Warm Amber */
-  --color-primary-dark: #A47E3B;
+  /* Color Palette Tokens (Luxury Midnight Blue & Gold) */
+  --color-primary: #D4AF37;       /* Rose Gold / Warm Amber */
+  --color-primary-dark: #C5A059;
   --color-primary-light: #E8D3A7;
   --color-gold-accent: #D4AF37;
   
-  --color-dark: #111827;          /* Slate Charcoal */
-  --color-dark-surface: #1E293B;
-  --color-muted: #64748B;
+  --color-dark: #F8FAFC;          /* Primary light text (slate-50) */
+  --color-dark-surface: #E2E8F0;  /* Secondary light text (slate-200) */
+  --color-muted: #94A3B8;         /* Muted slate text */
   
-  --color-light-bg: #FAF9F6;      /* Soft Silk Ivory */
-  --color-white: #FFFFFF;
-  --color-border: #E2E8F0;
+  --color-light-bg: #0B0F19;      /* Really dark blue background */
+  --color-white: #111827;         /* Surface card deep blue */
+  --color-border: #1E293B;        /* Dark border grey-blue */
   
-  --color-success: #10B981;       /* Emerald Verified */
-  --color-success-bg: #ECFDF5;
+  --color-success: #34D399;       /* Emerald verified */
+  --color-success-bg: rgba(52, 211, 153, 0.08);
   --color-warning: #F59E0B;
   
   /* Typography Tokens */
@@ -34,10 +34,10 @@
   --space-2xl: 4rem;
   
   /* Elevation Shadows */
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
-  --shadow-md: 0 6px 16px -2px rgba(0,0,0,0.08);
-  --shadow-lg: 0 20px 30px -5px rgba(0,0,0,0.12);
-  --shadow-gold: 0 8px 20px rgba(197, 160, 89, 0.25);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.25);
+  --shadow-md: 0 6px 16px -2px rgba(0,0,0,0.4);
+  --shadow-lg: 0 20px 30px -5px rgba(0,0,0,0.5);
+  --shadow-gold: 0 8px 20px rgba(197, 160, 89, 0.15);
   
   /* Border Radius & Transitions */
   --radius-sm: 6px;
@@ -203,7 +203,7 @@ h1, h2, h3, h4 {
 }
 
 .btn-secondary {
-  background-color: var(--color-white);
+  background-color: transparent;
   color: var(--color-dark);
   border: 1px solid var(--color-border);
 }
@@ -279,7 +279,7 @@ h1, h2, h3, h4 {
 
 /* Header Navbar */
 .header {
-  background-color: rgba(255, 255, 255, 0.92);
+  background-color: rgba(17, 24, 39, 0.92);
   backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
@@ -334,8 +334,8 @@ h1, h2, h3, h4 {
    ========================================================================== */
 .hero {
   padding: var(--space-2xl) 0;
-  background: radial-gradient(circle at top right, rgba(232, 211, 167, 0.25), transparent 50%),
-              radial-gradient(circle at bottom left, rgba(240, 240, 240, 0.5), transparent 50%);
+  background: radial-gradient(circle at top right, rgba(197, 160, 89, 0.12), transparent 60%),
+              radial-gradient(circle at bottom left, rgba(30, 41, 59, 0.4), transparent 60%);
 }
 
 .hero-grid {
@@ -403,7 +403,8 @@ h1, h2, h3, h4 {
 .hero-card-preview {
   position: relative;
   padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(17, 24, 39, 0.95);
+  border: 1px solid var(--color-border);
 }
 
 .hero-badge-top {
@@ -640,11 +641,11 @@ h1, h2, h3, h4 {
 .pros-box h5 { color: var(--color-success); font-family: var(--font-sans); margin-bottom: 0.5rem; }
 
 .cons-box {
-  background-color: #FFF5F5;
-  border: 1px solid #FED7D7;
+  background-color: rgba(229, 62, 62, 0.08);
+  border: 1px solid rgba(229, 62, 62, 0.25);
 }
 
-.cons-box h5 { color: #E53E3E; font-family: var(--font-sans); margin-bottom: 0.5rem; }
+.cons-box h5 { color: #FC8181; font-family: var(--font-sans); margin-bottom: 0.5rem; }
 
 .pros-box ul, .cons-box ul { list-style: none; }
 .pros-box li, .cons-box li { margin-bottom: 0.4rem; }
@@ -713,7 +714,7 @@ h1, h2, h3, h4 {
   padding: 3rem 2.5rem;
   max-width: 800px;
   margin: 0 auto;
-  background: linear-gradient(180deg, #FFFFFF 0%, #FAF9F6 100%);
+  background: linear-gradient(180deg, var(--color-white) 0%, var(--color-light-bg) 100%);
 }
 
 .quiz-header { margin-bottom: 2rem; }
@@ -878,9 +879,10 @@ h1, h2, h3, h4 {
    FOOTER & MODAL
    ========================================================================== */
 .footer {
-  background-color: var(--color-dark);
+  background-color: #070B14;
   color: #94A3B8;
   padding-top: 4rem;
+  border-top: 1px solid var(--color-border);
 }
 
 .footer-grid {
@@ -908,9 +910,9 @@ h1, h2, h3, h4 {
 .footer-col a:hover { color: var(--color-white); }
 
 .footer-bottom {
-  background-color: #0B0F17;
+  background-color: #03060B;
   padding: 2rem 0;
-  border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid rgba(255,255,255,0.05);
   font-size: 0.8rem;
 }
 
