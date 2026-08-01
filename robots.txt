@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://skin-health.github.io/sellhealth-skincare/sitemap.xml
