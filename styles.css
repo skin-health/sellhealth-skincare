@@ -248,7 +248,7 @@ h1, h2, h3, h4 {
    TOP BAR & NAVIGATION
    ========================================================================== */
 .top-bar {
-  background-color: var(--color-dark);
+  background-color: #05080E;
   color: #E2E8F0;
   font-size: 0.85rem;
   padding: 0.5rem 0;
