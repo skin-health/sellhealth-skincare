@@ -6,3 +6,6 @@ social_media_assets.md
 .DS_Store
 Thumbs.db
 *.tmp
+
+# Media assets directory
+pics/
