@@ -134,53 +134,100 @@ function showQuizResults() {
     recommendedProduct = 'combo';
   }
 
+  // Clear existing content safely
+  resultProductWrap.textContent = '';
+
+  // Container element
+  const container = document.createElement('div');
+  container.style.display = 'flex';
+  container.style.alignItems = 'center';
+  container.style.gap = '1.5rem';
+  container.style.justifyContent = 'center';
+  container.style.flexWrap = 'wrap';
+
+  // Info Block element
+  const infoBlock = document.createElement('div');
+  infoBlock.style.textAlign = 'left';
+  infoBlock.style.maxWidth = '350px';
+
+  const productTitle = document.createElement('h4');
+  productTitle.style.marginBottom = '0.3rem';
+
+  const productText = document.createElement('p');
+  productText.style.fontSize = '0.85rem';
+  productText.style.color = '#64748B';
+  productText.style.marginBottom = '0.8rem';
+
+  const actionLink = document.createElement('a');
+  actionLink.className = 'btn btn-gold btn-sm affiliate-link';
+  actionLink.target = '_blank';
+  actionLink.rel = 'noopener noreferrer nofollow sponsored';
+
   if (recommendedProduct === 'kollagen') {
     resultTitle.textContent = 'Match: Kollagen Intensiv™ Collagen Renewal Cream';
     resultDesc.textContent = 'Based on your skin profile, boosting cellular collagen and smoothing expression lines is your #1 priority for firm, youthful skin.';
-    resultProductWrap.innerHTML = `
-      <div style="display: flex; align-items: center; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-        <img src="Pictures/KollagenIntensiv.jpg" alt="Kollagen Intensiv" style="max-height: 120px; object-fit: contain;">
-        <div style="text-align: left; max-width: 350px;">
-          <h4 style="margin-bottom: 0.3rem;">Kollagen Intensiv™</h4>
-          <p style="font-size: 0.85rem; color: #64748B; margin-bottom: 0.8rem;">Clinically proven Syn-Coll® formula boosts natural collagen synthesis by 354%.</p>
-          <a href="${links.kollagen}" class="btn btn-gold btn-sm affiliate-link" data-product="kollagen" target="_blank" rel="noopener noreferrer nofollow sponsored">
-            Claim Discount Offer <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-    `;
+
+    const img = document.createElement('img');
+    img.src = 'Pictures/KollagenIntensiv.jpg';
+    img.alt = 'Kollagen Intensiv';
+    img.style.maxHeight = '120px';
+    img.style.objectFit = 'contain';
+    container.appendChild(img);
+
+    productTitle.textContent = 'Kollagen Intensiv™';
+    productText.textContent = 'Clinically proven Syn-Coll® formula boosts natural collagen synthesis by 354%.';
+    
+    actionLink.href = links.kollagen;
+    actionLink.setAttribute('data-product', 'kollagen');
+    actionLink.innerHTML = 'Claim Discount Offer <i class="fa-solid fa-arrow-right"></i>';
+
   } else if (recommendedProduct === 'illuminatural') {
     resultTitle.textContent = 'Match: Illuminatural 6i™ Advanced Skin Brightener';
     resultDesc.textContent = 'Your primary concern is hyperpigmentation, sun damage, or dark spots. Illuminatural 6i interrupts melanin production safely without toxic bleaches.';
-    resultProductWrap.innerHTML = `
-      <div style="display: flex; align-items: center; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-        <img src="Pictures/illuminatural.jpg" alt="Illuminatural 6i" style="max-height: 120px; object-fit: contain;">
-        <div style="text-align: left; max-width: 350px;">
-          <h4 style="margin-bottom: 0.3rem;">Illuminatural 6i™</h4>
-          <p style="font-size: 0.85rem; color: #64748B; margin-bottom: 0.8rem;">6-active clinically proven skin lightener designed to fade dark spots in 4 weeks.</p>
-          <a href="${links.illuminatural}" class="btn btn-gold btn-sm affiliate-link" data-product="illuminatural" target="_blank" rel="noopener noreferrer nofollow sponsored">
-            Claim Discount Offer <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-    `;
+
+    const img = document.createElement('img');
+    img.src = 'Pictures/illuminatural.jpg';
+    img.alt = 'Illuminatural 6i';
+    img.style.maxHeight = '120px';
+    img.style.objectFit = 'contain';
+    container.appendChild(img);
+
+    productTitle.textContent = 'Illuminatural 6i™';
+    productText.textContent = '6-active clinically proven skin lightener designed to fade dark spots in 4 weeks.';
+    
+    actionLink.href = links.illuminatural;
+    actionLink.setAttribute('data-product', 'illuminatural');
+    actionLink.innerHTML = 'Claim Discount Offer <i class="fa-solid fa-arrow-right"></i>';
+
   } else {
     resultTitle.textContent = 'Match: Total Rejuvenation System (Kollagen + Illuminatural)';
     resultDesc.textContent = 'You indicated both wrinkle reduction and dark spot fading. Combining Kollagen Intensiv with Illuminatural 6i delivers maximum dermatological results.';
-    resultProductWrap.innerHTML = `
-      <div style="display: flex; align-items: center; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-        <img src="Pictures/KollagenIntensiv.jpg" alt="Kollagen" style="max-height: 90px;">
-        <img src="Pictures/illuminatural.jpg" alt="Illuminatural" style="max-height: 90px;">
-        <div style="text-align: left; max-width: 350px;">
-          <h4 style="margin-bottom: 0.3rem;">The Dual Rejuvenation Bundle</h4>
-          <p style="font-size: 0.85rem; color: #64748B; margin-bottom: 0.8rem;">Apply Illuminatural 6i for dark spots, followed by Kollagen Intensiv for total wrinkle smoothing.</p>
-          <a href="${links.kollagen}" class="btn btn-gold btn-sm affiliate-link" data-product="kollagen" target="_blank" rel="noopener noreferrer nofollow sponsored">
-            Explore Package Deals <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-    `;
+
+    const img1 = document.createElement('img');
+    img1.src = 'Pictures/KollagenIntensiv.jpg';
+    img1.alt = 'Kollagen';
+    img1.style.maxHeight = '90px';
+    container.appendChild(img1);
+
+    const img2 = document.createElement('img');
+    img2.src = 'Pictures/illuminatural.jpg';
+    img2.alt = 'Illuminatural';
+    img2.style.maxHeight = '90px';
+    container.appendChild(img2);
+
+    productTitle.textContent = 'The Dual Rejuvenation Bundle';
+    productText.textContent = 'Apply Illuminatural 6i for dark spots, followed by Kollagen Intensiv for total wrinkle smoothing.';
+    
+    actionLink.href = links.kollagen;
+    actionLink.setAttribute('data-product', 'kollagen');
+    actionLink.innerHTML = 'Explore Package Deals <i class="fa-solid fa-arrow-right"></i>';
   }
+
+  infoBlock.appendChild(productTitle);
+  infoBlock.appendChild(productText);
+  infoBlock.appendChild(actionLink);
+  container.appendChild(infoBlock);
+  resultProductWrap.appendChild(container);
 
   quizResult.style.display = 'block';
 }
