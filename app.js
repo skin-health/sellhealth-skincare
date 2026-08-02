@@ -18,6 +18,45 @@ const DEFAULT_LINKS = {
   illuminatural: 'https://www.illuminatural6i.com/ct/282956'
 };
 
+function sanitizeAndValidateAffiliateLink(rawUrl, productKey) {
+  if (!rawUrl) return DEFAULT_LINKS[productKey];
+  
+  const cleanVal = rawUrl.trim();
+  
+  // If it is just a numeric string, build the proper URL
+  if (/^\d+$/.test(cleanVal)) {
+    if (productKey === 'kollagen') {
+      return `https://www.kollagenintensiv.com/ct/${cleanVal}`;
+    } else if (productKey === 'illuminatural') {
+      return `https://www.illuminatural6i.com/ct/${cleanVal}`;
+    }
+  }
+  
+  // If it is a full URL, validate it
+  try {
+    const parsed = new URL(cleanVal);
+    // Enforce HTTPS protocol
+    if (parsed.protocol !== 'https:') {
+      return DEFAULT_LINKS[productKey];
+    }
+    // Enforce hostname matches target merchant
+    const expectedHost = productKey === 'kollagen' ? 'www.kollagenintensiv.com' : 'www.illuminatural6i.com';
+    const expectedHostAlt = productKey === 'kollagen' ? 'kollagenintensiv.com' : 'illuminatural6i.com';
+    if (parsed.hostname !== expectedHost && parsed.hostname !== expectedHostAlt) {
+      return DEFAULT_LINKS[productKey];
+    }
+    // Enforce pathname structure: /ct/numericId
+    const pathParts = parsed.pathname.split('/');
+    if (pathParts.length === 3 && pathParts[1] === 'ct' && /^\d+$/.test(pathParts[2])) {
+      return `https://www.${expectedHostAlt}/ct/${pathParts[2]}`;
+    }
+  } catch (e) {
+    // Return default URL if parsing fails
+  }
+  
+  return DEFAULT_LINKS[productKey];
+}
+
 function getAffiliateLinks() {
   let savedKollagen = null;
   let savedIlluminatural = null;
@@ -30,8 +69,8 @@ function getAffiliateLinks() {
   }
 
   return {
-    kollagen: savedKollagen || DEFAULT_LINKS.kollagen,
-    illuminatural: savedIlluminatural || DEFAULT_LINKS.illuminatural
+    kollagen: sanitizeAndValidateAffiliateLink(savedKollagen, 'kollagen'),
+    illuminatural: sanitizeAndValidateAffiliateLink(savedIlluminatural, 'illuminatural')
   };
 }
 
@@ -42,18 +81,7 @@ function applyAffiliateLinks() {
   affiliateElements.forEach(el => {
     const productKey = el.getAttribute('data-product');
     if (productKey && links[productKey]) {
-      let finalUrl = links[productKey];
-
-      // Format bare ID strings (e.g. 282956) into official SellHealth target URLs
-      if (!finalUrl.startsWith('http://') && !finalUrl.startsWith('https://')) {
-        if (productKey === 'kollagen') {
-          finalUrl = `https://www.kollagenintensiv.com/ct/${finalUrl}`;
-        } else if (productKey === 'illuminatural') {
-          finalUrl = `https://www.illuminatural6i.com/ct/${finalUrl}`;
-        }
-      }
-
-      el.setAttribute('href', finalUrl);
+      el.setAttribute('href', links[productKey]);
     }
   });
 }

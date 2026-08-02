@@ -14,31 +14,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
   
   <style>
-    :root {
-      --color-primary: #D4AF37;       /* Rose Gold / Warm Amber */
-      --color-primary-dark: #C5A059;
-      --color-dark: #F8FAFC;          /* Light Slate Text */
-      --color-light-bg: #0B0F19;      /* Midnight Blue Background */
-      --color-white: #111827;         /* Surface Card Deep Blue */
-      --color-border: #1E293B;        /* Dark border grey-blue */
-      --color-muted: #94A3B8;         /* Muted slate text */
-      --font-serif: 'Playfair Display', Georgia, serif;
-      --font-sans: 'Inter', sans-serif;
-      --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
-      font-family: var(--font-sans);
-      background-color: var(--color-light-bg);
-      color: var(--color-dark);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -183,12 +162,12 @@
       </a>
 
       <!-- Direct Official Kollagen Offer -->
-      <a href="https://www.kollagenintensiv.com/ct/282956" class="bio-link" target="_blank" rel="noopener noreferrer nofollow sponsored">
+      <a href="https://www.kollagenintensiv.com/ct/282956" class="bio-link affiliate-link" data-product="kollagen" target="_blank" rel="noopener noreferrer nofollow sponsored">
         <i class="fa-solid fa-cart-shopping"></i> Order Kollagen Intensiv (Risk-Free)
       </a>
 
       <!-- Direct Official Illuminatural Offer -->
-      <a href="https://www.illuminatural6i.com/ct/282956" class="bio-link" target="_blank" rel="noopener noreferrer nofollow sponsored">
+      <a href="https://www.illuminatural6i.com/ct/282956" class="bio-link affiliate-link" data-product="illuminatural" target="_blank" rel="noopener noreferrer nofollow sponsored">
         <i class="fa-solid fa-cart-shopping"></i> Order Illuminatural 6i (Risk-Free)
       </a>
     </div>
@@ -214,5 +193,7 @@
 
   </div>
 
+  <!-- Main Application Script -->
+  <script src="app.js"></script>
 </body>
 </html>
