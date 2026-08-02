@@ -1294,3 +1294,7 @@ h1, h2, h3, h4 {
   padding: 0.15rem 0.4rem !important;
   margin-left: 0.5rem !important;
 }
+
+.competitor-comparison .comparison-table {
+  margin-bottom: 0;
+}
