@@ -50,6 +50,16 @@ Use vertical images (2:3 aspect ratio, e.g. 1000 x 1500px). Overlay the **Pin Te
 
 ---
 
+### Pin 5: Target - Collagen Science & Natural Aesthetic (Kollagen Intensiv New Pin)
+* **Pin Visual Style**: A modern, elegant clinical jar of anti-aging collagen cream next to fresh green leaves, soft window lighting, and clean skin texture.
+* **Pin Text Headline**: "How Swiss Peptide Science Boosts Collagen by 354% and Reduces Deep Wrinkles"
+* **Pin Description**: Do you want to reduce deep wrinkles? Collagen decreases by 1.5% every year after you reach age 30. This decrease causes wrinkles and loose skin. Kollagen Intensiv contains the patented peptide Syn-Coll®. This peptide signals your skin to produce new collagen. Clinical trials show a 354% increase in collagen production. Read our full clinical review to see how this cream repairs your skin barrier and makes skin smooth. Click the link to read the article.
+* **Keywords Target**: anti aging cream, collagen booster, peptide skincare, wrinkle reduction, mature skin routine, clinical skincare review, how to increase collagen, Kollagen Intensiv review.
+* **Link Destination**: `https://skin-health.github.io/sellhealth-skincare/kollagen-intensiv-review.html`
+* **Hashtags**: #antiaging #collagenbooster #peptideskincare #wrinklereduction #matureskin
+
+---
+
 ## 📸 Part 2: Instagram Carousel Scripts (High-Engagement Carousels)
 
 Design slide templates in Canva. Use simple backgrounds, large bold typography (Slide titles), and short bullet points (30-40 words max per slide).

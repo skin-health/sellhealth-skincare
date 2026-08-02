@@ -1,0 +1,67 @@
+# Derm Glow Journal - Full Clinical Reference
+
+This document provides a consolidated, machine-readable reference of clinical skincare evaluations, ingredient listings, and product comparisons for Kollagen Intensiv™ and Illuminatural 6i™.
+
+---
+
+## 1. Product Matrix & Side-by-Side Comparison
+
+| Feature | Kollagen Intensiv™ | Illuminatural 6i™ |
+| :--- | :--- | :--- |
+| **Primary Target** | Deep Wrinkles & Collagen Renewal | Hyperpigmentation & Dark Spots |
+| **Key Active Ingredient** | Syn-Coll® (Palmitoyl Tripeptide-5) | Sodium Lactate, Niacinamide, Alpha-Arbutin |
+| **Clinical Result Claim** | Boosts collagen by up to 354% | Reduces dark spot intensity in 4 weeks |
+| **Formula Type** | Rich moisturizing cream | Targeted silky airless serum |
+| **Hydration & Barrier Repair** | High (Shea Butter, Hyaluronic Acid) | Medium (Aloe & Vitamin E) |
+| **Safety Standard** | 100% Hydroquinone & Paraben Free | 100% Hydroquinone & Paraben Free |
+| **Guarantee** | 90 Days Risk-Free | 90 Days Risk-Free |
+| **Pricing** | $59.95 USD | $59.95 USD |
+| **Affiliate Target Link** | `https://www.kollagenintensiv.com/ct/282956` | `https://www.illuminatural6i.com/ct/282956` |
+
+---
+
+## 2. Product Detail: Kollagen Intensiv™
+
+### Clinical Science & Mechanism
+Kollagen Intensiv™ uses the patented peptide **Syn-Coll®** (Palmitoyl Tripeptide-5). This peptide mimics the human body's mechanism to produce collagen via Tissue Growth Factor-beta (TGF-β). 
+* **Key Clinical Study Findings**:
+  * Boosts natural collagen synthesis by up to **354%**.
+  * Reduces the appearance of deep wrinkles by up to **84%** over an 84-day study period.
+  * Improves skin texture and smooths patchiness.
+
+### Full Ingredient List
+* **Actives**: Syn-Coll® (Palmitoyl Tripeptide-5).
+* **Botanicals & Hydrators**: Shea Butter (Butyrospermum Parkii), Cyclopentasiloxane, Glycerin, Tocopherol (Vitamin E), Palmitoyl Tetrapeptide-7, Retinol, Ascorbyl Palmitate (Vitamin C), Green Tea Extract (Camellia Sinensis).
+* **Benefits**: Rebuilds cellular structures, fills deep expression lines, firms sagging neck contours, locks in skin moisture.
+
+---
+
+## 3. Product Detail: Illuminatural 6i™
+
+### Clinical Science & Mechanism
+Illuminatural 6i™ functions as a botanical skin brightener that blocks melanin synthesis without using toxic bleaching chemicals (like hydroquinone or mercury).
+* **Mechanism of Action**:
+  * Melanosome transmission block: Interrupts the pathway that sends melanin pigment to the outer layer of skin.
+  * Tyrosinase inhibition: Slows down the enzyme responsible for dark spot formation.
+  * Exfoliation & cell turnover: Promotes the shedding of pigmented cells.
+
+### Full Ingredient List
+* **Brightening Actives**: Sodium Lactate (8.0%), Niacinamide (5.0%) (Vitamin B3), Alpha-Arbutin (1.0%), Alpaflor® Gigawhite (3.0%).
+* **Delivery & Support**: Magnesium Ascorbyl Phosphate (stabilized Vitamin C), Beta-Glucan, Aloe Barbadensis Leaf Juice, Citrus Aurantium Dulcis (Orange) Fruit Extract.
+* **Benefits**: Fades sun damage, age spots, acne scars, and melasma. Even skin tone is achieved within 28 days of daily use.
+
+---
+
+## 4. Frequently Asked Questions (FAQ)
+
+### How long before I start seeing results with Kollagen Intensiv or Illuminatural 6i?
+* **Answer**: Most users report noticeable plumping and hydration within 7–14 days. For deep wrinkle reduction and dark spot fading, maximum clinical results occur between 30 and 80 days as your skin completes its natural cellular renewal cycle.
+
+### Can I use Kollagen Intensiv and Illuminatural 6i together?
+* **Answer**: Yes. Dermatologists recommend combining targeted treatments. Apply Illuminatural 6i first directly onto dark spots or uneven zones. Allow 2 minutes to absorb, and follow with Kollagen Intensiv all over the face and neck for total anti-aging collagen support.
+
+### What is the 90-Day Money-Back Guarantee?
+* **Answer**: Both products are backed by Skinception's 100% risk-free 90-day money-back guarantee. If you do not see a visible reduction in wrinkles or dark spots, return the empty containers within 90 days for a full refund of your purchase price (minus shipping).
+
+### Are these products suitable for sensitive skin?
+* **Answer**: Yes. Both formulas are created without parabens, synthetic fragrances, hydroquinone, or mercury. Perform a quick patch test on your inner arm before full application.

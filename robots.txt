@@ -1,4 +1,29 @@
+# AI Crawler Access Policy - Last updated: 2026-08-02
+
+# --- AI Search-Augmented Crawlers (allow - these drive citations) ---
+User-agent: PerplexityBot
+Allow: /
+
+# --- AI Training Crawlers (allow - these drive citations) ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# --- Aggressive/Unwanted Scrapers (block) ---
+User-agent: Bytespider
+Disallow: /
+
+# --- General Crawlers ---
 User-agent: *
 Allow: /
 
 Sitemap: https://skin-health.github.io/sellhealth-skincare/sitemap.xml
+
