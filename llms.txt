@@ -4,7 +4,7 @@
 
 ## Core Navigation
 - [Review Portal](/index.html): Comparative landing page for top skincare products. Features ratings, side-by-side details, and dynamic matching tools.
-- [Skin Quiz](/index.html#quiz-section): 3-question javascript skin matching tool. Connects specific skin concerns to recommended products.
+- [Skin Quiz](/index.html#skin-quiz): 3-question javascript skin matching tool. Connects specific skin concerns to recommended products.
 - [Bio Link Page](/links.html): Branded mobile navigation portal optimized for social media referral traffic.
 - [Privacy Policy](/privacy.html): GDPR, CCPA, and FTC regulatory compliance disclosures.
 
