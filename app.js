@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
 // Default SellHealth Affiliate Links for User ID 282956
 const DEFAULT_LINKS = {
   kollagen: 'https://www.kollagenintensiv.com/ct/282956',
-  illuminatural: 'https://www.illuminatural6i.com/ct/282956'
+  illuminatural: 'https://www.illuminatural6i.com/ct/282956',
+  dermefface: 'https://www.dermeffacefx7.com/ct/282956'
 };
 
 function sanitizeAndValidateAffiliateLink(rawUrl, productKey) {
@@ -29,6 +30,8 @@ function sanitizeAndValidateAffiliateLink(rawUrl, productKey) {
       return `https://www.kollagenintensiv.com/ct/${cleanVal}`;
     } else if (productKey === 'illuminatural') {
       return `https://www.illuminatural6i.com/ct/${cleanVal}`;
+    } else if (productKey === 'dermefface') {
+      return `https://www.dermeffacefx7.com/ct/${cleanVal}`;
     }
   }
   
@@ -40,8 +43,20 @@ function sanitizeAndValidateAffiliateLink(rawUrl, productKey) {
       return DEFAULT_LINKS[productKey];
     }
     // Enforce hostname matches target merchant
-    const expectedHost = productKey === 'kollagen' ? 'www.kollagenintensiv.com' : 'www.illuminatural6i.com';
-    const expectedHostAlt = productKey === 'kollagen' ? 'kollagenintensiv.com' : 'illuminatural6i.com';
+    let expectedHost, expectedHostAlt;
+    if (productKey === 'kollagen') {
+      expectedHost = 'www.kollagenintensiv.com';
+      expectedHostAlt = 'kollagenintensiv.com';
+    } else if (productKey === 'illuminatural') {
+      expectedHost = 'www.illuminatural6i.com';
+      expectedHostAlt = 'illuminatural6i.com';
+    } else if (productKey === 'dermefface') {
+      expectedHost = 'www.dermeffacefx7.com';
+      expectedHostAlt = 'dermeffacefx7.com';
+    } else {
+      return DEFAULT_LINKS[productKey];
+    }
+
     if (parsed.hostname !== expectedHost && parsed.hostname !== expectedHostAlt) {
       return DEFAULT_LINKS[productKey];
     }
@@ -60,17 +75,20 @@ function sanitizeAndValidateAffiliateLink(rawUrl, productKey) {
 function getAffiliateLinks() {
   let savedKollagen = null;
   let savedIlluminatural = null;
+  let savedDermefface = null;
   
   try {
     savedKollagen = localStorage.getItem('sellhealth_kollagen_link');
     savedIlluminatural = localStorage.getItem('sellhealth_illuminatural_link');
+    savedDermefface = localStorage.getItem('sellhealth_dermefface_link');
   } catch (e) {
     console.warn('LocalStorage access restricted, using default affiliate links.', e);
   }
 
   return {
     kollagen: sanitizeAndValidateAffiliateLink(savedKollagen, 'kollagen'),
-    illuminatural: sanitizeAndValidateAffiliateLink(savedIlluminatural, 'illuminatural')
+    illuminatural: sanitizeAndValidateAffiliateLink(savedIlluminatural, 'illuminatural'),
+    dermefface: sanitizeAndValidateAffiliateLink(savedDermefface, 'dermefface')
   };
 }
 
@@ -123,15 +141,40 @@ function showQuizResults() {
   const resultDesc = document.getElementById('resultDesc');
   const resultProductWrap = document.getElementById('resultProductWrap');
 
-  if (!quizResult) return;
+  if (!quizResult || !resultTitle || !resultDesc || !resultProductWrap) return;
 
   const links = getAffiliateLinks();
   let recommendedProduct = 'kollagen';
 
+  // Primary filter: concern determines the product category
   if (quizAnswers.concern === 'darkspots') {
     recommendedProduct = 'illuminatural';
+  } else if (quizAnswers.concern === 'scars') {
+    recommendedProduct = 'dermefface';
   } else if (quizAnswers.concern === 'both') {
     recommendedProduct = 'combo';
+  } else {
+    // 'wrinkles' or any unexpected value defaults to kollagen
+    recommendedProduct = 'kollagen';
+  }
+
+  // Secondary refinement: build context string from skinType and age
+  let skinContext = '';
+  if (quizAnswers.skinType === 'dry') {
+    skinContext = 'dry or mature skin';
+  } else if (quizAnswers.skinType === 'sensitive') {
+    skinContext = 'sensitive, redness-prone skin';
+  } else {
+    skinContext = 'combination skin';
+  }
+
+  let ageContext = '';
+  if (quizAnswers.age === '60+') {
+    ageContext = 'For deep-set concerns in the 60+ age range, clinical-strength formulas deliver the most visible results.';
+  } else if (quizAnswers.age === '46-60') {
+    ageContext = 'At 46-60, active collagen support and targeted correction produce the strongest improvements.';
+  } else {
+    ageContext = 'Starting in your 30s-40s, early intervention helps preserve skin structure and prevent future damage.';
   }
 
   // Clear existing content safely
@@ -165,7 +208,7 @@ function showQuizResults() {
 
   if (recommendedProduct === 'kollagen') {
     resultTitle.textContent = 'Match: Kollagen Intensiv™ Collagen Renewal Cream';
-    resultDesc.textContent = 'Based on your skin profile, boosting cellular collagen and smoothing expression lines is your #1 priority for firm, youthful skin.';
+    resultDesc.textContent = 'For your ' + skinContext + ', boosting cellular collagen and smoothing expression lines is your #1 priority for firm, youthful skin. ' + ageContext;
 
     const img = document.createElement('img');
     img.src = 'Pictures/KollagenIntensiv.jpg';
@@ -179,11 +222,14 @@ function showQuizResults() {
     
     actionLink.href = links.kollagen;
     actionLink.setAttribute('data-product', 'kollagen');
-    actionLink.innerHTML = 'Claim Discount Offer <i class="fa-solid fa-arrow-right"></i>';
+    const icon1 = document.createElement('i');
+    icon1.className = 'fa-solid fa-arrow-right';
+    actionLink.textContent = 'Claim Discount Offer ';
+    actionLink.appendChild(icon1);
 
   } else if (recommendedProduct === 'illuminatural') {
     resultTitle.textContent = 'Match: Illuminatural 6i™ Advanced Skin Brightener';
-    resultDesc.textContent = 'Your primary concern is hyperpigmentation, sun damage, or dark spots. Illuminatural 6i interrupts melanin production safely without toxic bleaches.';
+    resultDesc.textContent = 'For your ' + skinContext + ', interrupting melanin overproduction safely and without toxic bleaches is the priority. ' + ageContext;
 
     const img = document.createElement('img');
     img.src = 'Pictures/illuminatural.jpg';
@@ -197,7 +243,31 @@ function showQuizResults() {
     
     actionLink.href = links.illuminatural;
     actionLink.setAttribute('data-product', 'illuminatural');
-    actionLink.innerHTML = 'Claim Discount Offer <i class="fa-solid fa-arrow-right"></i>';
+    const icon2 = document.createElement('i');
+    icon2.className = 'fa-solid fa-arrow-right';
+    actionLink.textContent = 'Claim Discount Offer ';
+    actionLink.appendChild(icon2);
+
+  } else if (recommendedProduct === 'dermefface') {
+    resultTitle.textContent = 'Match: Dermefface FX7™ Scar Reduction Therapy';
+    resultDesc.textContent = 'For your ' + skinContext + ', accelerating skin remodeling to fade scar tissue and acne marks is the priority. ' + ageContext;
+
+    const img = document.createElement('img');
+    img.src = 'Pictures/dermefface.jpg';
+    img.alt = 'Dermefface FX7';
+    img.style.maxHeight = '120px';
+    img.style.objectFit = 'contain';
+    container.appendChild(img);
+
+    productTitle.textContent = 'Dermefface FX7™';
+    productText.textContent = '7 active ingredients, clinically proven to boost Type I collagen by 1190% to speed skin repair.';
+    
+    actionLink.href = links.dermefface;
+    actionLink.setAttribute('data-product', 'dermefface');
+    const icon3 = document.createElement('i');
+    icon3.className = 'fa-solid fa-arrow-right';
+    actionLink.textContent = 'Claim Discount Offer ';
+    actionLink.appendChild(icon3);
 
   } else {
     resultTitle.textContent = 'Match: Total Rejuvenation System (Kollagen + Illuminatural)';
@@ -220,7 +290,10 @@ function showQuizResults() {
     
     actionLink.href = links.kollagen;
     actionLink.setAttribute('data-product', 'kollagen');
-    actionLink.innerHTML = 'Explore Package Deals <i class="fa-solid fa-arrow-right"></i>';
+    const icon4 = document.createElement('i');
+    icon4.className = 'fa-solid fa-arrow-right';
+    actionLink.textContent = 'Explore Package Deals ';
+    actionLink.appendChild(icon4);
   }
 
   infoBlock.appendChild(productTitle);
@@ -230,6 +303,7 @@ function showQuizResults() {
   resultProductWrap.appendChild(container);
 
   quizResult.style.display = 'block';
+  resultTitle.focus();
 }
 
 window.resetQuiz = function() {
@@ -248,36 +322,41 @@ window.resetQuiz = function() {
    3. FAQ ACCORDION
    ========================================================================== */
 function initFAQ() {
-  const faqQuestions = document.querySelectorAll('.faq-question');
+  const faqContainer = document.querySelector('.faq-container');
+  if (!faqContainer) return;
 
-  faqQuestions.forEach(q => {
-    q.addEventListener('click', () => {
-      const item = q.parentElement;
-      const answer = item.querySelector('.faq-answer');
-      const isActive = item.classList.contains('active');
+  faqContainer.addEventListener('click', (e) => {
+    const question = e.target.closest('.faq-question');
+    if (!question) return;
 
-      // Close all active items
-      document.querySelectorAll('.faq-item').forEach(el => {
-        el.classList.remove('active');
-        const ans = el.querySelector('.faq-answer');
-        if (ans) ans.style.maxHeight = null;
-      });
+    const item = question.parentElement;
+    const answer = item.querySelector('.faq-answer');
+    const isActive = item.classList.contains('active');
 
-      if (!isActive) {
-        item.classList.add('active');
-        answer.style.maxHeight = answer.scrollHeight + 'px';
-      }
+    // Close all active items
+    faqContainer.querySelectorAll('.faq-item').forEach(el => {
+      el.classList.remove('active');
+      const ans = el.querySelector('.faq-answer');
+      if (ans) ans.style.maxHeight = null;
     });
+
+    if (!isActive) {
+      item.classList.add('active');
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+    }
   });
 }
 
 /* ==========================================================================
    4. IMAGE SWITCHER FOR PRODUCT GALLERY (GLOBAL SCOPE)
    ========================================================================== */
-window.switchImage = function(mainImgId, newSrc, thumbEl) {
+window.switchImage = function(mainImgId, newSrc, thumbEl, newAlt) {
   const mainImg = document.getElementById(mainImgId);
   if (mainImg) {
     mainImg.src = newSrc;
+    if (newAlt) {
+      mainImg.alt = newAlt;
+    }
   }
 
   if (thumbEl && thumbEl.parentElement) {
@@ -297,6 +376,7 @@ function initNavigation() {
   if (menuToggle && navMenu) {
     menuToggle.addEventListener('click', () => {
       navMenu.classList.toggle('active');
+      menuToggle.setAttribute('aria-expanded', navMenu.classList.contains('active'));
     });
   }
 }

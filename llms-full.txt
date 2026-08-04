@@ -1,22 +1,22 @@
 # Derm Glow Journal - Full Clinical Reference
 
-This document provides a consolidated, machine-readable reference of clinical skincare evaluations, ingredient listings, and product comparisons for Kollagen Intensiv™ and Illuminatural 6i™.
+This document provides a consolidated, machine-readable reference of clinical skincare evaluations, ingredient listings, and product comparisons for Kollagen Intensiv™, Illuminatural 6i™, and Dermefface FX7™.
 
 ---
 
 ## 1. Product Matrix & Side-by-Side Comparison
 
-| Feature | Kollagen Intensiv™ | Illuminatural 6i™ |
-| :--- | :--- | :--- |
-| **Primary Target** | Deep Wrinkles & Collagen Renewal | Hyperpigmentation & Dark Spots |
-| **Key Active Ingredient** | Syn-Coll® (Palmitoyl Tripeptide-5) | Sodium Lactate, Niacinamide, Alpha-Arbutin |
-| **Clinical Result Claim** | Boosts collagen by up to 354% | Reduces dark spot intensity in 4 weeks |
-| **Formula Type** | Rich moisturizing cream | Targeted silky airless serum |
-| **Hydration & Barrier Repair** | High (Shea Butter, Hyaluronic Acid) | Medium (Aloe & Vitamin E) |
-| **Safety Standard** | 100% Hydroquinone & Paraben Free | 100% Hydroquinone & Paraben Free |
-| **Guarantee** | 90 Days Risk-Free | 90 Days Risk-Free |
-| **Pricing** | $59.95 USD | $59.95 USD |
-| **Affiliate Target Link** | `https://www.kollagenintensiv.com/ct/282956` | `https://www.illuminatural6i.com/ct/282956` |
+| Feature | Kollagen Intensiv™ | Illuminatural 6i™ | Dermefface FX7™ |
+| :--- | :--- | :--- | :--- |
+| **Primary Target** | Deep Wrinkles & Collagen Renewal | Hyperpigmentation & Dark Spots | Scar Remodeling & Cellular Repair |
+| **Key Active Ingredient** | Syn-Coll® (Palmitoyl Tripeptide-5) | Sodium Lactate, Niacinamide, Alpha-Arbutin | Symglucan (10%), Pro-Coll-One+ (2%) |
+| **Clinical Result Claim** | Boosts collagen by up to 354% | Reduces dark spot intensity in 4 weeks | Increases Type I collagen by 1190% |
+| **Formula Type** | Rich moisturizing cream | Targeted silky airless serum | Advanced therapeutic scar gel |
+| **Hydration & Barrier Repair** | High (Shea Butter, Hyaluronic Acid) | Medium (Aloe & Vitamin E) | High (Pentavitin, DL-Panthenol) |
+| **Safety Standard** | 100% Hydroquinone & Paraben Free | 100% Hydroquinone & Paraben Free | 100% Hydroquinone & Paraben Free |
+| **Guarantee** | 90 Days Risk-Free | 90 Days Risk-Free | 90 Days Risk-Free |
+| **Pricing** | $59.95 USD | $59.95 USD | $59.95 USD |
+| **Affiliate Target Link** | `https://www.kollagenintensiv.com/ct/282956` | `https://www.illuminatural6i.com/ct/282956` | `https://www.dermeffacefx7.com/ct/282956` |
 
 ---
 
@@ -52,13 +52,29 @@ Illuminatural 6i™ functions as a botanical skin brightener that blocks melanin
 
 ---
 
-## 4. Frequently Asked Questions (FAQ)
+## 4. Product Detail: Dermefface FX7™
 
-### How long before I start seeing results with Kollagen Intensiv or Illuminatural 6i?
-* **Answer**: Most users report noticeable plumping and hydration within 7–14 days. For deep wrinkle reduction and dark spot fading, maximum clinical results occur between 30 and 80 days as your skin completes its natural cellular renewal cycle.
+### Clinical Science & Mechanism
+Dermefface FX7™ operates as a scar reduction therapy that normalizes collagen synthesis and speeds up cellular turnover.
+* **Mechanism of Action**:
+  * Fibroblast stimulation: Symglucan (10.0%) stimulates fibroblasts to heal structural skin damage.
+  * Healthy collagen synthesis: Pro-Coll-One+ (2.0%) triggers healthy Type I collagen production (increases synthesis by 1190%).
+  * Moisture reservoir: Pentavitin (5.0%) binds moisture to dry, hard scar tissue to soften it.
+  * Keloid prevention: DL-Panthenol (8.0%) suppresses the inflammatory signals that trigger keloid formation.
 
-### Can I use Kollagen Intensiv and Illuminatural 6i together?
-* **Answer**: Yes. Dermatologists recommend combining targeted treatments. Apply Illuminatural 6i first directly onto dark spots or uneven zones. Allow 2 minutes to absorb, and follow with Kollagen Intensiv all over the face and neck for total anti-aging collagen support.
+### Full Ingredient List
+* **Actives**: Symglucan (10.0%), DL-Panthenol (8.0%), Pentavitin (5.0%), Vitalayer (3.0%), Pro-Coll-One+ (2.0%), Allantoin, Niacinamide.
+* **Benefits**: Flattens raised scars, fades acne scars, burn scars, surgery scars, and reduces scar discoloration within 28-80 days.
+
+---
+
+## 5. Frequently Asked Questions (FAQ)
+
+### How long before I start seeing results with Kollagen Intensiv, Illuminatural 6i, or Dermefface FX7?
+* **Answer**: Most users report noticeable plumping, hydration, and softening of skin or scar tissue within 7–14 days. For deep wrinkle reduction, dark spot fading, and scar flattening, maximum clinical results occur between 30 and 80 days as the skin completes its natural cellular renewal cycle.
+
+### Can I use Kollagen Intensiv, Illuminatural 6i, and Dermefface FX7 together?
+* **Answer**: Yes. You can combine these targeted clinical formulas. Apply Dermefface FX7 directly onto scars and Illuminatural 6i onto dark spots or hyperpigmentation zones. Allow 2 minutes to absorb, and follow with Kollagen Intensiv all over the face and neck for total anti-aging collagen support.
 
 ### What is the 90-Day Money-Back Guarantee?
 * **Answer**: Both products are backed by Skinception's 100% risk-free 90-day money-back guarantee. If you do not see a visible reduction in wrinkles or dark spots, return the empty containers within 90 days for a full refund of your purchase price (minus shipping).
