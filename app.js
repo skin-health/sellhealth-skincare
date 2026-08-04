@@ -374,9 +374,44 @@ function initNavigation() {
   const navMenu = document.getElementById('navMenu');
 
   if (menuToggle && navMenu) {
-    menuToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-      menuToggle.setAttribute('aria-expanded', navMenu.classList.contains('active'));
+    const updateIconState = (isOpen) => {
+      const icon = menuToggle.querySelector('i');
+      if (icon) {
+        if (isOpen) {
+          icon.classList.remove('fa-bars');
+          icon.classList.add('fa-xmark');
+        } else {
+          icon.classList.remove('fa-xmark');
+          icon.classList.add('fa-bars');
+        }
+      }
+    };
+
+    menuToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isActive = navMenu.classList.toggle('active');
+      menuToggle.setAttribute('aria-expanded', isActive.toString());
+      updateIconState(isActive);
+    });
+
+    // Close mobile menu on click outside
+    document.addEventListener('click', (e) => {
+      if (navMenu.classList.contains('active') && !navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+        navMenu.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        updateIconState(false);
+      }
+    });
+
+    // Close mobile menu on Escape key press
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+        navMenu.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        updateIconState(false);
+        menuToggle.focus();
+      }
     });
   }
 }
+

@@ -322,12 +322,16 @@ h1, h2, h3, h4 {
 }
 
 .menu-toggle {
-  display: none;
+  display: none !important;
   background: none;
   border: none;
   font-size: 1.5rem;
   color: var(--color-dark);
   cursor: pointer;
+  min-height: 44px;
+  min-width: 44px;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ==========================================================================
@@ -1045,15 +1049,16 @@ h1, h2, h3, h4 {
     top: 75px; left: 0; right: 0;
     background-color: var(--color-white);
     flex-direction: column;
-    padding: 1.5rem;
+    padding: 1.25rem 1.5rem;
     box-shadow: var(--shadow-md);
     border-bottom: 1px solid var(--color-border);
+    z-index: 150;
   }
   .nav.active {
     display: flex;
   }
   .menu-toggle {
-    display: block;
+    display: inline-flex !important;
   }
 
   /* Hero adjustments */
@@ -1349,7 +1354,6 @@ h1, h2, h3, h4 {
 
 /* Touch Target Minimum Sizes (M7) */
 .nav-link, 
-.menu-toggle, 
 .footer-col a, 
 .affiliate-settings-btn,
 .bio-link,
