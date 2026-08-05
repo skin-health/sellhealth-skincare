@@ -500,6 +500,10 @@ h1, h2, h3, h4 {
   position: relative;
 }
 
+.product-review-card:last-child {
+  margin-bottom: 0;
+}
+
 .product-rank-badge {
   display: inline-block;
   background-color: var(--color-dark);
@@ -514,6 +518,11 @@ h1, h2, h3, h4 {
 
 .product-rank-badge.rank-2 {
   background-color: var(--color-primary-dark);
+}
+
+.product-rank-badge.rank-3 {
+  background-color: var(--color-border);
+  color: var(--color-dark);
 }
 
 .product-grid {
