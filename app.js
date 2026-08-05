@@ -82,7 +82,7 @@ function getAffiliateLinks() {
     savedIlluminatural = localStorage.getItem('sellhealth_illuminatural_link');
     savedDermefface = localStorage.getItem('sellhealth_dermefface_link');
   } catch (e) {
-    console.warn('LocalStorage access restricted, using default affiliate links.', e);
+    /* Silent fallback — default affiliate links are used automatically. */
   }
 
   return {
