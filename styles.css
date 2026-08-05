@@ -1555,3 +1555,52 @@ h1, h2, h3, h4 {
     padding-left: 1rem;
   }
 }
+
+/* ==========================================================================
+   COLLAPSIBLE ACCORDION STYLES (OPTION A - PAGE SCROLL OPTIMIZATION)
+   ========================================================================== */
+.accordion-details {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  margin-top: 1.25rem;
+  background: rgba(17, 24, 39, 0.4);
+  overflow: hidden;
+  transition: var(--transition);
+}
+.accordion-summary {
+  padding: 0.9rem 1.25rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-primary-dark);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+  background: rgba(30, 41, 59, 0.4);
+}
+.accordion-summary::-webkit-details-marker,
+.accordion-summary::marker {
+  display: none;
+}
+.accordion-summary:hover {
+  background: rgba(30, 41, 59, 0.7);
+  color: var(--color-primary);
+}
+.accordion-details[open] .accordion-summary {
+  border-bottom: 1px solid var(--color-border);
+  background: rgba(30, 41, 59, 0.85);
+  color: var(--color-primary);
+}
+.accordion-details[open] .accordion-icon {
+  transform: rotate(180deg);
+}
+.accordion-icon {
+  transition: transform 0.25s ease;
+  font-size: 0.85rem;
+}
+.accordion-content {
+  padding: 1.25rem;
+}
+
