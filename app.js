@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initAffiliateLinks();
   initFAQ();
   initNavigation();
+  initScrollReveal();
 });
 
 /* ==========================================================================
@@ -414,4 +415,33 @@ function initNavigation() {
     });
   }
 }
+
+/* ==========================================================================
+   6. SCROLL-TRIGGERED REVEAL ANIMATIONS
+   ========================================================================== */
+function initScrollReveal() {
+  if (!('IntersectionObserver' in window)) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  const revealElements = document.querySelectorAll('.reveal');
+  if (revealElements.length === 0) return;
+
+  document.documentElement.classList.add('js-reveal-ready');
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, {
+    root: null,
+    rootMargin: '0px 0px -50px 0px',
+    threshold: 0.1
+  });
+
+  revealElements.forEach(el => observer.observe(el));
+}
+
 

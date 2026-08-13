@@ -1613,3 +1613,31 @@ h1, h2, h3, h4 {
   padding: 1.25rem;
 }
 
+/* ==========================================================================
+   SCROLL-TRIGGERED REVEAL ANIMATIONS
+   ========================================================================== */
+.js-reveal-ready .reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.js-reveal-ready .reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.js-reveal-ready .reveal-delay-1 { transition-delay: 0.1s; }
+.js-reveal-ready .reveal-delay-2 { transition-delay: 0.2s; }
+.js-reveal-ready .reveal-delay-3 { transition-delay: 0.3s; }
+.js-reveal-ready .reveal-delay-4 { transition-delay: 0.4s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .js-reveal-ready .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
