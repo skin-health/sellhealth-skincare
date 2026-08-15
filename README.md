@@ -1,14 +1,14 @@
-# Derm Glow Journal | Clinical Skincare Affiliate Website
+# Derm Audit Journal | Clinical Skincare Affiliate Website
 
 This website is a product review portal. It promotes SellHealth skincare products.
-The products are Kollagen Intensiv and Illuminatural 6i.
+The products are Kollagen Intensiv, Illuminatural 6i, and Dermefface FX7.
 
 ---
 
 ## 🌟 Key Features
 
-* **Product Reviews**: Unbiased analysis and clinical data for Kollagen Intensiv and Illuminatural 6i.
-* **Product Matchup**: Side-by-side comparison table showing active ingredients and prices.
+* **Product Reviews**: Unbiased analysis and clinical data for Kollagen Intensiv, Illuminatural 6i, and Dermefface FX7.
+* **Product Matchup**: Side-by-side comparison tables showing active ingredients, guarantees, and prices.
 * **Skin Assessment Quiz**: Three-question interactive quiz that recommends a product.
 * **SEO Optimized**: Valid JSON-LD Schema markup and meta tags for search engines.
 * **Responsive Layout**: Designed for mobile phones, tablets, and desktop computers.
@@ -22,57 +22,26 @@ The products are Kollagen Intensiv and Illuminatural 6i.
 C:\Users\A2\Sellhealth Project\
 ├── index.html                    # Main landing page
 ├── links.html                    # Link-in-bio page for social media
+├── comparison.html               # Side-by-side clinical comparison tables
+├── blog.html                     # Research journal hub
+├── blog-syn-coll-vs-retinol.html # Clinical study: Syn-Coll vs Retinol
+├── blog-how-to-fade-acne-scars.html # Clinical study: Scar remodeling
 ├── kollagen-intensiv-review.html # Kollagen Intensiv review article
 ├── illuminatural-6i-review.html  # Illuminatural 6i review article
+├── dermefface-fx7-review.html    # Dermefface FX7 review article
+├── privacy.html                  # Privacy policy & compliance
 ├── styles.css                    # Design system tokens and layout styles
 ├── app.js                        # Quiz and link management script
 ├── social_media_assets.md        # Social media post templates
 ├── README.md                     # This documentation file
-├── gemini.md                     # Local project memory file (ignored by git)
-├── .gitignore                    # Prevents local files from uploading
-└── Pictures/                     # Product image files
-    ├── KollagenIntensiv.jpg
-    ├── KollagenIntensiv1.jpg
-    ├── illuminatural.jpg
-    └── illuminatural2.jpg
+└── Pictures/                     # Production image files
 ```
 
 ---
 
-## 🚀 How to Publish to GitHub Pages
+## 🚀 Live Website
 
-You must upload the files to your GitHub account. Follow these steps:
-
-### Step 1: Create a GitHub Repository
-1. Log in to [GitHub.com](https://github.com).
-2. Click **New Repository**.
-3. Type `sellhealth-skincare` in the repository name field.
-4. Select the **Public** option.
-5. Click **Create repository**.
-
-### Step 2: Upload Your Code with Git
-1. Open your terminal software.
-2. Change the directory to `C:\Users\A2\Sellhealth Project`.
-3. Run the following commands:
-   ```bash
-   git init
-   git add .
-   git commit -m "Add project files"
-   git branch -M main
-   git remote add origin https://github.com/skin-health/sellhealth-skincare.git
-   git push -u origin main
-   ```
-
-### Step 3: Enable the Live Website
-1. Open your repository page on GitHub.
-2. Click the **Settings** tab.
-3. Click **Pages** in the left navigation panel.
-4. Go to **Build and deployment**.
-5. Select **Deploy from a branch** in the source list.
-6. Select **main** branch and **/(root)** folder.
-7. Click **Save**.
-
-The website will be live in 60 seconds at `https://skin-health.github.io/sellhealth-skincare/`.
+The production website is live at: **[https://dermaudit.com/](https://dermaudit.com/)**.
 
 ---
 

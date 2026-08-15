@@ -25,5 +25,5 @@ Disallow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://skin-health.github.io/sellhealth-skincare/sitemap.xml
+Sitemap: https://dermaudit.com/sitemap.xml
 

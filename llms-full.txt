@@ -1,4 +1,4 @@
-# Derm Glow Journal - Full Clinical Reference
+# Derm Audit Journal - Full Clinical Reference
 
 This document provides a consolidated, machine-readable reference of clinical skincare evaluations, ingredient listings, and product comparisons for Kollagen Intensiv™, Illuminatural 6i™, and Dermefface FX7™.
 

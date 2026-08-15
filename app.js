@@ -1,5 +1,5 @@
 /* ==========================================================================
-   DERM GLOW JOURNAL - INTERACTIVE LOGIC & AFFILIATE MANAGEMENT
+   DERM AUDIT JOURNAL - INTERACTIVE LOGIC & AFFILIATE MANAGEMENT
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
