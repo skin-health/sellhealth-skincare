@@ -437,8 +437,8 @@ function initScrollReveal() {
     });
   }, {
     root: null,
-    rootMargin: '0px 0px -10% 0px',
-    threshold: 0.15
+    rootMargin: '0px 0px -50px 0px',
+    threshold: 0.05
   });
 
   revealElements.forEach(el => observer.observe(el));
