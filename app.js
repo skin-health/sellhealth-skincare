@@ -323,28 +323,30 @@ window.resetQuiz = function() {
    3. FAQ ACCORDION
    ========================================================================== */
 function initFAQ() {
-  const faqContainer = document.querySelector('.faq-container');
-  if (!faqContainer) return;
+  const faqContainers = document.querySelectorAll('.faq-accordion, .faq-container');
+  if (!faqContainers.length) return;
 
-  faqContainer.addEventListener('click', (e) => {
-    const question = e.target.closest('.faq-question');
-    if (!question) return;
+  faqContainers.forEach(container => {
+    container.addEventListener('click', (e) => {
+      const question = e.target.closest('.faq-question');
+      if (!question) return;
 
-    const item = question.parentElement;
-    const answer = item.querySelector('.faq-answer');
-    const isActive = item.classList.contains('active');
+      const item = question.parentElement;
+      const answer = item.querySelector('.faq-answer');
+      const isActive = item.classList.contains('active');
 
-    // Close all active items
-    faqContainer.querySelectorAll('.faq-item').forEach(el => {
-      el.classList.remove('active');
-      const ans = el.querySelector('.faq-answer');
-      if (ans) ans.style.maxHeight = null;
+      // Close all other active items in this container
+      container.querySelectorAll('.faq-item').forEach(el => {
+        el.classList.remove('active');
+        const ans = el.querySelector('.faq-answer');
+        if (ans) ans.style.maxHeight = null;
+      });
+
+      if (!isActive && answer) {
+        item.classList.add('active');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
     });
-
-    if (!isActive) {
-      item.classList.add('active');
-      answer.style.maxHeight = answer.scrollHeight + 'px';
-    }
   });
 }
 
