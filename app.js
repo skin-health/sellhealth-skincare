@@ -13,11 +13,13 @@ document.addEventListener('DOMContentLoaded', () => {
    1. AFFILIATE LINK MANAGEMENT & STORAGE
    ========================================================================== */
 
-// Default SellHealth Affiliate Links for User ID 282956
+// Default Affiliate Links (SellHealth & ClickBank)
 const DEFAULT_LINKS = {
   kollagen: 'https://www.kollagenintensiv.com/ct/282956',
   illuminatural: 'https://www.illuminatural6i.com/ct/282956',
-  dermefface: 'https://www.dermeffacefx7.com/ct/282956'
+  dermefface: 'https://www.dermeffacefx7.com/ct/282956',
+  synevra: 'https://fa90bat349vj5m8h47ps5z4k7l.hop.clickbank.net',
+  axavive: 'https://09cf56o9v9wfep64fslwmu3r7f.hop.clickbank.net'
 };
 
 function sanitizeAndValidateAffiliateLink(rawUrl, productKey) {
@@ -25,7 +27,7 @@ function sanitizeAndValidateAffiliateLink(rawUrl, productKey) {
   
   const cleanVal = rawUrl.trim();
   
-  // If it is just a numeric string, build the proper URL
+  // If it is just a numeric string, build the proper SellHealth URL
   if (/^\d+$/.test(cleanVal)) {
     if (productKey === 'kollagen') {
       return `https://www.kollagenintensiv.com/ct/${cleanVal}`;
@@ -43,7 +45,16 @@ function sanitizeAndValidateAffiliateLink(rawUrl, productKey) {
     if (parsed.protocol !== 'https:') {
       return DEFAULT_LINKS[productKey];
     }
-    // Enforce hostname matches target merchant
+
+    // ClickBank link validation
+    if (productKey === 'synevra' || productKey === 'axavive') {
+      if (parsed.hostname.endsWith('hop.clickbank.net') || parsed.hostname.endsWith('clickbank.net')) {
+        return cleanVal;
+      }
+      return DEFAULT_LINKS[productKey];
+    }
+
+    // SellHealth domain matching
     let expectedHost, expectedHostAlt;
     if (productKey === 'kollagen') {
       expectedHost = 'www.kollagenintensiv.com';
@@ -77,11 +88,15 @@ function getAffiliateLinks() {
   let savedKollagen = null;
   let savedIlluminatural = null;
   let savedDermefface = null;
+  let savedSynevra = null;
+  let savedAxavive = null;
   
   try {
     savedKollagen = localStorage.getItem('sellhealth_kollagen_link');
     savedIlluminatural = localStorage.getItem('sellhealth_illuminatural_link');
     savedDermefface = localStorage.getItem('sellhealth_dermefface_link');
+    savedSynevra = localStorage.getItem('affiliate_synevra_link');
+    savedAxavive = localStorage.getItem('affiliate_axavive_link');
   } catch (e) {
     /* Silent fallback — default affiliate links are used automatically. */
   }
@@ -89,7 +104,9 @@ function getAffiliateLinks() {
   return {
     kollagen: sanitizeAndValidateAffiliateLink(savedKollagen, 'kollagen'),
     illuminatural: sanitizeAndValidateAffiliateLink(savedIlluminatural, 'illuminatural'),
-    dermefface: sanitizeAndValidateAffiliateLink(savedDermefface, 'dermefface')
+    dermefface: sanitizeAndValidateAffiliateLink(savedDermefface, 'dermefface'),
+    synevra: sanitizeAndValidateAffiliateLink(savedSynevra, 'synevra'),
+    axavive: sanitizeAndValidateAffiliateLink(savedAxavive, 'axavive')
   };
 }
 
