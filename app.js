@@ -19,7 +19,9 @@ const DEFAULT_LINKS = {
   illuminatural: 'https://www.illuminatural6i.com/ct/282956',
   dermefface: 'https://www.dermeffacefx7.com/ct/282956',
   synevra: 'https://fa90bat349vj5m8h47ps5z4k7l.hop.clickbank.net',
-  axavive: 'https://09cf56o9v9wfep64fslwmu3r7f.hop.clickbank.net'
+  axavive: 'https://09cf56o9v9wfep64fslwmu3r7f.hop.clickbank.net',
+  revitag: 'https://291dc5n548rg7xaisfmdj85lfo.hop.clickbank.net',
+  kerassentials: 'https://49c3bew72gob1x96qjfk42vn2p.hop.clickbank.net'
 };
 
 function sanitizeAndValidateAffiliateLink(rawUrl, productKey) {
@@ -47,7 +49,7 @@ function sanitizeAndValidateAffiliateLink(rawUrl, productKey) {
     }
 
     // ClickBank link validation
-    if (productKey === 'synevra' || productKey === 'axavive') {
+    if (productKey === 'synevra' || productKey === 'axavive' || productKey === 'revitag' || productKey === 'kerassentials') {
       if (parsed.hostname.endsWith('hop.clickbank.net') || parsed.hostname.endsWith('clickbank.net')) {
         return cleanVal;
       }
@@ -90,6 +92,8 @@ function getAffiliateLinks() {
   let savedDermefface = null;
   let savedSynevra = null;
   let savedAxavive = null;
+  let savedReviTag = null;
+  let savedKerassentials = null;
   
   try {
     savedKollagen = localStorage.getItem('sellhealth_kollagen_link');
@@ -97,6 +101,8 @@ function getAffiliateLinks() {
     savedDermefface = localStorage.getItem('sellhealth_dermefface_link');
     savedSynevra = localStorage.getItem('affiliate_synevra_link');
     savedAxavive = localStorage.getItem('affiliate_axavive_link');
+    savedReviTag = localStorage.getItem('affiliate_revitag_link');
+    savedKerassentials = localStorage.getItem('affiliate_kerassentials_link');
   } catch (e) {
     /* Silent fallback — default affiliate links are used automatically. */
   }
@@ -106,7 +112,9 @@ function getAffiliateLinks() {
     illuminatural: sanitizeAndValidateAffiliateLink(savedIlluminatural, 'illuminatural'),
     dermefface: sanitizeAndValidateAffiliateLink(savedDermefface, 'dermefface'),
     synevra: sanitizeAndValidateAffiliateLink(savedSynevra, 'synevra'),
-    axavive: sanitizeAndValidateAffiliateLink(savedAxavive, 'axavive')
+    axavive: sanitizeAndValidateAffiliateLink(savedAxavive, 'axavive'),
+    revitag: sanitizeAndValidateAffiliateLink(savedReviTag, 'revitag'),
+    kerassentials: sanitizeAndValidateAffiliateLink(savedKerassentials, 'kerassentials')
   };
 }
 
