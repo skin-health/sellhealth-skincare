@@ -920,60 +920,111 @@
         <div class="quiz-header text-center">
           <span class="badge badge-gold"><i class="fa-solid fa-wand-magic-sparkles"></i> PERSONALIZED MATCH</span>
           <h2>Which Formula Is Right For Your Skin?</h2>
-          <p>Answer 3 quick questions to receive a dermatologist-aligned product recommendation.</p>
+          <p>Answer 3 quick questions to receive a dermatologist-aligned product recommendation from our 7 tested clinical formulas.</p>
         </div>
 
         <div class="quiz-body" id="quizBody">
-          <!-- Step 1 -->
+          <!-- Step 1: Target Concern -->
           <div class="quiz-step active" data-step="1">
-            <h4>Question 1 of 3: What is your primary skin concern today?</h4>
+            <h4>Question 1 of 3: What is your primary skin or beauty goal today?</h4>
             <div class="quiz-options">
               <button class="quiz-opt" onclick="selectQuizOption(1, 'wrinkles')">
                 <i class="fa-solid fa-face-smile-beam"></i>
-                <span>Fine lines, crow's feet, or loss of firmness</span>
+                <div>
+                  <strong>Facial Wrinkles &amp; Sagging:</strong> Rebuilding collagen bounce, smoothing fine lines, &amp; deep hydration
+                </div>
+              </button>
+              <button class="quiz-opt" onclick="selectQuizOption(1, 'expression')">
+                <i class="fa-solid fa-bolt"></i>
+                <div>
+                  <strong>Expression Lines &amp; Brow Furrows:</strong> Relaxing dynamic forehead tension &amp; crow's feet without needles
+                </div>
               </button>
               <button class="quiz-opt" onclick="selectQuizOption(1, 'darkspots')">
                 <i class="fa-solid fa-sun"></i>
-                <span>Sun spots, age spots, melasma, or uneven skin tone</span>
+                <div>
+                  <strong>Dark Spots &amp; Melasma:</strong> Erasing sun damage, age spots, freckles, &amp; acne hyperpigmentation safely
+                </div>
               </button>
-              <button class="quiz-opt" onclick="selectQuizOption(1, 'both')">
-                <i class="fa-solid fa-water"></i>
-                <span>Both anti-aging wrinkles AND dark spot discoloration</span>
+              <button class="quiz-opt" onclick="selectQuizOption(1, 'scars')">
+                <i class="fa-solid fa-bandage"></i>
+                <div>
+                  <strong>Scars &amp; Tissue Remodeling:</strong> Smoothing surgical incisions, injury marks, burns, or indented acne scars
+                </div>
+              </button>
+              <button class="quiz-opt" onclick="selectQuizOption(1, 'skintags')">
+                <i class="fa-solid fa-spa"></i>
+                <div>
+                  <strong>Skin Tags &amp; Blemishes:</strong> Painless, natural drying &amp; removal of friction tags on neck or body
+                </div>
+              </button>
+              <button class="quiz-opt" onclick="selectQuizOption(1, 'nails')">
+                <i class="fa-solid fa-hand-dots"></i>
+                <div>
+                  <strong>Nails &amp; Keratin Health:</strong> Clearing fungal buildup, yellow cracked nails, &amp; brittle cuticles
+                </div>
+              </button>
+              <button class="quiz-opt" onclick="selectQuizOption(1, 'fullbody')">
+                <i class="fa-solid fa-dna"></i>
+                <div>
+                  <strong>Full-Body Firming &amp; Longevity:</strong> Tightening loose neck, jawline, &amp; arms via cellular axon signaling
+                </div>
               </button>
             </div>
           </div>
 
-          <!-- Step 2 -->
+          <!-- Step 2: Preferred Routine -->
           <div class="quiz-step" data-step="2">
-            <h4>Question 2 of 3: How would you describe your skin type?</h4>
+            <h4>Question 2 of 3: What application method fits your routine best?</h4>
             <div class="quiz-options">
-              <button class="quiz-opt" onclick="selectQuizOption(2, 'dry')">
-                <i class="fa-solid fa-droplet-slash"></i>
-                <span>Dry or mature skin needing deep nourishment</span>
+              <button class="quiz-opt" onclick="selectQuizOption(2, 'cream')">
+                <i class="fa-solid fa-pump-soap"></i>
+                <div>
+                  <strong>Daily Topical Cream:</strong> Rich morning &amp; night barrier moisturizer with long-lasting hydration
+                </div>
               </button>
-              <button class="quiz-opt" onclick="selectQuizOption(2, 'combination')">
+              <button class="quiz-opt" onclick="selectQuizOption(2, 'serum')">
                 <i class="fa-solid fa-droplet"></i>
-                <span>Normal / Combination skin</span>
+                <div>
+                  <strong>Targeted Liquid Serum:</strong> Fast-absorbing concentrated drops for high-potency zone delivery
+                </div>
               </button>
-              <button class="quiz-opt" onclick="selectQuizOption(2, 'sensitive')">
-                <i class="fa-solid fa-shield-heart"></i>
-                <span>Sensitive skin prone to redness</span>
+              <button class="quiz-opt" onclick="selectQuizOption(2, 'capsule')">
+                <i class="fa-solid fa-capsules"></i>
+                <div>
+                  <strong>Daily Oral Nutricosmetic:</strong> Plant-based ingestible capsule for inside-out full-body repair
+                </div>
+              </button>
+              <button class="quiz-opt" onclick="selectQuizOption(2, 'specialized')">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <div>
+                  <strong>Specialized Targeted Applicator:</strong> Direct brush-on or precision dropper for spots, tags, or nails
+                </div>
               </button>
             </div>
           </div>
 
-          <!-- Step 3 -->
+          <!-- Step 3: Age & Intensity -->
           <div class="quiz-step" data-step="3">
-            <h4>Question 3 of 3: What is your target age group?</h4>
+            <h4>Question 3 of 3: What is your target age range or concern intensity?</h4>
             <div class="quiz-options">
-              <button class="quiz-opt" onclick="selectQuizOption(3, '30-45')">
-                <span>30 - 45 Years (Early Prevention & Brightening)</span>
+              <button class="quiz-opt" onclick="selectQuizOption(3, '20-39')">
+                <i class="fa-solid fa-clock"></i>
+                <div>
+                  <strong>Ages 20 – 39 (Early Prevention &amp; Brightening):</strong> Stop initial aging, clear blemishes, &amp; protect barrier
+                </div>
               </button>
-              <button class="quiz-opt" onclick="selectQuizOption(3, '46-60')">
-                <span>46 - 60 Years (Active Collagen & Firming)</span>
+              <button class="quiz-opt" onclick="selectQuizOption(3, '40-59')">
+                <i class="fa-solid fa-hourglass-half"></i>
+                <div>
+                  <strong>Ages 40 – 59 (Active Rejuvenation &amp; Remodeling):</strong> Rebuild collagen bounce, smooth lines, &amp; fade discoloration
+                </div>
               </button>
               <button class="quiz-opt" onclick="selectQuizOption(3, '60+')">
-                <span>60+ Years (Deep Wrinkle & Age Spot Reversal)</span>
+                <i class="fa-solid fa-shield-halved"></i>
+                <div>
+                  <strong>Ages 60+ (Maximum Clinical Strength):</strong> Deep wrinkle reversal, stubborn blemish clearing, &amp; intensive renewal
+                </div>
               </button>
             </div>
           </div>
@@ -981,8 +1032,8 @@
           <!-- Result Card (Hidden by default) -->
           <div class="quiz-result" id="quizResult" style="display: none;">
             <div class="result-badge">YOUR RECOMMENDED MATCH</div>
-            <h3 id="resultTitle">Kollagen Intensiv™</h3>
-            <p id="resultDesc">Based on your answers, restoring natural collagen synthesis and deep cellular hydration is your #1 priority.</p>
+            <h3 id="resultTitle">Product Match</h3>
+            <p id="resultDesc">Personalized recommendation explanation.</p>
             <div class="result-product-wrap" id="resultProductWrap">
               <!-- Dynamically populated via JS -->
             </div>
