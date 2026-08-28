@@ -19,5 +19,40 @@
 - [Kerassentials Review](/kerassentials-review.html): Clinical review of Kerassentials Nail & Skin Recovery Oil. Analyzes Undecylenic Acid (USP 5%) and 4-oil botanical matrix designed to defeat drug-resistant fungus and rebuild clear nail keratin beds.
 
 ## Clinical Journal Articles
+- [Clinical Research Journal](/blog.html): Main clinical research index covering comparative dermatological studies, peptide mechanisms, and barrier defense benchmarks.
 - [Syn-Coll vs Retinol Article](/blog-syn-coll-vs-retinol.html): Clinical comparison between Palmitoyl Tripeptide-5 and Retinol.
 - [Dermal Scar Remodeling Article](/blog-how-to-fade-acne-scars.html): Research paper on scar tissue remodeling using Symglucan and peptides.
+
+## Análisis en Español (Spanish Reviews)
+- [Portal de Análisis (ES)](/es/index.html): Página principal comparativa en español con los 7 productos, quiz de piel y esquema JSON-LD completo.
+- [Matriz Comparativa (ES)](/es/comparison.html): Tabla comparativa clínica completa en español evaluando los 7 productos contra alternativas del mercado.
+- [Kollagen Intensiv (ES)](/es/kollagen-intensiv-review.html): Análisis clínico del péptido Syn-Coll® y la renovación del colágeno.
+- [Synevra UltraLift (ES)](/es/synevra-ultralift-review.html): Análisis del sistema dipéptido SYN-AKE® para arrugas de expresión.
+- [Axavive (ES)](/es/axavive-review.html): Análisis del nutricosmetico oral con Astragalósido IV y Corteza de Pino.
+- [Illuminatural 6i (ES)](/es/illuminatural-6i-review.html): Análisis del corrector botánico de manchas oscuras con Alfa-Arbutina.
+- [Dermefface FX7 (ES)](/es/dermefface-fx7-review.html): Análisis de la terapia de remodelación de cicatrices con Symglucan.
+- [ReviTag (ES)](/es/revitag-review.html): Análisis del sérum para acrocordones con Avena Coloidal y Espino Amarillo.
+- [Kerassentials (ES)](/es/kerassentials-review.html): Análisis del aceite de recuperación de uñas con Ácido Undecilénico.
+
+## Klinische Tests auf Deutsch (German Reviews)
+- [Testportal (DE)](/de/index.html): Deutsche Startseite mit 7-Produkt-Vergleich, Hauttest und vollständigem JSON-LD-Schema.
+- [Vergleichsmatrix (DE)](/de/comparison.html): Vollständige klinische Vergleichstabelle auf Deutsch für alle 7 Produkte gegen Marktalternativen.
+- [Kollagen Intensiv (DE)](/de/kollagen-intensiv-review.html): Klinischer Test des Syn-Coll®-Peptids und der Kollagenerneuerung.
+- [Synevra UltraLift (DE)](/de/synevra-ultralift-review.html): Analyse des SYN-AKE®-Dipeptid-Systems gegen Mimikfalten.
+- [Axavive (DE)](/de/axavive-review.html): Test des oralen Nutrikosmetikums mit Astragalosid IV und Kiefernrindenextrakt.
+- [Illuminatural 6i (DE)](/de/illuminatural-6i-review.html): Analyse des botanischen Aufhellers gegen Pigmentflecken mit Alpha-Arbutin.
+- [Dermefface FX7 (DE)](/de/dermefface-fx7-review.html): Test der Narbenremodelierungs-Therapie mit Symglucan und Pro-Coll-One+.
+- [ReviTag (DE)](/de/revitag-review.html): Analyse des Stielwarzen-Serums mit kolloidalem Hafer und Sanddorn.
+- [Kerassentials (DE)](/de/kerassentials-review.html): Test des Nagelregenerations-Öls mit Undecylensäure.
+
+## Analyses Cliniques en Français (French Reviews)
+- [Portail d'Analyses (FR)](/fr/index.html): Page d'accueil française avec comparaison des 7 produits, quiz de peau et schéma JSON-LD complet.
+- [Matrice Comparative (FR)](/fr/comparison.html): Tableau comparatif clinique complet en français évaluant les 7 produits par rapport aux alternatives du marché.
+- [Kollagen Intensiv (FR)](/fr/kollagen-intensiv-review.html): Analyse clinique du peptide Syn-Coll® et du renouvellement du collagène.
+- [Synevra UltraLift (FR)](/fr/synevra-ultralift-review.html): Analyse du système dipeptide SYN-AKE® contre les rides d'expression.
+- [Axavive (FR)](/fr/axavive-review.html): Analyse du nutricosmétique oral avec Astragaloside IV et Écorce de Pin.
+- [Illuminatural 6i (FR)](/fr/illuminatural-6i-review.html): Analyse du correcteur botanique anti-taches avec Alpha-Arbutine.
+- [Dermefface FX7 (FR)](/fr/dermefface-fx7-review.html): Analyse de la thérapie de remodelage des cicatrices avec Symglucan.
+- [ReviTag (FR)](/fr/revitag-review.html): Analyse du sérum anti-acrochordons avec Avoine Colloïdale et Argousier.
+- [Kerassentials (FR)](/fr/kerassentials-review.html): Analyse de l'huile de récupération des ongles avec Acide Undécylénique.
+

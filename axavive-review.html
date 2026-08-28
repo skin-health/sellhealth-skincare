@@ -13,8 +13,13 @@
   <meta name="robots" content="index, follow">
   <meta name="referrer" content="strict-origin-when-cross-origin">
 
-  <!-- Canonical URL -->
+  <!-- Canonical & Multilingual Alternate Hreflang Tags -->
   <link rel="canonical" href="https://dermaudit.com/axavive-review.html">
+  <link rel="alternate" hreflang="x-default" href="https://dermaudit.com/axavive-review.html">
+  <link rel="alternate" hreflang="en" href="https://dermaudit.com/axavive-review.html">
+  <link rel="alternate" hreflang="es" href="https://dermaudit.com/es/axavive-review.html">
+  <link rel="alternate" hreflang="de" href="https://dermaudit.com/de/axavive-review.html">
+  <link rel="alternate" hreflang="fr" href="https://dermaudit.com/fr/axavive-review.html">
 
   <!-- Open Graph / Social -->
   <meta property="og:type" content="article">
@@ -83,7 +88,9 @@
       "priceCurrency": "USD",
       "price": "69.00",
       "priceValidUntil": "2026-12-31",
+      "validFrom": "2026-01-01",
       "availability": "https://schema.org/InStock",
+      "itemCondition": "https://schema.org/NewCondition",
       "hasMerchantReturnPolicy": {
         "@type": "MerchantReturnPolicy",
         "applicableCountry": "US",
@@ -91,8 +98,55 @@
         "merchantReturnDays": 90,
         "returnMethod": "https://schema.org/ReturnByMail",
         "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility"
+      },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "0.00",
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 5,
+            "unitCode": "DAY"
+          }
+        }
       }
     }
+  }
+  </script>
+
+  <!-- JSON-LD FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can I take Axavive along with my regular daily moisturizer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely! In fact, pairing an oral nutricosmetic like Axavive with a topical cream like Kollagen Intensiv is considered the ultimate \"inside-out + outside-in\" skincare stack."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are there any side effects or allergens?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Axavive is formulated with 100% natural botanical extracts, free of soy, dairy, gluten, and GMOs. It is gentle on the stomach and manufactured under strict cGMP standards."
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -147,10 +201,10 @@
             <i class="fa-solid fa-globe"></i> EN <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-lang">
-            <a href="index.html" class="dropdown-item active"><span class="flag-icon">🇺🇸</span> English (US)</a>
-            <a href="es/index.html" class="dropdown-item"><span class="flag-icon">🇪🇸</span> Español</a>
-            <a href="de/index.html" class="dropdown-item"><span class="flag-icon">🇩🇪</span> Deutsch</a>
-            <a href="fr/index.html" class="dropdown-item"><span class="flag-icon">🇫🇷</span> Français</a>
+            <a href="axavive-review.html" class="dropdown-item active"><span class="flag-icon">🇺🇸</span> English (US)</a>
+            <a href="es/axavive-review.html" class="dropdown-item"><span class="flag-icon">🇪🇸</span> Español</a>
+            <a href="de/axavive-review.html" class="dropdown-item"><span class="flag-icon">🇩🇪</span> Deutsch</a>
+            <a href="fr/axavive-review.html" class="dropdown-item"><span class="flag-icon">🇫🇷</span> Français</a>
           </div>
         </div>
       </nav>
@@ -199,50 +253,50 @@
           </div>
 
           <!-- Section 3: What Makes Axavive Different? -->
-          <h2 style="font-size: 1.8rem; margin: 2rem 0 1rem 0; color: var(--color-dark);">Why Swallow a Capsule Instead of Smearing a Lotion?</h2>
+          <h2 class="review-section-heading">Why Swallow a Capsule Instead of Smearing a Lotion?</h2>
           <p style="margin-bottom: 1.5rem;">
             Topical face creams only touch the top 10% of your skin (the stratum corneum). <strong>Axavive™</strong> is an oral nutricosmetic capsule designed to enter your bloodstream, delivering concentrated botanical adaptogens to the deep dermis across your <strong>entire body</strong>—including your jawline, neck, chest, arms, and thighs.
           </p>
 
           <!-- Section 4: The 6 Botanical Actives -->
-          <h2 style="font-size: 1.8rem; margin: 2rem 0 1rem 0; color: var(--color-dark);">The 6 Cellular Repair Super-Plants Inside Axavive</h2>
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; margin-bottom: 2rem;">
-            <div style="background: var(--color-light-bg); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--color-border);">
-              <h3 style="color: var(--color-primary-dark); font-family: var(--font-sans); font-size: 1.1rem; margin-bottom: 0.4rem;">
+          <h2 class="review-section-heading">The 6 Cellular Repair Super-Plants Inside Axavive</h2>
+          <div class="ingredient-grid">
+            <div class="ingredient-card">
+              <h3>
                 <i class="fa-solid fa-dna" style="color: var(--color-gold);"></i> 1. Astragaloside IV
               </h3>
-              <p style="font-size: 0.88rem; color: var(--color-muted); margin: 0;">
+              <p>
                 <strong>The Telomere Guardian:</strong> Upregulates cellular longevity enzymes and keeps fibroblasts churning out youthful collagen.
               </p>
             </div>
-            <div style="background: var(--color-light-bg); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--color-border);">
-              <h3 style="color: var(--color-primary-dark); font-family: var(--font-sans); font-size: 1.1rem; margin-bottom: 0.4rem;">
+            <div class="ingredient-card">
+              <h3>
                 <i class="fa-solid fa-tower-broadcast" style="color: var(--color-gold);"></i> 2. Bacopa Monnieri
               </h3>
-              <p style="font-size: 0.88rem; color: var(--color-muted); margin: 0;">
+              <p>
                 <strong>The 5G Signal Booster:</strong> Protects delicate sensory nerve endings (axons) from oxidative damage so repair signals get delivered clearly.
               </p>
             </div>
-            <div style="background: var(--color-light-bg); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--color-border);">
-              <h3 style="color: var(--color-primary-dark); font-family: var(--font-sans); font-size: 1.1rem; margin-bottom: 0.4rem;">
+            <div class="ingredient-card">
+              <h3>
                 <i class="fa-solid fa-tree" style="color: var(--color-gold);"></i> 3. Pine Bark Extract (OPCs)
               </h3>
-              <p style="font-size: 0.88rem; color: var(--color-muted); margin: 0;">
+              <p>
                 <strong>The Enzyme Blocker:</strong> Binds to collagen fibers to block destructive MMP enzymes while opening micro-blood vessels for oxygen delivery.
               </p>
             </div>
-            <div style="background: var(--color-light-bg); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--color-border);">
-              <h3 style="color: var(--color-primary-dark); font-family: var(--font-sans); font-size: 1.1rem; margin-bottom: 0.4rem;">
+            <div class="ingredient-card">
+              <h3>
                 <i class="fa-solid fa-bolt" style="color: var(--color-gold);"></i> 4. Panax Ginseng &amp; Centella
               </h3>
-              <p style="font-size: 0.88rem; color: var(--color-muted); margin: 0;">
+              <p>
                 <strong>Cellular ATP Energy:</strong> Boosts cellular battery power (ATP) and stimulates smooth Type-I and Type-III collagen scaffolding.
               </p>
             </div>
           </div>
 
           <!-- Section 5: Clinical Matchup Table -->
-          <h2 style="font-size: 1.8rem; margin: 2rem 0 1rem 0; color: var(--color-dark);">Delivery Comparison: Axavive™ vs. Topical Creams</h2>
+          <h2 class="review-section-heading">Delivery Comparison: Axavive™ vs. Topical Creams</h2>
           <div class="table-responsive card reveal" style="margin-bottom: 3rem;">
             <table class="comparison-table">
               <thead>
@@ -325,41 +379,41 @@
           </div>
 
           <!-- Section 7: Expected Results Timeline -->
-          <h2 style="font-size: 1.8rem; margin: 2rem 0 1rem 0; color: var(--color-dark);">The 90-Day Full-Body Renewal Timeline</h2>
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-bottom: 2.5rem;">
-            <div style="background: var(--color-light-bg); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--color-border);">
-              <h3 style="color: var(--color-primary-dark); font-family: var(--font-sans); font-size: 1.1rem; margin-bottom: 0.4rem;">Days 1 – 14</h3>
-              <p style="font-size: 0.9rem; color: var(--color-muted); margin: 0;">Micro-blood flow increases. Skin across the face and neck feels hydrated, less dry, and smoother.</p>
+          <h2 class="review-section-heading">The 90-Day Full-Body Renewal Timeline</h2>
+          <div class="timeline-grid">
+            <div class="ingredient-card">
+              <h3>Days 1 – 14</h3>
+              <p>Micro-blood flow increases. Skin across the face and neck feels hydrated, less dry, and smoother.</p>
             </div>
-            <div style="background: var(--color-light-bg); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--color-border);">
-              <h3 style="color: var(--color-primary-dark); font-family: var(--font-sans); font-size: 1.1rem; margin-bottom: 0.4rem;">Days 15 – 45</h3>
-              <p style="font-size: 0.9rem; color: var(--color-muted); margin: 0;">Axon signals reactivate collagen production. Noticeable lifting along the jawline and firmer neck texture.</p>
+            <div class="ingredient-card">
+              <h3>Days 15 – 45</h3>
+              <p>Axon signals reactivate collagen production. Noticeable lifting along the jawline and firmer neck texture.</p>
             </div>
-            <div style="background: var(--color-light-bg); padding: 1.25rem; border-radius: 8px; border: 1px solid var(--color-border);">
-              <h3 style="color: var(--color-primary-dark); font-family: var(--font-sans); font-size: 1.1rem; margin-bottom: 0.4rem;">Days 46 – 90+</h3>
-              <p style="font-size: 0.9rem; color: var(--color-muted); margin: 0;">Peak systemic elasticity. Full-body skin snapback, softened deep lines, and glowing cellular resilience.</p>
+            <div class="ingredient-card">
+              <h3>Days 46 – 90+</h3>
+              <p>Peak systemic elasticity. Full-body skin snapback, softened deep lines, and glowing cellular resilience.</p>
             </div>
           </div>
 
           <!-- Section 8: FAQ -->
-          <h2 style="font-size: 1.8rem; margin: 2rem 0 1rem 0; color: var(--color-dark);">Frequently Asked Questions</h2>
-          <div class="faq-item" style="border: 1px solid var(--color-border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem;">
-            <h4 style="color: var(--color-dark); margin-bottom: 0.5rem;">Can I take Axavive along with my regular daily moisturizer?</h4>
-            <p style="color: var(--color-muted); font-size: 0.9rem; margin: 0; line-height: 1.5;">
-              Absolutely! In fact, pairing an oral nutricosmetic like Axavive with a topical cream like Kollagen Intensiv is considered the ultimate "inside-out + outside-in" skincare stack.
+          <h2 class="review-section-heading">Frequently Asked Questions</h2>
+          <div class="faq-item faq-item-card">
+            <h4>Can I take Axavive along with my regular daily moisturizer?</h4>
+            <p>
+              Absolutely! In fact, pairing an oral nutricosmetic like Axavive with a topical cream like Kollagen Intensiv is considered the ultimate \"inside-out + outside-in\" skincare stack.
             </p>
           </div>
-          <div class="faq-item" style="border: 1px solid var(--color-border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem;">
-            <h4 style="color: var(--color-dark); margin-bottom: 0.5rem;">Are there any side effects or allergens?</h4>
-            <p style="color: var(--color-muted); font-size: 0.9rem; margin: 0; line-height: 1.5;">
+          <div class="faq-item faq-item-card">
+            <h4>Are there any side effects or allergens?</h4>
+            <p>
               Axavive is formulated with 100% natural botanical extracts, free of soy, dairy, gluten, and GMOs. It is gentle on the stomach and manufactured under strict cGMP standards.
             </p>
           </div>
 
           <!-- Section 9: CTA Card -->
-          <div class="reveal" style="text-align: center; margin: 3rem 0 1.5rem 0; padding: 2.5rem; background: var(--color-primary-dark); color: #fff; border-radius: 12px;">
-            <h3 style="color: #fff; margin-bottom: 0.5rem; font-family: var(--font-serif); font-size: 1.8rem;">Ready to Restore Your Skin's 5G Signal?</h3>
-            <p style="color: #E2E8F0; max-width: 580px; margin: 0 auto 1.5rem; line-height: 1.6;">
+          <div class="reveal cta-card-navy">
+            <h3>Ready to Restore Your Skin's 5G Signal?</h3>
+            <p>
               Recharge your dermal communication grid with Axavive™ completely risk-free with an ironclad 90-day money-back guarantee.
             </p>
             <a href="https://09cf56o9v9wfep64fslwmu3r7f.hop.clickbank.net" class="btn btn-gold btn-xl affiliate-link" data-product="axavive" target="_blank" rel="noopener noreferrer nofollow sponsored">

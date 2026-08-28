@@ -5,6 +5,20 @@
 :root {
     /* Color Palette Tokens (Luxury Midnight Blue & Gold) */
   --color-primary: #D4AF37;       /* Rose Gold / Warm Amber */
+  --color-gold: #D4AF37;
+  --color-gold-accent: #D4AF37;
+  --transition: all 0.25s ease;
+  
+  /* Radius Tokens */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  
+  /* Shadow Tokens */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.5);
+  --shadow-gold: 0 4px 14px rgba(197, 160, 89, 0.3);
   --color-primary-dark: #C5A059;
   --color-primary-light: #E8D3A7;
   --color-primary-deep: #A47E3B;  /* Deep gold for hover states */
@@ -1217,7 +1231,7 @@ h1, h2, h3, h4 {
 
 .disclaimer-box p { margin-bottom: 0.75rem; line-height: 1.5; }
 
-.copyright { text-align: center; margin-top: 1.5rem; color: #64748B; }
+.copyright { text-align: center; margin-top: 1.5rem; color: #94A3B8; }
 
 /* Modal */
 .modal-overlay {
@@ -1792,7 +1806,7 @@ h1, h2, h3, h4 {
   text-decoration: none;
   font-size: 0.85rem;
   transition: var(--transition);
-  min-height: 36px;
+  min-height: 44px;
 }
 
 .dropdown-item:hover {
@@ -2020,3 +2034,161 @@ h1, h2, h3, h4 {
   }
 }
 
+/* ==========================================================================
+   FOCUS-VISIBLE ACCESSIBILITY (WCAG 2.4.7)
+   ========================================================================== */
+/* Global focus ring for all interactive elements via keyboard navigation */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Specific component focus overrides */
+.nav-link:focus-visible,
+.dropdown-toggle:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+.btn:focus-visible,
+.btn-gold:focus-visible,
+.cta-btn:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 5px rgba(212, 175, 55, 0.4);
+}
+
+.faq-question:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+.quiz-option:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.25);
+}
+
+/* ==========================================================================
+   REVIEW PAGE COMPONENT CLASSES (Inline Style Replacements)
+   ========================================================================== */
+
+/* Ingredient Dream Team 4-card grid */
+.ingredient-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.ingredient-card {
+  background: var(--color-light-bg);
+  padding: 1.25rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+
+.ingredient-card h3 {
+  color: var(--color-primary-dark);
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.ingredient-card h3 i {
+  color: var(--color-gold);
+}
+
+.ingredient-card p {
+  font-size: 0.88rem;
+  color: var(--color-muted);
+  margin: 0;
+}
+
+/* Expected Results Timeline grid */
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.timeline-card {
+  background: var(--color-light-bg);
+  padding: 1.25rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+
+.timeline-card h3 {
+  color: var(--color-primary-dark);
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.timeline-card p {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  margin: 0;
+}
+
+/* Review section headings */
+.review-section-heading {
+  font-size: 1.8rem;
+  margin: 2rem 0 1rem 0;
+  color: var(--color-dark);
+}
+
+/* FAQ item cards on review pages */
+.faq-item-card {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.faq-item-card h4 {
+  color: var(--color-dark);
+  margin-bottom: 0.5rem;
+}
+
+.faq-item-card p {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Navy CTA card at bottom of reviews (WCAG AAA Contrast Compliant) */
+.cta-card-navy {
+  text-align: center;
+  margin: 3rem 0 1.5rem 0;
+  padding: 2.5rem;
+  background: linear-gradient(135deg, #0B1120 0%, #111C35 100%);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  color: #F8FAFC;
+  border-radius: 12px;
+}
+
+.cta-card-navy h3 {
+  color: #F8FAFC;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+}
+
+.cta-card-navy p {
+  color: #CBD5E1;
+  max-width: 580px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
+}

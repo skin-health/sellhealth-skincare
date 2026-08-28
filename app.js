@@ -270,7 +270,7 @@ const I18N_QUIZ = {
         badge: 'GANADOR: #1 SÉRUM LÍNEAS DE EXPRESIÓN',
         img: '/Pictures/synevra.jpg',
         hook: 'Dipéptido SYN-AKE® que relaja las microcontracciones faciales en un 82% para suavizar líneas de expresión sin agujas.',
-        reviewUrl: 'kollagen-intensiv-review.html',
+        reviewUrl: 'synevra-ultralift-review.html',
         linkKey: 'synevra',
         btnText: 'Ver Oferta Oficial'
       },
@@ -280,7 +280,7 @@ const I18N_QUIZ = {
         badge: 'GANADOR: #1 NUTRICOSMÉTICO ORAL',
         img: '/Pictures/axavive.jpg',
         hook: 'Astragalósido IV y corteza de pino que restauran la firmeza celular dérmica en todo el cuerpo desde el interior.',
-        reviewUrl: 'kollagen-intensiv-review.html',
+        reviewUrl: 'axavive-review.html',
         linkKey: 'axavive',
         btnText: 'Ver Oferta Oficial'
       },
@@ -290,7 +290,7 @@ const I18N_QUIZ = {
         badge: 'GANADOR: #1 CORRECTOR DE MANCHAS',
         img: '/Pictures/illuminatural.jpg',
         hook: '6 activos botánicos (Alfa-Arbutina, Niacinamida) que frenan la melanina sin hidroquinona ni químicos agresivos.',
-        reviewUrl: 'kollagen-intensiv-review.html',
+        reviewUrl: 'illuminatural-6i-review.html',
         linkKey: 'illuminatural',
         btnText: 'Obtener Descuento Oficial'
       },
@@ -300,7 +300,7 @@ const I18N_QUIZ = {
         badge: 'GANADOR: #1 REGENERACIÓN DE CICATRICES',
         img: '/Pictures/dermefface.jpg',
         hook: 'Symglucan y Pro-Coll-One+ que aumentan el colágeno Tipo I en un 1.190% para aplanar marcas quirúrgicas y de acné.',
-        reviewUrl: 'kollagen-intensiv-review.html',
+        reviewUrl: 'dermefface-fx7-review.html',
         linkKey: 'dermefface',
         btnText: 'Obtener Descuento Oficial'
       },
@@ -310,7 +310,7 @@ const I18N_QUIZ = {
         badge: 'GANADOR: #1 ELIMINADOR DE VERRUGAS',
         img: '/Pictures/revitag.jpg',
         hook: 'Fórmula 99.8% botánica con Avena Coloidal y Espino Amarillo que seca y desprende acrocordones sin dolor.',
-        reviewUrl: 'kollagen-intensiv-review.html',
+        reviewUrl: 'revitag-review.html',
         linkKey: 'revitag',
         btnText: 'Obtener Descuento Oficial'
       },
@@ -320,7 +320,7 @@ const I18N_QUIZ = {
         badge: 'GANADOR: #1 CUIDADO DE UÑAS Y QUERATINA',
         img: '/Pictures/kerassentials.jpg',
         hook: 'Ácido Undecilénico (USP 5%) y aceites esenciales que penetran la uña para eliminar hongos y restaurar la queratina.',
-        reviewUrl: 'kollagen-intensiv-review.html',
+        reviewUrl: 'kerassentials-review.html',
         linkKey: 'kerassentials',
         btnText: 'Ver Oferta Oficial'
       }
@@ -352,7 +352,7 @@ const I18N_QUIZ = {
         badge: 'SIEGER: #1 MIMIKFALTEN-SERUM',
         img: '/Pictures/synevra.jpg',
         hook: 'Gezieltes SYN-AKE® Dipeptid entspannt Mikromuskelspannungen um 82% für glattere Stirn- und Lachfalten ohne Nadeln.',
-        reviewUrl: 'kollagen-intensiv-review.html',
+        reviewUrl: 'synevra-ultralift-review.html',
         linkKey: 'synevra',
         btnText: 'Offizielles Angebot Prüfen'
       },
@@ -362,7 +362,7 @@ const I18N_QUIZ = {
         badge: 'SIEGER: #1 ORALES NUTRIKOSMETIKUM',
         img: '/Pictures/axavive.jpg',
         hook: 'Astragalosid IV und Pinienrinden-OPC stellen die zelluläre Axon-Kommunikation wieder her für Ganzkörper-Straffung.',
-        reviewUrl: 'kollagen-intensiv-review.html',
+        reviewUrl: 'axavive-review.html',
         linkKey: 'axavive',
         btnText: 'Offizielles Angebot Prüfen'
       },
@@ -372,7 +372,7 @@ const I18N_QUIZ = {
         badge: 'SIEGER: #1 GEGEN PIGMENTFLECKEN',
         img: '/Pictures/illuminatural.jpg',
         hook: '6 pflanzliche Aufheller (Alpha-Arbutin, Niacinamid) hemmen Melaninbildung ohne schädliche Bleichmittel.',
-        reviewUrl: 'kollagen-intensiv-review.html',
+        reviewUrl: 'illuminatural-6i-review.html',
         linkKey: 'illuminatural',
         btnText: 'Offiziellen Rabatt Sichern'
       },
@@ -382,7 +382,7 @@ const I18N_QUIZ = {
         badge: 'SIEGER: #1 NARBENREGENERATION',
         img: '/Pictures/dermefface.jpg',
         hook: 'Symglucan und Pro-Coll-One+ steigern Typ-I-Kollagen um 1.190% zur Glättung von OP-Narben und Aknenarben.',
-        reviewUrl: 'kollagen-intensiv-review.html',
+        reviewUrl: 'dermefface-fx7-review.html',
         linkKey: 'dermefface',
         btnText: 'Offiziellen Rabatt Sichern'
       },
@@ -392,7 +392,7 @@ const I18N_QUIZ = {
         badge: 'SIEGER: #1 NATÜRLICHER WARZENENTFERNER',
         img: '/Pictures/revitag.jpg',
         hook: '99,8% pflanzliche Formel (Hafermehl, Sanddorn Omega-7) trocknet Hautanhängsel schmerzfrei und ohne Narbenbildung aus.',
-        reviewUrl: 'kollagen-intensiv-review.html',
+        reviewUrl: 'revitag-review.html',
         linkKey: 'revitag',
         btnText: 'Offiziellen Rabatt Sichern'
       },
@@ -402,7 +402,7 @@ const I18N_QUIZ = {
         badge: 'SIEGER: #1 NAGEL- & KERATINREGENERATION',
         img: '/Pictures/kerassentials.jpg',
         hook: 'Undecylensäure (USP 5%) und ätherische Öle dringen tief ins Nagelbett ein, um Pilzbefall zu beseitigen.',
-        reviewUrl: 'kollagen-intensiv-review.html',
+        reviewUrl: 'kerassentials-review.html',
         linkKey: 'kerassentials',
         btnText: 'Offizielles Angebot Prüfen'
       }
@@ -434,7 +434,7 @@ const I18N_QUIZ = {
         badge: 'GAGNANT: #1 SÉRUM RIDES D\'EXPRESSION',
         img: '/Pictures/synevra.jpg',
         hook: 'Dipeptide SYN-AKE® réduisant les micro-tensions faciales de 82% pour lisser le front et le sourire sans injections.',
-        reviewUrl: 'kollagen-intensiv-review.html',
+        reviewUrl: 'synevra-ultralift-review.html',
         linkKey: 'synevra',
         btnText: 'Voir l\'Offre Officielle'
       },
@@ -444,7 +444,7 @@ const I18N_QUIZ = {
         badge: 'GAGNANT: #1 NUTRICOSMÉTIQUE ORAL',
         img: '/Pictures/axavive.jpg',
         hook: 'Astragaloside IV et OPC d\'écorce de pin pour restaurer la communication cellulaire et raffermir tout le corps.',
-        reviewUrl: 'kollagen-intensiv-review.html',
+        reviewUrl: 'axavive-review.html',
         linkKey: 'axavive',
         btnText: 'Voir l\'Offre Officielle'
       },
@@ -454,7 +454,7 @@ const I18N_QUIZ = {
         badge: 'GAGNANT: #1 CORRECTEUR DE TACHES BRUNES',
         img: '/Pictures/illuminatural.jpg',
         hook: '6 actifs végétaux (Alpha-Arbutine, Niacinamide) freinant la mélanine sans hydroquinone ni décapants agressifs.',
-        reviewUrl: 'kollagen-intensiv-review.html',
+        reviewUrl: 'illuminatural-6i-review.html',
         linkKey: 'illuminatural',
         btnText: 'Obtenir la Réduction Officielle'
       },
@@ -464,7 +464,7 @@ const I18N_QUIZ = {
         badge: 'GAGNANT: #1 RÉGÉNÉRATION DES CICATRICES',
         img: '/Pictures/dermefface.jpg',
         hook: 'Symglucan et Pro-Coll-One+ stimulant le collagène de type I de +1 190% pour aplanir marques et cicatrices.',
-        reviewUrl: 'kollagen-intensiv-review.html',
+        reviewUrl: 'dermefface-fx7-review.html',
         linkKey: 'dermefface',
         btnText: 'Obtenir la Réduction Officielle'
       },
@@ -474,7 +474,7 @@ const I18N_QUIZ = {
         badge: 'GAGNANT: #1 ÉLIMINATEUR D\'ACROCHORDONS',
         img: '/Pictures/revitag.jpg',
         hook: 'Formule à 99,8% végétale (Avoine Colloïdale, Argousier) séchant les acrochordons sans douleur ni cicatrice.',
-        reviewUrl: 'kollagen-intensiv-review.html',
+        reviewUrl: 'revitag-review.html',
         linkKey: 'revitag',
         btnText: 'Obtenir la Réduction Officielle'
       },
@@ -484,7 +484,7 @@ const I18N_QUIZ = {
         badge: 'GAGNANT: #1 SOIN KÉRATINE & ONGLERIE',
         img: '/Pictures/kerassentials.jpg',
         hook: 'Acide Undécylénique (USP 5%) et complexe d\'huiles essentielles purifiant les ongles et restaurant la kératine.',
-        reviewUrl: 'kollagen-intensiv-review.html',
+        reviewUrl: 'kerassentials-review.html',
         linkKey: 'kerassentials',
         btnText: 'Voir l\'Offre Officielle'
       }
