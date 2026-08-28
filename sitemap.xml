@@ -107,12 +107,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-  <url>
-    <loc>https://dermaudit.com/privacy.html</loc>
-    <lastmod>2026-08-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
 
   <!-- Spanish (es) Localized Pages -->
   <url>
@@ -427,5 +421,50 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://dermaudit.com/es/comparison.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://dermaudit.com/de/comparison.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://dermaudit.com/fr/comparison.html"/>
+  </url>
+  <!-- Privacy Policy (EN + ES + DE + FR) -->
+  <url>
+    <loc>https://dermaudit.com/privacy.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermaudit.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermaudit.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dermaudit.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dermaudit.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dermaudit.com/fr/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://dermaudit.com/es/privacy.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermaudit.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermaudit.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dermaudit.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dermaudit.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dermaudit.com/fr/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://dermaudit.com/de/privacy.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermaudit.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermaudit.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dermaudit.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dermaudit.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dermaudit.com/fr/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://dermaudit.com/fr/privacy.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermaudit.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermaudit.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dermaudit.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dermaudit.com/de/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dermaudit.com/fr/privacy.html"/>
   </url>
 </urlset>
