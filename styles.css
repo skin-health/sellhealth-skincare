@@ -913,8 +913,8 @@ h1, h2, h3, h4 {
 .pros-cons-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.25rem;
-  margin-bottom: 2rem;
+  gap: 1.5rem;
+  margin: 2.5rem 0;
 }
 
 .pros-box, .cons-box {
@@ -1307,6 +1307,7 @@ h1, h2, h3, h4 {
   }
   .pros-cons-grid {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
   .footer-grid {
     grid-template-columns: 1fr 1fr;
