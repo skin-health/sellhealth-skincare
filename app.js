@@ -161,76 +161,334 @@ window.selectQuizOption = function(step, value) {
   }
 };
 
-const QUIZ_CATALOG = {
-  kollagen: {
-    title: 'Match: Kollagen Intensiv™ Collagen Renewal Cream',
-    shortName: 'Kollagen Intensiv™',
-    badge: 'WINNER: #1 DAILY ANTI-AGING CREAM',
-    img: 'Pictures/KollagenIntensiv.jpg',
-    hook: 'Clinically proven Swiss Syn-Coll® formula boosts natural collagen synthesis by 354% to restore youthful dermal bounce and smooth deep wrinkles.',
-    reviewUrl: 'kollagen-intensiv-review.html',
-    linkKey: 'kollagen',
-    btnText: 'Claim Official Discount'
+const I18N_QUIZ = {
+  en: {
+    readReview: 'Read In-Depth Review',
+    age60: 'For deep-set concerns in the 60+ age range, clinical-strength formulas deliver the most noticeable structural repair.',
+    age40: 'At ages 40–59, active remodeling and targeted signaling produce fast, visible improvements.',
+    age20: 'Starting in your 20s–30s, early clinical intervention stops damage in its tracks and preserves youthful resilience.',
+    routineCapsule: 'Your preference for an oral nutricosmetic makes systemic inside-out cellular repair your ideal match.',
+    routineSerum: 'Your preference for a concentrated targeted serum provides fast-absorbing active zone delivery.',
+    routineSpecialized: 'Your preference for a precision applicator ensures high-potency delivery exactly where you need it.',
+    routineCream: 'Your preference for a daily barrier cream provides continuous 24-hour hydration and nourishing protection.',
+    catalog: {
+      kollagen: {
+        title: 'Match: Kollagen Intensiv™ Collagen Renewal Cream',
+        shortName: 'Kollagen Intensiv™',
+        badge: 'WINNER: #1 DAILY ANTI-AGING CREAM',
+        img: '/Pictures/KollagenIntensiv.jpg',
+        hook: 'Clinically proven Swiss Syn-Coll® formula boosts natural collagen synthesis by 354% to restore youthful dermal bounce and smooth deep wrinkles.',
+        reviewUrl: 'kollagen-intensiv-review.html',
+        linkKey: 'kollagen',
+        btnText: 'Claim Official Discount'
+      },
+      synevra: {
+        title: 'Match: Synevra UltraLift™ Expression Line Protocol',
+        shortName: 'Synevra UltraLift™',
+        badge: 'WINNER: #1 EXPRESSION LINE SERUM',
+        img: '/Pictures/synevra.jpg',
+        hook: 'Targeted SYN-AKE® dipeptide relaxes dynamic muscle twitching by 82% to smooth forehead furrows and smile creases without needles.',
+        reviewUrl: 'synevra-ultralift-review.html',
+        linkKey: 'synevra',
+        btnText: 'Claim Official Offer'
+      },
+      axavive: {
+        title: 'Match: Axavive™ Neuro-Dermal Nutricosmetic',
+        shortName: 'Axavive™',
+        badge: 'WINNER: #1 ORAL NUTRICOSMETIC',
+        img: '/Pictures/axavive.jpg',
+        hook: 'Astragaloside IV and Pine Bark OPCs restore cellular axon communication and protect DNA telomeres for full-body skin firmness.',
+        reviewUrl: 'axavive-review.html',
+        linkKey: 'axavive',
+        btnText: 'Claim Official Offer'
+      },
+      illuminatural: {
+        title: 'Match: Illuminatural 6i™ Advanced Skin Brightener',
+        shortName: 'Illuminatural 6i™',
+        badge: 'WINNER: #1 DARK SPOT CORRECTOR',
+        img: '/Pictures/illuminatural.jpg',
+        hook: '6 synergistic plant-based brighteners (Alpha-Arbutin, Whitonyl®, Niacinamide) interrupt melanin overproduction without dangerous bleaches.',
+        reviewUrl: 'illuminatural-6i-review.html',
+        linkKey: 'illuminatural',
+        btnText: 'Claim Official Discount'
+      },
+      dermefface: {
+        title: 'Match: Dermefface FX7® Scar Remodeling Therapy',
+        shortName: 'Dermefface FX7®',
+        badge: 'WINNER: #1 SCAR REMODELING THERAPY',
+        img: '/Pictures/dermefface.jpg',
+        hook: 'Symglucan (10%) and Pro-Coll-One+ stimulate smooth Type I collagen synthesis by 1,190% to flatten surgical marks, cuts, and acne scars.',
+        reviewUrl: 'dermefface-fx7-review.html',
+        linkKey: 'dermefface',
+        btnText: 'Claim Official Discount'
+      },
+      revitag: {
+        title: 'Match: ReviTag™ Botanical Skin Tag Remover',
+        shortName: 'ReviTag™',
+        badge: 'WINNER: #1 NATURAL SKIN TAG REMOVER',
+        img: '/Pictures/revitag.jpg',
+        hook: '99.8% active botanical formula (Colloidal Oatmeal, Sea Buckthorn Omega-7, Epicatechin) painlessly dries and detaches skin tags with zero scarring.',
+        reviewUrl: 'revitag-review.html',
+        linkKey: 'revitag',
+        btnText: 'Claim Official Discount'
+      },
+      kerassentials: {
+        title: 'Match: Kerassentials™ Doctor-Formulated Nail Oil',
+        shortName: 'Kerassentials™',
+        badge: 'WINNER: #1 NAIL & KERATIN RECOVERY',
+        img: '/Pictures/kerassentials.jpg',
+        hook: 'Undecylenic Acid (USP 5%) + 4-oil blend penetrates the nail bed to clear fungal buildup and restore strong, clear, healthy nails.',
+        reviewUrl: 'kerassentials-review.html',
+        linkKey: 'kerassentials',
+        btnText: 'Claim Official Offer'
+      }
+    }
   },
-  synevra: {
-    title: 'Match: Synevra UltraLift™ Expression Line Protocol',
-    shortName: 'Synevra UltraLift™',
-    badge: 'WINNER: #1 EXPRESSION LINE SERUM',
-    img: 'Pictures/synevra.jpg',
-    hook: 'Targeted SYN-AKE® dipeptide relaxes dynamic muscle twitching by 82% to smooth forehead furrows and smile creases without needles.',
-    reviewUrl: 'synevra-ultralift-review.html',
-    linkKey: 'synevra',
-    btnText: 'Claim Official Offer'
+  es: {
+    readReview: 'Leer Análisis Clínico',
+    age60: 'Para arrugas profundas a partir de los 60 años, las fórmulas clínicas restauran la estructura dérmica con máxima eficacia.',
+    age40: 'Entre los 40 y 59 años, la renovación activa y péptidos específicos producen mejoras visibles rápidas.',
+    age20: 'En los 20 y 30 años, la intervención clínica temprana previene el daño celular y mantiene la elasticidad.',
+    routineCapsule: 'Tu preferencia por un nutricosmético oral activa la regeneración celular de adentro hacia afuera.',
+    routineSerum: 'Tu preferencia por un sérum concentrado ofrece absorción rápida y máxima potencia en zonas clave.',
+    routineSpecialized: 'Tu preferencia por un aplicador de precisión garantiza alta concentración donde más lo necesitas.',
+    routineCream: 'Tu preferencia por una crema de barrera diaria brinda hidratación continua por 24 horas.',
+    catalog: {
+      kollagen: {
+        title: 'Coincidencia: Crema Antiarrugas Kollagen Intensiv™',
+        shortName: 'Kollagen Intensiv™',
+        badge: 'GANADOR: #1 CREMA ANTIEDAD DIARIA',
+        img: '/Pictures/KollagenIntensiv.jpg',
+        hook: 'Fórmula suiza con Syn-Coll® clínicamente probada: estimula el colágeno en un +354% para alisar arrugas profundas.',
+        reviewUrl: 'kollagen-intensiv-review.html',
+        linkKey: 'kollagen',
+        btnText: 'Obtener Descuento Oficial'
+      },
+      synevra: {
+        title: 'Coincidencia: Protocolo Synevra UltraLift™',
+        shortName: 'Synevra UltraLift™',
+        badge: 'GANADOR: #1 SÉRUM LÍNEAS DE EXPRESIÓN',
+        img: '/Pictures/synevra.jpg',
+        hook: 'Dipéptido SYN-AKE® que relaja las microcontracciones faciales en un 82% para suavizar líneas de expresión sin agujas.',
+        reviewUrl: 'kollagen-intensiv-review.html',
+        linkKey: 'synevra',
+        btnText: 'Ver Oferta Oficial'
+      },
+      axavive: {
+        title: 'Coincidencia: Nutricosmético Celular Axavive™',
+        shortName: 'Axavive™',
+        badge: 'GANADOR: #1 NUTRICOSMÉTICO ORAL',
+        img: '/Pictures/axavive.jpg',
+        hook: 'Astragalósido IV y corteza de pino que restauran la firmeza celular dérmica en todo el cuerpo desde el interior.',
+        reviewUrl: 'kollagen-intensiv-review.html',
+        linkKey: 'axavive',
+        btnText: 'Ver Oferta Oficial'
+      },
+      illuminatural: {
+        title: 'Coincidencia: Aclarador Facial Illuminatural 6i™',
+        shortName: 'Illuminatural 6i™',
+        badge: 'GANADOR: #1 CORRECTOR DE MANCHAS',
+        img: '/Pictures/illuminatural.jpg',
+        hook: '6 activos botánicos (Alfa-Arbutina, Niacinamida) que frenan la melanina sin hidroquinona ni químicos agresivos.',
+        reviewUrl: 'kollagen-intensiv-review.html',
+        linkKey: 'illuminatural',
+        btnText: 'Obtener Descuento Oficial'
+      },
+      dermefface: {
+        title: 'Coincidencia: Terapia de Cicatrices Dermefface FX7®',
+        shortName: 'Dermefface FX7®',
+        badge: 'GANADOR: #1 REGENERACIÓN DE CICATRICES',
+        img: '/Pictures/dermefface.jpg',
+        hook: 'Symglucan y Pro-Coll-One+ que aumentan el colágeno Tipo I en un 1.190% para aplanar marcas quirúrgicas y de acné.',
+        reviewUrl: 'kollagen-intensiv-review.html',
+        linkKey: 'dermefface',
+        btnText: 'Obtener Descuento Oficial'
+      },
+      revitag: {
+        title: 'Coincidencia: Sérum Botánico ReviTag™',
+        shortName: 'ReviTag™',
+        badge: 'GANADOR: #1 ELIMINADOR DE VERRUGAS',
+        img: '/Pictures/revitag.jpg',
+        hook: 'Fórmula 99.8% botánica con Avena Coloidal y Espino Amarillo que seca y desprende acrocordones sin dolor.',
+        reviewUrl: 'kollagen-intensiv-review.html',
+        linkKey: 'revitag',
+        btnText: 'Obtener Descuento Oficial'
+      },
+      kerassentials: {
+        title: 'Coincidencia: Aceite Restaurador Kerassentials™',
+        shortName: 'Kerassentials™',
+        badge: 'GANADOR: #1 CUIDADO DE UÑAS Y QUERATINA',
+        img: '/Pictures/kerassentials.jpg',
+        hook: 'Ácido Undecilénico (USP 5%) y aceites esenciales que penetran la uña para eliminar hongos y restaurar la queratina.',
+        reviewUrl: 'kollagen-intensiv-review.html',
+        linkKey: 'kerassentials',
+        btnText: 'Ver Oferta Oficial'
+      }
+    }
   },
-  axavive: {
-    title: 'Match: Axavive™ Neuro-Dermal Nutricosmetic',
-    shortName: 'Axavive™',
-    badge: 'WINNER: #1 ORAL NUTRICOSMETIC',
-    img: 'Pictures/axavive.jpg',
-    hook: 'Astragaloside IV and Pine Bark OPCs restore cellular axon communication and protect DNA telomeres for full-body skin firmness.',
-    reviewUrl: 'axavive-review.html',
-    linkKey: 'axavive',
-    btnText: 'Claim Official Offer'
+  de: {
+    readReview: 'Klinischen Testbericht Lesen',
+    age60: 'Für ausgeprägte Falten ab 60 Jahren bieten klinisch dosierte Wirkstoffe die effektivste Tiefenregeneration.',
+    age40: 'Im Alter von 40–59 Jahren sorgen aktive Signalpeptide für schnelle, sichtbare Hautglättung.',
+    age20: 'In den 20er und 30er Jahren bewahrt eine frühzeitige klinische Pflege die jugendliche Spannkraft.',
+    routineCapsule: 'Ihre Vorliebe für ein orales Nutrikosmetikum aktiviert die zelluläre Regeneration von innen nach außen.',
+    routineSerum: 'Ihre Vorliebe für ein hochkonzentriertes Serum ermöglicht schnelle Aufnahme und gezielte Wirkung.',
+    routineSpecialized: 'Ihre Vorliebe für einen Präzisionsapplikator liefert maximale Wirkstoffkonzentration direkt an der Problemstelle.',
+    routineCream: 'Ihre Vorliebe für eine tägliche Schutzcreme spendet kontinuierlich 24 Stunden Feuchtigkeit.',
+    catalog: {
+      kollagen: {
+        title: 'Ergebnis: Kollagen Intensiv™ Kollagen-Erneuerungscreme',
+        shortName: 'Kollagen Intensiv™',
+        badge: 'SIEGER: #1 TÄGLICHE ANTI-AGING CREME',
+        img: '/Pictures/KollagenIntensiv.jpg',
+        hook: 'Klinisch geprüfte Schweizer Syn-Coll® Formel steigert die Kollagenproduktion um 354% und mildert tiefe Falten.',
+        reviewUrl: 'kollagen-intensiv-review.html',
+        linkKey: 'kollagen',
+        btnText: 'Offiziellen Rabatt Sichern'
+      },
+      synevra: {
+        title: 'Ergebnis: Synevra UltraLift™ Mimikfalten-Serum',
+        shortName: 'Synevra UltraLift™',
+        badge: 'SIEGER: #1 MIMIKFALTEN-SERUM',
+        img: '/Pictures/synevra.jpg',
+        hook: 'Gezieltes SYN-AKE® Dipeptid entspannt Mikromuskelspannungen um 82% für glattere Stirn- und Lachfalten ohne Nadeln.',
+        reviewUrl: 'kollagen-intensiv-review.html',
+        linkKey: 'synevra',
+        btnText: 'Offizielles Angebot Prüfen'
+      },
+      axavive: {
+        title: 'Ergebnis: Axavive™ Zelluläres Nutrikosmetikum',
+        shortName: 'Axavive™',
+        badge: 'SIEGER: #1 ORALES NUTRIKOSMETIKUM',
+        img: '/Pictures/axavive.jpg',
+        hook: 'Astragalosid IV und Pinienrinden-OPC stellen die zelluläre Axon-Kommunikation wieder her für Ganzkörper-Straffung.',
+        reviewUrl: 'kollagen-intensiv-review.html',
+        linkKey: 'axavive',
+        btnText: 'Offizielles Angebot Prüfen'
+      },
+      illuminatural: {
+        title: 'Ergebnis: Illuminatural 6i™ Pigmentflecken-Aufheller',
+        shortName: 'Illuminatural 6i™',
+        badge: 'SIEGER: #1 GEGEN PIGMENTFLECKEN',
+        img: '/Pictures/illuminatural.jpg',
+        hook: '6 pflanzliche Aufheller (Alpha-Arbutin, Niacinamid) hemmen Melaninbildung ohne schädliche Bleichmittel.',
+        reviewUrl: 'kollagen-intensiv-review.html',
+        linkKey: 'illuminatural',
+        btnText: 'Offiziellen Rabatt Sichern'
+      },
+      dermefface: {
+        title: 'Ergebnis: Dermefface FX7® Narbentherapie',
+        shortName: 'Dermefface FX7®',
+        badge: 'SIEGER: #1 NARBENREGENERATION',
+        img: '/Pictures/dermefface.jpg',
+        hook: 'Symglucan und Pro-Coll-One+ steigern Typ-I-Kollagen um 1.190% zur Glättung von OP-Narben und Aknenarben.',
+        reviewUrl: 'kollagen-intensiv-review.html',
+        linkKey: 'dermefface',
+        btnText: 'Offiziellen Rabatt Sichern'
+      },
+      revitag: {
+        title: 'Ergebnis: ReviTag™ Botanisches Stielwarzen-Serum',
+        shortName: 'ReviTag™',
+        badge: 'SIEGER: #1 NATÜRLICHER WARZENENTFERNER',
+        img: '/Pictures/revitag.jpg',
+        hook: '99,8% pflanzliche Formel (Hafermehl, Sanddorn Omega-7) trocknet Hautanhängsel schmerzfrei und ohne Narbenbildung aus.',
+        reviewUrl: 'kollagen-intensiv-review.html',
+        linkKey: 'revitag',
+        btnText: 'Offiziellen Rabatt Sichern'
+      },
+      kerassentials: {
+        title: 'Ergebnis: Kerassentials™ Nagelöl & Keratinpflege',
+        shortName: 'Kerassentials™',
+        badge: 'SIEGER: #1 NAGEL- & KERATINREGENERATION',
+        img: '/Pictures/kerassentials.jpg',
+        hook: 'Undecylensäure (USP 5%) und ätherische Öle dringen tief ins Nagelbett ein, um Pilzbefall zu beseitigen.',
+        reviewUrl: 'kollagen-intensiv-review.html',
+        linkKey: 'kerassentials',
+        btnText: 'Offizielles Angebot Prüfen'
+      }
+    }
   },
-  illuminatural: {
-    title: 'Match: Illuminatural 6i™ Advanced Skin Brightener',
-    shortName: 'Illuminatural 6i™',
-    badge: 'WINNER: #1 DARK SPOT CORRECTOR',
-    img: 'Pictures/illuminatural.jpg',
-    hook: '6 synergistic plant-based brighteners (Alpha-Arbutin, Whitonyl®, Niacinamide) interrupt melanin overproduction without dangerous bleaches.',
-    reviewUrl: 'illuminatural-6i-review.html',
-    linkKey: 'illuminatural',
-    btnText: 'Claim Official Discount'
-  },
-  dermefface: {
-    title: 'Match: Dermefface FX7® Scar Remodeling Therapy',
-    shortName: 'Dermefface FX7®',
-    badge: 'WINNER: #1 SCAR REMODELING THERAPY',
-    img: 'Pictures/dermefface.jpg',
-    hook: 'Symglucan (10%) and Pro-Coll-One+ stimulate smooth Type I collagen synthesis by 1,190% to flatten surgical marks, cuts, and acne scars.',
-    reviewUrl: 'dermefface-fx7-review.html',
-    linkKey: 'dermefface',
-    btnText: 'Claim Official Discount'
-  },
-  revitag: {
-    title: 'Match: ReviTag™ Botanical Skin Tag Remover',
-    shortName: 'ReviTag™',
-    badge: 'WINNER: #1 NATURAL SKIN TAG REMOVER',
-    img: 'Pictures/revitag.jpg',
-    hook: '99.8% active botanical formula (Colloidal Oatmeal, Sea Buckthorn Omega-7, Epicatechin) painlessly dries and detaches skin tags with zero scarring.',
-    reviewUrl: 'revitag-review.html',
-    linkKey: 'revitag',
-    btnText: 'Claim Official Discount'
-  },
-  kerassentials: {
-    title: 'Match: Kerassentials™ Doctor-Formulated Nail Oil',
-    shortName: 'Kerassentials™',
-    badge: 'WINNER: #1 NAIL & KERATIN RECOVERY',
-    img: 'Pictures/kerassentials.jpg',
-    hook: 'Undecylenic Acid (USP 5%) + 4-oil blend penetrates the nail bed to clear fungal buildup and restore strong, clear, healthy nails.',
-    reviewUrl: 'kerassentials-review.html',
-    linkKey: 'kerassentials',
-    btnText: 'Claim Official Offer'
+  fr: {
+    readReview: 'Lire l\'Avis Clinique Complet',
+    age60: 'Pour les rides profondes après 60 ans, les formules cliniques puissantes restaurent la fermeté structurelle.',
+    age40: 'Entre 40 et 59 ans, le renouvellement actif et les peptides ciblés procurent un lissage visible rapide.',
+    age20: 'Dès 20–30 ans, une routine clinique précoce bloque les dégradations cutanées et préserve l\'élasticité.',
+    routineCapsule: 'Votre choix d\'un nutricosmétique oral stimule la régénération cellulaire de l\'intérieur vers l\'extérieur.',
+    routineSerum: 'Votre choix d\'un sérum ciblé garantit une absorption ultra-rapide et une haute concentration.',
+    routineSpecialized: 'Votre choix d\'un applicateur de précision cible exactement la zone à traiter.',
+    routineCream: 'Votre choix d\'une crème de jour protectrice offre 24h d\'hydratation continue.',
+    catalog: {
+      kollagen: {
+        title: 'Résultat: Crème Régénérante au Collagène Kollagen Intensiv™',
+        shortName: 'Kollagen Intensiv™',
+        badge: 'GAGNANT: #1 CRÈME ANTI-ÂGE QUOTIDIENNE',
+        img: '/Pictures/KollagenIntensiv.jpg',
+        hook: 'Formule suisse Syn-Coll® cliniquement prouvée: stimule la synthèse naturelle de collagène de +354%.',
+        reviewUrl: 'kollagen-intensiv-review.html',
+        linkKey: 'kollagen',
+        btnText: 'Obtenir la Réduction Officielle'
+      },
+      synevra: {
+        title: 'Résultat: Protocole Lissant Synevra UltraLift™',
+        shortName: 'Synevra UltraLift™',
+        badge: 'GAGNANT: #1 SÉRUM RIDES D\'EXPRESSION',
+        img: '/Pictures/synevra.jpg',
+        hook: 'Dipeptide SYN-AKE® réduisant les micro-tensions faciales de 82% pour lisser le front et le sourire sans injections.',
+        reviewUrl: 'kollagen-intensiv-review.html',
+        linkKey: 'synevra',
+        btnText: 'Voir l\'Offre Officielle'
+      },
+      axavive: {
+        title: 'Résultat: Nutricosmétique Cellulaire Axavive™',
+        shortName: 'Axavive™',
+        badge: 'GAGNANT: #1 NUTRICOSMÉTIQUE ORAL',
+        img: '/Pictures/axavive.jpg',
+        hook: 'Astragaloside IV et OPC d\'écorce de pin pour restaurer la communication cellulaire et raffermir tout le corps.',
+        reviewUrl: 'kollagen-intensiv-review.html',
+        linkKey: 'axavive',
+        btnText: 'Voir l\'Offre Officielle'
+      },
+      illuminatural: {
+        title: 'Résultat: Soin Éclaircissant Anti-Taches Illuminatural 6i™',
+        shortName: 'Illuminatural 6i™',
+        badge: 'GAGNANT: #1 CORRECTEUR DE TACHES BRUNES',
+        img: '/Pictures/illuminatural.jpg',
+        hook: '6 actifs végétaux (Alpha-Arbutine, Niacinamide) freinant la mélanine sans hydroquinone ni décapants agressifs.',
+        reviewUrl: 'kollagen-intensiv-review.html',
+        linkKey: 'illuminatural',
+        btnText: 'Obtenir la Réduction Officielle'
+      },
+      dermefface: {
+        title: 'Résultat: Thérapie Cicatrisante Dermefface FX7®',
+        shortName: 'Dermefface FX7®',
+        badge: 'GAGNANT: #1 RÉGÉNÉRATION DES CICATRICES',
+        img: '/Pictures/dermefface.jpg',
+        hook: 'Symglucan et Pro-Coll-One+ stimulant le collagène de type I de +1 190% pour aplanir marques et cicatrices.',
+        reviewUrl: 'kollagen-intensiv-review.html',
+        linkKey: 'dermefface',
+        btnText: 'Obtenir la Réduction Officielle'
+      },
+      revitag: {
+        title: 'Résultat: Sérum Botanique Anti-Acrochordons ReviTag™',
+        shortName: 'ReviTag™',
+        badge: 'GAGNANT: #1 ÉLIMINATEUR D\'ACROCHORDONS',
+        img: '/Pictures/revitag.jpg',
+        hook: 'Formule à 99,8% végétale (Avoine Colloïdale, Argousier) séchant les acrochordons sans douleur ni cicatrice.',
+        reviewUrl: 'kollagen-intensiv-review.html',
+        linkKey: 'revitag',
+        btnText: 'Obtenir la Réduction Officielle'
+      },
+      kerassentials: {
+        title: 'Résultat: Huile Restauratrice Ongles Kerassentials™',
+        shortName: 'Kerassentials™',
+        badge: 'GAGNANT: #1 SOIN KÉRATINE & ONGLERIE',
+        img: '/Pictures/kerassentials.jpg',
+        hook: 'Acide Undécylénique (USP 5%) et complexe d\'huiles essentielles purifiant les ongles et restaurant la kératine.',
+        reviewUrl: 'kollagen-intensiv-review.html',
+        linkKey: 'kerassentials',
+        btnText: 'Voir l\'Offre Officielle'
+      }
+    }
   }
 };
 
@@ -270,27 +528,29 @@ function showQuizResults() {
     productKey = 'kollagen';
   }
 
-  const product = QUIZ_CATALOG[productKey] || QUIZ_CATALOG.kollagen;
+  const lang = (document.documentElement.lang || 'en').toLowerCase().substring(0, 2);
+  const i18n = I18N_QUIZ[lang] || I18N_QUIZ.en;
+  const product = i18n.catalog[productKey] || i18n.catalog.kollagen;
 
   // 2. Build Contextual Explanation
   let ageContext = '';
   if (quizAnswers.age === '60+') {
-    ageContext = 'For deep-set concerns in the 60+ age range, clinical-strength formulas deliver the most noticeable structural repair.';
+    ageContext = i18n.age60;
   } else if (quizAnswers.age === '40-59') {
-    ageContext = 'At ages 40–59, active remodeling and targeted signaling produce fast, visible improvements.';
+    ageContext = i18n.age40;
   } else {
-    ageContext = 'Starting in your 20s–30s, early clinical intervention stops damage in its tracks and preserves youthful resilience.';
+    ageContext = i18n.age20;
   }
 
   let routineContext = '';
   if (quizAnswers.skinType === 'capsule') {
-    routineContext = 'Your preference for an oral nutricosmetic makes systemic inside-out cellular repair your ideal match.';
+    routineContext = i18n.routineCapsule;
   } else if (quizAnswers.skinType === 'serum') {
-    routineContext = 'Your preference for a concentrated targeted serum provides fast-absorbing active zone delivery.';
+    routineContext = i18n.routineSerum;
   } else if (quizAnswers.skinType === 'specialized') {
-    routineContext = 'Your preference for a precision applicator ensures high-potency delivery exactly where you need it.';
+    routineContext = i18n.routineSpecialized;
   } else {
-    routineContext = 'Your preference for a daily barrier cream provides continuous 24-hour hydration and nourishing protection.';
+    routineContext = i18n.routineCream;
   }
 
   resultTitle.textContent = product.title;
@@ -375,7 +635,7 @@ function showQuizResults() {
   const bookIcon = document.createElement('i');
   bookIcon.className = 'fa-solid fa-book-open';
   reviewBtn.appendChild(bookIcon);
-  reviewBtn.appendChild(document.createTextNode(' Read In-Depth Review'));
+  reviewBtn.appendChild(document.createTextNode(' ' + i18n.readReview));
 
   btnGroup.appendChild(orderBtn);
   btnGroup.appendChild(reviewBtn);

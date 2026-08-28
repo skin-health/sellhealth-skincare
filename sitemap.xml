@@ -1,87 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- English Core Pages -->
   <url>
     <loc>https://dermaudit.com/</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermaudit.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermaudit.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dermaudit.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dermaudit.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dermaudit.com/fr/"/>
   </url>
   <url>
     <loc>https://dermaudit.com/kollagen-intensiv-review.html</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dermaudit.com/dermefface-fx7-review.html</loc>
-    <lastmod>2026-08-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dermaudit.com/illuminatural-6i-review.html</loc>
-    <lastmod>2026-08-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dermaudit.com/links.html</loc>
-    <lastmod>2026-08-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://dermaudit.com/privacy.html</loc>
-    <lastmod>2026-08-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://dermaudit.com/blog.html</loc>
-    <lastmod>2026-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://dermaudit.com/blog-syn-coll-vs-retinol.html</loc>
-    <lastmod>2026-08-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://dermaudit.com/blog-how-to-fade-acne-scars.html</loc>
-    <lastmod>2026-08-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermaudit.com/kollagen-intensiv-review.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermaudit.com/kollagen-intensiv-review.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dermaudit.com/es/kollagen-intensiv-review.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dermaudit.com/de/kollagen-intensiv-review.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dermaudit.com/fr/kollagen-intensiv-review.html"/>
   </url>
   <url>
     <loc>https://dermaudit.com/synevra-ultralift-review.html</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dermaudit.com/axavive-review.html</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dermaudit.com/comparison.html</loc>
-    <lastmod>2026-08-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://dermaudit.com/illuminatural-6i-review.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dermaudit.com/dermefface-fx7-review.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dermaudit.com/revitag-review.html</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dermaudit.com/kerassentials-review.html</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dermaudit.com/comparison.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dermaudit.com/blog.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dermaudit.com/blog-syn-coll-vs-retinol.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dermaudit.com/blog-how-to-fade-acne-scars.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dermaudit.com/privacy.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Spanish (es) Localized Pages -->
+  <url>
+    <loc>https://dermaudit.com/es/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermaudit.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermaudit.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dermaudit.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dermaudit.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dermaudit.com/fr/"/>
+  </url>
+  <url>
+    <loc>https://dermaudit.com/es/kollagen-intensiv-review.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermaudit.com/kollagen-intensiv-review.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermaudit.com/kollagen-intensiv-review.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dermaudit.com/es/kollagen-intensiv-review.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dermaudit.com/de/kollagen-intensiv-review.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dermaudit.com/fr/kollagen-intensiv-review.html"/>
+  </url>
+
+  <!-- German (de) Localized Pages -->
+  <url>
+    <loc>https://dermaudit.com/de/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermaudit.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermaudit.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dermaudit.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dermaudit.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dermaudit.com/fr/"/>
+  </url>
+  <url>
+    <loc>https://dermaudit.com/de/kollagen-intensiv-review.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermaudit.com/kollagen-intensiv-review.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermaudit.com/kollagen-intensiv-review.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dermaudit.com/es/kollagen-intensiv-review.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dermaudit.com/de/kollagen-intensiv-review.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dermaudit.com/fr/kollagen-intensiv-review.html"/>
+  </url>
+
+  <!-- French (fr) Localized Pages -->
+  <url>
+    <loc>https://dermaudit.com/fr/</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermaudit.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermaudit.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dermaudit.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dermaudit.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dermaudit.com/fr/"/>
+  </url>
+  <url>
+    <loc>https://dermaudit.com/fr/kollagen-intensiv-review.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermaudit.com/kollagen-intensiv-review.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermaudit.com/kollagen-intensiv-review.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dermaudit.com/es/kollagen-intensiv-review.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dermaudit.com/de/kollagen-intensiv-review.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dermaudit.com/fr/kollagen-intensiv-review.html"/>
   </url>
 </urlset>
