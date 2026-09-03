@@ -726,6 +726,7 @@ function showQuizResults() {
   resultProductWrap.appendChild(cardWrap);
 
   quizResult.style.display = 'block';
+      quizResult.focus();
   quizResult.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 

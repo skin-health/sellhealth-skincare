@@ -24,7 +24,7 @@
 - [Dermal Scar Remodeling Article](/blog-how-to-fade-acne-scars.html): Research paper on scar tissue remodeling using Symglucan and peptides.
 
 ## Análisis en Español (Spanish Reviews)
-- [Portal de Análisis (ES)](/es/index.html): Página principal comparativa en español con los 7 productos, quiz de piel y esquema JSON-LD completo.
+- [Portal de Análisis (ES)](/es/index.html): Página principal comparativa en español con los 8 productos, quiz de piel y esquema JSON-LD completo.
 - [Matriz Comparativa (ES)](/es/comparison.html): Tabla comparativa clínica completa en español evaluando los 7 productos contra alternativas del mercado.
 - [Kollagen Intensiv (ES)](/es/kollagen-intensiv-review.html): Análisis clínico del péptido Syn-Coll® y la renovación del colágeno.
 - [Synevra UltraLift (ES)](/es/synevra-ultralift-review.html): Análisis del sistema dipéptido SYN-AKE® para arrugas de expresión.
@@ -35,7 +35,7 @@
 - [Kerassentials (ES)](/es/kerassentials-review.html): Análisis del aceite de recuperación de uñas con Ácido Undecilénico.
 
 ## Klinische Tests auf Deutsch (German Reviews)
-- [Testportal (DE)](/de/index.html): Deutsche Startseite mit 7-Produkt-Vergleich, Hauttest und vollständigem JSON-LD-Schema.
+- [Testportal (DE)](/de/index.html): Deutsche Startseite mit 8-Produkt-Vergleich, Hauttest und vollständigem JSON-LD-Schema.
 - [Vergleichsmatrix (DE)](/de/comparison.html): Vollständige klinische Vergleichstabelle auf Deutsch für alle 7 Produkte gegen Marktalternativen.
 - [Kollagen Intensiv (DE)](/de/kollagen-intensiv-review.html): Klinischer Test des Syn-Coll®-Peptids und der Kollagenerneuerung.
 - [Synevra UltraLift (DE)](/de/synevra-ultralift-review.html): Analyse des SYN-AKE®-Dipeptid-Systems gegen Mimikfalten.
@@ -46,7 +46,7 @@
 - [Kerassentials (DE)](/de/kerassentials-review.html): Test des Nagelregenerations-Öls mit Undecylensäure.
 
 ## Analyses Cliniques en Français (French Reviews)
-- [Portail d'Analyses (FR)](/fr/index.html): Page d'accueil française avec comparaison des 7 produits, quiz de peau et schéma JSON-LD complet.
+- [Portail d'Analyses (FR)](/fr/index.html): Page d'accueil française avec comparaison des 8 produits, quiz de peau et schéma JSON-LD complet.
 - [Matrice Comparative (FR)](/fr/comparison.html): Tableau comparatif clinique complet en français évaluant les 7 produits par rapport aux alternatives du marché.
 - [Kollagen Intensiv (FR)](/fr/kollagen-intensiv-review.html): Analyse clinique du peptide Syn-Coll® et du renouvellement du collagène.
 - [Synevra UltraLift (FR)](/fr/synevra-ultralift-review.html): Analyse du système dipeptide SYN-AKE® contre les rides d'expression.

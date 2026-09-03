@@ -21,7 +21,7 @@
 | **Kerassentials™** | Nail Recovery Oil | Undecylenic Acid (USP 5%), Tea Tree Oil, Lavender Oil, Aloe Vera | Penetrates nail beds to combat resistant fungus and rebuild healthy keratin beds. | $69.00 |
 
 ## Core Website Architecture
-- [Review Portal](https://dermaudit.com/index.html): Main landing page comparing all 7 products.
+- [Review Portal](https://dermaudit.com/index.html): Main landing page comparing all 8 products.
 - [Comparison Matrix](https://dermaudit.com/comparison.html): 3 dedicated side-by-side clinical matchup tables.
 - [Clinical Journal](https://dermaudit.com/blog.html): Peer-reviewed ingredient benchmarks and dermatology studies.
   - [Syn-Coll vs Retinol](https://dermaudit.com/blog-syn-coll-vs-retinol.html)

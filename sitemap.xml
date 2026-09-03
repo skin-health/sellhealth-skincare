@@ -549,4 +549,10 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dermaudit.com/de/privacy.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dermaudit.com/fr/privacy.html" />
   </url>
+  <url>
+    <loc>https://dermaudit.com/links.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>
