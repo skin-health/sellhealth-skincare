@@ -21,7 +21,8 @@ const DEFAULT_LINKS = {
   synevra: 'https://fa90bat349vj5m8h47ps5z4k7l.hop.clickbank.net',
   axavive: 'https://09cf56o9v9wfep64fslwmu3r7f.hop.clickbank.net',
   revitag: 'https://291dc5n548rg7xaisfmdj85lfo.hop.clickbank.net',
-  kerassentials: 'https://49c3bew72gob1x96qjfk42vn2p.hop.clickbank.net'
+  kerassentials: 'https://49c3bew72gob1x96qjfk42vn2p.hop.clickbank.net',
+  eyelasticity: 'https://www.naturalhealthsource.com/products/eyelasticity-age-defying-eye-therapy/?aid=282956'
 };
 
 function sanitizeAndValidateAffiliateLink(rawUrl, productKey) {
@@ -37,6 +38,9 @@ function sanitizeAndValidateAffiliateLink(rawUrl, productKey) {
       return `https://www.illuminatural6i.com/ct/${cleanVal}`;
     } else if (productKey === 'dermefface') {
       return `https://www.dermeffacefx7.com/ct/${cleanVal}`;
+    }
+    else if (productKey === 'eyelasticity') {
+      return `https://www.naturalhealthsource.com/products/eyelasticity-age-defying-eye-therapy/?aid=${cleanVal}`;
     }
   }
   
@@ -67,6 +71,9 @@ function sanitizeAndValidateAffiliateLink(rawUrl, productKey) {
     } else if (productKey === 'dermefface') {
       expectedHost = 'www.dermeffacefx7.com';
       expectedHostAlt = 'dermeffacefx7.com';
+    } else if (productKey === 'eyelasticity') {
+      if (parsed.hostname.includes('naturalhealthsource.com')) return cleanVal;
+      return DEFAULT_LINKS[productKey];
     } else {
       return DEFAULT_LINKS[productKey];
     }
@@ -94,6 +101,7 @@ function getAffiliateLinks() {
   let savedAxavive = null;
   let savedReviTag = null;
   let savedKerassentials = null;
+  let savedEyelasticity = null;
   
   try {
     savedKollagen = localStorage.getItem('sellhealth_kollagen_link');
@@ -103,6 +111,7 @@ function getAffiliateLinks() {
     savedAxavive = localStorage.getItem('affiliate_axavive_link');
     savedReviTag = localStorage.getItem('affiliate_revitag_link');
     savedKerassentials = localStorage.getItem('affiliate_kerassentials_link');
+    savedEyelasticity = localStorage.getItem('sellhealth_eyelasticity_link');
   } catch (e) {
     /* Silent fallback — default affiliate links are used automatically. */
   }
@@ -114,7 +123,8 @@ function getAffiliateLinks() {
     synevra: sanitizeAndValidateAffiliateLink(savedSynevra, 'synevra'),
     axavive: sanitizeAndValidateAffiliateLink(savedAxavive, 'axavive'),
     revitag: sanitizeAndValidateAffiliateLink(savedReviTag, 'revitag'),
-    kerassentials: sanitizeAndValidateAffiliateLink(savedKerassentials, 'kerassentials')
+    kerassentials: sanitizeAndValidateAffiliateLink(savedKerassentials, 'kerassentials'),
+    eyelasticity: sanitizeAndValidateAffiliateLink(savedEyelasticity, 'eyelasticity')
   };
 }
 
@@ -176,7 +186,7 @@ const I18N_QUIZ = {
         title: 'Match: Kollagen Intensiv™ Collagen Renewal Cream',
         shortName: 'Kollagen Intensiv™',
         badge: 'WINNER: #1 DAILY ANTI-AGING CREAM',
-        img: '/Pictures/KollagenIntensiv.jpg',
+        img: 'Pictures/KollagenIntensiv.jpg',
         hook: 'Clinically proven Swiss Syn-Coll® formula boosts natural collagen synthesis by 354% to restore youthful dermal bounce and smooth deep wrinkles.',
         reviewUrl: 'kollagen-intensiv-review.html',
         linkKey: 'kollagen',
@@ -186,7 +196,7 @@ const I18N_QUIZ = {
         title: 'Match: Synevra UltraLift™ Expression Line Protocol',
         shortName: 'Synevra UltraLift™',
         badge: 'WINNER: #1 EXPRESSION LINE SERUM',
-        img: '/Pictures/synevra.jpg',
+        img: 'Pictures/synevra.jpg',
         hook: 'Targeted SYN-AKE® dipeptide relaxes dynamic muscle twitching by 82% to smooth forehead furrows and smile creases without needles.',
         reviewUrl: 'synevra-ultralift-review.html',
         linkKey: 'synevra',
@@ -196,17 +206,27 @@ const I18N_QUIZ = {
         title: 'Match: Axavive™ Neuro-Dermal Nutricosmetic',
         shortName: 'Axavive™',
         badge: 'WINNER: #1 ORAL NUTRICOSMETIC',
-        img: '/Pictures/axavive.jpg',
+        img: 'Pictures/axavive.jpg',
         hook: 'Astragaloside IV and Pine Bark OPCs restore cellular axon communication and protect DNA telomeres for full-body skin firmness.',
         reviewUrl: 'axavive-review.html',
         linkKey: 'axavive',
+        btnText: 'Claim Official Offer'
+      },
+      eyelasticity: {
+        title: 'Match: Eyelasticity™ Age-Defying Eye Therapy',
+        shortName: 'Eyelasticity™',
+        badge: 'WINNER: #1 EYE BAG & CIRCLE THERAPY',
+        img: 'Pictures/eyelasticity.png',
+        hook: 'Doctor-formulated multi-peptide therapy (Eyeseryl® + Regu®-Age) drains fluid bags, seals leaky micro-capillaries, and smooths crow\'s feet without milia risk.',
+        reviewUrl: 'eyelasticity-review.html',
+        linkKey: 'eyelasticity',
         btnText: 'Claim Official Offer'
       },
       illuminatural: {
         title: 'Match: Illuminatural 6i™ Advanced Skin Brightener',
         shortName: 'Illuminatural 6i™',
         badge: 'WINNER: #1 DARK SPOT CORRECTOR',
-        img: '/Pictures/illuminatural.jpg',
+        img: 'Pictures/illuminatural.jpg',
         hook: '6 synergistic plant-based brighteners (Alpha-Arbutin, Whitonyl®, Niacinamide) interrupt melanin overproduction without dangerous bleaches.',
         reviewUrl: 'illuminatural-6i-review.html',
         linkKey: 'illuminatural',
@@ -216,7 +236,7 @@ const I18N_QUIZ = {
         title: 'Match: Dermefface FX7® Scar Remodeling Therapy',
         shortName: 'Dermefface FX7®',
         badge: 'WINNER: #1 SCAR REMODELING THERAPY',
-        img: '/Pictures/dermefface.jpg',
+        img: 'Pictures/dermefface.jpg',
         hook: 'Symglucan (10%) and Pro-Coll-One+ stimulate smooth Type I collagen synthesis by 1,190% to flatten surgical marks, cuts, and acne scars.',
         reviewUrl: 'dermefface-fx7-review.html',
         linkKey: 'dermefface',
@@ -226,7 +246,7 @@ const I18N_QUIZ = {
         title: 'Match: ReviTag™ Botanical Skin Tag Remover',
         shortName: 'ReviTag™',
         badge: 'WINNER: #1 NATURAL SKIN TAG REMOVER',
-        img: '/Pictures/revitag.jpg',
+        img: 'Pictures/revitag.jpg',
         hook: '99.8% active botanical formula (Colloidal Oatmeal, Sea Buckthorn Omega-7, Epicatechin) painlessly dries and detaches skin tags with zero scarring.',
         reviewUrl: 'revitag-review.html',
         linkKey: 'revitag',
@@ -236,7 +256,7 @@ const I18N_QUIZ = {
         title: 'Match: Kerassentials™ Doctor-Formulated Nail Oil',
         shortName: 'Kerassentials™',
         badge: 'WINNER: #1 NAIL & KERATIN RECOVERY',
-        img: '/Pictures/kerassentials.jpg',
+        img: 'Pictures/kerassentials.jpg',
         hook: 'Undecylenic Acid (USP 5%) + 4-oil blend penetrates the nail bed to clear fungal buildup and restore strong, clear, healthy nails.',
         reviewUrl: 'kerassentials-review.html',
         linkKey: 'kerassentials',
@@ -258,7 +278,7 @@ const I18N_QUIZ = {
         title: 'Coincidencia: Crema Antiarrugas Kollagen Intensiv™',
         shortName: 'Kollagen Intensiv™',
         badge: 'GANADOR: #1 CREMA ANTIEDAD DIARIA',
-        img: '/Pictures/KollagenIntensiv.jpg',
+        img: 'Pictures/KollagenIntensiv.jpg',
         hook: 'Fórmula suiza con Syn-Coll® clínicamente probada: estimula el colágeno en un +354% para alisar arrugas profundas.',
         reviewUrl: 'kollagen-intensiv-review.html',
         linkKey: 'kollagen',
@@ -268,7 +288,7 @@ const I18N_QUIZ = {
         title: 'Coincidencia: Protocolo Synevra UltraLift™',
         shortName: 'Synevra UltraLift™',
         badge: 'GANADOR: #1 SÉRUM LÍNEAS DE EXPRESIÓN',
-        img: '/Pictures/synevra.jpg',
+        img: 'Pictures/synevra.jpg',
         hook: 'Dipéptido SYN-AKE® que relaja las microcontracciones faciales en un 82% para suavizar líneas de expresión sin agujas.',
         reviewUrl: 'synevra-ultralift-review.html',
         linkKey: 'synevra',
@@ -278,17 +298,27 @@ const I18N_QUIZ = {
         title: 'Coincidencia: Nutricosmético Celular Axavive™',
         shortName: 'Axavive™',
         badge: 'GANADOR: #1 NUTRICOSMÉTICO ORAL',
-        img: '/Pictures/axavive.jpg',
+        img: 'Pictures/axavive.jpg',
         hook: 'Astragalósido IV y corteza de pino que restauran la firmeza celular dérmica en todo el cuerpo desde el interior.',
         reviewUrl: 'axavive-review.html',
         linkKey: 'axavive',
+        btnText: 'Ver Oferta Oficial'
+      },
+      eyelasticity: {
+        title: 'Coincidencia: Eyelasticity™ Terapia Ocular Antienvejecimiento',
+        shortName: 'Eyelasticity™',
+        badge: 'GANADOR: #1 OJERAS Y BOLSAS OCULARES',
+        img: 'Pictures/eyelasticity.png',
+        hook: 'Fórmula peptídica médica (Eyeseryl® + Regu®-Age) que drena líquidos retenidos, sella microcapilares y suaviza patas de gallo sin riesgo de milium.',
+        reviewUrl: 'eyelasticity-review.html',
+        linkKey: 'eyelasticity',
         btnText: 'Ver Oferta Oficial'
       },
       illuminatural: {
         title: 'Coincidencia: Aclarador Facial Illuminatural 6i™',
         shortName: 'Illuminatural 6i™',
         badge: 'GANADOR: #1 CORRECTOR DE MANCHAS',
-        img: '/Pictures/illuminatural.jpg',
+        img: 'Pictures/illuminatural.jpg',
         hook: '6 activos botánicos (Alfa-Arbutina, Niacinamida) que frenan la melanina sin hidroquinona ni químicos agresivos.',
         reviewUrl: 'illuminatural-6i-review.html',
         linkKey: 'illuminatural',
@@ -298,7 +328,7 @@ const I18N_QUIZ = {
         title: 'Coincidencia: Terapia de Cicatrices Dermefface FX7®',
         shortName: 'Dermefface FX7®',
         badge: 'GANADOR: #1 REGENERACIÓN DE CICATRICES',
-        img: '/Pictures/dermefface.jpg',
+        img: 'Pictures/dermefface.jpg',
         hook: 'Symglucan y Pro-Coll-One+ que aumentan el colágeno Tipo I en un 1.190% para aplanar marcas quirúrgicas y de acné.',
         reviewUrl: 'dermefface-fx7-review.html',
         linkKey: 'dermefface',
@@ -308,7 +338,7 @@ const I18N_QUIZ = {
         title: 'Coincidencia: Sérum Botánico ReviTag™',
         shortName: 'ReviTag™',
         badge: 'GANADOR: #1 ELIMINADOR DE VERRUGAS',
-        img: '/Pictures/revitag.jpg',
+        img: 'Pictures/revitag.jpg',
         hook: 'Fórmula 99.8% botánica con Avena Coloidal y Espino Amarillo que seca y desprende acrocordones sin dolor.',
         reviewUrl: 'revitag-review.html',
         linkKey: 'revitag',
@@ -318,7 +348,7 @@ const I18N_QUIZ = {
         title: 'Coincidencia: Aceite Restaurador Kerassentials™',
         shortName: 'Kerassentials™',
         badge: 'GANADOR: #1 CUIDADO DE UÑAS Y QUERATINA',
-        img: '/Pictures/kerassentials.jpg',
+        img: 'Pictures/kerassentials.jpg',
         hook: 'Ácido Undecilénico (USP 5%) y aceites esenciales que penetran la uña para eliminar hongos y restaurar la queratina.',
         reviewUrl: 'kerassentials-review.html',
         linkKey: 'kerassentials',
@@ -340,7 +370,7 @@ const I18N_QUIZ = {
         title: 'Ergebnis: Kollagen Intensiv™ Kollagen-Erneuerungscreme',
         shortName: 'Kollagen Intensiv™',
         badge: 'SIEGER: #1 TÄGLICHE ANTI-AGING CREME',
-        img: '/Pictures/KollagenIntensiv.jpg',
+        img: 'Pictures/KollagenIntensiv.jpg',
         hook: 'Klinisch geprüfte Schweizer Syn-Coll® Formel steigert die Kollagenproduktion um 354% und mildert tiefe Falten.',
         reviewUrl: 'kollagen-intensiv-review.html',
         linkKey: 'kollagen',
@@ -350,7 +380,7 @@ const I18N_QUIZ = {
         title: 'Ergebnis: Synevra UltraLift™ Mimikfalten-Serum',
         shortName: 'Synevra UltraLift™',
         badge: 'SIEGER: #1 MIMIKFALTEN-SERUM',
-        img: '/Pictures/synevra.jpg',
+        img: 'Pictures/synevra.jpg',
         hook: 'Gezieltes SYN-AKE® Dipeptid entspannt Mikromuskelspannungen um 82% für glattere Stirn- und Lachfalten ohne Nadeln.',
         reviewUrl: 'synevra-ultralift-review.html',
         linkKey: 'synevra',
@@ -360,17 +390,27 @@ const I18N_QUIZ = {
         title: 'Ergebnis: Axavive™ Zelluläres Nutrikosmetikum',
         shortName: 'Axavive™',
         badge: 'SIEGER: #1 ORALES NUTRIKOSMETIKUM',
-        img: '/Pictures/axavive.jpg',
+        img: 'Pictures/axavive.jpg',
         hook: 'Astragalosid IV und Pinienrinden-OPC stellen die zelluläre Axon-Kommunikation wieder her für Ganzkörper-Straffung.',
         reviewUrl: 'axavive-review.html',
         linkKey: 'axavive',
+        btnText: 'Offizielles Angebot Prüfen'
+      },
+      eyelasticity: {
+        title: 'Ergebnis: Eyelasticity™ Klinische Augentherapie',
+        shortName: 'Eyelasticity™',
+        badge: 'SIEGER: #1 AUGENRINGE & TRÄNENSÄCKE',
+        img: 'Pictures/eyelasticity.png',
+        hook: 'Ärztlich entwickeltes Peptidserum (Eyeseryl® + Regu®-Age) zur Drainage von Stauflüssigkeit, Stärkung der Kapillaren und Glättung von Krähenfüßen ohne Milien-Risiko.',
+        reviewUrl: 'eyelasticity-review.html',
+        linkKey: 'eyelasticity',
         btnText: 'Offizielles Angebot Prüfen'
       },
       illuminatural: {
         title: 'Ergebnis: Illuminatural 6i™ Pigmentflecken-Aufheller',
         shortName: 'Illuminatural 6i™',
         badge: 'SIEGER: #1 GEGEN PIGMENTFLECKEN',
-        img: '/Pictures/illuminatural.jpg',
+        img: 'Pictures/illuminatural.jpg',
         hook: '6 pflanzliche Aufheller (Alpha-Arbutin, Niacinamid) hemmen Melaninbildung ohne schädliche Bleichmittel.',
         reviewUrl: 'illuminatural-6i-review.html',
         linkKey: 'illuminatural',
@@ -380,7 +420,7 @@ const I18N_QUIZ = {
         title: 'Ergebnis: Dermefface FX7® Narbentherapie',
         shortName: 'Dermefface FX7®',
         badge: 'SIEGER: #1 NARBENREGENERATION',
-        img: '/Pictures/dermefface.jpg',
+        img: 'Pictures/dermefface.jpg',
         hook: 'Symglucan und Pro-Coll-One+ steigern Typ-I-Kollagen um 1.190% zur Glättung von OP-Narben und Aknenarben.',
         reviewUrl: 'dermefface-fx7-review.html',
         linkKey: 'dermefface',
@@ -390,7 +430,7 @@ const I18N_QUIZ = {
         title: 'Ergebnis: ReviTag™ Botanisches Stielwarzen-Serum',
         shortName: 'ReviTag™',
         badge: 'SIEGER: #1 NATÜRLICHER WARZENENTFERNER',
-        img: '/Pictures/revitag.jpg',
+        img: 'Pictures/revitag.jpg',
         hook: '99,8% pflanzliche Formel (Hafermehl, Sanddorn Omega-7) trocknet Hautanhängsel schmerzfrei und ohne Narbenbildung aus.',
         reviewUrl: 'revitag-review.html',
         linkKey: 'revitag',
@@ -400,7 +440,7 @@ const I18N_QUIZ = {
         title: 'Ergebnis: Kerassentials™ Nagelöl & Keratinpflege',
         shortName: 'Kerassentials™',
         badge: 'SIEGER: #1 NAGEL- & KERATINREGENERATION',
-        img: '/Pictures/kerassentials.jpg',
+        img: 'Pictures/kerassentials.jpg',
         hook: 'Undecylensäure (USP 5%) und ätherische Öle dringen tief ins Nagelbett ein, um Pilzbefall zu beseitigen.',
         reviewUrl: 'kerassentials-review.html',
         linkKey: 'kerassentials',
@@ -422,7 +462,7 @@ const I18N_QUIZ = {
         title: 'Résultat: Crème Régénérante au Collagène Kollagen Intensiv™',
         shortName: 'Kollagen Intensiv™',
         badge: 'GAGNANT: #1 CRÈME ANTI-ÂGE QUOTIDIENNE',
-        img: '/Pictures/KollagenIntensiv.jpg',
+        img: 'Pictures/KollagenIntensiv.jpg',
         hook: 'Formule suisse Syn-Coll® cliniquement prouvée: stimule la synthèse naturelle de collagène de +354%.',
         reviewUrl: 'kollagen-intensiv-review.html',
         linkKey: 'kollagen',
@@ -432,7 +472,7 @@ const I18N_QUIZ = {
         title: 'Résultat: Protocole Lissant Synevra UltraLift™',
         shortName: 'Synevra UltraLift™',
         badge: 'GAGNANT: #1 SÉRUM RIDES D\'EXPRESSION',
-        img: '/Pictures/synevra.jpg',
+        img: 'Pictures/synevra.jpg',
         hook: 'Dipeptide SYN-AKE® réduisant les micro-tensions faciales de 82% pour lisser le front et le sourire sans injections.',
         reviewUrl: 'synevra-ultralift-review.html',
         linkKey: 'synevra',
@@ -442,17 +482,27 @@ const I18N_QUIZ = {
         title: 'Résultat: Nutricosmétique Cellulaire Axavive™',
         shortName: 'Axavive™',
         badge: 'GAGNANT: #1 NUTRICOSMÉTIQUE ORAL',
-        img: '/Pictures/axavive.jpg',
+        img: 'Pictures/axavive.jpg',
         hook: 'Astragaloside IV et OPC d\'écorce de pin pour restaurer la communication cellulaire et raffermir tout le corps.',
         reviewUrl: 'axavive-review.html',
         linkKey: 'axavive',
+        btnText: 'Voir l\'Offre Officielle'
+      },
+      eyelasticity: {
+        title: 'Résultat: Eyelasticity™ Thérapie Oculaire Anti-Âge',
+        shortName: 'Eyelasticity™',
+        badge: 'GAGNANT: #1 CERNES & POCHES SOUS LES YEUX',
+        img: 'Pictures/eyelasticity.png',
+        hook: 'Formule peptidique médicale (Eyeseryl® + Regu®-Age) pour drainer l\'eau accumulée, protéger les micro-capillaires et lisser les pattes d\'oie sans risque de grains de milium.',
+        reviewUrl: 'eyelasticity-review.html',
+        linkKey: 'eyelasticity',
         btnText: 'Voir l\'Offre Officielle'
       },
       illuminatural: {
         title: 'Résultat: Soin Éclaircissant Anti-Taches Illuminatural 6i™',
         shortName: 'Illuminatural 6i™',
         badge: 'GAGNANT: #1 CORRECTEUR DE TACHES BRUNES',
-        img: '/Pictures/illuminatural.jpg',
+        img: 'Pictures/illuminatural.jpg',
         hook: '6 actifs végétaux (Alpha-Arbutine, Niacinamide) freinant la mélanine sans hydroquinone ni décapants agressifs.',
         reviewUrl: 'illuminatural-6i-review.html',
         linkKey: 'illuminatural',
@@ -462,7 +512,7 @@ const I18N_QUIZ = {
         title: 'Résultat: Thérapie Cicatrisante Dermefface FX7®',
         shortName: 'Dermefface FX7®',
         badge: 'GAGNANT: #1 RÉGÉNÉRATION DES CICATRICES',
-        img: '/Pictures/dermefface.jpg',
+        img: 'Pictures/dermefface.jpg',
         hook: 'Symglucan et Pro-Coll-One+ stimulant le collagène de type I de +1 190% pour aplanir marques et cicatrices.',
         reviewUrl: 'dermefface-fx7-review.html',
         linkKey: 'dermefface',
@@ -472,7 +522,7 @@ const I18N_QUIZ = {
         title: 'Résultat: Sérum Botanique Anti-Acrochordons ReviTag™',
         shortName: 'ReviTag™',
         badge: 'GAGNANT: #1 ÉLIMINATEUR D\'ACROCHORDONS',
-        img: '/Pictures/revitag.jpg',
+        img: 'Pictures/revitag.jpg',
         hook: 'Formule à 99,8% végétale (Avoine Colloïdale, Argousier) séchant les acrochordons sans douleur ni cicatrice.',
         reviewUrl: 'revitag-review.html',
         linkKey: 'revitag',
@@ -482,7 +532,7 @@ const I18N_QUIZ = {
         title: 'Résultat: Huile Restauratrice Ongles Kerassentials™',
         shortName: 'Kerassentials™',
         badge: 'GAGNANT: #1 SOIN KÉRATINE & ONGLERIE',
-        img: '/Pictures/kerassentials.jpg',
+        img: 'Pictures/kerassentials.jpg',
         hook: 'Acide Undécylénique (USP 5%) et complexe d\'huiles essentielles purifiant les ongles et restaurant la kératine.',
         reviewUrl: 'kerassentials-review.html',
         linkKey: 'kerassentials',
@@ -504,14 +554,16 @@ function showQuizResults() {
   let productKey = 'kollagen';
 
   // 1. Determine Product Match
-  if (quizAnswers.concern === 'skintags') {
+  if (quizAnswers.concern === 'eyebags') {
+    productKey = 'eyelasticity';
+  } else if (quizAnswers.concern === 'darkspots') {
+    productKey = 'illuminatural';
+  } else if (quizAnswers.concern === 'skintags') {
     productKey = 'revitag';
   } else if (quizAnswers.concern === 'nails') {
     productKey = 'kerassentials';
   } else if (quizAnswers.concern === 'scars') {
     productKey = 'dermefface';
-  } else if (quizAnswers.concern === 'darkspots') {
-    productKey = 'illuminatural';
   } else if (quizAnswers.concern === 'expression') {
     productKey = 'synevra';
   } else if (quizAnswers.concern === 'fullbody') {
@@ -573,15 +625,39 @@ function showQuizResults() {
   imgWrap.style.textAlign = 'center';
 
   const img = document.createElement('img');
-  img.src = product.img;
+
+  // Dynamically resolve relative path for root (Pictures/) vs subdirectories like /es/, /de/, /fr/ (../Pictures/)
+  // Supports http/https hosting, GitHub Pages, and local file:/// browsing
+  const isSubdir = window.location.pathname.includes('/es/') || 
+                   window.location.pathname.includes('/de/') || 
+                   window.location.pathname.includes('/fr/') ||
+                   window.location.pathname.includes('\\es\\') ||
+                   window.location.pathname.includes('\\de\\') ||
+                   window.location.pathname.includes('\\fr\\');
+  const basePrefix = isSubdir ? '../' : '';
+  const cleanImgPath = product.img.replace(/^(\.\.\/|\/)+/, '');
+
+  img.src = basePrefix + cleanImgPath;
   img.alt = product.shortName;
-  img.style.maxHeight = '140px';
-  img.style.maxWidth = '140px';
+  img.style.width = '130px';
+  img.style.height = '130px';
+  img.style.maxWidth = '100%';
   img.style.objectFit = 'contain';
   img.style.borderRadius = '8px';
-  img.style.background = '#f8fafc';
+  img.style.background = '#FFFFFF';
   img.style.padding = '0.5rem';
-  img.style.border = '1px solid #e2e8f0';
+  img.style.border = '1px solid var(--color-border)';
+  img.style.display = 'block';
+  img.style.margin = '0 auto';
+
+  // Fallback handler if path resolution encounters unexpected nesting
+  img.onerror = function() {
+    if (!this.dataset.fallbackTried) {
+      this.dataset.fallbackTried = 'true';
+      this.src = (isSubdir ? '' : '../') + cleanImgPath;
+    }
+  };
+
   imgWrap.appendChild(img);
 
   // Info Details

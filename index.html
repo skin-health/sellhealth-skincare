@@ -698,6 +698,7 @@
             <div class="dropdown-category">
               <div class="dropdown-category-title"><i class="fa-solid fa-sun"></i> Dark Spots & Brightening</div>
               <a href="illuminatural-6i-review.html" class="dropdown-item">Illuminatural 6i™ Review</a>
+              <a href="eyelasticity-review.html" class="dropdown-item">Eyelasticity™ Review</a>
             </div>
             <div class="dropdown-divider"></div>
             <div class="dropdown-category">
@@ -977,13 +978,14 @@
           <p class="category-subtext">Advanced botanical tyrosinase inhibitors designed to interrupt melanin overproduction without toxic bleaches.</p>
         </div>
 
-        <div class="featured-single-card" id="illuminatural-card">
-          <div class="img-showcase">
-            <img src="Pictures/illuminatural.jpg" alt="Illuminatural 6i Skin Brightening Serum" loading="lazy" width="850" height="863">
-          </div>
-          <div>
+        <div class="category-product-grid">
+          <!-- Card 1: Illuminatural 6i -->
+          <div class="product-card-vertical" id="illuminatural-card">
             <span class="card-award-ribbon"><i class="fa-solid fa-trophy"></i> Winner: Top Dark Spot Corrector</span>
-            <h3>Illuminatural 6i™ Advanced Skin Brightener</h3>
+            <div class="img-showcase">
+              <img src="Pictures/illuminatural.jpg" alt="Illuminatural 6i Skin Brightening Serum" loading="lazy" width="850" height="863">
+            </div>
+            <h3>Illuminatural 6i™</h3>
             <div class="product-brand-sub">by Skinception • Airless Precision Pump</div>
             <div class="product-rating-compact">
               <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span>
@@ -991,7 +993,7 @@
               <span class="reviews-count">(980+ Reviews)</span>
             </div>
             <p class="product-summary-text">
-              Clinically engineered with 6 synergistic botanical actives to block tyrosinase activity and slough away pigmented cells, visibly fading sun spots, melasma, and post-blemish marks without hydroquinone.
+              Clinically engineered with 6 botanical actives to block tyrosinase activity and fade sun spots, melasma, and hyperpigmentation without toxic bleach.
             </p>
             <div class="product-ingredient-chips">
               <span class="ingredient-chip">Sodium Lactate</span>
@@ -1009,6 +1011,42 @@
                 <i class="fa-solid fa-cart-shopping"></i> Claim Winner Discount
               </a>
               <a href="illuminatural-6i-review.html" class="btn btn-secondary btn-sm btn-block">
+                <i class="fa-solid fa-file-lines"></i> Read Clinical Review
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Eyelasticity -->
+          <div class="product-card-vertical" id="eyelasticity-card">
+            <span class="card-award-ribbon"><i class="fa-solid fa-trophy"></i> Winner: Top Eye Bag &amp; Circle Therapy</span>
+            <div class="img-showcase">
+              <img src="Pictures/eyelasticity.png" alt="Eyelasticity Age-Defying Eye Therapy" loading="lazy" width="500" height="500">
+            </div>
+            <h3>Eyelasticity™</h3>
+            <div class="product-brand-sub">by Skinception • Doctor Formulated</div>
+            <div class="product-rating-compact">
+              <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></span>
+              <span class="score">4.7 / 5.0</span>
+              <span class="reviews-count">(520+ Reviews)</span>
+            </div>
+            <p class="product-summary-text">
+              Doctor-formulated peptide therapy featuring Eyeseryl® and Regu®-Age to drain pooled lymphatic fluid, seal micro-capillaries, and fade stubborn dark circles in 15 days.
+            </p>
+            <div class="product-ingredient-chips">
+              <span class="ingredient-chip">Eyeseryl® (Tetrapeptide-5)</span>
+              <span class="ingredient-chip">Regu®-Age Complex</span>
+              <span class="ingredient-chip">Syn®-Coll</span>
+              <span class="ingredient-chip">Pro-Coll-One+</span>
+            </div>
+            <div class="product-meta-row">
+              <div class="product-meta-price">$59.95 <small>/ bottle</small></div>
+              <div class="product-meta-guarantee"><i class="fa-solid fa-shield-halved"></i> 67-Day Guarantee</div>
+            </div>
+            <div class="product-actions-stacked">
+              <a href="https://www.naturalhealthsource.com/products/eyelasticity-age-defying-eye-therapy/?aid=282956" class="btn btn-gold btn-block affiliate-link" data-product="eyelasticity" target="_blank" rel="noopener noreferrer nofollow sponsored">
+                <i class="fa-solid fa-cart-shopping"></i> Claim Official Offer
+              </a>
+              <a href="eyelasticity-review.html" class="btn btn-secondary btn-sm btn-block">
                 <i class="fa-solid fa-file-lines"></i> Read Clinical Review
               </a>
             </div>
@@ -1181,6 +1219,12 @@
                 <i class="fa-solid fa-bolt"></i>
                 <div>
                   <strong>Expression Lines &amp; Brow Furrows:</strong> Relaxing dynamic forehead tension &amp; crow's feet without needles
+                </div>
+              </button>
+              <button class="quiz-opt" onclick="selectQuizOption(1, 'eyebags')">
+                <i class="fa-solid fa-eye"></i>
+                <div>
+                  <strong>Under-Eye Dark Circles &amp; Bags:</strong> Draining fluid retention, sealing micro-capillaries, &amp; smoothing crow's feet
                 </div>
               </button>
               <button class="quiz-opt" onclick="selectQuizOption(1, 'darkspots')">
@@ -1409,7 +1453,8 @@
       <div class="footer-col">
         <h4><i class="fa-solid fa-wand-magic-sparkles" style="color: var(--color-gold); font-size: 0.85rem;"></i> Targeted Therapy</h4>
         <ul>
-          <li><a href="illuminatural-6i-review.html">Illuminatural 6i™ Review</a></li>
+          <li><a href="illuminatural-6i-review.html">Illuminatural 6i™ (Dark Spots)</a></li>
+            <li><a href="eyelasticity-review.html">Eyelasticity™ (Under-Eye Circles)</a></li>
           <li><a href="dermefface-fx7-review.html">Dermefface FX7® Review</a></li>
           <li><a href="revitag-review.html">ReviTag™ Review</a></li>
           <li><a href="kerassentials-review.html">Kerassentials™ Review</a></li>
