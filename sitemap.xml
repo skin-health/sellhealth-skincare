@@ -135,9 +135,47 @@
   </url>
   <url>
     <loc>https://dermaudit.com/blog.html</loc>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermaudit.com/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermaudit.com/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dermaudit.com/es/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dermaudit.com/de/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dermaudit.com/fr/blog.html"/>
+  </url>
+  <url>
+    <loc>https://dermaudit.com/es/blog.html</loc>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermaudit.com/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermaudit.com/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dermaudit.com/es/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dermaudit.com/de/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dermaudit.com/fr/blog.html"/>
+  </url>
+  <url>
+    <loc>https://dermaudit.com/de/blog.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermaudit.com/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermaudit.com/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dermaudit.com/es/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dermaudit.com/de/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dermaudit.com/fr/blog.html"/>
+  </url>
+  <url>
+    <loc>https://dermaudit.com/fr/blog.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dermaudit.com/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dermaudit.com/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://dermaudit.com/es/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://dermaudit.com/de/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dermaudit.com/fr/blog.html"/>
   </url>
   <url>
     <loc>https://dermaudit.com/blog-syn-coll-vs-retinol.html</loc>
