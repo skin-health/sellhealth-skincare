@@ -1,12 +1,12 @@
 # Derm Audit Journal — Comprehensive Technical Reference
 
-> Independent, evidence-based clinical analysis and dermatological review portal evaluating top clinical anti-aging peptide creams, neuro-dermal expression line serums, oral nutricosmetics, botanical skin brighteners, scar remodeling therapies, blemish serums, and keratin recovery oils.
+> Independent, evidence-based clinical analysis and dermatological review portal evaluating top clinical anti-aging peptide creams, neuro-dermal expression line serums, oral nutricosmetics, botanical skin brighteners, under-eye therapies, scar remodeling gels, blemish serums, and keratin recovery oils.
 
 ## System & Portfolio Overview
 - **Domain**: https://dermaudit.com
 - **Verified Portfolios**: 8 Clinical Flagship Products across 3 Core Treatment Categories.
 - **Supported Languages**: English (`/`), Spanish (`/es/`), German (`/de/`), French (`/fr/`).
-- **Indexable Pages**: 40 URLs with 100% bidirectional `hreflang` reciprocity.
+- **Indexable Pages**: 51 URLs with 100% bidirectional `hreflang` reciprocity.
 
 ## Product Portfolio Summary
 
@@ -16,6 +16,7 @@
 | **Synevra UltraLift™** | Expression Line Protocol | SYN-AKE® Dipeptide, VitaLock™ Oral Beauty Nutrients | Relaxes muscle micro-tensions by 82% to smooth forehead furrows without needles. | $79.00 |
 | **Axavive™** | Oral Nutricosmetic | Astragaloside IV, Pine Bark OPCs, Bacopa Monnieri | Restores cellular axon signaling and protects telomeres for full-body dermal firmness. | $69.00 |
 | **Illuminatural 6i™** | Dark Spot Corrector | Alpha-Arbutin, Niacinamide, Whitonyl®, Magnesium Ascorbyl Phosphate | 6-action botanical tyrosinase inhibition; clears hyperpigmentation without hydroquinone. | $49.95 |
+| **Eyelasticity™** | Under-Eye Therapy | Eyeseryl® (Tetrapeptide-5), Regu®-Age, Syn-Coll®, Pro-Coll-One+ | Drains vascular lymphatic fluid, reduces capillary permeability, and smooths crow's feet without milia risk. | $59.95 |
 | **Dermefface FX7®** | Scar Reduction Therapy | Symglucan (10%), Pro-Coll-One+ (2%), Pentavitin (5%), DL-Panthenol | Increases Type I structural collagen by +1,190% to flatten surgical and acne scars. | $59.95 |
 | **ReviTag™** | Skin Tag Remover | Colloidal Oatmeal, Sea Buckthorn (Omega-7), Epicatechin | Painless botanical collagen-untangling formula that dries and sheds skin tags. | $69.00 |
 | **Kerassentials™** | Nail Recovery Oil | Undecylenic Acid (USP 5%), Tea Tree Oil, Lavender Oil, Aloe Vera | Penetrates nail beds to combat resistant fungus and rebuild healthy keratin beds. | $69.00 |
@@ -47,5 +48,14 @@ A: Axavive delivers Astragaloside IV and Pine Bark OPCs systemically through the
 ### Q: Does Illuminatural 6i contain bleaching chemicals?
 A: No. Illuminatural 6i contains zero hydroquinone, mercury, or harsh bleaching agents. It uses 6 clinically proven botanical brighteners (including Alpha-Arbutin and Niacinamide) to interrupt hyperactive melanin production.
 
+### Q: How does Eyelasticity eliminate under-eye bags and dark circles?
+A: Eyelasticity combines Eyeseryl® (drains excess pooled lymphatic fluid) and Regu®-Age (strengthens micro-capillary walls to prevent blood pooling) with Syn-Coll® to smooth thin periorbital skin without heavy comedogenic oils.
+
 ### Q: How does Dermefface FX7 accelerate scar healing?
 A: Dermefface FX7 combines 10% Symglucan with 2% Pro-Coll-One+ to command skin cells through a 28-day remodeling cycle, increasing healthy Type I collagen synthesis by 1,190% to replace messy Type III scar tissue.
+
+### Q: How does ReviTag remove skin tags without surgery?
+A: ReviTag uses Colloidal Oatmeal, Sea Buckthorn (Omega-7), and Epicatechin to penetrate the peduncle of the skin tag, gently untangling the disordered collagen core until the tag dries and falls off painlessly.
+
+### Q: What makes Kerassentials effective against stubborn nail fungus?
+A: Kerassentials pairs USP 5% Undecylenic Acid with a deep-penetrating four-oil complex (tea tree, clove, lavender, chia seed) to pierce fungus biofilms and eliminate dermatophytes at the nail bed.

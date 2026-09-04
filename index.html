@@ -47,6 +47,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   
   <!-- FontAwesome Icons -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   
   <!-- Main Stylesheet -->
@@ -136,7 +137,8 @@
                 "unitCode": "DAY"
               }
             }
-          }
+          },
+          "itemCondition": "https://schema.org/NewCondition"
         }
       }
     },
@@ -216,7 +218,8 @@
                 "unitCode": "DAY"
               }
             }
-          }
+          },
+          "itemCondition": "https://schema.org/NewCondition"
         }
       }
     },
@@ -296,7 +299,8 @@
                 "unitCode": "DAY"
               }
             }
-          }
+          },
+          "itemCondition": "https://schema.org/NewCondition"
         }
       }
     },
@@ -376,7 +380,8 @@
                 "unitCode": "DAY"
               }
             }
-          }
+          },
+          "itemCondition": "https://schema.org/NewCondition"
         }
       }
     },
@@ -456,7 +461,8 @@
                 "unitCode": "DAY"
               }
             }
-          }
+          },
+          "itemCondition": "https://schema.org/NewCondition"
         }
       }
     },
@@ -536,7 +542,8 @@
                 "unitCode": "DAY"
               }
             }
-          }
+          },
+          "itemCondition": "https://schema.org/NewCondition"
         }
       }
     },
@@ -616,7 +623,8 @@
                 "unitCode": "DAY"
               }
             }
-          }
+          },
+          "itemCondition": "https://schema.org/NewCondition"
         }
       }
     },
@@ -696,13 +704,14 @@
                 "unitCode": "DAY"
               }
             }
-          }
+          },
+          "itemCondition": "https://schema.org/NewCondition"
         }
       }
     }
   ]
 }
-  </script>
+</script>
 
   <!-- JSON-LD FAQ Schema for AEO/SEO -->
   <script type="application/ld+json">
@@ -862,23 +871,90 @@
       </div>
 
       <div class="hero-visual">
-        <div class="hero-card-preview card">
-          <div class="hero-badge-top">#1 Rated Anti-Aging Solution</div>
-          <img src="Pictures/KollagenIntensiv.jpg" alt="Kollagen Intensiv Jar" class="hero-img">
-          <div class="hero-card-details">
-            <h3>Kollagen Intensiv™</h3>
+        <div class="hero-selector-card">
+          <!-- Category Selector Tabs -->
+          <div class="hero-selector-tabs" role="tablist" aria-label="Clinical Solution Categories">
+            <button class="hero-tab-btn active" role="tab" aria-selected="true" id="hero-tab-1" aria-controls="hero-panel-1">
+              <i class="fa-solid fa-hourglass-half"></i>
+              <span>Anti-Aging</span>
+            </button>
+            <button class="hero-tab-btn" role="tab" aria-selected="false" id="hero-tab-2" aria-controls="hero-panel-2">
+              <i class="fa-solid fa-sun"></i>
+              <span>Dark Spots</span>
+            </button>
+            <button class="hero-tab-btn" role="tab" aria-selected="false" id="hero-tab-3" aria-controls="hero-panel-3">
+              <i class="fa-solid fa-bandage"></i>
+              <span>Scars</span>
+            </button>
+          </div>
+
+          <!-- Panel 1: Anti-Aging -->
+          <div class="hero-tab-panel active" id="hero-panel-1" role="tabpanel" aria-labelledby="hero-tab-1">
+            <div class="hero-panel-badge"><i class="fa-solid fa-award"></i> #1 Anti-Aging Solution</div>
+            <img src="Pictures/KollagenIntensiv.jpg" alt="Kollagen Intensiv Jar" class="hero-panel-img" width="517" height="699">
+            <h3 class="hero-panel-title">Kollagen Intensiv™</h3>
             <div class="rating-stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
               <span>4.9 / 5.0 (1,420+ Reviews)</span>
             </div>
-            <p>Swiss patented Syn-Coll peptide formula designed to accelerate natural collagen production and smooth deep expression lines.</p>
-            <a href="https://www.kollagenintensiv.com/ct/282956" class="btn btn-gold btn-block affiliate-link" data-product="kollagen" target="_blank" rel="noopener noreferrer nofollow sponsored">
-              Claim Official Manufacturer Discount <i class="fa-solid fa-arrow-right"></i>
-            </a>
+            <p class="hero-panel-desc">Swiss Syn-Coll® peptide accelerates collagen synthesis by 354% to smooth deep expression wrinkles.</p>
+            <div class="hero-panel-actions">
+              <a href="https://www.kollagenintensiv.com/ct/282956" class="btn btn-gold btn-block affiliate-link" data-product="kollagen" target="_blank" rel="noopener nofollow sponsored">
+                Claim Winner Discount <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="kollagen-intensiv-review.html" class="btn btn-secondary btn-sm btn-block">
+                <i class="fa-solid fa-file-lines"></i> Read Clinical Review
+              </a>
+            </div>
+            <div class="hero-panel-secondary-tag">
+              <i class="fa-solid fa-check"></i> Also evaluates Synevra UltraLift™ &amp; Axavive™
+            </div>
+          </div>
+
+          <!-- Panel 2: Dark Spots & Brightening -->
+          <div class="hero-tab-panel" id="hero-panel-2" role="tabpanel" aria-labelledby="hero-tab-2" hidden>
+            <div class="hero-panel-badge"><i class="fa-solid fa-award"></i> #1 Dark Spot Corrector</div>
+            <img src="Pictures/illuminatural.jpg" alt="Illuminatural 6i Dispenser" class="hero-panel-img" width="500" height="500" loading="lazy">
+            <h3 class="hero-panel-title">Illuminatural 6i™</h3>
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span>4.9 / 5.0 (1,280+ Reviews)</span>
+            </div>
+            <p class="hero-panel-desc">6 active botanical lighteners intercept tyrosinase to fade sun spots and melasma without hydroquinone.</p>
+            <div class="hero-panel-actions">
+              <a href="https://www.illuminatural6i.com/ct/282956" class="btn btn-gold btn-block affiliate-link" data-product="illuminatural" target="_blank" rel="noopener nofollow sponsored">
+                Claim Winner Discount <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="illuminatural-6i-review.html" class="btn btn-secondary btn-sm btn-block">
+                <i class="fa-solid fa-file-lines"></i> Read Clinical Review
+              </a>
+            </div>
+            <div class="hero-panel-secondary-tag">
+              <i class="fa-solid fa-check"></i> Also evaluates Eyelasticity™ Eye Therapy
+            </div>
+          </div>
+
+          <!-- Panel 3: Scars & Recovery -->
+          <div class="hero-tab-panel" id="hero-panel-3" role="tabpanel" aria-labelledby="hero-tab-3" hidden>
+            <div class="hero-panel-badge"><i class="fa-solid fa-award"></i> #1 Scar Remodeling Formula</div>
+            <img src="Pictures/dermefface.jpg" alt="Dermefface FX7 Tube" class="hero-panel-img" width="500" height="500" loading="lazy">
+            <h3 class="hero-panel-title">Dermefface FX7®</h3>
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span>4.9 / 5.0 (680+ Reviews)</span>
+            </div>
+            <p class="hero-panel-desc">10% Symglucan® &amp; Pro-Coll-One+ boost Type I collagen by 1190% to flatten acne and surgery scars.</p>
+            <div class="hero-panel-actions">
+              <a href="https://www.dermeffacefx7.com/ct/282956" class="btn btn-gold btn-block affiliate-link" data-product="dermefface" target="_blank" rel="noopener nofollow sponsored">
+                Claim Winner Discount <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="dermefface-fx7-review.html" class="btn btn-secondary btn-sm btn-block">
+                <i class="fa-solid fa-file-lines"></i> Read Clinical Review
+              </a>
+            </div>
+            <div class="hero-panel-secondary-tag">
+              <i class="fa-solid fa-check"></i> Also evaluates ReviTag™ &amp; Kerassentials™
+            </div>
           </div>
         </div>
       </div>
@@ -966,7 +1042,7 @@
               <div class="product-meta-guarantee"><i class="fa-solid fa-shield-halved"></i> 90-Day Guarantee</div>
             </div>
             <div class="product-actions-stacked">
-              <a href="https://www.kollagenintensiv.com/ct/282956" class="btn btn-gold btn-block affiliate-link" data-product="kollagen" target="_blank" rel="noopener noreferrer nofollow sponsored">
+              <a href="https://www.kollagenintensiv.com/ct/282956" class="btn btn-gold btn-block affiliate-link" data-product="kollagen" target="_blank" rel="noopener nofollow sponsored">
                 <i class="fa-solid fa-cart-shopping"></i> Claim Winner Discount
               </a>
               <a href="kollagen-intensiv-review.html" class="btn btn-secondary btn-sm btn-block">
@@ -1002,7 +1078,7 @@
               <div class="product-meta-guarantee"><i class="fa-solid fa-shield-halved"></i> 60-Day Guarantee</div>
             </div>
             <div class="product-actions-stacked">
-              <a href="https://fa90bat349vj5m8h47ps5z4k7l.hop.clickbank.net" class="btn btn-gold btn-block affiliate-link" data-product="synevra" target="_blank" rel="noopener noreferrer nofollow sponsored">
+              <a href="https://fa90bat349vj5m8h47ps5z4k7l.hop.clickbank.net" class="btn btn-gold btn-block affiliate-link" data-product="synevra" target="_blank" rel="noopener nofollow sponsored">
                 <i class="fa-solid fa-cart-shopping"></i> Claim Official Offer
               </a>
               <a href="synevra-ultralift-review.html" class="btn btn-secondary btn-sm btn-block">
@@ -1038,7 +1114,7 @@
               <div class="product-meta-guarantee"><i class="fa-solid fa-shield-halved"></i> 90-Day Guarantee</div>
             </div>
             <div class="product-actions-stacked">
-              <a href="https://09cf56o9v9wfep64fslwmu3r7f.hop.clickbank.net" class="btn btn-gold btn-block affiliate-link" data-product="axavive" target="_blank" rel="noopener noreferrer nofollow sponsored">
+              <a href="https://09cf56o9v9wfep64fslwmu3r7f.hop.clickbank.net" class="btn btn-gold btn-block affiliate-link" data-product="axavive" target="_blank" rel="noopener nofollow sponsored">
                 <i class="fa-solid fa-cart-shopping"></i> Claim Official Offer
               </a>
               <a href="axavive-review.html" class="btn btn-secondary btn-sm btn-block">
@@ -1088,7 +1164,7 @@
               <div class="product-meta-guarantee"><i class="fa-solid fa-shield-halved"></i> 90-Day Guarantee</div>
             </div>
             <div class="product-actions-stacked">
-              <a href="https://www.illuminatural6i.com/ct/282956" class="btn btn-gold btn-block affiliate-link" data-product="illuminatural" target="_blank" rel="noopener noreferrer nofollow sponsored">
+              <a href="https://www.illuminatural6i.com/ct/282956" class="btn btn-gold btn-block affiliate-link" data-product="illuminatural" target="_blank" rel="noopener nofollow sponsored">
                 <i class="fa-solid fa-cart-shopping"></i> Claim Winner Discount
               </a>
               <a href="illuminatural-6i-review.html" class="btn btn-secondary btn-sm btn-block">
@@ -1124,7 +1200,7 @@
               <div class="product-meta-guarantee"><i class="fa-solid fa-shield-halved"></i> 67-Day Guarantee</div>
             </div>
             <div class="product-actions-stacked">
-              <a href="https://www.naturalhealthsource.com/products/eyelasticity-age-defying-eye-therapy/?aid=282956" class="btn btn-gold btn-block affiliate-link" data-product="eyelasticity" target="_blank" rel="noopener noreferrer nofollow sponsored">
+              <a href="https://www.naturalhealthsource.com/products/eyelasticity-age-defying-eye-therapy/?aid=282956" class="btn btn-gold btn-block affiliate-link" data-product="eyelasticity" target="_blank" rel="noopener nofollow sponsored">
                 <i class="fa-solid fa-cart-shopping"></i> Claim Official Offer
               </a>
               <a href="eyelasticity-review.html" class="btn btn-secondary btn-sm btn-block">
@@ -1173,7 +1249,7 @@
               <div class="product-meta-guarantee"><i class="fa-solid fa-shield-halved"></i> 90-Day Guarantee</div>
             </div>
             <div class="product-actions-stacked">
-              <a href="https://www.dermeffacefx7.com/ct/282956" class="btn btn-gold btn-block affiliate-link" data-product="dermefface" target="_blank" rel="noopener noreferrer nofollow sponsored">
+              <a href="https://www.dermeffacefx7.com/ct/282956" class="btn btn-gold btn-block affiliate-link" data-product="dermefface" target="_blank" rel="noopener nofollow sponsored">
                 <i class="fa-solid fa-cart-shopping"></i> Claim Winner Discount
               </a>
               <a href="dermefface-fx7-review.html" class="btn btn-secondary btn-sm btn-block">
@@ -1209,7 +1285,7 @@
               <div class="product-meta-guarantee"><i class="fa-solid fa-shield-halved"></i> 60-Day Guarantee</div>
             </div>
             <div class="product-actions-stacked">
-              <a href="https://291dc5n548rg7xaisfmdj85lfo.hop.clickbank.net" class="btn btn-gold btn-block affiliate-link" data-product="revitag" target="_blank" rel="noopener noreferrer nofollow sponsored">
+              <a href="https://291dc5n548rg7xaisfmdj85lfo.hop.clickbank.net" class="btn btn-gold btn-block affiliate-link" data-product="revitag" target="_blank" rel="noopener nofollow sponsored">
                 <i class="fa-solid fa-cart-shopping"></i> Claim Official Discount
               </a>
               <a href="revitag-review.html" class="btn btn-secondary btn-sm btn-block">
@@ -1245,7 +1321,7 @@
               <div class="product-meta-guarantee"><i class="fa-solid fa-shield-halved"></i> 60-Day Guarantee</div>
             </div>
             <div class="product-actions-stacked">
-              <a href="https://49c3bew72gob1x96qjfk42vn2p.hop.clickbank.net" class="btn btn-gold btn-block affiliate-link" data-product="kerassentials" target="_blank" rel="noopener noreferrer nofollow sponsored">
+              <a href="https://49c3bew72gob1x96qjfk42vn2p.hop.clickbank.net" class="btn btn-gold btn-block affiliate-link" data-product="kerassentials" target="_blank" rel="noopener nofollow sponsored">
                 <i class="fa-solid fa-cart-shopping"></i> Claim Official Offer
               </a>
               <a href="kerassentials-review.html" class="btn btn-secondary btn-sm btn-block">
@@ -1462,41 +1538,41 @@
 
       <div class="faq-accordion card reveal">
         <div class="faq-item">
-          <button class="faq-question">
+          <button class="faq-question" id="faq-btn-1" aria-expanded="false" aria-controls="faq-ans-1">
             <span>How long before I start seeing results across these clinical formulas?</span>
             <i class="fa-solid fa-chevron-down"></i>
           </button>
-          <div class="faq-answer">
+          <div class="faq-answer" id="faq-ans-1" role="region" aria-labelledby="faq-btn-1">
             <p>Most users report noticeable hydration and plumping within 7 to 14 days with topical peptides like Kollagen Intensiv. For deep wrinkle reduction, dark spot fading with Illuminatural 6i, and scar remodeling with Dermefface FX7, maximum clinical results occur between 30 and 90 days as skin cellular renewal cycles complete.</p>
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question">
+          <button class="faq-question" id="faq-btn-2" aria-expanded="false" aria-controls="faq-ans-2">
             <span>Can I combine topical anti-aging creams with oral nutricosmetics or dark spot correctors?</span>
             <i class="fa-solid fa-chevron-down"></i>
           </button>
-          <div class="faq-answer">
+          <div class="faq-answer" id="faq-ans-2" role="region" aria-labelledby="faq-btn-2">
             <p>Yes. Combining targeted topical serums with oral nutricosmetics is a dermatologist-supported strategy. For instance, applying Illuminatural 6i on localized dark spots and following with Kollagen Intensiv provides dual brightening and collagen support, while taking Axavive supports systemic cellular firmness from within.</p>
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question">
+          <button class="faq-question" id="faq-btn-3" aria-expanded="false" aria-controls="faq-ans-3">
             <span>What are the Money-Back Guarantees on these products?</span>
             <i class="fa-solid fa-chevron-down"></i>
           </button>
-          <div class="faq-answer">
+          <div class="faq-answer" id="faq-ans-3" role="region" aria-labelledby="faq-btn-3">
             <p>All 7 featured solutions carry risk-free satisfaction guarantees. Skinception products (Kollagen Intensiv, Illuminatural 6i, Dermefface FX7) and Axavive include a 90-day money-back guarantee. Synevra UltraLift, ReviTag, and Kerassentials are backed by 60-day 100% money-back policies directly through their official merchant portals.</p>
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question">
+          <button class="faq-question" id="faq-btn-4" aria-expanded="false" aria-controls="faq-ans-4">
             <span>Are these formulas safe for sensitive skin types?</span>
             <i class="fa-solid fa-chevron-down"></i>
           </button>
-          <div class="faq-answer">
+          <div class="faq-answer" id="faq-ans-4" role="region" aria-labelledby="faq-btn-4">
             <p>Yes. All featured formulations avoid harsh bleaching agents like hydroquinone, mercury, steroids, and parabens. However, we always advise performing a standard 24-hour patch test on your inner wrist before starting any new topical routine.</p>
           </div>
         </div>

@@ -7,14 +7,15 @@ document.addEventListener('DOMContentLoaded', () => {
   initFAQ();
   initNavigation();
   initScrollReveal();
+  initHeroSelector();
 });
 
 /* ==========================================================================
    1. AFFILIATE LINK MANAGEMENT & STORAGE
    ========================================================================== */
 
-// Default Affiliate Links (SellHealth & ClickBank)
-const DEFAULT_LINKS = {
+// Default Affiliate Links (SellHealth & ClickBank) - Immutable
+const DEFAULT_LINKS = Object.freeze({
   kollagen: 'https://www.kollagenintensiv.com/ct/282956',
   illuminatural: 'https://www.illuminatural6i.com/ct/282956',
   dermefface: 'https://www.dermeffacefx7.com/ct/282956',
@@ -23,7 +24,7 @@ const DEFAULT_LINKS = {
   revitag: 'https://291dc5n548rg7xaisfmdj85lfo.hop.clickbank.net',
   kerassentials: 'https://49c3bew72gob1x96qjfk42vn2p.hop.clickbank.net',
   eyelasticity: 'https://www.naturalhealthsource.com/products/eyelasticity-age-defying-eye-therapy/?aid=282956'
-};
+});
 
 function sanitizeAndValidateAffiliateLink(rawUrl, productKey) {
   if (!rawUrl) return DEFAULT_LINKS[productKey];
@@ -38,8 +39,7 @@ function sanitizeAndValidateAffiliateLink(rawUrl, productKey) {
       return `https://www.illuminatural6i.com/ct/${cleanVal}`;
     } else if (productKey === 'dermefface') {
       return `https://www.dermeffacefx7.com/ct/${cleanVal}`;
-    }
-    else if (productKey === 'eyelasticity') {
+    } else if (productKey === 'eyelasticity') {
       return `https://www.naturalhealthsource.com/products/eyelasticity-age-defying-eye-therapy/?aid=${cleanVal}`;
     }
   }
@@ -52,10 +52,26 @@ function sanitizeAndValidateAffiliateLink(rawUrl, productKey) {
       return DEFAULT_LINKS[productKey];
     }
 
-    // ClickBank link validation
+    // ClickBank link validation with strict domain boundary check
     if (productKey === 'synevra' || productKey === 'axavive' || productKey === 'revitag' || productKey === 'kerassentials') {
-      if (parsed.hostname.endsWith('hop.clickbank.net') || parsed.hostname.endsWith('clickbank.net')) {
+      const isClickBankHost = /^(?:[a-z0-9_-]+\.)?hop\.clickbank\.net$/i.test(parsed.hostname) ||
+                              parsed.hostname === 'clickbank.net' ||
+                              parsed.hostname === 'www.clickbank.net';
+      if (isClickBankHost) {
         return cleanVal;
+      }
+      return DEFAULT_LINKS[productKey];
+    }
+
+    // NaturalHealthSource validation with strict host, path and numeric affiliate ID
+    if (productKey === 'eyelasticity') {
+      const isNhsHost = parsed.hostname === 'www.naturalhealthsource.com' || parsed.hostname === 'naturalhealthsource.com';
+      const isValidPath = parsed.pathname.startsWith('/products/eyelasticity-age-defying-eye-therapy');
+      const aidVal = parsed.searchParams.get('aid');
+      const isValidAid = aidVal !== null && /^\d+$/.test(aidVal);
+
+      if (isNhsHost && isValidPath && isValidAid) {
+        return `https://www.naturalhealthsource.com/products/eyelasticity-age-defying-eye-therapy/?aid=${aidVal}`;
       }
       return DEFAULT_LINKS[productKey];
     }
@@ -71,9 +87,6 @@ function sanitizeAndValidateAffiliateLink(rawUrl, productKey) {
     } else if (productKey === 'dermefface') {
       expectedHost = 'www.dermeffacefx7.com';
       expectedHostAlt = 'dermeffacefx7.com';
-    } else if (productKey === 'eyelasticity') {
-      if (parsed.hostname.includes('naturalhealthsource.com')) return cleanVal;
-      return DEFAULT_LINKS[productKey];
     } else {
       return DEFAULT_LINKS[productKey];
     }
@@ -81,10 +94,13 @@ function sanitizeAndValidateAffiliateLink(rawUrl, productKey) {
     if (parsed.hostname !== expectedHost && parsed.hostname !== expectedHostAlt) {
       return DEFAULT_LINKS[productKey];
     }
-    // Enforce pathname structure: /ct/numericId
-    const pathParts = parsed.pathname.split('/');
+
+    // Enforce pathname structure /ct/numericId with trailing slash tolerance and search query preservation
+    const cleanPath = parsed.pathname.replace(/\/+$/, '');
+    const pathParts = cleanPath.split('/');
     if (pathParts.length === 3 && pathParts[1] === 'ct' && /^\d+$/.test(pathParts[2])) {
-      return `https://www.${expectedHostAlt}/ct/${pathParts[2]}`;
+      const searchString = parsed.search || '';
+      return `https://www.${expectedHostAlt}/ct/${pathParts[2]}${searchString}`;
     }
   } catch (e) {
     // Return default URL if parsing fails
@@ -697,7 +713,7 @@ function showQuizResults() {
   orderBtn.href = links[product.linkKey] || DEFAULT_LINKS[product.linkKey];
   orderBtn.setAttribute('data-product', product.linkKey);
   orderBtn.target = '_blank';
-  orderBtn.rel = 'noopener noreferrer nofollow sponsored';
+  orderBtn.rel = 'noopener nofollow sponsored';
   
   const cartIcon = document.createElement('i');
   cartIcon.className = 'fa-solid fa-cart-shopping';
@@ -726,7 +742,8 @@ function showQuizResults() {
   resultProductWrap.appendChild(cardWrap);
 
   quizResult.style.display = 'block';
-      quizResult.focus();
+  quizResult.setAttribute('tabindex', '-1');
+  quizResult.focus({ preventScroll: true });
   quizResult.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
@@ -761,12 +778,15 @@ function initFAQ() {
       // Close all other active items in this container
       container.querySelectorAll('.faq-item').forEach(el => {
         el.classList.remove('active');
+        const q = el.querySelector('.faq-question');
+        if (q) q.setAttribute('aria-expanded', 'false');
         const ans = el.querySelector('.faq-answer');
         if (ans) ans.style.maxHeight = null;
       });
 
       if (!isActive && answer) {
         item.classList.add('active');
+        question.setAttribute('aria-expanded', 'true');
         answer.style.maxHeight = answer.scrollHeight + 'px';
       }
     });
@@ -839,6 +859,57 @@ function initNavigation() {
       }
     });
   }
+
+  // Touch and click dropdown navigation
+  const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+  dropdownToggles.forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const parentDropdown = toggle.closest('.nav-item-dropdown');
+      if (!parentDropdown) return;
+      const isOpen = parentDropdown.classList.contains('dropdown-open');
+
+      // Close other open dropdowns
+      document.querySelectorAll('.nav-item-dropdown').forEach(d => {
+        if (d !== parentDropdown) {
+          d.classList.remove('dropdown-open');
+          const t = d.querySelector('.dropdown-toggle');
+          if (t) t.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      if (isOpen) {
+        parentDropdown.classList.remove('dropdown-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      } else {
+        parentDropdown.classList.add('dropdown-open');
+        toggle.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // Close dropdowns on outside click
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav-item-dropdown')) {
+      document.querySelectorAll('.nav-item-dropdown').forEach(d => {
+        d.classList.remove('dropdown-open');
+        const t = d.querySelector('.dropdown-toggle');
+        if (t) t.setAttribute('aria-expanded', 'false');
+      });
+    }
+  });
+
+  // Close dropdowns on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.nav-item-dropdown').forEach(d => {
+        d.classList.remove('dropdown-open');
+        const t = d.querySelector('.dropdown-toggle');
+        if (t) t.setAttribute('aria-expanded', 'false');
+      });
+    }
+  });
 }
 
 /* ==========================================================================
@@ -867,6 +938,61 @@ function initScrollReveal() {
   });
 
   revealElements.forEach(el => observer.observe(el));
+}
+
+/* ==========================================================================
+   7. HERO CATEGORY DIAGNOSTIC SELECTOR
+   ========================================================================== */
+function initHeroSelector() {
+  const tabs = document.querySelectorAll('.hero-tab-btn');
+  const panels = document.querySelectorAll('.hero-tab-panel');
+
+  if (!tabs.length || !panels.length) return;
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const targetId = tab.getAttribute('aria-controls');
+      if (!targetId) return;
+
+      // Update tab selection state
+      tabs.forEach(t => {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+
+      // Update visible panel
+      panels.forEach(p => {
+        if (p.id === targetId) {
+          p.classList.add('active');
+          p.removeAttribute('hidden');
+        } else {
+          p.classList.remove('active');
+          p.setAttribute('hidden', '');
+        }
+      });
+    });
+
+    // Keyboard navigation with Arrow keys
+    tab.addEventListener('keydown', (e) => {
+      const tabArray = Array.from(tabs);
+      const currentIndex = tabArray.indexOf(tab);
+
+      let targetTab = null;
+      if (e.key === 'ArrowRight') {
+        targetTab = tabArray[(currentIndex + 1) % tabArray.length];
+      } else if (e.key === 'ArrowLeft') {
+        targetTab = tabArray[(currentIndex - 1 + tabArray.length) % tabArray.length];
+      }
+
+      if (targetTab) {
+        e.preventDefault();
+        targetTab.focus();
+        targetTab.click();
+      }
+    });
+  });
 }
 
 

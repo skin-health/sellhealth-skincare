@@ -1,10 +1,10 @@
 # Derm Audit Journal
 
-> Independent clinical reviews and ingredient breakdowns of top anti-aging collagen renewal creams, botanical skin brightening correctors, and scar reduction therapy gels.
+> Independent clinical reviews and ingredient breakdowns of top anti-aging collagen renewal creams, neuro-dermal expression line serums, oral nutricosmetics, botanical skin brightening correctors, under-eye therapies, and scar reduction recovery formulas.
 
 ## Core Navigation
 - [Review Portal](/index.html): Comparative landing page for top skincare products. Features ratings, side-by-side details, and dynamic matching tools.
-- [Comparison Matrix](/comparison.html): Full side-by-side clinical comparison tables evaluating Kollagen Intensiv, Illuminatural 6i, and Dermefface FX7 against luxury market alternatives.
+- [Comparison Matrix](/comparison.html): Full side-by-side clinical comparison tables evaluating 8 top-tier clinical solutions (Kollagen Intensiv, Synevra UltraLift, Axavive, Illuminatural 6i, Eyelasticity, Dermefface FX7, ReviTag, Kerassentials) against luxury market alternatives.
 - [Skin Quiz](/index.html#skin-quiz): 3-question javascript skin matching tool. Connects specific skin concerns to recommended products.
 - [Bio Link Page](/links.html): Branded mobile navigation portal optimized for social media referral traffic.
 - [Privacy Policy](/privacy.html): GDPR, CCPA, and FTC regulatory compliance disclosures.
@@ -14,6 +14,7 @@
 - [Synevra UltraLift Review](/synevra-ultralift-review.html): Clinical analysis of Synevra UltraLift Swiss-inspired peptide system. Evaluates SYN-AKE® neuromuscular relaxation mechanism and VitaLock™ oral beauty nutrients.
 - [Axavive Review](/axavive-review.html): Clinical breakdown of Axavive oral nutricosmetic capsules. Evaluates 6-botanical complex (Astragaloside IV, Pine Bark, Bacopa) for cutaneous axon renewal and systemic firmness.
 - [Illuminatural 6i Review](/illuminatural-6i-review.html): In-depth clinical analysis of Illuminatural 6i skin lightener. Evaluates six botanical actives (including Alpha-Arbutin and Niacinamide) that block melanin synthesis without toxic bleaching chemicals.
+- [Eyelasticity Review](/eyelasticity-review.html): Clinical analysis of Eyelasticity Age-Defying Eye Therapy. Evaluates doctor-formulated peptide complex (Eyeseryl®, Regu®-Age, Syn®-Coll, and Pro-Coll-One+) that drains lymphatic puffiness and lightens periorbital dark circles.
 - [Dermefface FX7 Review](/dermefface-fx7-review.html): Clinical review of Dermefface FX7 Scar Reduction Therapy. Explains biological remodeling actives (including 10% Symglucan and 2% Pro-Coll-One+) that boost Type I collagen by 1190% to flatten scars.
 - [ReviTag Review](/revitag-review.html): Clinical review of ReviTag Skin Tag & Blemish Serum. Explains natural collagen-untangling mechanism using Colloidal Oatmeal, Sea Buckthorn (Omega-7), and Epicatechin to painlessly dry and shed skin tags.
 - [Kerassentials Review](/kerassentials-review.html): Clinical review of Kerassentials Nail & Skin Recovery Oil. Analyzes Undecylenic Acid (USP 5%) and 4-oil botanical matrix designed to defeat drug-resistant fungus and rebuild clear nail keratin beds.
@@ -25,34 +26,36 @@
 
 ## Análisis en Español (Spanish Reviews)
 - [Portal de Análisis (ES)](/es/index.html): Página principal comparativa en español con los 8 productos, quiz de piel y esquema JSON-LD completo.
-- [Matriz Comparativa (ES)](/es/comparison.html): Tabla comparativa clínica completa en español evaluando los 7 productos contra alternativas del mercado.
+- [Matriz Comparativa (ES)](/es/comparison.html): Tabla comparativa clínica completa en español evaluando los 8 productos contra alternativas del mercado.
 - [Kollagen Intensiv (ES)](/es/kollagen-intensiv-review.html): Análisis clínico del péptido Syn-Coll® y la renovación del colágeno.
 - [Synevra UltraLift (ES)](/es/synevra-ultralift-review.html): Análisis del sistema dipéptido SYN-AKE® para arrugas de expresión.
-- [Axavive (ES)](/es/axavive-review.html): Análisis del nutricosmetico oral con Astragalósido IV y Corteza de Pino.
+- [Axavive (ES)](/es/axavive-review.html): Análisis del nutricosmético oral con Astragalósido IV y Corteza de Pino.
 - [Illuminatural 6i (ES)](/es/illuminatural-6i-review.html): Análisis del corrector botánico de manchas oscuras con Alfa-Arbutina.
+- [Eyelasticity (ES)](/es/eyelasticity-review.html): Análisis clínico de la terapia para el contorno de ojos con Eyeseryl® y Regu®-Age.
 - [Dermefface FX7 (ES)](/es/dermefface-fx7-review.html): Análisis de la terapia de remodelación de cicatrices con Symglucan.
 - [ReviTag (ES)](/es/revitag-review.html): Análisis del sérum para acrocordones con Avena Coloidal y Espino Amarillo.
 - [Kerassentials (ES)](/es/kerassentials-review.html): Análisis del aceite de recuperación de uñas con Ácido Undecilénico.
 
 ## Klinische Tests auf Deutsch (German Reviews)
 - [Testportal (DE)](/de/index.html): Deutsche Startseite mit 8-Produkt-Vergleich, Hauttest und vollständigem JSON-LD-Schema.
-- [Vergleichsmatrix (DE)](/de/comparison.html): Vollständige klinische Vergleichstabelle auf Deutsch für alle 7 Produkte gegen Marktalternativen.
+- [Vergleichsmatrix (DE)](/de/comparison.html): Vollständige klinische Vergleichstabelle auf Deutsch für alle 8 Produkte gegen Marktalternativen.
 - [Kollagen Intensiv (DE)](/de/kollagen-intensiv-review.html): Klinischer Test des Syn-Coll®-Peptids und der Kollagenerneuerung.
 - [Synevra UltraLift (DE)](/de/synevra-ultralift-review.html): Analyse des SYN-AKE®-Dipeptid-Systems gegen Mimikfalten.
 - [Axavive (DE)](/de/axavive-review.html): Test des oralen Nutrikosmetikums mit Astragalosid IV und Kiefernrindenextrakt.
 - [Illuminatural 6i (DE)](/de/illuminatural-6i-review.html): Analyse des botanischen Aufhellers gegen Pigmentflecken mit Alpha-Arbutin.
+- [Eyelasticity (DE)](/de/eyelasticity-review.html): Klinischer Test der Augenpartie-Therapie mit Eyeseryl® und Regu®-Age.
 - [Dermefface FX7 (DE)](/de/dermefface-fx7-review.html): Test der Narbenremodelierungs-Therapie mit Symglucan und Pro-Coll-One+.
 - [ReviTag (DE)](/de/revitag-review.html): Analyse des Stielwarzen-Serums mit kolloidalem Hafer und Sanddorn.
 - [Kerassentials (DE)](/de/kerassentials-review.html): Test des Nagelregenerations-Öls mit Undecylensäure.
 
 ## Analyses Cliniques en Français (French Reviews)
 - [Portail d'Analyses (FR)](/fr/index.html): Page d'accueil française avec comparaison des 8 produits, quiz de peau et schéma JSON-LD complet.
-- [Matrice Comparative (FR)](/fr/comparison.html): Tableau comparatif clinique complet en français évaluant les 7 produits par rapport aux alternatives du marché.
+- [Matrice Comparative (FR)](/fr/comparison.html): Tableau comparatif clinique complet en français évaluant les 8 produits par rapport aux alternatives du marché.
 - [Kollagen Intensiv (FR)](/fr/kollagen-intensiv-review.html): Analyse clinique du peptide Syn-Coll® et du renouvellement du collagène.
 - [Synevra UltraLift (FR)](/fr/synevra-ultralift-review.html): Analyse du système dipeptide SYN-AKE® contre les rides d'expression.
 - [Axavive (FR)](/fr/axavive-review.html): Analyse du nutricosmétique oral avec Astragaloside IV et Écorce de Pin.
 - [Illuminatural 6i (FR)](/fr/illuminatural-6i-review.html): Analyse du correcteur botanique anti-taches avec Alpha-Arbutine.
+- [Eyelasticity (FR)](/fr/eyelasticity-review.html): Analyse de la thérapie contour des yeux avec Eyeseryl® et Regu®-Age.
 - [Dermefface FX7 (FR)](/fr/dermefface-fx7-review.html): Analyse de la thérapie de remodelage des cicatrices avec Symglucan.
 - [ReviTag (FR)](/fr/revitag-review.html): Analyse du sérum anti-acrochordons avec Avoine Colloïdale et Argousier.
 - [Kerassentials (FR)](/fr/kerassentials-review.html): Analyse de l'huile de récupération des ongles avec Acide Undécylénique.
-

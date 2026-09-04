@@ -41,6 +41,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 
@@ -66,70 +67,70 @@
 
   <!-- JSON-LD Product & Offer Schema -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "Dermefface FX7® Scar Reduction Therapy",
-    "image": "https://dermaudit.com/Pictures/dermefface.jpg",
-    "description": "Advanced dermatological scar reduction therapy formulated with 7 clinically proven actives and peptides including 10% Symglucan and 2% Pro-Coll-One+ to boost Type I collagen by 1190%.",
-    "brand": {
-      "@type": "Brand",
-      "name": "Skinception"
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Dermefface FX7® Scar Reduction Therapy",
+  "image": "https://dermaudit.com/Pictures/dermefface.jpg",
+  "description": "Advanced dermatological scar reduction therapy formulated with 7 clinically proven actives and peptides including 10% Symglucan and 2% Pro-Coll-One+ to boost Type I collagen by 1190%.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Skinception"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "680",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.dermeffacefx7.com/ct/282956",
+    "priceCurrency": "USD",
+    "price": "59.95",
+    "priceValidUntil": "2026-12-31",
+    "validFrom": "2026-01-01",
+    "availability": "https://schema.org/InStock",
+    "itemCondition": "https://schema.org/NewCondition",
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": "US",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 90,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility"
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.7",
-      "reviewCount": "186",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
-    "offers": {
-      "@type": "Offer",
-      "url": "https://www.dermeffacefx7.com/ct/282956",
-      "priceCurrency": "USD",
-      "price": "59.95",
-      "priceValidUntil": "2026-12-31",
-      "validFrom": "2026-01-01",
-      "availability": "https://schema.org/InStock",
-      "itemCondition": "https://schema.org/NewCondition",
-      "hasMerchantReturnPolicy": {
-        "@type": "MerchantReturnPolicy",
-        "applicableCountry": "US",
-        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-        "merchantReturnDays": 90,
-        "returnMethod": "https://schema.org/ReturnByMail",
-        "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility"
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0.00",
+        "currency": "USD"
       },
-      "shippingDetails": {
-        "@type": "OfferShippingDetails",
-        "shippingRate": {
-          "@type": "MonetaryAmount",
-          "value": "0.00",
-          "currency": "USD"
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "US"
+      },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 1,
+          "unitCode": "DAY"
         },
-        "shippingDestination": {
-          "@type": "DefinedRegion",
-          "addressCountry": "US"
-        },
-        "deliveryTime": {
-          "@type": "ShippingDeliveryTime",
-          "handlingTime": {
-            "@type": "QuantitativeValue",
-            "minValue": 0,
-            "maxValue": 1,
-            "unitCode": "DAY"
-          },
-          "transitTime": {
-            "@type": "QuantitativeValue",
-            "minValue": 2,
-            "maxValue": 5,
-            "unitCode": "DAY"
-          }
+        "transitTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 2,
+          "maxValue": 5,
+          "unitCode": "DAY"
         }
       }
     }
   }
-  </script>
+}
+</script>
   <!-- JSON-LD FAQPage Schema -->
   <script type="application/ld+json">
   {
@@ -216,7 +217,7 @@
         </div>
       </nav>
       <div class="header-actions">
-        <a href="https://www.dermeffacefx7.com/ct/282956" class="btn btn-gold btn-sm affiliate-link" data-product="dermefface" target="_blank" rel="noopener noreferrer nofollow sponsored">Check Manufacturer Discount</a>
+        <a href="https://www.dermeffacefx7.com/ct/282956" class="btn btn-gold btn-sm affiliate-link" data-product="dermefface" target="_blank" rel="noopener nofollow sponsored">Check Manufacturer Discount</a>
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation" aria-expanded="false" aria-controls="navMenu">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -235,7 +236,7 @@
       </div>
 
       <div class="card" style="padding: 2.5rem; margin-bottom: 3rem;">
-        <img src="Pictures/dermefface2.jpg" alt="Dermefface FX7 Tube and Packaging" style="width: 100%; max-height: 400px; object-fit: contain; margin-bottom: 2rem;">
+        <img src="Pictures/dermefface2.jpg" alt="Dermefface FX7 Tube and Packaging" style="width: 100%; max-height: 400px; object-fit: contain; margin-bottom: 2rem;" width="1024" height="1024" fetchpriority="high">
 
         <div style="font-size: 1.05rem; line-height: 1.8; color: var(--color-dark-surface);">
           
@@ -252,8 +253,8 @@
           </p>
 
           <!-- Section 2: The Silicone Sheet Limitation -->
-          <div style="background: #FFFBEB; border-left: 4px solid #F59E0B; padding: 1.25rem; border-radius: 0 8px 8px 0; margin: 1.5rem 0 2rem 0;">
-            <p style="margin: 0; color: #B45309; font-size: 0.95rem;">
+          <div class="callout-warning">
+            <p style="margin: 0; font-size: 0.95rem;">
               <strong>⚠️ Why Standard Silicone Gels Fall Short:</strong> <br>
               Drugstore silicone gels only sit on top like plastic wrap. Sure, keeping a scar moist helps a little, but it doesn't give your skin cells the biochemical blueprints they need to dig up the messy gravel and replace it with fresh, flat skin.
             </p>
@@ -316,12 +317,12 @@
                 <tr>
                   <th style="width: 30%;">Feature / Specification</th>
                   <th style="width: 35%; background: rgba(197, 160, 89, 0.05);">
-                    <img src="Pictures/dermefface.jpg" alt="Dermefface FX7" class="table-thumb" style="max-height: 50px; display: block; margin: 0 auto 0.5rem auto;">
+                    <img src="Pictures/dermefface.jpg" alt="Dermefface FX7" class="table-thumb" style="max-height: 50px; display: block; margin: 0 auto 0.5rem auto;" width="50" height="50" loading="lazy">
                     <div style="font-weight: bold; color: var(--color-gold); text-align: center;">Dermefface FX7™</div>
                     <span class="badge badge-gold" style="font-size: 0.75rem; display: block; width: fit-content; margin: 0.25rem auto 0 auto;">Winner: Top Scar Remodeler</span>
                   </th>
                   <th style="width: 35%;">
-                    <img src="Pictures/skinmedica.jpg" alt="SkinMedica Scar Gel" class="table-thumb" style="max-height: 50px; display: block; margin: 0 auto 0.5rem auto;">
+                    <img src="Pictures/skinmedica.jpg" alt="SkinMedica Scar Gel" class="table-thumb" style="max-height: 50px; display: block; margin: 0 auto 0.5rem auto;" width="50" height="50" loading="lazy">
                     <div style="font-weight: bold; text-align: center; color: var(--color-dark);">SkinMedica Scar Gel</div>
                   </th>
                 </tr>
@@ -355,12 +356,12 @@
                 <tr>
                   <td><strong>Best Action</strong></td>
                   <td>
-                    <a href="https://www.dermeffacefx7.com/ct/282956" class="btn btn-gold btn-sm btn-block affiliate-link" data-product="dermefface" target="_blank" rel="noopener noreferrer nofollow sponsored">
+                    <a href="https://www.dermeffacefx7.com/ct/282956" class="btn btn-gold btn-sm btn-block affiliate-link" data-product="dermefface" target="_blank" rel="noopener nofollow sponsored">
                       Claim Winner Discount
                     </a>
                   </td>
                   <td>
-                    <a href="https://www.skinmedica.com/us/skin-concern/scar-recovery/95742.html" class="btn btn-outline btn-sm btn-block" target="_blank" rel="noopener noreferrer nofollow sponsored">
+                    <a href="https://www.skinmedica.com/us/skin-concern/scar-recovery/95742.html" class="btn btn-outline btn-sm btn-block" target="_blank" rel="noopener nofollow sponsored">
                       View SkinMedica
                     </a>
                   </td>
@@ -371,9 +372,9 @@
 
           <!-- Section 6: Pros & Cons -->
           <div class="pros-cons-grid reveal">
-            <div class="pros-box" style="background: #F0FDF4; border: 1px solid #BBF7D0; border-radius: 8px; padding: 1.5rem;">
-              <h5 style="color: #166534; margin-bottom: 0.75rem;"><i class="fa-solid fa-thumbs-up"></i> What We Love:</h5>
-              <ul style="color: #166534; font-size: 0.9rem; line-height: 1.6; padding-left: 1.25rem;">
+            <div class="pros-box">
+              <h5 style="margin-bottom: 0.75rem;"><i class="fa-solid fa-thumbs-up"></i> What We Love:</h5>
+              <ul style="font-size: 0.9rem; line-height: 1.6; padding-left: 1.25rem;">
                 <li>Clinically proven +1,190% boost in smooth Type I collagen</li>
                 <li>Fades acne scars, surgical incisions, burns, and accidental cuts</li>
                 <li>Pentavitin stops scar tissue from itching and turning rock-hard</li>
@@ -381,9 +382,9 @@
                 <li>Protected by Skinception's 90-day 100% money-back guarantee</li>
               </ul>
             </div>
-            <div class="cons-box" style="background: #FEF2F2; border: 1px solid #FECACA; border-radius: 8px; padding: 1.5rem;">
-              <h5 style="color: #991B1B; margin-bottom: 0.75rem;"><i class="fa-solid fa-thumbs-down"></i> Things to Keep in Mind:</h5>
-              <ul style="color: #991B1B; font-size: 0.9rem; line-height: 1.6; padding-left: 1.25rem;">
+            <div class="cons-box">
+              <h5 style="margin-bottom: 0.75rem;"><i class="fa-solid fa-thumbs-down"></i> Things to Keep in Mind:</h5>
+              <ul style="font-size: 0.9rem; line-height: 1.6; padding-left: 1.25rem;">
                 <li>Must wait until stitches or open wounds are fully closed before applying</li>
                 <li>Old mature scars (over 2 years old) take 60–90 days of consistent application</li>
               </ul>
@@ -428,7 +429,7 @@
             <p>
               Rebuild flat, seamless, healthy skin with Dermefface FX7™ backed by a 100% risk-free 90-day money-back guarantee.
             </p>
-            <a href="https://www.dermeffacefx7.com/ct/282956" class="btn btn-gold btn-xl affiliate-link" data-product="dermefface" target="_blank" rel="noopener noreferrer nofollow sponsored">
+            <a href="https://www.dermeffacefx7.com/ct/282956" class="btn btn-gold btn-xl affiliate-link" data-product="dermefface" target="_blank" rel="noopener nofollow sponsored">
               <i class="fa-solid fa-cart-shopping"></i> Visit Official Dermefface FX7 Store &amp; Claim Discount
             </a>
           </div>
