@@ -23,6 +23,7 @@
 - [Clinical Research Journal](/blog.html): Main clinical research index covering comparative dermatological studies, peptide mechanisms, and barrier defense benchmarks.
 - [Syn-Coll vs Retinol Article](/blog-syn-coll-vs-retinol.html): Clinical comparison between Palmitoyl Tripeptide-5 and Retinol.
 - [Dermal Scar Remodeling Article](/blog-how-to-fade-acne-scars.html): Research paper on scar tissue remodeling using Symglucan and peptides.
+- [Alpha-Arbutin vs Hydroquinone Article](/blog-alpha-arbutin-vs-hydroquinone.html): Clinical study on tyrosinase enzyme inhibition and safe melanin control.
 
 ## Análisis en Español (Spanish Reviews)
 - [Portal de Análisis (ES)](/es/index.html): Página principal comparativa en español con los 8 productos, quiz de piel y esquema JSON-LD completo.
