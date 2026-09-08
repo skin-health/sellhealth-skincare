@@ -697,7 +697,7 @@ function showQuizResults() {
 
   const hookEl = document.createElement('p');
   hookEl.style.fontSize = '0.9rem';
-  hookEl.style.color = '#64748B';
+  hookEl.style.color = 'var(--color-muted)';
   hookEl.style.lineHeight = '1.5';
   hookEl.style.margin = '0 0 1.25rem 0';
   hookEl.textContent = product.hook;

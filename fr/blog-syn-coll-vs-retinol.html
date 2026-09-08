@@ -196,8 +196,8 @@
           <!-- Semantic Infographic 1: Whiteboard Process Diagram -->
           <div class="infographic-container" style="margin: 0 0 2.5rem 0; padding: 2rem; background: linear-gradient(135deg, rgba(212,175,55,0.06) 0%, rgba(17,24,39,0.95) 100%); border: 1px solid var(--color-border); border-radius: 12px; text-align: center;">
             <span class="badge badge-gold" style="margin-bottom: 0.5rem;"><i class="fa-solid fa-chalkboard"></i> EXPLICATION SUR TABLEAU BLANC NUMÉRIQUE</span>
-            <h3 style="color: var(--color-dark); font-size: 1.4rem; margin: 0.5rem 0 0.25rem 0;">Le Trampoline de la Peau &amp; les Artisans des Ressorts</h3>
-            <p style="color: var(--color-muted); font-size: 0.9rem; max-width: 600px; margin: 0 auto 1.5rem auto;">Comparaison entre la détérioration de la barrière cutanée et la signalisation cellulaire peptidique ciblée.</p>
+            <p class="infographic-title" style="color: var(--color-dark); font-size: 1.4rem; margin: 0.5rem 0 0.25rem 0;">Le Trampoline de la Peau &amp; les Artisans des Ressorts</p>
+            ="color: var(--color-muted); font-size: 0.9rem; max-width: 600px; margin: 0 auto 1.5rem auto;">Comparaison entre la détérioration de la barrière cutanée et la signalisation cellulaire peptidique ciblée.</p>
             <img src="../Pictures/infographic-collagen-trampoline.jpg" alt="Schéma sur tableau blanc numérique expliquant comment les messagers peptidiques Syn-Coll régénèrent les ressorts de collagène sous le trampoline cutané tandis que le rétinol décape la surface" width="800" height="450" fetchpriority="high" style="width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); display: block; margin: 0 auto;">
           </div>
 
@@ -274,48 +274,46 @@
           </ul>
 
           <!-- Mechanism Pathway Breakdown Grid -->
-          <div class="reveal" style="margin: 2.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(212,175,55,0.04) 0%, rgba(17,24,39,0.85) 100%); border: 1px solid var(--color-border); border-radius: 12px;">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem;">
-              
-              <!-- Retinol Pathway Card -->
-              <div style="background: rgba(239, 68, 68, 0.08); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 8px; padding: 1.25rem;">
-                <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-                  <span style="background: rgba(239, 68, 68, 0.2); color: #FCA5A5; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;"><i class="fa-solid fa-triangle-exclamation"></i></span>
-                  <h4 style="margin: 0; color: #FCA5A5; font-size: 1.1rem;">Voie du Rétinol</h4>
-                </div>
-                <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem; color: var(--color-dark-surface);">
-                  <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;">
-                    <strong style="color: #F87171;">1.</strong> Décape la barrière lipidique protectrice superficielle.
-                  </li>
-                  <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;">
-                    <strong style="color: #F87171;">2.</strong> Provoque inflammation, rougeurs et desquamation.
-                  </li>
-                  <li style="display: flex; gap: 0.5rem;">
-                    <strong style="color: #F87171;">3.</strong> Hausse tardive de collagène de +120% à +200%.
-                  </li>
-                </ul>
+          <div class="mechanism-grid reveal">
+            
+            <!-- Retinol Pathway Card -->
+            <div style="background: rgba(239, 68, 68, 0.08); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 8px; padding: 1.25rem;">
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                <span style="background: rgba(239, 68, 68, 0.2); color: #FCA5A5; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;"><i class="fa-solid fa-triangle-exclamation"></i></span>
+                <h3 style="margin: 0; color: #FCA5A5; font-size: 1.1rem;">Voie du Rétinol</h3>
               </div>
-
-              <!-- Syn-Coll Pathway Card -->
-              <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 8px; padding: 1.25rem;">
-                <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-                  <span style="background: rgba(16, 185, 129, 0.2); color: #6EE7B7; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;"><i class="fa-solid fa-check"></i></span>
-                  <h4 style="margin: 0; color: #6EE7B7; font-size: 1.1rem;">Voie du Peptide Syn-Coll®</h4>
-                </div>
-                <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem; color: var(--color-dark-surface);">
-                  <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;">
-                    <strong style="color: #34D399;">1.</strong> Traverse la barrière cutanée sans aucune irritation.
-                  </li>
-                  <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;">
-                    <strong style="color: #34D399;">2.</strong> Active le signal TGF-bêta constructeur de collagène.
-                  </li>
-                  <li style="display: flex; gap: 0.5rem;">
-                    <strong style="color: #34D399;">3.</strong> Tisse +354% de nouveaux ressorts de collagène fermes.
-                  </li>
-                </ul>
-              </div>
-
+              <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem; color: var(--color-dark-surface);">
+                <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;">
+                  <strong style="color: #F87171;">1.</strong> Décape la barrière lipidique protectrice superficielle.
+                </li>
+                <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;">
+                  <strong style="color: #F87171;">2.</strong> Provoque inflammation, rougeurs et desquamation.
+                </li>
+                <li style="display: flex; gap: 0.5rem;">
+                  <strong style="color: #F87171;">3.</strong> Hausse tardive de collagène de +120% à +200%.
+                </li>
+              </ul>
             </div>
+
+            <!-- Syn-Coll Pathway Card -->
+            <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 8px; padding: 1.25rem;">
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                <span style="background: rgba(16, 185, 129, 0.2); color: #6EE7B7; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;"><i class="fa-solid fa-check"></i></span>
+                <h3 style="margin: 0; color: #6EE7B7; font-size: 1.1rem;">Voie du Peptide Syn-Coll®</h3>
+              </div>
+              <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem; color: var(--color-dark-surface);">
+                <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;">
+                  <strong style="color: #34D399;">1.</strong> Traverse la barrière cutanée sans aucune irritation.
+                </li>
+                <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;">
+                  <strong style="color: #34D399;">2.</strong> Active le signal TGF-bêta constructeur de collagène.
+                </li>
+                <li style="display: flex; gap: 0.5rem;">
+                  <strong style="color: #34D399;">3.</strong> Tisse +354% de nouveaux ressorts de collagène fermes.
+                </li>
+              </ul>
+            </div>
+
           </div>
 
           <h2>4. Comparatif Clinique Face à Face</h2>
@@ -427,7 +425,6 @@
           <li><a href="kollagen-intensiv-review.html">Kollagen Intensiv™</a></li>
           <li><a href="synevra-ultralift-review.html">Synevra UltraLift™</a></li>
           <li><a href="axavive-review.html">Axavive™</a></li>
-          <li><a href="blog-syn-coll-vs-retinol.html">Étude Syn-Coll® vs Rétinol</a></li>
         </ul>
       </div>
 
@@ -449,6 +446,7 @@
         <h4><i class="fa-solid fa-scale-balanced" style="color: var(--color-gold); font-size: 0.85rem;"></i> Ressources &amp; Légal</h4>
         <ul>
           <li><a href="comparison.html">Tableau Comparatif 2026</a></li>
+          <li><a href="blog.html">Journal d'Études</a></li>
           <li><a href="index.html#skin-quiz">Diagnostic de Peau</a></li>
           <li><a href="privacy.html">Politique de Confidentialité</a></li>
           <li><a href="../links.html">Portail Réseaux</a></li>

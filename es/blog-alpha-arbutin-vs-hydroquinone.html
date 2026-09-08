@@ -199,8 +199,8 @@
           <!-- Semantic Infographic 3: Whiteboard Process Diagram -->
           <div class="infographic-container" style="margin: 0 0 2.5rem 0; padding: 2rem; background: linear-gradient(135deg, rgba(212,175,55,0.06) 0%, rgba(17,24,39,0.95) 100%); border: 1px solid var(--color-border); border-radius: 12px; text-align: center;">
             <span class="badge badge-gold" style="margin-bottom: 0.5rem;"><i class="fa-solid fa-chalkboard"></i> EXPLICACIÓN EN PIZARRA DIGITAL</span>
-            <h3 style="color: var(--color-dark); font-size: 1.4rem; margin: 0.5rem 0 0.25rem 0;">La Fábrica de Pintura Cutánea y la Escalera Mecánica de 28 Días</h3>
-            <p style="color: var(--color-muted); font-size: 0.9rem; max-width: 600px; margin: 0 auto 1.5rem auto;">Comparación entre la intoxicación celular destructiva y el bloqueo enzimático seguro.</p>
+            <p class="infographic-title" style="color: var(--color-dark); font-size: 1.4rem; margin: 0.5rem 0 0.25rem 0;">La Fábrica de Pintura Cutánea y la Escalera Mecánica de 28 Días</p>
+            ="color: var(--color-muted); font-size: 0.9rem; max-width: 600px; margin: 0 auto 1.5rem auto;">Comparación entre la intoxicación celular destructiva y el bloqueo enzimático seguro.</p>
             <img src="../Pictures/infographic-melanin-escalator.jpg" alt="Diagrama digital en pizarra que explica cómo la Alfa-Arbutina bloquea la enzima tirosinasa en la fábrica de melanocitos mientras el pigmento viejo sube por la escalera de 28 días" width="800" height="450" fetchpriority="high" style="width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); display: block; margin: 0 auto;">
           </div>
 
@@ -296,48 +296,46 @@
           </p>
 
           <!-- Mechanism Pathway Breakdown Grid -->
-          <div class="reveal" style="margin: 2.5rem 0; padding: 1.5rem; background: linear-gradient(135deg, rgba(212,175,55,0.04) 0%, rgba(17,24,39,0.85) 100%); border: 1px solid var(--color-border); border-radius: 12px;">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem;">
-              
-              <!-- Hydroquinone Route Card -->
-              <div style="background: rgba(239, 68, 68, 0.08); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 8px; padding: 1.25rem;">
-                <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-                  <span style="background: rgba(239, 68, 68, 0.2); color: #FCA5A5; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;"><i class="fa-solid fa-skull-crossbones"></i></span>
-                  <h4 style="margin: 0; color: #FCA5A5; font-size: 1.1rem;">Ruta de la Hidroquinona</h4>
-                </div>
-                <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem; color: var(--color-dark-surface);">
-                  <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;">
-                    <strong style="color: #F87171;">1.</strong> Químico citotóxico invade la fábrica de pigmento.
-                  </li>
-                  <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;">
-                    <strong style="color: #F87171;">2.</strong> Envenena y deteriora los melanocitos vivos.
-                  </li>
-                  <li style="display: flex; gap: 0.5rem;">
-                    <strong style="color: #F87171;">3.</strong> Alto riesgo de efecto rebote severo y manchas permanentes.
-                  </li>
-                </ul>
+          <div class="mechanism-grid reveal">
+            
+            <!-- Hydroquinone Route Card -->
+            <div style="background: rgba(239, 68, 68, 0.08); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 8px; padding: 1.25rem;">
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                <span style="background: rgba(239, 68, 68, 0.2); color: #FCA5A5; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;"><i class="fa-solid fa-skull-crossbones"></i></span>
+                <h3 style="margin: 0; color: #FCA5A5; font-size: 1.1rem;">Ruta de la Hidroquinona</h3>
               </div>
-
-              <!-- Alpha-Arbutin Route Card -->
-              <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 8px; padding: 1.25rem;">
-                <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-                  <span style="background: rgba(16, 185, 129, 0.2); color: #6EE7B7; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;"><i class="fa-solid fa-shield-halved"></i></span>
-                  <h4 style="margin: 0; color: #6EE7B7; font-size: 1.1rem;">Ruta de la Alfa-Arbutina</h4>
-                </div>
-                <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem; color: var(--color-dark-surface);">
-                  <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;">
-                    <strong style="color: #34D399;">1.</strong> Molécula botánica limpia que imita la tirosina.
-                  </li>
-                  <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;">
-                    <strong style="color: #34D399;">2.</strong> Bloquea la cerradura de la enzima de forma segura (freno del 70%).
-                  </li>
-                  <li style="display: flex; gap: 0.5rem;">
-                    <strong style="color: #34D399;">3.</strong> El pigmento viejo asciende por la escalera de 28 días y desaparece.
-                  </li>
-                </ul>
-              </div>
-
+              <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem; color: var(--color-dark-surface);">
+                <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;">
+                  <strong style="color: #F87171;">1.</strong> Químico citotóxico invade la fábrica de pigmento.
+                </li>
+                <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;">
+                  <strong style="color: #F87171;">2.</strong> Envenena y deteriora los melanocitos vivos.
+                </li>
+                <li style="display: flex; gap: 0.5rem;">
+                  <strong style="color: #F87171;">3.</strong> Alto riesgo de efecto rebote severo y manchas permanentes.
+                </li>
+              </ul>
             </div>
+
+            <!-- Alpha-Arbutin Route Card -->
+            <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 8px; padding: 1.25rem;">
+              <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                <span style="background: rgba(16, 185, 129, 0.2); color: #6EE7B7; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;"><i class="fa-solid fa-shield-halved"></i></span>
+                <h3 style="margin: 0; color: #6EE7B7; font-size: 1.1rem;">Ruta de la Alfa-Arbutina</h3>
+              </div>
+              <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem; color: var(--color-dark-surface);">
+                <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;">
+                  <strong style="color: #34D399;">1.</strong> Molécula botánica limpia que imita la tirosina.
+                </li>
+                <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;">
+                  <strong style="color: #34D399;">2.</strong> Bloquea la cerradura de la enzima de forma segura (freno del 70%).
+                </li>
+                <li style="display: flex; gap: 0.5rem;">
+                  <strong style="color: #34D399;">3.</strong> El pigmento viejo asciende por la escalera de 28 días y desaparece.
+                </li>
+              </ul>
+            </div>
+
           </div>
 
           <div class="table-responsive reveal" style="margin: 2.5rem 0;">
@@ -474,7 +472,6 @@
           <li><a href="kollagen-intensiv-review.html">Kollagen Intensiv™ (Colágeno)</a></li>
           <li><a href="synevra-ultralift-review.html">Synevra UltraLift™ (Líneas)</a></li>
           <li><a href="axavive-review.html">Axavive™ (Nutricosmético)</a></li>
-          <li><a href="blog-syn-coll-vs-retinol.html">Estudio Syn-Coll® vs. Retinol</a></li>
         </ul>
       </div>
 
@@ -495,6 +492,7 @@
         <h4><i class="fa-solid fa-scale-balanced" style="color: var(--color-gold); font-size: 0.85rem;"></i> Recursos y Legal</h4>
         <ul>
           <li><a href="comparison.html">Matriz Comparativa 2026</a></li>
+          <li><a href="blog.html">Revista de Estudios</a></li>
           <li><a href="index.html#skin-quiz">Test Facial Personalizado</a></li>
           <li><a href="privacy.html">Política de Privacidad</a></li>
           <li><a href="../links.html">Redes y Enlaces</a></li>
