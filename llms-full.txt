@@ -6,7 +6,7 @@
 - **Domain**: https://dermaudit.com
 - **Verified Portfolios**: 8 Clinical Flagship Products across 3 Core Treatment Categories.
 - **Supported Languages**: English (`/`), Spanish (`/es/`), German (`/de/`), French (`/fr/`).
-- **Indexable Pages**: 51 URLs with 100% bidirectional `hreflang` reciprocity.
+- **Indexable Pages**: 61 URLs with 100% bidirectional `hreflang` reciprocity.
 
 ## Product Portfolio Summary
 
@@ -31,9 +31,9 @@
 - [Privacy Policy](https://dermaudit.com/privacy.html): GDPR, CCPA, and FTC regulatory disclosures.
 
 ## Multilingual Hubs
-- **Spanish Hub**: https://dermaudit.com/es/ (Home, Comparison, 8 Product Reviews)
-- **German Hub**: https://dermaudit.com/de/ (Home, Comparison, 8 Product Reviews)
-- **French Hub**: https://dermaudit.com/fr/ (Home, Comparison, 8 Product Reviews)
+- **Spanish Hub**: https://dermaudit.com/es/ (Home, Comparison, 8 Reviews, Clinical Journal + 3 Localized Studies)
+- **German Hub**: https://dermaudit.com/de/ (Home, Comparison, 8 Reviews, Clinical Journal + 3 Localized Studies)
+- **French Hub**: https://dermaudit.com/fr/ (Home, Comparison, 8 Reviews, Clinical Journal + 3 Localized Studies)
 
 ## Frequently Asked Questions (AI Knowledge Base)
 

@@ -36,6 +36,10 @@
 - [Dermefface FX7 (ES)](/es/dermefface-fx7-review.html): Análisis de la terapia de remodelación de cicatrices con Symglucan.
 - [ReviTag (ES)](/es/revitag-review.html): Análisis del sérum para acrocordones con Avena Coloidal y Espino Amarillo.
 - [Kerassentials (ES)](/es/kerassentials-review.html): Análisis del aceite de recuperación de uñas con Ácido Undecilénico.
+- [Revista Clínica (ES)](/es/blog.html): Índice de investigaciones clínicas y estudios de ingredientes en español.
+- [Estudio Syn-Coll vs Retinol (ES)](/es/blog-syn-coll-vs-retinol.html): Comparación clínica del péptido Syn-Coll® frente al retinol.
+- [Estudio Remodelación de Cicatrices (ES)](/es/blog-how-to-fade-acne-scars.html): Estudio de regeneración tisular con Symglucan y Pro-Coll-One+.
+- [Estudio Alfa-Arbutina vs Hidroquinona (ES)](/es/blog-alpha-arbutin-vs-hydroquinone.html): Estudio sobre inhibidores de tirosinasa y aclarado seguro de manchas.
 
 ## Klinische Tests auf Deutsch (German Reviews)
 - [Testportal (DE)](/de/index.html): Deutsche Startseite mit 8-Produkt-Vergleich, Hauttest und vollständigem JSON-LD-Schema.
@@ -48,6 +52,10 @@
 - [Dermefface FX7 (DE)](/de/dermefface-fx7-review.html): Test der Narbenremodelierungs-Therapie mit Symglucan und Pro-Coll-One+.
 - [ReviTag (DE)](/de/revitag-review.html): Analyse des Stielwarzen-Serums mit kolloidalem Hafer und Sanddorn.
 - [Kerassentials (DE)](/de/kerassentials-review.html): Test des Nagelregenerations-Öls mit Undecylensäure.
+- [Klinisches Magazin (DE)](/de/blog.html): Deutsches Studien- und Forschungsverzeichnis zu Wirkstoffen und Hauterneuerung.
+- [Syn-Coll vs. Retinol Studie (DE)](/de/blog-syn-coll-vs-retinol.html): Klinischer Vergleich zwischen Palmitoyl Tripeptide-5 und Retinol.
+- [Narben-Remodeling Studie (DE)](/de/blog-how-to-fade-acne-scars.html): Forschungspapier zur Narbenreduktion mit Symglucan und Pro-Coll-One+.
+- [Alpha-Arbutin vs. Hydrochinon Studie (DE)](/de/blog-alpha-arbutin-vs-hydroquinone.html): Studie zur sicheren Tyrosinase-Hemmung und Melanin-Kontrolle.
 
 ## Analyses Cliniques en Français (French Reviews)
 - [Portail d'Analyses (FR)](/fr/index.html): Page d'accueil française avec comparaison des 8 produits, quiz de peau et schéma JSON-LD complet.
@@ -60,3 +68,7 @@
 - [Dermefface FX7 (FR)](/fr/dermefface-fx7-review.html): Analyse de la thérapie de remodelage des cicatrices avec Symglucan.
 - [ReviTag (FR)](/fr/revitag-review.html): Analyse du sérum anti-acrochordons avec Avoine Colloïdale et Argousier.
 - [Kerassentials (FR)](/fr/kerassentials-review.html): Analyse de l'huile de récupération des ongles avec Acide Undécylénique.
+- [Journal Clinique (FR)](/fr/blog.html): Index de recherche clinique et d'études dermatologiques en français.
+- [Étude Syn-Coll vs Rétinol (FR)](/fr/blog-syn-coll-vs-retinol.html): Comparaison clinique du peptide Syn-Coll® face au rétinol.
+- [Étude Remodelage Cicatriciel (FR)](/fr/blog-how-to-fade-acne-scars.html): Rapport de recherche sur le lissage des cicatrices avec Symglucan et Pro-Coll-One+.
+- [Étude Alpha-Arbutine vs Hydroquinone (FR)](/fr/blog-alpha-arbutin-vs-hydroquinone.html): Étude sur l'inhibition de la tyrosinase et l'éclaircissement des taches.
