@@ -583,10 +583,12 @@ function showQuizResults() {
   } else if (quizAnswers.concern === 'expression') {
     productKey = 'synevra';
   } else if (quizAnswers.concern === 'fullbody') {
-    productKey = 'axavive';
+    // Axavive is temporarily unavailable from manufacturer - route to top alternative
+    productKey = 'kollagen';
   } else if (quizAnswers.concern === 'wrinkles') {
     if (quizAnswers.skinType === 'capsule') {
-      productKey = 'axavive';
+      // Axavive is temporarily unavailable from manufacturer - route to top alternative
+      productKey = 'kollagen';
     } else if (quizAnswers.skinType === 'serum') {
       productKey = 'synevra';
     } else {
