@@ -701,7 +701,8 @@ h1, h2, h3, h4 {
   border-radius: 50%;
 }
 
-.trust-item h4 {
+.trust-item h4,
+.trust-item .trust-title {
   font-size: 0.95rem;
   font-family: var(--font-sans);
   font-weight: 600;
@@ -1229,6 +1230,7 @@ h1, h2, h3, h4 {
 
 .quiz-header { margin-bottom: 2rem; }
 
+.quiz-step h3,
 .quiz-step h4 {
   font-family: var(--font-sans);
   font-size: 1.15rem;
@@ -1408,6 +1410,7 @@ h1, h2, h3, h4 {
   margin-top: 1rem;
 }
 
+.footer-col h3,
 .footer-col h4 {
   color: var(--color-white);
   font-family: var(--font-sans);
