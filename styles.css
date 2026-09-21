@@ -1539,6 +1539,21 @@ h1, h2, h3, h4 {
     gap: 2rem;
     text-align: center;
   }
+  .footer-col h3,
+  .footer-col h4 {
+    justify-content: center;
+  }
+  .card {
+    padding: 1.25rem !important;
+  }
+  .product-card-vertical .img-showcase {
+    min-height: 180px;
+    padding: 1rem;
+  }
+  .product-card-vertical .img-showcase img {
+    max-height: 160px;
+    width: auto;
+  }
 }
 
 /* 2. Small Mobile Devices (max-width: 768px) */
