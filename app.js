@@ -220,10 +220,10 @@ const I18N_QUIZ = {
         shortName: 'Illuminatural 6i™',
         badge: 'TOP PICK: BOTANICAL BRIGHTENING',
         img: 'Pictures/illuminatural6i_icon001_600x600.jpg',
-        hook: '6 synergistic plant-based brighteners (Alpha-Arbutin, Whitonyl®, Niacinamide) interrupt melanin overproduction without dangerous bleaches.',
+        hook: '6 plant-based brighteners (Alpha-Arbutin, Whitonyl®, Niacinamide). Note: Laboratory restock in progress; link opens the official Skinception catalog with tracked discounts.',
         reviewUrl: 'illuminatural-6i-review.html',
         linkKey: 'illuminatural',
-        btnText: 'Claim Official Discount'
+        btnText: 'Explore Skinception Catalog'
       },
       dermefface: {
         title: 'Match: Dermefface FX7® Scar Remodeling Therapy',
@@ -281,10 +281,10 @@ const I18N_QUIZ = {
         shortName: 'Illuminatural 6i™',
         badge: 'SELECCIÓN: LUMINOSIDAD BOTÁNICA',
         img: 'Pictures/illuminatural6i_icon001_600x600.jpg',
-        hook: '6 activos botánicos (Alfa-Arbutina, Niacinamida) que frenan la melanina sin hidroquinona ni químicos agresivos.',
+        hook: '6 activos botánicos (Alfa-Arbutina, Niacinamida). Nota: Reposición de laboratorio en curso; el enlace dirige al catálogo oficial de Skinception con su descuento activo.',
         reviewUrl: 'illuminatural-6i-review.html',
         linkKey: 'illuminatural',
-        btnText: 'Obtener Descuento Oficial'
+        btnText: 'Explorar Catálogo Skinception'
       },
       dermefface: {
         title: 'Coincidencia: Terapia de Cicatrices Dermefface FX7®',
@@ -342,10 +342,10 @@ const I18N_QUIZ = {
         shortName: 'Illuminatural 6i™',
         badge: 'TOP-EMPFEHLUNG: PFLANZLICHE AUFHELLUNG',
         img: 'Pictures/illuminatural6i_icon001_600x600.jpg',
-        hook: '6 pflanzliche Aufheller (Alpha-Arbutin, Niacinamid) hemmen Melaninbildung ohne schädliche Bleichmittel.',
+        hook: '6 pflanzliche Aufheller (Alpha-Arbutin, Niacinamid). Hinweis: Labor-Nachproduktion läuft; Link öffnet den offiziellen Skinception-Katalog mit Rabatt.',
         reviewUrl: 'illuminatural-6i-review.html',
         linkKey: 'illuminatural',
-        btnText: 'Offiziellen Rabatt Sichern'
+        btnText: 'Skinception-Katalog Öffnen'
       },
       dermefface: {
         title: 'Ergebnis: Dermefface FX7® Narbentherapie',
@@ -403,10 +403,10 @@ const I18N_QUIZ = {
         shortName: 'Illuminatural 6i™',
         badge: 'MEILLEUR CHOIX : ÉCLAT BOTANIQUE',
         img: 'Pictures/illuminatural6i_icon001_600x600.jpg',
-        hook: '6 actifs végétaux (Alpha-Arbutine, Niacinamide) freinant la mélanine sans hydroquinone ni décapants agressifs.',
+        hook: '6 actifs végétaux (Alpha-Arbutine, Niacinamide). Remarque : Réassort en laboratoire en cours ; le lien redirige vers le catalogue officiel Skinception avec réduction.',
         reviewUrl: 'illuminatural-6i-review.html',
         linkKey: 'illuminatural',
-        btnText: 'Obtenir la Réduction Officielle'
+        btnText: 'Explorer le Catalogue Skinception'
       },
       dermefface: {
         title: 'Résultat: Thérapie Cicatrisante Dermefface FX7®',
