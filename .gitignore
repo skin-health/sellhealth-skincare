@@ -2,6 +2,10 @@
 gemini.md
 social_media_assets.md
 
+# Local environment / secrets
+.env*
+*.env
+
 # OS / Editor temporary files
 .DS_Store
 Thumbs.db

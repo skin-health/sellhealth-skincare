@@ -648,26 +648,7 @@ function initFAQ() {
 }
 
 /* ==========================================================================
-   4. IMAGE SWITCHER FOR PRODUCT GALLERY (GLOBAL SCOPE)
-   ========================================================================== */
-window.switchImage = function(mainImgId, newSrc, thumbEl, newAlt) {
-  const mainImg = document.getElementById(mainImgId);
-  if (mainImg) {
-    mainImg.src = newSrc;
-    if (newAlt) {
-      mainImg.alt = newAlt;
-    }
-  }
-
-  if (thumbEl && thumbEl.parentElement) {
-    const thumbs = thumbEl.parentElement.querySelectorAll('.thumb');
-    thumbs.forEach(t => t.classList.remove('active'));
-    thumbEl.classList.add('active');
-  }
-};
-
-/* ==========================================================================
-   5. NAVIGATION CONTROLS
+   4. NAVIGATION CONTROLS
    ========================================================================== */
 function initNavigation() {
   const menuToggle = document.getElementById('menuToggle');
@@ -767,7 +748,7 @@ function initNavigation() {
 }
 
 /* ==========================================================================
-   6. SCROLL-TRIGGERED REVEAL ANIMATIONS
+   5. SCROLL-TRIGGERED REVEAL ANIMATIONS
    ========================================================================== */
 function initScrollReveal() {
   if (!('IntersectionObserver' in window)) return;
@@ -795,7 +776,7 @@ function initScrollReveal() {
 }
 
 /* ==========================================================================
-   7. HERO CATEGORY DIAGNOSTIC SELECTOR
+   6. HERO CATEGORY DIAGNOSTIC SELECTOR
    ========================================================================== */
 function initHeroSelector() {
   const tabs = document.querySelectorAll('.hero-tab-btn');

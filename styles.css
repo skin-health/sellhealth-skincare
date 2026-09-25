@@ -32,7 +32,8 @@
   --color-surface: #111827;       /* Surface card deep blue */
   --color-charcoal: #111827;      /* Dark text for gold & light buttons */
   --color-white: #FFFFFF;         /* True pure white text & accents */
-  --color-border: #1E293B;        /* Dark border grey-blue */
+  --color-border: #1E293B;        /* Dark border grey-blue (decorative groupings only) */
+  --color-border-interactive: #64748B;  /* Interactive control boundary. WCAG 1.4.11 needs >= 3:1 */
   
   --color-success: #34D399;       /* Emerald verified */
   --color-success-bg: rgba(52, 211, 153, 0.08);
@@ -229,7 +230,7 @@ h1, h2, h3, h4 {
 .btn-secondary {
   background-color: transparent;
   color: var(--color-dark);
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--color-border-interactive);
 }
 
 .btn-secondary:hover {
@@ -1037,28 +1038,6 @@ h1, h2, h3, h4 {
   transition: var(--transition);
 }
 
-.thumbnail-row {
-  display: flex;
-  gap: 0.75rem;
-  justify-content: center;
-}
-
-.thumb {
-  width: 70px;
-  height: 70px;
-  object-fit: cover;
-  border-radius: var(--radius-sm);
-  border: 2px solid var(--color-border);
-  cursor: pointer;
-  opacity: 0.7;
-  transition: var(--transition);
-}
-
-.thumb:hover, .thumb.active {
-  border-color: var(--color-primary-dark);
-  opacity: 1;
-}
-
 /* Product Info */
 .product-header h3 {
   font-size: 2rem;
@@ -1249,7 +1228,7 @@ h1, h2, h3, h4 {
   gap: 1rem;
   padding: 1.1rem 1.5rem;
   background-color: var(--color-surface);
-  border: 1.5px solid var(--color-border);
+  border: 1.5px solid var(--color-border-interactive);
   border-radius: var(--radius-md);
   font-size: 1rem;
   font-weight: 500;
@@ -1479,27 +1458,6 @@ h1, h2, h3, h4 {
   background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--color-muted);
 }
 
-.form-group label {
-  display: block;
-  font-weight: 600;
-  font-size: 0.88rem;
-  margin-bottom: 0.4rem;
-}
-
-.form-input {
-  width: 100%;
-  padding: 0.75rem;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  font-size: 0.95rem;
-}
-
-.form-input:focus {
-  outline: none;
-  border-color: var(--color-primary-dark);
-  box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.2);
-}
-
 /* ==========================================================================
    RESPONSIVE BREAKPOINTS
    ========================================================================== */
@@ -1654,10 +1612,6 @@ h1, h2, h3, h4 {
   }
   .stat-item {
     text-align: center;
-  }
-  .thumb {
-    width: 55px;
-    height: 55px;
   }
   .btn-xl {
     padding: 0.9rem 1.25rem;
@@ -1937,7 +1891,6 @@ h1, h2, h3, h4 {
   .modal-overlay,
   .btn,
   .product-action-bar,
-  .thumbnail-gallery,
   .header-actions {
     display: none !important;
   }
@@ -2516,12 +2469,6 @@ textarea:focus-visible {
 .faq-question:focus-visible {
   outline: 2px solid var(--color-gold);
   outline-offset: 2px;
-}
-
-.quiz-option:focus-visible {
-  outline: 2px solid var(--color-gold);
-  outline-offset: 2px;
-  box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.25);
 }
 
 /* ==========================================================================
