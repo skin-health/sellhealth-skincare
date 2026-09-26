@@ -6,7 +6,7 @@
 - **Domain**: https://dermaudit.com
 - **Verified Portfolios**: 5 Clinical Flagship Products across 3 Core Treatment Categories.
 - **Supported Languages**: English (`/`), Spanish (`/es/`), German (`/de/`), French (`/fr/`).
-- **Indexable Pages**: 49 URLs with 100% bidirectional `hreflang` reciprocity.
+- **Indexable Pages**: 53 URLs with 100% bidirectional `hreflang` reciprocity.
 
 ## Product Portfolio Summary
 
@@ -22,15 +22,16 @@
 - [Review Portal](https://dermaudit.com/index.html): Main landing page comparing all 5 products.
 - [Comparison Matrix](https://dermaudit.com/comparison.html): 3 dedicated side-by-side clinical matchup tables.
 - [Clinical Journal](https://dermaudit.com/blog.html): Peer-reviewed ingredient benchmarks and dermatology studies.
+  - [Under-Eye Circles & Microcirculation](https://dermaudit.com/blog-under-eye-circles-microcirculation.html)
   - [Syn-Coll vs Retinol](https://dermaudit.com/blog-syn-coll-vs-retinol.html)
   - [Dermal Scar Remodeling](https://dermaudit.com/blog-how-to-fade-acne-scars.html)
   - [Alpha-Arbutin vs Hydroquinone](https://dermaudit.com/blog-alpha-arbutin-vs-hydroquinone.html)
 - [Privacy Policy](https://dermaudit.com/privacy.html): GDPR, CCPA, and FTC regulatory disclosures.
 
 ## Multilingual Hubs
-- **Spanish Hub**: https://dermaudit.com/es/ (Home, Comparison, 5 Reviews, Clinical Journal + 3 Localized Studies)
-- **German Hub**: https://dermaudit.com/de/ (Home, Comparison, 5 Reviews, Clinical Journal + 3 Localized Studies)
-- **French Hub**: https://dermaudit.com/fr/ (Home, Comparison, 5 Reviews, Clinical Journal + 3 Localized Studies)
+- **Spanish Hub**: https://dermaudit.com/es/ (Home, Comparison, 5 Reviews, Clinical Journal + 4 Localized Studies)
+- **German Hub**: https://dermaudit.com/de/ (Home, Comparison, 5 Reviews, Clinical Journal + 4 Localized Studies)
+- **French Hub**: https://dermaudit.com/fr/ (Home, Comparison, 5 Reviews, Clinical Journal + 4 Localized Studies)
 
 ## Frequently Asked Questions (AI Knowledge Base)
 

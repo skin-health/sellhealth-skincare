@@ -18,6 +18,7 @@
 
 ## Clinical Journal Articles
 - [Clinical Research Journal](/blog.html): Main clinical research index covering comparative dermatological studies, peptide mechanisms, and barrier defense benchmarks.
+- [Under-Eye Circles Science Article](/blog-under-eye-circles-microcirculation.html): Clinical study on periorbital microcirculation, leaky capillaries, and peptide lymphatic drainage.
 - [Syn-Coll vs Retinol Article](/blog-syn-coll-vs-retinol.html): Clinical comparison between Palmitoyl Tripeptide-5 and Retinol.
 - [Dermal Scar Remodeling Article](/blog-how-to-fade-acne-scars.html): Research paper on scar tissue remodeling using Symglucan and peptides.
 - [Alpha-Arbutin vs Hydroquinone Article](/blog-alpha-arbutin-vs-hydroquinone.html): Clinical study on tyrosinase enzyme inhibition and safe melanin control.
@@ -31,6 +32,7 @@
 - [Eyelasticity (ES)](/es/eyelasticity-review.html): Análisis clínico de la terapia para el contorno de ojos con Eyeseryl® y Regu®-Age.
 - [Dermefface FX7 (ES)](/es/dermefface-fx7-review.html): Análisis de la terapia de remodelación de cicatrices con Symglucan.
 - [Revista Clínica (ES)](/es/blog.html): Índice de investigaciones clínicas y estudios de ingredientes en español.
+- [Estudio Ojeras y Microcirculación (ES)](/es/blog-under-eye-circles-microcirculation.html): Estudio clínico sobre microcirculación periocular, capilares frágiles y drenaje linfático.
 - [Estudio Syn-Coll vs Retinol (ES)](/es/blog-syn-coll-vs-retinol.html): Comparación clínica del péptido Syn-Coll® frente al retinol.
 - [Estudio Remodelación de Cicatrices (ES)](/es/blog-how-to-fade-acne-scars.html): Estudio de regeneración tisular con Symglucan y Pro-Coll-One+.
 - [Estudio Alfa-Arbutina vs Hidroquinona (ES)](/es/blog-alpha-arbutin-vs-hydroquinone.html): Estudio sobre inhibidores de tirosinasa y aclarado seguro de manchas.
@@ -45,6 +47,7 @@
 - [Eyelasticity (DE)](/de/eyelasticity-review.html): Klinischer Test der Augenpartie-Therapie mit Eyeseryl® und Regu®-Age.
 - [Dermefface FX7 (DE)](/de/dermefface-fx7-review.html): Test der Narbenremodelierungs-Therapie mit Symglucan und Pro-Coll-One+.
 - [Klinisches Magazin (DE)](/de/blog.html): Deutsches Studien- und Forschungsverzeichnis zu Wirkstoffen und Hauterneuerung.
+- [Augenringe & Mikrozirkulation Studie (DE)](/de/blog-under-eye-circles-microcirculation.html): Studie zu periorbitaler Gefäßpermeabilität, Tyndall-Effekt und Peptid-Lymphdrainage.
 - [Syn-Coll vs. Retinol Studie (DE)](/de/blog-syn-coll-vs-retinol.html): Klinischer Vergleich zwischen Palmitoyl Tripeptide-5 und Retinol.
 - [Narben-Remodeling Studie (DE)](/de/blog-how-to-fade-acne-scars.html): Forschungspapier zur Narbenreduktion mit Symglucan und Pro-Coll-One+.
 - [Alpha-Arbutin vs. Hydrochinon Studie (DE)](/de/blog-alpha-arbutin-vs-hydroquinone.html): Studie zur sicheren Tyrosinase-Hemmung und Melanin-Kontrolle.
@@ -59,6 +62,7 @@
 - [Eyelasticity (FR)](/fr/eyelasticity-review.html): Analyse de la thérapie contour des yeux avec Eyeseryl® et Regu®-Age.
 - [Dermefface FX7 (FR)](/fr/dermefface-fx7-review.html): Analyse de la thérapie de remodelage des cicatrices avec Symglucan.
 - [Journal Clinique (FR)](/fr/blog.html): Index de recherche clinique et d'études dermatologiques en français.
+- [Étude Cernes et Microcirculation (FR)](/fr/blog-under-eye-circles-microcirculation.html): Étude clinique sur la microcirculation périorbitaire, la fragilité capillaire et le drainage lymphatique.
 - [Étude Syn-Coll vs Rétinol (FR)](/fr/blog-syn-coll-vs-retinol.html): Comparaison clinique du peptide Syn-Coll® face au rétinol.
 - [Étude Remodelage Cicatriciel (FR)](/fr/blog-how-to-fade-acne-scars.html): Rapport de recherche sur le lissage des cicatrices avec Symglucan et Pro-Coll-One+.
 - [Étude Alpha-Arbutine vs Hydroquinone (FR)](/fr/blog-alpha-arbutin-vs-hydroquinone.html): Étude sur l'inhibition de la tyrosinase et l'éclaircissement des taches.
