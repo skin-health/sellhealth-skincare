@@ -1207,6 +1207,61 @@ h1, h2, h3, h4 {
 }
 
 /* ==========================================================================
+   CLINICAL COMPARISON BANNER COMPONENT
+   ========================================================================== */
+#comparison {
+  padding: 1.5rem 0 2.5rem 0;
+}
+
+.comparison-banner-card {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  background: radial-gradient(circle at center, rgba(197, 160, 89, 0.15), rgba(17, 24, 39, 0.95));
+  border: 1px solid var(--color-primary-dark);
+}
+
+.comparison-banner-card .badge {
+  margin-bottom: 1rem;
+}
+
+.comparison-banner-card h2 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.comparison-banner-card p {
+  color: var(--color-muted);
+  max-width: 650px;
+  margin: 0 auto 1.75rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.comparison-banner-card .btn-xl {
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  #comparison {
+    padding: 1rem 0 2rem 0;
+  }
+
+  .comparison-banner-card {
+    padding: 2.25rem 1.25rem;
+  }
+
+  .comparison-banner-card h2 {
+    font-size: 1.6rem;
+  }
+
+  .comparison-banner-card .btn-xl {
+    max-width: 100%;
+  }
+}
+
+/* ==========================================================================
    INTERACTIVE SKIN QUIZ
    ========================================================================== */
 .quiz-box {
