@@ -1,6 +1,11 @@
 # Local context file
 gemini.md
+gemini.md.bak
 social_media_assets.md
+
+# Agent audit reports (kept on disk, not published)
+RESEARCH-market-and-money.md
+STRATEGY_traffic_and_attention.md
 
 # Local environment / secrets
 .env*
