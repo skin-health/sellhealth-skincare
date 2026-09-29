@@ -437,6 +437,17 @@ h1, h2, h3, h4 {
   background-color: var(--color-border);
 }
 
+/* Hero stat footnote: manufacturer-attribution disclaimer for the efficacy
+   figures quoted in the stats block. Sits outside .hero-stats (which carries a
+   border-bottom), so it needs its own spacing to stay visually attached. */
+.stat-footnote {
+  font-size: 0.75rem;
+  color: var(--color-muted);
+  margin: 0.75rem 0 1.5rem;
+  line-height: 1.5;
+  max-width: 46rem;
+}
+
 .hero-cta-group {
   display: flex;
   gap: 1rem;
