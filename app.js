@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavigation();
   initScrollReveal();
   initHeroSelector();
+  initEmbedWidgets();
+  initArticleBadges();
 });
 
 /* ==========================================================================
@@ -190,7 +192,7 @@ const I18N_QUIZ = {
         shortName: 'Kollagen Intensiv™',
         badge: 'TOP PICK: DAILY COLLAGEN RENEWAL',
         img: 'Pictures/kollagen_boxbottle_lg.jpg',
-        hook: 'Clinically proven Swiss Syn-Coll® formula boosts natural collagen synthesis by 354% to restore youthful dermal bounce and smooth deep wrinkles.',
+        hook: 'The manufacturer reports that its Swiss Syn-Coll® formula boosts natural collagen synthesis by 354% to restore youthful dermal bounce and smooth deep wrinkles.',
         reviewUrl: 'kollagen-intensiv-review.html',
         linkKey: 'kollagen',
         btnText: 'Claim Official Discount'
@@ -251,7 +253,7 @@ const I18N_QUIZ = {
         shortName: 'Kollagen Intensiv™',
         badge: 'SELECCIÓN: RENOVACIÓN DE COLÁGENO',
         img: 'Pictures/kollagen_boxbottle_lg.jpg',
-        hook: 'Fórmula suiza con Syn-Coll® clínicamente probada: estimula el colágeno en un +354% para alisar arrugas profundas.',
+        hook: 'El fabricante informa que su fórmula suiza con Syn-Coll® estimula la síntesis de colágeno en un 354% para alisar arrugas profundas.',
         reviewUrl: 'kollagen-intensiv-review.html',
         linkKey: 'kollagen',
         btnText: 'Obtener Descuento Oficial'
@@ -312,7 +314,7 @@ const I18N_QUIZ = {
         shortName: 'Kollagen Intensiv™',
         badge: 'TOP-EMPFEHLUNG: KOLLAGEN-ERNEUERUNG',
         img: 'Pictures/kollagen_boxbottle_lg.jpg',
-        hook: 'Klinisch geprüfte Schweizer Syn-Coll® Formel steigert die Kollagenproduktion um 354% und mildert tiefe Falten.',
+        hook: 'Laut Hersteller steigert die Schweizer Syn-Coll® Formel die Kollagenproduktion um 354% und mildert tiefe Falten.',
         reviewUrl: 'kollagen-intensiv-review.html',
         linkKey: 'kollagen',
         btnText: 'Offiziellen Rabatt Sichern'
@@ -373,7 +375,7 @@ const I18N_QUIZ = {
         shortName: 'Kollagen Intensiv™',
         badge: 'MEILLEUR CHOIX : RENOUVELLEMENT DU COLLAGÈNE',
         img: 'Pictures/kollagen_boxbottle_lg.jpg',
-        hook: 'Formule suisse Syn-Coll® cliniquement prouvée: stimule la synthèse naturelle de collagène de +354%.',
+        hook: 'Le fabricant indique que sa formule suisse Syn-Coll® stimule la synthèse naturelle de collagène de +354% pour lisser les rides profondes.',
         reviewUrl: 'kollagen-intensiv-review.html',
         linkKey: 'kollagen',
         btnText: 'Obtenir la Réduction Officielle'
@@ -673,6 +675,7 @@ function initNavigation() {
       const isActive = navMenu.classList.toggle('active');
       menuToggle.setAttribute('aria-expanded', isActive.toString());
       updateIconState(isActive);
+      document.body.style.overflow = isActive ? 'hidden' : '';
     });
 
     // Close mobile menu on click outside
@@ -681,6 +684,7 @@ function initNavigation() {
         navMenu.classList.remove('active');
         menuToggle.setAttribute('aria-expanded', 'false');
         updateIconState(false);
+        document.body.style.overflow = '';
       }
     });
 
@@ -690,6 +694,7 @@ function initNavigation() {
         navMenu.classList.remove('active');
         menuToggle.setAttribute('aria-expanded', 'false');
         updateIconState(false);
+        document.body.style.overflow = '';
         menuToggle.focus();
       }
     });
@@ -829,5 +834,131 @@ function initHeroSelector() {
     });
   });
 }
+
+/* ==========================================================================
+   7. INFOGRAPHIC EMBED WIDGET (ONE-CLICK COPY CONTROLLER)
+   ========================================================================== */
+
+function initEmbedWidgets() {
+  const embedBoxes = document.querySelectorAll('.infographic-embed-box');
+  if (!embedBoxes.length) return;
+
+  const docLang = (document.documentElement.lang || 'en').toLowerCase().slice(0, 2);
+  const I18N_EMBED = {
+    en: { copied: 'Copied to Clipboard!', spoken: 'Embed code copied to clipboard.' },
+    es: { copied: '¡Copiado al Portapapeles!', spoken: 'Código insertable copiado al portapapeles.' },
+    de: { copied: 'In Zwischenablage Kopiert!', spoken: 'Einbettungscode in die Zwischenablage kopiert.' },
+    fr: { copied: 'Copié dans le Presse-Papier !', spoken: 'Code d\'intégration copié dans le presse-papier.' }
+  };
+  const embedText = I18N_EMBED[docLang] || I18N_EMBED.en;
+
+  embedBoxes.forEach((box) => {
+    const btn = box.querySelector('.btn-copy-embed');
+    const textarea = box.querySelector('.infographic-embed-code');
+    if (!btn || !textarea) return;
+
+    btn.addEventListener('click', async () => {
+      const code = textarea.value;
+      let copied = false;
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        try {
+          await navigator.clipboard.writeText(code);
+          copied = true;
+        } catch (err) {
+          // Fallback to execCommand below
+        }
+      }
+
+      if (!copied) {
+        textarea.select();
+        try {
+          document.execCommand('copy');
+          copied = true;
+        } catch (err) {
+          // Browser prevented copy
+        }
+      }
+
+      if (copied) {
+        btn.classList.add('is-copied');
+        const textSpan = btn.querySelector('span:not(.sr-only)');
+        const icon = btn.querySelector('i');
+        const liveRegion = box.querySelector('.sr-only');
+        const originalText = textSpan ? textSpan.textContent : 'Copy Embed Code';
+        const originalAria = btn.getAttribute('aria-label');
+
+        if (textSpan) textSpan.textContent = embedText.copied;
+        btn.setAttribute('aria-label', embedText.copied);
+        if (icon) icon.className = 'fa-solid fa-check';
+        if (liveRegion) liveRegion.textContent = embedText.spoken;
+
+        setTimeout(() => {
+          btn.classList.remove('is-copied');
+          if (textSpan) textSpan.textContent = originalText;
+          if (originalAria) {
+            btn.setAttribute('aria-label', originalAria);
+          } else {
+            btn.removeAttribute('aria-label');
+          }
+          if (icon) icon.className = 'fa-solid fa-clipboard-check';
+          if (liveRegion) liveRegion.textContent = '';
+        }, 2500);
+      }
+    });
+
+    textarea.addEventListener('click', () => {
+      textarea.select();
+    });
+  });
+}
+
+/* ==========================================================================
+   8. DYNAMIC ARTICLE RECENCY BADGES
+   ========================================================================== */
+
+/**
+ * Attaches a localized 'New' badge to recent article cards and article headers within 45 days.
+ * Uses createElement and textContent. Zero innerHTML.
+ */
+function initArticleBadges() {
+  const headers = document.querySelectorAll('.blog-card-header[data-published], .article-header-meta[data-published]');
+  if (!headers.length) return;
+
+  const docLang = (document.documentElement.lang || 'en').toLowerCase().slice(0, 2);
+  const I18N_BADGE = {
+    en: { text: 'New', label: 'New article' },
+    es: { text: 'Nuevo', label: 'Nuevo artículo' },
+    de: { text: 'Neu', label: 'Neuer Artikel' },
+    fr: { text: 'Nouveau', label: 'Nouvel article' }
+  };
+  const locBadge = I18N_BADGE[docLang] || I18N_BADGE.en;
+
+  const now = Date.now();
+  const MS_PER_DAY = 86400000;
+  const RECENCY_THRESHOLD_DAYS = 45;
+
+  headers.forEach((header) => {
+    const rawDate = header.getAttribute('data-published');
+    if (!rawDate) return;
+
+    const pubTime = Date.parse(rawDate);
+    if (isNaN(pubTime)) return;
+
+    const diffDays = (now - pubTime) / MS_PER_DAY;
+
+    if (diffDays >= 0 && diffDays <= RECENCY_THRESHOLD_DAYS) {
+      if (!header.querySelector('.badge-new')) {
+        const badge = document.createElement('span');
+        badge.className = 'badge badge-gold badge-new';
+        badge.setAttribute('aria-label', locBadge.label);
+        badge.textContent = locBadge.text;
+        header.appendChild(badge);
+      }
+    }
+  });
+}
+
+
 
 

@@ -333,6 +333,12 @@ h1, h2, h3, h4 {
   border-bottom: 1px solid var(--color-border);
 }
 
+
+/* Header CTA must stay on one line (2-3 line wrap overflowed the 76px bar on de/comparison + de/blog) */
+.header-actions .btn {
+  white-space: nowrap;
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -346,6 +352,8 @@ h1, h2, h3, h4 {
   font-weight: 700;
   letter-spacing: 1px;
   color: var(--color-dark);
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .logo-accent { color: var(--color-primary-dark); }
@@ -360,6 +368,7 @@ h1, h2, h3, h4 {
   font-size: 0.95rem;
   font-weight: 500;
   color: var(--color-dark);
+  white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -1537,8 +1546,47 @@ h1, h2, h3, h4 {
    RESPONSIVE BREAKPOINTS
    ========================================================================== */
 
+/* 0. Large Tablets & Narrow Desktops (max-width: 1200px) */
+@media (max-width: 1200px) {
+  .header-actions .btn {
+    display: none; /* Hide header CTA to prevent nav wrapping */
+  }
+  .nav {
+    gap: 1rem;
+  }
+  .nav-link {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+}
+
 /* 1. Medium Tablets & Laptops (max-width: 992px) */
 @media (max-width: 992px) {
+  .header-actions .btn {
+    display: none;
+  }
+  .menu-toggle {
+    display: inline-flex !important;
+  }
+  .nav {
+    display: none;
+    position: absolute;
+    top: 75px; left: 0; right: 0;
+    background-color: var(--color-surface);
+    flex-direction: column;
+    padding: 1.25rem 1.5rem;
+    box-shadow: var(--shadow-md);
+    border-bottom: 1px solid var(--color-border);
+    z-index: 150;
+    max-height: calc(100vh - 75px);
+    max-height: calc(100dvh - 75px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+  .nav.active {
+    display: flex;
+  }
   .hero-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -1597,29 +1645,6 @@ h1, h2, h3, h4 {
   }
   .section-title {
     font-size: 1.8rem;
-  }
-  
-  /* Header clean up */
-  .header-actions .btn {
-    display: none; /* Hide header CTA to give logo room */
-  }
-  
-  .nav {
-    display: none;
-    position: absolute;
-    top: 75px; left: 0; right: 0;
-    background-color: var(--color-surface);
-    flex-direction: column;
-    padding: 1.25rem 1.5rem;
-    box-shadow: var(--shadow-md);
-    border-bottom: 1px solid var(--color-border);
-    z-index: 150;
-  }
-  .nav.active {
-    display: flex;
-  }
-  .menu-toggle {
-    display: inline-flex !important;
   }
 
   /* Hero adjustments */
@@ -1940,7 +1965,7 @@ h1, h2, h3, h4 {
 /* Landscape Phone Query (L7) */
 @media (max-height: 600px) and (orientation: landscape) {
   .header {
-    position: static;
+    position: relative;
   }
   .top-bar {
     display: none;
@@ -2146,6 +2171,42 @@ h1, h2, h3, h4 {
   border-radius: 50px;
   margin-bottom: 0.75rem;
   width: fit-content;
+}
+
+.blog-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  min-height: 1.75rem;
+}
+
+.blog-card-header .blog-tag {
+  margin-bottom: 0;
+}
+
+.article-header-meta {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+  min-height: 1.75rem;
+}
+
+.article-header-meta .blog-tag {
+  margin-bottom: 0;
+}
+
+.badge-new {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  line-height: 1.2;
 }
 
 .blog-title {
@@ -2510,6 +2571,20 @@ h1, h2, h3, h4 {
   }
 }
 
+/* Visually-hidden live region text (screen-reader only) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* ==========================================================================
    FOCUS-VISIBLE ACCESSIBILITY (WCAG 2.4.7)
    ========================================================================== */
@@ -2864,5 +2939,176 @@ textarea:focus-visible {
 .clinical-reference-box .ref-link:hover {
   color: #93C5FD;
 }
+
+/* ==========================================================================
+   INFOGRAPHIC EMBED CODE WIDGET
+   ========================================================================== */
+
+.infographic-embed-box {
+  background: rgba(17, 24, 39, 0.75);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.15rem 1.35rem;
+  margin: 1.5rem auto 0 auto;
+  max-width: 800px;
+  position: relative;
+  text-align: left;
+  transition: border-color var(--transition);
+}
+
+.infographic-embed-box:hover {
+  border-color: rgba(100, 116, 139, 0.45);
+}
+
+.infographic-embed-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.infographic-embed-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-dark-surface);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.infographic-embed-label i {
+  color: var(--color-primary-dark);
+}
+
+.infographic-embed-badge {
+  font-size: 0.72rem;
+  color: var(--color-muted);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.infographic-embed-control-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.infographic-embed-code {
+  flex-grow: 1;
+  background: #070B14;
+  border: 1px solid var(--color-border-interactive);
+  border-radius: var(--radius-sm);
+  color: #94A3B8;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  padding: 0.65rem 0.85rem;
+  min-height: 44px;
+  height: 44px;
+  resize: none;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  user-select: all;
+  transition: border-color var(--transition), color var(--transition);
+}
+
+.infographic-embed-code:focus {
+  outline: none;
+  border-color: var(--color-gold);
+  color: var(--color-dark);
+}
+
+.btn-copy-embed {
+  background: rgba(30, 41, 59, 0.85);
+  border: 1px solid var(--color-border-interactive);
+  color: var(--color-dark);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0 1.25rem;
+  height: 44px;
+  min-height: 44px;
+  min-width: 175px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.btn-copy-embed:hover {
+  background: rgba(197, 160, 89, 0.15);
+  border-color: var(--color-primary-dark);
+  color: var(--color-primary-light);
+  transform: translateY(-1px);
+}
+
+.btn-copy-embed.is-copied {
+  background: rgba(52, 211, 153, 0.15) !important;
+  border-color: var(--color-success) !important;
+  color: var(--color-success) !important;
+}
+
+.infographic-embed-caption {
+  font-size: 0.75rem;
+  color: var(--color-muted);
+  margin-top: 0.6rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+@media (max-width: 640px) {
+  .infographic-embed-box {
+    padding: 1rem;
+  }
+  .infographic-embed-control-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .infographic-embed-code,
+  .btn-copy-embed {
+    width: 100%;
+    height: auto;
+    min-height: 48px;
+  }
+}
+
+/* ==========================================================================
+   ACTIVE CONFLICT MATRIX RESPONSIVE UTILITIES
+   ========================================================================== */
+
+/* Frozen row headers for horizontal table scrolling on mobile */
+.collision-table tbody th {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background-color: var(--color-surface) !important;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.collision-table thead th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 3;
+  background-color: var(--color-primary-dark) !important;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Balance 3-step cycling schedule on tablets to avoid orphan card */
+@media (min-width: 480px) and (max-width: 768px) {
+  .cycling-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 
