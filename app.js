@@ -857,6 +857,11 @@ function initEmbedWidgets() {
     const textarea = box.querySelector('.infographic-embed-code');
     if (!btn || !textarea) return;
 
+    const defaultSpan = btn.querySelector('span:not(.sr-only)');
+    const originalText = defaultSpan ? defaultSpan.textContent : 'Copy Embed Code';
+    const originalAria = btn.getAttribute('aria-label');
+    let resetTimer = null;
+
     btn.addEventListener('click', async () => {
       const code = textarea.value;
       let copied = false;
@@ -885,15 +890,15 @@ function initEmbedWidgets() {
         const textSpan = btn.querySelector('span:not(.sr-only)');
         const icon = btn.querySelector('i');
         const liveRegion = box.querySelector('.sr-only');
-        const originalText = textSpan ? textSpan.textContent : 'Copy Embed Code';
-        const originalAria = btn.getAttribute('aria-label');
+        if (resetTimer) clearTimeout(resetTimer);
 
         if (textSpan) textSpan.textContent = embedText.copied;
         btn.setAttribute('aria-label', embedText.copied);
         if (icon) icon.className = 'fa-solid fa-check';
         if (liveRegion) liveRegion.textContent = embedText.spoken;
 
-        setTimeout(() => {
+        resetTimer = setTimeout(() => {
+          resetTimer = null;
           btn.classList.remove('is-copied');
           if (textSpan) textSpan.textContent = originalText;
           if (originalAria) {

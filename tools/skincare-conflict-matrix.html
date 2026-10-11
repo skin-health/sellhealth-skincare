@@ -498,6 +498,10 @@
       gap: 1rem;
       margin-top: 1.25rem;
     }
+
+    @media (min-width: 480px) and (max-width: 768px) {
+      .cycling-grid { grid-template-columns: 1fr; }
+    }
     .cycling-day {
       background: rgba(11, 15, 25, 0.7);
       border: 1px solid var(--color-border);
@@ -916,6 +920,7 @@
   </footer>
 
   <!-- Application Engine Script -->
+  <script src="../app.js" defer></script>
   <script src="conflict-matrix.js" defer></script>
 </body>
 </html>

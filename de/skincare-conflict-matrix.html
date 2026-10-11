@@ -478,6 +478,10 @@
       gap: 1rem;
       margin-top: 1.25rem;
     }
+
+    @media (min-width: 480px) and (max-width: 768px) {
+      .cycling-grid { grid-template-columns: 1fr; }
+    }
     .cycling-day {
       background: var(--color-surface);
       border: 1px solid var(--color-border);
@@ -761,7 +765,7 @@
     <!-- Selection Controls & Grid -->
     <section class="selector-section" aria-labelledby="selector-heading">
       <div class="container">
-        <h2 id="selector-heading" class="visually-hidden" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;">Selector</h2>
+        <h2 id="selector-heading" class="visually-hidden" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;">Auswahl der Wirkstoffe</h2>
 
         <!-- Preset Regimens Bar -->
         <div class="presets-bar">
@@ -776,7 +780,7 @@
         </div>
 
         <!-- Interactive Actives Grid -->
-        <div class="actives-grid" id="activesGrid" role="group" aria-label="Active Skincare Ingredients Selector">
+        <div class="actives-grid" id="activesGrid" role="group" aria-label="Auswahl der Wirkstoffe für die Hautpflege">
           <!-- Dynamically populated via safe DOM scripting -->
         </div>
       </div>
@@ -785,7 +789,7 @@
     <!-- Diagnostic Engine Dashboard -->
     <section class="dashboard-section" id="dashboardSection" aria-labelledby="dashboard-heading">
       <div class="container">
-        <h2 id="dashboard-heading" class="visually-hidden" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;">Diagnostic Analysis Results</h2>
+        <h2 id="dashboard-heading" class="visually-hidden" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;">Diagnostische Analyseergebnisse</h2>
         
         <!-- Target container where conflict-matrix.js mounts results or empty-state -->
         <div id="resultsMount">
@@ -883,6 +887,7 @@
   </footer>
 
   <!-- Application Engine Script -->
+  <script src="../app.js" defer></script>
   <script src="../tools/conflict-matrix.js" defer></script>
 </body>
 </html>
