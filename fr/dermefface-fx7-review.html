@@ -35,9 +35,7 @@
   <meta name="twitter:image" content="https://dermaudit.com/Pictures/dermefface.jpg">
 
   <!-- Google Fonts & FontAwesome -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" href="../webfonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../icons.css">
   <link rel="stylesheet" href="../styles.css">
 
@@ -163,7 +161,7 @@
   <!-- Top Announcement Bar -->
   <div class="top-bar">
     <div class="container top-bar-content text-center">
-      <span><i class="fa-solid fa-earth-americas"></i> <strong>Livraison Internationale Suivie (100+ Pays)</strong> &bull; Garantie 100% Satisfait ou Remboursé &bull; <strong>Livraison Gratuite aux États-Unis</strong></span>
+      <span><i class="fa-solid fa-earth-americas"></i> <strong>Livraison Internationale Suivie (100+ Pays)</strong> &bull; Garantie de remboursement de 60 à 90 jours &bull; <strong>Livraison Gratuite aux États-Unis</strong></span>
     </div>
   </div>
 
@@ -203,16 +201,16 @@
         </div>
         <a href="blog.html" class="nav-link">Journal</a>
         <a href="comparison.html" class="nav-link">Comparatif</a>
-        <a href="skincare-conflict-matrix.html" class="nav-link">Matrice de Conflits</a>
+        <a href="skincare-conflict-matrix.html" class="nav-link">Matrice de Conflits <span class="nav-badge">Gratuit</span></a>
         <div class="nav-item-dropdown lang-dropdown">
           <a href="javascript:void(0)" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
             <i class="fa-solid fa-globe"></i> FR <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-lang">
-            <a href="../dermefface-fx7-review.html" class="dropdown-item"><span class="flag-icon">🇺🇸</span> English (US)</a>
-            <a href="../es/dermefface-fx7-review.html" class="dropdown-item"><span class="flag-icon">🇪🇸</span> Español</a>
-            <a href="../de/dermefface-fx7-review.html" class="dropdown-item"><span class="flag-icon">🇩🇪</span> Deutsch</a>
-            <a href="dermefface-fx7-review.html" class="dropdown-item active"><span class="flag-icon">🇫🇷</span> Français</a>
+            <a href="../dermefface-fx7-review.html" class="dropdown-item" lang="en"><span class="flag-icon" aria-hidden="true">🇺🇸</span> English (US)</a>
+            <a href="../es/dermefface-fx7-review.html" class="dropdown-item" lang="es"><span class="flag-icon" aria-hidden="true">🇪🇸</span> Español</a>
+            <a href="../de/dermefface-fx7-review.html" class="dropdown-item" lang="de"><span class="flag-icon" aria-hidden="true">🇩🇪</span> Deutsch</a>
+            <a href="dermefface-fx7-review.html" class="dropdown-item active" lang="fr"><span class="flag-icon" aria-hidden="true">🇫🇷</span> Français</a>
           </div>
         </div>
       </nav>
@@ -239,7 +237,7 @@
         <img src="../Pictures/dermafacereal.jpg" alt="Tube et Emballage Dermefface FX7" style="width: 100%; max-height: 400px; object-fit: contain; margin-bottom: 1.5rem;" width="419" height="747" fetchpriority="high">
 
         <!-- Clinical Whiteboard Infographic Diagram -->
-        <img src="../Pictures/infographic-scar-brickwall.jpg" alt="Schéma sur tableau blanc numérique montrant comment Symglucan déblaie les briques en désordre de la cicatrice et les maçons Pro-Coll-One reconstruisent du collagène sain de type I" width="800" height="450" loading="lazy" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); display: block; margin: 0 auto;">
+        <picture><source type="image/webp" srcset="../img/optimized/infographic-scar-brickwall-640.webp 640w, ../img/optimized/infographic-scar-brickwall-960.webp 960w, ../img/optimized/infographic-scar-brickwall-1376.webp 1376w" sizes="(max-width: 768px) 100vw, 800px"><img src="../Pictures/infographic-scar-brickwall.jpg" alt="Schéma sur tableau blanc numérique montrant comment Symglucan déblaie les briques en désordre de la cicatrice et les maçons Pro-Coll-One reconstruisent du collagène sain de type I" width="800" height="450" loading="lazy" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); display: block; margin: 0 auto;"></picture>
 
         <!-- 3-Step Mechanism Card (FR) -->
         <div class="infographic-summary-grid">
@@ -283,7 +281,7 @@
             </div>
             <div class="aeo-verdict-item">
               <strong>Délai de Garantie</strong>
-              <span>90 Jours (garantie 100% satisfait ou remboursé)</span>
+              <span>90 Jours (garantie satisfait ou remboursé)</span>
             </div>
           </div>
           <p class="aeo-verdict-summary">
@@ -410,7 +408,7 @@
                 </tr>
                 <tr>
                   <td><strong>Garantie de Remboursement</strong></td>
-                  <td><span class="text-success" style="font-weight: bold;">90 Jours 100% Sans Risque</span></td>
+                  <td><span class="text-success" style="font-weight: bold;">90 Jours Remboursés</span></td>
                   <td>Variable selon la pharmacie ou le distributeur.</td>
                 </tr>
                 <tr class="winner-row">
@@ -501,6 +499,11 @@
 
         </div>
       </div>
+    </div>
+    <div class="mobile-buy-bar" role="region" aria-label="Achat rapide">
+      <p class="mobile-buy-bar-name">Dermefface FX7</p>
+      <a href="https://www.dermeffacefx7.com/ct/282956" class="btn btn-gold btn-sm affiliate-link" data-product="dermefface" target="_blank" rel="noopener nofollow sponsored">Voir l&#39;offre</a>
+      <p class="mobile-buy-bar-disclosure">Lien d&#39;affiliation</p>
     </div>
   </main>
 

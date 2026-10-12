@@ -41,9 +41,7 @@
   <meta name="twitter:image" content="https://dermaudit.com/Pictures/infographic-collagen-trampoline.jpg">
 
   <!-- Google Fonts & FontAwesome -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" href="../webfonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../icons.css">
   <link rel="stylesheet" href="../styles.css">
 
@@ -101,7 +99,7 @@
         "name": "¿Puedo usar Syn-Coll durante el día bajo la luz del sol?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sí. A diferencia del Retinol, que se descompone con la luz solar y sensibiliza la piel a las quemaduras solares, Syn-Coll no causa fotosensibilidad. Se puede aplicar con total seguridad de mañana y de noche."
+          "text": "Sí. A diferencia del Retinol, que se descompone con la luz solar y sensibiliza la piel a las quemaduras solares, Syn-Coll no causa fotosensibilidad. Se puede aplicar de mañana y de noche."
         }
       }
     ]
@@ -114,7 +112,7 @@
   <!-- Top Announcement Bar -->
   <div class="top-bar">
     <div class="container top-bar-content text-center">
-      <span><i class="fa-solid fa-earth-americas"></i> <strong>Envíos Internacionales con Rastreo (100+ Países)</strong> &bull; Garantía 100% de Devolución &bull; <strong>Envío Gratis en los EE.UU.</strong></span>
+      <span><i class="fa-solid fa-earth-americas"></i> <strong>Envíos Internacionales con Rastreo (100+ Países)</strong> &bull; Garantía de devolución de 60-90 días &bull; <strong>Envío Gratis en los EE.UU.</strong></span>
     </div>
   </div>
 
@@ -154,16 +152,16 @@
         </div>
         <a href="blog.html" class="nav-link active">Revista</a>
         <a href="comparison.html" class="nav-link">Comparativa</a>
-        <a href="skincare-conflict-matrix.html" class="nav-link">Matriz de Conflictos</a>
+        <a href="skincare-conflict-matrix.html" class="nav-link">Matriz de Conflictos <span class="nav-badge">Gratis</span></a>
         <div class="nav-item-dropdown lang-dropdown">
           <a href="javascript:void(0)" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
             <i class="fa-solid fa-globe"></i> ES <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-lang">
-            <a href="../blog-syn-coll-vs-retinol.html" class="dropdown-item"><span class="flag-icon">🇺🇸</span> English (US)</a>
-            <a href="blog-syn-coll-vs-retinol.html" class="dropdown-item active"><span class="flag-icon">🇪🇸</span> Español</a>
-            <a href="../de/blog-syn-coll-vs-retinol.html" class="dropdown-item"><span class="flag-icon">🇩🇪</span> Deutsch</a>
-            <a href="../fr/blog-syn-coll-vs-retinol.html" class="dropdown-item"><span class="flag-icon">🇫🇷</span> Français</a>
+            <a href="../blog-syn-coll-vs-retinol.html" class="dropdown-item" lang="en"><span class="flag-icon" aria-hidden="true">🇺🇸</span> English (US)</a>
+            <a href="blog-syn-coll-vs-retinol.html" class="dropdown-item active" lang="es"><span class="flag-icon" aria-hidden="true">🇪🇸</span> Español</a>
+            <a href="../de/blog-syn-coll-vs-retinol.html" class="dropdown-item" lang="de"><span class="flag-icon" aria-hidden="true">🇩🇪</span> Deutsch</a>
+            <a href="../fr/blog-syn-coll-vs-retinol.html" class="dropdown-item" lang="fr"><span class="flag-icon" aria-hidden="true">🇫🇷</span> Français</a>
           </div>
         </div>
       </nav>
@@ -199,7 +197,7 @@
             <span class="badge badge-gold" style="margin-bottom: 0.5rem;"><i class="fa-solid fa-chalkboard"></i> EXPLICACIÓN EN PIZARRA DIGITAL</span>
             <p class="infographic-title" style="color: var(--color-dark); font-size: 1.4rem; margin: 0.5rem 0 0.25rem 0;">La Cama Elástica de la Piel y los Creadores de Muelles</p>
             <p style="color: var(--color-muted); font-size: 0.9rem; max-width: 600px; margin: 0 auto 1.5rem auto;">Comparación entre el daño superficial de la barrera cutánea y la señalización celular de péptidos.</p>
-            <img src="../Pictures/infographic-collagen-trampoline.jpg" alt="Diagrama digital en pizarra que explica cómo los mensajeros de péptidos Syn-Coll reconstruyen los muelles de colágeno bajo la cama elástica de la piel mientras el retinol raspa la superficie" width="800" height="450" fetchpriority="high" style="width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); display: block; margin: 0 auto;">
+            <picture><source type="image/webp" srcset="../img/optimized/infographic-collagen-trampoline-640.webp 640w, ../img/optimized/infographic-collagen-trampoline-960.webp 960w, ../img/optimized/infographic-collagen-trampoline-1376.webp 1376w" sizes="(max-width: 768px) 100vw, 800px"><img src="../Pictures/infographic-collagen-trampoline.jpg" alt="Diagrama digital en pizarra que explica cómo los mensajeros de péptidos Syn-Coll reconstruyen los muelles de colágeno bajo la cama elástica de la piel mientras el retinol raspa la superficie" width="800" height="450" fetchpriority="high" style="width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); display: block; margin: 0 auto;"></picture>
           </div>
 
           <p class="lead-p">
@@ -409,7 +407,7 @@
               </button>
               <div class="faq-answer" id="faq-ans-2" role="region" aria-labelledby="faq-btn-2">
                 <p>
-                  Sí. A diferencia del Retinol, que se descompone con la luz solar y sensibiliza la piel a las quemaduras solares, Syn-Coll no causa fotosensibilidad. Se puede aplicar con total seguridad de mañana y de noche.
+                  Sí. A diferencia del Retinol, que se descompone con la luz solar y sensibiliza la piel a las quemaduras solares, Syn-Coll no causa fotosensibilidad. Se puede aplicar de mañana y de noche.
                 </p>
               </div>
             </div>
@@ -418,7 +416,7 @@
           <!-- Product Callout -->
           <div class="reveal" style="text-align: center; margin: 3rem 0 1.5rem 0; padding: 2rem; background: var(--color-light-bg); border-radius: 12px; border: 1px solid var(--color-border);">
             <h3 style="margin-bottom: 0.5rem; color: var(--color-dark);">Experimenta la Tecnología de Péptidos Syn-Coll®</h3>
-            <p style<p style="color: var(--color-muted); margin-bottom: 1.5rem;">Formulado dentro de Kollagen Intensiv™ con péptidos suizos patentados y garantía incondicional de 90 días con devolución del 100%.</p>
+            <p style="color: var(--color-muted); margin-bottom: 1.5rem;">Formulado dentro de Kollagen Intensiv™ con péptidos suizos patentados y garantía de devolución de 90 días del fabricante.</p>
             <a href="https://www.kollagenintensiv.com/ct/282956" class="btn btn-gold btn-lg affiliate-link" data-product="kollagen" target="_blank" rel="noopener nofollow sponsored">
               <i class="fa-solid fa-cart-shopping"></i> Visitar Tienda Oficial de Kollagen Intensiv
             </a>

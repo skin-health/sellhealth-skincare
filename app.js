@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initHeroSelector();
   initEmbedWidgets();
   initArticleBadges();
+  initMobileBuyBar();
 });
 
 /* ==========================================================================
@@ -158,6 +159,7 @@ function initAffiliateLinks() {
       const placement = link.closest('#skin-quiz') ? 'quiz' :
                         link.closest('.hero') ? 'hero' :
                         link.closest('.product-card-vertical') ? 'product-card' :
+                        link.closest('.mobile-buy-bar') ? 'mobile-bar' :
                         link.closest('.collision-table') ? 'conflict-table' : 'other';
       window.plausible('Affiliate Click', {
         props: {
@@ -199,7 +201,7 @@ window.selectQuizOption = function(step, value) {
 const I18N_QUIZ = {
   en: {
     readReview: 'Read In-Depth Review',
-    age60: 'For deep-set concerns in the 60+ age range, clinical-strength formulas deliver the most noticeable structural repair.',
+    age60: 'For deep-set concerns in the 60+ age range, intensive targeted formulas deliver noticeable structural support.',
     age40: 'At ages 40–59, active remodeling and targeted signaling produce fast, visible improvements.',
     age20: 'Starting in your 20s–30s, early clinical intervention stops damage in its tracks and preserves youthful resilience.',
     routineSerum: 'Your preference for a concentrated targeted serum provides fast-absorbing active zone delivery.',
@@ -231,7 +233,7 @@ const I18N_QUIZ = {
         shortName: 'Eyelasticity™',
         badge: 'TOP PICK: PERIORBITAL EYE THERAPY',
         img: 'Pictures/eyelasticity800.jpg',
-        hook: 'Doctor-formulated multi-peptide therapy (Eyeseryl® + Regu®-Age) drains fluid bags, seals leaky micro-capillaries, and smooths crow\'s feet without milia risk.',
+        hook: 'Doctor-formulated multi-peptide therapy (Eyeseryl® + Regu®-Age) drains fluid bags, seals leaky micro-capillaries, and smooths crow\'s feet without clogging delicate eye contours.',
         reviewUrl: 'eyelasticity-review.html',
         linkKey: 'eyelasticity',
         btnText: 'Claim Official Offer'
@@ -292,7 +294,7 @@ const I18N_QUIZ = {
         shortName: 'Eyelasticity™',
         badge: 'SELECCIÓN: TERAPIA PERIORBITAL',
         img: 'Pictures/eyelasticity800.jpg',
-        hook: 'Fórmula peptídica médica (Eyeseryl® + Regu®-Age) que drena líquidos retenidos, sella microcapilares y suaviza patas de gallo sin riesgo de milium.',
+        hook: 'Fórmula peptídica médica (Eyeseryl® + Regu®-Age) que drena líquidos retenidos, sella microcapilares y suaviza patas de gallo sin obstruir los poros del contorno ocular.',
         reviewUrl: 'eyelasticity-review.html',
         linkKey: 'eyelasticity',
         btnText: 'Ver Oferta Oficial'
@@ -353,7 +355,7 @@ const I18N_QUIZ = {
         shortName: 'Eyelasticity™',
         badge: 'TOP-EMPFEHLUNG: PERIORBITALE PFLEGE',
         img: 'Pictures/eyelasticity800.jpg',
-        hook: 'Ärztlich entwickeltes Peptidserum (Eyeseryl® + Regu®-Age) zur Drainage von Stauflüssigkeit, Stärkung der Kapillaren und Glättung von Krähenfüßen ohne Milien-Risiko.',
+        hook: 'Ärztlich entwickeltes Peptidserum (Eyeseryl® + Regu®-Age) zur Drainage von Stauflüssigkeit, Stärkung der Kapillaren und Glättung von Krähenfüßen ohne die zarte Augenpartie zu überlasten.',
         reviewUrl: 'eyelasticity-review.html',
         linkKey: 'eyelasticity',
         btnText: 'Offizielles Angebot Prüfen'
@@ -414,7 +416,7 @@ const I18N_QUIZ = {
         shortName: 'Eyelasticity™',
         badge: 'MEILLEUR CHOIX : THÉRAPIE DU REGARD',
         img: 'Pictures/eyelasticity800.jpg',
-        hook: 'Formule peptidique médicale (Eyeseryl® + Regu®-Age) pour drainer l\'eau accumulée, protéger les micro-capillaires et lisser les pattes d\'oie sans risque de grains de milium.',
+        hook: 'Formule peptidique médicale (Eyeseryl® + Regu®-Age) pour drainer l\'eau accumulée, protéger les micro-capillaires et lisser les pattes d\'oie sans obstruer le contour délicat des yeux.',
         reviewUrl: 'eyelasticity-review.html',
         linkKey: 'eyelasticity',
         btnText: 'Voir l\'Offre Officielle'
@@ -808,6 +810,9 @@ function initHeroSelector() {
 
   if (!tabs.length || !panels.length) return;
 
+  // Roving tabindex: only the active tab is in the Tab order.
+  tabs.forEach(t => t.setAttribute('tabindex', t.classList.contains('active') ? '0' : '-1'));
+
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
       const targetId = tab.getAttribute('aria-controls');
@@ -820,6 +825,8 @@ function initHeroSelector() {
       });
       tab.classList.add('active');
       tab.setAttribute('aria-selected', 'true');
+      tabs.forEach(t => t.setAttribute('tabindex', '-1'));
+      tab.setAttribute('tabindex', '0');
 
       // Update visible panel
       panels.forEach(p => {
@@ -843,6 +850,10 @@ function initHeroSelector() {
         targetTab = tabArray[(currentIndex + 1) % tabArray.length];
       } else if (e.key === 'ArrowLeft') {
         targetTab = tabArray[(currentIndex - 1 + tabArray.length) % tabArray.length];
+      } else if (e.key === 'Home') {
+        targetTab = tabArray[0];
+      } else if (e.key === 'End') {
+        targetTab = tabArray[tabArray.length - 1];
       }
 
       if (targetTab) {
@@ -945,6 +956,34 @@ function initEmbedWidgets() {
  * Attaches a localized 'New' badge to recent article cards and article headers within 45 days.
  * Uses createElement and textContent. Zero innerHTML.
  */
+/* Mobile buy bar (C5): hidden while the main CTA is on screen or the nav drawer is open. */
+function initMobileBuyBar() {
+  const bar = document.querySelector('.mobile-buy-bar');
+  if (!bar) return;
+
+  const mainCta = document.querySelector('main .btn-xl.affiliate-link');
+  const navMenu = document.getElementById('navMenu');
+  let ctaOnScreen = false;
+  let drawerOpen = false;
+  const sync = () => bar.classList.toggle('is-hidden', ctaOnScreen || drawerOpen);
+
+  if (mainCta && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      ctaOnScreen = entries.some((entry) => entry.isIntersecting);
+      sync();
+    });
+    io.observe(mainCta);
+  }
+
+  if (navMenu) {
+    const mo = new MutationObserver(() => {
+      drawerOpen = navMenu.classList.contains('active');
+      sync();
+    });
+    mo.observe(navMenu, { attributes: true, attributeFilter: ['class'] });
+  }
+}
+
 function initArticleBadges() {
   const headers = document.querySelectorAll('.blog-card-header[data-published], .article-header-meta[data-published]');
   if (!headers.length) return;

@@ -38,9 +38,7 @@
   <meta name="twitter:image" content="https://dermaudit.com/Pictures/KollagenIntensiv.jpg">
 
   <!-- Google Fonts & FontAwesome -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" href="../webfonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../icons.css">
   
   <!-- Main Stylesheet -->
@@ -159,7 +157,7 @@
   <!-- Top Announcement Bar -->
   <div class="top-bar">
     <div class="container top-bar-content text-center">
-      <span><i class="fa-solid fa-earth-americas"></i> <strong>Envíos Internacionales con Seguimiento (100+ Países)</strong> &bull; Garantía 100% Devolución &bull; <strong>Envío Gratis en los EE.UU.</strong></span>
+      <span><i class="fa-solid fa-earth-americas"></i> <strong>Envíos Internacionales con Seguimiento (100+ Países)</strong> &bull; Garantía de devolución de 60-90 días &bull; <strong>Envío Gratis en los EE.UU.</strong></span>
     </div>
   </div>
 
@@ -199,16 +197,16 @@
         </div>
         <a href="blog.html" class="nav-link">Revista</a>
         <a href="comparison.html" class="nav-link">Comparativa</a>
-        <a href="skincare-conflict-matrix.html" class="nav-link">Matriz de Conflictos</a>
+        <a href="skincare-conflict-matrix.html" class="nav-link">Matriz de Conflictos <span class="nav-badge">Gratis</span></a>
         <div class="nav-item-dropdown lang-dropdown">
           <a href="javascript:void(0)" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
             <i class="fa-solid fa-globe"></i> ES <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-lang">
-            <a href="../kollagen-intensiv-review.html" class="dropdown-item"><span class="flag-icon">🇺🇸</span> English (US)</a>
-            <a href="kollagen-intensiv-review.html" class="dropdown-item active"><span class="flag-icon">🇪🇸</span> Español</a>
-            <a href="../de/kollagen-intensiv-review.html" class="dropdown-item"><span class="flag-icon">🇩🇪</span> Deutsch</a>
-            <a href="../fr/kollagen-intensiv-review.html" class="dropdown-item"><span class="flag-icon">🇫🇷</span> Français</a>
+            <a href="../kollagen-intensiv-review.html" class="dropdown-item" lang="en"><span class="flag-icon" aria-hidden="true">🇺🇸</span> English (US)</a>
+            <a href="kollagen-intensiv-review.html" class="dropdown-item active" lang="es"><span class="flag-icon" aria-hidden="true">🇪🇸</span> Español</a>
+            <a href="../de/kollagen-intensiv-review.html" class="dropdown-item" lang="de"><span class="flag-icon" aria-hidden="true">🇩🇪</span> Deutsch</a>
+            <a href="../fr/kollagen-intensiv-review.html" class="dropdown-item" lang="fr"><span class="flag-icon" aria-hidden="true">🇫🇷</span> Français</a>
           </div>
         </div>
       </nav>
@@ -235,7 +233,7 @@
         <img src="../Pictures/kollagen_boxbottle_lg.jpg" alt="Tarro y Empaque de Kollagen Intensiv" style="width: 100%; max-height: 400px; object-fit: contain; margin-bottom: 1.5rem;" width="700" height="357" fetchpriority="high">
 
         <!-- Clinical Whiteboard Infographic Diagram -->
-        <img src="../Pictures/infographic-collagen-trampoline.jpg" alt="Diagrama digital en pizarra que explica cómo los mensajeros peptídicos Syn-Coll reconstruyen los resortes de colágeno bajo la cama elástica de la piel" width="800" height="450" loading="lazy" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); display: block; margin: 0 auto;">
+        <picture><source type="image/webp" srcset="../img/optimized/infographic-collagen-trampoline-640.webp 640w, ../img/optimized/infographic-collagen-trampoline-960.webp 960w, ../img/optimized/infographic-collagen-trampoline-1376.webp 1376w" sizes="(max-width: 768px) 100vw, 800px"><img src="../Pictures/infographic-collagen-trampoline.jpg" alt="Diagrama digital en pizarra que explica cómo los mensajeros peptídicos Syn-Coll reconstruyen los resortes de colágeno bajo la cama elástica de la piel" width="800" height="450" loading="lazy" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); display: block; margin: 0 auto;"></picture>
 
         <!-- 3-Step Mechanism Card (ES) -->
         <div class="infographic-summary-grid">
@@ -279,7 +277,7 @@
             </div>
             <div class="aeo-verdict-item">
               <strong>Ventana de Garantía</strong>
-              <span>90 Días (garantía de reembolso del 100%)</span>
+              <span>90 Días (garantía de devolución)</span>
             </div>
           </div>
           <p class="aeo-verdict-summary">
@@ -416,7 +414,7 @@
                 </tr>
                 <tr class="winner-row">
                   <td><strong>Garantía de Devolución</strong></td>
-                  <td><span class="text-success" style="font-weight: bold;">90 Días de Garantía 100% Sin Riesgo</span>.</td>
+                  <td><span class="text-success" style="font-weight: bold;">90 Días de Garantía</span>.</td>
                   <td><span class="text-success" style="font-weight: bold;">60 Días de Garantía de Reembolso</span>.</td>
                 </tr>
                 <tr>
@@ -450,7 +448,7 @@
                 <li>Funciona como crema hidratante de día y tratamiento reparador nocturno</li>
                 <li>Cero irritación, descamación ni fotosensibilidad por retinol</li>
                 <li>Hidratación continua por 24 horas con Manteca de Karité y Ácido Hialurónico</li>
-                <li>Garantía incondicional de 90 días con devolución del 100% del dinero</li>
+                <li>Garantía incondicional de 90 días con devolución del dinero del fabricante</li>
               </ul>
             </div>
             <div class="cons-box">
@@ -507,6 +505,11 @@
 
         </div>
       </div>
+    </div>
+    <div class="mobile-buy-bar" role="region" aria-label="Compra rápida">
+      <p class="mobile-buy-bar-name">Kollagen Intensiv</p>
+      <a href="https://www.kollagenintensiv.com/ct/282956" class="btn btn-gold btn-sm affiliate-link" data-product="kollagen" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a>
+      <p class="mobile-buy-bar-disclosure">Enlace de afiliado</p>
     </div>
   </main>
 

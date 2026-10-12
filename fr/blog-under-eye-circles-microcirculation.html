@@ -41,9 +41,7 @@
   <meta name="twitter:image" content="https://dermaudit.com/Pictures/infographic-eyelasticity-drainage.jpg">
 
   <!-- Google Fonts & FontAwesome -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" href="../webfonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../icons.css">
   <link rel="stylesheet" href="../styles.css">
 
@@ -122,7 +120,7 @@
   <!-- Top Announcement Bar -->
   <div class="top-bar">
     <div class="container top-bar-content text-center">
-      <span><i class="fa-solid fa-earth-americas"></i> <strong>Livraison Internationale Suivie (100+ Pays)</strong> &bull; Garantie 100% Satisfait ou Remboursé &bull; <strong>Livraison Gratuite aux États-Unis</strong></span>
+      <span><i class="fa-solid fa-earth-americas"></i> <strong>Livraison Internationale Suivie (100+ Pays)</strong> &bull; Garantie de remboursement de 60 à 90 jours &bull; <strong>Livraison Gratuite aux États-Unis</strong></span>
     </div>
   </div>
 
@@ -162,16 +160,16 @@
         </div>
         <a href="blog.html" class="nav-link active">Études</a>
         <a href="comparison.html" class="nav-link">Comparatif</a>
-        <a href="skincare-conflict-matrix.html" class="nav-link">Matrice de Conflits</a>
+        <a href="skincare-conflict-matrix.html" class="nav-link">Matrice de Conflits <span class="nav-badge">Gratuit</span></a>
         <div class="nav-item-dropdown lang-dropdown">
           <a href="javascript:void(0)" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
             <i class="fa-solid fa-globe"></i> FR <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-lang">
-            <a href="../blog-under-eye-circles-microcirculation.html" class="dropdown-item"><span class="flag-icon">🇺🇸</span> English (US)</a>
-            <a href="../es/blog-under-eye-circles-microcirculation.html" class="dropdown-item"><span class="flag-icon">🇪🇸</span> Español</a>
-            <a href="../de/blog-under-eye-circles-microcirculation.html" class="dropdown-item"><span class="flag-icon">🇩🇪</span> Deutsch</a>
-            <a href="blog-under-eye-circles-microcirculation.html" class="dropdown-item active"><span class="flag-icon">🇫🇷</span> Français</a>
+            <a href="../blog-under-eye-circles-microcirculation.html" class="dropdown-item" lang="en"><span class="flag-icon" aria-hidden="true">🇺🇸</span> English (US)</a>
+            <a href="../es/blog-under-eye-circles-microcirculation.html" class="dropdown-item" lang="es"><span class="flag-icon" aria-hidden="true">🇪🇸</span> Español</a>
+            <a href="../de/blog-under-eye-circles-microcirculation.html" class="dropdown-item" lang="de"><span class="flag-icon" aria-hidden="true">🇩🇪</span> Deutsch</a>
+            <a href="blog-under-eye-circles-microcirculation.html" class="dropdown-item active" lang="fr"><span class="flag-icon" aria-hidden="true">🇫🇷</span> Français</a>
           </div>
         </div>
       </nav>
@@ -207,7 +205,7 @@
             <span class="badge badge-gold" style="margin-bottom: 0.5rem;"><i class="fa-solid fa-chalkboard"></i> EXPLICATION SUR TABLEAU BLANC NUMÉRIQUE</span>
             <p class="infographic-title" style="color: var(--color-dark); font-size: 1.4rem; margin: 0.5rem 0 0.25rem 0;">L'Aquarium à Paroi Fine et la Pompe de Microdrainage</p>
             <p style="color: var(--color-muted); font-size: 0.9rem; max-width: 600px; margin: 0 auto 1.5rem auto;">Comparaison entre la stase vasculaire dans une peau de 0,5 mm et le microdrainage peptidique.</p>
-            <img src="../Pictures/infographic-eyelasticity-drainage.jpg" alt="Schéma sur tableau blanc expliquant le drainage des fluides sous les yeux par Eyeseryl et la réparation par Regu-Age" width="800" height="450" fetchpriority="high" style="width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); display: block; margin: 0 auto;">
+            <picture><source type="image/webp" srcset="../img/optimized/infographic-eyelasticity-drainage-640.webp 640w, ../img/optimized/infographic-eyelasticity-drainage-960.webp 960w, ../img/optimized/infographic-eyelasticity-drainage-1376.webp 1376w" sizes="(max-width: 768px) 100vw, 800px"><img src="../Pictures/infographic-eyelasticity-drainage.jpg" alt="Schéma sur tableau blanc expliquant le drainage des fluides sous les yeux par Eyeseryl et la réparation par Regu-Age" width="800" height="450" fetchpriority="high" style="width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); display: block; margin: 0 auto;"></picture>
           </div>
 
           <p class="lead-p">
@@ -457,7 +455,7 @@
 
           <div class="reveal" style="text-align: center; margin: 3rem 0 1.5rem 0; padding: 2rem; background: var(--color-light-bg); border-radius: 12px; border: 1px solid var(--color-border);">
             <h3 style="margin-bottom: 0.5rem; color: var(--color-dark);">Rétablir la Microcirculation Périorbitaire</h3>
-            <p style="color: var(--color-muted); margin-bottom: 1.5rem;">Formulé dans Eyelasticity™ avec Eyeseryl®, Regu-Age® et une garantie de satisfaction de 67 jours sans risque.</p>
+            <p style="color: var(--color-muted); margin-bottom: 1.5rem;">Formulé dans Eyelasticity™ avec Eyeseryl®, Regu-Age® et une garantie de satisfaction de 67 jours.</p>
             <a href="https://www.naturalhealthsource.com/products/eyelasticity-age-defying-eye-therapy/?aid=282956" class="btn btn-gold btn-lg affiliate-link" data-product="eyelasticity" target="_blank" rel="noopener nofollow sponsored">
               <i class="fa-solid fa-cart-shopping"></i> Visiter la Boutique Officielle Eyelasticity
             </a>

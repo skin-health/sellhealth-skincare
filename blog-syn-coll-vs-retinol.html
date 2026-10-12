@@ -41,9 +41,7 @@
   <meta name="twitter:image" content="https://dermaudit.com/Pictures/infographic-collagen-trampoline.jpg">
 
   <!-- Google Fonts & FontAwesome -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" href="webfonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="icons.css">
   <link rel="stylesheet" href="styles.css">
 
@@ -112,7 +110,7 @@
   <!-- Top Announcement Bar -->
   <div class="top-bar">
     <div class="container top-bar-content text-center">
-      <span><i class="fa-solid fa-earth-americas"></i> <strong>Worldwide Tracked Shipping (100+ Countries)</strong> &bull; 100% Money-Back Guarantee &bull; <strong>Free Shipping in the USA</strong></span>
+      <span><i class="fa-solid fa-earth-americas"></i> <strong>Worldwide Tracked Shipping (100+ Countries)</strong> &bull; 60-90 Day Money-Back Guarantee &bull; <strong>Free Shipping in the USA</strong></span>
     </div>
   </div>
 
@@ -152,16 +150,16 @@
         </div>
         <a href="blog.html" class="nav-link active">Journal</a>
         <a href="comparison.html" class="nav-link">Comparison</a>
-        <a href="tools/skincare-conflict-matrix.html" class="nav-link">Conflict Matrix</a>
+        <a href="tools/skincare-conflict-matrix.html" class="nav-link">Conflict Matrix <span class="nav-badge">Free tool</span></a>
         <div class="nav-item-dropdown lang-dropdown">
           <a href="javascript:void(0)" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
             <i class="fa-solid fa-globe"></i> EN <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-lang">
-            <a href="blog-syn-coll-vs-retinol.html" class="dropdown-item active"><span class="flag-icon">🇺🇸</span> English (US)</a>
-            <a href="es/blog-syn-coll-vs-retinol.html" class="dropdown-item"><span class="flag-icon">🇪🇸</span> Español</a>
-            <a href="de/blog-syn-coll-vs-retinol.html" class="dropdown-item"><span class="flag-icon">🇩🇪</span> Deutsch</a>
-            <a href="fr/blog-syn-coll-vs-retinol.html" class="dropdown-item"><span class="flag-icon">🇫🇷</span> Français</a>
+            <a href="blog-syn-coll-vs-retinol.html" class="dropdown-item active" lang="en"><span class="flag-icon" aria-hidden="true">🇺🇸</span> English (US)</a>
+            <a href="es/blog-syn-coll-vs-retinol.html" class="dropdown-item" lang="es"><span class="flag-icon" aria-hidden="true">🇪🇸</span> Español</a>
+            <a href="de/blog-syn-coll-vs-retinol.html" class="dropdown-item" lang="de"><span class="flag-icon" aria-hidden="true">🇩🇪</span> Deutsch</a>
+            <a href="fr/blog-syn-coll-vs-retinol.html" class="dropdown-item" lang="fr"><span class="flag-icon" aria-hidden="true">🇫🇷</span> Français</a>
           </div>
         </div>
       </nav>
@@ -197,7 +195,7 @@
             <span class="badge badge-gold" style="margin-bottom: 0.5rem;"><i class="fa-solid fa-chalkboard"></i> DIGITAL WHITEBOARD EXPLANATION</span>
             <p class="infographic-title" style="color: var(--color-dark); font-size: 1.4rem; margin: 0.5rem 0 0.25rem 0;">The Skin Trampoline &amp; The Spring Builders</p>
             <p style="color: var(--color-muted); font-size: 0.9rem; max-width: 600px; margin: 0 auto 1.5rem auto;">Comparing surface barrier disruption against targeted peptide cellular signaling.</p>
-            <img src="Pictures/infographic-collagen-trampoline.jpg" alt="Digital whiteboard diagram explaining how Syn-Coll peptide messengers rebuild collagen springs under skin trampoline while retinol scrapes the surface" width="800" height="450" fetchpriority="high" style="width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); display: block; margin: 0 auto;">
+            <picture><source type="image/webp" srcset="img/optimized/infographic-collagen-trampoline-640.webp 640w, img/optimized/infographic-collagen-trampoline-960.webp 960w, img/optimized/infographic-collagen-trampoline-1376.webp 1376w" sizes="(max-width: 768px) 100vw, 800px"><img src="Pictures/infographic-collagen-trampoline.jpg" alt="Digital whiteboard diagram explaining how Syn-Coll peptide messengers rebuild collagen springs under skin trampoline while retinol scrapes the surface" width="800" height="450" fetchpriority="high" style="width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); display: block; margin: 0 auto;"></picture>
 
             <!-- Embed Infographic Widget -->
             <div class="infographic-embed-box">
@@ -438,7 +436,7 @@
           <!-- Product Callout -->
           <div class="reveal" style="text-align: center; margin: 3rem 0 1.5rem 0; padding: 2rem; background: var(--color-light-bg); border-radius: 12px; border: 1px solid var(--color-border);">
             <h3 style="margin-bottom: 0.5rem; color: var(--color-dark);">Experience Clinical Syn-Coll® Peptide Technology</h3>
-            <p style<p style="color: var(--color-muted); margin-bottom: 1.5rem;">Formulated inside Kollagen Intensiv™ with patented Swiss peptides and a 100% risk-free 90-day money-back guarantee.</p>
+            <p style="color: var(--color-muted); margin-bottom: 1.5rem;">Formulated inside Kollagen Intensiv™ with patented Swiss peptides and a 90-day money-back guarantee.</p>
             <a href="https://www.kollagenintensiv.com/ct/282956" class="btn btn-gold btn-lg affiliate-link" data-product="kollagen" target="_blank" rel="noopener nofollow sponsored">
               <i class="fa-solid fa-cart-shopping"></i> Visit Official Kollagen Intensiv Store
             </a>

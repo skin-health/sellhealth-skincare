@@ -41,9 +41,7 @@
   <meta name="twitter:image" content="https://dermaudit.com/Pictures/KollagenIntensiv.jpg">
 
   <!-- Google Fonts & FontAwesome -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" href="../webfonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../icons.css">
   
   <!-- Main Stylesheet -->
@@ -428,7 +426,7 @@
         "name": "Quelles sont les garanties de remboursement ?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Les 5 solutions disposent de garanties de satisfaction complètes. Les soins Skinception (Kollagen Intensiv, Illuminatural 6i, Dermefface FX7) incluent 90 jours de garantie 100% remboursé. Eyelasticity offre 67 jours de garantie, et Synevra UltraLift propose 60 jours de garantie fabricant."
+          "text": "Les 5 solutions disposent de garanties de satisfaction complètes. Les soins Skinception (Kollagen Intensiv, Illuminatural 6i, Dermefface FX7) incluent 90 jours de garantie de remboursement. Eyelasticity offre 67 jours de garantie, et Synevra UltraLift propose 60 jours de garantie fabricant."
         }
       },
       {
@@ -449,7 +447,7 @@
   <!-- Announcement Bar -->
   <div class="top-bar">
     <div class="container top-bar-content text-center">
-      <span><i class="fa-solid fa-earth-americas"></i> <strong>Livraison Internationale Suivie (100+ Pays)</strong> &bull; Garantie 100% Remboursé &bull; <strong>Livraison Gratuite aux États-Unis</strong></span>
+      <span><i class="fa-solid fa-earth-americas"></i> <strong>Livraison Internationale Suivie (100+ Pays)</strong> &bull; Garantie de remboursement de 60 à 90 jours &bull; <strong>Livraison Gratuite aux États-Unis</strong></span>
     </div>
   </div>
 
@@ -490,22 +488,22 @@
         </div>
         <a href="blog.html" class="nav-link">Journal</a>
         <a href="comparison.html" class="nav-link">Comparatif</a>
-        <a href="skincare-conflict-matrix.html" class="nav-link">Matrice de Conflits</a>
+        <a href="skincare-conflict-matrix.html" class="nav-link">Matrice de Conflits <span class="nav-badge">Gratuit</span></a>
         <div class="nav-item-dropdown lang-dropdown">
           <a href="javascript:void(0)" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
             <i class="fa-solid fa-globe"></i> FR <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-lang">
-            <a href="../index.html" class="dropdown-item"><span class="flag-icon">🇺🇸</span> English (US)</a>
-            <a href="../es/index.html" class="dropdown-item"><span class="flag-icon">🇪🇸</span> Español</a>
-            <a href="../de/index.html" class="dropdown-item"><span class="flag-icon">🇩🇪</span> Deutsch</a>
-            <a href="index.html" class="dropdown-item active"><span class="flag-icon">🇫🇷</span> Français</a>
+            <a href="../index.html" class="dropdown-item" lang="en"><span class="flag-icon" aria-hidden="true">🇺🇸</span> English (US)</a>
+            <a href="../es/index.html" class="dropdown-item" lang="es"><span class="flag-icon" aria-hidden="true">🇪🇸</span> Español</a>
+            <a href="../de/index.html" class="dropdown-item" lang="de"><span class="flag-icon" aria-hidden="true">🇩🇪</span> Deutsch</a>
+            <a href="index.html" class="dropdown-item active" lang="fr"><span class="flag-icon" aria-hidden="true">🇫🇷</span> Français</a>
           </div>
         </div>
       </nav>
 
       <div class="header-actions">
-        <a href="#top-picks" class="btn btn-primary btn-sm">Mieux Notés</a>
+        <a href="#top-picks" class="btn btn-primary btn-sm">Voir les meilleurs choix</a>
         <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navMenu">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -534,22 +532,22 @@
           </div>
           <div class="stat-divider"></div>
           <div class="stat-item">
-            <span class="stat-num">+354%</span>
-            <span class="stat-label">Gain en Collagène*</span>
+            <span class="stat-num">42</span>
+            <span class="stat-label">Règles d'interaction analysées</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat-item">
-            <span class="stat-num">90 Jours</span>
-            <span class="stat-label">Garantie Sans Risque</span>
+            <span class="stat-num">60-90 Jours</span>
+            <span class="stat-label">Garanties de remboursement</span>
           </div>
-        </div> <p class="stat-footnote">*Chiffre communiquée par le fabricant à partir de l'étude publiée de l'ingrédient. Derm Audit Journal n'a pas vérifié ce chiffre de manière indépendante.</p>
+        </div>
 
         <div class="hero-cta-group">
-          <a href="#top-picks" class="btn btn-primary btn-lg">
-            <i class="fa-solid fa-layer-group"></i> Explorer les 5 Soins Cliniques
-          </a>
-          <a href="#skin-quiz" class="btn btn-secondary btn-lg">
+          <a href="#skin-quiz" class="btn btn-primary btn-lg">
             <i class="fa-solid fa-list-check"></i> Diagnostic Cutané de 30s
+          </a>
+          <a href="#top-picks" class="btn btn-secondary btn-lg">
+            <i class="fa-solid fa-layer-group"></i> Explorer les 5 Soins Cliniques
           </a>
         </div>
 
@@ -598,7 +596,7 @@
           <!-- Panel 2: Dark Spots & Brightening -->
           <div class="hero-tab-panel" id="hero-panel-2" role="tabpanel" aria-labelledby="hero-tab-2" hidden>
             <div class="hero-panel-badge"><i class="fa-solid fa-award"></i> Correcteur Anti-Taches #1</div>
-            <img src="../Pictures/illuminatural6i_icon001_600x600.jpg" alt="Flacon Illuminatural 6i" class="hero-panel-img" width="600" height="600" style="aspect-ratio: 1 / 1;">
+            <img src="../Pictures/illuminatural6i_icon001_600x600.jpg" alt="Flacon Illuminatural 6i" class="hero-panel-img" width="600" height="600" style="aspect-ratio: 1 / 1;" loading="lazy" decoding="async">
             <h2 class="hero-panel-title">Illuminatural 6i™</h2>
             <p class="hero-panel-desc">6 actifs botaniques ciblent la tyrosinase et estompent taches solaires et mélasma sans hydroquinone.</p>
             <div style="display: inline-block; background: rgba(245, 158, 11, 0.12); color: #F59E0B; border: 1px solid rgba(245, 158, 11, 0.3); font-size: 0.75rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-bottom: 0.75rem;"><i class="fa-solid fa-clock-rotate-left"></i> Réapprovisionnement en cours &bull; Redirige vers le Catalogue</div>
@@ -618,7 +616,7 @@
           <!-- Panel 3: Scars & Recovery -->
           <div class="hero-tab-panel" id="hero-panel-3" role="tabpanel" aria-labelledby="hero-tab-3" hidden>
             <div class="hero-panel-badge"><i class="fa-solid fa-award"></i> Traitement Cicatrices #1</div>
-            <img src="../Pictures/dermafacereal.jpg" alt="Tube Dermefface FX7" class="hero-panel-img" width="419" height="747" style="aspect-ratio: 419 / 747;">
+            <img src="../Pictures/dermafacereal.jpg" alt="Tube Dermefface FX7" class="hero-panel-img" width="419" height="747" style="aspect-ratio: 419 / 747;" loading="lazy" decoding="async">
             <h2 class="hero-panel-title">Dermefface FX7®</h2>
             <p class="hero-panel-desc">10% Symglucan® et Pro-Coll-One+ normalisent le collagène de type I pour lisser les cicatrices visibles.</p>
             <div class="hero-panel-actions">
@@ -635,6 +633,14 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="section-sm" id="conflict-matrix-teaser" aria-labelledby="teaser-heading">
+    <div class="container text-center">
+      <h2 class="category-main-title" id="teaser-heading">Vérifiez deux actifs avant de les superposer</h2>
+      <p>Choisissez vos actifs et découvrez les paires ayant une règle d'interaction documentée.</p>
+      <p><a href="skincare-conflict-matrix.html?actives=retinol,l-ascorbic-acid" class="btn btn-primary">Voir un exemple en direct : rétinol et acide L-ascorbique <i class="fa-solid fa-arrow-right"></i></a></p>
     </div>
   </section>
 
@@ -666,7 +672,7 @@
         <i class="fa-solid fa-rotate-left trust-icon"></i>
         <div>
           <div class="trust-title">Garanties de 60 à 90 Jours</div>
-          <p>100% remboursé directement par le fabricant</p>
+          <p>Remboursement direct par le fabricant</p>
         </div>
       </div>
     </div>
@@ -976,7 +982,7 @@
               <button class="quiz-opt" onclick="selectQuizOption(3, '60+')">
                 <i class="fa-solid fa-shield-halved"></i>
                 <div>
-                  <strong>60+ Ans (Puissance Clinique Maximale) :</strong> Lissage des rides profondes et régénération intensive
+                  <strong>60+ Ans (Soin Intensif &amp; Régénération Profonde) :</strong> Lissage des rides profondes et régénération intensive
                 </div>
               </button>
             </div>
@@ -1072,7 +1078,7 @@
             <i class="fa-solid fa-chevron-down"></i>
           </button>
           <div class="faq-answer" id="faq-ans-3" role="region" aria-labelledby="faq-btn-3">
-            <p>Les 5 solutions disposent de garanties de satisfaction complètes. Les soins Skinception (Kollagen Intensiv, Illuminatural 6i, Dermefface FX7) incluent 90 jours de garantie 100% remboursé. Eyelasticity offre 67 jours de garantie, et Synevra UltraLift propose 60 jours de garantie fabricant.</p>
+            <p>Les 5 solutions disposent de garanties de satisfaction complètes. Les soins Skinception (Kollagen Intensiv, Illuminatural 6i, Dermefface FX7) incluent 90 jours de garantie de remboursement. Eyelasticity offre 67 jours de garantie, et Synevra UltraLift propose 60 jours de garantie fabricant.</p>
           </div>
         </div>
 

@@ -18,3 +18,7 @@ Thumbs.db
 
 # Media assets directory
 pics/
+
+# Python cache
+__pycache__/
+*.py[cod]

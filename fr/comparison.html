@@ -35,9 +35,7 @@
   <meta name="twitter:image" content="https://dermaudit.com/Pictures/KollagenIntensiv.jpg">
 
   <!-- Fonts & Icons -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" href="../webfonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../icons.css">
 
   <!-- CSS Design System -->
@@ -99,7 +97,7 @@
   <!-- Top Announcement Bar -->
   <div class="top-bar">
     <div class="container text-center">
-      <span><i class="fa-solid fa-earth-americas"></i> <strong>Expédition Suivie Mondiale (100+ Pays)</strong> &bull; Garantie de Remboursement à 100% &bull; <strong>Livraison Gratuite aux États-Unis</strong></span>
+      <span><i class="fa-solid fa-earth-americas"></i> <strong>Expédition Suivie Mondiale (100+ Pays)</strong> &bull; Garantie de remboursement de 60 à 90 jours &bull; <strong>Livraison Gratuite aux États-Unis</strong></span>
     </div>
   </div>
 
@@ -140,22 +138,22 @@
         </div>
         <a href="blog.html" class="nav-link">Journal</a>
         <a href="comparison.html" class="nav-link active">Comparaison</a>
-        <a href="skincare-conflict-matrix.html" class="nav-link">Matrice de Conflits</a>
+        <a href="skincare-conflict-matrix.html" class="nav-link">Matrice de Conflits <span class="nav-badge">Gratuit</span></a>
         <div class="nav-item-dropdown lang-dropdown">
           <a href="javascript:void(0)" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
             <i class="fa-solid fa-globe"></i> FR <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-lang">
-            <a href="../comparison.html" class="dropdown-item"><span class="flag-icon">🇺🇸</span> English (US)</a>
-            <a href="../es/comparison.html" class="dropdown-item"><span class="flag-icon">🇪🇸</span> Español</a>
-            <a href="../de/comparison.html" class="dropdown-item"><span class="flag-icon">🇩🇪</span> Deutsch</a>
-            <a href="comparison.html" class="dropdown-item active"><span class="flag-icon">🇫🇷</span> Français</a>
+            <a href="../comparison.html" class="dropdown-item" lang="en"><span class="flag-icon" aria-hidden="true">🇺🇸</span> English (US)</a>
+            <a href="../es/comparison.html" class="dropdown-item" lang="es"><span class="flag-icon" aria-hidden="true">🇪🇸</span> Español</a>
+            <a href="../de/comparison.html" class="dropdown-item" lang="de"><span class="flag-icon" aria-hidden="true">🇩🇪</span> Deutsch</a>
+            <a href="comparison.html" class="dropdown-item active" lang="fr"><span class="flag-icon" aria-hidden="true">🇫🇷</span> Français</a>
           </div>
         </div>
       </nav>
 
       <div class="header-actions">
-        <a href="index.html#top-picks" class="btn btn-primary btn-sm">Explorer les Mieux Notés</a>
+        <a href="index.html#top-picks" class="btn btn-primary btn-sm">Voir les meilleurs choix</a>
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation" aria-expanded="false" aria-controls="navMenu">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -242,15 +240,15 @@
                 <td><i class="fa-solid fa-circle-check text-success"></i> Haute (Phytosphingosine, Lipides Riches)</td>
               </tr>
               <tr>
-                <td><strong>Normes Propres & Sûres</strong></td>
-                <td><i class="fa-solid fa-check text-success"></i> 100% Sans (Formule Propre)</td>
-                <td><i class="fa-solid fa-check text-success"></i> 100% Sans (Installation Enregistrée FDA)</td>
+                <td><strong>Normes Propres &amp; Sûres</strong></td>
+                <td><i class="fa-solid fa-check text-success"></i> Formule Épurée</td>
+                <td><i class="fa-solid fa-check text-success"></i> Installation Enregistrée FDA</td>
                 <td><i class="fa-solid fa-check text-success"></i> Sans Parabènes, Sans Alcool ni Colorants</td>
               </tr>
               <tr>
                 <td><strong>Garantie de Remboursement</strong></td>
-                <td><span class="text-success" style="font-weight: bold;">90 Jours Sans Risque</span></td>
-                <td><span class="text-success" style="font-weight: bold;">60 Jours Sans Risque</span></td>
+                <td><span class="text-success" style="font-weight: bold;">90 Jours Remboursés</span></td>
+                <td><span class="text-success" style="font-weight: bold;">60 Jours Remboursés</span></td>
                 <td>Aucune / Variable selon revendeur</td>
               </tr>
               <tr>
@@ -338,14 +336,14 @@
               </tr>
               <tr>
                 <td><strong>Sans Hydroquinone / Sans Parabènes</strong></td>
-                <td><i class="fa-solid fa-check text-success"></i> 100% Garanti</td>
-                <td><i class="fa-solid fa-check text-success"></i> 100% Garanti</td>
-                <td><i class="fa-solid fa-check text-success"></i> 100% Garanti</td>
+                <td><i class="fa-solid fa-check text-success"></i> Garanti</td>
+                <td><i class="fa-solid fa-check text-success"></i> Garanti</td>
+                <td><i class="fa-solid fa-check text-success"></i> Garanti</td>
               </tr>
               <tr>
                 <td><strong>Garantie Satisfait ou Remboursé</strong></td>
-                <td><span class="text-success" style="font-weight: bold;">90 Jours Sans Risque</span></td>
-                <td><span class="text-success" style="font-weight: bold;">67 Jours Sans Risque</span></td>
+                <td><span class="text-success" style="font-weight: bold;">90 Jours Remboursés</span></td>
+                <td><span class="text-success" style="font-weight: bold;">67 Jours Remboursés</span></td>
                 <td>Aucune</td>
               </tr>
               <tr>
@@ -428,12 +426,12 @@
               </tr>
               <tr>
                 <td><strong>Sans Hydroquinone / Sans Parabène</strong></td>
-                <td><i class="fa-solid fa-check text-success"></i> 100% Propre</td>
+                <td><i class="fa-solid fa-check text-success"></i> Garanti Sans Toxines</td>
                 <td><i class="fa-solid fa-check text-success"></i> Sans Parabènes</td>
               </tr>
               <tr>
                 <td><strong>Garantie de Remboursement</strong></td>
-                <td><span class="text-success" style="font-weight: bold;">90 Jours Sans Risque</span></td>
+                <td><span class="text-success" style="font-weight: bold;">90 Jours Remboursés</span></td>
                 <td>Aucune garantie sur les emballages ouverts</td>
               </tr>
               <tr>

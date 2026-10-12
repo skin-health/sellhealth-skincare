@@ -44,9 +44,7 @@
   <meta name="twitter:image" content="https://dermaudit.com/Pictures/infographic-collagen-trampoline.jpg">
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" href="webfonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
   
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="icons.css">
@@ -433,7 +431,7 @@
         "name": "What are the Money-Back Guarantees on these products?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "All 5 featured solutions carry risk-free satisfaction guarantees. Skinception products (Kollagen Intensiv, Illuminatural 6i, Dermefface FX7) include a 90-day money-back guarantee. Eyelasticity includes a 67-day guarantee, and Synevra UltraLift is backed by a 60-day 100% money-back policy directly through its official merchant portal."
+          "text": "All 5 featured solutions carry satisfaction guarantees. Skinception products (Kollagen Intensiv, Illuminatural 6i, Dermefface FX7) include a 90-day money-back guarantee. Eyelasticity includes a 67-day guarantee, and Synevra UltraLift is backed by a 60-day money-back policy directly through its official merchant portal."
         }
       },
       {
@@ -454,14 +452,14 @@
   <!-- Announcement Bar -->
   <div class="top-bar">
     <div class="container top-bar-content text-center">
-      <span><i class="fa-solid fa-earth-americas"></i> <strong>Worldwide Tracked Shipping (100+ Countries)</strong> &bull; 100% Money-Back Guarantee &bull; <strong>Free Shipping in the USA</strong></span>
+      <span><i class="fa-solid fa-earth-americas"></i> <strong>Worldwide Tracked Shipping (100+ Countries)</strong> &bull; 60-90 Day Money-Back Guarantee &bull; <strong>Free Shipping in the USA</strong></span>
     </div>
   </div>
 
   <!-- Header Navigation -->
   <header class="header">
     <div class="container header-container">
-      <a href="#" class="logo">
+      <a href="index.html" class="logo">
         <span class="logo-accent">DERM</span> AUDIT <span class="logo-sub">JOURNAL</span>
       </a>
 
@@ -492,22 +490,22 @@
         </div>
         <a href="blog.html" class="nav-link">Journal</a>
         <a href="comparison.html" class="nav-link">Comparison</a>
-        <a href="tools/skincare-conflict-matrix.html" class="nav-link">Conflict Matrix</a>
+        <a href="tools/skincare-conflict-matrix.html" class="nav-link">Conflict Matrix <span class="nav-badge">Free tool</span></a>
         <div class="nav-item-dropdown lang-dropdown">
           <a href="javascript:void(0)" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
             <i class="fa-solid fa-globe"></i> EN <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-lang">
-            <a href="index.html" class="dropdown-item active"><span class="flag-icon">🇺🇸</span> English (US)</a>
-            <a href="es/" class="dropdown-item"><span class="flag-icon">🇪🇸</span> Español</a>
-            <a href="de/" class="dropdown-item"><span class="flag-icon">🇩🇪</span> Deutsch</a>
-            <a href="fr/" class="dropdown-item"><span class="flag-icon">🇫🇷</span> Français</a>
+            <a href="index.html" class="dropdown-item active" lang="en"><span class="flag-icon" aria-hidden="true">🇺🇸</span> English (US)</a>
+            <a href="es/" class="dropdown-item" lang="es"><span class="flag-icon" aria-hidden="true">🇪🇸</span> Español</a>
+            <a href="de/" class="dropdown-item" lang="de"><span class="flag-icon" aria-hidden="true">🇩🇪</span> Deutsch</a>
+            <a href="fr/" class="dropdown-item" lang="fr"><span class="flag-icon" aria-hidden="true">🇫🇷</span> Français</a>
           </div>
         </div>
       </nav>
 
       <div class="header-actions">
-        <a href="#top-picks" class="btn btn-primary btn-sm">Explore Best Rated</a>
+        <a href="#top-picks" class="btn btn-primary btn-sm">See Top Picks</a>
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation" aria-expanded="false" aria-controls="navMenu">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -536,22 +534,22 @@
           </div>
           <div class="stat-divider"></div>
           <div class="stat-item">
-            <span class="stat-num">354%</span>
-            <span class="stat-label">Collagen Increase*</span>
+            <span class="stat-num">42</span>
+            <span class="stat-label">Interaction Rules Checked</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat-item">
-            <span class="stat-num">90 Day</span>
-            <span class="stat-label">Risk-Free Guarantee</span>
+            <span class="stat-num">60-90 Day</span>
+            <span class="stat-label">Money-Back Guarantees</span>
           </div>
-        </div> <p class="stat-footnote">*Manufacturer-reported figure from the ingredient supplier's published study. Derm Audit Journal did not independently verify this number.</p>
+        </div>
 
         <div class="hero-cta-group">
-          <a href="#top-picks" class="btn btn-primary btn-lg">
-            <i class="fa-solid fa-layer-group"></i> Explore 5 Clinical Solutions
-          </a>
-          <a href="#skin-quiz" class="btn btn-secondary btn-lg">
+          <a href="#skin-quiz" class="btn btn-primary btn-lg">
             <i class="fa-solid fa-list-check"></i> Take 30-Sec Skin Quiz
+          </a>
+          <a href="#top-picks" class="btn btn-secondary btn-lg">
+            <i class="fa-solid fa-layer-group"></i> Explore 5 Clinical Solutions
           </a>
         </div>
 
@@ -600,7 +598,7 @@
           <!-- Panel 2: Dark Spots & Brightening -->
           <div class="hero-tab-panel" id="hero-panel-2" role="tabpanel" aria-labelledby="hero-tab-2" hidden>
             <div class="hero-panel-badge"><i class="fa-solid fa-award"></i> Best for Sun Spots &amp; Hyperpigmentation</div>
-            <img src="Pictures/illuminatural6i_icon001_600x600.jpg" alt="Illuminatural 6i Dispenser" class="hero-panel-img" width="600" height="600" style="aspect-ratio: 1 / 1;">
+            <img src="Pictures/illuminatural6i_icon001_600x600.jpg" alt="Illuminatural 6i Dispenser" class="hero-panel-img" width="600" height="600" style="aspect-ratio: 1 / 1;" loading="lazy" decoding="async">
             <h2 class="hero-panel-title">Illuminatural 6i™</h2>
             <p class="hero-panel-desc">6 active botanical lighteners intercept tyrosinase to fade sun spots and melasma without hydroquinone.</p>
             <div style="display: inline-block; background: rgba(245, 158, 11, 0.12); color: #F59E0B; border: 1px solid rgba(245, 158, 11, 0.3); font-size: 0.75rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-bottom: 0.75rem;"><i class="fa-solid fa-clock-rotate-left"></i> Restock Pending &bull; Routes to Catalog</div>
@@ -620,7 +618,7 @@
           <!-- Panel 3: Scars & Recovery -->
           <div class="hero-tab-panel" id="hero-panel-3" role="tabpanel" aria-labelledby="hero-tab-3" hidden>
             <div class="hero-panel-badge"><i class="fa-solid fa-award"></i> Best for Scar Remodeling &amp; Recovery</div>
-            <img src="Pictures/dermafacereal.jpg" alt="Dermefface FX7 Tube" class="hero-panel-img" width="419" height="747" style="aspect-ratio: 419 / 747;">
+            <img src="Pictures/dermafacereal.jpg" alt="Dermefface FX7 Tube" class="hero-panel-img" width="419" height="747" style="aspect-ratio: 419 / 747;" loading="lazy" decoding="async">
             <h2 class="hero-panel-title">Dermefface FX7®</h2>
             <p class="hero-panel-desc">The manufacturer reports that 10% Symglucan® &amp; Pro-Coll-One+ boost Type I collagen by 1190% to flatten acne and surgery scars.</p>
             <div class="hero-panel-actions">
@@ -640,7 +638,14 @@
     </div>
   </section>
 
-  <!-- Key Highlights / Badges -->
+  <section class="section-sm" id="conflict-matrix-teaser" aria-labelledby="teaser-heading">
+    <div class="container text-center">
+      <h2 class="category-main-title" id="teaser-heading">Check Two Actives Before You Layer Them</h2>
+      <p>Pick your actives and see which pairs have a documented interaction rule.</p>
+      <p><a href="tools/skincare-conflict-matrix.html?actives=retinol,l-ascorbic-acid" class="btn btn-primary">See a live example: retinol with L-ascorbic acid <i class="fa-solid fa-arrow-right"></i></a></p>
+    </div>
+  </section>
+
   <section class="trust-bar section-sm bg-light">
     <div class="container trust-grid">
       <div class="trust-item reveal reveal-delay-1">
@@ -661,14 +666,14 @@
         <i class="fa-solid fa-truck-fast trust-icon"></i>
         <div>
           <div class="trust-title">Global Tracked Shipping</div>
-          <p>Fast discrete delivery USA &amp; Worldwide</p>
+          <p>Fast discreet delivery USA &amp; Worldwide</p>
         </div>
       </div>
       <div class="trust-item reveal reveal-delay-4">
         <i class="fa-solid fa-rotate-left trust-icon"></i>
         <div>
           <div class="trust-title">60–90 Day Guarantees</div>
-          <p>100% money-back manufacturer backing</p>
+          <p>Money-back manufacturer backing</p>
         </div>
       </div>
     </div>
@@ -984,7 +989,7 @@
               <button class="quiz-opt" onclick="selectQuizOption(3, '60+')">
                 <i class="fa-solid fa-shield-halved"></i>
                 <div>
-                  <strong>Ages 60+ (Maximum Clinical Strength):</strong> Deep wrinkle reversal, stubborn blemish clearing, &amp; intensive renewal
+                  <strong>Ages 60+ (Intensive Care &amp; Deep Support):</strong> Deep line smoothing, stubborn blemish clearing, &amp; intensive renewal
                 </div>
               </button>
             </div>
@@ -1080,7 +1085,7 @@
             <i class="fa-solid fa-chevron-down"></i>
           </button>
           <div class="faq-answer" id="faq-ans-3" role="region" aria-labelledby="faq-btn-3">
-            <p>All 5 featured solutions carry risk-free satisfaction guarantees. Skinception products (Kollagen Intensiv, Illuminatural 6i, Dermefface FX7) include a 90-day money-back guarantee. Eyelasticity includes a 67-day guarantee, and Synevra UltraLift is backed by a 60-day 100% money-back policy directly through its official merchant portal.</p>
+            <p>All 5 featured solutions carry satisfaction guarantees. Skinception products (Kollagen Intensiv, Illuminatural 6i, Dermefface FX7) include a 90-day money-back guarantee. Eyelasticity includes a 67-day guarantee, and Synevra UltraLift is backed by a 60-day money-back policy directly through its official merchant portal.</p>
           </div>
         </div>
 

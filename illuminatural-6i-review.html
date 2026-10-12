@@ -38,9 +38,7 @@
   <meta name="twitter:image" content="https://dermaudit.com/Pictures/illuminatural.jpg">
 
   <!-- Google Fonts & FontAwesome -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" href="webfonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="icons.css">
   <link rel="stylesheet" href="styles.css">
 
@@ -155,7 +153,7 @@
   <!-- Top Announcement Bar -->
   <div class="top-bar">
     <div class="container top-bar-content text-center">
-      <span><i class="fa-solid fa-earth-americas"></i> <strong>Worldwide Tracked Shipping (100+ Countries)</strong> &bull; 100% Money-Back Guarantee &bull; <strong>Free Shipping in the USA</strong></span>
+      <span><i class="fa-solid fa-earth-americas"></i> <strong>Worldwide Tracked Shipping (100+ Countries)</strong> &bull; 60-90 Day Money-Back Guarantee &bull; <strong>Free Shipping in the USA</strong></span>
     </div>
   </div>
 
@@ -195,16 +193,16 @@
         </div>
         <a href="blog.html" class="nav-link">Journal</a>
         <a href="comparison.html" class="nav-link">Comparison</a>
-        <a href="tools/skincare-conflict-matrix.html" class="nav-link">Conflict Matrix</a>
+        <a href="tools/skincare-conflict-matrix.html" class="nav-link">Conflict Matrix <span class="nav-badge">Free tool</span></a>
         <div class="nav-item-dropdown lang-dropdown">
           <a href="javascript:void(0)" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
             <i class="fa-solid fa-globe"></i> EN <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-lang">
-            <a href="illuminatural-6i-review.html" class="dropdown-item active"><span class="flag-icon">🇺🇸</span> English (US)</a>
-            <a href="es/illuminatural-6i-review.html" class="dropdown-item"><span class="flag-icon">🇪🇸</span> Español</a>
-            <a href="de/illuminatural-6i-review.html" class="dropdown-item"><span class="flag-icon">🇩🇪</span> Deutsch</a>
-            <a href="fr/illuminatural-6i-review.html" class="dropdown-item"><span class="flag-icon">🇫🇷</span> Français</a>
+            <a href="illuminatural-6i-review.html" class="dropdown-item active" lang="en"><span class="flag-icon" aria-hidden="true">🇺🇸</span> English (US)</a>
+            <a href="es/illuminatural-6i-review.html" class="dropdown-item" lang="es"><span class="flag-icon" aria-hidden="true">🇪🇸</span> Español</a>
+            <a href="de/illuminatural-6i-review.html" class="dropdown-item" lang="de"><span class="flag-icon" aria-hidden="true">🇩🇪</span> Deutsch</a>
+            <a href="fr/illuminatural-6i-review.html" class="dropdown-item" lang="fr"><span class="flag-icon" aria-hidden="true">🇫🇷</span> Français</a>
           </div>
         </div>
       </nav>
@@ -239,7 +237,7 @@
         <img src="Pictures/illuminatural6i_icon001_600x600.jpg" alt="Illuminatural 6i Packaging and Serum Bottle" style="width: 100%; max-height: 400px; object-fit: contain; margin-bottom: 1.5rem;" width="600" height="600" fetchpriority="high">
 
         <!-- Clinical Whiteboard Infographic Diagram -->
-        <img src="Pictures/infographic-melanin-escalator.jpg" alt="Digital whiteboard diagram explaining how Alpha-Arbutin locks the tyrosinase enzyme dial in the melanocyte factory while old pigment rides the 28-day escalator" width="800" height="450" loading="lazy" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); display: block; margin: 0 auto;">
+        <picture><source type="image/webp" srcset="img/optimized/infographic-melanin-escalator-640.webp 640w, img/optimized/infographic-melanin-escalator-960.webp 960w, img/optimized/infographic-melanin-escalator-1376.webp 1376w" sizes="(max-width: 768px) 100vw, 800px"><img src="Pictures/infographic-melanin-escalator.jpg" alt="Digital whiteboard diagram explaining how Alpha-Arbutin locks the tyrosinase enzyme dial in the melanocyte factory while old pigment rides the 28-day escalator" width="800" height="450" loading="lazy" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); display: block; margin: 0 auto;"></picture>
 
         <!-- 3-Step Mechanism Card -->
         <div class="infographic-summary-grid">
@@ -283,7 +281,7 @@
             </div>
             <div class="aeo-verdict-item">
               <strong>Guarantee Window</strong>
-              <span>90 Days (100% money-back guarantee)</span>
+              <span>90 Days (money-back guarantee)</span>
             </div>
           </div>
           <p class="aeo-verdict-summary">
@@ -396,7 +394,7 @@
                 </tr>
                 <tr>
                   <td><strong>Skin Barrier Preservation</strong></td>
-                  <td><span class="text-success" style="font-weight: bold;">100% Safe &amp; Nourishing</span>. Preserves healthy skin thickness and hydration.</td>
+                  <td><span class="text-success" style="font-weight: bold;">Nourishing</span>. Preserves healthy skin thickness and hydration.</td>
                   <td>Contains <strong>5% HEPES</strong>, a buffering agent that deliberately thins the lipid barrier for penetration.</td>
                 </tr>
                 <tr class="winner-row">
@@ -406,7 +404,7 @@
                 </tr>
                 <tr>
                   <td><strong>Money-Back Guarantee</strong></td>
-                  <td><span class="text-success" style="font-weight: bold;">90-Day 100% Risk-Free Guarantee</span>.</td>
+                  <td><span class="text-success" style="font-weight: bold;">90-Day Money-Back Guarantee</span>.</td>
                   <td>No guarantee on opened luxury bottles.</td>
                 </tr>
                 <tr class="winner-row">
@@ -440,7 +438,7 @@
                 <li>Fades acne spots, sun damage, freckles, and melasma</li>
                 <li>Ronaflair® optical minerals provide an instant brightening filter</li>
                 <li>Safe for sensitive zones (face, neck, chest, inner thighs, underarms)</li>
-                <li>Protected by a full 90-day 100% money-back guarantee</li>
+                <li>Protected by a full 90-day money-back guarantee</li>
               </ul>
             </div>
             <div class="cons-box">
@@ -488,7 +486,7 @@
           <div class="reveal cta-card-navy">
             <h3>Ready for Flawless, Even, Glowing Skin?</h3>
             <p>
-              Say goodbye to stubborn dark marks safely with Skinception's botanical science and 90-day risk-free guarantee. Note: Official links direct to the central Skinception catalog while Illuminatural 6i™ restock completes.
+              Say goodbye to stubborn dark marks safely with Skinception's botanical science and 90-day money-back guarantee. Note: Official links direct to the central Skinception catalog while Illuminatural 6i™ restock completes.
             </p>
             <a href="https://www.illuminatural6i.com/ct/282956" class="btn btn-gold btn-xl affiliate-link" data-product="illuminatural" target="_blank" rel="noopener nofollow sponsored">
               <i class="fa-solid fa-arrow-up-right-from-square"></i> Explore Skinception Catalog &amp; Check Restock
@@ -497,6 +495,11 @@
 
         </div>
       </div>
+    </div>
+    <div class="mobile-buy-bar" role="region" aria-label="Quick buy">
+      <p class="mobile-buy-bar-name">Illuminatural 6i</p>
+      <a href="https://www.illuminatural6i.com/ct/282956" class="btn btn-gold btn-sm affiliate-link" data-product="illuminatural" target="_blank" rel="noopener nofollow sponsored">View Offer</a>
+      <p class="mobile-buy-bar-disclosure">Affiliate link</p>
     </div>
   </main>
 

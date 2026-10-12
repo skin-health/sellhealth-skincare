@@ -1,0 +1,140 @@
+/* Routine planner (Phase D, v1). Layout only. Colours are fixed hex values, not tokens. */
+
+.routine-planner {
+  max-width: 1100px;
+  margin: 2.5rem auto;
+  padding: 0 1rem;
+  color: #1E293B;
+}
+
+.planner-title {
+  font-size: 1.6rem;
+  margin: 0 0 0.5rem;
+}
+
+.planner-intro,
+.planner-disclaimer {
+  margin: 0 0 0.75rem;
+  line-height: 1.5;
+}
+
+.planner-disclaimer {
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.planner-picker {
+  border: 1px solid #CBD5E1;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin: 0 0 1rem;
+}
+
+.planner-picker-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 0.4rem 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.planner-pick {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.planner-warning {
+  min-height: 1.5rem;
+  margin: 0 0 1rem;
+}
+
+.planner-warning p {
+  margin: 0 0 0.35rem;
+  line-height: 1.45;
+}
+
+.planner-error {
+  color: #991B1B;
+  font-weight: 600;
+}
+
+.planner-conflict {
+  color: #7C2D12;
+}
+
+.planner-tray,
+.planner-slot {
+  margin-bottom: 0.75rem;
+}
+
+.planner-slot-title,
+.planner-day-title,
+.planner-tray h3 {
+  font-size: 0.95rem;
+  margin: 0 0 0.35rem;
+}
+
+.planner-chips {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.planner-chip {
+  display: grid;
+  gap: 0.25rem;
+  border: 1px solid #CBD5E1;
+  border-radius: 6px;
+  padding: 0.4rem 0.5rem;
+  background: #FFFFFF;
+  font-size: 0.9rem;
+}
+
+.planner-move {
+  font: inherit;
+  padding: 0.25rem;
+  max-width: 100%;
+}
+
+.planner-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0.5rem;
+  margin: 0 0 1rem;
+}
+
+.planner-day {
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  padding: 0.5rem;
+  min-width: 0;
+}
+
+.planner-nav {
+  display: none;
+  gap: 0.5rem;
+  margin: 0 0 1rem;
+}
+
+.planner-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+@media (max-width: 599px) {
+  .planner-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .planner-day[hidden] {
+    display: none;
+  }
+
+  .planner-nav {
+    display: flex;
+  }
+}

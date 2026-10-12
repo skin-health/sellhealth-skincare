@@ -32,9 +32,7 @@
 
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="../icons.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="../webfonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
 
   <script type="application/ld+json">
 {
@@ -175,7 +173,7 @@
   <!-- Top Announcement Bar -->
   <div class="top-bar">
     <div class="container top-bar-content text-center">
-      <span><i class="fa-solid fa-earth-americas"></i> <strong>Worldwide Tracked Shipping (100+ Countries)</strong> &bull; 100% Garantía de Devolución &bull; <strong>Envío Gratis en los EE.UU.</strong></span>
+      <span><i class="fa-solid fa-earth-americas"></i> <strong>Envíos Internacionales con Seguimiento (100+ Países)</strong> &bull; Garantía de devolución de 60-90 días &bull; <strong>Envío Gratis en los EE.UU.</strong></span>
     </div>
   </div>
 
@@ -193,38 +191,38 @@
           </a>
           <div class="dropdown-menu">
             <div class="dropdown-category">
-              <div class="dropdown-category-title"><i class="fa-solid fa-hourglass-half"></i> Anti-Aging &amp; Wrinkles</div>
-              <a href="kollagen-intensiv-review.html" class="dropdown-item">Kollagen Intensiv™ Review</a>
-              <a href="synevra-ultralift-review.html" class="dropdown-item">Synevra UltraLift™ Review</a>
+              <div class="dropdown-category-title"><i class="fa-solid fa-hourglass-half"></i> Antienvejecimiento y Arrugas</div>
+              <a href="kollagen-intensiv-review.html" class="dropdown-item">Kollagen Intensiv™ (Análisis)</a>
+              <a href="synevra-ultralift-review.html" class="dropdown-item">Synevra UltraLift™ (Sérum)</a>
             </div>
             <div class="dropdown-divider"></div>
             <div class="dropdown-category">
-              <div class="dropdown-category-title"><i class="fa-solid fa-sun"></i> Dark Spots &amp; Brightening</div>
-              <a href="illuminatural-6i-review.html" class="dropdown-item">Illuminatural 6i™ Review</a>
-              <a href="eyelasticity-review.html" class="dropdown-item active">Eyelasticity™ Review</a>
+              <div class="dropdown-category-title"><i class="fa-solid fa-sun"></i> Manchas y Luminosidad</div>
+              <a href="illuminatural-6i-review.html" class="dropdown-item">Illuminatural 6i™</a>
+              <a href="eyelasticity-review.html" class="dropdown-item active">Eyelasticity™</a>
             </div>
             <div class="dropdown-divider"></div>
             <div class="dropdown-category">
-              <div class="dropdown-category-title"><i class="fa-solid fa-bandage"></i> Scars, Tags &amp; Recovery</div>
-              <a href="dermefface-fx7-review.html" class="dropdown-item">Dermefface FX7® Review</a>
+              <div class="dropdown-category-title"><i class="fa-solid fa-bandage"></i> Cicatrices y Recuperación Dérmica</div>
+              <a href="dermefface-fx7-review.html" class="dropdown-item">Dermefface FX7® (Cicatrices)</a>
             </div>
             <div class="dropdown-divider"></div>
-            <a href="comparison.html" class="dropdown-item dropdown-item-highlight"><i class="fa-solid fa-scale-balanced"></i> Full Comparativa Matrix</a>
+            <a href="comparison.html" class="dropdown-item dropdown-item-highlight"><i class="fa-solid fa-scale-balanced"></i> Matriz Comparativa Completa</a>
             <a href="skincare-conflict-matrix.html" class="dropdown-item"><i class="fa-solid fa-flask"></i> Matriz de Conflictos Activos</a>
           </div>
         </div>
         <a href="blog.html" class="nav-link">Estudios</a>
         <a href="comparison.html" class="nav-link">Comparativa</a>
-        <a href="skincare-conflict-matrix.html" class="nav-link">Matriz de Conflictos</a>
+        <a href="skincare-conflict-matrix.html" class="nav-link">Matriz de Conflictos <span class="nav-badge">Gratis</span></a>
         <div class="nav-item-dropdown lang-dropdown">
           <a href="javascript:void(0)" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
             <i class="fa-solid fa-globe"></i> ES <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-lang">
-            <a href="../eyelasticity-review.html" class="dropdown-item"><span class="flag-icon">🇺🇸</span> English (US)</a>
-            <a href="eyelasticity-review.html" class="dropdown-item active"><span class="flag-icon">🇪🇸</span> Español</a>
-            <a href="../de/eyelasticity-review.html" class="dropdown-item"><span class="flag-icon">🇩🇪</span> Deutsch</a>
-            <a href="../fr/eyelasticity-review.html" class="dropdown-item"><span class="flag-icon">🇫🇷</span> Français</a>
+            <a href="../eyelasticity-review.html" class="dropdown-item" lang="en"><span class="flag-icon" aria-hidden="true">🇺🇸</span> English (US)</a>
+            <a href="eyelasticity-review.html" class="dropdown-item active" lang="es"><span class="flag-icon" aria-hidden="true">🇪🇸</span> Español</a>
+            <a href="../de/eyelasticity-review.html" class="dropdown-item" lang="de"><span class="flag-icon" aria-hidden="true">🇩🇪</span> Deutsch</a>
+            <a href="../fr/eyelasticity-review.html" class="dropdown-item" lang="fr"><span class="flag-icon" aria-hidden="true">🇫🇷</span> Français</a>
           </div>
         </div>
       </nav>
@@ -251,7 +249,7 @@
         <img src="../Pictures/eyelasticity800.jpg" alt="Eyelasticity Frasco Dosificador para el Contorno de Ojos" style="width: 100%; max-height: 400px; object-fit: contain; margin-bottom: 1.5rem;" width="798" height="800" fetchpriority="high">
 
         <!-- Clinical Whiteboard Infographic Diagram -->
-        <img src="../Pictures/infographic-eyelasticity-drainage.jpg" alt="Diagrama digital en pizarra que explica cómo Eyeseryl drena el líquido acumulado bajo los ojos mientras Regu-Age sella los microcapilares con fugas" width="800" height="450" loading="lazy" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); display: block; margin: 0 auto;">
+        <picture><source type="image/webp" srcset="../img/optimized/infographic-eyelasticity-drainage-640.webp 640w, ../img/optimized/infographic-eyelasticity-drainage-960.webp 960w, ../img/optimized/infographic-eyelasticity-drainage-1376.webp 1376w" sizes="(max-width: 768px) 100vw, 800px"><img src="../Pictures/infographic-eyelasticity-drainage.jpg" alt="Diagrama digital en pizarra que explica cómo Eyeseryl drena el líquido acumulado bajo los ojos mientras Regu-Age sella los microcapilares con fugas" width="800" height="450" loading="lazy" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); display: block; margin: 0 auto;"></picture>
 
         <!-- 3-Step Mechanism Card (ES) -->
         <div class="infographic-summary-grid">
@@ -295,7 +293,7 @@
             </div>
             <div class="aeo-verdict-item">
               <strong>Ventana de Garantía</strong>
-              <span>67 Días (garantía de reembolso del 100%)</span>
+              <span>67 Días (garantía de devolución)</span>
             </div>
           </div>
           <p class="aeo-verdict-summary">
@@ -420,7 +418,7 @@
                 </tr>
                 <tr>
                   <td><strong>Textura y Riesgo de Milium</strong></td>
-                  <td><span class="text-success" style="font-weight: bold;">Cero Riesgo de Milium</span>. Gel acuoso ligero que se absorbe al instante sin taponar los microporos.</td>
+                  <td><span class="text-success" style="font-weight: bold;">Gel acuoso ligero</span> que se absorbe al instante sin taponar los microporos.</td>
                   <td><strong>Alto Riesgo de Milium</strong>. Base de ceras minerales y vaselina que satura las delicadas glándulas oculares.</td>
                 </tr>
                 <tr class="winner-row">
@@ -430,7 +428,7 @@
                 </tr>
                 <tr>
                   <td><strong>Garantía de Devolución</strong></td>
-                  <td><span class="text-success" style="font-weight: bold;">67-Day 100% Garantía de Devolución</span>.</td>
+                  <td><span class="text-success" style="font-weight: bold;">67-Day Garantía de Devolución</span>.</td>
                   <td>Sin garantía una vez abierto.</td>
                 </tr>
                 <tr class="winner-row">
@@ -463,8 +461,8 @@
                 <li>Fórmula desarrollada por el cirujano estético Dr. Dave David, M.D.</li>
                 <li>Rápido drenaje linfático en 15 días (70% de reducción en bolsas)</li>
                 <li>Aclara ojeras vasculares hasta un 35% sin blanqueadores tóxicos</li>
-                <li>Gel acuoso no comedogénico que elimina el riesgo de quistes de milium</li>
-                <li>Respaldado por garantía de devolución de 67 días 100% sin complicaciones</li>
+                <li>Gel acuoso no comedogénico</li>
+                <li>Respaldado por garantía de devolución de 67 días del fabricante</li>
               </ul>
             </div>
             <div class="cons-box">
@@ -518,7 +516,7 @@
           <div class="reveal cta-card-navy">
             <h3>¿Lista para una Mirada Más Firme, Luminosa y Rejuvenecida?</h3>
             <p>
-              Prueba la terapia peptídica médica de Eyelasticity™ con 67 días de garantía de satisfacción 100%.
+              Prueba la terapia peptídica de Eyelasticity™ con 67 días de garantía de devolución del fabricante.
             </p>
             <a href="https://www.naturalhealthsource.com/products/eyelasticity-age-defying-eye-therapy/?aid=282956" class="btn btn-gold btn-xl affiliate-link" data-product="eyelasticity" target="_blank" rel="noopener nofollow sponsored">
               <i class="fa-solid fa-cart-shopping"></i> Visitar Tienda Oficial de Eyelasticity y Reclamar Oferta
@@ -527,6 +525,11 @@
 
         </div>
       </div>
+    </div>
+    <div class="mobile-buy-bar" role="region" aria-label="Compra rápida">
+      <p class="mobile-buy-bar-name">Eyelasticity</p>
+      <a href="https://www.naturalhealthsource.com/products/eyelasticity-age-defying-eye-therapy/?aid=282956" class="btn btn-gold btn-sm affiliate-link" data-product="eyelasticity" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a>
+      <p class="mobile-buy-bar-disclosure">Enlace de afiliado</p>
     </div>
   </main>
 

@@ -35,9 +35,7 @@
   <meta name="twitter:image" content="https://dermaudit.com/Pictures/KollagenIntensiv.jpg">
 
   <!-- Fonts & Icons -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" href="../webfonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../icons.css">
 
   <!-- CSS Design System -->
@@ -99,7 +97,7 @@
   <!-- Top Announcement Bar -->
   <div class="top-bar">
     <div class="container text-center">
-      <span><i class="fa-solid fa-earth-americas"></i> <strong>Envío Rastreable Mundial (100+ Países)</strong> &bull; Garantía de Devolución del 100% &bull; <strong>Envío Gratis en los EE.UU.</strong></span>
+      <span><i class="fa-solid fa-earth-americas"></i> <strong>Envío Rastreable Mundial (100+ Países)</strong> &bull; Garantía de devolución de 60-90 días &bull; <strong>Envío Gratis en los EE.UU.</strong></span>
     </div>
   </div>
 
@@ -140,22 +138,22 @@
         </div>
         <a href="blog.html" class="nav-link">Diario</a>
         <a href="comparison.html" class="nav-link active">Comparación</a>
-        <a href="skincare-conflict-matrix.html" class="nav-link">Matriz de Conflictos</a>
+        <a href="skincare-conflict-matrix.html" class="nav-link">Matriz de Conflictos <span class="nav-badge">Gratis</span></a>
         <div class="nav-item-dropdown lang-dropdown">
           <a href="javascript:void(0)" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
             <i class="fa-solid fa-globe"></i> ES <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-lang">
-            <a href="../comparison.html" class="dropdown-item"><span class="flag-icon">🇺🇸</span> English (US)</a>
-            <a href="comparison.html" class="dropdown-item active"><span class="flag-icon">🇪🇸</span> Español</a>
-            <a href="../de/comparison.html" class="dropdown-item"><span class="flag-icon">🇩🇪</span> Deutsch</a>
-            <a href="../fr/comparison.html" class="dropdown-item"><span class="flag-icon">🇫🇷</span> Français</a>
+            <a href="../comparison.html" class="dropdown-item" lang="en"><span class="flag-icon" aria-hidden="true">🇺🇸</span> English (US)</a>
+            <a href="comparison.html" class="dropdown-item active" lang="es"><span class="flag-icon" aria-hidden="true">🇪🇸</span> Español</a>
+            <a href="../de/comparison.html" class="dropdown-item" lang="de"><span class="flag-icon" aria-hidden="true">🇩🇪</span> Deutsch</a>
+            <a href="../fr/comparison.html" class="dropdown-item" lang="fr"><span class="flag-icon" aria-hidden="true">🇫🇷</span> Français</a>
           </div>
         </div>
       </nav>
 
       <div class="header-actions">
-        <a href="index.html#top-picks" class="btn btn-primary btn-sm">Explorar los Mejor Valorados</a>
+        <a href="index.html#top-picks" class="btn btn-primary btn-sm">Ver Mejores Opciones</a>
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation" aria-expanded="false" aria-controls="navMenu">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -249,8 +247,8 @@
               </tr>
               <tr>
                 <td><strong>Garantía de Devolución</strong></td>
-                <td><span class="text-success" style="font-weight: bold;">90 Días Sin Riesgo</span></td>
-                <td><span class="text-success" style="font-weight: bold;">60 Días Sin Riesgo</span></td>
+                <td><span class="text-success" style="font-weight: bold;">90 Días de Garantía</span></td>
+                <td><span class="text-success" style="font-weight: bold;">60 Días de Garantía</span></td>
                 <td>Ninguna / Según Minorista</td>
               </tr>
               <tr>
@@ -333,7 +331,7 @@
               <tr>
                 <td><strong>Riesgo de Irritación</strong></td>
                 <td><span class="text-success" style="font-weight: bold;">Muy Bajo</span> (Botánicos vegetales suaves)</td>
-                <td><span class="text-success" style="font-weight: bold;">Cero Riesgo de Milium</span> (Gel acuoso)</td>
+                <td><span class="text-success" style="font-weight: bold;">Gel acuoso</span></td>
                 <td>Moderado (Ácido kójico puede irritar piel sensible)</td>
               </tr>
               <tr>
@@ -344,8 +342,8 @@
               </tr>
               <tr>
                 <td><strong>Garantía de Devolución</strong></td>
-                <td><span class="text-success" style="font-weight: bold;">90 Días Sin Riesgo</span></td>
-                <td><span class="text-success" style="font-weight: bold;">67 Días Sin Riesgo</span></td>
+                <td><span class="text-success" style="font-weight: bold;">90 Días de Garantía</span></td>
+                <td><span class="text-success" style="font-weight: bold;">67 Días de Garantía</span></td>
                 <td>Ninguna</td>
               </tr>
               <tr>
@@ -433,7 +431,7 @@
               </tr>
               <tr>
                 <td><strong>Garantía de Devolución</strong></td>
-                <td><span class="text-success" style="font-weight: bold;">90 Días Sin Riesgo</span></td>
+                <td><span class="text-success" style="font-weight: bold;">90 Días de Garantía</span></td>
                 <td>Sin garantía en envases abiertos</td>
               </tr>
               <tr>

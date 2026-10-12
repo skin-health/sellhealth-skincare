@@ -41,9 +41,7 @@
   <meta name="twitter:image" content="https://dermaudit.com/Pictures/KollagenIntensiv.jpg">
 
   <!-- Google Fonts & FontAwesome -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" href="../webfonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../icons.css">
   
   <!-- Main Stylesheet -->
@@ -449,7 +447,7 @@
   <!-- Announcement Bar -->
   <div class="top-bar">
     <div class="container top-bar-content text-center">
-      <span><i class="fa-solid fa-earth-americas"></i> <strong>Envíos Internacionales con Seguimiento (100+ Países)</strong> &bull; Garantía 100% Devolución &bull; <strong>Envío Gratis en los EE.UU.</strong></span>
+      <span><i class="fa-solid fa-earth-americas"></i> <strong>Envíos Internacionales con Seguimiento (100+ Países)</strong> &bull; Garantía de devolución de 60-90 días &bull; <strong>Envío Gratis en los EE.UU.</strong></span>
     </div>
   </div>
 
@@ -490,22 +488,22 @@
         </div>
         <a href="blog.html" class="nav-link">Revista</a>
         <a href="comparison.html" class="nav-link">Comparativa</a>
-        <a href="skincare-conflict-matrix.html" class="nav-link">Matriz de Conflictos</a>
+        <a href="skincare-conflict-matrix.html" class="nav-link">Matriz de Conflictos <span class="nav-badge">Gratis</span></a>
         <div class="nav-item-dropdown lang-dropdown">
           <a href="javascript:void(0)" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
             <i class="fa-solid fa-globe"></i> ES <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-lang">
-            <a href="../index.html" class="dropdown-item"><span class="flag-icon">🇺🇸</span> English (US)</a>
-            <a href="index.html" class="dropdown-item active"><span class="flag-icon">🇪🇸</span> Español</a>
-            <a href="../de/index.html" class="dropdown-item"><span class="flag-icon">🇩🇪</span> Deutsch</a>
-            <a href="../fr/index.html" class="dropdown-item"><span class="flag-icon">🇫🇷</span> Français</a>
+            <a href="../index.html" class="dropdown-item" lang="en"><span class="flag-icon" aria-hidden="true">🇺🇸</span> English (US)</a>
+            <a href="index.html" class="dropdown-item active" lang="es"><span class="flag-icon" aria-hidden="true">🇪🇸</span> Español</a>
+            <a href="../de/index.html" class="dropdown-item" lang="de"><span class="flag-icon" aria-hidden="true">🇩🇪</span> Deutsch</a>
+            <a href="../fr/index.html" class="dropdown-item" lang="fr"><span class="flag-icon" aria-hidden="true">🇫🇷</span> Français</a>
           </div>
         </div>
       </nav>
 
       <div class="header-actions">
-        <a href="#top-picks" class="btn btn-primary btn-sm">Ver Más Valorados</a>
+        <a href="#top-picks" class="btn btn-primary btn-sm">Ver Mejores Opciones</a>
         <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menú" aria-expanded="false" aria-controls="navMenu">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -534,22 +532,22 @@
           </div>
           <div class="stat-divider"></div>
           <div class="stat-item">
-            <span class="stat-num">+354%</span>
-            <span class="stat-label">Aumento de Colágeno*</span>
+            <span class="stat-num">42</span>
+            <span class="stat-label">Reglas de interacción analizadas</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat-item">
-            <span class="stat-num">90 Días</span>
-            <span class="stat-label">Garantía Sin Riesgo</span>
+            <span class="stat-num">60-90 Días</span>
+            <span class="stat-label">Garantías de devolución</span>
           </div>
-        </div> <p class="stat-footnote">*Cifra comunicada por el fabricante a partir del estudio publicado del ingrediente. Derm Audit Journal no verificó este dato de forma independiente.</p>
+        </div>
 
         <div class="hero-cta-group">
-          <a href="#top-picks" class="btn btn-primary btn-lg">
-            <i class="fa-solid fa-layer-group"></i> Explorar 5 Soluciones Clínicas
-          </a>
-          <a href="#skin-quiz" class="btn btn-secondary btn-lg">
+          <a href="#skin-quiz" class="btn btn-primary btn-lg">
             <i class="fa-solid fa-list-check"></i> Test Facial de 30 Segundos
+          </a>
+          <a href="#top-picks" class="btn btn-secondary btn-lg">
+            <i class="fa-solid fa-layer-group"></i> Explorar 5 Soluciones Clínicas
           </a>
         </div>
 
@@ -598,7 +596,7 @@
           <!-- Panel 2: Dark Spots & Brightening -->
           <div class="hero-tab-panel" id="hero-panel-2" role="tabpanel" aria-labelledby="hero-tab-2" hidden>
             <div class="hero-panel-badge"><i class="fa-solid fa-award"></i> Corrector de Manchas #1</div>
-            <img src="../Pictures/illuminatural6i_icon001_600x600.jpg" alt="Illuminatural 6i Dosificador" class="hero-panel-img" width="600" height="600" style="aspect-ratio: 1 / 1;">
+            <img src="../Pictures/illuminatural6i_icon001_600x600.jpg" alt="Illuminatural 6i Dosificador" class="hero-panel-img" width="600" height="600" style="aspect-ratio: 1 / 1;" loading="lazy" decoding="async">
             <h2 class="hero-panel-title">Illuminatural 6i™</h2>
             <p class="hero-panel-desc">6 activos botánicos avanzados bloquean la tirosinasa y aclaran manchas solares sin hidroquinona.</p>
             <div style="display: inline-block; background: rgba(245, 158, 11, 0.12); color: #F59E0B; border: 1px solid rgba(245, 158, 11, 0.3); font-size: 0.75rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-bottom: 0.75rem;"><i class="fa-solid fa-clock-rotate-left"></i> Reposición Pendiente &bull; Dirige al Catálogo</div>
@@ -618,7 +616,7 @@
           <!-- Panel 3: Scars & Recovery -->
           <div class="hero-tab-panel" id="hero-panel-3" role="tabpanel" aria-labelledby="hero-tab-3" hidden>
             <div class="hero-panel-badge"><i class="fa-solid fa-award"></i> Tratamiento de Cicatrices #1</div>
-            <img src="../Pictures/dermafacereal.jpg" alt="Dermefface FX7 Tubo" class="hero-panel-img" width="419" height="747" style="aspect-ratio: 419 / 747;">
+            <img src="../Pictures/dermafacereal.jpg" alt="Dermefface FX7 Tubo" class="hero-panel-img" width="419" height="747" style="aspect-ratio: 419 / 747;" loading="lazy" decoding="async">
             <h2 class="hero-panel-title">Dermefface FX7®</h2>
             <p class="hero-panel-desc">10% Symglucan® y Pro-Coll-One+ multiplican el colágeno Tipo I para regenerar y alisar cicatrices.</p>
             <div class="hero-panel-actions">
@@ -635,6 +633,14 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="section-sm" id="conflict-matrix-teaser" aria-labelledby="teaser-heading">
+    <div class="container text-center">
+      <h2 class="category-main-title" id="teaser-heading">Comprueba dos activos antes de combinarlos</h2>
+      <p>Elige tus activos y descubre qué parejas tienen una regla de interacción documentada.</p>
+      <p><a href="skincare-conflict-matrix.html?actives=retinol,l-ascorbic-acid" class="btn btn-primary">Ver ejemplo en directo: retinol con ácido L-ascórbico <i class="fa-solid fa-arrow-right"></i></a></p>
     </div>
   </section>
 
@@ -666,7 +672,7 @@
         <i class="fa-solid fa-rotate-left trust-icon"></i>
         <div>
           <div class="trust-title">Garantías de 60 a 90 Días</div>
-          <p>100% devolución directa del fabricante</p>
+          <p>Devolución directa del fabricante</p>
         </div>
       </div>
     </div>
@@ -976,7 +982,7 @@
               <button class="quiz-opt" onclick="selectQuizOption(3, '60+')">
                 <i class="fa-solid fa-shield-halved"></i>
                 <div>
-                  <strong>60+ Años (Máxima Potencia Clínica):</strong> Reversión de arrugas profundas y renovación celular intensiva
+                  <strong>60+ Años (Cuidado Intensivo y Soporte Profundo):</strong> Alisado de líneas profundas y renovación celular intensiva
                 </div>
               </button>
             </div>

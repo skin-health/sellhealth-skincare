@@ -41,9 +41,7 @@
   <meta name="twitter:image" content="https://dermaudit.com/Pictures/KollagenIntensiv.jpg">
 
   <!-- Google Fonts & FontAwesome -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" href="../webfonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../icons.css">
   
   <!-- Main Stylesheet -->
@@ -428,7 +426,7 @@
         "name": "Welche Garantien gelten für diese Produkte?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "<div class=\"faq-answer\" id=\"faq-ans-3\" role=\"region\" aria-labelledby=\"faq-btn-3\">\r\n            <p>Alle 5 geprüften Lösungen bieten risikofreie Zufriedenheitsgarantien. Skinception (Kollagen Intensiv, Illuminatural 6i, Dermefface FX7) gewährt 90 Tage volle Erstattung. Eyelasticity bietet 67 Tage Garantie, und Synevra UltraLift gewährt 60 Tage Geld-zurück-Garantie direkt über den Hersteller.</p>\r\n          </div>"
+          "text": "<div class=\"faq-answer\" id=\"faq-ans-3\" role=\"region\" aria-labelledby=\"faq-btn-3\">\r\n            <p>Alle 5 geprüften Lösungen bieten Zufriedenheitsgarantien. Skinception (Kollagen Intensiv, Illuminatural 6i, Dermefface FX7) gewährt 90 Tage volle Erstattung. Eyelasticity bietet 67 Tage Garantie, und Synevra UltraLift gewährt 60 Tage Geld-zurück-Garantie direkt über den Hersteller.</p>\r\n          </div>"
         }
       },
       {
@@ -449,7 +447,7 @@
   <!-- Announcement Bar -->
   <div class="top-bar">
     <div class="container top-bar-content text-center">
-      <span><i class="fa-solid fa-earth-americas"></i> <strong>Weltweiter Versand mit Sendungsverfolgung (100+ Länder)</strong> &bull; 100% Geld-zurück-Garantie &bull; <strong>Kostenloser Versand in den USA</strong></span>
+      <span><i class="fa-solid fa-earth-americas"></i> <strong>Weltweiter Versand mit Sendungsverfolgung (100+ Länder)</strong> &bull; 60-90 Tage Geld-zurück-Garantie &bull; <strong>Kostenloser Versand in den USA</strong></span>
     </div>
   </div>
 
@@ -490,22 +488,22 @@
         </div>
         <a href="blog.html" class="nav-link">Magazin</a>
         <a href="comparison.html" class="nav-link">Vergleich</a>
-        <a href="skincare-conflict-matrix.html" class="nav-link">Konflikt-Matrix</a>
+        <a href="skincare-conflict-matrix.html" class="nav-link">Konflikt-Matrix <span class="nav-badge">Kostenlos</span></a>
         <div class="nav-item-dropdown lang-dropdown">
           <a href="javascript:void(0)" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
             <i class="fa-solid fa-globe"></i> DE <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-lang">
-            <a href="../index.html" class="dropdown-item"><span class="flag-icon">🇺🇸</span> English (US)</a>
-            <a href="../es/index.html" class="dropdown-item"><span class="flag-icon">🇪🇸</span> Español</a>
-            <a href="index.html" class="dropdown-item active"><span class="flag-icon">🇩🇪</span> Deutsch</a>
-            <a href="../fr/index.html" class="dropdown-item"><span class="flag-icon">🇫🇷</span> Français</a>
+            <a href="../index.html" class="dropdown-item" lang="en"><span class="flag-icon" aria-hidden="true">🇺🇸</span> English (US)</a>
+            <a href="../es/index.html" class="dropdown-item" lang="es"><span class="flag-icon" aria-hidden="true">🇪🇸</span> Español</a>
+            <a href="index.html" class="dropdown-item active" lang="de"><span class="flag-icon" aria-hidden="true">🇩🇪</span> Deutsch</a>
+            <a href="../fr/index.html" class="dropdown-item" lang="fr"><span class="flag-icon" aria-hidden="true">🇫🇷</span> Français</a>
           </div>
         </div>
       </nav>
 
       <div class="header-actions">
-        <a href="#top-picks" class="btn btn-primary btn-sm">Beste Bewertungen</a>
+        <a href="#top-picks" class="btn btn-primary btn-sm">Top-Empfehlungen ansehen</a>
         <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navMenu">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -534,22 +532,22 @@
           </div>
           <div class="stat-divider"></div>
           <div class="stat-item">
-            <span class="stat-num">+354%</span>
-            <span class="stat-label">Kollagenaufbau*</span>
+            <span class="stat-num">42</span>
+            <span class="stat-label">Wechselwirkungsregeln analysiert</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat-item">
-            <span class="stat-num">90 Tage</span>
-            <span class="stat-label">Garantie ohne Risiko</span>
+            <span class="stat-num">60-90 Tage</span>
+            <span class="stat-label">Geld-zurück-Garantien</span>
           </div>
-        </div> <p class="stat-footnote">*Herstellerangabe aus der veröffentlichten Studie des Wirkstoffs. Derm Audit Journal hat diese Zahl nicht unabhängig überprüft.</p>
+        </div>
 
         <div class="hero-cta-group">
-          <a href="#top-picks" class="btn btn-primary btn-lg">
-            <i class="fa-solid fa-layer-group"></i> 5 Klinische Lösungen Entdecken
-          </a>
-          <a href="#skin-quiz" class="btn btn-secondary btn-lg">
+          <a href="#skin-quiz" class="btn btn-primary btn-lg">
             <i class="fa-solid fa-list-check"></i> 30-Sekunden Hauttest Starten
+          </a>
+          <a href="#top-picks" class="btn btn-secondary btn-lg">
+            <i class="fa-solid fa-layer-group"></i> 5 Klinische Lösungen Entdecken
           </a>
         </div>
 
@@ -598,7 +596,7 @@
           <!-- Panel 2: Dark Spots & Brightening -->
           <div class="hero-tab-panel" id="hero-panel-2" role="tabpanel" aria-labelledby="hero-tab-2" hidden>
             <div class="hero-panel-badge"><i class="fa-solid fa-award"></i> #1 Pigmentflecken-Korrektur</div>
-            <img src="../Pictures/illuminatural6i_icon001_600x600.jpg" alt="Illuminatural 6i Spender" class="hero-panel-img" width="600" height="600" style="aspect-ratio: 1 / 1;">
+            <img src="../Pictures/illuminatural6i_icon001_600x600.jpg" alt="Illuminatural 6i Spender" class="hero-panel-img" width="600" height="600" style="aspect-ratio: 1 / 1;" loading="lazy" decoding="async">
             <h2 class="hero-panel-title">Illuminatural 6i™</h2>
             <p class="hero-panel-desc">6 pflanzliche Wirkstoffe hemmen Tyrosinase und hellen Alters- sowie Sonnenflecken ohne Hydrochinon auf.</p>
             <div style="display: inline-block; background: rgba(245, 158, 11, 0.12); color: #F59E0B; border: 1px solid rgba(245, 158, 11, 0.3); font-size: 0.75rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-bottom: 0.75rem;"><i class="fa-solid fa-clock-rotate-left"></i> Nachproduktion Ausstehend &bull; Leitet zum Katalog</div>
@@ -618,7 +616,7 @@
           <!-- Panel 3: Scars & Recovery -->
           <div class="hero-tab-panel" id="hero-panel-3" role="tabpanel" aria-labelledby="hero-tab-3" hidden>
             <div class="hero-panel-badge"><i class="fa-solid fa-award"></i> #1 Narben-Remodellierung</div>
-            <img src="../Pictures/dermafacereal.jpg" alt="Dermefface FX7 Tube" class="hero-panel-img" width="419" height="747" style="aspect-ratio: 419 / 747;">
+            <img src="../Pictures/dermafacereal.jpg" alt="Dermefface FX7 Tube" class="hero-panel-img" width="419" height="747" style="aspect-ratio: 419 / 747;" loading="lazy" decoding="async">
             <h2 class="hero-panel-title">Dermefface FX7®</h2>
             <p class="hero-panel-desc">Der Hersteller berichtet, dass 10% Symglucan® &amp; Pro-Coll-One+ Typ-I-Kollagen um 1190% zur sichtbaren Narbenglättung normalisieren.</p>
             <div class="hero-panel-actions">
@@ -635,6 +633,14 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="section-sm" id="conflict-matrix-teaser" aria-labelledby="teaser-heading">
+    <div class="container text-center">
+      <h2 class="category-main-title" id="teaser-heading">Prüfen Sie zwei Wirkstoffe vor dem Schichten</h2>
+      <p>Wählen Sie Ihre Wirkstoffe und sehen Sie, welche Paare eine dokumentierte Wechselwirkungsregel haben.</p>
+      <p><a href="skincare-conflict-matrix.html?actives=retinol,l-ascorbic-acid" class="btn btn-primary">Live-Beispiel ansehen: Retinol mit L-Ascorbinsäure <i class="fa-solid fa-arrow-right"></i></a></p>
     </div>
   </section>
 
@@ -666,7 +672,7 @@
         <i class="fa-solid fa-rotate-left trust-icon"></i>
         <div>
           <div class="trust-title">60 bis 90 Tage Rückgaberecht</div>
-          <p>100% Geld-zurück-Garantie des Herstellers</p>
+          <p>Geld-zurück-Garantie des Herstellers</p>
         </div>
       </div>
     </div>
@@ -686,7 +692,7 @@
         <div class="category-product-grid">
           <!-- Card 1: Kollagen Intensiv -->
           <div class="product-card-vertical" id="kollagen-card">
-            <span class="card-award-ribbon"><i class="fa-solid fa-trophy"></i> Sieger: Beste Tagescreme</span>
+            <span class="card-award-ribbon"><i class="fa-solid fa-trophy"></i> Sieger: Kollagen-Erneuerung &amp; Tiefe Falten</span>
             <div class="img-showcase">
               <img src="../Pictures/kollagen_boxbottle_lg.jpg" alt="Kollagen Intensiv Anti-Aging Creme" loading="lazy" width="700" height="357" style="aspect-ratio: 700 / 357;">
             </div>
@@ -976,7 +982,7 @@
               <button class="quiz-opt" onclick="selectQuizOption(3, '60+')">
                 <i class="fa-solid fa-shield-halved"></i>
                 <div>
-                  <strong>60+ Jahre (Maximale Klinische Tiefenwirkung):</strong> Tiefenfaltenglättung und intensive Hautregeneration
+                  <strong>60+ Jahre (Intensive Pflege &amp; Tiefenregeneration):</strong> Tiefenfaltenglättung und intensive Erneuerung
                 </div>
               </button>
             </div>
@@ -1072,7 +1078,7 @@
             <i class="fa-solid fa-chevron-down"></i>
           </button>
           <div class="faq-answer" id="faq-ans-3" role="region" aria-labelledby="faq-btn-3">
-            <p>Alle 5 geprüften Lösungen bieten risikofreie Zufriedenheitsgarantien. Skinception (Kollagen Intensiv, Illuminatural 6i, Dermefface FX7) gewährt 90 Tage volle Erstattung. Eyelasticity bietet 67 Tage Garantie, und Synevra UltraLift gewährt 60 Tage Geld-zurück-Garantie direkt über den Hersteller.</p>
+            <p>Alle 5 geprüften Lösungen bieten Zufriedenheitsgarantien. Skinception (Kollagen Intensiv, Illuminatural 6i, Dermefface FX7) gewährt 90 Tage volle Erstattung. Eyelasticity bietet 67 Tage Garantie, und Synevra UltraLift gewährt 60 Tage Geld-zurück-Garantie direkt über den Hersteller.</p>
           </div>
         </div>
 

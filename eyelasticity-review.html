@@ -32,9 +32,7 @@
 
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="icons.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="webfonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
 
   <script type="application/ld+json">
 {
@@ -175,7 +173,7 @@
   <!-- Top Announcement Bar -->
   <div class="top-bar">
     <div class="container top-bar-content text-center">
-      <span><i class="fa-solid fa-earth-americas"></i> <strong>Worldwide Tracked Shipping (100+ Countries)</strong> &bull; 100% Money-Back Guarantee &bull; <strong>Free Shipping in the USA</strong></span>
+      <span><i class="fa-solid fa-earth-americas"></i> <strong>Worldwide Tracked Shipping (100+ Countries)</strong> &bull; 60-90 Day Money-Back Guarantee &bull; <strong>Free Shipping in the USA</strong></span>
     </div>
   </div>
 
@@ -215,16 +213,16 @@
         </div>
         <a href="blog.html" class="nav-link">Journal</a>
         <a href="comparison.html" class="nav-link">Comparison</a>
-        <a href="tools/skincare-conflict-matrix.html" class="nav-link">Conflict Matrix</a>
+        <a href="tools/skincare-conflict-matrix.html" class="nav-link">Conflict Matrix <span class="nav-badge">Free tool</span></a>
         <div class="nav-item-dropdown lang-dropdown">
           <a href="javascript:void(0)" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
             <i class="fa-solid fa-globe"></i> EN <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-lang">
-            <a href="eyelasticity-review.html" class="dropdown-item active"><span class="flag-icon">🇺🇸</span> English (US)</a>
-            <a href="es/eyelasticity-review.html" class="dropdown-item"><span class="flag-icon">🇪🇸</span> Español</a>
-            <a href="de/eyelasticity-review.html" class="dropdown-item"><span class="flag-icon">🇩🇪</span> Deutsch</a>
-            <a href="fr/eyelasticity-review.html" class="dropdown-item"><span class="flag-icon">🇫🇷</span> Français</a>
+            <a href="eyelasticity-review.html" class="dropdown-item active" lang="en"><span class="flag-icon" aria-hidden="true">🇺🇸</span> English (US)</a>
+            <a href="es/eyelasticity-review.html" class="dropdown-item" lang="es"><span class="flag-icon" aria-hidden="true">🇪🇸</span> Español</a>
+            <a href="de/eyelasticity-review.html" class="dropdown-item" lang="de"><span class="flag-icon" aria-hidden="true">🇩🇪</span> Deutsch</a>
+            <a href="fr/eyelasticity-review.html" class="dropdown-item" lang="fr"><span class="flag-icon" aria-hidden="true">🇫🇷</span> Français</a>
           </div>
         </div>
       </nav>
@@ -251,7 +249,7 @@
         <img src="Pictures/eyelasticity800.jpg" alt="Eyelasticity Age Defying Eye Therapy Pump Bottle" style="width: 100%; max-height: 400px; object-fit: contain; margin-bottom: 1.5rem;" width="798" height="800" fetchpriority="high">
 
         <!-- Clinical Whiteboard Infographic Diagram -->
-        <img src="Pictures/infographic-eyelasticity-drainage.jpg" alt="Digital whiteboard diagram explaining how Eyeseryl drains pooled under-eye fluid while Regu-Age seals leaky micro-capillaries" width="800" height="450" loading="lazy" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); display: block; margin: 0 auto;">
+        <picture><source type="image/webp" srcset="img/optimized/infographic-eyelasticity-drainage-640.webp 640w, img/optimized/infographic-eyelasticity-drainage-960.webp 960w, img/optimized/infographic-eyelasticity-drainage-1376.webp 1376w" sizes="(max-width: 768px) 100vw, 800px"><img src="Pictures/infographic-eyelasticity-drainage.jpg" alt="Digital whiteboard diagram explaining how Eyeseryl drains pooled under-eye fluid while Regu-Age seals leaky micro-capillaries" width="800" height="450" loading="lazy" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); display: block; margin: 0 auto;"></picture>
 
         <!-- 3-Step Mechanism Card -->
         <div class="infographic-summary-grid">
@@ -295,7 +293,7 @@
             </div>
             <div class="aeo-verdict-item">
               <strong>Guarantee Window</strong>
-              <span>67 Days (100% money-back guarantee)</span>
+              <span>67 Days (money-back guarantee)</span>
             </div>
           </div>
           <p class="aeo-verdict-summary">
@@ -430,7 +428,7 @@
                 </tr>
                 <tr>
                   <td><strong>Money-Back Guarantee</strong></td>
-                  <td><span class="text-success" style="font-weight: bold;">67-Day 100% Money-Back Guarantee</span>.</td>
+                  <td><span class="text-success" style="font-weight: bold;">67-Day Money-Back Guarantee</span>.</td>
                   <td>No guarantee on opened luxury jars.</td>
                 </tr>
                 <tr class="winner-row">
@@ -464,7 +462,7 @@
                 <li>Rapid 15-day clinical lymphatic drainage (70% bag volume reduction)</li>
                 <li>Fades dark vascular circles by up to 35% without bleaching agents</li>
                 <li>Lightweight non-comedogenic water-gel eliminates all risk of milia cysts</li>
-                <li>Protected by a full 67-day 100% money-back guarantee with zero return hassle</li>
+                <li>Protected by a full 67-day money-back guarantee</li>
               </ul>
             </div>
             <div class="cons-box">
@@ -518,7 +516,7 @@
           <div class="reveal cta-card-navy">
             <h3>Ready for Brighter, Tighter, Rejuvenated Eyes?</h3>
             <p>
-              Experience doctor-formulated peptide therapy with Eyelasticity™ and Skinception's 67-day 100% money-back guarantee.
+              Experience doctor-formulated peptide therapy with Eyelasticity™ and Skinception's 67-day money-back guarantee.
             </p>
             <a href="https://www.naturalhealthsource.com/products/eyelasticity-age-defying-eye-therapy/?aid=282956" class="btn btn-gold btn-xl affiliate-link" data-product="eyelasticity" target="_blank" rel="noopener nofollow sponsored">
               <i class="fa-solid fa-cart-shopping"></i> Visit Official Eyelasticity Store &amp; Claim Offer
@@ -527,6 +525,11 @@
 
         </div>
       </div>
+    </div>
+    <div class="mobile-buy-bar" role="region" aria-label="Quick buy">
+      <p class="mobile-buy-bar-name">Eyelasticity</p>
+      <a href="https://www.naturalhealthsource.com/products/eyelasticity-age-defying-eye-therapy/?aid=282956" class="btn btn-gold btn-sm affiliate-link" data-product="eyelasticity" target="_blank" rel="noopener nofollow sponsored">View Offer</a>
+      <p class="mobile-buy-bar-disclosure">Affiliate link</p>
     </div>
   </main>
 

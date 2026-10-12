@@ -35,9 +35,7 @@
   <meta name="twitter:image" content="https://dermaudit.com/Pictures/synevra.jpg">
 
   <!-- Google Fonts & FontAwesome -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" href="../webfonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../icons.css">
   <link rel="stylesheet" href="../styles.css">
 
@@ -163,7 +161,7 @@
   <!-- Top Announcement Bar -->
   <div class="top-bar">
     <div class="container top-bar-content text-center">
-      <span><i class="fa-solid fa-earth-americas"></i> <strong>Envíos Internacionales con Seguimiento (100+ Países)</strong> &bull; Garantía 100% Devolución &bull; <strong>Envío Gratis en los EE.UU.</strong></span>
+      <span><i class="fa-solid fa-earth-americas"></i> <strong>Envíos Internacionales con Seguimiento (100+ Países)</strong> &bull; Garantía de devolución de 60-90 días &bull; <strong>Envío Gratis en los EE.UU.</strong></span>
     </div>
   </div>
 
@@ -203,16 +201,16 @@
         </div>
         <a href="blog.html" class="nav-link">Revista</a>
         <a href="comparison.html" class="nav-link">Comparativa</a>
-        <a href="skincare-conflict-matrix.html" class="nav-link">Matriz de Conflictos</a>
+        <a href="skincare-conflict-matrix.html" class="nav-link">Matriz de Conflictos <span class="nav-badge">Gratis</span></a>
         <div class="nav-item-dropdown lang-dropdown">
           <a href="javascript:void(0)" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
             <i class="fa-solid fa-globe"></i> ES <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-lang">
-            <a href="../synevra-ultralift-review.html" class="dropdown-item"><span class="flag-icon">🇺🇸</span> English (US)</a>
-            <a href="synevra-ultralift-review.html" class="dropdown-item active"><span class="flag-icon">🇪🇸</span> Español</a>
-            <a href="../de/synevra-ultralift-review.html" class="dropdown-item"><span class="flag-icon">🇩🇪</span> Deutsch</a>
-            <a href="../fr/synevra-ultralift-review.html" class="dropdown-item"><span class="flag-icon">🇫🇷</span> Français</a>
+            <a href="../synevra-ultralift-review.html" class="dropdown-item" lang="en"><span class="flag-icon" aria-hidden="true">🇺🇸</span> English (US)</a>
+            <a href="synevra-ultralift-review.html" class="dropdown-item active" lang="es"><span class="flag-icon" aria-hidden="true">🇪🇸</span> Español</a>
+            <a href="../de/synevra-ultralift-review.html" class="dropdown-item" lang="de"><span class="flag-icon" aria-hidden="true">🇩🇪</span> Deutsch</a>
+            <a href="../fr/synevra-ultralift-review.html" class="dropdown-item" lang="fr"><span class="flag-icon" aria-hidden="true">🇫🇷</span> Français</a>
           </div>
         </div>
       </nav>
@@ -239,7 +237,7 @@
         <img src="../Pictures/synevra.jpg" alt="Synevra UltraLift Sérum y Empaque" style="width: 100%; max-height: 400px; object-fit: contain; margin-bottom: 1.5rem;" width="622" height="604" fetchpriority="high">
 
         <!-- Clinical Whiteboard Infographic Diagram -->
-        <img src="../Pictures/infographic-synevra-muscle-relax.jpg" alt="Diagrama digital en pizarra que explica cómo el dipéptido SYN-AKE micro-relaja las contracciones musculares faciales y suaviza las líneas de expresión dinámicas" width="800" height="450" loading="lazy" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); display: block; margin: 0 auto;">
+        <picture><source type="image/webp" srcset="../img/optimized/infographic-synevra-muscle-relax-640.webp 640w, ../img/optimized/infographic-synevra-muscle-relax-960.webp 960w, ../img/optimized/infographic-synevra-muscle-relax-1376.webp 1376w" sizes="(max-width: 768px) 100vw, 800px"><img src="../Pictures/infographic-synevra-muscle-relax.jpg" alt="Diagrama digital en pizarra que explica cómo el dipéptido SYN-AKE micro-relaja las contracciones musculares faciales y suaviza las líneas de expresión dinámicas" width="800" height="450" loading="lazy" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); display: block; margin: 0 auto;"></picture>
 
         <!-- 3-Step Mechanism Card (ES) -->
         <div class="infographic-summary-grid">
@@ -283,7 +281,7 @@
             </div>
             <div class="aeo-verdict-item">
               <strong>Ventana de Garantía</strong>
-              <span>60 Días (garantía de reembolso del 100%)</span>
+              <span>60 Días (garantía de devolución)</span>
             </div>
           </div>
           <p class="aeo-verdict-summary">
@@ -309,7 +307,7 @@
           <div style="background: #EFF6FF; border-left: 4px solid #3B82F6; padding: 1.25rem; border-radius: 0 8px 8px 0; margin: 1.5rem 0 2rem 0;">
             <p style="margin: 0; color: #1E40AF; font-size: 0.95rem;">
               <strong>🐍 El Avance Biotecnológico Suizo (SYN-AKE®):</strong> <br>
-              En la naturaleza, el veneno de la víbora del templo relaja los músculos instantáneamente. Científicos suizos desarrollaron una réplica bioactiva pura y 100% segura de laboratorio: <strong>SYN-AKE®</strong>. Este dipéptido seguro relaja las microcontracciones musculares faciales en hasta un 82%, brindando el aspecto alisado del bótox sin agujas dolorosas ni facciones congeladas.
+              En la naturaleza, el veneno de la víbora del templo relaja los músculos instantáneamente. Científicos suizos desarrollaron una réplica bioactiva pura y formulada en laboratorio: <strong>SYN-AKE®</strong>. Este dipéptido seguro relaja las microcontracciones musculares faciales en hasta un 82%, brindando el aspecto alisado del bótox sin agujas dolorosas ni facciones congeladas.
             </p>
           </div>
 
@@ -411,8 +409,8 @@
                 </tr>
                 <tr>
                   <td><strong>Garantía de Devolución</strong></td>
-                  <td><span class="text-success" style="font-weight: bold;">60 Días 100% de Reembolso</span></td>
-                  <td><span class="text-success" style="font-weight: bold;">90 Días de Garantía Sin Riesgo</span></td>
+                  <td><span class="text-success" style="font-weight: bold;">60 Días de Garantía de Devolución</span></td>
+                  <td><span class="text-success" style="font-weight: bold;">90 Días de Garantía</span></td>
                 </tr>
                 <tr class="winner-row">
                   <td><strong>Precio Oficial</strong></td>
@@ -445,7 +443,7 @@
                 <li>Doble ataque: Alisado tópico rápido + nutrientes orales VitaLock™</li>
                 <li>Cero agujas, moretones ni expresiones faciales artificialmente rígidas</li>
                 <li>Sérum ligero y no graso que se absorbe fácilmente bajo el maquillaje</li>
-                <li>Protegido por una garantía de devolución completa del 100% durante 60 días</li>
+                <li>Protegido por una garantía de devolución del fabricante durante 60 días</li>
               </ul>
             </div>
             <div class="cons-box">
@@ -502,6 +500,11 @@
 
         </div>
       </div>
+    </div>
+    <div class="mobile-buy-bar" role="region" aria-label="Compra rápida">
+      <p class="mobile-buy-bar-name">Synevra UltraLift</p>
+      <a href="https://fa90bat349vj5m8h47ps5z4k7l.hop.clickbank.net" class="btn btn-gold btn-sm affiliate-link" data-product="synevra" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a>
+      <p class="mobile-buy-bar-disclosure">Enlace de afiliado</p>
     </div>
   </main>
 

@@ -38,9 +38,7 @@
   <meta name="twitter:image" content="https://dermaudit.com/Pictures/KollagenIntensiv.jpg">
 
   <!-- Google Fonts & FontAwesome -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" href="../webfonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../icons.css">
   
   <!-- Main Stylesheet -->
@@ -159,7 +157,7 @@
   <!-- Top Announcement Bar -->
   <div class="top-bar">
     <div class="container top-bar-content text-center">
-      <span><i class="fa-solid fa-earth-americas"></i> <strong>Livraison Internationale Suivie (100+ Pays)</strong> &bull; Garantie 100% Remboursé &bull; <strong>Livraison Gratuite aux États-Unis</strong></span>
+      <span><i class="fa-solid fa-earth-americas"></i> <strong>Livraison Internationale Suivie (100+ Pays)</strong> &bull; Garantie de remboursement de 60 à 90 jours &bull; <strong>Livraison Gratuite aux États-Unis</strong></span>
     </div>
   </div>
 
@@ -199,16 +197,16 @@
         </div>
         <a href="blog.html" class="nav-link">Journal</a>
         <a href="comparison.html" class="nav-link">Comparatif</a>
-        <a href="skincare-conflict-matrix.html" class="nav-link">Matrice de Conflits</a>
+        <a href="skincare-conflict-matrix.html" class="nav-link">Matrice de Conflits <span class="nav-badge">Gratuit</span></a>
         <div class="nav-item-dropdown lang-dropdown">
           <a href="javascript:void(0)" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
             <i class="fa-solid fa-globe"></i> FR <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-lang">
-            <a href="../kollagen-intensiv-review.html" class="dropdown-item"><span class="flag-icon">🇺🇸</span> English (US)</a>
-            <a href="../es/kollagen-intensiv-review.html" class="dropdown-item"><span class="flag-icon">🇪🇸</span> Español</a>
-            <a href="../de/kollagen-intensiv-review.html" class="dropdown-item"><span class="flag-icon">🇩🇪</span> Deutsch</a>
-            <a href="kollagen-intensiv-review.html" class="dropdown-item active"><span class="flag-icon">🇫🇷</span> Français</a>
+            <a href="../kollagen-intensiv-review.html" class="dropdown-item" lang="en"><span class="flag-icon" aria-hidden="true">🇺🇸</span> English (US)</a>
+            <a href="../es/kollagen-intensiv-review.html" class="dropdown-item" lang="es"><span class="flag-icon" aria-hidden="true">🇪🇸</span> Español</a>
+            <a href="../de/kollagen-intensiv-review.html" class="dropdown-item" lang="de"><span class="flag-icon" aria-hidden="true">🇩🇪</span> Deutsch</a>
+            <a href="kollagen-intensiv-review.html" class="dropdown-item active" lang="fr"><span class="flag-icon" aria-hidden="true">🇫🇷</span> Français</a>
           </div>
         </div>
       </nav>
@@ -235,7 +233,7 @@
         <img src="../Pictures/kollagen_boxbottle_lg.jpg" alt="Pot et Emballage de Kollagen Intensiv" style="width: 100%; max-height: 400px; object-fit: contain; margin-bottom: 1.5rem;" width="700" height="357" fetchpriority="high">
 
         <!-- Clinical Whiteboard Infographic Diagram -->
-        <img src="../Pictures/infographic-collagen-trampoline.jpg" alt="Schéma sur tableau blanc numérique expliquant comment les messagers peptidiques Syn-Coll régénèrent les ressorts de collagène sous le trampoline cutané tandis que le rétinol décape la surface" width="800" height="450" loading="lazy" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); display: block; margin: 0 auto;">
+        <picture><source type="image/webp" srcset="../img/optimized/infographic-collagen-trampoline-640.webp 640w, ../img/optimized/infographic-collagen-trampoline-960.webp 960w, ../img/optimized/infographic-collagen-trampoline-1376.webp 1376w" sizes="(max-width: 768px) 100vw, 800px"><img src="../Pictures/infographic-collagen-trampoline.jpg" alt="Schéma sur tableau blanc numérique expliquant comment les messagers peptidiques Syn-Coll régénèrent les ressorts de collagène sous le trampoline cutané tandis que le rétinol décape la surface" width="800" height="450" loading="lazy" style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); display: block; margin: 0 auto;"></picture>
 
         <!-- 3-Step Mechanism Card (FR) -->
         <div class="infographic-summary-grid">
@@ -279,7 +277,7 @@
             </div>
             <div class="aeo-verdict-item">
               <strong>Délai de Garantie</strong>
-              <span>90 Jours (garantie 100% satisfait ou remboursé)</span>
+              <span>90 Jours (garantie satisfait ou remboursé)</span>
             </div>
           </div>
           <p class="aeo-verdict-summary">
@@ -416,7 +414,7 @@
                 </tr>
                 <tr class="winner-row">
                   <td><strong>Garantie de Remboursement</strong></td>
-                  <td><span class="text-success" style="font-weight: bold;">Garantie 90 Jours 100% Sans Risque</span>.</td>
+                  <td><span class="text-success" style="font-weight: bold;">Garantie 90 Jours</span>.</td>
                   <td><span class="text-success" style="font-weight: bold;">Garantie de Remboursement de 60 Jours</span>.</td>
                 </tr>
                 <tr>
@@ -498,7 +496,7 @@
           <div class="reveal cta-card-navy">
             <h3>Prête à Redonner du Rebond à Votre Peau ?</h3>
             <p>
-              Découvrez la puissance du peptide suisse Syn-Coll® stimulant le collagène de 354% sans aucun risque grâce à la garantie 90 jours satisfait ou remboursé de Skinception.
+              Découvrez la puissance du peptide suisse Syn-Coll® stimulant le collagène de 354% grâce à la garantie 90 jours satisfait ou remboursé de Skinception.
             </p>
             <a href="https://www.kollagenintensiv.com/ct/282956" class="btn btn-gold btn-xl affiliate-link" data-product="kollagen" target="_blank" rel="noopener nofollow sponsored">
               <i class="fa-solid fa-cart-shopping"></i> Visiter la Boutique Officielle Kollagen Intensiv &amp; Profiter de la Remise
@@ -507,6 +505,11 @@
 
         </div>
       </div>
+    </div>
+    <div class="mobile-buy-bar" role="region" aria-label="Achat rapide">
+      <p class="mobile-buy-bar-name">Kollagen Intensiv</p>
+      <a href="https://www.kollagenintensiv.com/ct/282956" class="btn btn-gold btn-sm affiliate-link" data-product="kollagen" target="_blank" rel="noopener nofollow sponsored">Voir l&#39;offre</a>
+      <p class="mobile-buy-bar-disclosure">Lien d&#39;affiliation</p>
     </div>
   </main>
 

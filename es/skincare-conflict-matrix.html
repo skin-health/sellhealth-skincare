@@ -39,585 +39,15 @@
   <meta name="twitter:image" content="https://dermaudit.com/Pictures/infographic-collagen-trampoline.jpg">
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" href="../webfonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
   
   <!-- FontAwesome Subset & Site CSS -->
   <link rel="stylesheet" href="../icons.css">
   <link rel="stylesheet" href="../styles.css">
 
   <!-- Tool-Specific Dedicated Styles (Scoped & Token-Integrated) -->
-  <style>
-    .tool-hero {
-      padding: 3rem 0 2rem;
-      text-align: center;
-      background: radial-gradient(circle at 50% 20%, rgba(197, 160, 89, 0.08) 0%, transparent 70%);
-      border-bottom: 1px solid var(--color-border);
-    }
-    .tool-badge {
-      margin-bottom: 1rem;
-    }
-    .tool-title {
-      font-size: 2.75rem;
-      margin-bottom: 1rem;
-    }
-    .tool-subtitle {
-      max-width: 800px;
-      margin: 0 auto 1.5rem;
-      color: var(--color-muted);
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-    .tool-counter-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.4rem 1rem;
-      border-radius: 50px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      background: rgba(17, 24, 39, 0.9);
-      border: 1px solid var(--color-border-interactive);
-      color: var(--color-dark);
-      transition: var(--transition);
-    }
-    .tool-counter-badge.valid {
-      border-color: var(--color-success);
-      color: var(--color-success);
-    }
-    .tool-counter-badge.max {
-      border-color: var(--color-primary);
-      color: var(--color-primary-light);
-    }
-    .selector-section {
-      padding: 2.5rem 0;
-    }
-    .presets-bar {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 0.75rem;
-      margin-bottom: 2rem;
-      padding: 1.25rem;
-      background: var(--color-surface);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-lg);
-    }
-    .presets-label {
-      font-size: 0.85rem;
-      font-weight: 700;
-      color: var(--color-primary-dark);
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-right: 0.5rem;
-    }
-    .preset-btn {
-      padding: 0.4rem 0.85rem;
-      font-size: 0.85rem;
-      font-weight: 600;
-      border-radius: 50px;
-      background: rgba(255, 255, 255, 0.04);
-      color: var(--color-dark-surface);
-      border: 1px solid var(--color-border-interactive);
-      cursor: pointer;
-      transition: var(--transition);
-      min-height: 44px;
-    }
-    .preset-btn:hover {
-      background: rgba(197, 160, 89, 0.15);
-      border-color: var(--color-primary);
-      color: var(--color-dark);
-    }
-    .preset-btn-reset {
-      margin-left: auto;
-      background: transparent;
-      border-color: rgba(229, 62, 62, 0.4);
-      color: var(--color-danger);
-    }
-    .preset-btn-reset:hover {
-      background: var(--color-danger-bg);
-      border-color: var(--color-danger);
-      color: #FFFFFF;
-    }
-    .actives-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 1.25rem;
-    }
-    .active-card {
-      position: relative;
-      background: var(--color-surface);
-      border: 1.5px solid var(--color-border-interactive);
-      border-radius: var(--radius-md);
-      padding: 1.25rem;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      user-select: none;
-      min-height: 170px;
-    }
-    .active-card:hover {
-      border-color: var(--color-primary);
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-md);
-    }
-    .active-card:focus-visible {
-      outline: 2px solid var(--color-primary);
-      outline-offset: 2px;
-    }
-    .active-card.selected {
-      background: rgba(197, 160, 89, 0.08);
-      border-color: var(--color-primary);
-      box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
-    }
-    .active-card.disabled {
-      opacity: 0.45;
-      cursor: not-allowed;
-      border-color: var(--color-border);
-      transform: none;
-      box-shadow: none;
-    }
-    .active-card-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 0.75rem;
-    }
-    .active-icon {
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      background: rgba(197, 160, 89, 0.12);
-      color: var(--color-primary-dark);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1rem;
-    }
-    .active-check {
-      width: 22px;
-      height: 22px;
-      border-radius: 4px;
-      border: 1.5px solid var(--color-border-interactive);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.75rem;
-      color: transparent;
-      transition: var(--transition);
-    }
-    .active-card.selected .active-check {
-      background: var(--color-primary);
-      border-color: var(--color-primary);
-      color: var(--color-charcoal);
-    }
-    .active-name {
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: var(--color-dark);
-      margin-bottom: 0.35rem;
-      line-height: 1.3;
-    }
-    .active-category {
-      font-size: 0.78rem;
-      color: var(--color-muted);
-      margin-bottom: 0.75rem;
-    }
-    .active-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      font-size: 0.72rem;
-    }
-    .active-tag {
-      padding: 0.2rem 0.5rem;
-      border-radius: var(--radius-sm);
-      background: rgba(255, 255, 255, 0.05);
-      color: var(--color-dark-surface);
-      border: 1px solid var(--color-border);
-    }
-    .active-tag-brand {
-      background: rgba(197, 160, 89, 0.15);
-      color: var(--color-primary-light);
-      border-color: rgba(197, 160, 89, 0.3);
-      font-weight: 600;
-    }
-    .dashboard-section {
-      padding: 2.5rem 0;
-      border-top: 1px solid var(--color-border);
-    }
-    .empty-state-card {
-      text-align: center;
-      padding: 3.5rem 2rem;
-      background: var(--color-surface);
-      border: 1px dashed var(--color-border-interactive);
-      border-radius: var(--radius-lg);
-    }
-    .empty-state-icon {
-      font-size: 2.5rem;
-      color: var(--color-primary-dark);
-      margin-bottom: 1rem;
-    }
-    .empty-state-card h3 {
-      font-size: 1.4rem;
-      margin-bottom: 0.5rem;
-    }
-    .empty-state-card p {
-      color: var(--color-muted);
-      max-width: 500px;
-      margin: 0 auto;
-    }
-    .metrics-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-      margin-bottom: 2.5rem;
-    }
-    .metric-card {
-      background: var(--color-surface);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-lg);
-      padding: 1.75rem 1.5rem;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .metric-title {
-      font-size: 0.85rem;
-      font-weight: 700;
-      color: var(--color-muted);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 0.75rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-    }
-    .metric-value {
-      font-size: 2.4rem;
-      font-weight: 700;
-      font-family: var(--font-serif);
-      margin-bottom: 0.5rem;
-      line-height: 1;
-    }
-    .metric-desc {
-      font-size: 0.85rem;
-      color: var(--color-dark-surface);
-      line-height: 1.4;
-    }
-    .metric-bar-wrap {
-      width: 100%;
-      height: 8px;
-      background: rgba(255, 255, 255, 0.08);
-      border-radius: 4px;
-      margin: 1rem 0 0.5rem;
-      overflow: hidden;
-    }
-    .metric-bar-fill {
-      height: 100%;
-      border-radius: 4px;
-      transition: width 0.4s ease, background-color 0.4s ease;
-    }
-    .matrix-card-wrap {
-      background: var(--color-surface);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-lg);
-      padding: 1.75rem;
-      margin-bottom: 2.5rem;
-    }
-    .matrix-card-header {
-      margin-bottom: 1.25rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-    .matrix-card-header h3 {
-      font-size: 1.35rem;
-      margin: 0;
-    }
-    .matrix-legend {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      font-size: 0.82rem;
-      color: var(--color-muted);
-    }
-    .legend-item {
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-    }
-    .legend-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      display: inline-block;
-    }
-    .collision-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.85rem;
-    }
-    .collision-table th,
-    .collision-table td {
-      padding: 0.75rem 0.6rem;
-      text-align: center;
-      border: 1px solid var(--color-border);
-    }
-    .collision-table thead th {
-      background: rgba(255, 255, 255, 0.02);
-      font-weight: 600;
-      color: var(--color-dark);
-      font-size: 0.78rem;
-    }
-    .collision-table tbody th {
-      text-align: left;
-      font-weight: 600;
-      color: var(--color-dark);
-      background: rgba(255, 255, 255, 0.01);
-      white-space: nowrap;
-    }
-    .self-cell {
-      color: var(--color-muted);
-      opacity: 0.4;
-    }
-    .schedule-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
-      margin-bottom: 2.5rem;
-    }
-    .schedule-card {
-      background: var(--color-surface);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-lg);
-      padding: 1.75rem;
-    }
-    .schedule-header {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      margin-bottom: 1.5rem;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid var(--color-border);
-      color: var(--color-primary-dark);
-    }
-    .schedule-header h3 {
-      margin: 0;
-      font-size: 1.25rem;
-      color: var(--color-dark);
-    }
-    .step-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .step-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 1rem;
-      margin-bottom: 1.25rem;
-    }
-    .step-num {
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      background: rgba(197, 160, 89, 0.15);
-      color: var(--color-primary-dark);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.85rem;
-      font-weight: 700;
-      flex-shrink: 0;
-      margin-top: 0.15rem;
-    }
-    .step-content h4 {
-      font-size: 0.95rem;
-      margin-bottom: 0.25rem;
-      color: var(--color-dark);
-    }
-    .step-content p {
-      font-size: 0.82rem;
-      color: var(--color-muted);
-      line-height: 1.45;
-      margin-bottom: 0.25rem;
-    }
-    .step-wait {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      font-size: 0.75rem;
-      color: var(--color-warning);
-      font-weight: 600;
-      margin-top: 0.25rem;
-    }
-    .cycling-card {
-      background: rgba(197, 160, 89, 0.05);
-      border: 1px solid rgba(197, 160, 89, 0.25);
-      border-radius: var(--radius-lg);
-      padding: 1.75rem;
-      margin-bottom: 2.5rem;
-    }
-    .cycling-title {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      color: var(--color-primary-dark);
-      margin-bottom: 0.75rem;
-    }
-    .cycling-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1rem;
-      margin-top: 1.25rem;
-    }
-
-    @media (min-width: 480px) and (max-width: 768px) {
-      .cycling-grid { grid-template-columns: 1fr; }
-    }
-    .cycling-day {
-      background: var(--color-surface);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-md);
-      padding: 1rem;
-    }
-    .cycling-day h5 {
-      color: var(--color-primary);
-      font-size: 0.88rem;
-      margin-bottom: 0.35rem;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-    .cycling-day p {
-      font-size: 0.82rem;
-      color: var(--color-dark-surface);
-      line-height: 1.4;
-      margin: 0;
-    }
-    .mechanisms-wrap {
-      margin-top: 2rem;
-    }
-    .mechanism-card {
-      background: var(--color-surface);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-md);
-      margin-bottom: 1rem;
-      overflow: hidden;
-    }
-    .mechanism-btn {
-      width: 100%;
-      padding: 1.1rem 1.25rem;
-      background: none;
-      border: none;
-      color: var(--color-dark);
-      font-family: var(--font-sans);
-      font-size: 0.98rem;
-      font-weight: 600;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      text-align: left;
-    }
-    .mechanism-btn:hover {
-      background: rgba(255, 255, 255, 0.02);
-    }
-    .mechanism-btn i.toggle-icon {
-      transition: transform 0.25s ease;
-      color: var(--color-muted);
-    }
-    .mechanism-card.active .mechanism-btn i.toggle-icon {
-      transform: rotate(180deg);
-      color: var(--color-primary);
-    }
-    .mechanism-body {
-      display: none;
-      padding: 0 1.25rem 1.25rem;
-      font-size: 0.88rem;
-      color: var(--color-muted);
-      line-height: 1.6;
-      border-top: 1px solid rgba(255, 255, 255, 0.05);
-    }
-    .mechanism-card.active .mechanism-body {
-      display: block;
-    }
-    .mechanism-strategy {
-      margin-top: 0.85rem;
-      padding: 0.75rem 1rem;
-      background: rgba(52, 211, 153, 0.06);
-      border-left: 3px solid var(--color-success);
-      border-radius: var(--radius-sm);
-      color: var(--color-dark-surface);
-      font-size: 0.84rem;
-    }
-    .status-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      padding: 0.25rem 0.65rem;
-      border-radius: 50px;
-      font-size: 0.75rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-    .status-synergistic {
-      background: rgba(52, 211, 153, 0.15);
-      color: var(--color-success);
-      border: 1px solid rgba(52, 211, 153, 0.3);
-    }
-    .status-compatible {
-      background: rgba(52, 211, 153, 0.1);
-      color: var(--color-success);
-      border: 1px solid rgba(52, 211, 153, 0.2);
-    }
-    .status-moderate {
-      background: rgba(245, 158, 11, 0.15);
-      color: var(--color-warning);
-      border: 1px solid rgba(245, 158, 11, 0.3);
-    }
-    .status-high {
-      background: rgba(234, 88, 12, 0.15);
-      color: #FB923C;
-      border: 1px solid rgba(234, 88, 12, 0.3);
-    }
-    .status-critical {
-      background: var(--color-danger-bg);
-      color: var(--color-danger);
-      border: 1px solid var(--color-danger-border);
-    }
-    @media (max-width: 900px) {
-      .metrics-grid {
-        grid-template-columns: 1fr;
-      }
-      .schedule-grid {
-        grid-template-columns: 1fr;
-      }
-      .tool-title {
-        font-size: 2.15rem;
-      }
-    }
-    @media (max-width: 600px) {
-      .actives-grid {
-        grid-template-columns: 1fr;
-      }
-      .presets-bar {
-        flex-direction: column;
-        align-items: stretch;
-      }
-      .preset-btn-reset {
-        margin-left: 0;
-        margin-top: 0.5rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="../tools/conflict-matrix.css">
+  <link rel="stylesheet" href="../tools/routine-planner.css">
 
   <!-- SoftwareApplication / WebApplication Schema Markup -->
   <script type="application/ld+json">
@@ -680,7 +110,7 @@
   <!-- Announcement Bar (Verified USA Invariant) -->
   <div class="top-bar">
     <div class="container top-bar-content text-center">
-      <span><i class="fa-solid fa-earth-americas"></i> <strong>Envíos Internacionales con Seguimiento (100+ Países)</strong> &bull; Garantía de Devolución del 100% &bull; <strong>Envío Gratis en los EE.UU.</strong></span>
+      <span><i class="fa-solid fa-earth-americas"></i> <strong>Envíos Internacionales con Seguimiento (100+ Países)</strong> &bull; Garantía de devolución de 60-90 días &bull; <strong>Envío Gratis en los EE.UU.</strong></span>
     </div>
   </div>
 
@@ -727,10 +157,10 @@
             <i class="fa-solid fa-globe"></i> ES <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-lang">
-            <a href="../tools/skincare-conflict-matrix.html" class="dropdown-item"><span class="flag-icon">🇺🇸</span> English (US)</a>
-            <a href="skincare-conflict-matrix.html" class="dropdown-item active"><span class="flag-icon">🇪🇸</span> Español</a>
-            <a href="../de/skincare-conflict-matrix.html" class="dropdown-item"><span class="flag-icon">🇩🇪</span> Deutsch</a>
-            <a href="../fr/skincare-conflict-matrix.html" class="dropdown-item"><span class="flag-icon">🇫🇷</span> Français</a>
+            <a href="../tools/skincare-conflict-matrix.html" class="dropdown-item" lang="en"><span class="flag-icon" aria-hidden="true">🇺🇸</span> English (US)</a>
+            <a href="skincare-conflict-matrix.html" class="dropdown-item active" lang="es"><span class="flag-icon" aria-hidden="true">🇪🇸</span> Español</a>
+            <a href="../de/skincare-conflict-matrix.html" class="dropdown-item" lang="de"><span class="flag-icon" aria-hidden="true">🇩🇪</span> Deutsch</a>
+            <a href="../fr/skincare-conflict-matrix.html" class="dropdown-item" lang="fr"><span class="flag-icon" aria-hidden="true">🇫🇷</span> Français</a>
           </div>
         </div>
       </nav>
@@ -765,7 +195,7 @@
     <!-- Selection Controls & Grid -->
     <section class="selector-section" aria-labelledby="selector-heading">
       <div class="container">
-        <h2 id="selector-heading" class="visually-hidden" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;">Selector de activos</h2>
+        <h2 id="selector-heading" class="sr-only">Selector de activos</h2>
 
         <!-- Preset Regimens Bar -->
         <div class="presets-bar">
@@ -773,7 +203,7 @@
           <button type="button" class="preset-btn" data-preset="anti-aging">Régimen Antiedad y Colágeno</button>
           <button type="button" class="preset-btn" data-preset="brightening">Rutina Despigmentante y Tono</button>
           <button type="button" class="preset-btn" data-preset="barrier-safe">Recuperación Suave de Barrera</button>
-          <button type="button" class="preset-btn" data-preset="high-risk">Combinación de Alto Conflicto</button>
+          <button type="button" class="preset-btn" data-preset="high-risk">Combinaciones a evitar</button>
           <button type="button" class="preset-btn preset-btn-reset" id="resetBtn">
             <i class="fa-solid fa-rotate-left"></i> Reiniciar Selección
           </button>
@@ -789,7 +219,7 @@
     <!-- Diagnostic Engine Dashboard -->
     <section class="dashboard-section" id="dashboardSection" aria-labelledby="dashboard-heading">
       <div class="container">
-        <h2 id="dashboard-heading" class="visually-hidden" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;">Resultados del análisis diagnóstico</h2>
+        <h2 id="dashboard-heading" class="sr-only">Resultados del análisis diagnóstico</h2>
         
         <!-- Target container where conflict-matrix.js mounts results or empty-state -->
         <div id="resultsMount">
@@ -829,6 +259,7 @@
       </div>
     </section>
 
+  <section id="routine-planner" class="routine-planner"></section>
   </main>
 
   <!-- Site Footer (Standard Invariant) -->
@@ -888,6 +319,9 @@
 
   <!-- Application Engine Script -->
   <script src="../app.js" defer></script>
+  <script src="../tools/i18n/es.js" defer></script>
   <script src="../tools/conflict-matrix.js" defer></script>
+  <script src="../tools/routine-data.js" defer></script>
+  <script src="../tools/routine-planner.js" defer></script>
 </body>
 </html>
