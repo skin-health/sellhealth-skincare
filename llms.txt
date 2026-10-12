@@ -5,12 +5,13 @@
 ## Core Navigation
 - [Review Portal](/index.html): Comparative landing page for top skincare products. Features ratings, side-by-side details, and dynamic matching tools.
 - [Comparison Matrix](/comparison.html): Full side-by-side clinical comparison tables evaluating 5 top-tier clinical solutions (Kollagen Intensiv, Synevra UltraLift, Illuminatural 6i, Eyelasticity, Dermefface FX7) against luxury market alternatives.
+- [Skincare Conflict Matrix](/tools/skincare-conflict-matrix.html): Interactive dermatological engine calculating pH compatibility, deactivation risks, and AM/PM layering schedules across 11 clinical actives.
 - [Skin Quiz](/index.html#skin-quiz): 3-question javascript skin matching tool. Connects specific skin concerns to recommended products.
 - [Bio Link Page](/links.html): Branded mobile navigation portal optimized for social media referral traffic.
 - [Privacy Policy](/privacy.html): GDPR, CCPA, and FTC regulatory compliance disclosures.
 
 ## Clinical Reviews
-- [Kollagen Intensiv Review](/kollagen-intensiv-review.html): Deep clinical review of Kollagen Intensiv. Analyzes patented peptide Syn-Coll® (clinically proven to boost collagen synthesis by 354% and reduce wrinkles by 84%).
+- [Kollagen Intensiv Review](/kollagen-intensiv-review.html): Deep clinical review of Kollagen Intensiv. Analyzes patented peptide Syn-Coll® (the manufacturer reports that it boosts collagen synthesis by 354% and reduces wrinkle depth by 84%).
 - [Synevra UltraLift Review](/synevra-ultralift-review.html): Clinical analysis of Synevra UltraLift Swiss-inspired peptide system. Evaluates SYN-AKE® neuromuscular relaxation mechanism and VitaLock™ oral beauty nutrients.
 - [Illuminatural 6i Review](/illuminatural-6i-review.html): In-depth clinical analysis of Illuminatural 6i skin lightener. Evaluates six botanical actives (including Alpha-Arbutin and Niacinamide) that block melanin synthesis without toxic bleaching chemicals.
 - [Eyelasticity Review](/eyelasticity-review.html): Clinical analysis of Eyelasticity Age-Defying Eye Therapy. Evaluates doctor-formulated peptide complex (Eyeseryl®, Regu®-Age, Syn®-Coll, and Pro-Coll-One+) that drains lymphatic puffiness and lightens periorbital dark circles.
@@ -22,6 +23,7 @@
 - [Syn-Coll vs Retinol Article](/blog-syn-coll-vs-retinol.html): Clinical comparison between Palmitoyl Tripeptide-5 and Retinol.
 - [Dermal Scar Remodeling Article](/blog-how-to-fade-acne-scars.html): Research paper on scar tissue remodeling using Symglucan and peptides.
 - [Alpha-Arbutin vs Hydroquinone Article](/blog-alpha-arbutin-vs-hydroquinone.html): Clinical study on tyrosinase enzyme inhibition and safe melanin control.
+- [SYN-AKE vs Argireline Guide](/syn-ake-vs-argireline.html): Biochemical comparative analysis of SNARE complex inhibition vs acetylcholine receptor blocking for dynamic expression line relaxation.
 
 ## Análisis en Español (Spanish Reviews)
 - [Portal de Análisis (ES)](/es/index.html): Página principal comparativa en español con los 5 productos, quiz de piel y esquema JSON-LD completo.
@@ -36,6 +38,8 @@
 - [Estudio Syn-Coll vs Retinol (ES)](/es/blog-syn-coll-vs-retinol.html): Comparación clínica del péptido Syn-Coll® frente al retinol.
 - [Estudio Remodelación de Cicatrices (ES)](/es/blog-how-to-fade-acne-scars.html): Estudio de regeneración tisular con Symglucan y Pro-Coll-One+.
 - [Estudio Alfa-Arbutina vs Hidroquinona (ES)](/es/blog-alpha-arbutin-vs-hydroquinone.html): Estudio sobre inhibidores de tirosinasa y aclarado seguro de manchas.
+- [Matriz de Conflictos de Activos (ES)](/es/skincare-conflict-matrix.html): Herramienta clínica interactiva para evaluar compatibilidad de pH, riesgos de neutralización y protocolos AM/PM.
+- [Guía SYN-AKE vs Argireline (ES)](/es/syn-ake-vs-argireline.html): Comparativa bioquímica entre el bloqueo del complejo SNARE y la inhibición de acetilcolina contra arrugas dinámicas.
 - [Política de Privacidad (ES)](/es/privacy.html): Divulgaciones regulatorias de cumplimiento GDPR, CCPA y FTC en español.
 
 ## Klinische Tests auf Deutsch (German Reviews)
@@ -51,6 +55,8 @@
 - [Syn-Coll vs. Retinol Studie (DE)](/de/blog-syn-coll-vs-retinol.html): Klinischer Vergleich zwischen Palmitoyl Tripeptide-5 und Retinol.
 - [Narben-Remodeling Studie (DE)](/de/blog-how-to-fade-acne-scars.html): Forschungspapier zur Narbenreduktion mit Symglucan und Pro-Coll-One+.
 - [Alpha-Arbutin vs. Hydrochinon Studie (DE)](/de/blog-alpha-arbutin-vs-hydroquinone.html): Studie zur sicheren Tyrosinase-Hemmung und Melanin-Kontrolle.
+- [Wirkstoff-Konflikt-Matrix (DE)](/de/skincare-conflict-matrix.html): Interaktives Analyse-Tool zur Berechnung von pH-Kompatibilität, Deaktivierungsrisiken und AM/PM-Schichtungen für 11 Wirkstoffe.
+- [SYN-AKE vs. Argireline Leitfaden (DE)](/de/syn-ake-vs-argireline.html): Biochemischer Vergleich der SNARE-Komplex-Hemmung und Acetylcholin-Blockade zur Glättung mimischer Falten.
 - [Datenschutzerklärung (DE)](/de/privacy.html): Gesetzliche Angaben und Offenlegungen zur DSGVO, CCPA und FTC auf Deutsch.
 
 ## Analyses Cliniques en Français (French Reviews)
@@ -66,4 +72,6 @@
 - [Étude Syn-Coll vs Rétinol (FR)](/fr/blog-syn-coll-vs-retinol.html): Comparaison clinique du peptide Syn-Coll® face au rétinol.
 - [Étude Remodelage Cicatriciel (FR)](/fr/blog-how-to-fade-acne-scars.html): Rapport de recherche sur le lissage des cicatrices avec Symglucan et Pro-Coll-One+.
 - [Étude Alpha-Arbutine vs Hydroquinone (FR)](/fr/blog-alpha-arbutin-vs-hydroquinone.html): Étude sur l'inhibition de la tyrosinase et l'éclaircissement des taches.
+- [Matrice des Conflits d'Actifs (FR)](/fr/skincare-conflict-matrix.html): Outil clinique interactif calculant la compatibilité de pH, les risques de neutralisation et les protocoles matin/soir.
+- [Guide SYN-AKE vs Argireline (FR)](/fr/syn-ake-vs-argireline.html): Analyse biochimique comparative sur le blocage du complexe SNARE et de l'acétylcholine pour lisser les rides d'expression.
 - [Politique de Confidentialité (FR)](/fr/privacy.html): Divulgations de conformité réglementaire RGPD, CCPA et FTC en français.
