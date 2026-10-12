@@ -148,6 +148,25 @@ function applyAffiliateLinks() {
 
 function initAffiliateLinks() {
   applyAffiliateLinks();
+
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('.affiliate-link');
+    if (!link) return;
+
+    if (typeof window.plausible === 'function') {
+      const productKey = link.getAttribute('data-product') || 'unknown';
+      const placement = link.closest('#skin-quiz') ? 'quiz' :
+                        link.closest('.hero') ? 'hero' :
+                        link.closest('.product-card-vertical') ? 'product-card' :
+                        link.closest('.collision-table') ? 'conflict-table' : 'other';
+      window.plausible('Affiliate Click', {
+        props: {
+          product: productKey,
+          placement: placement
+        }
+      });
+    }
+  });
 }
 
 /* ==========================================================================
@@ -440,7 +459,7 @@ function showQuizResults() {
     productKey = 'eyelasticity';
   } else if (quizAnswers.concern === 'darkspots') {
     productKey = 'illuminatural';
-  } else if (quizAnswers.concern === 'scars' || quizAnswers.concern === 'skintags' || quizAnswers.concern === 'nails') {
+  } else if (quizAnswers.concern === 'scars') {
     productKey = 'dermefface';
   } else if (quizAnswers.concern === 'expression') {
     productKey = 'synevra';
