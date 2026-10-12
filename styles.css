@@ -3258,7 +3258,11 @@ textarea:focus-visible {
   }
 }
 
-/* Mobile buy bar (spec C5). Fixed at the bottom on phones only; body padding reserves its height. */
+/* Mobile buy bar (spec C5). Hidden by default on desktop. Visible only on mobile screens (<=768px). */
+.mobile-buy-bar {
+  display: none;
+}
+
 @media (max-width: 768px) {
   body:has(.mobile-buy-bar) {
     padding-bottom: 72px;
