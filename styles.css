@@ -3298,5 +3298,6 @@ textarea:focus-visible {
     margin: 0;
     font-size: 0.7rem;
     color: var(--color-muted);
+    text-align: right;
   }
 }
