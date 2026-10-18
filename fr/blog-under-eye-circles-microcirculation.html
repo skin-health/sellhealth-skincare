@@ -133,9 +133,9 @@
       <nav class="nav" id="navMenu">
         <a href="index.html" class="nav-link">Accueil</a>
         <div class="nav-item-dropdown">
-          <a href="javascript:void(0)" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
-            Avis <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem;"></i>
-          </a>
+          <button type="button" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+            Avis <i class="fa-solid fa-chevron-down chevron-sm"></i>
+          </button>
           <div class="dropdown-menu">
             <div class="dropdown-category">
               <div class="dropdown-category-title"><i class="fa-solid fa-hourglass-half"></i> Anti-Âge et Rides</div>
@@ -162,9 +162,9 @@
         <a href="comparison.html" class="nav-link">Comparatif</a>
         <a href="skincare-conflict-matrix.html" class="nav-link">Matrice de Conflits <span class="nav-badge">Gratuit</span></a>
         <div class="nav-item-dropdown lang-dropdown">
-          <a href="javascript:void(0)" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
-            <i class="fa-solid fa-globe"></i> FR <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i>
-          </a>
+          <button type="button" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-globe"></i> FR <i class="fa-solid fa-chevron-down chevron-xs"></i>
+          </button>
           <div class="dropdown-menu dropdown-menu-lang">
             <a href="../blog-under-eye-circles-microcirculation.html" class="dropdown-item" lang="en"><span class="flag-icon" aria-hidden="true">🇺🇸</span> English (US)</a>
             <a href="../es/blog-under-eye-circles-microcirculation.html" class="dropdown-item" lang="es"><span class="flag-icon" aria-hidden="true">🇪🇸</span> Español</a>
@@ -184,7 +184,7 @@
 
   <!-- Article Main Container -->
   <main class="section">
-    <div class="container" style="max-width: 900px;">
+    <div class="container max-w-900">
       
       <article class="card blog-article-card">
         <div class="article-header-meta" data-published="2026-09-26">
@@ -203,7 +203,7 @@
           <!-- Semantic Infographic 4: Whiteboard Process Diagram -->
           <div class="infographic-container" style="margin: 0 0 2.5rem 0; padding: 2rem; background: linear-gradient(135deg, rgba(212,175,55,0.06) 0%, rgba(17,24,39,0.95) 100%); border: 1px solid var(--color-border); border-radius: 12px; text-align: center;">
             <span class="badge badge-gold" style="margin-bottom: 0.5rem;"><i class="fa-solid fa-chalkboard"></i> EXPLICATION SUR TABLEAU BLANC NUMÉRIQUE</span>
-            <p class="infographic-title" style="color: var(--color-dark); font-size: 1.4rem; margin: 0.5rem 0 0.25rem 0;">L'Aquarium à Paroi Fine et la Pompe de Microdrainage</p>
+            <p class="infographic-title" style="color: var(--text-primary); font-size: 1.4rem; margin: 0.5rem 0 0.25rem 0;">L'Aquarium à Paroi Fine et la Pompe de Microdrainage</p>
             <p style="color: var(--color-muted); font-size: 0.9rem; max-width: 600px; margin: 0 auto 1.5rem auto;">Comparaison entre la stase vasculaire dans une peau de 0,5 mm et le microdrainage peptidique.</p>
             <picture><source type="image/webp" srcset="../img/optimized/infographic-eyelasticity-drainage-640.webp 640w, ../img/optimized/infographic-eyelasticity-drainage-960.webp 960w, ../img/optimized/infographic-eyelasticity-drainage-1376.webp 1376w" sizes="(max-width: 768px) 100vw, 800px"><img src="../Pictures/infographic-eyelasticity-drainage.jpg" alt="Schéma sur tableau blanc expliquant le drainage des fluides sous les yeux par Eyeseryl et la réparation par Regu-Age" width="800" height="450" fetchpriority="high" style="width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); display: block; margin: 0 auto;"></picture>
           </div>
@@ -287,13 +287,13 @@
 
           
           <div class="cta-card-navy reveal">
-            <h3 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--color-gold); margin-bottom: 0.85rem;">Réparation de la Microcirculation, Livrée</h3>
-            <p style="color: #CBD5E1; max-width: 46rem; margin: 0 auto 1.5rem auto;">Le duo tétrapeptide Eyeseryl&reg; et Regu-Age&reg; décrit ci-dessus est le système actif d'Eyelasticity&trade;. Il cible le drainage lymphatique que laisse l'effet Tyndall, pas la mélanine.</p>
+            <h3 class="cta-heading-gold">Réparation de la Microcirculation, Livrée</h3>
+            <p class="cta-lead-light">Le duo tétrapeptide Eyeseryl&reg; et Regu-Age&reg; décrit ci-dessus est le système actif d'Eyelasticity&trade;. Il cible le drainage lymphatique que laisse l'effet Tyndall, pas la mélanine.</p>
             <a href="https://www.naturalhealthsource.com/products/eyelasticity-age-defying-eye-therapy/?aid=282956" class="btn btn-gold btn-lg affiliate-link" data-product="eyelasticity" target="_blank" rel="noopener nofollow sponsored">
               <i class="fa-solid fa-cart-shopping"></i> Voir la Réduction Officielle
               <i class="fa-solid fa-arrow-right"></i>
             </a>
-            <p style="font-size: 0.8rem; color: #94A3B8; margin-top: 1rem;">
+            <p class="cta-subnote">
               <i class="fa-solid fa-shield-halved"></i> Garantie de remboursement de 67 jours &bull; nous pouvons recevoir une commission
             </p>
           </div>
@@ -316,11 +316,11 @@
                 <span style="background: rgba(239, 68, 68, 0.2); color: #FCA5A5; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;"><i class="fa-solid fa-droplet"></i></span>
                 <h3 style="margin: 0; color: #FCA5A5; font-size: 1.1rem;">Voie de Fuite Vasculaire</h3>
               </div>
-              <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem; color: var(--color-dark-surface);">
-                <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;">
+              <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem; color: var(--text-secondary);">
+                <li class="flex-row-gap-sm">
                   <strong style="color: #F87171;">1.</strong> Les micro-capillaires fragiles laissent fuiter des hématies.
                 </li>
-                <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;">
+                <li class="flex-row-gap-sm">
                   <strong style="color: #F87171;">2.</strong> L'hémoglobine désoxygénée stagne sous la peau de 0,5 mm.
                 </li>
                 <li style="display: flex; gap: 0.5rem;">
@@ -335,11 +335,11 @@
                 <span style="background: rgba(16, 185, 129, 0.2); color: #6EE7B7; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;"><i class="fa-solid fa-shield-halved"></i></span>
                 <h3 style="margin: 0; color: #6EE7B7; font-size: 1.1rem;">Voie de Microdrainage Peptidique</h3>
               </div>
-              <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem; color: var(--color-dark-surface);">
-                <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;">
+              <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem; color: var(--text-secondary);">
+                <li class="flex-row-gap-sm">
                   <strong style="color: #34D399;">1.</strong> Regu-Age® consolide et scelle les parois capillaires fragiles.
                 </li>
-                <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;">
+                <li class="flex-row-gap-sm">
                   <strong style="color: #34D399;">2.</strong> Eyeseryl® stimule les micro-pompes d'évacuation lymphatique.
                 </li>
                 <li style="display: flex; gap: 0.5rem;">
@@ -362,22 +362,22 @@
               <tbody>
                 <tr>
                   <td><strong>Pénétration Tissulaire</strong></td>
-                  <td><span class="text-success" style="font-weight: bold;">Absorption Sous-Dermique Rapide</span> (adaptée à 0,5 mm)</td>
+                  <td><span class="text-success fw-bold">Absorption Sous-Dermique Rapide</span> (adaptée à 0,5 mm)</td>
                   <td>Occlusion en Surface (Trop dense pour la zone oculaire)</td>
                 </tr>
                 <tr>
                   <td><strong>Drainage Lymphatique</strong></td>
-                  <td><span class="text-success" style="font-weight: bold;">Évacuation Active des Liquides</span> (réduction de l'œdème)</td>
+                  <td><span class="text-success fw-bold">Évacuation Active des Liquides</span> (réduction de l'œdème)</td>
                   <td>Nulle (Aucun effet sur les fluides stagnants)</td>
                 </tr>
                 <tr>
                   <td><strong>Renfort Capillaire</strong></td>
-                  <td><span class="text-success" style="font-weight: bold;">Renforce les Micro-Vaisseaux</span> (stoppe les fuites)</td>
+                  <td><span class="text-success fw-bold">Renforce les Micro-Vaisseaux</span> (stoppe les fuites)</td>
                   <td>Nulle (Incapable de réparer les brèches)</td>
                 </tr>
                 <tr>
                   <td><strong>Risque de Milium</strong></td>
-                  <td><span class="text-success" style="font-weight: bold;">Zéro</span> (Matrice sérum aqueuse ultralégère)</td>
+                  <td><span class="text-success fw-bold">Zéro</span> (Matrice sérum aqueuse ultralégère)</td>
                   <td>Élevé (Paraffines obstruant les micro-pores)</td>
                 </tr>
                 <tr>
@@ -416,19 +416,19 @@
           </p>
 
           <div class="cta-card-navy reveal">
-            <h3 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--color-gold); margin-bottom: 0.85rem;">Des Yeux Plus Nets, Garantie 67 Jours</h3>
-            <p style="color: #CBD5E1; max-width: 46rem; margin: 0 auto 1.5rem auto;">Une formule ciblée plutôt qu'une crème visage générique. Couverte par une garantie de remboursement de 67 jours.</p>
+            <h3 class="cta-heading-gold">Des Yeux Plus Nets, Garantie 67 Jours</h3>
+            <p class="cta-lead-light">Une formule ciblée plutôt qu'une crème visage générique. Couverte par une garantie de remboursement de 67 jours.</p>
             <a href="https://www.naturalhealthsource.com/products/eyelasticity-age-defying-eye-therapy/?aid=282956" class="btn btn-gold btn-lg affiliate-link" data-product="eyelasticity" target="_blank" rel="noopener nofollow sponsored">
               <i class="fa-solid fa-cart-shopping"></i> Voir la Réduction Officielle
               <i class="fa-solid fa-arrow-right"></i>
             </a>
-            <p style="font-size: 0.8rem; color: #94A3B8; margin-top: 1rem;">
+            <p class="cta-subnote">
               <i class="fa-solid fa-shield-halved"></i> Garantie de remboursement de 67 jours &bull; nous pouvons recevoir une commission
             </p>
           </div>
 
           <h2>6. Foire Aux Questions (FAQ)</h2>
-          <div class="faq-accordion card reveal" style="margin: 1.5rem 0; padding: 1.5rem 2rem; background: var(--color-light-bg); border: 1px solid var(--color-border); border-radius: 12px;">
+          <div class="faq-accordion card reveal" style="margin: 1.5rem 0; padding: 1.5rem 2rem; background: var(--bg-page); border: 1px solid var(--color-border); border-radius: 12px;">
             <div class="faq-item">
               <button class="faq-question" id="faq-btn-1" aria-expanded="false" aria-controls="faq-ans-1">
                 <span>Pourquoi les cernes apparaissent-ils violets ou bleutés plutôt que bruns ?</span>
@@ -453,14 +453,35 @@
             </div>
           </div>
 
-          <div class="reveal" style="text-align: center; margin: 3rem 0 1.5rem 0; padding: 2rem; background: var(--color-light-bg); border-radius: 12px; border: 1px solid var(--color-border);">
-            <h3 style="margin-bottom: 0.5rem; color: var(--color-dark);">Rétablir la Microcirculation Périorbitaire</h3>
+          <div class="reveal" style="text-align: center; margin: 3rem 0 1.5rem 0; padding: 2rem; background: var(--bg-page); border-radius: 12px; border: 1px solid var(--color-border);">
+            <h3 style="margin-bottom: 0.5rem; color: var(--text-primary);">Rétablir la Microcirculation Périorbitaire</h3>
             <p style="color: var(--color-muted); margin-bottom: 1.5rem;">Formulé dans Eyelasticity™ avec Eyeseryl®, Regu-Age® et une garantie de satisfaction de 67 jours.</p>
             <a href="https://www.naturalhealthsource.com/products/eyelasticity-age-defying-eye-therapy/?aid=282956" class="btn btn-gold btn-lg affiliate-link" data-product="eyelasticity" target="_blank" rel="noopener nofollow sponsored">
               <i class="fa-solid fa-cart-shopping"></i> Visiter la Boutique Officielle Eyelasticity
             </a>
           </div>
 
+          <aside class="related-research-box" aria-label="Compatibilité des Actifs et Études Associées">
+            <h2 class="related-research-title"><i class="fa-solid fa-flask-vial"></i> Compatibilité des Actifs et Études Associées</h2>
+            <div class="related-research-grid">
+              <a href="skincare-conflict-matrix.html" class="related-research-link">
+                <span class="related-research-kicker"><i class="fa-solid fa-flask"></i> Outil Interactif</span>
+                <span class="related-research-label">Matrice des Conflits : Vérifier 42 Règles de Superposition</span>
+              </a>
+              <a href="eyelasticity-review.html" class="related-research-link">
+                <span class="related-research-kicker"><i class="fa-solid fa-magnifying-glass-chart"></i> Analyse de Formule</span>
+                <span class="related-research-label">Avis Eyelasticity™ : Soin Regard Eyeseryl® et Regu®-Age</span>
+              </a>
+              <a href="syn-ake-vs-argireline.html" class="related-research-link">
+                <span class="related-research-kicker"><i class="fa-solid fa-book-open"></i> Étude de Mécanisme</span>
+                <span class="related-research-label">SYN-AKE® vs Argireline® : Poids Moléculaire et Signalisation</span>
+              </a>
+              <a href="blog-alpha-arbutin-vs-hydroquinone.html" class="related-research-link">
+                <span class="related-research-kicker"><i class="fa-solid fa-microscope"></i> Étude de Mécanisme</span>
+                <span class="related-research-label">Alpha-Arbutine vs Hydroquinone : Inhibition de la Tyrosinase</span>
+              </a>
+            </div>
+          </aside>
         </div>
       </article>
 
@@ -482,7 +503,7 @@
 
       <!-- Col 2: Anti-Aging Reviews -->
       <div class="footer-col">
-        <h3><i class="fa-solid fa-hourglass-half" style="color: var(--color-gold); font-size: 0.85rem;"></i> Analyses Anti-Âge</h3>
+        <h3><i class="fa-solid fa-hourglass-half icon-gold-sm"></i> Analyses Anti-Âge</h3>
         <ul>
           <li><a href="kollagen-intensiv-review.html">Kollagen Intensiv™</a></li>
           <li><a href="synevra-ultralift-review.html">Synevra UltraLift™</a></li>
@@ -491,7 +512,7 @@
 
       <!-- Col 3: Targeted Therapy -->
       <div class="footer-col">
-        <h3><i class="fa-solid fa-wand-magic-sparkles" style="color: var(--color-gold); font-size: 0.85rem;"></i> Traitements Ciblés</h3>
+        <h3><i class="fa-solid fa-wand-magic-sparkles icon-gold-sm"></i> Traitements Ciblés</h3>
         <ul>
           <li><a href="illuminatural-6i-review.html">Illuminatural 6i™ (Taches)</a></li>
           <li><a href="eyelasticity-review.html">Eyelasticity™ (Cernes &amp; Poches)</a></li>
@@ -502,7 +523,7 @@
 
       <!-- Col 4: Resources & Legal -->
       <div class="footer-col">
-        <h3><i class="fa-solid fa-scale-balanced" style="color: var(--color-gold); font-size: 0.85rem;"></i> Ressources &amp; Légal</h3>
+        <h3><i class="fa-solid fa-scale-balanced icon-gold-sm"></i> Ressources &amp; Légal</h3>
         <ul>
           <li><a href="comparison.html">Matrice Comparative 2026</a></li>
           <li><a href="skincare-conflict-matrix.html">Matrice des Conflits d'Actifs</a></li>
@@ -522,7 +543,7 @@
           <p><strong>Avertissement Médical :</strong> Le contenu de ce site web est fourni à titre strictement informatif et ne constitue pas un avis médical ni une prescription thérapeutique. Consultez toujours un dermatologue ou médecin traitant qualifié avant d'entamer une nouvelle routine de soins.</p>
         </div>
         <div class="copyright">
-          &copy; 2026 Derm Audit Journal. Tous droits réservés. | <a href="privacy.html" style="color: #94A3B8; text-decoration: underline;">Politique de Confidentialité</a>
+          &copy; 2026 Derm Audit Journal. Tous droits réservés. | <a class="link-muted-underline" href="privacy.html">Politique de Confidentialité</a>
         </div>
       </div>
     </div>

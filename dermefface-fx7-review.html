@@ -166,9 +166,9 @@
             <nav class="nav" id="navMenu">
         <a href="index.html" class="nav-link">Home</a>
         <div class="nav-item-dropdown">
-          <a href="javascript:void(0)" class="nav-link dropdown-toggle active" aria-haspopup="true" aria-expanded="false">
-            Reviews <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem;"></i>
-          </a>
+          <button type="button" class="nav-link dropdown-toggle active" aria-haspopup="true" aria-expanded="false">
+            Reviews <i class="fa-solid fa-chevron-down chevron-sm"></i>
+          </button>
           <div class="dropdown-menu">
             <div class="dropdown-category">
               <div class="dropdown-category-title"><i class="fa-solid fa-hourglass-half"></i> Anti-Aging & Wrinkles</div>
@@ -195,9 +195,9 @@
         <a href="comparison.html" class="nav-link">Comparison</a>
         <a href="tools/skincare-conflict-matrix.html" class="nav-link">Conflict Matrix <span class="nav-badge">Free tool</span></a>
         <div class="nav-item-dropdown lang-dropdown">
-          <a href="javascript:void(0)" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
-            <i class="fa-solid fa-globe"></i> EN <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i>
-          </a>
+          <button type="button" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-globe"></i> EN <i class="fa-solid fa-chevron-down chevron-xs"></i>
+          </button>
           <div class="dropdown-menu dropdown-menu-lang">
             <a href="dermefface-fx7-review.html" class="dropdown-item active" lang="en"><span class="flag-icon" aria-hidden="true">🇺🇸</span> English (US)</a>
             <a href="es/dermefface-fx7-review.html" class="dropdown-item" lang="es"><span class="flag-icon" aria-hidden="true">🇪🇸</span> Español</a>
@@ -217,7 +217,7 @@
 
   <!-- Main Article Content -->
   <main class="section">
-    <div class="container" style="max-width: 900px;">
+    <div class="container max-w-900">
       
       <div class="article-header text-center" style="margin-bottom: 2.5rem;">
         <span class="badge badge-gold"><i class="fa-solid fa-bandage"></i> 2026 CLINICAL DEEP DIVE</span>
@@ -281,17 +281,17 @@
           </p>
         </div>
 
-        <div style="font-size: 1.05rem; line-height: 1.8; color: var(--color-dark-surface);">
+        <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-secondary);">
           
           <!-- Section 1: The Highway Pothole Analogy -->
-          <h2 style="font-size: 1.8rem; margin: 0 0 1rem 0; color: var(--color-dark);">Why Do Scars Look Lumpy, Red, and Uneven?</h2>
-          <p style="margin-bottom: 1.5rem;">
+          <h2 style="font-size: 1.8rem; margin: 0 0 1rem 0; color: var(--text-primary);">Why Do Scars Look Lumpy, Red, and Uneven?</h2>
+          <p class="mb-6">
             Imagine a busy highway gets a giant pothole in the middle of rush-hour traffic (like when you get a deep cut, surgical incision, or bad cystic acne breakout).
           </p>
-          <p style="margin-bottom: 1.5rem;">
+          <p class="mb-6">
             Your body panics! Instead of taking time to pave smooth, high-grade asphalt, the emergency road crew just dumps <strong>random, messy gravel everywhere</strong> as fast as possible to plug the hole so you don't bleed.
           </p>
-          <p style="margin-bottom: 1.5rem;">
+          <p class="mb-6">
             That messy emergency gravel is called <strong>Type III scar collagen</strong>. It seals the wound, but it leaves behind a raised, discolored, hard lump that feels tough and doesn't match the rest of your smooth skin.
           </p>
 
@@ -305,7 +305,7 @@
 
           <!-- Section 3: The Strict Construction Foreman -->
           <h2 class="review-section-heading">How Dermefface FX7® Remodels Scar Tissue (The Master Foreman)</h2>
-          <p style="margin-bottom: 1.5rem;">
+          <p class="mb-6">
             <strong>Skinception Dermefface FX7™</strong> acts like the world's strictest construction foreman arriving at the job site. It commands your cells to do three coordinated repairs over your skin's natural 28-day turnover cycle:
           </p>
 
@@ -320,7 +320,7 @@
           <div class="ingredient-grid">
             <div class="ingredient-card">
               <h3>
-                <i class="fa-solid fa-wheat-awn" style="color: var(--color-gold);"></i> 1. Symglucan (10.0%)
+                <i class="fa-solid fa-wheat-awn text-gold"></i> 1. Symglucan (10.0%)
               </h3>
               <p>
                 <strong>The Cellular Turbocharger:</strong> Oat-derived beta-glucan fluid that penetrates deep to speed wound healing and reduce raised scar height.
@@ -328,7 +328,7 @@
             </div>
             <div class="ingredient-card">
               <h3>
-                <i class="fa-solid fa-dna" style="color: var(--color-gold);"></i> 2. Pro-Coll-One+ (2.0%)
+                <i class="fa-solid fa-dna text-gold"></i> 2. Pro-Coll-One+ (2.0%)
               </h3>
               <p>
                 <strong>The Asphalt Paving Peptide:</strong> Boosts Type I healthy collagen synthesis by an astounding 1,190% to flatten bumpy tissue.
@@ -336,7 +336,7 @@
             </div>
             <div class="ingredient-card">
               <h3>
-                <i class="fa-solid fa-lock" style="color: var(--color-gold);"></i> 3. Pentavitin (5.0%)
+                <i class="fa-solid fa-lock text-gold"></i> 3. Pentavitin (5.0%)
               </h3>
               <p>
                 <strong>The 72-Hour Moisture Magnet:</strong> Binds to keratin to soften rock-hard scar tissue so it doesn't dry into an itchy, rigid keloid.
@@ -344,7 +344,7 @@
             </div>
             <div class="ingredient-card">
               <h3>
-                <i class="fa-solid fa-wand-magic-sparkles" style="color: var(--color-gold);"></i> 4. Vitalayer (3.0%) + Niacinamide
+                <i class="fa-solid fa-wand-magic-sparkles text-gold"></i> 4. Vitalayer (3.0%) + Niacinamide
               </h3>
               <p>
                 <strong>The Pigment Normalizer:</strong> Regulates cell turnover and fades dark purple, red, and brown discoloration around old marks.
@@ -367,13 +367,13 @@
                 <tr>
                   <th style="width: 30%;">Feature / Specification</th>
                   <th style="width: 35%; background: rgba(197, 160, 89, 0.05);">
-                    <img src="Pictures/dermafacereal.jpg" alt="Dermefface FX7" class="table-thumb" style="max-height: 50px; display: block; margin: 0 auto 0.5rem auto;" width="50" height="89" loading="lazy">
+                    <img src="Pictures/dermafacereal.jpg" alt="Dermefface FX7" class="table-thumb table-thumb-centered" width="50" height="89" loading="lazy">
                     <div style="font-weight: bold; color: var(--color-gold); text-align: center;">Dermefface FX7™</div>
                     <span class="badge badge-gold" style="font-size: 0.75rem; display: block; width: fit-content; margin: 0.25rem auto 0 auto;">Top Pick: Scar Remodeling Gel</span>
                   </th>
                   <th style="width: 35%;">
-                    <img src="Pictures/skinmedica.jpg" alt="SkinMedica Scar Gel" class="table-thumb" style="max-height: 50px; display: block; margin: 0 auto 0.5rem auto;" width="50" height="50" loading="lazy">
-                    <div style="font-weight: bold; text-align: center; color: var(--color-dark);">SkinMedica Scar Gel</div>
+                    <img src="Pictures/skinmedica.jpg" alt="SkinMedica Scar Gel" class="table-thumb table-thumb-centered" width="50" height="50" loading="lazy">
+                    <div style="font-weight: bold; text-align: center; color: var(--text-primary);">SkinMedica Scar Gel</div>
                     <span class="badge badge-gold" style="font-size: 0.75rem; background: var(--color-surface); color: var(--color-muted); border: 1px solid var(--color-border); display: block; width: fit-content; margin: 0.25rem auto 0 auto;">Clinical Benchmark</span>
                   </th>
                 </tr>
@@ -386,17 +386,17 @@
                 </tr>
                 <tr>
                   <td><strong>Collagen Remodeling Boost</strong></td>
-                  <td><span class="text-success" style="font-weight: bold;">Pro-Coll-One+</span> stimulates smooth Type I collagen synthesis up to +1190%.</td>
+                  <td><span class="text-success fw-bold">Pro-Coll-One+</span> stimulates smooth Type I collagen synthesis up to +1190%.</td>
                   <td>Lacks direct cell-signaling peptides to rebuild structural collagen ratios.</td>
                 </tr>
                 <tr class="winner-row">
                   <td><strong>Moisture Lock Technology</strong></td>
-                  <td><span class="text-success" style="font-weight: bold;">Pentavitin (5.0%)</span> locks moisture deep to soften tough scar fibers.</td>
+                  <td><span class="text-success fw-bold">Pentavitin (5.0%)</span> locks moisture deep to soften tough scar fibers.</td>
                   <td>Standard silicone-based occlusive layer that washes off easily.</td>
                 </tr>
                 <tr>
                   <td><strong>Money-Back Guarantee</strong></td>
-                  <td><span class="text-success" style="font-weight: bold;">90-Day Money-Back Guarantee</span></td>
+                  <td><span class="text-success fw-bold">90-Day Money-Back Guarantee</span></td>
                   <td>No guarantee on opened packages.</td>
                 </tr>
                 <tr class="winner-row">
@@ -424,8 +424,8 @@
           <!-- Section 6: Pros & Cons -->
           <div class="pros-cons-grid reveal">
             <div class="pros-box">
-              <h3 style="margin-bottom: 0.75rem;"><i class="fa-solid fa-thumbs-up"></i> What We Love:</h3>
-              <ul style="font-size: 0.9rem; line-height: 1.6; padding-left: 1.25rem;">
+              <h3 class="mb-3"><i class="fa-solid fa-thumbs-up"></i> What We Love:</h3>
+              <ul class="list-compact">
                 <li>Manufacturer-reported +1,190% boost in smooth Type I collagen</li>
                 <li>Fades acne scars, surgical incisions, burns, and accidental cuts</li>
                 <li>Pentavitin stops scar tissue from itching and turning rock-hard</li>
@@ -434,8 +434,8 @@
               </ul>
             </div>
             <div class="cons-box">
-              <h3 style="margin-bottom: 0.75rem;"><i class="fa-solid fa-thumbs-down"></i> Things to Keep in Mind:</h3>
-              <ul style="font-size: 0.9rem; line-height: 1.6; padding-left: 1.25rem;">
+              <h3 class="mb-3"><i class="fa-solid fa-thumbs-down"></i> Things to Keep in Mind:</h3>
+              <ul class="list-compact">
                 <li>Must wait until stitches or open wounds are fully closed before applying</li>
                 <li>Old mature scars (over 2 years old) take 60–90 days of consistent application</li>
               </ul>
@@ -475,6 +475,28 @@
           </div>
 
           <!-- Section 9: CTA Card -->
+          <aside class="related-research-box" aria-label="Check Active Layering & Related Studies">
+            <h2 class="related-research-title"><i class="fa-solid fa-flask-vial"></i> Check Active Layering & Related Studies</h2>
+            <div class="related-research-grid">
+              <a href="tools/skincare-conflict-matrix.html" class="related-research-link">
+                <span class="related-research-kicker"><i class="fa-solid fa-flask"></i> Interactive Tool</span>
+                <span class="related-research-label">Active Conflict Matrix: Check 42 Ingredient Layering Rules</span>
+              </a>
+              <a href="blog-how-to-fade-acne-scars.html" class="related-research-link">
+                <span class="related-research-kicker"><i class="fa-solid fa-book-open"></i> Mechanism Study</span>
+                <span class="related-research-label">Acne & Surgical Scars: Type I vs. Type III Collagen Remodeling</span>
+              </a>
+              <a href="blog-alpha-arbutin-vs-hydroquinone.html" class="related-research-link">
+                <span class="related-research-kicker"><i class="fa-solid fa-microscope"></i> Mechanism Study</span>
+                <span class="related-research-label">Alpha-Arbutin vs. Hydroquinone: Competitive Tyrosinase Block</span>
+              </a>
+              <a href="comparison.html" class="related-research-link">
+                <span class="related-research-kicker"><i class="fa-solid fa-scale-balanced"></i> Side-by-Side Matrix</span>
+                <span class="related-research-label">Compare All 5 Formulas: Actives, Prices & Guarantees</span>
+              </a>
+            </div>
+          </aside>
+
           <div class="reveal cta-card-navy">
             <h3>Ready to Smooth Away Scars for Good?</h3>
             <p>
@@ -510,7 +532,7 @@
 
       <!-- Col 2: Anti-Aging Reviews -->
       <div class="footer-col">
-        <h3><i class="fa-solid fa-hourglass-half" style="color: var(--color-gold); font-size: 0.85rem;"></i> Anti-Aging Reviews</h3>
+        <h3><i class="fa-solid fa-hourglass-half icon-gold-sm"></i> Anti-Aging Reviews</h3>
         <ul>
           <li><a href="kollagen-intensiv-review.html">Kollagen Intensiv™ Review</a></li>
           <li><a href="synevra-ultralift-review.html">Synevra UltraLift™ Review</a></li>
@@ -519,7 +541,7 @@
 
       <!-- Col 3: Targeted Therapy -->
       <div class="footer-col">
-        <h3><i class="fa-solid fa-wand-magic-sparkles" style="color: var(--color-gold); font-size: 0.85rem;"></i> Targeted Therapy</h3>
+        <h3><i class="fa-solid fa-wand-magic-sparkles icon-gold-sm"></i> Targeted Therapy</h3>
         <ul>
           <li><a href="illuminatural-6i-review.html">Illuminatural 6i™ Review</a></li>
           <li><a href="eyelasticity-review.html">Eyelasticity™ (Under-Eye Circles)</a></li>
@@ -529,7 +551,7 @@
 
       <!-- Col 4: Resources & Legal -->
       <div class="footer-col">
-        <h3><i class="fa-solid fa-scale-balanced" style="color: var(--color-gold); font-size: 0.85rem;"></i> Resources &amp; Legal</h3>
+        <h3><i class="fa-solid fa-scale-balanced icon-gold-sm"></i> Resources &amp; Legal</h3>
         <ul>
           <li><a href="comparison.html">2026 Comparison Matrix</a></li>
           <li><a href="tools/skincare-conflict-matrix.html">Active Conflict Matrix</a></li>
@@ -549,7 +571,7 @@
           <p><strong>Medical Disclaimer:</strong> Content on this website is for informational purposes only and is not intended as medical advice or to diagnose, treat, cure, or prevent any medical condition. Always consult with a qualified dermatologist or healthcare physician before starting a new skincare regimen.</p>
         </div>
         <div class="copyright">
-          © 2026 Derm Audit Journal. All Rights Reserved. | <a href="privacy.html" style="color: #94A3B8; text-decoration: underline;">Privacy Policy</a>
+          © 2026 Derm Audit Journal. All Rights Reserved. | <a class="link-muted-underline" href="privacy.html">Privacy Policy</a>
         </div>
       </div>
     </div>

@@ -1,69 +1,177 @@
-/* Routine planner (Phase D, v1). Layout only. Colours are fixed hex values, not tokens. */
+/* Routine planner (Phase D, v1). Dark luxury palette with WCAG 2.2 AA (>7:1) contrast. */
 
 .routine-planner {
   max-width: 1100px;
   margin: 2.5rem auto;
   padding: 0 1rem;
-  color: #1E293B;
+  color: #F8FAFC;
 }
 
 .planner-title {
-  font-size: 1.6rem;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.85rem;
+  color: #F8FAFC;
   margin: 0 0 0.5rem;
 }
 
 .planner-intro,
 .planner-disclaimer {
   margin: 0 0 0.75rem;
-  line-height: 1.5;
+  line-height: 1.55;
+}
+
+.planner-intro {
+  color: #E2E8F0;
 }
 
 .planner-disclaimer {
   font-size: 0.9rem;
-  color: #475569;
+  color: #94A3B8;
+}
+
+.planner-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 1rem;
+}
+
+.planner-legend-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  background: #111827;
+  border: 1px solid #64748B;
+  color: #E2E8F0;
+}
+
+.planner-legend-am {
+  border-color: #D4AF37;
+  color: #E8D3A7;
+}
+
+.planner-legend-pm {
+  border-color: #94A3B8;
+  color: #F8FAFC;
+}
+
+.planner-legend-rule {
+  border-color: #34D399;
+  color: #6EE7B7;
 }
 
 .planner-picker {
-  border: 1px solid #CBD5E1;
-  border-radius: 8px;
-  padding: 0.75rem 1rem;
+  background: #111827;
+  border: 1px solid #64748B;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
   margin: 0 0 1rem;
+}
+
+.planner-picker legend {
+  color: #D4AF37;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0 0.4rem;
 }
 
 .planner-picker-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
-  gap: 0.4rem 0.75rem;
-  margin-bottom: 0.75rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.5rem 0.75rem;
+  margin: 0.5rem 0 1rem;
 }
 
 .planner-pick {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
-  font-size: 0.95rem;
+  gap: 0.5rem;
+  font-size: 0.92rem;
+  color: #F8FAFC;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid #1E293B;
+  border-radius: 6px;
+  padding: 0.45rem 0.65rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.planner-pick:hover {
+  border-color: #D4AF37;
+  background: rgba(212, 175, 55, 0.08);
+}
+
+.planner-pick input[type="checkbox"] {
+  accent-color: #D4AF37;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.planner-picker-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.planner-btn-secondary {
+  background: rgba(255, 255, 255, 0.05);
+  color: #F8FAFC;
+  border: 1px solid #64748B;
+}
+
+.planner-btn-secondary:hover:not(:disabled) {
+  background: rgba(212, 175, 55, 0.14);
+  border-color: #D4AF37;
+  color: #F8FAFC;
+}
+
+.planner-btn-secondary:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
 }
 
 .planner-warning {
   min-height: 1.5rem;
   margin: 0 0 1rem;
+  color: #E2E8F0;
 }
 
 .planner-warning p {
-  margin: 0 0 0.35rem;
-  line-height: 1.45;
+  margin: 0 0 0.4rem;
+  line-height: 1.5;
 }
 
 .planner-error {
-  color: #991B1B;
+  color: #FCA5A5;
+  background: rgba(229, 62, 62, 0.14);
+  border: 1px solid rgba(252, 129, 129, 0.45);
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
   font-weight: 600;
 }
 
 .planner-conflict {
-  color: #7C2D12;
+  color: #FDE68A;
+  background: rgba(245, 158, 11, 0.14);
+  border: 1px solid rgba(245, 158, 11, 0.45);
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-weight: 600;
 }
 
-.planner-tray,
+.planner-tray {
+  background: #111827;
+  border: 1px dashed #64748B;
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+  margin-bottom: 1rem;
+}
+
 .planner-slot {
   margin-bottom: 0.75rem;
 }
@@ -71,8 +179,23 @@
 .planner-slot-title,
 .planner-day-title,
 .planner-tray h3 {
-  font-size: 0.95rem;
-  margin: 0 0 0.35rem;
+  font-size: 0.92rem;
+  margin: 0 0 0.4rem;
+  color: #F8FAFC;
+}
+
+.planner-day-title {
+  color: #D4AF37;
+  border-bottom: 1px solid #1E293B;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.planner-slot-title {
+  color: #94A3B8;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .planner-chips {
@@ -80,23 +203,37 @@
   padding: 0;
   margin: 0;
   display: grid;
-  gap: 0.35rem;
+  gap: 0.4rem;
+}
+
+.planner-tray .planner-chips {
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
 }
 
 .planner-chip {
   display: grid;
-  gap: 0.25rem;
-  border: 1px solid #CBD5E1;
+  gap: 0.3rem;
+  border: 1px solid #64748B;
   border-radius: 6px;
-  padding: 0.4rem 0.5rem;
-  background: #FFFFFF;
-  font-size: 0.9rem;
+  padding: 0.45rem 0.55rem;
+  background: #0B0F19;
+  color: #F8FAFC;
+  font-size: 0.88rem;
+}
+
+.planner-chip-name {
+  font-weight: 600;
+  color: #F8FAFC;
 }
 
 .planner-move {
   font: inherit;
-  padding: 0.25rem;
+  padding: 0.25rem 0.35rem;
   max-width: 100%;
+  background: #111827;
+  color: #F8FAFC;
+  border: 1px solid #64748B;
+  border-radius: 4px;
 }
 
 .planner-grid {
@@ -107,9 +244,10 @@
 }
 
 .planner-day {
-  border: 1px solid #E2E8F0;
+  background: #111827;
+  border: 1px solid #1E293B;
   border-radius: 8px;
-  padding: 0.5rem;
+  padding: 0.6rem;
   min-width: 0;
 }
 
@@ -122,7 +260,7 @@
 .planner-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.6rem;
 }
 
 @media (max-width: 599px) {

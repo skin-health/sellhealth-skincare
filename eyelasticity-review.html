@@ -186,9 +186,9 @@
       <nav class="nav" id="navMenu">
         <a href="index.html" class="nav-link">Home</a>
         <div class="nav-item-dropdown">
-          <a href="javascript:void(0)" class="nav-link dropdown-toggle active" aria-haspopup="true" aria-expanded="false">
-            Reviews <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem;"></i>
-          </a>
+          <button type="button" class="nav-link dropdown-toggle active" aria-haspopup="true" aria-expanded="false">
+            Reviews <i class="fa-solid fa-chevron-down chevron-sm"></i>
+          </button>
           <div class="dropdown-menu">
             <div class="dropdown-category">
               <div class="dropdown-category-title"><i class="fa-solid fa-hourglass-half"></i> Anti-Aging &amp; Wrinkles</div>
@@ -215,9 +215,9 @@
         <a href="comparison.html" class="nav-link">Comparison</a>
         <a href="tools/skincare-conflict-matrix.html" class="nav-link">Conflict Matrix <span class="nav-badge">Free tool</span></a>
         <div class="nav-item-dropdown lang-dropdown">
-          <a href="javascript:void(0)" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
-            <i class="fa-solid fa-globe"></i> EN <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i>
-          </a>
+          <button type="button" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-globe"></i> EN <i class="fa-solid fa-chevron-down chevron-xs"></i>
+          </button>
           <div class="dropdown-menu dropdown-menu-lang">
             <a href="eyelasticity-review.html" class="dropdown-item active" lang="en"><span class="flag-icon" aria-hidden="true">🇺🇸</span> English (US)</a>
             <a href="es/eyelasticity-review.html" class="dropdown-item" lang="es"><span class="flag-icon" aria-hidden="true">🇪🇸</span> Español</a>
@@ -237,7 +237,7 @@
 
   <!-- Main Article Content -->
   <main class="section">
-    <div class="container" style="max-width: 900px;">
+    <div class="container max-w-900">
       
       <div class="article-header text-center" style="margin-bottom: 2.5rem;">
         <span class="badge badge-gold"><i class="fa-solid fa-eye"></i> 2026 CLINICAL DEEP DIVE</span>
@@ -301,17 +301,17 @@
           </p>
         </div>
 
-        <div style="font-size: 1.05rem; line-height: 1.8; color: var(--color-dark-surface);">
+        <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-secondary);">
           
           <!-- Section 1: The Tissue Paper Analogy -->
-          <h2 style="font-size: 1.8rem; margin: 0 0 1rem 0; color: var(--color-dark);">Why Does Under-Eye Skin Break Down First?</h2>
-          <p style="margin-bottom: 1.5rem;">
+          <h2 style="font-size: 1.8rem; margin: 0 0 1rem 0; color: var(--text-primary);">Why Does Under-Eye Skin Break Down First?</h2>
+          <p class="mb-6">
             Touch your cheek with your finger. That skin is thick, strong, and durable. It is like a piece of sturdy cardboard.
           </p>
-          <p style="margin-bottom: 1.5rem;">
+          <p class="mb-6">
             Now touch the skin right below your lower eyelid. That skin is completely different. It is only <strong>0.5 millimeters thick</strong>. That is as thin as a single sheet of wet tissue paper. Because this skin is so thin, it has zero protective fat underneath.
           </p>
-          <p style="margin-bottom: 1.5rem;">
+          <p class="mb-6">
             Right behind that thin tissue paper sits a dense web of tiny blood vessels. When you feel tired, stressed, or sick, your blood flow slows down. Red blood cells lose their oxygen and stop moving quickly. They pool together in one spot. When dark, oxygen-starved blood pools behind thin tissue paper, it shows through the skin as a purple, blue, or black shadow. That is the exact biological cause of a <strong>dark circle</strong>.
           </p>
 
@@ -325,19 +325,19 @@
 
           <!-- Section 3: The Leaky Garden Hose Problem -->
           <h2 class="review-section-heading">The Science of Puffy Eye Bags: The Leaky Hose Problem</h2>
-          <p style="margin-bottom: 1.5rem;">
+          <p class="mb-6">
             Why do under-eye bags swell up when you wake up in the morning?
           </p>
-          <p style="margin-bottom: 1.5rem;">
+          <p class="mb-6">
             Think of your tiny under-eye capillaries like <strong>microscopic garden hoses</strong>. As you get older, the walls of these hoses get thin and fragile. Tiny micro-cracks form in the vessel walls. Water, salts, and lymphatic fluid leak out through the cracks into the surrounding tissue.
           </p>
-          <p style="margin-bottom: 1.5rem;">
+          <p class="mb-6">
             When you sleep flat on your back, gravity stops pulling fluid down toward your feet. The leaked water collects in the hollow space under your eyes like a tiny water balloon. Because your skin drainage system is slow, the fluid stays trapped. The result is a heavy, swollen, saggy eye bag.
           </p>
 
           <!-- Section 4: Dr. Dave David's 3-Phase Strategy -->
           <h2 class="review-section-heading">How Eyelasticity™ Restores Firm, Bright Eyes in 3 Phases</h2>
-          <p style="margin-bottom: 1.5rem;">
+          <p class="mb-6">
             Developed by board-certified cosmetic surgeon <strong>Dr. Dave David, M.D.</strong>, <strong>Eyelasticity™</strong> avoids heavy milia-causing oils. Instead, it uses a lightweight water-gel matrix delivering 4 clinical micro-peptides that work in 3 distinct phases:
           </p>
 
@@ -352,7 +352,7 @@
           <div class="ingredient-grid">
             <div class="ingredient-card">
               <h3>
-                <i class="fa-solid fa-pump-soap" style="color: var(--color-gold);"></i> 1. Eyeseryl® (Tetrapeptide-5)
+                <i class="fa-solid fa-pump-soap text-gold"></i> 1. Eyeseryl® (Tetrapeptide-5)
               </h3>
               <p>
                 <strong>The Fluid Drainage Pump:</strong> Stops capillary leakage and stimulates lymphatic drainage. The manufacturer reports a reduction in under-eye bag volume in <strong>70% of test subjects</strong> within 15 days.
@@ -360,7 +360,7 @@
             </div>
             <div class="ingredient-card">
               <h3>
-                <i class="fa-solid fa-droplet" style="color: var(--color-gold);"></i> 2. Regu®-Age Complex
+                <i class="fa-solid fa-droplet text-gold"></i> 2. Regu®-Age Complex
               </h3>
               <p>
                 <strong>The Circulation Shield:</strong> Purified soy and rice peptides with yeast protein that reinforce fragile capillary walls, reducing dark circles by up to <strong>35%</strong> and puffiness by <strong>32%</strong>.
@@ -368,7 +368,7 @@
             </div>
             <div class="ingredient-card">
               <h3>
-                <i class="fa-solid fa-shield-halved" style="color: var(--color-gold);"></i> 3. <a href="blog-syn-coll-vs-retinol.html" style="color: var(--color-gold); text-decoration: underline;">Syn®-Coll</a> (Tripeptide-5)
+                <i class="fa-solid fa-shield-halved text-gold"></i> 3. <a href="blog-syn-coll-vs-retinol.html" style="color: var(--color-gold); text-decoration: underline;">Syn®-Coll</a> (Tripeptide-5)
               </h3>
               <p>
                 <strong>The Tissue Thickener:</strong> Stimulates natural collagen synthesis via TGF-beta mimicry. Thickens delicate under-eye skin so stagnant veins are completely hidden from sight.
@@ -376,7 +376,7 @@
             </div>
             <div class="ingredient-card">
               <h3>
-                <i class="fa-solid fa-feather-pointed" style="color: var(--color-gold);"></i> 4. Pro-Coll-One+ &amp; Beta-Glucan
+                <i class="fa-solid fa-feather-pointed text-gold"></i> 4. Pro-Coll-One+ &amp; Beta-Glucan
               </h3>
               <p>
                 <strong>The Elasticity Lock:</strong> Purified soya glycopeptides boost Type I collagen by <strong>1190%</strong> to smooth crow's feet, while oat beta-glucan calms sensitive skin and locks in moisture.
@@ -399,13 +399,13 @@
                 <tr>
                   <th style="width: 30%;">Feature / Specification</th>
                   <th style="width: 35%; background: rgba(197, 160, 89, 0.05);">
-                    <img src="Pictures/eyelasticity800.jpg" alt="Eyelasticity" class="table-thumb" style="max-height: 50px; display: block; margin: 0 auto 0.5rem auto;" width="50" height="50" loading="lazy">
+                    <img src="Pictures/eyelasticity800.jpg" alt="Eyelasticity" class="table-thumb table-thumb-centered" width="50" height="50" loading="lazy">
                     <div style="font-weight: bold; color: var(--color-gold); text-align: center;">Eyelasticity™</div>
                     <span class="badge badge-gold" style="font-size: 0.75rem; display: block; width: fit-content; margin: 0.25rem auto 0 auto;">Top Pick: Periorbital Eye Therapy</span>
                   </th>
                   <th style="width: 35%;">
-                    <img src="Pictures/shiseido.jpg" alt="Shiseido Benefiance" class="table-thumb" style="max-height: 50px; display: block; margin: 0 auto 0.5rem auto;" width="50" height="50" loading="lazy">
-                    <div style="font-weight: bold; text-align: center; color: var(--color-dark);">Shiseido Benefiance</div>
+                    <img src="Pictures/shiseido.jpg" alt="Shiseido Benefiance" class="table-thumb table-thumb-centered" width="50" height="50" loading="lazy">
+                    <div style="font-weight: bold; text-align: center; color: var(--text-primary);">Shiseido Benefiance</div>
                     <span class="badge badge-gold" style="font-size: 0.75rem; background: var(--color-surface); color: var(--color-muted); border: 1px solid var(--color-border); display: block; width: fit-content; margin: 0.25rem auto 0 auto;">Clinical Benchmark</span>
                   </th>
                 </tr>
@@ -418,17 +418,17 @@
                 </tr>
                 <tr>
                   <td><strong>Texture &amp; Milia Risk</strong></td>
-                  <td><span class="text-success" style="font-weight: bold;">Zero Milia Risk</span>. Lightweight water-gel serum absorbs completely without clogging micro-pores.</td>
+                  <td><span class="text-success fw-bold">Zero Milia Risk</span>. Lightweight water-gel serum absorbs completely without clogging micro-pores.</td>
                   <td><strong>High Milia Risk</strong>. Heavy petrolatum and mineral wax base clogs delicate under-eye glands.</td>
                 </tr>
                 <tr class="winner-row">
                   <td><strong>Clinical Bag Drainage</strong></td>
-                  <td><span class="text-success" style="font-weight: bold;">70% Reduction in 15 Days</span> (Verified clinical trials with Eyeseryl®).</td>
+                  <td><span class="text-success fw-bold">70% Reduction in 15 Days</span> (Verified clinical trials with Eyeseryl®).</td>
                   <td>No targeted lymphatic drainage peptides.</td>
                 </tr>
                 <tr>
                   <td><strong>Money-Back Guarantee</strong></td>
-                  <td><span class="text-success" style="font-weight: bold;">67-Day Money-Back Guarantee</span>.</td>
+                  <td><span class="text-success fw-bold">67-Day Money-Back Guarantee</span>.</td>
                   <td>No guarantee on opened luxury jars.</td>
                 </tr>
                 <tr class="winner-row">
@@ -456,8 +456,8 @@
           <!-- Section 7: Pros & Cons -->
           <div class="pros-cons-grid reveal">
             <div class="pros-box">
-              <h3 style="margin-bottom: 0.75rem;"><i class="fa-solid fa-thumbs-up"></i> What We Love:</h3>
-              <ul style="font-size: 0.9rem; line-height: 1.6; padding-left: 1.25rem;">
+              <h3 class="mb-3"><i class="fa-solid fa-thumbs-up"></i> What We Love:</h3>
+              <ul class="list-compact">
                 <li>Doctor-formulated by board-certified cosmetic surgeon Dr. Dave David, M.D.</li>
                 <li>Rapid 15-day clinical lymphatic drainage (70% bag volume reduction)</li>
                 <li>Fades dark vascular circles by up to 35% without bleaching agents</li>
@@ -466,8 +466,8 @@
               </ul>
             </div>
             <div class="cons-box">
-              <h3 style="margin-bottom: 0.75rem;"><i class="fa-solid fa-thumbs-down"></i> Things to Keep in Mind:</h3>
-              <ul style="font-size: 0.9rem; line-height: 1.6; padding-left: 1.25rem;">
+              <h3 class="mb-3"><i class="fa-solid fa-thumbs-down"></i> Things to Keep in Mind:</h3>
+              <ul class="list-compact">
                 <li>Must be applied twice daily (morning and evening) on clean skin for best results</li>
                 <li>Hereditary deep-bone structural hollows may require dermal fillers for 100% correction</li>
               </ul>
@@ -513,6 +513,28 @@
           </div>
 
           <!-- Section 10: CTA Card -->
+          <aside class="related-research-box" aria-label="Check Active Layering & Related Studies">
+            <h2 class="related-research-title"><i class="fa-solid fa-flask-vial"></i> Check Active Layering & Related Studies</h2>
+            <div class="related-research-grid">
+              <a href="tools/skincare-conflict-matrix.html" class="related-research-link">
+                <span class="related-research-kicker"><i class="fa-solid fa-flask"></i> Interactive Tool</span>
+                <span class="related-research-label">Active Conflict Matrix: Check 42 Ingredient Layering Rules</span>
+              </a>
+              <a href="blog-under-eye-circles-microcirculation.html" class="related-research-link">
+                <span class="related-research-kicker"><i class="fa-solid fa-book-open"></i> Mechanism Study</span>
+                <span class="related-research-label">Under-Eye Circles & Bags: Periorbital Microcirculation</span>
+              </a>
+              <a href="syn-ake-vs-argireline.html" class="related-research-link">
+                <span class="related-research-kicker"><i class="fa-solid fa-microscope"></i> Mechanism Study</span>
+                <span class="related-research-label">SYN-AKE® vs. Argireline®: Peptide Weight & Muscle Signaling</span>
+              </a>
+              <a href="comparison.html" class="related-research-link">
+                <span class="related-research-kicker"><i class="fa-solid fa-scale-balanced"></i> Side-by-Side Matrix</span>
+                <span class="related-research-label">Compare All 5 Formulas: Actives, Prices & Guarantees</span>
+              </a>
+            </div>
+          </aside>
+
           <div class="reveal cta-card-navy">
             <h3>Ready for Brighter, Tighter, Rejuvenated Eyes?</h3>
             <p>
@@ -548,7 +570,7 @@
 
       <!-- Col 2: Anti-Aging Reviews -->
       <div class="footer-col">
-        <h3><i class="fa-solid fa-hourglass-half" style="color: var(--color-gold); font-size: 0.85rem;"></i> Anti-Aging Reviews</h3>
+        <h3><i class="fa-solid fa-hourglass-half icon-gold-sm"></i> Anti-Aging Reviews</h3>
         <ul>
           <li><a href="kollagen-intensiv-review.html">Kollagen Intensiv™ (Daily Cream)</a></li>
           <li><a href="synevra-ultralift-review.html">Synevra UltraLift™ (Expression Serum)</a></li>
@@ -557,7 +579,7 @@
 
       <!-- Col 3: Targeted Therapy -->
       <div class="footer-col">
-        <h3><i class="fa-solid fa-crosshairs" style="color: var(--color-gold); font-size: 0.85rem;"></i> Targeted Therapy</h3>
+        <h3><i class="fa-solid fa-crosshairs icon-gold-sm"></i> Targeted Therapy</h3>
         <ul>
           <li><a href="illuminatural-6i-review.html">Illuminatural 6i™ (Dark Spots)</a></li>
           <li><a href="eyelasticity-review.html">Eyelasticity™ (Under-Eye Circles)</a></li>
@@ -567,7 +589,7 @@
 
       <!-- Col 4: Resources & Legal -->
       <div class="footer-col">
-        <h3><i class="fa-solid fa-shield-halved" style="color: var(--color-gold); font-size: 0.85rem;"></i> Resources &amp; Legal</h3>
+        <h3><i class="fa-solid fa-shield-halved icon-gold-sm"></i> Resources &amp; Legal</h3>
         <ul>
           <li><a href="comparison.html">2026 Comparison Matrix</a></li>
           <li><a href="tools/skincare-conflict-matrix.html">Active Conflict Matrix</a></li>

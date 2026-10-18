@@ -24,13 +24,20 @@
   var STORAGE_KEY = 'da.routine.v1';
   var PLAN_PARAM = 'plan';
 
+  var SAMPLE_ACTIVES = ['l-ascorbic-acid', 'syn-coll', 'retinol', 'niacinamide'];
+
   var DICT = {
     en: {
       title: 'Build your weekly routine',
       intro: 'Pick up to 6 actives, then build a 7-day plan. Warnings use the same explicit rules as the matrix above.',
       disclaimer: 'Editorial guidance, not medical advice. The planner does not assign AM or PM timing. You place each active.',
+      legendAm: 'AM: Morning slot',
+      legendPm: 'PM: Evening slot',
+      legendRule: 'Same-slot check: 42 explicit rules',
       pick: 'Choose actives (up to 6)',
       build: 'Build my weekly routine',
+      sample: 'Load 4 sample actives',
+      reset: 'Reset plan',
       limit: 'You can select up to 6 actives.',
       unplaced: 'Not placed yet',
       moveTo: 'Move to',
@@ -50,8 +57,13 @@
       title: 'Crea tu rutina semanal',
       intro: 'Elige hasta 6 activos y crea un plan de 7 días. Las advertencias usan las mismas reglas explícitas de la matriz de arriba.',
       disclaimer: 'Orientación editorial, no consejo médico. El planificador no asigna horario de mañana o noche. Tú colocas cada activo.',
+      legendAm: 'Mañana: Horario de día',
+      legendPm: 'Noche: Horario nocturno',
+      legendRule: 'Control por horario: 42 reglas explícitas',
       pick: 'Elige activos (hasta 6)',
       build: 'Crear mi rutina semanal',
+      sample: 'Cargar 4 activos de ejemplo',
+      reset: 'Reiniciar plan',
       limit: 'Puedes seleccionar hasta 6 activos.',
       unplaced: 'Sin colocar',
       moveTo: 'Mover a',
@@ -71,8 +83,13 @@
       title: 'Erstelle deine Wochenroutine',
       intro: 'Wähle bis zu 6 Wirkstoffe und erstelle einen 7-Tage-Plan. Hinweise verwenden dieselben expliziten Regeln wie die Matrix oben.',
       disclaimer: 'Redaktionelle Orientierung, keine medizinische Beratung. Der Planer legt keine Morgen- oder Abendzeiten fest. Du ordnest jeden Wirkstoff selbst zu.',
+      legendAm: 'Morgens: Tages-Slot',
+      legendPm: 'Abends: Abend-Slot',
+      legendRule: 'Slot-Prüfung: 42 explizite Regeln',
       pick: 'Wirkstoffe wählen (bis zu 6)',
       build: 'Meine Wochenroutine erstellen',
+      sample: '4 Beispiel-Wirkstoffe laden',
+      reset: 'Plan zurücksetzen',
       limit: 'Du kannst bis zu 6 Wirkstoffe auswählen.',
       unplaced: 'Noch nicht zugeordnet',
       moveTo: 'Verschieben nach',
@@ -92,8 +109,13 @@
       title: 'Construisez votre routine hebdomadaire',
       intro: 'Choisissez jusqu’à 6 actifs, puis créez un plan sur 7 jours. Les alertes utilisent les mêmes règles explicites que la matrice ci-dessus.',
       disclaimer: 'Conseil éditorial, non médical. Le planificateur n’attribue pas de moment matin ou soir. Vous placez chaque actif.',
+      legendAm: 'Matin : Créneau de jour',
+      legendPm: 'Soir : Créneau du soir',
+      legendRule: 'Contrôle par créneau : 42 règles explicites',
       pick: 'Choisir des actifs (jusqu’à 6)',
       build: 'Créer ma routine hebdomadaire',
+      sample: 'Charger 4 actifs types',
+      reset: 'Réinitialiser le plan',
       limit: 'Vous pouvez sélectionner jusqu’à 6 actifs.',
       unplaced: 'Pas encore placé',
       moveTo: 'Déplacer vers',
@@ -287,6 +309,34 @@
     render();
   }
 
+  function applySample() {
+    var picked = SAMPLE_ACTIVES.filter(isValidId).slice(0, MAX_ACTIVES);
+    if (!picked.length) {
+      picked = rules.ids.slice(0, Math.min(4, MAX_ACTIVES));
+    }
+    state = emptyState();
+    ui.pending = picked.slice();
+    applyBuild();
+  }
+
+  function applyReset() {
+    state = emptyState();
+    ui.pending = [];
+    ui.built = false;
+    ui.day = 0;
+    writeUrlPlan(state);
+    setMessage(T.empty, false);
+    render();
+  }
+
+  function renderLegend(parent) {
+    var bar = el('div', 'planner-legend');
+    bar.appendChild(el('span', 'planner-legend-pill planner-legend-am', T.legendAm));
+    bar.appendChild(el('span', 'planner-legend-pill planner-legend-pm', T.legendPm));
+    bar.appendChild(el('span', 'planner-legend-pill planner-legend-rule', T.legendRule));
+    parent.appendChild(bar);
+  }
+
   function renderPicker(parent) {
     var fs = el('fieldset', 'planner-picker');
     fs.appendChild(el('legend', '', T.pick));
@@ -317,10 +367,22 @@
       list.appendChild(label);
     });
     fs.appendChild(list);
+    var pickerActions = el('div', 'planner-picker-actions');
     var build = el('button', 'btn btn-gold planner-build', T.build);
     build.type = 'button';
     build.addEventListener('click', applyBuild);
-    fs.appendChild(build);
+    var sample = el('button', 'btn planner-btn-secondary planner-sample', T.sample);
+    sample.type = 'button';
+    sample.addEventListener('click', applySample);
+    pickerActions.appendChild(build);
+    pickerActions.appendChild(sample);
+    if (ui.built || ui.pending.length > 0) {
+      var reset = el('button', 'btn planner-btn-secondary planner-reset', T.reset);
+      reset.type = 'button';
+      reset.addEventListener('click', applyReset);
+      pickerActions.appendChild(reset);
+    }
+    fs.appendChild(pickerActions);
     parent.appendChild(fs);
   }
 
@@ -387,11 +449,11 @@
     parent.appendChild(grid);
 
     var nav = el('div', 'planner-nav');
-    var prev = el('button', 'btn planner-prev', T.prev);
+    var prev = el('button', 'btn planner-btn-secondary planner-prev', T.prev);
     prev.type = 'button';
     prev.disabled = ui.day === 0;
     prev.addEventListener('click', function () { ui.day = Math.max(0, ui.day - 1); render(); });
-    var next = el('button', 'btn planner-next', T.next);
+    var next = el('button', 'btn planner-btn-secondary planner-next', T.next);
     next.type = 'button';
     next.disabled = ui.day === DAYS.length - 1;
     next.addEventListener('click', function () { ui.day = Math.min(DAYS.length - 1, ui.day + 1); render(); });
@@ -407,7 +469,7 @@
       else { setMessage(T.invalid, true); }
       render();
     });
-    var share = el('button', 'btn btn-sm', T.share);
+    var share = el('button', 'btn btn-sm planner-btn-secondary', T.share);
     share.type = 'button';
     share.addEventListener('click', function () {
       writeUrlPlan(state);
@@ -450,6 +512,7 @@
     root.appendChild(el('h2', 'planner-title', T.title));
     root.appendChild(el('p', 'planner-intro', T.intro));
     root.appendChild(el('p', 'planner-disclaimer', T.disclaimer));
+    renderLegend(root);
     renderPicker(root);
     renderWarnings(root);
     if (ui.built && state.actives.length) { renderBoard(root); }

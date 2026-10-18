@@ -129,9 +129,9 @@
       <nav class="nav" id="navMenu">
         <a href="index.html" class="nav-link">Accueil</a>
         <div class="nav-item-dropdown">
-          <a href="javascript:void(0)" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
-            Avis <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem;"></i>
-          </a>
+          <button type="button" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+            Avis <i class="fa-solid fa-chevron-down chevron-sm"></i>
+          </button>
           <div class="dropdown-menu">
             <div class="dropdown-category">
               <div class="dropdown-category-title"><i class="fa-solid fa-hourglass-half"></i> Anti-Âge et Rides</div>
@@ -158,9 +158,9 @@
         <a href="comparison.html" class="nav-link">Comparatif</a>
         <a href="skincare-conflict-matrix.html" class="nav-link">Matrice de Conflits <span class="nav-badge">Gratuit</span></a>
         <div class="nav-item-dropdown lang-dropdown">
-          <a href="javascript:void(0)" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
-            <i class="fa-solid fa-globe"></i> FR <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i>
-          </a>
+          <button type="button" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-globe"></i> FR <i class="fa-solid fa-chevron-down chevron-xs"></i>
+          </button>
           <div class="dropdown-menu dropdown-menu-lang">
             <a href="../blog-how-to-fade-acne-scars.html" class="dropdown-item" lang="en"><span class="flag-icon" aria-hidden="true">🇺🇸</span> English (US)</a>
             <a href="../es/blog-how-to-fade-acne-scars.html" class="dropdown-item" lang="es"><span class="flag-icon" aria-hidden="true">🇪🇸</span> Español</a>
@@ -180,7 +180,7 @@
 
   <!-- Article Main Container -->
   <main class="section">
-    <div class="container" style="max-width: 900px;">
+    <div class="container max-w-900">
       
       <article class="card blog-article-card">
         <div class="article-header-meta" data-published="2026-08-04">
@@ -199,7 +199,7 @@
           <!-- Semantic Infographic 2: Whiteboard Process Diagram -->
           <div class="infographic-container" style="margin: 0 0 2.5rem 0; padding: 2rem; background: linear-gradient(135deg, rgba(212,175,55,0.06) 0%, rgba(17,24,39,0.95) 100%); border: 1px solid var(--color-border); border-radius: 12px; text-align: center;">
             <span class="badge badge-gold" style="margin-bottom: 0.5rem;"><i class="fa-solid fa-chalkboard"></i> EXPLICATION SUR TABLEAU BLANC NUMÉRIQUE</span>
-            <p class="infographic-title" style="color: var(--color-dark); font-size: 1.4rem; margin: 0.5rem 0 0.25rem 0;">Le Mur de Briques d'Urgence &amp; l'Équipe de Nettoyage</p>
+            <p class="infographic-title" style="color: var(--text-primary); font-size: 1.4rem; margin: 0.5rem 0 0.25rem 0;">Le Mur de Briques d'Urgence &amp; l'Équipe de Nettoyage</p>
             <p style="color: var(--color-muted); font-size: 0.9rem; max-width: 600px; margin: 0 auto 1.5rem auto;">Comment la signalisation biologique active transforme un amas chaotique en une peau lisse et homogène.</p>
             <picture><source type="image/webp" srcset="../img/optimized/infographic-scar-brickwall-640.webp 640w, ../img/optimized/infographic-scar-brickwall-960.webp 960w, ../img/optimized/infographic-scar-brickwall-1376.webp 1376w" sizes="(max-width: 768px) 100vw, 800px"><img src="../Pictures/infographic-scar-brickwall.jpg" alt="Schéma sur tableau blanc numérique montrant comment Symglucan déblaie les briques en désordre de la cicatrice et les maçons Pro-Coll-One reconstruisent du collagène sain de type I" width="800" height="450" fetchpriority="high" style="width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); display: block; margin: 0 auto;"></picture>
           </div>
@@ -269,13 +269,13 @@
 
           
           <div class="cta-card-navy reveal">
-            <h3 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--color-gold); margin-bottom: 0.85rem;">Remodelage Cutané, Livré</h3>
-            <p style="color: #CBD5E1; max-width: 46rem; margin: 0 auto 1.5rem auto;">La combinaison de 10% de Symglucan et 2% de Pro-Coll-One+ décrite ci-dessus est la formule de Dermefface FX7&reg;. Le fabricant rapporte une hausse de 1190% du collagène de type I ; Derm Audit Journal n'a pas vérifié ce chiffre de manière indépendante.</p>
+            <h3 class="cta-heading-gold">Remodelage Cutané, Livré</h3>
+            <p class="cta-lead-light">La combinaison de 10% de Symglucan et 2% de Pro-Coll-One+ décrite ci-dessus est la formule de Dermefface FX7&reg;. Le fabricant rapporte une hausse de 1190% du collagène de type I ; Derm Audit Journal n'a pas vérifié ce chiffre de manière indépendante.</p>
             <a href="https://www.dermeffacefx7.com/ct/282956" class="btn btn-gold btn-lg affiliate-link" data-product="dermefface" target="_blank" rel="noopener nofollow sponsored">
               <i class="fa-solid fa-cart-shopping"></i> Voir la Réduction Officielle
               <i class="fa-solid fa-arrow-right"></i>
             </a>
-            <p style="font-size: 0.8rem; color: #94A3B8; margin-top: 1rem;">
+            <p class="cta-subnote">
               <i class="fa-solid fa-shield-halved"></i> Garantie de remboursement de 90 jours &bull; nous pouvons recevoir une commission
             </p>
           </div>
@@ -306,7 +306,7 @@
                   <span style="font-size: 0.75rem; color: var(--color-muted);">Jours 1 – 14</span>
                 </div>
               </div>
-              <p style="font-size: 0.9rem; color: var(--color-dark-surface); line-height: 1.6; margin: 0;">
+              <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
                 Le corps ferme la plaie dans la panique. Les fibroblastes entassent du collagène de type III chaotique comme un tas de briques en désordre, laissant une cicatrice rigide ou creusée.
               </p>
             </div>
@@ -320,7 +320,7 @@
                   <span style="font-size: 0.75rem; color: var(--color-muted);">Jours 14 – 28</span>
                 </div>
               </div>
-              <p style="font-size: 0.9rem; color: var(--color-dark-surface); line-height: 1.6; margin: 0;">
+              <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
                 <strong>10% de Symglucan</strong> active les macrophages nettoyeurs. Ils démantèlent les nœuds fibreux enchevêtrés et dissipent les rougeurs piégées.
               </p>
             </div>
@@ -334,7 +334,7 @@
                   <span style="font-size: 0.75rem; color: var(--color-muted);">Jours 28 – 80</span>
                 </div>
               </div>
-              <p style="font-size: 0.9rem; color: var(--color-dark-surface); line-height: 1.6; margin: 0;">
+              <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
                 <strong>Pro-Coll-One+</strong> déclenche un bond de <strong>+1 190%</strong> en collagène de type I. Les maîtres maçons posent des briques alignées pour réégaliser la cicatrice.
               </p>
             </div>
@@ -354,17 +354,17 @@
               <tbody>
                 <tr>
                   <td><strong>Mode d'Action</strong></td>
-                  <td><span class="text-success" style="font-weight: bold;">Remodelage Actif + Nettoyage Macrophagique</span></td>
+                  <td><span class="text-success fw-bold">Remodelage Actif + Nettoyage Macrophagique</span></td>
                   <td>Maintien Passif d'Hydratation Superficielle</td>
                 </tr>
                 <tr>
                   <td><strong>Pic de Collagène Type I</strong></td>
-                  <td><span class="text-success" style="font-weight: bold;">+1 190% d'Augmentation</span> (Pro-Coll-One+)</td>
+                  <td><span class="text-success fw-bold">+1 190% d'Augmentation</span> (Pro-Coll-One+)</td>
                   <td>0% (Aucune stimulation biologique cellulaire)</td>
                 </tr>
                 <tr>
                   <td><strong>Résorption des Fibres Chaos</strong></td>
-                  <td><span class="text-success" style="font-weight: bold;">Oui</span> (10% Symglucan réveille les éboueurs)</td>
+                  <td><span class="text-success fw-bold">Oui</span> (10% Symglucan réveille les éboueurs)</td>
                   <td>Aucune (Maintient les fibres enchevêtrées)</td>
                 </tr>
                 <tr>
@@ -377,19 +377,19 @@
           </div>
 
           <div class="cta-card-navy reveal">
-            <h3 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--color-gold); margin-bottom: 0.85rem;">Aplatissez les Cicatrices en Sécurité</h3>
-            <p style="color: #CBD5E1; max-width: 46rem; margin: 0 auto 1.5rem auto;">Sans sheets de silicone, sans aiguilles. Couverte par une garantie de remboursement de 90 jours.</p>
+            <h3 class="cta-heading-gold">Aplatissez les Cicatrices en Sécurité</h3>
+            <p class="cta-lead-light">Sans sheets de silicone, sans aiguilles. Couverte par une garantie de remboursement de 90 jours.</p>
             <a href="https://www.dermeffacefx7.com/ct/282956" class="btn btn-gold btn-lg affiliate-link" data-product="dermefface" target="_blank" rel="noopener nofollow sponsored">
               <i class="fa-solid fa-cart-shopping"></i> Voir la Réduction Officielle
               <i class="fa-solid fa-arrow-right"></i>
             </a>
-            <p style="font-size: 0.8rem; color: #94A3B8; margin-top: 1rem;">
+            <p class="cta-subnote">
               <i class="fa-solid fa-shield-halved"></i> Garantie de remboursement de 90 jours &bull; nous pouvons recevoir une commission
             </p>
           </div>
 
           <h2>5. Foire Aux Questions</h2>
-          <div class="faq-accordion card reveal" style="margin: 1.5rem 0; padding: 1.5rem 2rem; background: var(--color-light-bg); border: 1px solid var(--color-border); border-radius: 12px;">
+          <div class="faq-accordion card reveal" style="margin: 1.5rem 0; padding: 1.5rem 2rem; background: var(--bg-page); border: 1px solid var(--color-border); border-radius: 12px;">
             <div class="faq-item">
               <button class="faq-question" id="faq-btn-1" aria-expanded="false" aria-controls="faq-ans-1">
                 <span>Pourquoi la peau cicatrise-t-elle souvent en formant un relief ou un creux ?</span>
@@ -415,14 +415,35 @@
           </div>
 
           <!-- Product Callout -->
-          <div class="reveal" style="text-align: center; margin: 3rem 0 1.5rem 0; padding: 2rem; background: var(--color-light-bg); border-radius: 12px; border: 1px solid var(--color-border);">
-            <h3 style="margin-bottom: 0.5rem; color: var(--color-dark);">Découvrez la Science du Remodelage Cicatriciel</h3>
+          <div class="reveal" style="text-align: center; margin: 3rem 0 1.5rem 0; padding: 2rem; background: var(--bg-page); border-radius: 12px; border: 1px solid var(--color-border);">
+            <h3 style="margin-bottom: 0.5rem; color: var(--text-primary);">Découvrez la Science du Remodelage Cicatriciel</h3>
             <p style="color: var(--color-muted); margin-bottom: 1.5rem;">Formulé dans Dermefface FX7® avec Symglucan, Pro-Coll-One+ et une garantie de remboursement de 90 jours.</p>
             <a href="https://www.dermeffacefx7.com/ct/282956" class="btn btn-gold btn-lg affiliate-link" data-product="dermefface" target="_blank" rel="noopener nofollow sponsored">
               <i class="fa-solid fa-cart-shopping"></i> Visiter la Boutique Officielle Dermefface FX7
             </a>
           </div>
 
+          <aside class="related-research-box" aria-label="Compatibilité des Actifs et Études Associées">
+            <h2 class="related-research-title"><i class="fa-solid fa-flask-vial"></i> Compatibilité des Actifs et Études Associées</h2>
+            <div class="related-research-grid">
+              <a href="skincare-conflict-matrix.html" class="related-research-link">
+                <span class="related-research-kicker"><i class="fa-solid fa-flask"></i> Outil Interactif</span>
+                <span class="related-research-label">Matrice des Conflits : Vérifier 42 Règles de Superposition</span>
+              </a>
+              <a href="dermefface-fx7-review.html" class="related-research-link">
+                <span class="related-research-kicker"><i class="fa-solid fa-magnifying-glass-chart"></i> Analyse de Formule</span>
+                <span class="related-research-label">Avis Dermefface FX7® : Gel Symglucan pour Cicatrices</span>
+              </a>
+              <a href="blog-alpha-arbutin-vs-hydroquinone.html" class="related-research-link">
+                <span class="related-research-kicker"><i class="fa-solid fa-book-open"></i> Étude de Mécanisme</span>
+                <span class="related-research-label">Alpha-Arbutine vs Hydroquinone : Inhibition de la Tyrosinase</span>
+              </a>
+              <a href="blog-syn-coll-vs-retinol.html" class="related-research-link">
+                <span class="related-research-kicker"><i class="fa-solid fa-microscope"></i> Étude de Mécanisme</span>
+                <span class="related-research-label">Syn-Coll® vs Rétinol : Synthèse du Collagène sans Desquamation</span>
+              </a>
+            </div>
+          </aside>
         </div>
       </article>
 
@@ -444,7 +465,7 @@
 
       <!-- Col 2: Anti-Aging Reviews -->
       <div class="footer-col">
-        <h3><i class="fa-solid fa-hourglass-half" style="color: var(--color-gold); font-size: 0.85rem;"></i> Analyses Anti-Âge</h3>
+        <h3><i class="fa-solid fa-hourglass-half icon-gold-sm"></i> Analyses Anti-Âge</h3>
         <ul>
           <li><a href="kollagen-intensiv-review.html">Kollagen Intensiv™</a></li>
           <li><a href="synevra-ultralift-review.html">Synevra UltraLift™</a></li>
@@ -453,7 +474,7 @@
 
       <!-- Col 3: Targeted Therapy -->
       <div class="footer-col">
-        <h3><i class="fa-solid fa-wand-magic-sparkles" style="color: var(--color-gold); font-size: 0.85rem;"></i> Traitements Ciblés</h3>
+        <h3><i class="fa-solid fa-wand-magic-sparkles icon-gold-sm"></i> Traitements Ciblés</h3>
         <ul>
           <li><a href="illuminatural-6i-review.html">Illuminatural 6i™ (Taches)</a></li>
           <li><a href="eyelasticity-review.html">Eyelasticity™ (Cernes &amp; Poches)</a></li>
@@ -464,7 +485,7 @@
 
       <!-- Col 4: Resources & Legal -->
       <div class="footer-col">
-        <h3><i class="fa-solid fa-scale-balanced" style="color: var(--color-gold); font-size: 0.85rem;"></i> Ressources &amp; Légal</h3>
+        <h3><i class="fa-solid fa-scale-balanced icon-gold-sm"></i> Ressources &amp; Légal</h3>
         <ul>
           <li><a href="comparison.html">Matrice Comparative 2026</a></li>
           <li><a href="skincare-conflict-matrix.html">Matrice des Conflits d'Actifs</a></li>
@@ -484,7 +505,7 @@
           <p><strong>Avertissement Médical :</strong> Le contenu de ce site web est fourni à titre strictement informatif et ne constitue pas un avis médical ni une prescription thérapeutique. Consultez toujours un dermatologue ou médecin traitant qualifié avant d'entamer une nouvelle routine de soins.</p>
         </div>
         <div class="copyright">
-          &copy; 2026 Derm Audit Journal. Tous droits réservés. | <a href="privacy.html" style="color: #94A3B8; text-decoration: underline;">Politique de Confidentialité</a>
+          &copy; 2026 Derm Audit Journal. Tous droits réservés. | <a class="link-muted-underline" href="privacy.html">Politique de Confidentialité</a>
         </div>
       </div>
     </div>

@@ -569,7 +569,7 @@ function showQuizResults() {
   const titleEl = document.createElement('h4');
   titleEl.style.margin = '0 0 0.5rem 0';
   titleEl.style.fontSize = '1.25rem';
-  titleEl.style.color = 'var(--color-dark)';
+  titleEl.style.color = 'var(--text-primary)';
   titleEl.textContent = product.shortName;
 
   const hookEl = document.createElement('p');

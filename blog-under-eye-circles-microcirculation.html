@@ -131,9 +131,9 @@
       <nav class="nav" id="navMenu">
         <a href="index.html" class="nav-link">Home</a>
         <div class="nav-item-dropdown">
-          <a href="javascript:void(0)" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
-            Reviews <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem;"></i>
-          </a>
+          <button type="button" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+            Reviews <i class="fa-solid fa-chevron-down chevron-sm"></i>
+          </button>
           <div class="dropdown-menu">
             <div class="dropdown-category">
               <div class="dropdown-category-title"><i class="fa-solid fa-hourglass-half"></i> Anti-Aging &amp; Wrinkles</div>
@@ -160,9 +160,9 @@
         <a href="comparison.html" class="nav-link">Comparison</a>
         <a href="tools/skincare-conflict-matrix.html" class="nav-link">Conflict Matrix <span class="nav-badge">Free tool</span></a>
         <div class="nav-item-dropdown lang-dropdown">
-          <a href="javascript:void(0)" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
-            <i class="fa-solid fa-globe"></i> EN <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i>
-          </a>
+          <button type="button" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-globe"></i> EN <i class="fa-solid fa-chevron-down chevron-xs"></i>
+          </button>
           <div class="dropdown-menu dropdown-menu-lang">
             <a href="blog-under-eye-circles-microcirculation.html" class="dropdown-item active" lang="en"><span class="flag-icon" aria-hidden="true">🇺🇸</span> English (US)</a>
             <a href="es/blog-under-eye-circles-microcirculation.html" class="dropdown-item" lang="es"><span class="flag-icon" aria-hidden="true">🇪🇸</span> Español</a>
@@ -182,7 +182,7 @@
 
   <!-- Article Main Container -->
   <main class="section">
-    <div class="container" style="max-width: 900px;">
+    <div class="container max-w-900">
       
       <article class="card blog-article-card">
         <div class="article-header-meta" data-published="2026-09-26">
@@ -201,7 +201,7 @@
           <!-- Semantic Infographic 4: Whiteboard Process Diagram -->
           <div class="infographic-container" style="margin: 0 0 2.5rem 0; padding: 2rem; background: linear-gradient(135deg, rgba(212,175,55,0.06) 0%, rgba(17,24,39,0.95) 100%); border: 1px solid var(--color-border); border-radius: 12px; text-align: center;">
             <span class="badge badge-gold" style="margin-bottom: 0.5rem;"><i class="fa-solid fa-chalkboard"></i> DIGITAL WHITEBOARD EXPLANATION</span>
-            <p class="infographic-title" style="color: var(--color-dark); font-size: 1.4rem; margin: 0.5rem 0 0.25rem 0;">The Paper-Thin Aquarium &amp; The Micro-Drainage Pump</p>
+            <p class="infographic-title" style="color: var(--text-primary); font-size: 1.4rem; margin: 0.5rem 0 0.25rem 0;">The Paper-Thin Aquarium &amp; The Micro-Drainage Pump</p>
             <p style="color: var(--color-muted); font-size: 0.9rem; max-width: 600px; margin: 0 auto 1.5rem auto;">Comparing vascular blood pooling in 0.5mm skin against targeted peptide micro-drainage.</p>
             <picture><source type="image/webp" srcset="img/optimized/infographic-eyelasticity-drainage-640.webp 640w, img/optimized/infographic-eyelasticity-drainage-960.webp 960w, img/optimized/infographic-eyelasticity-drainage-1376.webp 1376w" sizes="(max-width: 768px) 100vw, 800px"><img src="Pictures/infographic-eyelasticity-drainage.jpg" alt="Digital whiteboard diagram explaining how Eyeseryl drains pooled under-eye fluid while Regu-Age seals leaky micro-capillaries" width="800" height="450" fetchpriority="high" style="width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--color-border); box-shadow: var(--shadow-md); display: block; margin: 0 auto;"></picture>
 
@@ -307,13 +307,13 @@
 
           
           <div class="cta-card-navy reveal">
-            <h3 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--color-gold); margin-bottom: 0.85rem;">Microcirculation Repair, Delivered</h3>
-            <p style="color: #CBD5E1; max-width: 46rem; margin: 0 auto 1.5rem auto;">The Eyeseryl&reg; tetrapeptide and Regu-Age&reg; duo described above is the active system in Eyelasticity&trade;. It targets the lymphatic drainage the Tyndall effect leaves you with, not melanin.</p>
+            <h3 class="cta-heading-gold">Microcirculation Repair, Delivered</h3>
+            <p class="cta-lead-light">The Eyeseryl&reg; tetrapeptide and Regu-Age&reg; duo described above is the active system in Eyelasticity&trade;. It targets the lymphatic drainage the Tyndall effect leaves you with, not melanin.</p>
             <a href="https://www.naturalhealthsource.com/products/eyelasticity-age-defying-eye-therapy/?aid=282956" class="btn btn-gold btn-lg affiliate-link" data-product="eyelasticity" target="_blank" rel="noopener nofollow sponsored">
               <i class="fa-solid fa-cart-shopping"></i> Check Official Discount
               <i class="fa-solid fa-arrow-right"></i>
             </a>
-            <p style="font-size: 0.8rem; color: #94A3B8; margin-top: 1rem;">
+            <p class="cta-subnote">
               <i class="fa-solid fa-shield-halved"></i> 67-day money-back guarantee &bull; we may earn a commission
             </p>
           </div>
@@ -336,11 +336,11 @@
                 <span style="background: rgba(239, 68, 68, 0.2); color: #FCA5A5; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;"><i class="fa-solid fa-droplet"></i></span>
                 <h3 style="margin: 0; color: #FCA5A5; font-size: 1.1rem;">Vascular Leak Route</h3>
               </div>
-              <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem; color: var(--color-dark-surface);">
-                <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;">
+              <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem; color: var(--text-secondary);">
+                <li class="flex-row-gap-sm">
                   <strong style="color: #F87171;">1.</strong> Fragile micro-capillaries leak red blood cells into tissue.
                 </li>
-                <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;">
+                <li class="flex-row-gap-sm">
                   <strong style="color: #F87171;">2.</strong> Deoxygenated hemoglobin pools beneath 0.5mm skin.
                 </li>
                 <li style="display: flex; gap: 0.5rem;">
@@ -355,11 +355,11 @@
                 <span style="background: rgba(16, 185, 129, 0.2); color: #6EE7B7; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;"><i class="fa-solid fa-shield-halved"></i></span>
                 <h3 style="margin: 0; color: #6EE7B7; font-size: 1.1rem;">Peptide Micro-Drainage Route</h3>
               </div>
-              <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem; color: var(--color-dark-surface);">
-                <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;">
+              <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.9rem; color: var(--text-secondary);">
+                <li class="flex-row-gap-sm">
                   <strong style="color: #34D399;">1.</strong> Regu-Age® reinforces and seals fragile capillary walls.
                 </li>
-                <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;">
+                <li class="flex-row-gap-sm">
                   <strong style="color: #34D399;">2.</strong> Eyeseryl® stimulates periorbital lymphatic drainage pumps.
                 </li>
                 <li style="display: flex; gap: 0.5rem;">
@@ -382,22 +382,22 @@
               <tbody>
                 <tr>
                   <td><strong>Tissue Penetration</strong></td>
-                  <td><span class="text-success" style="font-weight: bold;">Rapid Sub-Dermal Absorption</span> (0.5mm tailored)</td>
+                  <td><span class="text-success fw-bold">Rapid Sub-Dermal Absorption</span> (0.5mm tailored)</td>
                   <td>Surface Occlusion (Too heavy for periorbital tissue)</td>
                 </tr>
                 <tr>
                   <td><strong>Lymphatic Drainage</strong></td>
-                  <td><span class="text-success" style="font-weight: bold;">Active Fluid Evacuation</span> (Edema reduction)</td>
+                  <td><span class="text-success fw-bold">Active Fluid Evacuation</span> (Edema reduction)</td>
                   <td>Zero (No effect on stagnant fluid pools)</td>
                 </tr>
                 <tr>
                   <td><strong>Capillary Wall Reinforcement</strong></td>
-                  <td><span class="text-success" style="font-weight: bold;">Strengthens Micro-Vessels</span> (Seals leakage)</td>
+                  <td><span class="text-success fw-bold">Strengthens Micro-Vessels</span> (Seals leakage)</td>
                   <td>Zero (Cannot repair endothelial gaps)</td>
                 </tr>
                 <tr>
                   <td><strong>Milia Formation Risk</strong></td>
-                  <td><span class="text-success" style="font-weight: bold;">Zero</span> (Lightweight water-based serum matrix)</td>
+                  <td><span class="text-success fw-bold">Zero</span> (Lightweight water-based serum matrix)</td>
                   <td>High (Petroleum clogs delicate micro-pores)</td>
                 </tr>
                 <tr>
@@ -436,19 +436,19 @@
           </p>
 
           <div class="cta-card-navy reveal">
-            <h3 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--color-gold); margin-bottom: 0.85rem;">Clearer Under-Eyes, 67-Day Guarantee</h3>
-            <p style="color: #CBD5E1; max-width: 46rem; margin: 0 auto 1.5rem auto;">One targeted formula instead of a generic face cream. Backed by a 67-day money-back guarantee.</p>
+            <h3 class="cta-heading-gold">Clearer Under-Eyes, 67-Day Guarantee</h3>
+            <p class="cta-lead-light">One targeted formula instead of a generic face cream. Backed by a 67-day money-back guarantee.</p>
             <a href="https://www.naturalhealthsource.com/products/eyelasticity-age-defying-eye-therapy/?aid=282956" class="btn btn-gold btn-lg affiliate-link" data-product="eyelasticity" target="_blank" rel="noopener nofollow sponsored">
               <i class="fa-solid fa-cart-shopping"></i> Check Official Discount
               <i class="fa-solid fa-arrow-right"></i>
             </a>
-            <p style="font-size: 0.8rem; color: #94A3B8; margin-top: 1rem;">
+            <p class="cta-subnote">
               <i class="fa-solid fa-shield-halved"></i> 67-day money-back guarantee &bull; we may earn a commission
             </p>
           </div>
 
           <h2>6. Frequently Asked Questions</h2>
-          <div class="faq-accordion card reveal" style="margin: 1.5rem 0; padding: 1.5rem 2rem; background: var(--color-light-bg); border: 1px solid var(--color-border); border-radius: 12px;">
+          <div class="faq-accordion card reveal" style="margin: 1.5rem 0; padding: 1.5rem 2rem; background: var(--bg-page); border: 1px solid var(--color-border); border-radius: 12px;">
             <div class="faq-item">
               <button class="faq-question" id="faq-btn-1" aria-expanded="false" aria-controls="faq-ans-1">
                 <span>Why do under-eye dark circles look purple or blue instead of brown?</span>
@@ -473,14 +473,35 @@
             </div>
           </div>
 
-          <div class="reveal" style="text-align: center; margin: 3rem 0 1.5rem 0; padding: 2rem; background: var(--color-light-bg); border-radius: 12px; border: 1px solid var(--color-border);">
-            <h3 style="margin-bottom: 0.5rem; color: var(--color-dark);">Restore Periorbital Microcirculation</h3>
+          <div class="reveal" style="text-align: center; margin: 3rem 0 1.5rem 0; padding: 2rem; background: var(--bg-page); border-radius: 12px; border: 1px solid var(--color-border);">
+            <h3 style="margin-bottom: 0.5rem; color: var(--text-primary);">Restore Periorbital Microcirculation</h3>
             <p style="color: var(--color-muted); margin-bottom: 1.5rem;">Formulated inside Eyelasticity™ with Eyeseryl®, Regu-Age®, and a 67-day money-back guarantee.</p>
             <a href="https://www.naturalhealthsource.com/products/eyelasticity-age-defying-eye-therapy/?aid=282956" class="btn btn-gold btn-lg affiliate-link" data-product="eyelasticity" target="_blank" rel="noopener nofollow sponsored">
               <i class="fa-solid fa-cart-shopping"></i> Visit Official Eyelasticity Store
             </a>
           </div>
 
+          <aside class="related-research-box" aria-label="Check Active Layering & Related Studies">
+            <h2 class="related-research-title"><i class="fa-solid fa-flask-vial"></i> Check Active Layering & Related Studies</h2>
+            <div class="related-research-grid">
+              <a href="tools/skincare-conflict-matrix.html" class="related-research-link">
+                <span class="related-research-kicker"><i class="fa-solid fa-flask"></i> Interactive Tool</span>
+                <span class="related-research-label">Active Conflict Matrix: Check 42 Ingredient Layering Rules</span>
+              </a>
+              <a href="eyelasticity-review.html" class="related-research-link">
+                <span class="related-research-kicker"><i class="fa-solid fa-magnifying-glass-chart"></i> Formula Audit</span>
+                <span class="related-research-label">Eyelasticity™ Review: Eyeseryl® & Regu®-Age Eye Therapy</span>
+              </a>
+              <a href="syn-ake-vs-argireline.html" class="related-research-link">
+                <span class="related-research-kicker"><i class="fa-solid fa-book-open"></i> Mechanism Study</span>
+                <span class="related-research-label">SYN-AKE® vs. Argireline®: Peptide Weight & Muscle Signaling</span>
+              </a>
+              <a href="blog-alpha-arbutin-vs-hydroquinone.html" class="related-research-link">
+                <span class="related-research-kicker"><i class="fa-solid fa-microscope"></i> Mechanism Study</span>
+                <span class="related-research-label">Alpha-Arbutin vs. Hydroquinone: Competitive Tyrosinase Block</span>
+              </a>
+            </div>
+          </aside>
         </div>
       </article>
 
@@ -502,7 +523,7 @@
 
       <!-- Col 2: Anti-Aging Reviews -->
       <div class="footer-col">
-        <h3><i class="fa-solid fa-hourglass-half" style="color: var(--color-gold); font-size: 0.85rem;"></i> Anti-Aging Reviews</h3>
+        <h3><i class="fa-solid fa-hourglass-half icon-gold-sm"></i> Anti-Aging Reviews</h3>
         <ul>
           <li><a href="kollagen-intensiv-review.html">Kollagen Intensiv™ Review</a></li>
           <li><a href="synevra-ultralift-review.html">Synevra UltraLift™ Review</a></li>
@@ -511,7 +532,7 @@
 
       <!-- Col 3: Targeted Therapy -->
       <div class="footer-col">
-        <h3><i class="fa-solid fa-wand-magic-sparkles" style="color: var(--color-gold); font-size: 0.85rem;"></i> Targeted Therapy</h3>
+        <h3><i class="fa-solid fa-wand-magic-sparkles icon-gold-sm"></i> Targeted Therapy</h3>
         <ul>
           <li><a href="illuminatural-6i-review.html">Illuminatural 6i™ (Dark Spots)</a></li>
           <li><a href="eyelasticity-review.html">Eyelasticity™ (Under-Eye Circles)</a></li>
@@ -522,7 +543,7 @@
 
       <!-- Col 4: Resources & Legal -->
       <div class="footer-col">
-        <h3><i class="fa-solid fa-scale-balanced" style="color: var(--color-gold); font-size: 0.85rem;"></i> Resources &amp; Legal</h3>
+        <h3><i class="fa-solid fa-scale-balanced icon-gold-sm"></i> Resources &amp; Legal</h3>
         <ul>
           <li><a href="comparison.html">2026 Comparison Matrix</a></li>
           <li><a href="tools/skincare-conflict-matrix.html">Active Conflict Matrix</a></li>
@@ -542,7 +563,7 @@
           <p><strong>Medical Disclaimer:</strong> Content on this website is for informational purposes only and is not intended as medical advice or to diagnose, treat, cure, or prevent any medical condition. Always consult with a qualified dermatologist or healthcare physician before starting a new skincare regimen.</p>
         </div>
         <div class="copyright">
-          © 2026 Derm Audit Journal. All Rights Reserved. | <a href="privacy.html" style="color: #94A3B8; text-decoration: underline;">Privacy Policy</a>
+          © 2026 Derm Audit Journal. All Rights Reserved. | <a class="link-muted-underline" href="privacy.html">Privacy Policy</a>
         </div>
       </div>
     </div>

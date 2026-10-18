@@ -815,13 +815,15 @@
         const loc = I18N[this.lang] && I18N[this.lang].ingredients && I18N[this.lang].ingredients[baseItem.id];
         const item = loc ? Object.assign({}, baseItem, loc) : baseItem;
 
+        const phTagText = `pH ${item.phRange[0]}–${item.phRange[1]}`;
+        const timeTagText = item.timePreference.replace('_', ' / ');
+
         const card = el('div', {
           className: 'active-card',
           id: `card-${item.id}`,
           role: 'button',
           tabindex: '0',
-          'aria-pressed': 'false',
-          'aria-label': `${item.name}, ${item.category}`
+          'aria-pressed': 'false'
         });
 
         // Card Top
@@ -838,8 +840,8 @@
 
         // Card Meta Tags
         const meta = el('div', { className: 'active-meta' }, [
-          el('span', { className: 'active-tag', textContent: `pH ${item.phRange[0]}–${item.phRange[1]}` }),
-          el('span', { className: 'active-tag', textContent: item.timePreference.replace('_', ' / ') })
+          el('span', { className: 'active-tag', textContent: phTagText }),
+          el('span', { className: 'active-tag', textContent: timeTagText })
         ]);
 
         if (item.featuredProduct) {

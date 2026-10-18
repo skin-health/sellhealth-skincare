@@ -130,9 +130,9 @@
       <nav class="nav" id="navMenu">
         <a href="index.html" class="nav-link">Home</a>
         <div class="nav-item-dropdown">
-          <a href="javascript:void(0)" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
-            Reviews <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem;"></i>
-          </a>
+          <button type="button" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+            Reviews <i class="fa-solid fa-chevron-down chevron-sm"></i>
+          </button>
           <div class="dropdown-menu">
             <div class="dropdown-category">
               <div class="dropdown-category-title"><i class="fa-solid fa-hourglass-half"></i> Anti-Aging &amp; Wrinkles</div>
@@ -159,9 +159,9 @@
         <a href="comparison.html" class="nav-link">Comparison</a>
         <a href="tools/skincare-conflict-matrix.html" class="nav-link">Conflict Matrix <span class="nav-badge">Free tool</span></a>
         <div class="nav-item-dropdown lang-dropdown">
-          <a href="javascript:void(0)" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
-            <i class="fa-solid fa-globe"></i> EN <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i>
-          </a>
+          <button type="button" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-globe"></i> EN <i class="fa-solid fa-chevron-down chevron-xs"></i>
+          </button>
           <div class="dropdown-menu dropdown-menu-lang">
             <a href="syn-ake-vs-argireline.html" class="dropdown-item active" lang="en"><span class="flag-icon" aria-hidden="true">🇺🇸</span> English (US)</a>
             <a href="es/syn-ake-vs-argireline.html" class="dropdown-item" lang="es"><span class="flag-icon" aria-hidden="true">🇪🇸</span> Español</a>
@@ -181,7 +181,7 @@
 
   <!-- Article Main Container -->
   <main class="section">
-    <div class="container" style="max-width: 900px;">
+    <div class="container max-w-900">
       
       <article class="card blog-article-card">
         <div class="article-header-meta" data-published="2026-10-10">
@@ -201,7 +201,7 @@
           <div class="infographic-container" style="margin: 0 0 2.5rem 0; padding: 0; background: linear-gradient(135deg, rgba(212,175,55,0.06) 0%, rgba(17,24,39,0.95) 100%); border: 1px solid var(--color-border); border-radius: 12px; text-align: center; overflow: hidden;">
             <div style="padding: 1.75rem 1.5rem 1.25rem 1.5rem;">
               <span class="badge badge-gold" style="margin-bottom: 0.5rem;"><i class="fa-solid fa-chalkboard"></i> DIGITAL WHITEBOARD EXPLANATION</span>
-              <p class="infographic-title" style="color: var(--color-dark); font-size: 1.4rem; margin: 0.5rem 0 0.25rem 0;">The Neuromuscular Junction: Pre-Synaptic vs. Post-Synaptic Inhibition</p>
+              <p class="infographic-title" style="color: var(--text-primary); font-size: 1.4rem; margin: 0.5rem 0 0.25rem 0;">The Neuromuscular Junction: Pre-Synaptic vs. Post-Synaptic Inhibition</p>
               <p style="color: var(--color-muted); font-size: 0.9rem; max-width: 600px; margin: 0 auto;">How topical neuropeptides modulate muscle contraction signals to prevent expression furrowing.</p>
             </div>
             
@@ -256,7 +256,7 @@
           <p>
             Whenever your brain tells your face to make an expression, your body sends a message in three steps:
           </p>
-          <ol style="margin-left: 1.5rem; color: var(--color-dark-surface); line-height: 1.7; margin-bottom: 1.5rem;">
+          <ol style="margin-left: 1.5rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">
             <li><strong>Step 1 (Packing the message):</strong> Inside the nerve, helper proteins link together into a team called the <em>SNARE complex</em>. Think of this team like dock workers loading a delivery truck.</li>
             <li><strong>Step 2 (Sending the chemical signal):</strong> The nerve opens its door and releases a chemical messenger called <em>acetylcholine</em> into the gap. Think of this chemical as a letter that says, <em>"Contract the muscle now!"</em></li>
             <li><strong>Step 3 (Unlocking the muscle):</strong> The chemical letter floats across the gap and plugs into keyholes on the muscle called <em>nicotinic receptors</em>. Once the key turns, the muscle squeezes tight.</li>
@@ -288,7 +288,7 @@
           <p>
             Dermatologists measure the size and weight of molecules in units called <strong>Daltons</strong>. They follow a famous guideline called the <strong>500 Dalton Rule</strong>:
           </p>
-          <ul style="margin-left: 1.5rem; color: var(--color-dark-surface); line-height: 1.7; margin-bottom: 1.5rem;">
+          <ul style="margin-left: 1.5rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">
             <li>Molecules <strong>under 500 Daltons</strong> are small enough to slip through the skin barrier naturally.</li>
             <li>Molecules <strong>over 500 Daltons</strong> are too large. They bounce off the outer surface unless they have special chemical delivery systems.</li>
           </ul>
@@ -303,13 +303,13 @@
 
           <!-- Anchor A: CTA Card 1 (~45% Depth) -->
           <div class="cta-card-navy reveal">
-            <h3 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--color-gold); margin-bottom: 0.85rem;">SYN-AKE®, Clinically Formulated</h3>
-            <p style="color: #CBD5E1; max-width: 46rem; margin: 0 auto 1.5rem auto;">The sub-500 Dalton post-synaptic mechanism detailed above is the primary topical active in Synevra UltraLift™. Formulated with pure Swiss SYN-AKE® and oral VitaLock™ nutrients to smooth forehead creases without injections.</p>
+            <h3 class="cta-heading-gold">SYN-AKE®, Clinically Formulated</h3>
+            <p class="cta-lead-light">The sub-500 Dalton post-synaptic mechanism detailed above is the primary topical active in Synevra UltraLift™. Formulated with pure Swiss SYN-AKE® and oral VitaLock™ nutrients to smooth forehead creases without injections.</p>
             <a href="https://fa90bat349vj5m8h47ps5z4k7l.hop.clickbank.net" class="btn btn-gold btn-lg affiliate-link" data-product="synevra" target="_blank" rel="noopener nofollow sponsored">
               <i class="fa-solid fa-cart-shopping"></i> Check Synevra Official Discount
               <i class="fa-solid fa-arrow-right"></i>
             </a>
-            <p style="font-size: 0.8rem; color: #94A3B8; margin-top: 1rem;">
+            <p class="cta-subnote">
               <i class="fa-solid fa-shield-halved"></i> 60-day money-back guarantee &bull; we may earn a commission
             </p>
           </div>
@@ -367,7 +367,7 @@
           <p>
             Yes, you can use both peptides in the same skincare routine. Because they work on opposite sides of the nerve-muscle connection, they help each other out:
           </p>
-          <ul style="margin-left: 1.5rem; color: var(--color-dark-surface); line-height: 1.7; margin-bottom: 1.5rem;">
+          <ul style="margin-left: 1.5rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">
             <li>Argireline decreases the amount of chemical signals released by the nerve.</li>
             <li>SYN-AKE blocks any leftover signals from docking on the muscle locks.</li>
           </ul>
@@ -390,13 +390,13 @@
 
           <!-- Anchor B: CTA Card 2 (Immediately Before FAQ) -->
           <div class="cta-card-navy reveal">
-            <h3 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--color-gold); margin-bottom: 0.85rem;">Target Expression Lines with Synevra UltraLift™</h3>
-            <p style="color: #CBD5E1; max-width: 46rem; margin: 0 auto 1.5rem auto;">Featuring patented Swiss SYN-AKE® dipeptides alongside oral VitaLock™ cellular nutrients. Every order is covered by an unconditional 60-day money-back guarantee.</p>
+            <h3 class="cta-heading-gold">Target Expression Lines with Synevra UltraLift™</h3>
+            <p class="cta-lead-light">Featuring patented Swiss SYN-AKE® dipeptides alongside oral VitaLock™ cellular nutrients. Every order is covered by an unconditional 60-day money-back guarantee.</p>
             <a href="https://fa90bat349vj5m8h47ps5z4k7l.hop.clickbank.net" class="btn btn-gold btn-lg affiliate-link" data-product="synevra" target="_blank" rel="noopener nofollow sponsored">
               <i class="fa-solid fa-cart-shopping"></i> Visit Official Synevra Store
               <i class="fa-solid fa-arrow-right"></i>
             </a>
-            <p style="font-size: 0.8rem; color: #94A3B8; margin-top: 1rem;">
+            <p class="cta-subnote">
               <i class="fa-solid fa-shield-halved"></i> 60-day money-back guarantee &bull; ClickBank secure checkout
             </p>
           </div>
@@ -447,6 +447,27 @@
             </p>
           </div>
 
+          <aside class="related-research-box" aria-label="Check Active Layering & Related Studies">
+            <h2 class="related-research-title"><i class="fa-solid fa-flask-vial"></i> Check Active Layering & Related Studies</h2>
+            <div class="related-research-grid">
+              <a href="tools/skincare-conflict-matrix.html" class="related-research-link">
+                <span class="related-research-kicker"><i class="fa-solid fa-flask"></i> Interactive Tool</span>
+                <span class="related-research-label">Active Conflict Matrix: Check 42 Ingredient Layering Rules</span>
+              </a>
+              <a href="synevra-ultralift-review.html" class="related-research-link">
+                <span class="related-research-kicker"><i class="fa-solid fa-magnifying-glass-chart"></i> Formula Audit</span>
+                <span class="related-research-label">Synevra UltraLift™ Review: SYN-AKE® Expression Serum</span>
+              </a>
+              <a href="blog-syn-coll-vs-retinol.html" class="related-research-link">
+                <span class="related-research-kicker"><i class="fa-solid fa-book-open"></i> Mechanism Study</span>
+                <span class="related-research-label">Syn-Coll® vs. Retinol: Collagen Synthesis Without Peeling</span>
+              </a>
+              <a href="blog-under-eye-circles-microcirculation.html" class="related-research-link">
+                <span class="related-research-kicker"><i class="fa-solid fa-microscope"></i> Mechanism Study</span>
+                <span class="related-research-label">Under-Eye Circles & Bags: Periorbital Microcirculation</span>
+              </a>
+            </div>
+          </aside>
         </div>
       </article>
 
@@ -468,7 +489,7 @@
 
       <!-- Col 2: Anti-Aging Reviews -->
       <div class="footer-col">
-        <h3><i class="fa-solid fa-hourglass-half" style="color: var(--color-gold); font-size: 0.85rem;"></i> Anti-Aging Reviews</h3>
+        <h3><i class="fa-solid fa-hourglass-half icon-gold-sm"></i> Anti-Aging Reviews</h3>
         <ul>
           <li><a href="kollagen-intensiv-review.html">Kollagen Intensiv™ Review</a></li>
           <li><a href="synevra-ultralift-review.html">Synevra UltraLift™ Review</a></li>
@@ -477,7 +498,7 @@
 
       <!-- Col 3: Targeted Therapy -->
       <div class="footer-col">
-        <h3><i class="fa-solid fa-wand-magic-sparkles" style="color: var(--color-gold); font-size: 0.85rem;"></i> Targeted Therapy</h3>
+        <h3><i class="fa-solid fa-wand-magic-sparkles icon-gold-sm"></i> Targeted Therapy</h3>
         <ul>
           <li><a href="illuminatural-6i-review.html">Illuminatural 6i™ (Dark Spots)</a></li>
           <li><a href="eyelasticity-review.html">Eyelasticity™ (Under-Eye Circles)</a></li>
@@ -487,7 +508,7 @@
 
       <!-- Col 4: Resources & Legal -->
       <div class="footer-col">
-        <h3><i class="fa-solid fa-scale-balanced" style="color: var(--color-gold); font-size: 0.85rem;"></i> Resources &amp; Legal</h3>
+        <h3><i class="fa-solid fa-scale-balanced icon-gold-sm"></i> Resources &amp; Legal</h3>
         <ul>
           <li><a href="comparison.html">2026 Comparison Matrix</a></li>
           <li><a href="tools/skincare-conflict-matrix.html">Active Conflict Matrix</a></li>
@@ -506,7 +527,7 @@
           <p><strong>Medical Disclaimer:</strong> Content on this website is for informational purposes only and is not intended as medical advice or to diagnose, treat, cure, or prevent any medical condition. Always consult with a qualified dermatologist or healthcare physician before starting a new skincare regimen.</p>
         </div>
         <div class="copyright">
-          © 2026 Derm Audit Journal. All Rights Reserved. | <a href="privacy.html" style="color: #94A3B8; text-decoration: underline;">Privacy Policy</a>
+          © 2026 Derm Audit Journal. All Rights Reserved. | <a class="link-muted-underline" href="privacy.html">Privacy Policy</a>
         </div>
       </div>
     </div>

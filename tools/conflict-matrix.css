@@ -28,7 +28,7 @@
       font-weight: 600;
       background: rgba(17, 24, 39, 0.9);
       border: 1px solid var(--color-border-interactive);
-      color: var(--color-dark);
+      color: var(--text-primary);
       transition: var(--transition);
     }
     .tool-counter-badge.valid {
@@ -67,7 +67,7 @@
       font-weight: 600;
       border-radius: 50px;
       background: rgba(255, 255, 255, 0.04);
-      color: var(--color-dark-surface);
+      color: var(--text-secondary);
       border: 1px solid var(--color-border-interactive);
       cursor: pointer;
       transition: var(--transition);
@@ -76,7 +76,7 @@
     .preset-btn:hover {
       background: rgba(197, 160, 89, 0.15);
       border-color: var(--color-primary);
-      color: var(--color-dark);
+      color: var(--text-primary);
     }
     .preset-btn-reset {
       margin-left: auto;
@@ -166,7 +166,7 @@
     .active-name {
       font-size: 1.05rem;
       font-weight: 700;
-      color: var(--color-dark);
+      color: var(--text-primary);
       margin-bottom: 0.35rem;
       line-height: 1.3;
     }
@@ -185,7 +185,7 @@
       padding: 0.2rem 0.5rem;
       border-radius: var(--radius-sm);
       background: rgba(255, 255, 255, 0.05);
-      color: var(--color-dark-surface);
+      color: var(--text-secondary);
       border: 1px solid var(--color-border);
     }
     .active-tag-brand {
@@ -255,7 +255,7 @@
     }
     .metric-desc {
       font-size: 0.85rem;
-      color: var(--color-dark-surface);
+      color: var(--text-secondary);
       line-height: 1.4;
     }
     .metric-bar-wrap {
@@ -322,13 +322,13 @@
     .collision-table thead th {
       background: rgba(255, 255, 255, 0.02);
       font-weight: 600;
-      color: var(--color-dark);
+      color: var(--text-primary);
       font-size: 0.78rem;
     }
     .collision-table tbody th {
       text-align: left;
       font-weight: 600;
-      color: var(--color-dark);
+      color: var(--text-primary);
       background: rgba(255, 255, 255, 0.01);
       white-space: nowrap;
     }
@@ -360,7 +360,7 @@
     .schedule-header h3 {
       margin: 0;
       font-size: 1.25rem;
-      color: var(--color-dark);
+      color: var(--text-primary);
     }
     .step-list {
       list-style: none;
@@ -390,7 +390,7 @@
     .step-content h4 {
       font-size: 0.95rem;
       margin-bottom: 0.25rem;
-      color: var(--color-dark);
+      color: var(--text-primary);
     }
     .step-content p {
       font-size: 0.82rem;
@@ -446,7 +446,7 @@
     }
     .cycling-day p {
       font-size: 0.82rem;
-      color: var(--color-dark-surface);
+      color: var(--text-secondary);
       line-height: 1.4;
       margin: 0;
     }
@@ -465,7 +465,7 @@
       padding: 1.1rem 1.25rem;
       background: none;
       border: none;
-      color: var(--color-dark);
+      color: var(--text-primary);
       font-family: var(--font-sans);
       font-size: 0.98rem;
       font-weight: 600;
@@ -503,7 +503,7 @@
       background: rgba(52, 211, 153, 0.06);
       border-left: 3px solid var(--color-success);
       border-radius: var(--radius-sm);
-      color: var(--color-dark-surface);
+      color: var(--text-secondary);
       font-size: 0.84rem;
     }
     .status-pill {
