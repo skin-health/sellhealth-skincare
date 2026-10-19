@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <meta name="theme-color" content="#0B0F19">
   
   <!-- Primary Meta Tags -->
   <title>Skincare Active Conflict &amp; Layering Matrix | Derm Audit</title>
   <meta name="title" content="Skincare Active Conflict &amp; Layering Matrix | Derm Audit">
-  <meta name="description" content="Calculate pH compatibility, deactivation risks, and AM/PM layering schedules for 11 clinical actives. 100% evidence-based dermatological engine.">
-  <meta name="keywords" content="skincare active conflicts, skincare layering matrix, vitamin c and retinol conflict, copper peptide deactivation, skincare pH compatibility, am pm skincare schedule">
+  <meta name="description" content="Calculate pH compatibility, deactivation risks, and routine conflict checks for 11 common actives. Built on 42 documented interaction rules.">
   <meta name="robots" content="index, follow">
   <meta name="referrer" content="strict-origin-when-cross-origin">
 
@@ -26,7 +27,7 @@
   <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://dermaudit.com/tools/skincare-conflict-matrix.html">
   <meta property="og:title" content="Skincare Active Conflict &amp; Layering Matrix | Derm Audit">
-  <meta property="og:description" content="Calculate pH compatibility, deactivation risks, and AM/PM layering schedules for 11 clinical actives. 100% evidence-based dermatological engine.">
+  <meta property="og:description" content="Calculate pH compatibility, deactivation risks, and routine conflict checks for 11 common actives. Built on 42 documented interaction rules.">
   <meta property="og:image" content="https://dermaudit.com/Pictures/infographic-collagen-trampoline.jpg">
   <meta property="og:image:width" content="1376">
   <meta property="og:image:height" content="768">
@@ -36,11 +37,12 @@
   <meta name="twitter:site" content="@lizzybean_271">
   <meta name="twitter:creator" content="@lizzybean_271">
   <meta name="twitter:title" content="Skincare Active Conflict &amp; Layering Matrix | Derm Audit">
-  <meta name="twitter:description" content="Clinical diagnostic tool: Calculate pH compatibility, deactivation hazards, and AM/PM layering schedules across 11 key actives.">
+  <meta name="twitter:description" content="Clinical diagnostic tool: Calculate pH compatibility, deactivation hazards, and routine conflict checks across 11 key actives.">
   <meta name="twitter:image" content="https://dermaudit.com/Pictures/infographic-collagen-trampoline.jpg">
 
-  <!-- Google Fonts -->
   <link rel="preload" href="../webfonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../webfonts/playfair-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../webfonts/fa-solid-900-subset.woff2" as="font" type="font/woff2" crossorigin>
   
   <!-- FontAwesome Subset & Site CSS -->
   <link rel="stylesheet" href="../icons.css">
@@ -73,7 +75,7 @@
           "Calculates pH divergence & acid mantle stability",
           "Identifies redox deactivation & peptide cleavage risks",
           "Computes cumulative epidermal barrier overload index",
-          "Generates structured AM/PM layering and skin cycling routines",
+          "Shows how to split conflicting actives between AM and PM routines",
           "Full clinical mechanism rationales with PubMed citations"
         ],
         "author": {
@@ -95,7 +97,7 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Clinical Tools",
+            "name": "Skincare Tools",
             "item": "https://dermaudit.com/comparison.html"
           },
           {
@@ -114,6 +116,7 @@
   <script defer data-domain="dermaudit.com" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <!-- Announcement Bar (Verified USA Invariant) -->
   <div class="top-bar">
@@ -188,11 +191,11 @@
     <section class="tool-hero">
       <div class="container">
         <div class="badge badge-gold tool-badge">
-          <i class="fa-solid fa-flask"></i> Clinical Skincare Utility
+          <i class="fa-solid fa-flask"></i> Skincare Layering Utility
         </div>
         <h1 class="tool-title">Skincare Active Conflict &amp; Layering Matrix</h1>
         <p class="tool-subtitle">
-          Evaluate pH compatibility, redox deactivation risks, and epidermal barrier overload across 11 key topical actives. Select 2 to 6 ingredients to generate your optimal AM/PM separation schedule.
+          Evaluate pH compatibility, redox deactivation risks, and epidermal barrier overload across 11 key topical actives. Select 2 to 6 ingredients to see how to split them between your AM and PM routine.
         </p>
         <div class="tool-counter-badge" id="selectionCounter" role="status" aria-live="polite">
           <i class="fa-solid fa-layer-group"></i> <span>Selected: 0 of 6 (Choose at least 2)</span>
@@ -207,7 +210,7 @@
 
         <!-- Preset Regimens Bar -->
         <div class="presets-bar">
-          <span class="presets-label"><i class="fa-solid fa-bolt"></i> Clinical Presets:</span>
+          <span class="presets-label"><i class="fa-solid fa-bolt"></i> Combos to Avoid:</span>
           <button type="button" class="preset-btn" data-preset="anti-aging">Anti-Aging Collagen Stack</button>
           <button type="button" class="preset-btn" data-preset="brightening">Pigment Clearance Routine</button>
           <button type="button" class="preset-btn" data-preset="barrier-safe">Gentle Barrier Recovery</button>
@@ -278,8 +281,8 @@
           <span class="logo-accent">DERM</span> AUDIT <span class="logo-sub">JOURNAL</span>
         </a>
         <p class="footer-desc">
-          Independent skincare review and ingredient analysis journal providing evidence-based evaluations of peptide creams, antioxidant serums, and targeted skin therapies.
-        </p>
+            Independent skincare review and ingredient analysis journal publishing evaluations of peptide creams, brightening serums, and targeted skin formulas.
+          </p>
       </div>
 
       <div class="footer-col">
@@ -306,7 +309,7 @@
           <li><a href="skincare-conflict-matrix.html">Active Conflict Matrix</a></li>
           <li><a href="../blog.html">Research Journal</a></li>
           <li><a href="../index.html#skin-quiz">Interactive Skin Quiz</a></li>
-          <li><a href="../privacy.html">Privacy Policy</a></li>
+          <li><a class="link-muted-underline" href="../about.html">About</a> | <a class="link-muted-underline" href="../methodology.html">Methodology</a> | <a class="link-muted-underline" href="../contact.html">Contact</a> | <a href="../privacy.html">Privacy Policy</a></li>
           <li><a href="../links.html">Social Media Portal</a></li>
         </ul>
       </div>
@@ -315,7 +318,7 @@
     <div class="footer-bottom">
       <div class="container">
         <div class="disclaimer-box" id="disclosure">
-          <p><strong>FTC Affiliate Disclosure:</strong> Derm Audit Journal is an independent review website. We receive financial compensation from affiliate network partners (including SellHealth, ClickBank, and Natural Health Source) when users purchase products through our links. This comes at no additional cost to you and supports our ongoing research and testing. Featured products include manufacturer money-back guarantees ranging from 60 to 90 days.</p>
+          <p><strong>FTC Affiliate Disclosure:</strong> Derm Audit Journal is an independent review website. We receive financial compensation from affiliate network partners (including SellHealth, ClickBank, and Natural Health Source) when users purchase products through our links. This comes at no additional cost to you and supports our ongoing research. Featured products include manufacturer money-back guarantees ranging from 60 to 90 days.</p>
           <p><strong>Medical Disclaimer:</strong> Content on this website is for informational purposes only and is not intended as medical advice or to diagnose, treat, cure, or prevent any medical condition. Always consult with a qualified dermatologist or healthcare physician before starting a new skincare regimen.</p>
         </div>
         <div class="copyright">

@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <meta name="theme-color" content="#0B0F19">
   
   <!-- Primary Meta Tags -->
   <title>Wirkstoff-Konflikt- & Schichtungs-Matrix | Derm Audit</title>
   <meta name="title" content="Wirkstoff-Konflikt- & Schichtungs-Matrix | Derm Audit">
-  <meta name="description" content="Berechnen Sie pH-Kompatibilität, Deaktivierungsrisiken und AM/PM-Schichtung für 11 klinische Wirkstoffe. 100% evidenzbasierte dermatologische Engine.">
+  <meta name="description" content="Berechnen Sie pH-Kompatibilität, Deaktivierungsrisiken und AM/PM-Trennung für 11 gängige Wirkstoffe. Basiert auf 42 dokumentierten Regeln.">
   <meta name="robots" content="index, follow">
   <meta name="referrer" content="strict-origin-when-cross-origin">
 
@@ -25,7 +27,7 @@
   <meta property="og:locale" content="de_DE">
   <meta property="og:url" content="https://dermaudit.com/de/skincare-conflict-matrix.html">
   <meta property="og:title" content="Wirkstoff-Konflikt- & Schichtungs-Matrix | Derm Audit">
-  <meta property="og:description" content="Berechnen Sie pH-Kompatibilität, Deaktivierungsrisiken und AM/PM-Schichtung für 11 klinische Wirkstoffe. 100% evidenzbasierte dermatologische Engine.">
+  <meta property="og:description" content="Berechnen Sie pH-Kompatibilität, Deaktivierungsrisiken und AM/PM-Trennung für 11 gängige Wirkstoffe. Basiert auf 42 dokumentierten Regeln.">
   <meta property="og:image" content="https://dermaudit.com/Pictures/infographic-collagen-trampoline.jpg">
   <meta property="og:image:width" content="1376">
   <meta property="og:image:height" content="768">
@@ -35,11 +37,12 @@
   <meta name="twitter:site" content="@lizzybean_271">
   <meta name="twitter:creator" content="@lizzybean_271">
   <meta name="twitter:title" content="Wirkstoff-Konflikt- & Schichtungs-Matrix | Derm Audit">
-  <meta name="twitter:description" content="Berechnen Sie pH-Kompatibilität, Deaktivierungsrisiken und AM/PM-Schichtung für 11 klinische Wirkstoffe. 100% evidenzbasierte dermatologische Engine.">
+  <meta name="twitter:description" content="Berechnen Sie pH-Kompatibilität, Deaktivierungsrisiken und AM/PM-Trennung für 11 gängige Wirkstoffe. Basiert auf 42 dokumentierten Regeln.">
   <meta name="twitter:image" content="https://dermaudit.com/Pictures/infographic-collagen-trampoline.jpg">
 
-  <!-- Google Fonts -->
   <link rel="preload" href="../webfonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../webfonts/playfair-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../webfonts/fa-solid-900-subset.woff2" as="font" type="font/woff2" crossorigin>
   
   <!-- FontAwesome Subset & Site CSS -->
   <link rel="stylesheet" href="../icons.css">
@@ -61,13 +64,13 @@
         "applicationCategory": "HealthApplication",
         "operatingSystem": "All",
         "url": "https://dermaudit.com/de/skincare-conflict-matrix.html",
-        "description": "Evidenzbasierter dermatologischer Rechner zur Bewertung von pH-Kompatibilität, chemischen Deaktivierungsrisiken und Barriere-Überlastung bei 11 klinischen Wirkstoffen.",
+        "description": "Evidenzbasierter dermatologischer Rechner zur Bewertung von pH-Kompatibilität, chemischen Deaktivierungsrisiken und Barriere-Überlastung bei 11 gängigen Wirkstoffen.",
         "offers": {
           "@type": "Offer",
           "price": "0",
           "priceCurrency": "USD"
         },
-        "featureList": ["Berechnet pH-Divergenz und Säureschutzmantel-Stabilität", "Identifiziert Redox-Deaktivierung und Peptidbindungs-Spaltungsrisiken", "Ermittelt den kumulativen epidermalen Barriere-Überlastungsindex", "Erstellt strukturierte AM/PM- und Skin-Cycling-Routinen", "Vollständige klinische Wirkungsbegründungen mit PubMed-Zitaten"],
+        "featureList": ["Berechnet pH-Divergenz und Säureschutzmantel-Stabilität", "Identifiziert Redox-Deaktivierung und Peptidbindungs-Spaltungsrisiken", "Ermittelt den kumulativen epidermalen Barriere-Überlastungsindex", "Erstellt strukturierte AM/PM- und Skin-Cycling-Routinen", "Vollständige Wirkungsbegründungen mit PubMed-Zitaten"],
         "author": {
           "@type": "Organization",
           "name": "Derm Audit Journal",
@@ -106,6 +109,7 @@
   <script defer data-domain="dermaudit.com" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
 
   <!-- Announcement Bar (Verified USA Invariant) -->
   <div class="top-bar">
@@ -180,7 +184,7 @@
     <section class="tool-hero">
       <div class="container">
         <div class="badge badge-gold tool-badge">
-          <i class="fa-solid fa-flask"></i> Klinisches Skincare-Tool
+          <i class="fa-solid fa-flask"></i> Hautpflege-Kombinations-Tool
         </div>
         <h1 class="tool-title">Wirkstoff-Konflikt- & Schichtungs-Matrix</h1>
         <p class="tool-subtitle">
@@ -199,7 +203,7 @@
 
         <!-- Preset Regimens Bar -->
         <div class="presets-bar">
-          <span class="presets-label"><i class="fa-solid fa-bolt"></i> Klinische Voreinstellungen:</span>
+          <span class="presets-label"><i class="fa-solid fa-bolt"></i> Zu vermeidende Kombis:</span>
           <button type="button" class="preset-btn" data-preset="anti-aging">Anti-Aging Kollagen-Stack</button>
           <button type="button" class="preset-btn" data-preset="brightening">Pigmentaufhellungs-Routine</button>
           <button type="button" class="preset-btn" data-preset="barrier-safe">Sanfte Barrierereparatur</button>
@@ -270,8 +274,8 @@
           <span class="logo-accent">DERM</span> AUDIT <span class="logo-sub">JOURNAL</span>
         </a>
         <p class="footer-desc">
-          Unabhängiges Journal für dermatologische Testberichte und Inhaltsstoffanalysen mit evidenzbasierten Bewertungen von Peptidcremes, Antioxidantien-Seren und gezielten Therapien.
-        </p>
+            Unabhängiges Magazin für Hautpflege- und Inhaltsstoff-Analysen mit Bewertungen von Peptid-Cremes, Aufhellungs-Seren und gezielten Formulierungen.
+          </p>
       </div>
 
       <div class="footer-col">
@@ -298,7 +302,7 @@
           <li><a href="skincare-conflict-matrix.html">Wirkstoff-Konfliktmatrix</a></li>
           <li><a href="blog.html">Journal</a></li>
           <li><a href="index.html#skin-quiz">Interaktives Haut-Quiz</a></li>
-          <li><a href="privacy.html">Datenschutzerklärung</a></li>
+          <li><a class="link-muted-underline" href="about.html">Über uns</a> | <a class="link-muted-underline" href="methodology.html">Methodik</a> | <a class="link-muted-underline" href="contact.html">Kontakt</a> | <a href="privacy.html">Datenschutzerklärung</a></li>
           <li><a href="../links.html">Social-Media-Portal</a></li>
         </ul>
       </div>
@@ -307,8 +311,8 @@
     <div class="footer-bottom">
       <div class="container">
         <div class="disclaimer-box" id="disclosure">
-          <p><strong>FTC-Partner-Offenlegung:</strong> Derm Audit Journal ist eine unabhängige Bewertungs-Website. Wir erhalten finanzielle Vergütungen von SellHealth / Partnern, wenn Nutzer Produkte über unsere Links erwerben. Dies verursacht keine zusätzlichen Kosten für Sie. Wir präsentieren ausschließlich Produkte mit klinischen Studien und 90-tägiger Geld-zurück-Garantie.</p>
-          <p><strong>Medizinischer Haftungsausschluss:</strong> Die Inhalte dieser Website dienen ausschließlich Informationszwecken und stellen keine medizinische Beratung dar. Konsultieren Sie stets einen qualifizierten Dermatologen vor Beginn einer neuen Hautpflegeroutine.</p>
+          <p><strong>FTC-Partnerhinweis:</strong> Derm Audit Journal ist ein unabhängiges Analyseportal. Wir erhalten finanzielle Vergütungen von Affiliate-Partnernetzwerken (darunter SellHealth, ClickBank und Natural Health Source), wenn Nutzer Produkte über unsere Links erwerben – ohne Mehrkosten für Sie. Die vorgestellten Produkte bieten Geld-zurück-Garantien des Herstellers von 60 bis 90 Tagen.</p>
+          <p><strong>Medizinischer Haftungsausschluss:</strong> Die Inhalte dieser Website dienen ausschließlich Informationszwecken und ersetzen keine ärztliche Beratung, Diagnose oder Behandlung. Konsultieren Sie vor Beginn einer neuen Hautpflegeroutine stets einen qualifizierten Dermatologen oder Arzt.</p>
         </div>
         <div class="copyright">
           © 2026 Derm Audit Journal. Alle Rechte vorbehalten. | <a class="link-muted-underline" href="privacy.html">Datenschutzerklärung</a>

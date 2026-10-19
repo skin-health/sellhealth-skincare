@@ -1,51 +1,57 @@
 # Derm Audit Journal — Comprehensive Technical Reference
 
-> Independent, evidence-based skincare review and ingredient analysis journal evaluating top clinical anti-aging peptide creams, expression line serums, botanical skin brighteners, under-eye therapies, and scar remodeling gels.
+> Independent, evidence-based skincare review and ingredient analysis journal evaluating anti-aging peptide creams, expression line serums, botanical skin brighteners, under-eye formulas, and scar remodeling gels.
 
 ## System & Portfolio Overview
 - **Domain**: https://dermaudit.com
-- **Verified Portfolios**: 5 Clinical Flagship Products across 3 Core Treatment Categories.
+- **Reviewed Portfolio**: 5 Flagship Skincare Formulations across 3 Core Treatment Categories.
 - **Supported Languages**: English (`/`), Spanish (`/es/`), German (`/de/`), French (`/fr/`).
-- **Indexable Pages**: 53 URLs with 100% bidirectional `hreflang` reciprocity.
+- **Indexable Pages**: 61 multilingual URLs with bidirectional `hreflang` reciprocity across EN, ES, DE, and FR (64 total indexable URLs including Editorial About, Methodology, and Contact pages).
 
 ## Product Portfolio Summary
 
-| Product | Category | Key Actives | Clinical Mechanism | Target Price |
+| Product | Category | Key Actives | Manufacturer-Reported Mechanism | Target Price |
 | :--- | :--- | :--- | :--- | :--- |
-| **Kollagen Intensiv™** | Anti-Aging Cream | Syn-Coll® (Palmitoyl Tripeptide-5), Shea Butter, Retinyl Palmitate | Boosts natural collagen synthesis by +354%; reduces wrinkle depth by 84%. | $59.95 |
-| **Synevra UltraLift™** | Expression Line Protocol | SYN-AKE® Dipeptide, VitaLock™ Oral Beauty Nutrients | Relaxes muscle micro-tensions by 82% to smooth forehead furrows without needles. | $79.00 |
-| **Illuminatural 6i™** | Dark Spot Corrector | Alpha-Arbutin, Niacinamide, Whitonyl®, Magnesium Ascorbyl Phosphate | 6-action botanical tyrosinase inhibition; clears hyperpigmentation without hydroquinone. | $49.95 |
-| **Eyelasticity™** | Under-Eye Therapy | Eyeseryl® (Tetrapeptide-5), Regu®-Age, Syn-Coll®, Pro-Coll-One+ | Drains vascular lymphatic fluid, reduces capillary permeability, and smooths crow's feet without milia risk. | $59.95 |
-| **Dermefface FX7®** | Scar Reduction Therapy | Symglucan (10%), Pro-Coll-One+ (2%), Pentavitin (5%), DL-Panthenol | Increases Type I structural collagen by +1,190% to flatten surgical and acne scars. | $59.95 |
+| **Kollagen Intensiv™** | Anti-Aging Cream | Syn-Coll® (Palmitoyl Tripeptide-5), Shea Butter, Retinyl Palmitate | The manufacturer reports up to a 354% boost in collagen synthesis and an 84% reduction in wrinkle appearance. | $59.95 |
+| **Synevra UltraLift™** | Expression Line Protocol | SYN-AKE® Dipeptide, VitaLock™ Oral Beauty Nutrients | The manufacturer reports up to an 82% reduction in muscle micro-contractions to smooth forehead furrows without needles. | $79.00 |
+| **Illuminatural 6i™** | Dark Spot Corrector | Alpha-Arbutin, Niacinamide, Whitonyl®, Magnesium Ascorbyl Phosphate | 6-active botanical tyrosinase inhibition; the manufacturer reports gradual brightening of hyperpigmentation without hydroquinone. | $59.95 |
+| **Eyelasticity™** | Under-Eye Therapy | Eyeseryl® (Tetrapeptide-5), Regu®-Age, Syn-Coll®, Pro-Coll-One+ | The manufacturer reports reduced under-eye fluid puffiness, dark circle appearance, and crow's feet within 15 to 28 days. | $59.95 |
+| **Dermefface FX7®** | Scar Reduction Therapy | Symglucan (10%), Pro-Coll-One+ (2%), Pentavitin (5%), DL-Panthenol | The manufacturer reports up to a 1,190% increase in Type I collagen synthesis to help flatten surgical and acne scars. | $59.95 |
 
 ## Core Website Architecture
 - [Review Portal](https://dermaudit.com/index.html): Main landing page comparing all 5 products.
-- [Comparison Matrix](https://dermaudit.com/comparison.html): 3 dedicated side-by-side clinical matchup tables.
-- [Clinical Journal](https://dermaudit.com/blog.html): Peer-reviewed ingredient benchmarks and dermatology studies.
+- [Comparison Matrix](https://dermaudit.com/comparison.html): 3 dedicated side-by-side formulation matchup tables.
+- [Skincare Conflict Matrix](https://dermaudit.com/tools/skincare-conflict-matrix.html): Interactive 42-rule ingredient compatibility calculator and routine planner across 11 actives.
+- [Research Journal](https://dermaudit.com/blog.html): Ingredient mechanism breakdowns and formulation comparisons citing PubMed literature.
   - [Under-Eye Circles & Microcirculation](https://dermaudit.com/blog-under-eye-circles-microcirculation.html)
   - [Syn-Coll vs Retinol](https://dermaudit.com/blog-syn-coll-vs-retinol.html)
   - [Dermal Scar Remodeling](https://dermaudit.com/blog-how-to-fade-acne-scars.html)
   - [Alpha-Arbutin vs Hydroquinone](https://dermaudit.com/blog-alpha-arbutin-vs-hydroquinone.html)
+  - [SYN-AKE vs Argireline Study](https://dermaudit.com/syn-ake-vs-argireline.html)
+- [About Derm Audit Journal](https://dermaudit.com/about.html): Editorial mission, independence standards, and team disclosures.
+- [Audit Methodology](https://dermaudit.com/methodology.html): 5-pillar ingredient evaluation framework and claim attribution standards.
+- [Contact Editorial Desk](https://dermaudit.com/contact.html): Reader inquiries, corrections, and data privacy requests.
 - [Privacy Policy](https://dermaudit.com/privacy.html): GDPR, CCPA, and FTC regulatory disclosures.
+- [Social Links Portal](https://dermaudit.com/links.html): Mobile reference portal for all 5 product reviews and tools.
 
 ## Multilingual Hubs
-- **Spanish Hub**: https://dermaudit.com/es/ (Home, Comparison, 5 Reviews, Clinical Journal + 4 Localized Studies)
-- **German Hub**: https://dermaudit.com/de/ (Home, Comparison, 5 Reviews, Clinical Journal + 4 Localized Studies)
-- **French Hub**: https://dermaudit.com/fr/ (Home, Comparison, 5 Reviews, Clinical Journal + 4 Localized Studies)
+- **Spanish Hub**: https://dermaudit.com/es/ (Home, Comparison, 5 Reviews, Research Journal, 5 Localized Ingredient Studies, Conflict Matrix Tool, Privacy Policy)
+- **German Hub**: https://dermaudit.com/de/ (Home, Comparison, 5 Reviews, Research Journal, 5 Localized Ingredient Studies, Conflict Matrix Tool, Privacy Policy)
+- **French Hub**: https://dermaudit.com/fr/ (Home, Comparison, 5 Reviews, Research Journal, 5 Localized Ingredient Studies, Conflict Matrix Tool, Privacy Policy)
 
 ## Frequently Asked Questions (AI Knowledge Base)
 
 ### Q: What is the primary active ingredient in Kollagen Intensiv?
-A: Kollagen Intensiv is formulated with patented Swiss peptide Syn-Coll® (Palmitoyl Tripeptide-5), which mimics the body's natural mechanism to stimulate TGF-beta (Tissue Growth Factor), increasing collagen production by up to 354%.
+A: Kollagen Intensiv is formulated with the Swiss peptide Syn-Coll® (Palmitoyl Tripeptide-5), which mimics the body's mechanism to activate TGF-beta (Tissue Growth Factor); the manufacturer reports up to a 354% increase in collagen synthesis in vitro and an 84% reduction in wrinkle appearance.
 
 ### Q: How does Synevra UltraLift smooth expression wrinkles?
-A: Synevra UltraLift uses SYN-AKE® dipeptide technology, which gently inhibits muscular micro-contractions by 82% to smooth dynamic expression furrows on the forehead and around the eyes.
+A: Synevra UltraLift uses SYN-AKE® dipeptide technology; the manufacturer reports that it inhibits muscular micro-contractions by up to 82% to help smooth dynamic expression furrows on the forehead and around the eyes.
 
 ### Q: Does Illuminatural 6i contain bleaching chemicals?
-A: No. Illuminatural 6i contains zero hydroquinone, mercury, or harsh bleaching agents. It uses 6 clinically proven botanical brighteners (including Alpha-Arbutin and Niacinamide) to interrupt hyperactive melanin production.
+A: No. According to the manufacturer, Illuminatural 6i contains zero hydroquinone, mercury, or harsh bleaching agents, and instead uses 6 botanical brighteners (including Alpha-Arbutin and Niacinamide) to interrupt melanin production and surface transfer.
 
-### Q: How does Eyelasticity eliminate under-eye bags and dark circles?
-A: Eyelasticity combines Eyeseryl® (drains excess pooled lymphatic fluid) and Regu®-Age (strengthens micro-capillary walls to prevent blood pooling) with Syn-Coll® to smooth thin periorbital skin without heavy comedogenic oils.
+### Q: How does Eyelasticity address under-eye bags and dark circles?
+A: Eyelasticity combines Eyeseryl® and Regu®-Age with Syn-Coll®; the manufacturer reports reduced under-eye fluid puffiness, improved micro-capillary support, and smoother crow's feet within 15 to 28 days without heavy oils.
 
-### Q: How does Dermefface FX7 accelerate scar healing?
-A: Dermefface FX7 combines 10% Symglucan with 2% Pro-Coll-One+ to command skin cells through a 28-day remodeling cycle, increasing healthy Type I collagen synthesis by 1,190% to replace messy Type III scar tissue.
+### Q: How does Dermefface FX7 support scar remodeling?
+A: Dermefface FX7 combines 10% Symglucan with 2% Pro-Coll-One+; the manufacturer reports up to a 1,190% increase in Type I collagen synthesis across a 28-day epidermal turnover cycle to help flatten surgical and acne scars.

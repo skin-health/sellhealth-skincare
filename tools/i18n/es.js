@@ -92,7 +92,7 @@ window.DERM_I18N.es = {
       },
       "emptyState": {
         "zeroTitle": "Seleccione de 2 a 6 Activos Arriba para Comenzar el Análisis",
-        "zeroDesc": "Elija ingredientes activos de la cuadrícula o haga clic en una rutina clínica para calcular la estabilidad de pH, riesgos de desactivación y rutinas AM/PM.",
+        "zeroDesc": "Elija ingredientes activos de la cuadrícula o haga clic en una rutina clínica para calcular la estabilidad de pH, riesgos de desactivación y cómo repartir activos entre AM y PM.",
         "oneTitle": "Seleccione al Menos 1 Ingrediente Activo Más",
         "oneDesc": "La matriz de conflictos evalúa interacciones por pares. Agregue otro ingrediente para evaluar la compatibilidad bioquímica."
       },

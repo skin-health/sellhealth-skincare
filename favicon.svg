@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="t">
+  <title id="t">Derm Audit Journal</title>
+  <rect width="512" height="512" rx="112" fill="#0B0F19"/>
+  <circle cx="256" cy="256" r="196" fill="none" stroke="#D4AF37" stroke-width="16"/>
+  <path d="M256 104C256 104 146 232 146 306C146 368 194 404 256 404C318 404 366 368 366 306C366 232 256 104 256 104Z" fill="#D4AF37"/>
+  <path d="M204 300L242 338L312 264" fill="none" stroke="#0B0F19" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

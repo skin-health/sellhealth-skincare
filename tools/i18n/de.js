@@ -92,7 +92,7 @@ window.DERM_I18N.de = {
       },
       "emptyState": {
         "zeroTitle": "Wählen Sie oben 2 bis 6 Wirkstoffe für die Analyse",
-        "zeroDesc": "Wählen Sie Wirkstoffe aus dem Raster oder klicken Sie auf eine Voreinstellung, um pH-Stabilität, Deaktivierungsrisiken und AM/PM-Schichtung zu berechnen.",
+        "zeroDesc": "Wählen Sie Wirkstoffe aus dem Raster oder klicken Sie auf eine Voreinstellung, um pH-Stabilität, Deaktivierungsrisiken und die Trennung in AM- und PM-Anwendung zu prüfen.",
         "oneTitle": "Wählen Sie mindestens 1 weiteren Wirkstoff",
         "oneDesc": "Die Konfliktmatrix bewertet paarweise Interaktionen. Fügen Sie einen weiteren Wirkstoff hinzu, um die biochemische Kompatibilität zu prüfen."
       },

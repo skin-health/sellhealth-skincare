@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <meta name="theme-color" content="#0B0F19">
   
   <!-- Primary Meta Tags -->
   <title>Matrice des Conflits & Superposition d'Actifs | Derm Audit</title>
   <meta name="title" content="Matrice des Conflits & Superposition d'Actifs | Derm Audit">
-  <meta name="description" content="Calculez la compatibilité de pH, risques de neutralisation et protocole matin/soir pour 11 actifs cliniques. Moteur dermatologique validé par la science.">
+  <meta name="description" content="Calculez la compatibilité de pH, risques de neutralisation et répartition matin/soir pour 11 actifs courants. Basé sur 42 règles documentées.">
   <meta name="robots" content="index, follow">
   <meta name="referrer" content="strict-origin-when-cross-origin">
 
@@ -25,7 +27,7 @@
   <meta property="og:locale" content="fr_FR">
   <meta property="og:url" content="https://dermaudit.com/fr/skincare-conflict-matrix.html">
   <meta property="og:title" content="Matrice des Conflits & Superposition d'Actifs | Derm Audit">
-  <meta property="og:description" content="Calculez la compatibilité de pH, risques de neutralisation et protocole matin/soir pour 11 actifs cliniques. Moteur dermatologique validé par la science.">
+  <meta property="og:description" content="Calculez la compatibilité de pH, risques de neutralisation et répartition matin/soir pour 11 actifs courants. Basé sur 42 règles documentées.">
   <meta property="og:image" content="https://dermaudit.com/Pictures/infographic-collagen-trampoline.jpg">
   <meta property="og:image:width" content="1376">
   <meta property="og:image:height" content="768">
@@ -35,11 +37,12 @@
   <meta name="twitter:site" content="@lizzybean_271">
   <meta name="twitter:creator" content="@lizzybean_271">
   <meta name="twitter:title" content="Matrice des Conflits & Superposition d'Actifs | Derm Audit">
-  <meta name="twitter:description" content="Calculez la compatibilité de pH, les risques de neutralisation et le protocole matin/soir pour 11 actifs cliniques. Moteur dermatologique 100% basé sur les preuves.">
+  <meta name="twitter:description" content="Calculez la compatibilité de pH, les risques de neutralisation et le protocole matin/soir pour 11 actifs courants. Basé sur 42 règles d'interaction documentées.">
   <meta name="twitter:image" content="https://dermaudit.com/Pictures/infographic-collagen-trampoline.jpg">
 
-  <!-- Google Fonts -->
   <link rel="preload" href="../webfonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../webfonts/playfair-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../webfonts/fa-solid-900-subset.woff2" as="font" type="font/woff2" crossorigin>
   
   <!-- FontAwesome Subset & Site CSS -->
   <link rel="stylesheet" href="../icons.css">
@@ -106,6 +109,7 @@
   <script defer data-domain="dermaudit.com" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Aller au contenu principal</a>
 
   <!-- Announcement Bar (Verified USA Invariant) -->
   <div class="top-bar">
@@ -180,7 +184,7 @@
     <section class="tool-hero">
       <div class="container">
         <div class="badge badge-gold tool-badge">
-          <i class="fa-solid fa-flask"></i> Outil Clinique Dermatologique
+          <i class="fa-solid fa-flask"></i> Outil de Superposition Cutanée
         </div>
         <h1 class="tool-title">Matrice des Conflits & Superposition d'Actifs</h1>
         <p class="tool-subtitle">
@@ -199,7 +203,7 @@
 
         <!-- Preset Regimens Bar -->
         <div class="presets-bar">
-          <span class="presets-label"><i class="fa-solid fa-bolt"></i> Profils Cliniques :</span>
+          <span class="presets-label"><i class="fa-solid fa-bolt"></i> Combinaisons à Éviter :</span>
           <button type="button" class="preset-btn" data-preset="anti-aging">Protocole Anti-Âge & Collagène</button>
           <button type="button" class="preset-btn" data-preset="brightening">Routine Anti-Taches & Éclat</button>
           <button type="button" class="preset-btn" data-preset="barrier-safe">Réparation Douce de Barrière</button>
@@ -270,8 +274,8 @@
           <span class="logo-accent">DERM</span> AUDIT <span class="logo-sub">JOURNAL</span>
         </a>
         <p class="footer-desc">
-          Journal indépendant d'évaluation dermatologique et d'analyse des ingrédients fournissant des études fondées sur des preuves pour les crèmes aux peptides, sérums antioxydants et soins ciblés.
-        </p>
+            Journal indépendant d'analyse des ingrédients et d'évaluation de soins cutanés portant sur les crèmes aux peptides, sérums éclaircissants et formules ciblées.
+          </p>
       </div>
 
       <div class="footer-col">
@@ -298,7 +302,7 @@
           <li><a href="skincare-conflict-matrix.html">Matrice des Conflits d'Actifs</a></li>
           <li><a href="blog.html">Journal</a></li>
           <li><a href="index.html#skin-quiz">Quiz de Diagnostic Cutané</a></li>
-          <li><a href="privacy.html">Politique de Confidentialité</a></li>
+          <li><a class="link-muted-underline" href="about.html">À propos</a> | <a class="link-muted-underline" href="methodology.html">Méthodologie</a> | <a class="link-muted-underline" href="contact.html">Contact</a> | <a href="privacy.html">Politique de Confidentialité</a></li>
           <li><a href="../links.html">Portail Réseaux Sociaux</a></li>
         </ul>
       </div>
@@ -307,8 +311,8 @@
     <div class="footer-bottom">
       <div class="container">
         <div class="disclaimer-box" id="disclosure">
-          <p><strong>Divulgation d'Affiliation FTC :</strong> Derm Audit Journal est un site d'évaluation indépendant. Nous recevons une commission financière de SellHealth / partenaires fabricants lorsque les utilisateurs achètent via nos liens, sans surcoût pour vous. Nous ne présentons que des produits étayés par des essais cliniques et une garantie de 90 jours.</p>
-          <p><strong>Avis Médical :</strong> Le contenu de ce site est fourni à des fins d'information uniquement et ne remplace pas un avis médical. Consultez un dermatologue ou professionnel de santé avant d'entreprendre une nouvelle routine de soins.</p>
+          <p><strong>Divulgation d'Affiliation FTC :</strong> Derm Audit Journal est un site d'analyse indépendant. Nous percevons une rémunération financière de réseaux partenaires (dont SellHealth, ClickBank et Natural Health Source) lorsque des utilisateurs achètent des produits via nos liens, sans frais supplémentaires pour vous. Les produits présentés incluent des garanties de remboursement du fabricant de 60 à 90 jours.</p>
+          <p><strong>Avis Médical :</strong> Le contenu de ce site est fourni à titre purement informatif et ne constitue pas un avis médical ni ne vise à diagnostiquer, traiter, guérir ou prévenir une affection médicale. Consultez toujours un dermatologue ou un médecin qualifié avant d'entamer un nouveau soin cutané.</p>
         </div>
         <div class="copyright">
           © 2026 Derm Audit Journal. Tous droits réservés. | <a class="link-muted-underline" href="privacy.html">Politique de Confidentialité</a>

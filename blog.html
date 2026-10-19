@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <meta name="theme-color" content="#0B0F19">
   
   <!-- Primary Meta Tags -->
   <title>Skincare Ingredient Science &amp; Research Journal 2026</title>
   <meta name="title" content="Skincare Ingredient Science &amp; Research Journal 2026">
   <meta name="description" content="Evidence-based skincare research articles, active ingredient comparisons (Syn-Coll vs Retinol, Symglucan scar remodeling), and clinical skincare guides.">
-  <meta name="keywords" content="clinical skincare blog, dermatological research, Syn-Coll vs retinol, scar reduction science, skin brightening peptides">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
 
@@ -29,6 +30,8 @@
   <meta property="og:title" content="Skincare Ingredient Science &amp; Research Journal 2026">
   <meta property="og:description" content="Evidence-based skincare research articles, active ingredient comparisons (Syn-Coll vs Retinol, Symglucan scar remodeling), and clinical skincare guides.">
   <meta property="og:image" content="https://dermaudit.com/Pictures/KollagenIntensiv.jpg">
+  <meta property="og:image:width" content="517">
+  <meta property="og:image:height" content="699">
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
@@ -38,8 +41,9 @@
   <meta name="twitter:description" content="Evidence-based dermatological research articles and active ingredient comparisons.">
   <meta name="twitter:image" content="https://dermaudit.com/Pictures/KollagenIntensiv.jpg">
 
-  <!-- Google Fonts & FontAwesome -->
   <link rel="preload" href="webfonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="webfonts/playfair-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="webfonts/fa-solid-900-subset.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="icons.css">
   <link rel="stylesheet" href="styles.css">
 
@@ -48,12 +52,12 @@
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "Clinical Research Journal",
-    "description": "Peer-reviewed analysis, ingredient teardowns, and evidence-based dermatological guides.",
+    "name": "Skincare Research Journal",
+    "description": "Ingredient teardowns and dermatological guides, with references from peer-reviewed studies.",
     "publisher": {
       "@type": "Organization",
       "name": "Derm Audit Journal",
-      "logo": "https://dermaudit.com/Pictures/KollagenIntensiv.jpg"
+      "logo": {"@type": "ImageObject", "url": "https://dermaudit.com/img/logo-512.png", "width": 512, "height": 512}
     },
     "hasPart": [
       {
@@ -92,6 +96,7 @@
   <script defer data-domain="dermaudit.com" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <!-- Top Announcement Bar -->
   <div class="top-bar">
@@ -159,18 +164,18 @@
   </header>
 
   <!-- Hero Header -->
-  <section class="hero" style="padding: 3.5rem 0 2.5rem 0; text-align: center;">
+  <section class="hero u-inl-30">
     <div class="container">
-      <span class="badge badge-gold" style="margin-bottom: 1rem;"><i class="fa-solid fa-book-open"></i> SKINCARE RESEARCH &amp; INGREDIENT HUB</span>
-      <h1 class="hero-title" style="font-size: 2.5rem;">Clinical Research Journal</h1>
-      <p class="hero-subtitle" style="max-width: 700px; margin: 0.5rem auto 0 auto;">
-        Peer-reviewed analysis, ingredient teardowns, and evidence-based dermatological guides on cellular collagen renewal, melanin signaling, periorbital microcirculation, and tissue remodeling.
+      <span class="badge badge-gold u-inl-31"><i class="fa-solid fa-book-open"></i> SKINCARE RESEARCH &amp; INGREDIENT HUB</span>
+      <h1 class="hero-title u-inl-32">Skincare Research Journal</h1>
+      <p class="hero-subtitle u-inl-33">
+        Ingredient teardowns and dermatological guides, with references from peer-reviewed studies on cellular collagen renewal, melanin signaling, periorbital microcirculation, and tissue remodeling.
       </p>
     </div>
   </section>
 
   <!-- Blog Main Content -->
-  <main class="section bg-light" style="padding-top: 1rem;">
+  <main class="section bg-light u-inl-34" id="main-content">
     <div class="container">
       
       <div class="blog-grid">
@@ -273,10 +278,10 @@
       </div>
 
       <!-- Quiz Banner Callout -->
-      <div class="card reveal" style="margin-top: 4rem; padding: 3rem; text-align: center; background: linear-gradient(135deg, rgba(212,175,55,0.08) 0%, rgba(11,15,25,0.95) 100%); border: 1px solid var(--color-primary-dark);">
-        <span class="badge badge-gold" style="margin-bottom: 1rem;"><i class="fa-solid fa-wand-magic-sparkles"></i> PERSONALIZED MATCH</span>
-        <h2 style="color: var(--text-primary); font-family: var(--font-serif); font-size: 2rem; margin-bottom: 0.75rem;">Not Sure Which Formula Matches Your Skin?</h2>
-        <p style="color: var(--color-muted); max-width: 600px; margin: 0 auto 1.75rem auto;">Take our 30-second ingredient-focused quiz to receive your custom product recommendation.</p>
+      <div class="card reveal u-inl-35">
+        <span class="badge badge-gold u-inl-31"><i class="fa-solid fa-wand-magic-sparkles"></i> PERSONALIZED MATCH</span>
+        <h2 class="u-inl-36">Not Sure Which Formula Matches Your Skin?</h2>
+        <p class="u-inl-37">Take our 30-second ingredient-focused quiz to receive your custom product recommendation.</p>
         <a href="index.html#skin-quiz" class="btn btn-gold btn-lg"><i class="fa-solid fa-clipboard-question"></i> Take the 30-Second Skin Assessment</a>
       </div>
 
@@ -292,7 +297,7 @@
           <span class="logo-accent">DERM</span> AUDIT <span class="logo-sub">JOURNAL</span>
         </a>
         <p class="footer-desc">
-            Independent skincare review and ingredient analysis journal providing evidence-based evaluations of peptide creams, antioxidant serums, and targeted skin therapies.
+            Independent skincare review and ingredient analysis journal publishing evaluations of peptide creams, brightening serums, and targeted skin formulas.
           </p>
       </div>
 
@@ -324,7 +329,7 @@
           <li><a href="tools/skincare-conflict-matrix.html">Active Conflict Matrix</a></li>
           <li><a href="blog.html">Research Journal</a></li>
           <li><a href="index.html#skin-quiz">Interactive Skin Quiz</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a class="link-muted-underline" href="about.html">About</a> | <a class="link-muted-underline" href="methodology.html">Methodology</a> | <a class="link-muted-underline" href="contact.html">Contact</a> | <a href="privacy.html">Privacy Policy</a></li>
           <li><a href="links.html">Social Media Portal</a></li>
         </ul>
       </div>
@@ -334,7 +339,7 @@
     <div class="footer-bottom">
       <div class="container">
         <div class="disclaimer-box" id="disclosure">
-          <p><strong>FTC Affiliate Disclosure:</strong> Derm Audit Journal is an independent review website. We receive financial compensation from affiliate network partners (including SellHealth, ClickBank, and Natural Health Source) when users purchase products through our links. This comes at no additional cost to you and supports our ongoing research and testing. Featured products include manufacturer money-back guarantees ranging from 60 to 90 days.</p>
+          <p><strong>FTC Affiliate Disclosure:</strong> Derm Audit Journal is an independent review website. We receive financial compensation from affiliate network partners (including SellHealth, ClickBank, and Natural Health Source) when users purchase products through our links. This comes at no additional cost to you and supports our ongoing research. Featured products include manufacturer money-back guarantees ranging from 60 to 90 days.</p>
           <p><strong>Medical Disclaimer:</strong> Content on this website is for informational purposes only and is not intended as medical advice or to diagnose, treat, cure, or prevent any medical condition. Always consult with a qualified dermatologist or healthcare physician before starting a new skincare regimen.</p>
         </div>
         <div class="copyright">

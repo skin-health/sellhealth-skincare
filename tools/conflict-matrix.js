@@ -260,7 +260,7 @@
     'niacinamide|retinol': {
       severity: 'synergistic',
       title: 'Gold-Standard Barrier-Reinforcing Synergy',
-      mechanism: 'Niacinamide upregulates ceramide and free fatty acid synthesis, clinically shown to prevent retinol-induced peeling without hindering retinoic acid nuclear receptor signaling.',
+      mechanism: 'Niacinamide upregulates ceramide and free fatty acid synthesis. Studies indicate it may reduce retinol-induced peeling without hindering retinoic acid nuclear receptor signaling.',
       resolution: 'Layer Niacinamide either before or alongside Retinol in the PM routine to buffer the barrier.'
     },
     'beta-glucan|retinol': {

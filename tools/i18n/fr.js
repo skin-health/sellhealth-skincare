@@ -92,7 +92,7 @@ window.DERM_I18N.fr = {
       },
       "emptyState": {
         "zeroTitle": "Sélectionnez 2 à 6 Actifs Ci-Dessus pour Commencer l'Analyse",
-        "zeroDesc": "Choisissez des actifs dans la grille ou cliquez sur un profil clinique pour évaluer la stabilité du pH, les risques de neutralisation et le protocole matin/soir.",
+        "zeroDesc": "Choisissez des actifs dans la grille ou cliquez sur un profil clinique pour évaluer la stabilité du pH, les risques de neutralisation et la répartition matin/soir.",
         "oneTitle": "Sélectionnez au Moins 1 Actif Supplémentaire",
         "oneDesc": "La matrice évalue les interactions par paires. Ajoutez un autre actif pour calculer la compatibilité biochimique."
       },
