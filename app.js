@@ -422,24 +422,43 @@ function initEmbedWidgets() {
    ========================================================================== */
 function initMobileBuyBar() {
   const bar = document.querySelector('.mobile-buy-bar');
-  if (!bar || bar.dataset.buyBarBound === 'true') return;
-  bar.dataset.buyBarBound = 'true';
-
-  const mainCta = document.querySelector('main .btn-xl.affiliate-link');
-  const navMenu = document.getElementById('navMenu');
-  let ctaOnScreen = false;
-  let drawerOpen = false;
-  const sync = () => bar.classList.toggle('is-hidden', ctaOnScreen || drawerOpen);
-
-  if (mainCta && 'IntersectionObserver' in window) {
-    const io = new IntersectionObserver((entries) => {
-      ctaOnScreen = entries.some((entry) => entry.isIntersecting);
-      sync();
-    });
-    io.observe(mainCta);
+  const headerCta = document.querySelector('.header-actions .affiliate-link');
+  if (!bar && !headerCta) return;
+  if (bar) {
+    if (bar.dataset.buyBarBound === 'true') return;
+    bar.dataset.buyBarBound = 'true';
   }
 
-  if (navMenu) {
+  const product = bar?.querySelector('.affiliate-link')?.dataset.product || headerCta?.dataset.product;
+  const inPage = product
+    ? Array.from(document.querySelectorAll('main .affiliate-link'))
+        .filter((a) => a.dataset.product === product && !a.closest('.mobile-buy-bar'))
+    : [];
+  const navMenu = document.getElementById('navMenu');
+  const visibleInPage = new Set();
+  let drawerOpen = false;
+
+  const sync = () => {
+    const onScreen = visibleInPage.size > 0;
+    if (bar) bar.classList.toggle('is-hidden', onScreen || drawerOpen);
+    if (headerCta) headerCta.classList.toggle('is-suppressed', onScreen);
+  };
+
+  if (inPage.length && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          visibleInPage.add(entry.target);
+        } else {
+          visibleInPage.delete(entry.target);
+        }
+      });
+      sync();
+    });
+    inPage.forEach((el) => io.observe(el));
+  }
+
+  if (navMenu && bar) {
     const mo = new MutationObserver(() => {
       drawerOpen = navMenu.classList.contains('active');
       sync();
