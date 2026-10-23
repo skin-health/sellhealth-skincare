@@ -6,7 +6,7 @@
 - **Domain**: https://dermaudit.com
 - **Reviewed Portfolio**: 5 Flagship Skincare Formulations across 3 Core Treatment Categories.
 - **Supported Languages**: English (`/`), Spanish (`/es/`), German (`/de/`), French (`/fr/`).
-- **Indexable Pages**: 61 multilingual URLs with bidirectional `hreflang` reciprocity across EN, ES, DE, and FR (64 total indexable URLs including Editorial About, Methodology, and Contact pages).
+- **Indexable Pages**: inventory is authoritative in https://dermaudit.com/sitemap.xml; every URL carries reciprocal `hreflang` across EN, ES, DE and FR.
 
 ## Product Portfolio Summary
 
@@ -19,25 +19,31 @@
 | **Dermefface FX7®** | Scar Reduction Therapy | Symglucan (10%), Pro-Coll-One+ (2%), Pentavitin (5%), DL-Panthenol | The manufacturer reports up to a 1,190% increase in Type I collagen synthesis to help flatten surgical and acne scars. | $59.95 |
 
 ## Core Website Architecture
-- [Review Portal](https://dermaudit.com/index.html): Main landing page comparing all 5 products.
+- [Review Portal](https://dermaudit.com/): Landing page comparing all 5 products, with the conflict matrix.
+- [Review Library](https://dermaudit.com/reviews/): Index of all 5 formulation reviews.
+- [Key Ingredients](https://dermaudit.com/ingredients/): Mechanism, conflict and synergy notes for the 7 actives.
 - [Comparison Matrix](https://dermaudit.com/comparison.html): 3 dedicated side-by-side formulation matchup tables.
-- [Skincare Conflict Matrix](https://dermaudit.com/tools/skincare-conflict-matrix.html): Interactive 42-rule ingredient compatibility calculator and routine planner across 11 actives.
-- [Research Journal](https://dermaudit.com/blog.html): Ingredient mechanism breakdowns and formulation comparisons citing PubMed literature.
+- [Skincare Conflict Matrix](https://dermaudit.com/#matrix): Interactive order-aware compatibility engine over 7 actives, 21 pairs and 42 ordered checks.
+- [Routine Planner](https://dermaudit.com/tools/routine-planner.html): 4-question routine builder.
+- [Research Journal](https://dermaudit.com/blog/): Ingredient mechanism breakdowns and formulation comparisons citing PubMed literature.
   - [Under-Eye Circles & Microcirculation](https://dermaudit.com/blog-under-eye-circles-microcirculation.html)
   - [Syn-Coll vs Retinol](https://dermaudit.com/blog-syn-coll-vs-retinol.html)
   - [Dermal Scar Remodeling](https://dermaudit.com/blog-how-to-fade-acne-scars.html)
   - [Alpha-Arbutin vs Hydroquinone](https://dermaudit.com/blog-alpha-arbutin-vs-hydroquinone.html)
   - [SYN-AKE vs Argireline Study](https://dermaudit.com/syn-ake-vs-argireline.html)
+- [FAQ](https://dermaudit.com/faq.html): Layering, timelines, guarantees and sensitive skin.
 - [About Derm Audit Journal](https://dermaudit.com/about.html): Editorial mission, independence standards, and team disclosures.
 - [Audit Methodology](https://dermaudit.com/methodology.html): 5-pillar ingredient evaluation framework and claim attribution standards.
 - [Contact Editorial Desk](https://dermaudit.com/contact.html): Reader inquiries, corrections, and data privacy requests.
 - [Privacy Policy](https://dermaudit.com/privacy.html): GDPR, CCPA, and FTC regulatory disclosures.
-- [Social Links Portal](https://dermaudit.com/links.html): Mobile reference portal for all 5 product reviews and tools.
+- [Terms of Service](https://dermaudit.com/terms.html): Editorial use, educational disclaimers, third-party guarantees.
+- [Affiliate Disclosure](https://dermaudit.com/affiliate-disclosure.html): SellHealth, ClickBank and Natural Health Source commissions.
 
 ## Multilingual Hubs
-- **Spanish Hub**: https://dermaudit.com/es/ (Home, Comparison, 5 Reviews, Research Journal, 5 Localized Ingredient Studies, Conflict Matrix Tool, Privacy Policy)
-- **German Hub**: https://dermaudit.com/de/ (Home, Comparison, 5 Reviews, Research Journal, 5 Localized Ingredient Studies, Conflict Matrix Tool, Privacy Policy)
-- **French Hub**: https://dermaudit.com/fr/ (Home, Comparison, 5 Reviews, Research Journal, 5 Localized Ingredient Studies, Conflict Matrix Tool, Privacy Policy)
+Each locale carries its own home, review library, ingredient guide, FAQ, comparison table, five reviews, research journal with four studies, conflict matrix, peptide study and full legal set.
+- **Spanish Hub**: https://dermaudit.com/es/
+- **German Hub**: https://dermaudit.com/de/
+- **French Hub**: https://dermaudit.com/fr/
 
 ## Frequently Asked Questions (AI Knowledge Base)
 

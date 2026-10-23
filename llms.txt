@@ -1,89 +1,118 @@
 # Derm Audit Journal
 
-> Independent clinical reviews and ingredient breakdowns of top anti-aging collagen renewal creams, neuro-dermal expression line serums, botanical skin brightening correctors, under-eye therapies, and scar reduction recovery formulas.
+> Independent skincare research site. The primary product is a free, client-side
+> ingredient conflict matrix: pick two actives and see whether they layer safely,
+> in either order. Reviews, ingredient guides and studies support the tool.
 
-## Core Navigation
-- [Review Portal](/index.html): Comparative landing page for top skincare products. Features ratings, side-by-side details, and dynamic matching tools.
+## Key facts
+
+- The conflict matrix covers 7 actives, 21 ingredient pairs and 42 ordered checks.
+- Order matters: applying A before B can differ from B before A.
+- Scores come from the published methodology, not from merchants.
+- All five reviewed products carry manufacturer-set 60-90 day guarantees.
+
+## Core tools
+- [Skincare Conflict Matrix](/#matrix): Interactive dermatological engine calculating pH compatibility, deactivation risks, and routine conflict checks across 7 clinical actives and 21 pairs.
+- [Routine Planner](/tools/routine-planner.html): Answer 4 questions. Get a personalized evidence-based skincare routine plan.
 - [Comparison Matrix](/comparison.html): Full side-by-side clinical comparison tables evaluating 5 top-tier clinical solutions (Kollagen Intensiv, Synevra UltraLift, Illuminatural 6i, Eyelasticity, Dermefface FX7) against luxury market alternatives.
-- [Skincare Conflict Matrix](/tools/skincare-conflict-matrix.html): Interactive dermatological engine calculating pH compatibility, deactivation risks, and routine conflict checks across 11 clinical actives.
-- [Skin Quiz](/index.html#skin-quiz): 3-question javascript skin matching tool. Connects specific skin concerns to recommended products.
-- [Bio Link Page](/links.html): Branded mobile navigation portal optimized for social media referral traffic.
-- [Privacy Policy](/privacy.html): GDPR, CCPA, and FTC regulatory compliance disclosures.
-- [About Derm Audit Journal](/about.html): Who we are, how the site is funded, and our editorial independence.
-- [Audit Methodology](/methodology.html): How formulas, the 42 interaction rules, and manufacturer figures are reviewed.
-- [Contact Editorial Desk](/contact.html): Corrections, restock updates, and privacy requests.
+- [Key Ingredients](/ingredients/): Understand 7 core skincare actives: mechanisms, conflicts, synergies, and usage guidelines.
+- [Expert Reviews](/reviews/): Evidence-based reviews of 5 clinical skincare formulas. Pros, cons, ingredient breakdowns, guarantees.
+- [FAQ](/faq.html): Answers to common questions about skincare layering, results timelines, guarantees, and sensitive skin safety.
+- [SYN-AKE vs Argireline Guide](/syn-ake-vs-argireline.html): Biochemical comparative analysis of SNARE complex inhibition vs acetylcholine receptor blocking for dynamic expression line relaxation.
 
-## Clinical Reviews
+## Clinical reviews (English)
 - [Kollagen Intensiv Review](/kollagen-intensiv-review.html): In-depth review of Kollagen Intensiv. Analyzes patented peptide Syn-Coll® (the manufacturer reports that it boosts collagen synthesis by 354% and reduces wrinkle depth by 84%).
 - [Synevra UltraLift Review](/synevra-ultralift-review.html): Formulation analysis of Synevra UltraLift peptide system. Evaluates SYN-AKE® neuromuscular relaxation mechanism (the manufacturer reports up to an 82% reduction in micro-contractions) and VitaLock™ oral beauty nutrients.
 - [Illuminatural 6i Review](/illuminatural-6i-review.html): In-depth analysis of Illuminatural 6i skin brightener. Evaluates six botanical actives (including Alpha-Arbutin and Niacinamide) that the manufacturer reports block melanin synthesis without hydroquinone.
 - [Eyelasticity Review](/eyelasticity-review.html): Formulation analysis of Eyelasticity Age-Defying Eye Therapy. Evaluates multi-peptide complex (Eyeseryl®, Regu®-Age, Syn®-Coll, and Pro-Coll-One+) that the manufacturer reports reduces under-eye puffiness and dark circles within 15 to 28 days.
 - [Dermefface FX7 Review](/dermefface-fx7-review.html): Formulation review of Dermefface FX7 Scar Reduction Therapy. Explains remodeling actives (including 10% Symglucan and 2% Pro-Coll-One+) that the manufacturer reports boost Type I collagen by up to 1,190% to help flatten scars.
 
-## Research Journal Articles
-- [Research Journal](/blog.html): Main research index covering comparative ingredient studies, peptide mechanisms, and barrier defense benchmarks.
+## Research journal (English)
+- [Research Journal](/blog/): Main research index covering comparative ingredient studies, peptide mechanisms, and barrier defense benchmarks.
 - [Under-Eye Circles Science Article](/blog-under-eye-circles-microcirculation.html): Clinical study on periorbital microcirculation, leaky capillaries, and peptide lymphatic drainage.
 - [Syn-Coll vs Retinol Article](/blog-syn-coll-vs-retinol.html): Clinical comparison between Palmitoyl Tripeptide-5 and Retinol.
 - [Dermal Scar Remodeling Article](/blog-how-to-fade-acne-scars.html): Research paper on scar tissue remodeling using Symglucan and peptides.
 - [Alpha-Arbutin vs Hydroquinone Article](/blog-alpha-arbutin-vs-hydroquinone.html): Clinical study on tyrosinase enzyme inhibition and safe melanin control.
-- [SYN-AKE vs Argireline Guide](/syn-ake-vs-argireline.html): Biochemical comparative analysis of SNARE complex inhibition vs acetylcholine receptor blocking for dynamic expression line relaxation.
 
-## Análisis en Español (Spanish Reviews)
-- [Portal de Análisis (ES)](/es/index.html): Página principal comparativa en español con los 5 productos, quiz de piel y esquema JSON-LD completo.
+## Trust and legal (English)
+- [About Derm Audit Journal](/about.html): Who we are, how the site is funded, and our editorial independence.
+- [Audit Methodology](/methodology.html): How formulas, the 42 interaction rules, and manufacturer figures are reviewed.
+- [Contact Editorial Desk](/contact.html): Corrections, restock updates, and privacy requests.
+- [Privacy Policy](/privacy.html): GDPR, CCPA, and FTC regulatory compliance disclosures.
+- [Terms of Service](/terms.html): Review the terms of service for Derm Audit Journal, covering editorial use, educational disclaimers, affiliate commissions, and...
+- [Affiliate Disclosure](/affiliate-disclosure.html): DermAudit Journal affiliate disclosure. Learn how we earn commissions through SellHealth, ClickBank, and Natural Health Source at...
+
+## Español (es)
+- [Matriz de Conflictos y Activos Faciales](/es/): Herramienta de cuidado facial basada en evidencia. Analice 42 interacciones entre activos, cree rutinas y consulte análisis...
+- [Análisis Clínicos de Productos](/es/reviews/): Análisis basados en evidencia de 5 fórmulas clínicas. Pros, contras, ingredientes clave y garantías oficiales de satisfacción.
+- [Guía de Activos Dermatológicos](/es/ingredients/): Descubra 7 activos clave del cuidado dérmico: mecanismos, sinergias, conflictos y pautas de aplicación basadas en evidencia.
+- [Preguntas Frecuentes (FAQ)](/es/faq.html): Respuestas basadas en evidencia sobre combinación de activos, plazos de resultados, garantías oficiales y pieles sensibles.
 - [Matriz Comparativa (ES)](/es/comparison.html): Tabla comparativa clínica completa en español evaluando los 5 productos contra alternativas del mercado.
 - [Kollagen Intensiv (ES)](/es/kollagen-intensiv-review.html): Análisis clínico del péptido Syn-Coll® y la renovación del colágeno.
 - [Synevra UltraLift (ES)](/es/synevra-ultralift-review.html): Análisis del sistema dipéptido SYN-AKE® para arrugas de expresión.
 - [Illuminatural 6i (ES)](/es/illuminatural-6i-review.html): Análisis del corrector botánico de manchas oscuras con Alfa-Arbutina.
 - [Eyelasticity (ES)](/es/eyelasticity-review.html): Análisis clínico de la terapia para el contorno de ojos con Eyeseryl® y Regu®-Age.
 - [Dermefface FX7 (ES)](/es/dermefface-fx7-review.html): Análisis de la terapia de remodelación de cicatrices con Symglucan.
-- [Revista Clínica (ES)](/es/blog.html): Índice de investigaciones clínicas y estudios de ingredientes en español.
+- [Revista Clínica (ES)](/es/blog/): Índice de investigaciones clínicas y estudios de ingredientes en español.
 - [Estudio Ojeras y Microcirculación (ES)](/es/blog-under-eye-circles-microcirculation.html): Estudio clínico sobre microcirculación periocular, capilares frágiles y drenaje linfático.
 - [Estudio Syn-Coll vs Retinol (ES)](/es/blog-syn-coll-vs-retinol.html): Comparación clínica del péptido Syn-Coll® frente al retinol.
 - [Estudio Remodelación de Cicatrices (ES)](/es/blog-how-to-fade-acne-scars.html): Estudio de regeneración tisular con Symglucan y Pro-Coll-One+.
 - [Estudio Alfa-Arbutina vs Hidroquinona (ES)](/es/blog-alpha-arbutin-vs-hydroquinone.html): Estudio sobre inhibidores de tirosinasa y aclarado seguro de manchas.
-- [Matriz de Conflictos de Activos (ES)](/es/skincare-conflict-matrix.html): Herramienta clínica interactiva para evaluar compatibilidad de pH, riesgos de neutralización y cómo repartir activos entre AM y PM.
+- [Matriz de Conflictos de Activos (ES)](/es/#matrix): Herramienta clínica interactiva para evaluar compatibilidad de pH, riesgos de neutralización y cómo repartir activos entre AM y PM.
 - [Guía SYN-AKE vs Argireline (ES)](/es/syn-ake-vs-argireline.html): Comparativa bioquímica entre el bloqueo del complejo SNARE y la inhibición de acetilcolina contra arrugas dinámicas.
 - [Política de Privacidad (ES)](/es/privacy.html): Divulgaciones regulatorias de cumplimiento GDPR, CCPA y FTC en español.
+- [Términos de Servicio](/es/terms.html): Consulte los términos de servicio de Derm Audit Journal: uso editorial, avisos educativos, comisiones de afiliados y políticas de...
+- [Divulgación de Afiliados](/es/affiliate-disclosure.html): Divulgación de afiliados de DermAudit Journal: comisiones a través de SellHealth, ClickBank y Natural Health Source sin coste...
 - [Sobre Derm Audit Journal (ES)](/es/about.html): Quiénes somos, cómo se financia el sitio y nuestra independencia editorial.
 - [Metodología de auditoría (ES)](/es/methodology.html): Cómo se revisan las fórmulas, las 42 reglas de interacción y las cifras del fabricante.
 - [Contacto editorial (ES)](/es/contact.html): Correcciones, actualizaciones de stock y solicitudes de privacidad.
 
-## Klinische Tests auf Deutsch (German Reviews)
-- [Testportal (DE)](/de/index.html): Deutsche Startseite mit 5-Produkt-Vergleich, Hauttest und vollständigem JSON-LD-Schema.
+## Deutsch (de)
+- [Wirkstoff-Konflikte & Skincare-Matrix](/de/): Evidenzbasierte Skincare-Matrix. Prüfen Sie 42 Wirkstoff-Interaktionen, planen Sie Routinen und lesen Sie fundierte Testberichte...
+- [Klinische Testberichte & Formeln](/de/reviews/): Evidenzbasierte Testberichte zu 5 klinischen Skincare-Formeln. Vor- und Nachteile, Wirkstoffprofile und offizielle...
+- [Leitfaden Skincare-Wirkstoffe](/de/ingredients/): Erfahren Sie mehr über 7 zentrale Skincare-Wirkstoffe: Wirkmechanismen, Synergien, Konflikte und evidenzbasierte Anwendung.
+- [Häufig gestellte Fragen (FAQ)](/de/faq.html): Evidenzbasierte Antworten zu Wirkstoff-Kombinationen, Wirkungsdauer, Garantien und Verträglichkeit bei empfindlicher Haut.
 - [Vergleichsmatrix (DE)](/de/comparison.html): Vollständige klinische Vergleichstabelle auf Deutsch für alle 5 Produkte gegen Marktalternativen.
 - [Kollagen Intensiv (DE)](/de/kollagen-intensiv-review.html): Klinischer Test des Syn-Coll®-Peptids und der Kollagenerneuerung.
 - [Synevra UltraLift (DE)](/de/synevra-ultralift-review.html): Analyse des SYN-AKE®-Dipeptid-Systems gegen Mimikfalten.
 - [Illuminatural 6i (DE)](/de/illuminatural-6i-review.html): Analyse des botanischen Aufhellers gegen Pigmentflecken mit Alpha-Arbutin.
 - [Eyelasticity (DE)](/de/eyelasticity-review.html): Klinischer Test der Augenpartie-Therapie mit Eyeseryl® und Regu®-Age.
 - [Dermefface FX7 (DE)](/de/dermefface-fx7-review.html): Test der Narbenremodelierungs-Therapie mit Symglucan und Pro-Coll-One+.
-- [Klinisches Magazin (DE)](/de/blog.html): Deutsches Studien- und Forschungsverzeichnis zu Wirkstoffen und Hauterneuerung.
+- [Klinisches Magazin (DE)](/de/blog/): Deutsches Studien- und Forschungsverzeichnis zu Wirkstoffen und Hauterneuerung.
 - [Augenringe & Mikrozirkulation Studie (DE)](/de/blog-under-eye-circles-microcirculation.html): Studie zu periorbitaler Gefäßpermeabilität, Tyndall-Effekt und Peptid-Lymphdrainage.
 - [Syn-Coll vs. Retinol Studie (DE)](/de/blog-syn-coll-vs-retinol.html): Klinischer Vergleich zwischen Palmitoyl Tripeptide-5 und Retinol.
 - [Narben-Remodeling Studie (DE)](/de/blog-how-to-fade-acne-scars.html): Forschungspapier zur Narbenreduktion mit Symglucan und Pro-Coll-One+.
 - [Alpha-Arbutin vs. Hydrochinon Studie (DE)](/de/blog-alpha-arbutin-vs-hydroquinone.html): Studie zur sicheren Tyrosinase-Hemmung und Melanin-Kontrolle.
-- [Wirkstoff-Konflikt-Matrix (DE)](/de/skincare-conflict-matrix.html): Interaktives Analyse-Tool zur Berechnung von pH-Kompatibilität, Deaktivierungsrisiken und die Trennung in AM- und PM-Anwendung für 11 Wirkstoffe.
+- [Wirkstoff-Konflikt-Matrix (DE)](/de/#matrix): Interaktives Analyse-Tool zur Berechnung von pH-Kompatibilität, Deaktivierungsrisiken und die Trennung in AM- und PM-Anwendung für 7 Wirkstoffe und 21 Paare.
 - [SYN-AKE vs. Argireline Leitfaden (DE)](/de/syn-ake-vs-argireline.html): Biochemischer Vergleich der SNARE-Komplex-Hemmung und Acetylcholin-Blockade zur Glättung mimischer Falten.
 - [Datenschutzerklärung (DE)](/de/privacy.html): Gesetzliche Angaben und Offenlegungen zur DSGVO, CCPA und FTC auf Deutsch.
+- [Nutzungsbedingungen](/de/terms.html): Nutzungsbedingungen von Derm Audit Journal: redaktionelle Nutzung, Haftungsausschluss, Affiliate-Vergütungen und Garantien dritter...
+- [Affiliate-Offenlegung](/de/affiliate-disclosure.html): Affiliate-Offenlegung von Derm Audit Journal: Wie wir Provisionen über SellHealth, ClickBank und Natural Health Source ohne...
 - [Über Derm Audit Journal (DE)](/de/about.html): Wer wir sind, wie sich die Seite finanziert und unsere redaktionelle Unabhängigkeit.
 - [Audit-Methodik (DE)](/de/methodology.html): Wie Formeln, die 42 Wechselwirkungsregeln und Herstellerangaben bewertet werden.
 - [Redaktionskontakt (DE)](/de/contact.html): Korrekturen, Wiederverfügbarkeit und Datenschutzanfragen.
 
-## Analyses Cliniques en Français (French Reviews)
-- [Portail d'Analyses (FR)](/fr/index.html): Page d'accueil française avec comparaison des 5 produits, quiz de peau et schéma JSON-LD complet.
+## Français (fr)
+- [Conflits d'Actifs & Matrice Skincare](/fr/): Outil de soins fondé sur les preuves. Analysez 42 interactions d'actifs, planifiez vos routines et lisez nos audits cliniques sans...
+- [Audits Cliniques de Formules](/fr/reviews/): Audits fondés sur les preuves de 5 formules cliniques. Points forts, limites, composition active et garanties officielles de...
+- [Guide des Actifs Dermatologiques](/fr/ingredients/): Découvrez 7 actifs clés des soins de la peau : mécanismes d'action, synergies, conflits et protocoles d'application documentés.
+- [Foire Aux Questions (FAQ)](/fr/faq.html): Réponses documentées sur l'association des actifs, les délais d'efficacité, les garanties et la tolérance des peaux sensibles.
 - [Matrice Comparative (FR)](/fr/comparison.html): Tableau comparatif clinique complet en français évaluant les 5 produits par rapport aux alternatives du marché.
 - [Kollagen Intensiv (FR)](/fr/kollagen-intensiv-review.html): Analyse clinique du peptide Syn-Coll® et du renouvellement du collagène.
 - [Synevra UltraLift (FR)](/fr/synevra-ultralift-review.html): Analyse du système dipeptide SYN-AKE® contre les rides d'expression.
 - [Illuminatural 6i (FR)](/fr/illuminatural-6i-review.html): Analyse du correcteur botanique anti-taches avec Alpha-Arbutine.
 - [Eyelasticity (FR)](/fr/eyelasticity-review.html): Analyse de la thérapie contour des yeux avec Eyeseryl® et Regu®-Age.
 - [Dermefface FX7 (FR)](/fr/dermefface-fx7-review.html): Analyse de la thérapie de remodelage des cicatrices avec Symglucan.
-- [Journal Clinique (FR)](/fr/blog.html): Index de recherche clinique et d'études dermatologiques en français.
+- [Journal Clinique (FR)](/fr/blog/): Index de recherche clinique et d'études dermatologiques en français.
 - [Étude Cernes et Microcirculation (FR)](/fr/blog-under-eye-circles-microcirculation.html): Étude clinique sur la microcirculation périorbitaire, la fragilité capillaire et le drainage lymphatique.
 - [Étude Syn-Coll vs Rétinol (FR)](/fr/blog-syn-coll-vs-retinol.html): Comparaison clinique du peptide Syn-Coll® face au rétinol.
 - [Étude Remodelage Cicatriciel (FR)](/fr/blog-how-to-fade-acne-scars.html): Rapport de recherche sur le lissage des cicatrices avec Symglucan et Pro-Coll-One+.
 - [Étude Alpha-Arbutine vs Hydroquinone (FR)](/fr/blog-alpha-arbutin-vs-hydroquinone.html): Étude sur l'inhibition de la tyrosinase et l'éclaircissement des taches.
-- [Matrice des Conflits d'Actifs (FR)](/fr/skincare-conflict-matrix.html): Outil clinique interactif calculant la compatibilité de pH, les risques de neutralisation et la répartition matin/soir.
+- [Matrice des Conflits d'Actifs (FR)](/fr/#matrix): Outil clinique interactif calculant la compatibilité de pH, les risques de neutralisation et la répartition matin/soir.
 - [Guide SYN-AKE vs Argireline (FR)](/fr/syn-ake-vs-argireline.html): Analyse biochimique comparative sur le blocage du complexe SNARE et de l'acétylcholine pour lisser les rides d'expression.
 - [Politique de Confidentialité (FR)](/fr/privacy.html): Divulgations de conformité réglementaire RGPD, CCPA et FTC en français.
+- [Conditions d'Utilisation](/fr/terms.html): Conditions d'utilisation de Derm Audit Journal : cadre éditorial, clause médicale, affiliations commerciales et garanties de...
+- [Divulgation d'Affiliation](/fr/affiliate-disclosure.html): Divulgation d'affiliation de Derm Audit Journal : nos commissions via SellHealth, ClickBank et NHS, sans aucun coût supplémentaire...
 - [À propos de Derm Audit Journal (FR)](/fr/about.html): Qui nous sommes, comment le site est financé et notre indépendance éditoriale.
 - [Méthodologie d'audit (FR)](/fr/methodology.html): Comment sont évalués les formules, les 42 règles d'interaction et les chiffres des fabricants.
 - [Contact du bureau éditorial (FR)](/fr/contact.html): Corrections, mises à jour de stock et demandes de confidentialité.

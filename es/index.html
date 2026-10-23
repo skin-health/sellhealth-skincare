@@ -1,1190 +1,578 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="../favicon.ico" sizes="any">
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <meta name="theme-color" content="#0B0F19">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Matriz de Conflictos y Activos Faciales | Derm Audit</title>
+  <meta name="description" content="Herramienta de cuidado facial basada en evidencia. Analice 42 interacciones entre activos, cree rutinas y consulte análisis clínicos sin rodeos.">
   
-  <!-- Meta Tags Principales -->
-  <title>Reseñas de Cuidado Facial y Guía de Activos | Derm Audit</title>
-  <meta name="title" content="Reseñas de Cuidado Facial y Guía de Activos | Derm Audit">
-  <meta name="description" content="Análisis clínicos independientes y desglose de ingredientes de las mejores cremas de colágeno, sérums tensores y correctores de manchas oscuras.">
-  <meta name="robots" content="index, follow">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-
-  <!-- Canonical & Multilingual Alternate Hreflang Tags -->
+  <!-- Canonical & hreflang -->
   <link rel="canonical" href="https://dermaudit.com/es/">
-  <link rel="alternate" hreflang="x-default" href="https://dermaudit.com/">
-  <link rel="alternate" hreflang="en" href="https://dermaudit.com/">
-  <link rel="alternate" hreflang="es" href="https://dermaudit.com/es/">
-  <link rel="alternate" hreflang="de" href="https://dermaudit.com/de/">
-  <link rel="alternate" hreflang="fr" href="https://dermaudit.com/fr/">
+  <link rel="alternate" href="https://dermaudit.com/" hreflang="x-default">
+  <link rel="alternate" href="https://dermaudit.com/" hreflang="en">
+  <link rel="alternate" href="https://dermaudit.com/es/" hreflang="es">
+  <link rel="alternate" href="https://dermaudit.com/de/" hreflang="de">
+  <link rel="alternate" href="https://dermaudit.com/fr/" hreflang="fr">
+  
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="theme-color" content="#06040d">
 
-  <!-- Pinterest Domain Verification -->
-  <meta name="p:domain_verify" content="6914f1d86b3715f77efd0396fff9870d"/>
+  <!-- Font preloads -->
+  <link rel="preload" href="/webfonts/fa-solid-900-subset.woff2" as="font" type="font/woff2" crossorigin>
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="es_ES">
-  <meta property="og:url" content="https://dermaudit.com/es/">
-  <meta property="og:title" content="Reseñas de Cuidado Facial y Guía de Activos | Derm Audit">
-  <meta property="og:description" content="Análisis de ingredientes y comparativa lado a lado de 5 fórmulas avanzadas para el cuidado de la piel.">
-  <meta property="og:image" content="https://dermaudit.com/Pictures/infographic-collagen-trampoline.jpg">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Plausible (deferred) -->
+  <script defer data-domain="dermaudit.com" src="https://plausible.io/js/script.js"></script>
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Matriz de Conflictos y Activos Faciales | Derm Audit">
+  <meta property="og:description" content="Herramienta de cuidado facial basada en evidencia. Analice 42 interacciones entre activos, cree rutinas y consulte análisis clínicos sin rodeos.">
+  <meta property="og:image" content="https://dermaudit.com/Pictures/og-home.jpg">
   <meta property="og:image:width" content="1376">
   <meta property="og:image:height" content="768">
-
-  <!-- Twitter Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dermaudit.com/es/">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@lizzybean_271">
-  <meta name="twitter:creator" content="@lizzybean_271">
-  <meta name="twitter:title" content="Reseñas de Cuidado Facial y Guía de Activos | Derm Audit">
-  <meta name="twitter:description" content="Análisis clínicos de fórmulas avanzadas de colágeno, péptidos tensores y aclaradores de manchas.">
-  <meta name="twitter:image" content="https://dermaudit.com/Pictures/infographic-collagen-trampoline.jpg">
-
-  <link rel="preload" href="../webfonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="../webfonts/playfair-latin-var.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="../webfonts/fa-solid-900-subset.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="../icons.css">
-  
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="../styles.css">
-
-  <!-- JSON-LD Structured Data for SEO (Top Reviewed Products) -->
+  <meta name="twitter:title" content="Matriz de Conflictos y Activos Faciales | Derm Audit">
+  <meta name="twitter:description" content="Herramienta de cuidado facial basada en evidencia. Analice 42 interacciones entre activos, cree rutinas y consulte análisis clínicos sin rodeos.">
+  <meta name="twitter:image" content="https://dermaudit.com/Pictures/og-home.jpg">
   <script type="application/ld+json">
 {
-  "@context": "https://schema.org/",
-  "@type": "ItemList",
-  "name": "Principales Soluciones Clínicas Antienvejecimiento, Despigmentantes y de Recuperación Cutánea",
-  "description": "Análisis de ingredientes basado en evidencia sobre cremas de colágeno, sérums para líneas de expresión, correctores de manchas y terapias para cicatrices.",
-  "itemListElement": [
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "item": {
-        "@type": "Product",
-        "name": "Kollagen Intensiv",
-        "image": "https://dermaudit.com/Pictures/kollagen_boxbottle_lg.jpg",
-        "description": "Crema antienvejecimiento de fórmula suiza con péptido patentado Syn-Coll. El fabricante informa de un aumento del 354% en la síntesis de colágeno.",
-        "brand": {
-          "@type": "Brand",
-          "name": "Skinception"
-        },
-        "review": {
-          "@type": "Review",
-          "author": {
-            "@type": "Organization",
-            "name": "Derm Audit Journal"
-          },
-          "datePublished": "2026-08-04",
-          "reviewBody": "Fórmula suiza con péptido patentado Syn-Coll®. El fabricante informa de un aumento del 354% en la síntesis de colágeno y una reducción del 84% en las arrugas."
-        },
-        "offers": {
-          "@type": "Offer",
-          "price": "59.95",
-          "priceCurrency": "USD",
-          "priceValidUntil": "2026-12-31",
-          "validFrom": "2026-01-01",
-          "availability": "https://schema.org/InStock",
-          "url": "https://www.kollagenintensiv.com/ct/282956",
-          "hasMerchantReturnPolicy": {
-            "@type": "MerchantReturnPolicy",
-            "applicableCountry": "US",
-            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-            "merchantReturnDays": 90,
-            "returnMethod": "https://schema.org/ReturnByMail",
-            "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility"
-          },
-          "shippingDetails": {
-            "@type": "OfferShippingDetails",
-            "shippingRate": {
-              "@type": "MonetaryAmount",
-              "value": "0.00",
-              "currency": "USD"
-            },
-            "shippingDestination": {
-              "@type": "DefinedRegion",
-              "addressCountry": "US"
-            },
-            "deliveryTime": {
-              "@type": "ShippingDeliveryTime",
-              "handlingTime": {
-                "@type": "QuantitativeValue",
-                "minValue": 0,
-                "maxValue": 1,
-                "unitCode": "DAY"
-              },
-              "transitTime": {
-                "@type": "QuantitativeValue",
-                "minValue": 2,
-                "maxValue": 5,
-                "unitCode": "DAY"
-              }
-            }
-          },
-          "itemCondition": "https://schema.org/NewCondition"
-        }
+      "@type": "WebApplication",
+      "@id": "https://dermaudit.com/es/#matrix",
+      "name": "Matriz de Conflictos y Sinergias de Ingredientes Faciales",
+      "url": "https://dermaudit.com/es/#matrix",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "Any (web browser)",
+      "description": "Herramienta interactiva para comprobar interacciones entre activos cosméticos, mecanismos moleculares y pautas de aplicación.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Derm Audit Journal",
+        "url": "https://dermaudit.com"
       }
     },
     {
-      "@type": "ListItem",
-      "position": 2,
-      "item": {
-        "@type": "Product",
-        "name": "Synevra UltraLift",
-        "image": "https://dermaudit.com/Pictures/synevra.jpg",
-        "description": "Sérum para líneas de expresión con complejo dipéptido SYN-AKE para relajar las contracciones musculares faciales.",
-        "brand": {
-          "@type": "Brand",
-          "name": "Synevra Clinical"
-        },
-        "review": {
-          "@type": "Review",
-          "author": {
-            "@type": "Organization",
-            "name": "Derm Audit Journal"
-          },
-          "datePublished": "2026-08-17",
-          "reviewBody": "Sérum tópico dirigido con dipéptido SYN-AKE® para suavizar líneas de expresión en la frente y contorno de ojos."
-        },
-        "offers": {
-          "@type": "Offer",
-          "price": "79.00",
-          "priceCurrency": "USD",
-          "priceValidUntil": "2026-12-31",
-          "validFrom": "2026-01-01",
-          "availability": "https://schema.org/InStock",
-          "url": "https://fa90bat349vj5m8h47ps5z4k7l.hop.clickbank.net",
-          "hasMerchantReturnPolicy": {
-            "@type": "MerchantReturnPolicy",
-            "applicableCountry": "US",
-            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-            "merchantReturnDays": 60,
-            "returnMethod": "https://schema.org/ReturnByMail",
-            "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility"
-          },
-          "shippingDetails": {
-            "@type": "OfferShippingDetails",
-            "shippingRate": {
-              "@type": "MonetaryAmount",
-              "value": "0.00",
-              "currency": "USD"
+      "@type": "ItemList",
+      "@id": "https://dermaudit.com/es/#top-picks",
+      "name": "Mejores Soluciones Clínicas Antiedad, Manchas y Recuperación",
+      "description": "Análisis basado en evidencia de cremas de colágeno, sérums tensores, correctores de manchas, contorno de ojos y remodelación dérmica.",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Product",
+            "name": "Kollagen Intensiv",
+            "image": "https://dermaudit.com/Pictures/kollagen_boxbottle_lg.jpg",
+            "description": "Crema antienvejecimiento de fórmula suiza con péptido patentado Syn-Coll. El fabricante informa de un aumento del 354% en la síntesis de colágeno.",
+            "brand": {
+              "@type": "Brand",
+              "name": "Skinception"
             },
-            "shippingDestination": {
-              "@type": "DefinedRegion",
-              "addressCountry": "US"
-            },
-            "deliveryTime": {
-              "@type": "ShippingDeliveryTime",
-              "handlingTime": {
-                "@type": "QuantitativeValue",
-                "minValue": 0,
-                "maxValue": 1,
-                "unitCode": "DAY"
+            "review": {
+              "@type": "Review",
+              "author": {
+                "@type": "Organization",
+                "name": "Derm Audit Journal"
               },
-              "transitTime": {
-                "@type": "QuantitativeValue",
-                "minValue": 2,
-                "maxValue": 5,
-                "unitCode": "DAY"
-              }
-            }
-          },
-          "itemCondition": "https://schema.org/NewCondition"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "item": {
-        "@type": "Product",
-        "name": "Illuminatural 6i",
-        "image": "https://dermaudit.com/Pictures/illuminatural6i_icon001_600x600.jpg",
-        "description": "Sérum avanzado despigmentante con 4 activos botánicos inhibidores de tirosinasa para atenuar manchas oscuras y melasma.",
-        "brand": {
-          "@type": "Brand",
-          "name": "Skinception"
-        },
-        "review": {
-          "@type": "Review",
-          "author": {
-            "@type": "Organization",
-            "name": "Derm Audit Journal"
-          },
-          "datePublished": "2026-08-04",
-          "reviewBody": "Sérum aclarante sin hidroquinona formulado con Alfa-Arbutina y Niacinamida al 5% para unificar el tono cutáneo."
-        },
-        "offers": {
-          "@type": "Offer",
-          "price": "59.95",
-          "priceCurrency": "USD",
-          "priceValidUntil": "2026-12-31",
-          "validFrom": "2026-01-01",
-          "availability": "https://schema.org/OutOfStock",
-          "url": "https://www.illuminatural6i.com/ct/282956",
-          "hasMerchantReturnPolicy": {
-            "@type": "MerchantReturnPolicy",
-            "applicableCountry": "US",
-            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-            "merchantReturnDays": 90,
-            "returnMethod": "https://schema.org/ReturnByMail",
-            "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility"
-          },
-          "shippingDetails": {
-            "@type": "OfferShippingDetails",
-            "shippingRate": {
-              "@type": "MonetaryAmount",
-              "value": "0.00",
-              "currency": "USD"
+              "datePublished": "2026-08-04",
+              "reviewBody": "Fórmula suiza con péptido patentado Syn-Coll®. El fabricante informa de un aumento del 354% en la síntesis de colágeno y una reducción del 84% en las arrugas."
             },
-            "shippingDestination": {
-              "@type": "DefinedRegion",
-              "addressCountry": "US"
-            },
-            "deliveryTime": {
-              "@type": "ShippingDeliveryTime",
-              "handlingTime": {
-                "@type": "QuantitativeValue",
-                "minValue": 0,
-                "maxValue": 1,
-                "unitCode": "DAY"
+            "offers": {
+              "@type": "Offer",
+              "price": "59.95",
+              "priceCurrency": "USD",
+              "priceValidUntil": "2026-12-31",
+              "validFrom": "2026-01-01",
+              "availability": "https://schema.org/InStock",
+              "url": "https://www.kollagenintensiv.com/ct/282956",
+              "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "applicableCountry": "US",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                "merchantReturnDays": 90,
+                "returnMethod": "https://schema.org/ReturnByMail",
+                "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility"
               },
-              "transitTime": {
-                "@type": "QuantitativeValue",
-                "minValue": 2,
-                "maxValue": 5,
-                "unitCode": "DAY"
-              }
-            }
-          },
-          "itemCondition": "https://schema.org/NewCondition"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 4,
-      "item": {
-        "@type": "Product",
-        "name": "Dermefface FX7",
-        "image": "https://dermaudit.com/Pictures/dermafacereal.jpg",
-        "description": "Terapia de remodelación dérmica con Symglucan al 10% y Pro-Coll-One+ para atenuar cicatrices quirúrgicas y de acné.",
-        "brand": {
-          "@type": "Brand",
-          "name": "Skinception"
-        },
-        "review": {
-          "@type": "Review",
-          "author": {
-            "@type": "Organization",
-            "name": "Derm Audit Journal"
-          },
-          "datePublished": "2026-08-04",
-          "reviewBody": "Gel para cicatrices con 4 activos clave. Según el fabricante, Pro-Coll-One+ estimula la síntesis de colágeno Tipo I hasta en un 1.190% para emparejar la textura de la piel."
-        },
-        "offers": {
-          "@type": "Offer",
-          "price": "59.95",
-          "priceCurrency": "USD",
-          "priceValidUntil": "2026-12-31",
-          "validFrom": "2026-01-01",
-          "availability": "https://schema.org/InStock",
-          "url": "https://www.dermeffacefx7.com/ct/282956",
-          "hasMerchantReturnPolicy": {
-            "@type": "MerchantReturnPolicy",
-            "applicableCountry": "US",
-            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-            "merchantReturnDays": 90,
-            "returnMethod": "https://schema.org/ReturnByMail",
-            "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility"
-          },
-          "shippingDetails": {
-            "@type": "OfferShippingDetails",
-            "shippingRate": {
-              "@type": "MonetaryAmount",
-              "value": "0.00",
-              "currency": "USD"
-            },
-            "shippingDestination": {
-              "@type": "DefinedRegion",
-              "addressCountry": "US"
-            },
-            "deliveryTime": {
-              "@type": "ShippingDeliveryTime",
-              "handlingTime": {
-                "@type": "QuantitativeValue",
-                "minValue": 0,
-                "maxValue": 1,
-                "unitCode": "DAY"
+              "shippingDetails": {
+                "@type": "OfferShippingDetails",
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": "0.00",
+                  "currency": "USD"
+                },
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "deliveryTime": {
+                  "@type": "ShippingDeliveryTime",
+                  "handlingTime": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 0,
+                    "maxValue": 1,
+                    "unitCode": "DAY"
+                  },
+                  "transitTime": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 5,
+                    "unitCode": "DAY"
+                  }
+                }
               },
-              "transitTime": {
-                "@type": "QuantitativeValue",
-                "minValue": 2,
-                "maxValue": 5,
-                "unitCode": "DAY"
-              }
+              "itemCondition": "https://schema.org/NewCondition"
             }
-          },
-          "itemCondition": "https://schema.org/NewCondition"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 5,
-      "item": {
-        "@type": "Product",
-        "name": "Eyelasticity",
-        "image": "https://dermaudit.com/Pictures/eyelasticity800.jpg",
-        "description": "Age-defying eye therapy formulated with Eyeseryl, Syn-Coll, and Regu-Age to diminish under-eye dark circles, puffiness, and crow's feet.",
-        "brand": {
-          "@type": "Brand",
-          "name": "Skinception"
+          }
         },
-        "review": {
-          "@type": "Review",
-          "author": {
-            "@type": "Organization",
-            "name": "Derm Audit Journal"
-          },
-          "datePublished": "2026-09-03",
-          "reviewBody": "Multi-peptide eye therapy delivering significant reduction in periorbital puffiness and dark circle chromophore accumulation within 28 days."
-        },
-        "offers": {
-          "@type": "Offer",
-          "price": "59.95",
-          "priceCurrency": "USD",
-          "priceValidUntil": "2026-12-31",
-          "validFrom": "2026-01-01",
-          "availability": "https://schema.org/InStock",
-          "url": "https://www.naturalhealthsource.com/products/eyelasticity-age-defying-eye-therapy/?aid=282956",
-          "hasMerchantReturnPolicy": {
-            "@type": "MerchantReturnPolicy",
-            "applicableCountry": "US",
-            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-            "merchantReturnDays": 67,
-            "returnMethod": "https://schema.org/ReturnByMail",
-            "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility"
-          },
-          "shippingDetails": {
-            "@type": "OfferShippingDetails",
-            "shippingRate": {
-              "@type": "MonetaryAmount",
-              "value": "0.00",
-              "currency": "USD"
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Product",
+            "name": "Synevra UltraLift",
+            "image": "https://dermaudit.com/Pictures/synevra.jpg",
+            "description": "Sérum para líneas de expresión con complejo dipéptido SYN-AKE para relajar las contracciones musculares faciales.",
+            "brand": {
+              "@type": "Brand",
+              "name": "Synevra Clinical"
             },
-            "shippingDestination": {
-              "@type": "DefinedRegion",
-              "addressCountry": "US"
-            },
-            "deliveryTime": {
-              "@type": "ShippingDeliveryTime",
-              "handlingTime": {
-                "@type": "QuantitativeValue",
-                "minValue": 0,
-                "maxValue": 1,
-                "unitCode": "DAY"
+            "review": {
+              "@type": "Review",
+              "author": {
+                "@type": "Organization",
+                "name": "Derm Audit Journal"
               },
-              "transitTime": {
-                "@type": "QuantitativeValue",
-                "minValue": 2,
-                "maxValue": 5,
-                "unitCode": "DAY"
-              }
+              "datePublished": "2026-08-18",
+              "reviewBody": "Sérum tópico dirigido con dipéptido SYN-AKE® para suavizar líneas de expresión en la frente y contorno de ojos."
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "79.00",
+              "priceCurrency": "USD",
+              "priceValidUntil": "2026-12-31",
+              "validFrom": "2026-01-01",
+              "availability": "https://schema.org/InStock",
+              "url": "https://fa90bat349vj5m8h47ps5z4k7l.hop.clickbank.net",
+              "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "applicableCountry": "US",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                "merchantReturnDays": 60,
+                "returnMethod": "https://schema.org/ReturnByMail",
+                "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility"
+              },
+              "shippingDetails": {
+                "@type": "OfferShippingDetails",
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": "0.00",
+                  "currency": "USD"
+                },
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "deliveryTime": {
+                  "@type": "ShippingDeliveryTime",
+                  "handlingTime": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 0,
+                    "maxValue": 1,
+                    "unitCode": "DAY"
+                  },
+                  "transitTime": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 5,
+                    "unitCode": "DAY"
+                  }
+                }
+              },
+              "itemCondition": "https://schema.org/NewCondition"
             }
-          },
-          "itemCondition": "https://schema.org/NewCondition"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Product",
+            "name": "Illuminatural 6i",
+            "image": "https://dermaudit.com/Pictures/illuminatural6i_icon001_600x600.jpg",
+            "description": "Sérum avanzado despigmentante con 4 activos botánicos inhibidores de tirosinasa para atenuar manchas oscuras y melasma.",
+            "brand": {
+              "@type": "Brand",
+              "name": "Skinception"
+            },
+            "review": {
+              "@type": "Review",
+              "author": {
+                "@type": "Organization",
+                "name": "Derm Audit Journal"
+              },
+              "datePublished": "2026-08-04",
+              "reviewBody": "Sérum aclarante sin hidroquinona formulado con Alfa-Arbutina y Niacinamida al 5% para unificar el tono cutáneo."
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "59.95",
+              "priceCurrency": "USD",
+              "priceValidUntil": "2026-12-31",
+              "validFrom": "2026-01-01",
+              "availability": "https://schema.org/InStock",
+              "url": "https://www.illuminatural6i.com/ct/282956",
+              "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "applicableCountry": "US",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                "merchantReturnDays": 90,
+                "returnMethod": "https://schema.org/ReturnByMail",
+                "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility"
+              },
+              "shippingDetails": {
+                "@type": "OfferShippingDetails",
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": "0.00",
+                  "currency": "USD"
+                },
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "deliveryTime": {
+                  "@type": "ShippingDeliveryTime",
+                  "handlingTime": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 0,
+                    "maxValue": 1,
+                    "unitCode": "DAY"
+                  },
+                  "transitTime": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 5,
+                    "unitCode": "DAY"
+                  }
+                }
+              },
+              "itemCondition": "https://schema.org/NewCondition"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Product",
+            "name": "Eyelasticity",
+            "image": "https://dermaudit.com/Pictures/eyelasticity800.jpg",
+            "description": "Age-defying eye therapy formulated with Eyeseryl, Syn-Coll, and Regu-Age to diminish under-eye dark circles, puffiness, and crow's feet.",
+            "brand": {
+              "@type": "Brand",
+              "name": "Skinception"
+            },
+            "review": {
+              "@type": "Review",
+              "author": {
+                "@type": "Organization",
+                "name": "Derm Audit Journal"
+              },
+              "datePublished": "2026-09-03",
+              "reviewBody": "Multi-peptide eye therapy delivering significant reduction in periorbital puffiness and dark circle chromophore accumulation within 28 days."
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "59.95",
+              "priceCurrency": "USD",
+              "priceValidUntil": "2026-12-31",
+              "validFrom": "2026-01-01",
+              "availability": "https://schema.org/InStock",
+              "url": "https://www.naturalhealthsource.com/products/eyelasticity-age-defying-eye-therapy/?aid=282956",
+              "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "applicableCountry": "US",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                "merchantReturnDays": 67,
+                "returnMethod": "https://schema.org/ReturnByMail",
+                "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility"
+              },
+              "shippingDetails": {
+                "@type": "OfferShippingDetails",
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": "0.00",
+                  "currency": "USD"
+                },
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "deliveryTime": {
+                  "@type": "ShippingDeliveryTime",
+                  "handlingTime": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 0,
+                    "maxValue": 1,
+                    "unitCode": "DAY"
+                  },
+                  "transitTime": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 5,
+                    "unitCode": "DAY"
+                  }
+                }
+              },
+              "itemCondition": "https://schema.org/NewCondition"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "Product",
+            "name": "Dermefface FX7",
+            "image": "https://dermaudit.com/Pictures/dermafacereal.jpg",
+            "description": "Terapia de remodelación dérmica con Symglucan al 10% y Pro-Coll-One+ para atenuar cicatrices quirúrgicas y de acné.",
+            "brand": {
+              "@type": "Brand",
+              "name": "Skinception"
+            },
+            "review": {
+              "@type": "Review",
+              "author": {
+                "@type": "Organization",
+                "name": "Derm Audit Journal"
+              },
+              "datePublished": "2026-08-04",
+              "reviewBody": "Gel para cicatrices con 4 activos clave. Según el fabricante, Pro-Coll-One+ estimula la síntesis de colágeno Tipo I hasta en un 1.190% para emparejar la textura de la piel."
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "59.95",
+              "priceCurrency": "USD",
+              "priceValidUntil": "2026-12-31",
+              "validFrom": "2026-01-01",
+              "availability": "https://schema.org/InStock",
+              "url": "https://www.dermeffacefx7.com/ct/282956",
+              "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "applicableCountry": "US",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                "merchantReturnDays": 90,
+                "returnMethod": "https://schema.org/ReturnByMail",
+                "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility"
+              },
+              "shippingDetails": {
+                "@type": "OfferShippingDetails",
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": "0.00",
+                  "currency": "USD"
+                },
+                "shippingDestination": {
+                  "@type": "DefinedRegion",
+                  "addressCountry": "US"
+                },
+                "deliveryTime": {
+                  "@type": "ShippingDeliveryTime",
+                  "handlingTime": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 0,
+                    "maxValue": 1,
+                    "unitCode": "DAY"
+                  },
+                  "transitTime": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2,
+                    "maxValue": 5,
+                    "unitCode": "DAY"
+                  }
+                }
+              },
+              "itemCondition": "https://schema.org/NewCondition"
+            }
+          }
         }
-      }
+      ]
     }
   ]
 }
-</script>
-
-  <!-- JSON-LD FAQ Schema for AEO/SEO -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "¿En cuánto tiempo se observan los primeros resultados?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "La mayoría de los usuarios reporta mayor hidratación y firmeza en 7 a 14 días con péptidos tópicos como Kollagen Intensiv. Para arrugas profundas, manchas con Illuminatural 6i y cicatrices con Dermefface FX7, los resultados máximos ocurren entre 30 y 90 días conforme se completa el ciclo celular."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Puedo combinar cremas antiedad tópicas con tratamientos específicos para manchas o contorno de ojos?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí. Combinar sérums tópicos específicos con tratamientos para ojos o cicatrices es una estrategia de aplicación por capas basada en evidencia. Por ejemplo, aplicar Illuminatural 6i en manchas y Kollagen Intensiv en el rostro ofrece doble soporte de luminosidad y colágeno, mientras Dermefface FX7 trata cicatrices y textura dérmica."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Qué garantías de devolución ofrecen estos productos?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Las 5 fórmulas evaluadas cuentan con garantías completas de satisfacción. Los productos de Skinception (Kollagen Intensiv, Illuminatural 6i, Dermefface FX7) incluyen 90 días de garantía. Eyelasticity incluye 67 días de garantía y Synevra UltraLift ofrece 60 días de devolución total a través de su portal oficial."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Son seguras estas fórmulas para pieles sensibles?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí. Todas las fórmulas evitan agentes abrasivos como hidroquinona, mercurio, esteroides y parabenos. Recomendamos realizar una prueba de parche en el antebrazo durante 24 horas antes de comenzar cualquier rutina nueva."
-        }
-      }
-    ]
-  }
   </script>
-  <script defer data-domain="dermaudit.com" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
-
-  <!-- Announcement Bar -->
-  <div class="top-bar">
-    <div class="container top-bar-content text-center">
-      <span><i class="fa-solid fa-earth-americas"></i> <strong>Envíos Internacionales con Seguimiento (100+ Países)</strong> &bull; Garantía de devolución de 60-90 días &bull; <strong>Envío Gratis en los EE.UU.</strong></span>
-    </div>
-  </div>
-
-  <!-- Header Navigation -->
-  <header class="header">
-    <div class="container header-container">
-      <a href="index.html" class="logo">
-        <span class="logo-accent">DERM</span> AUDIT <span class="logo-sub">JOURNAL</span>
+  <!-- Skip link -->
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+  
+  <!-- Header / Nav -->
+  <header class="nav" role="banner">
+    <div class="wrap">
+      <a class="brand" href="/es/" aria-label="Inicio DermAudit">
+        <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3l11 6v12l-11 8-11-8V9z" fill="none" stroke="#a66bff" stroke-width="2.2"/><circle cx="16" cy="15" r="3.2" fill="#4fdcff"/></svg>
+        Derm<b>Audit</b>
       </a>
-
-      <nav class="nav" id="navMenu">
-        <a href="index.html" class="nav-link active">Inicio</a>
-        <div class="nav-item-dropdown">
-          <button type="button" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
-            Análisis <i class="fa-solid fa-chevron-down chevron-sm"></i>
-          </button>
-          <div class="dropdown-menu">
-            <div class="dropdown-category">
-              <div class="dropdown-category-title"><i class="fa-solid fa-hourglass-half"></i> Antienvejecimiento y Arrugas</div>
-              <a href="kollagen-intensiv-review.html" class="dropdown-item">Kollagen Intensiv™ (Análisis)</a>
-              <a href="synevra-ultralift-review.html" class="dropdown-item">Synevra UltraLift™ (Sérum)</a>
-            </div>
-            <div class="dropdown-divider"></div>
-            <div class="dropdown-category">
-              <div class="dropdown-category-title"><i class="fa-solid fa-sun"></i> Manchas y Luminosidad</div>
-              <a href="illuminatural-6i-review.html" class="dropdown-item">Illuminatural 6i™</a>
-              <a href="eyelasticity-review.html" class="dropdown-item">Eyelasticity™</a>
-            </div>
-            <div class="dropdown-divider"></div>
-            <div class="dropdown-category">
-              <div class="dropdown-category-title"><i class="fa-solid fa-bandage"></i> Cicatrices y Recuperación Dérmica</div>
-              <a href="dermefface-fx7-review.html" class="dropdown-item">Dermefface FX7® (Cicatrices)</a>
-            </div>
-            <div class="dropdown-divider"></div>
-            <a href="comparison.html" class="dropdown-item dropdown-item-highlight"><i class="fa-solid fa-scale-balanced"></i> Matriz Comparativa Completa</a>
-            <a href="skincare-conflict-matrix.html" class="dropdown-item dropdown-item-highlight"><i class="fa-solid fa-flask"></i> Matriz de Conflictos Activos</a>
-          </div>
-        </div>
-        <a href="blog.html" class="nav-link">Revista</a>
-        <a href="comparison.html" class="nav-link">Comparativa</a>
-        <a href="skincare-conflict-matrix.html" class="nav-link">Matriz de Conflictos <span class="nav-badge">Gratis</span></a>
-        <div class="nav-item-dropdown lang-dropdown">
-          <button type="button" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
-            <i class="fa-solid fa-globe"></i> ES <i class="fa-solid fa-chevron-down chevron-xs"></i>
-          </button>
-          <div class="dropdown-menu dropdown-menu-lang">
-            <a href="../index.html" class="dropdown-item" lang="en"><span class="flag-icon" aria-hidden="true">🇺🇸</span> English (US)</a>
-            <a href="index.html" class="dropdown-item active" lang="es"><span class="flag-icon" aria-hidden="true">🇪🇸</span> Español</a>
-            <a href="../de/index.html" class="dropdown-item" lang="de"><span class="flag-icon" aria-hidden="true">🇩🇪</span> Deutsch</a>
-            <a href="../fr/index.html" class="dropdown-item" lang="fr"><span class="flag-icon" aria-hidden="true">🇫🇷</span> Français</a>
-          </div>
-        </div>
+      <div class="tele" aria-label="Telemetría del sistema">
+        <span><i class="dot"></i>Motor en línea</span>
+        <span class="hide-s" id="clock">--:--:-- UTC</span>
+        <span class="hide-s">Comprobaciones con orden</span>
+      </div>
+      <nav class="links" aria-label="Navegación principal">
+        <a href="/es/#matrix">Matriz</a>
+        <a href="/es/reviews/">Análisis</a>
+        <a href="/es/tools/routine-planner.html">Planificador</a>
+        <a href="/es/comparison.html">Comparativa</a>
+        <a href="/es/ingredients/">Activos</a>
+        <a href="/es/faq.html">FAQ</a>
+        <a href="/es/blog/">Revista</a>
       </nav>
-
-      <div class="header-actions">
-        <a href="#top-picks" class="btn btn-primary btn-sm">Ver Mejores Opciones</a>
-        <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menú" aria-expanded="false" aria-controls="navMenu">
-          <i class="fa-solid fa-bars"></i>
+      <div class="lang-switcher">
+        <button type="button" class="lang-btn" aria-expanded="false" aria-controls="lang-menu" aria-label="ES — Idioma: Español">
+          <span class="flag" aria-hidden="true">🇪🇸</span> ES
         </button>
+        <ul id="lang-menu" hidden>
+          <li><a href="https://dermaudit.com/" lang="en"><span class="flag" aria-hidden="true">🇺🇸</span> English</a></li>
+          <li><a href="https://dermaudit.com/es/" lang="es" aria-current="page"><span class="flag" aria-hidden="true">🇪🇸</span> Español</a></li>
+          <li><a href="https://dermaudit.com/de/" lang="de"><span class="flag" aria-hidden="true">🇩🇪</span> Deutsch</a></li>
+          <li><a href="https://dermaudit.com/fr/" lang="fr"><span class="flag" aria-hidden="true">🇫🇷</span> Français</a></li>
+        </ul>
       </div>
     </div>
   </header>
-
-  <main id="main-content">
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-text">
-        <div class="badge badge-gold">
-          <i class="fa-solid fa-award"></i> Guía del Consumidor 2026
+  
+  <!-- Main -->
+  <main id="main" role="main">
+    <div class="wrap">
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="hero-title">
+        <h1 id="hero-title">Analice <span class="accent">conflictos</span> y <span class="accent">sinergias</span> entre activos</h1>
+        <p class="hero-sub">Seleccione sus activos. Obtenga veredictos basados en evidencia. Diseñe su rutina.</p>
+        <div class="stats">
+          <div class="glass stat"><span class="num">5</span><span class="lbl">Fórmulas analizadas</span></div>
+          <div class="glass stat"><span class="num" data-matrix-count="ordered">42</span><span class="lbl">Comprobaciones por orden</span></div>
+          <div class="glass stat"><span class="num">60–90</span><span class="lbl">Días de garantía</span></div>
         </div>
-        <h1 class="hero-title">Arrugas, Manchas y Cicatrices: Análisis de Activos y Guía de Combinación</h1>
-        <p class="hero-subtitle">
-          Analizamos las principales fórmulas clínicas con péptidos documentados, inhibidores de melanina y remodelación tisular. Explora nuestro análisis basado en evidencia de 5 soluciones destacadas.
-        </p>
-
-        <div class="hero-stats">
-          <div class="stat-item">
-            <span class="stat-num">5</span>
-            <span class="stat-label">Fórmulas Analizadas</span>
+      </section>
+      
+            <!-- Conflict Matrix Tool -->
+      <section id="matrix" class="flush-top" aria-labelledby="mx-h">
+        <h2 id="mx-h" class="sr-only">Matriz de Conflictos de Ingredientes</h2>
+        <div class="hud" role="region" aria-label="Matriz de conflictos">
+          <div class="glass panel">
+            <h3>Seleccionar activos <small id="count">0 / 2</small></h3>
+            <div class="slots">
+              <div class="slot" id="slot-a"><span>Espacio A</span><strong>Vacío</strong></div>
+              <div class="x" aria-hidden="true">×</div>
+              <div class="slot" id="slot-b"><span>Espacio B</span><strong>Vacío</strong></div>
+            </div>
+            <label for="filter-a" class="slot-label">Ingrediente A</label>
+            <input id="filter-a" class="search" type="search" placeholder="Filtrar: retinol, ácido, BHA..." autocomplete="off">
+            <div class="chips" id="chips-a" role="group" aria-label="Opciones de ingrediente A"></div>
+            <label for="filter-b" class="slot-label">Ingrediente B</label>
+            <input id="filter-b" class="search" type="search" placeholder="Filtrar: retinol, ácido, BHA..." autocomplete="off">
+            <div class="chips" id="chips-b" role="group" aria-label="Opciones de ingrediente B"></div>
+            <div class="btns">
+              <button type="button" class="btn" id="run-btn" disabled>Analizar <i class="fa-solid fa-crosshairs" aria-hidden="true"></i></button>
+              <button type="button" class="btn ghost" id="swap-btn" disabled>Intercambiar</button>
+              <button type="button" class="btn ghost" id="clear-btn"><i class="fa-solid fa-rotate-left"></i> Limpiar</button>
+            </div>
           </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <span class="stat-num">42</span>
-            <span class="stat-label">Reglas de interacción analizadas</span>
+          <div class="glass panel">
+            <h3>Matriz de interacciones <small>toca una celda para evaluar un par</small></h3>
+            <div class="grid-scroll">
+              <div class="grid" id="grid" role="group" aria-label="Matriz de interacciones"></div>
+            </div>
+            <div class="legend">
+              <span><i class="i-s"></i>Sinergia</span>
+              <span><i class="i-b"></i>Conflicto</span>
+              <span><i class="i-n"></i>Neutro / seguro</span>
+            </div>
+            <p class="grid-note">Fila = aplicada primero · Columna = aplicada después</p>
           </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <span class="stat-num">60-90 Días</span>
-            <span class="stat-label">Garantías de devolución</span>
-          </div>
+          <output class="glass out" id="output" aria-live="polite" hidden>
+            <p class="idle">&gt; esperando selección. Elige dos activos o toca una celda para analizar.</p>
+          </output>
         </div>
-
-        <div class="hero-cta-group">
-          <a href="#skin-quiz" class="btn btn-gold btn-lg">
-            <i class="fa-solid fa-list-check"></i> Test Facial de 30 Segundos
-          </a>
-          <a href="#top-picks" class="btn btn-secondary btn-lg">
-            <i class="fa-solid fa-layer-group"></i> Explorar 5 Fórmulas Seleccionadas
-          </a>
+      </section>
+      
+      <!-- Top Picks / Reviews Section -->
+      <section class="cards-section" id="reviews-section" aria-labelledby="reviews-title">
+        <div class="section-head">
+          <h2 id="reviews-title" class="section-title">Fórmulas destacadas por categoría</h2>
+          <a href="/es/reviews/" class="btn btn-ghost">Todos los análisis <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-
-        <p class="ftc-micro">
-          <i class="fa-solid fa-shield-halved"></i> Reseñas editoriales. Los enlaces de afiliado están señalados. • Fórmulas con ingredientes estudiados. • <a href="#disclosure">Divulgación de Afiliados</a>
-        </p>
-      </div>
-
-      <div class="hero-visual">
-        <div class="hero-selector-card">
-          <!-- Category Selector Tabs -->
-          <div class="hero-selector-tabs" role="tablist" aria-label="Categorías de Soluciones Clínicas">
-            <button class="hero-tab-btn active" role="tab" aria-selected="true" id="hero-tab-1" aria-controls="hero-panel-1">
-              <i class="fa-solid fa-hourglass-half"></i>
-              <span>Antiedad</span>
-            </button>
-            <button class="hero-tab-btn" role="tab" aria-selected="false" id="hero-tab-2" aria-controls="hero-panel-2">
-              <i class="fa-solid fa-sun"></i>
-              <span>Manchas</span>
-            </button>
-            <button class="hero-tab-btn" role="tab" aria-selected="false" id="hero-tab-3" aria-controls="hero-panel-3">
-              <i class="fa-solid fa-bandage"></i>
-              <span>Cicatrices</span>
-            </button>
-          </div>
-
-          <!-- Panel 1: Anti-Aging -->
-          <div class="hero-tab-panel active" id="hero-panel-1" role="tabpanel" aria-labelledby="hero-tab-1">
-            <div class="hero-panel-badge"><i class="fa-solid fa-award"></i> Solución Antiedad #1</div>
-            <img src="../img/optimized/kollagen_boxbottle_lg.webp" alt="Kollagen Intensiv Tarro" class="hero-panel-img u-inl-75" width="700" height="357" fetchpriority="high">
-            <h2 class="hero-panel-title">Kollagen Intensiv™</h2>
-            <p class="hero-panel-desc">El fabricante informa que el péptido suizo Syn-Coll® acelera la síntesis de colágeno un 354% para alisar arrugas profundas.</p>
-            <div class="hero-panel-actions">
-              <a href="https://www.kollagenintensiv.com/ct/282956" class="btn btn-gold btn-block affiliate-link" data-product="kollagen" target="_blank" rel="noopener nofollow sponsored">
-                Ver Oferta <i class="fa-solid fa-arrow-right"></i>
-              </a>
-              <a href="kollagen-intensiv-review.html" class="btn btn-secondary btn-sm btn-block">
-                <i class="fa-solid fa-file-lines"></i> Leer Análisis Completo
-              </a>
-            </div>
-            <div class="hero-panel-secondary-tag">
-              <i class="fa-solid fa-check"></i> Incluye también Synevra UltraLift™
-            </div>
-          </div>
-
-          <!-- Panel 2: Dark Spots & Brightening -->
-          <div class="hero-tab-panel" id="hero-panel-2" role="tabpanel" aria-labelledby="hero-tab-2" hidden>
-            <div class="hero-panel-badge"><i class="fa-solid fa-award"></i> Corrector de Manchas #1</div>
-            <img src="../img/optimized/illuminatural6i_icon001_600x600.webp" alt="Illuminatural 6i Dosificador" class="hero-panel-img u-inl-76" width="600" height="600" loading="lazy" decoding="async">
-            <h2 class="hero-panel-title">Illuminatural 6i™</h2>
-            <p class="hero-panel-desc">4 activos botánicos avanzados bloquean la tirosinasa y aclaran manchas solares sin hidroquinona.</p>
-            <div class="u-inl-77"><i class="fa-solid fa-clock-rotate-left"></i> Reposición Pendiente &bull; Dirige al Catálogo</div>
-            <div class="hero-panel-actions">
-              <a href="https://www.illuminatural6i.com/ct/282956" class="btn btn-gold btn-block affiliate-link" data-product="illuminatural" target="_blank" rel="noopener nofollow sponsored">
-                Ver Estado de Stock <i class="fa-solid fa-arrow-right"></i>
-              </a>
-              <a href="illuminatural-6i-review.html" class="btn btn-secondary btn-sm btn-block">
-                <i class="fa-solid fa-file-lines"></i> Leer Análisis Completo
-              </a>
-            </div>
-            <div class="hero-panel-secondary-tag">
-              <i class="fa-solid fa-check"></i> Incluye también Eyelasticity™ Eye Therapy
-            </div>
-          </div>
-
-          <!-- Panel 3: Scars & Recovery -->
-          <div class="hero-tab-panel" id="hero-panel-3" role="tabpanel" aria-labelledby="hero-tab-3" hidden>
-            <div class="hero-panel-badge"><i class="fa-solid fa-award"></i> Tratamiento de Cicatrices #1</div>
-            <img src="../img/optimized/dermafacereal.webp" alt="Dermefface FX7 Tubo" class="hero-panel-img u-inl-78" width="419" height="747" loading="lazy" decoding="async">
-            <h2 class="hero-panel-title">Dermefface FX7®</h2>
-            <p class="hero-panel-desc">10% Symglucan® y Pro-Coll-One+ multiplican el colágeno Tipo I para regenerar y alisar cicatrices.</p>
-            <div class="hero-panel-actions">
-              <a href="https://www.dermeffacefx7.com/ct/282956" class="btn btn-gold btn-block affiliate-link" data-product="dermefface" target="_blank" rel="noopener nofollow sponsored">
-                Ver Oferta <i class="fa-solid fa-arrow-right"></i>
-              </a>
-              <a href="dermefface-fx7-review.html" class="btn btn-secondary btn-sm btn-block">
-                <i class="fa-solid fa-file-lines"></i> Leer Análisis Completo
-              </a>
-            </div>
-            <div class="hero-panel-secondary-tag">
-              <i class="fa-solid fa-check"></i> Complejo Symglucan® al 10% y Pro-Coll-One+
-            </div>
-          </div>
+        <div class="cards" id="reviews-grid"></div>
+      </section>
+      
+      <!-- Latest Research / Blog Section -->
+      <section class="posts-section" id="blog-section" aria-labelledby="blog-title">
+        <div class="section-head">
+          <h2 id="blog-title" class="section-title">Últimas investigaciones</h2>
+          <a href="/es/blog/" class="btn btn-ghost">Todos los artículos <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-      </div>
+        <div class="posts" id="blog-grid"></div>
+      </section>
     </div>
-  </section>
-
-  <section class="section-sm" id="conflict-matrix-teaser" aria-labelledby="teaser-heading">
-    <div class="container text-center">
-      <div class="teaser-card">
-        <h2 class="category-main-title" id="teaser-heading">Comprueba dos activos antes de combinarlos</h2>
-        <p class="teaser-subtext">Elige tus activos y descubre qué parejas tienen una regla de interacción documentada.</p>
-        <div>
-          <a href="skincare-conflict-matrix.html?actives=retinol,l-ascorbic-acid" class="btn btn-gold">
-            Ver ejemplo en directo: retinol con ácido L-ascórbico <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Key Highlights / Badges -->
-  <section class="trust-bar section-sm bg-light">
-    <div class="container trust-grid">
-      <div class="trust-item reveal reveal-delay-1">
-        <i class="fa-solid fa-microscope trust-icon"></i>
-        <div>
-          <div class="trust-title">Péptidos y Activos Patentados</div>
-          <p>Syn-Coll®, SYN-AKE® y Symglucan®</p>
-        </div>
-      </div>
-      <div class="trust-item reveal reveal-delay-2">
-        <i class="fa-solid fa-ban trust-icon"></i>
-        <div>
-          <div class="trust-title">Estándares de Formulación Limpia</div>
-          <p>Cero Hidroquinona, Mercurio o Esteroides</p>
-        </div>
-      </div>
-      <div class="trust-item reveal reveal-delay-3">
-        <i class="fa-solid fa-truck-fast trust-icon"></i>
-        <div>
-          <div class="trust-title">Envíos Globales con Rastreo</div>
-          <p>Entrega rápida y discreta internacional</p>
-        </div>
-      </div>
-      <div class="trust-item reveal reveal-delay-4">
-        <i class="fa-solid fa-rotate-left trust-icon"></i>
-        <div>
-          <div class="trust-title">Garantías de 60 a 90 Días</div>
-          <p>Devolución directa del fabricante</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Main Top Picks Section -->
-  <section class="section" id="top-picks">
-    <div class="container">
-      <!-- CATEGORY 1: ANTI-AGING -->
-      <div class="category-block reveal">
-        <div class="category-header-wrap text-center">
-          <span class="category-badge-pill"><i class="fa-solid fa-hourglass-half"></i> Categoría 1</span>
-          <h2 class="category-main-title">Antienvejecimiento y Regeneración de Colágeno</h2>
-          <p class="category-subtext">Soluciones clínicas dirigidas a la regeneración de colágeno, relajación de microcontracciones y longevidad celular interna.</p>
-        </div>
-
-        <div class="category-product-grid">
-          <!-- Card 1: Kollagen Intensiv -->
-          <div class="product-card-vertical" id="kollagen-card">
-            <span class="card-award-ribbon"><i class="fa-solid fa-star"></i> Selección: Renovación de Colágeno</span>
-            <div class="img-showcase">
-              <img class="u-inl-75" src="../img/optimized/kollagen_boxbottle_lg.webp" alt="Kollagen Intensiv Crema Antiarrugas" loading="lazy" width="700" height="357">
-            </div>
-            <h3>Kollagen Intensiv™</h3>
-            <div class="product-brand-sub">de Skinception • Fórmula Suiza</div>
-            <p class="product-summary-text">
-              El fabricante informa que el péptido suizo Syn-Coll® acelera la síntesis de colágeno en un 354% para alisar arrugas profundas y apoyar la firmeza cutánea.
-            </p>
-            <div class="product-ingredient-chips">
-              <span class="ingredient-chip">Syn-Coll® (Palmitoil Tripéptido-5)</span>
-              <span class="ingredient-chip">Ácido Hialurónico</span>
-              <span class="ingredient-chip">Manteca de Karité</span>
-              <span class="ingredient-chip">Vitamina E</span>
-            </div>
-            <div class="product-meta-row">
-              <div class="product-meta-price">$59.95 <small>/ tarro</small></div>
-              <div class="product-meta-guarantee"><i class="fa-solid fa-shield-halved"></i> Garantía 90 Días</div>
-            </div>
-            <div class="product-actions-stacked">
-              <a href="https://www.kollagenintensiv.com/ct/282956" class="btn btn-gold btn-block affiliate-link" data-product="kollagen" target="_blank" rel="noopener nofollow sponsored">
-                <i class="fa-solid fa-cart-shopping"></i> Ver Oferta
-              </a>
-              <a href="kollagen-intensiv-review.html" class="btn btn-secondary btn-sm btn-block">
-                <i class="fa-solid fa-file-lines"></i> Leer Análisis Completo
-              </a>
-            </div>
-          </div>
-
-          <!-- Card 2: Synevra UltraLift -->
-          <div class="product-card-vertical" id="synevra-card">
-            <span class="card-award-ribbon"><i class="fa-solid fa-star"></i> Selección: Líneas de Expresión</span>
-            <div class="img-showcase">
-              <img class="u-inl-79" src="../img/optimized/synevra.webp" alt="Synevra UltraLift Sérum Antiarrugas" loading="lazy" width="622" height="604">
-            </div>
-            <h3>Synevra UltraLift™</h3>
-            <div class="product-brand-sub">de Synevra Clinical • Sistema Dual</div>
-            <p class="product-summary-text">
-              El fabricante informa que el dipéptido SYN-AKE® relaja las microcontracciones musculares hasta en un 82% para suavizar surcos de la frente y patas de gallo.
-            </p>
-            <div class="product-ingredient-chips">
-              <span class="ingredient-chip">Complejo Dipéptido SYN-AKE®</span>
-              <span class="ingredient-chip">Hialuronato de Sodio</span>
-              <span class="ingredient-chip">VitaLock™</span>
-              <span class="ingredient-chip">Vitaminas C y E</span>
-            </div>
-            <div class="product-meta-row">
-              <div class="product-meta-price">$79.00 <small>/ unidad</small></div>
-              <div class="product-meta-guarantee"><i class="fa-solid fa-shield-halved"></i> Garantía 60 Días</div>
-            </div>
-            <div class="product-actions-stacked">
-              <a href="https://fa90bat349vj5m8h47ps5z4k7l.hop.clickbank.net" class="btn btn-gold btn-block affiliate-link" data-product="synevra" target="_blank" rel="noopener nofollow sponsored">
-                <i class="fa-solid fa-cart-shopping"></i> Ver Oferta Oficial
-              </a>
-              <a href="synevra-ultralift-review.html" class="btn btn-secondary btn-sm btn-block">
-                <i class="fa-solid fa-file-lines"></i> Leer Análisis Completo
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- CATEGORY 2: DARK SPOTS -->
-      <div class="category-block reveal">
-        <div class="category-header-wrap text-center">
-          <span class="category-badge-pill"><i class="fa-solid fa-sun"></i> Categoría 2</span>
-          <h2 class="category-main-title">Manchas Oscuras e Hiperpigmentación</h2>
-          <p class="category-subtext">Inhibidores botánicos avanzados de tirosinasa diseñados para interrumpir la sobreproducción de melanina sin blanqueadores tóxicos.</p>
-        </div>
-
-        <div class="category-product-grid">
-          <!-- Card 1: Illuminatural 6i -->
-          <div class="product-card-vertical" id="illuminatural-card">
-            <span class="card-award-ribbon"><i class="fa-solid fa-star"></i> Selección: Luminosidad Botánica</span>
-            <div class="img-showcase">
-              <img class="u-inl-76" src="../img/optimized/illuminatural6i_icon001_600x600.webp" alt="Illuminatural 6i Sérum Aclarador" loading="lazy" width="600" height="600">
-            </div>
-            <h3>Illuminatural 6i™</h3>
-            <div class="product-brand-sub">de Skinception • Dosificador Airless</div>
-            <div class="u-inl-80"><i class="fa-solid fa-clock-rotate-left"></i> Reposición Pendiente &bull; Dirige al Catálogo</div>
-            <p class="product-summary-text">
-              Diseñado con 4 activos botánicos para bloquear la tirosinasa y aclarar manchas solares, melasma y marcas de acné sin hidroquinona.
-            </p>
-            <div class="product-ingredient-chips">
-              <span class="ingredient-chip">Lactato de Sodio</span>
-              <span class="ingredient-chip">Niacinamida (5%)</span>
-              <span class="ingredient-chip">Alfa-Arbutina</span>
-              <span class="ingredient-chip">Vitamina C (MAP)</span>
-              <span class="ingredient-chip">Whitonyl®</span>
-            </div>
-            <div class="product-meta-row">
-              <div class="product-meta-price">$59.95 <small>/ frasco</small></div>
-              <div class="product-meta-guarantee"><i class="fa-solid fa-shield-halved"></i> Garantía 90 Días</div>
-            </div>
-            <div class="product-actions-stacked">
-              <a href="https://www.illuminatural6i.com/ct/282956" class="btn btn-gold btn-block affiliate-link" data-product="illuminatural" target="_blank" rel="noopener nofollow sponsored">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Estado de Stock
-              </a>
-              <a href="illuminatural-6i-review.html" class="btn btn-secondary btn-sm btn-block">
-                <i class="fa-solid fa-file-lines"></i> Leer Análisis Completo
-              </a>
-            </div>
-          </div>
-
-          <!-- Card 2: Eyelasticity -->
-          <div class="product-card-vertical" id="eyelasticity-card">
-            <span class="card-award-ribbon"><i class="fa-solid fa-star"></i> Selección: Terapia Periorbital</span>
-            <div class="img-showcase">
-              <img class="u-inl-81" src="../img/optimized/eyelasticity800.webp" alt="Eyelasticity Terapia Ocular" loading="lazy" width="798" height="800">
-            </div>
-            <h3>Eyelasticity™</h3>
-            <div class="product-brand-sub">de Skinception • Fórmula Médica</div>
-            <p class="product-summary-text">
-              Terapia peptídica médica con Eyeseryl® y Regu®-Age para drenar líquidos acumulados, sellar capilares y aclarar ojeras en 15 días.
-            </p>
-            <div class="product-ingredient-chips">
-              <span class="ingredient-chip">Eyeseryl® (Tetrapéptido-5)</span>
-              <span class="ingredient-chip">Complejo Regu®-Age</span>
-              <span class="ingredient-chip">Syn®-Coll</span>
-              <span class="ingredient-chip">Pro-Coll-One+</span>
-            </div>
-            <div class="product-meta-row">
-              <div class="product-meta-price">$59.95 <small>/ frasco</small></div>
-              <div class="product-meta-guarantee"><i class="fa-solid fa-shield-halved"></i> Garantía 67 Días</div>
-            </div>
-            <div class="product-actions-stacked">
-              <a href="https://www.naturalhealthsource.com/products/eyelasticity-age-defying-eye-therapy/?aid=282956" class="btn btn-gold btn-block affiliate-link" data-product="eyelasticity" target="_blank" rel="noopener nofollow sponsored">
-                <i class="fa-solid fa-cart-shopping"></i> Ver Oferta
-              </a>
-              <a href="eyelasticity-review.html" class="btn btn-secondary btn-sm btn-block">
-                <i class="fa-solid fa-file-lines"></i> Leer Análisis Completo
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- CATEGORY 3: DERMAL SCAR & TEXTURE REMODELING -->
-      <div class="category-block reveal">
-        <div class="category-header-wrap text-center">
-          <span class="category-badge-pill"><i class="fa-solid fa-bandage"></i> Categoría 3</span>
-          <h2 class="category-main-title">Remodelación de Cicatrices y Textura Dérmica</h2>
-          <p class="category-subtext">Tratamiento clínico avanzado formulado con Symglucan® al 10% y Pro-Coll-One+ para la regeneración y aplanamiento de cicatrices.</p>
-        </div>
-
-        <div class="category-product-grid">
-          <!-- Card 5: Dermefface FX7 -->
-          <div class="product-card-vertical" id="dermefface-card">
-            <span class="card-award-ribbon"><i class="fa-solid fa-star"></i> Selección: Remodelación de Cicatrices</span>
-            <div class="img-showcase">
-              <img class="u-inl-78" src="../img/optimized/dermafacereal.webp" alt="Dermefface FX7 Terapia de Cicatrices" loading="lazy" width="419" height="747">
-            </div>
-            <h3>Dermefface FX7®</h3>
-            <div class="product-brand-sub">de Skinception • Gel de Remodelación Dérmica</div>
-            <p class="product-summary-text">
-              Formulado con Symglucan al 10% y Pro-Coll-One+; el fabricante informa un aumento de hasta el 1.190% en colágeno Tipo I para ayudar a aplanar cicatrices quirúrgicas o de acné.
-            </p>
-            <div class="product-ingredient-chips">
-              <span class="ingredient-chip">Symglucan (10.0%)</span>
-              <span class="ingredient-chip">Pro-Coll-One+ (2.0%)</span>
-              <span class="ingredient-chip">Pentavitin (5.0%)</span>
-              <span class="ingredient-chip">DL-Pantenol (8.0%)</span>
-            </div>
-            <div class="product-meta-row">
-              <div class="product-meta-price">$59.95 <small>/ tubo</small></div>
-              <div class="product-meta-guarantee"><i class="fa-solid fa-shield-halved"></i> Garantía 90 Días</div>
-            </div>
-            <div class="product-actions-stacked">
-              <a href="https://www.dermeffacefx7.com/ct/282956" class="btn btn-gold btn-block affiliate-link" data-product="dermefface" target="_blank" rel="noopener nofollow sponsored">
-                <i class="fa-solid fa-cart-shopping"></i> Ver Oferta
-              </a>
-              <a href="dermefface-fx7-review.html" class="btn btn-secondary btn-sm btn-block">
-                <i class="fa-solid fa-file-lines"></i> Leer Análisis Completo
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Interactive Side-by-Side Comparison Matrix Banner -->
-  <section class="section" id="comparison">
-    <div class="container">
-      <div class="card text-center reveal comparison-banner-card">
-        <span class="badge badge-gold"><i class="fa-solid fa-scale-balanced"></i> MATRIZ DE COMPARACIÓN DE FÓRMULAS</span>
-        <h2>Compara las Fórmulas Lado a Lado</h2>
-        <p>
-          Analiza concentraciones de péptidos activos, datos de síntesis de colágeno, garantías de reembolso y precios frente a Synevra UltraLift, SkinCeuticals y SkinMedica en nuestra página de comparativa.
-        </p>
-        <a href="comparison.html" class="btn btn-gold btn-xl">
-          <i class="fa-solid fa-table-list"></i> Ver Matriz Comparativa Completa 2026
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Interactive 30-Second Skin Assessment Quiz -->
-  <section class="section" id="skin-quiz">
-    <div class="container">
-      <div class="quiz-box card reveal">
-        <div class="quiz-header text-center">
-          <span class="badge badge-gold"><i class="fa-solid fa-wand-magic-sparkles"></i> DIAGNÓSTICO PERSONALIZADO</span>
-          <h2>¿Qué Fórmula se Adapta Mejor a Tu Piel?</h2>
-          <p>Responde 3 preguntas rápidas para recibir una recomendación basada en evidencia entre nuestras 5 fórmulas evaluadas.</p>
-        </div>
-
-        <div class="quiz-body" id="quizBody">
-          <!-- Step 1: Target Concern -->
-          <div class="quiz-step active" data-step="1">
-            <h3 id="quiz-q1-heading">Pregunta 1 de 3: ¿Cuál es tu principal objetivo dérmico hoy?</h3>
-            <div class="quiz-options" role="group" data-quiz-group="radiogroup" aria-labelledby="quiz-q1-heading">
-              <button type="button" class="quiz-opt" data-quiz-step="1" data-quiz-value="wrinkles" aria-pressed="false">
-                <i class="fa-solid fa-face-smile-beam"></i>
-                <div>
-                  <strong>Arrugas Faciales y Pérdida de Firmeza:</strong> Regenerar colágeno, alisar líneas finas e hidratación profunda
-                </div>
-              </button>
-              <button type="button" class="quiz-opt" data-quiz-step="1" data-quiz-value="expression" aria-pressed="false">
-                <i class="fa-solid fa-bolt"></i>
-                <div>
-                  <strong>Líneas de Expresión y Entrecejo:</strong> Relajar la tensión dinámica de la frente y patas de gallo sin agujas
-                </div>
-              </button>
-              <button type="button" class="quiz-opt" data-quiz-step="1" data-quiz-value="eyebags" aria-pressed="false">
-                <i class="fa-solid fa-eye"></i>
-                <div>
-                  <strong>Ojeras Oscuras y Bolsas Oculares:</strong> Drenar retención de líquidos, cuidar microcapilares y suavizar patas de gallo
-                </div>
-              </button>
-              <button type="button" class="quiz-opt" data-quiz-step="1" data-quiz-value="darkspots" aria-pressed="false">
-                <i class="fa-solid fa-sun"></i>
-                <div>
-                  <strong>Manchas Oscuras y Melasma:</strong> Atenuar daño solar, manchas de edad y marcas de acné con seguridad
-                </div>
-              </button>
-              <button type="button" class="quiz-opt" data-quiz-step="1" data-quiz-value="scars" aria-pressed="false">
-                <i class="fa-solid fa-bandage"></i>
-                <div>
-                  <strong>Cicatrices y Remodelación Tisular:</strong> Suavizar incisiones quirúrgicas, marcas de lesiones o marcas de acné
-                </div>
-              </button>
-            </div>
-          </div>
-
-          <!-- Step 2: Preferred Routine -->
-          <div class="quiz-step" data-step="2">
-            <h3 id="quiz-q2-heading">Pregunta 2 de 3: ¿Qué formato de aplicación se adapta mejor a tu rutina?</h3>
-            <div class="quiz-options" role="group" data-quiz-group="radiogroup" aria-labelledby="quiz-q2-heading">
-              <button type="button" class="quiz-opt" data-quiz-step="2" data-quiz-value="cream" aria-pressed="false">
-                <i class="fa-solid fa-pump-soap"></i>
-                <div>
-                  <strong>Crema de Barrera Diaria:</strong> Rica crema hidratante de día y noche con protección de barrera prolongada
-                </div>
-              </button>
-              <button type="button" class="quiz-opt" data-quiz-step="2" data-quiz-value="serum" aria-pressed="false">
-                <i class="fa-solid fa-droplet"></i>
-                <div>
-                  <strong>Sérum Líquido Concentrado:</strong> Gotas concentradas de rápida absorción para zonas clave de alta potencia
-                </div>
-              </button>
-              <button type="button" class="quiz-opt" data-quiz-step="2" data-quiz-value="specialized" aria-pressed="false">
-                <i class="fa-solid fa-wand-magic-sparkles"></i>
-                <div>
-                  <strong>Aplicador Dirigido de Precisión:</strong> Aplicador o gel de tratamiento para manchas oscuras, contorno ocular o cicatrices
-                </div>
-              </button>
-            </div>
-            <div class="quiz-nav-actions">
-              <button type="button" class="btn btn-outline btn-sm mt-3 quiz-back-btn" data-quiz-back="1">
-                <i class="fa-solid fa-arrow-left"></i> Volver
-              </button>
-            </div>
-          </div>
-
-          <!-- Step 3: Age Range -->
-          <div class="quiz-step" data-step="3">
-            <h3 id="quiz-q3-heading">Pregunta 3 de 3: ¿Cuál es tu rango de edad u objetivo de intensidad?</h3>
-            <div class="quiz-options" role="group" data-quiz-group="radiogroup" aria-labelledby="quiz-q3-heading">
-              <button type="button" class="quiz-opt" data-quiz-step="3" data-quiz-value="20-39" aria-pressed="false">
-                <i class="fa-solid fa-clock"></i>
-                <div>
-                  <strong>20 a 39 Años (Prevención Temprana y Luminosidad):</strong> Frenar primeros signos y proteger la barrera
-                </div>
-              </button>
-              <button type="button" class="quiz-opt" data-quiz-step="3" data-quiz-value="40-59" aria-pressed="false">
-                <i class="fa-solid fa-hourglass-half"></i>
-                <div>
-                  <strong>40 a 59 Años (Rejuvenecimiento y Remodelación Activa):</strong> Estimular colágeno y unificar el tono cutáneo
-                </div>
-              </button>
-              <button type="button" class="quiz-opt" data-quiz-step="3" data-quiz-value="60+" aria-pressed="false">
-                <i class="fa-solid fa-shield-halved"></i>
-                <div>
-                  <strong>60+ Años (Cuidado Intensivo y Soporte Profundo):</strong> Alisado de líneas profundas y renovación celular intensiva
-                </div>
-              </button>
-            </div>
-            <div class="quiz-nav-actions">
-              <button type="button" class="btn btn-outline btn-sm mt-3 quiz-back-btn" data-quiz-back="2">
-                <i class="fa-solid fa-arrow-left"></i> Volver
-              </button>
-            </div>
-          </div>
-
-          <!-- Dynamic Results Card -->
-          <div class="quiz-result" id="quizResult" aria-live="polite" tabindex="-1">
-            <div class="result-badge">TU RECOMENDACIÓN PERSONALIZADA</div>
-            <h3 id="resultTitle">Resultado del Test</h3>
-            <p id="resultDesc">Explicación personalizada de la recomendación.</p>
-            <div class="result-product-wrap" id="resultProductWrap">
-              <!-- Rellenado dinámicamente vía app.js -->
-            </div>
-            <div class="quiz-result-actions">
-              <button type="button" class="btn btn-outline btn-sm mt-3 quiz-back-btn" data-quiz-back="3">
-                <i class="fa-solid fa-arrow-left"></i> Volver
-              </button>
-              <button type="button" class="btn btn-secondary btn-sm mt-3" data-quiz-reset="true">
-                <i class="fa-solid fa-rotate-left"></i> Repetir Test
-              </button>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Science & Ingredients Deep Dive -->
-  <section class="section bg-light" id="ingredients">
-    <div class="container">
-      <div class="section-header text-center reveal">
-        <span class="section-badge">CIENCIA DE FORMULACIÓN</span>
-        <h2 class="section-title">La Ciencia Detrás de los Ingredientes Activos</h2>
-        <p class="section-subtitle">Por qué los péptidos patentados y los aclaradores botánicos superan a las lociones genéricas.</p>
-      </div>
-
-      <div class="ingredients-grid">
-        <div class="ingredient-card card reveal reveal-delay-1">
-          <div class="ing-icon"><i class="fa-solid fa-dna"></i></div>
-          <h3>Syn-Coll® (Palmitoil Tripéptido-5)</h3>
-          <p>Un péptido diseñado para imitar el mecanismo natural del cuerpo que activa la síntesis de colágeno vía TGF-beta. Los datos del fabricante informan un incremento de hasta el +354% en la síntesis de colágeno.</p>
-        </div>
-
-        <div class="ingredient-card card reveal reveal-delay-2">
-          <div class="ing-icon"><i class="fa-solid fa-vial"></i></div>
-          <h3>Alfa-Arbutina y Niacinamida</h3>
-          <p>Derivada de la gayuba, la Alfa-Arbutina inhibe la enzima tirosinasa bloqueando la melanina sin adelgazar la piel ni generar efectos adversos tóxicos.</p>
-        </div>
-
-        <div class="ingredient-card card reveal reveal-delay-3">
-          <div class="ing-icon"><i class="fa-solid fa-droplet"></i></div>
-          <h3>Hialuronato de Sodio</h3>
-          <p>Retiene hasta 1.000 veces su peso en agua, atrayendo humedad hacia las capas dérmicas para rellenar líneas finas y restaurar la elasticidad de inmediato.</p>
-        </div>
-
-        <div class="ingredient-card card reveal reveal-delay-4">
-          <div class="ing-icon"><i class="fa-solid fa-seedling"></i></div>
-          <h3>Manteca de Karité y Extracto de Té Verde</h3>
-          <p>Ricos en ácidos grasos esenciales y antioxidantes que protegen la barrera cutánea frente a radicales libres y daño oxidativo por radiación UV.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Frequently Asked Questions (FAQ) -->
-  <section class="section" id="faq">
-    <div class="container">
-      <div class="section-header text-center reveal">
-        <span class="section-badge">¿TIENES DUDAS?</span>
-        <h2 class="section-title">Preguntas Frecuentes</h2>
-      </div>
-
-      <div class="faq-accordion card reveal">
-        <div class="faq-item">
-          <button class="faq-question" id="faq-btn-1" aria-expanded="false" aria-controls="faq-ans-1">
-            <span>¿En cuánto tiempo se observan los primeros resultados?</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="faq-answer" id="faq-ans-1" role="region" aria-labelledby="faq-btn-1">
-            <p>La mayoría de los usuarios reporta mayor hidratación y firmeza en 7 a 14 días con péptidos tópicos como Kollagen Intensiv. Para arrugas profundas, manchas con Illuminatural 6i y cicatrices con Dermefface FX7, los resultados máximos ocurren entre 30 y 90 días conforme se completa el ciclo celular.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" id="faq-btn-2" aria-expanded="false" aria-controls="faq-ans-2">
-            <span>¿Puedo combinar cremas antiedad tópicas con tratamientos específicos para manchas o contorno de ojos?</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="faq-answer" id="faq-ans-2" role="region" aria-labelledby="faq-btn-2">
-            <p>Sí. Combinar sérums tópicos específicos con tratamientos para ojos o cicatrices es una estrategia de aplicación por capas basada en evidencia. Por ejemplo, aplicar Illuminatural 6i en manchas y Kollagen Intensiv en el rostro ofrece doble soporte de luminosidad y colágeno, mientras Dermefface FX7 trata cicatrices y textura dérmica.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" id="faq-btn-3" aria-expanded="false" aria-controls="faq-ans-3">
-            <span>¿Qué garantías de devolución ofrecen estos productos?</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="faq-answer" id="faq-ans-3" role="region" aria-labelledby="faq-btn-3">
-            <p>Las 5 fórmulas evaluadas cuentan con garantías completas de satisfacción. Los productos de Skinception (Kollagen Intensiv, Illuminatural 6i, Dermefface FX7) incluyen 90 días de garantía. Eyelasticity incluye 67 días de garantía y Synevra UltraLift ofrece 60 días de devolución total a través de su portal oficial.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" id="faq-btn-4" aria-expanded="false" aria-controls="faq-ans-4">
-            <span>¿Son seguras estas fórmulas para pieles sensibles?</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="faq-answer" id="faq-ans-4" role="region" aria-labelledby="faq-btn-4">
-            <p>Sí. Todas las fórmulas evitan agentes abrasivos como hidroquinona, mercurio, esteroides y parabenos. Recomendamos realizar una prueba de parche en el antebrazo durante 24 horas antes de comenzar cualquier rutina nueva.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   </main>
-
-  <!-- Footer & Disclosures -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <!-- Col 1: Brand -->
-      <div class="footer-col">
-        <a href="index.html" class="logo text-white">
-          <span class="logo-accent">DERM</span> AUDIT <span class="logo-sub">JOURNAL</span>
-        </a>
-        <p class="footer-desc">
-            Revista independiente de análisis de ingredientes y cuidado de la piel con evaluaciones de cremas de péptidos, sérums iluminadores y fórmulas dirigidas.
+  
+  <!-- Footer -->
+  <footer class="fg" role="contentinfo">
+    <div class="wrap">
+      <div class="fg-inner">
+        <div class="fg-col">
+          <h2 class="fg-title">DermAudit Journal</h2>
+          <p>Análisis de ingredientes para el cuidado de la piel y auditorías de fórmulas clínicas basadas en evidencia. Sin artificios comerciales.</p>
+          <div class="fg-links">
+            <a href="/es/about.html">Sobre nosotros</a>
+            <a href="/es/methodology.html">Metodología</a>
+            <a href="/es/contact.html">Contacto</a>
+          </div>
+        </div>
+        <div class="fg-col">
+          <h2 class="fg-title">Herramientas y Centros</h2>
+          <div class="fg-links">
+            <a href="#matrix">Matriz de Conflictos</a>
+            <a href="/es/tools/routine-planner.html">Planificador de Rutina</a>
+            <a href="/es/comparison.html">Comparativa de Fórmulas</a>
+            <a href="/es/ingredients/">Activos Clave</a>
+            <a href="/es/faq.html">Preguntas Frecuentes</a>
+            <a href="/es/syn-ake-vs-argireline.html">Estudio de Péptidos</a>
+          </div>
+        </div>
+        <div class="fg-col">
+          <h2 class="fg-title">Legal y Divulgación</h2>
+          <div class="fg-links">
+            <a href="/es/privacy.html">Política de Privacidad</a>
+            <a href="/es/terms.html">Términos de Servicio</a>
+            <a href="/es/affiliate-disclosure.html">Divulgación de Afiliados</a>
+          </div>
+          <p class="fine-print">
+            <strong>Divulgación de afiliados:</strong> Colaboramos con SellHealth, ClickBank y Natural Health Source. Los enlaces a Kollagen Intensiv, Synevra UltraLift, Illuminatural 6i, Eyelasticity y Dermefface FX7 son enlaces de afiliados. Podemos recibir una comisión sin coste adicional para usted. Todos los productos incluyen garantías de devolución de 60 a 90 días según la política del fabricante.
           </p>
-      </div>
-
-      <!-- Col 2: Anti-Aging Reviews -->
-      <div class="footer-col">
-        <h3><i class="fa-solid fa-hourglass-half icon-gold-sm"></i> Análisis Antienvejecimiento</h3>
-        <ul>
-          <li><a href="kollagen-intensiv-review.html">Kollagen Intensiv™ (Colágeno)</a></li>
-          <li><a href="synevra-ultralift-review.html">Synevra UltraLift™ (Líneas)</a></li>
-        </ul>
-      </div>
-
-      <!-- Col 3: Targeted Therapy -->
-      <div class="footer-col">
-        <h3><i class="fa-solid fa-wand-magic-sparkles icon-gold-sm"></i> Terapias Dirigidas</h3>
-        <ul>
-          <li><a href="illuminatural-6i-review.html">Illuminatural 6i™ (Manchas)</a></li>
-          <li><a href="eyelasticity-review.html">Eyelasticity™ (Ojeras y Bolsas)</a></li>
-          <li><a href="dermefface-fx7-review.html">Dermefface FX7® (Cicatrices)</a></li>
-        </ul>
-      </div>
-
-      <!-- Col 4: Resources & Legal -->
-      <div class="footer-col">
-        <h3><i class="fa-solid fa-scale-balanced icon-gold-sm"></i> Recursos y Legal</h3>
-        <ul>
-          <li><a href="comparison.html">Matriz Comparativa 2026</a></li>
-          <li><a href="skincare-conflict-matrix.html">Matriz de Conflictos Activos</a></li>
-          <li><a href="blog.html">Revista de Estudios</a></li>
-          <li><a href="index.html#skin-quiz">Test Facial Personalizado</a></li>
-          <li><a class="link-muted-underline" href="about.html">Sobre nosotros</a> | <a class="link-muted-underline" href="methodology.html">Metodología</a> | <a class="link-muted-underline" href="contact.html">Contacto</a> | <a href="privacy.html">Política de Privacidad</a></li>
-          <li><a href="../links.html">Redes y Enlaces</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- FTC & Medical Disclaimer -->
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="disclaimer-box" id="disclosure">
-          <p><strong>Divulgación de Afiliados FTC:</strong> Derm Audit Journal es un sitio web de análisis independiente. Recibimos compensación económica de socios de redes de afiliados (incluidos SellHealth, ClickBank y Natural Health Source) cuando los usuarios adquieren productos mediante nuestros enlaces, sin costo adicional para usted. Los productos presentados cuentan con garantías de devolución del fabricante de 60 a 90 días.</p>
-          <p><strong>Aviso Médico:</strong> El contenido de este sitio web tiene fines exclusivamente informativos y no constituye asesoramiento médico ni pretende diagnosticar, tratar, curar o prevenir ninguna condición médica. Consulte siempre con un dermatólogo o profesional médico cualificado antes de iniciar un nuevo cuidado cutáneo.</p>
         </div>
-        <div class="copyright">
-          &copy; 2026 Derm Audit Journal. Todos los derechos reservados. | <a class="link-muted-underline" href="privacy.html">Política de Privacidad</a>
-        </div>
+      </div>
+      <div class="fg-bottom">
+        <p>&copy; 2026 DermAudit Journal. Todos los derechos reservados.</p>
       </div>
     </div>
   </footer>
-
-  <!-- Main Application Script -->
-  <script src="../app.js" defer></script>
-  <script src="../quiz.js" defer></script>
+  
+  <!-- Scripts -->
+  <script src="/app.js" defer></script>
+  <script src="/matrix.js" defer></script>
+  <script src="/home.js" defer></script>
 </body>
 </html>
