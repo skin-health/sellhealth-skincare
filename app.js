@@ -61,13 +61,55 @@
     });
   }
 
+  /* ---------- LANGUAGE SWITCHER ---------- */
+  var langSwitcherBound = false;
+  function initLangSwitcher() {
+    var switcher = document.querySelector(".lang-switcher");
+    if (!switcher || langSwitcherBound) return;
+    var btn = switcher.querySelector(".lang-btn") || switcher.querySelector("button[aria-controls='lang-menu']");
+    var menu = switcher.querySelector("#lang-menu") || document.getElementById("lang-menu");
+    if (!btn || !menu) return;
+    langSwitcherBound = true;
+
+    btn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      var isHidden = menu.hasAttribute("hidden");
+      if (isHidden) {
+        menu.removeAttribute("hidden");
+        btn.setAttribute("aria-expanded", "true");
+      } else {
+        menu.setAttribute("hidden", "");
+        btn.setAttribute("aria-expanded", "false");
+      }
+    });
+
+    document.addEventListener("click", function (e) {
+      if (!switcher.contains(e.target)) {
+        menu.setAttribute("hidden", "");
+        btn.setAttribute("aria-expanded", "false");
+      }
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !menu.hasAttribute("hidden")) {
+        menu.setAttribute("hidden", "");
+        btn.setAttribute("aria-expanded", "false");
+        btn.focus();
+      }
+    });
+  }
+
   /* ---------- AUTO-INITIALIZATION ---------- */
   initSpotlight();
   initTilt();
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", clock);
-  } else {
+  function onReady() {
     clock();
+    initLangSwitcher();
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", onReady);
+  } else {
+    onReady();
   }
   setInterval(clock, 1000);
   document.addEventListener("visibilitychange", function () {
@@ -81,6 +123,7 @@
     reduce: reduce,
     clock: clock,
     initSpotlight: initSpotlight,
-    initTilt: initTilt
+    initTilt: initTilt,
+    initLangSwitcher: initLangSwitcher
   };
 })();

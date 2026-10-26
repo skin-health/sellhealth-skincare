@@ -118,57 +118,12 @@
     });
   }
 
-  /* ---------- TELEMETRY CLOCK ---------- */
-  function startClock() {
-    var clk = document.getElementById("clock");
-    if (!clk) return;
-    function update() {
-      clk.textContent = new Date().toISOString().slice(11, 19) + " UTC";
-    }
-    update();
-    setInterval(update, 1000);
-  }
-
-  /* ---------- LANGUAGE SWITCHER ---------- */
-  function initLangSwitcher() {
-    var switcher = document.querySelector(".lang-switcher");
-    if (!switcher) return;
-    var btn = switcher.querySelector(".lang-btn");
-    var menu = switcher.querySelector("#lang-menu");
-    if (!btn || !menu) return;
-
-    btn.addEventListener("click", function (e) {
-      e.stopPropagation();
-      var isHidden = menu.hasAttribute("hidden");
-      if (isHidden) {
-        menu.removeAttribute("hidden");
-        btn.setAttribute("aria-expanded", "true");
-      } else {
-        menu.setAttribute("hidden", "");
-        btn.setAttribute("aria-expanded", "false");
-      }
-    });
-
-    document.addEventListener("click", function (e) {
-      if (!switcher.contains(e.target)) {
-        menu.setAttribute("hidden", "");
-        btn.setAttribute("aria-expanded", "false");
-      }
-    });
-
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape" && !menu.hasAttribute("hidden")) {
-        menu.setAttribute("hidden", "");
-        btn.setAttribute("aria-expanded", "false");
-        btn.focus();
-      }
-    });
-  }
-
+  /* Spotlight, tilt, telemetry clock and language switcher live in app.js (single owner). */
   function init() {
     initAccordion();
-    initLangSwitcher();
-    startClock();
+    if (window.DermAudit && typeof window.DermAudit.initLangSwitcher === "function") {
+      window.DermAudit.initLangSwitcher();
+    }
   }
 
   if (document.readyState === "loading") {

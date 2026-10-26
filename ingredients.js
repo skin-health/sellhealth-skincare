@@ -392,82 +392,13 @@
     grid.innerHTML = html;
   }
 
-  /* ---------- HOVER FX ---------- */
-  function initHoverFX() {
-    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (!reduce && window.matchMedia("(hover: hover)").matches) {
-      document.addEventListener("pointermove", function (e) {
-        var g = e.target.closest && e.target.closest(".glass");
-        if (!g) return;
-        var r = g.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
-        g.style.setProperty("--mx", x + "px");
-        g.style.setProperty("--my", y + "px");
-        if (g.classList.contains("rev") || g.classList.contains("post")) {
-          g.style.setProperty("--ry", ((x / r.width - .5) * 6).toFixed(2) + "deg");
-          g.style.setProperty("--rx", ((.5 - y / r.height) * 6).toFixed(2) + "deg");
-        }
-      });
-      document.addEventListener("pointerout", function (e) {
-        var g = e.target.closest && e.target.closest(".rev,.post");
-        if (g && !g.contains(e.relatedTarget)) {
-          g.style.setProperty("--rx", "0deg");
-          g.style.setProperty("--ry", "0deg");
-        }
-      });
-    }
-  }
-  /* ---------- TELEMETRY CLOCK ---------- */
-  function startClock() {
-    var clk = document.getElementById("clock");
-    if (!clk) return;
-    function update() {
-      clk.textContent = new Date().toISOString().slice(11, 19) + " UTC";
-    }
-    update();
-    setInterval(update, 1000);
-  }
-
-  /* ---------- LANGUAGE SWITCHER ---------- */
-  function initLangSwitcher() {
-    var switcher = document.querySelector(".lang-switcher");
-    if (!switcher) return;
-    var btn = switcher.querySelector(".lang-btn");
-    var menu = switcher.querySelector("#lang-menu");
-    if (!btn || !menu) return;
-
-    btn.addEventListener("click", function (e) {
-      e.stopPropagation();
-      var isHidden = menu.hasAttribute("hidden");
-      if (isHidden) {
-        menu.removeAttribute("hidden");
-        btn.setAttribute("aria-expanded", "true");
-      } else {
-        menu.setAttribute("hidden", "");
-        btn.setAttribute("aria-expanded", "false");
-      }
-    });
-
-    document.addEventListener("click", function (e) {
-      if (!switcher.contains(e.target)) {
-        menu.setAttribute("hidden", "");
-        btn.setAttribute("aria-expanded", "false");
-      }
-    });
-
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape" && !menu.hasAttribute("hidden")) {
-        menu.setAttribute("hidden", "");
-        btn.setAttribute("aria-expanded", "false");
-        btn.focus();
-      }
-    });
-  }
-
+  /* Spotlight, tilt, telemetry clock and language switcher live in app.js (single owner). */
   function init() {
     renderIngredients();
-    initLangSwitcher();
-    startClock();
-    initHoverFX();
+    if (window.DermAudit) {
+      if (typeof window.DermAudit.initTilt === "function") window.DermAudit.initTilt();
+      if (typeof window.DermAudit.initLangSwitcher === "function") window.DermAudit.initLangSwitcher();
+    }
   }
 
   if (document.readyState === "loading") {

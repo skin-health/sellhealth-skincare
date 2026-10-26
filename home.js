@@ -1204,43 +1204,7 @@
     grid.innerHTML = html;
   }
 
-  /* Spotlight, tilt and the telemetry clock live in app.js (single owner). */
-
-  /* ---------- LANGUAGE SWITCHER ---------- */
-  function initLangSwitcher() {
-    var switcher = document.querySelector(".lang-switcher");
-    if (!switcher) return;
-    var btn = switcher.querySelector(".lang-btn");
-    var menu = switcher.querySelector("#lang-menu");
-    if (!btn || !menu) return;
-
-    btn.addEventListener("click", function (e) {
-      e.stopPropagation();
-      var isHidden = menu.hasAttribute("hidden");
-      if (isHidden) {
-        menu.removeAttribute("hidden");
-        btn.setAttribute("aria-expanded", "true");
-      } else {
-        menu.setAttribute("hidden", "");
-        btn.setAttribute("aria-expanded", "false");
-      }
-    });
-
-    document.addEventListener("click", function (e) {
-      if (!switcher.contains(e.target)) {
-        menu.setAttribute("hidden", "");
-        btn.setAttribute("aria-expanded", "false");
-      }
-    });
-
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape" && !menu.hasAttribute("hidden")) {
-        menu.setAttribute("hidden", "");
-        btn.setAttribute("aria-expanded", "false");
-        btn.focus();
-      }
-    });
-  }
+  /* Spotlight, tilt, telemetry clock, and language switcher live in app.js (single owner). */
 
   /* ---------- INITIALIZATION ---------- */
   function updateMatrixCounts() {
@@ -1259,7 +1223,6 @@
     initMatrixEvents();
     renderReviews();
     renderBlog();
-    initLangSwitcher();
   }
 
   if (document.readyState === "loading") {

@@ -71,38 +71,9 @@
 
   /* ---------- LANGUAGE SWITCHER ---------- */
   function initLang() {
-    var switcher = document.querySelector(".lang-switcher");
-    if (!switcher) return;
-    var btn = switcher.querySelector(".lang-btn") || switcher.querySelector("button[aria-controls='lang-menu']");
-    var menu = switcher.querySelector("#lang-menu") || document.getElementById("lang-menu");
-    if (!btn || !menu) return;
-
-    btn.addEventListener("click", function (e) {
-      e.stopPropagation();
-      var isHidden = menu.hasAttribute("hidden");
-      if (isHidden) {
-        menu.removeAttribute("hidden");
-        btn.setAttribute("aria-expanded", "true");
-      } else {
-        menu.setAttribute("hidden", "");
-        btn.setAttribute("aria-expanded", "false");
-      }
-    });
-
-    document.addEventListener("click", function (e) {
-      if (!switcher.contains(e.target)) {
-        menu.setAttribute("hidden", "");
-        btn.setAttribute("aria-expanded", "false");
-      }
-    });
-
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape" && !menu.hasAttribute("hidden")) {
-        menu.setAttribute("hidden", "");
-        btn.setAttribute("aria-expanded", "false");
-        btn.focus();
-      }
-    });
+    if (window.DermAudit && typeof window.DermAudit.initLangSwitcher === "function") {
+      window.DermAudit.initLangSwitcher();
+    }
   }
 
   /* ---------- TELEMETRY CLOCK ---------- */
