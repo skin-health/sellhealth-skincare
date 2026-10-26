@@ -670,7 +670,12 @@
       orderNote: "Reverse order changes the outcome:",
       swapHint: "Press Swap to compare.",
       reversePotency: "Potency",
-      cellLabel: "{a} applied first, {b} applied second: {v}"
+      cellLabel: "{a} applied first, {b} applied second: {v}",
+      nextSteps: "Next steps",
+      openPlanner: "Build Routine in Planner",
+      auditedFormulas: "View Audited Formulas",
+      plannerHref: "/tools/routine-planner.html",
+      reviewsHref: "/reviews/"
     },
     es: {
       viewOffer: "Ver Oferta",
@@ -693,7 +698,12 @@
       orderNote: "El orden inverso cambia el resultado:",
       swapHint: "Pulsa Intercambiar para comparar.",
       reversePotency: "Potencia",
-      cellLabel: "{a} aplicado primero, {b} aplicado después: {v}"
+      cellLabel: "{a} aplicado primero, {b} aplicado después: {v}",
+      nextSteps: "Siguientes pasos",
+      openPlanner: "Crear rutina en el planificador",
+      auditedFormulas: "Ver fórmulas auditadas",
+      plannerHref: "/es/tools/routine-planner.html",
+      reviewsHref: "/es/reviews/"
     },
     de: {
       viewOffer: "Angebot ansehen",
@@ -716,7 +726,12 @@
       orderNote: "Die umgekehrte Reihenfolge ändert das Ergebnis:",
       swapHint: "Zum Vergleichen „Tauschen“ drücken.",
       reversePotency: "Potenz",
-      cellLabel: "{a} zuerst angewendet, {b} danach angewendet: {v}"
+      cellLabel: "{a} zuerst angewendet, {b} danach angewendet: {v}",
+      nextSteps: "Nächste Schritte",
+      openPlanner: "Routine im Planer erstellen",
+      auditedFormulas: "Geprüfte Formeln ansehen",
+      plannerHref: "/de/tools/routine-planner.html",
+      reviewsHref: "/de/reviews/"
     },
     fr: {
       viewOffer: "Voir l'offre",
@@ -739,7 +754,12 @@
       orderNote: "L'ordre inverse change le résultat :",
       swapHint: "Appuyez sur Inverser pour comparer.",
       reversePotency: "Potence",
-      cellLabel: "{a} appliqué en premier, {b} appliqué ensuite : {v}"
+      cellLabel: "{a} appliqué en premier, {b} appliqué ensuite : {v}",
+      nextSteps: "Étapes suivantes",
+      openPlanner: "Créer une routine dans le planificateur",
+      auditedFormulas: "Consulter les formules auditées",
+      plannerHref: "/fr/tools/routine-planner.html",
+      reviewsHref: "/fr/reviews/"
     }
   };
 
@@ -967,6 +987,13 @@
         '</div>';
     }
 
+    var actionsHtml = '<div class="out-actions">' +
+      '<div class="out-actions-head"><i class="fa-solid fa-layer-group" aria-hidden="true"></i><span>' + ui.nextSteps + '</span></div>' +
+      '<div class="out-actions-btns">' +
+      '<a href="' + ui.plannerHref + '" class="btn btn-out"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i>' + ui.openPlanner + '</a>' +
+      '<a href="' + ui.reviewsHref + '" class="btn btn-out sec"><i class="fa-solid fa-list-check" aria-hidden="true"></i>' + ui.auditedFormulas + '</a>' +
+      '</div></div>';
+
     out.innerHTML = '<div class="res"><div>' +
       '<span class="badge ' + v + '">' + (v === "s" ? "✔" : v === "c" ? "⚠" : "●") + " " + VERD[v] + '</span>' +
       '<div class="pair">' + ING[a].n + ' → ' + ING[b].n + '</div>' +
@@ -976,7 +1003,9 @@
       '<div class="blk"><h4>' + ui.mechanism + '</h4><p>' + rec.mechanism + '</p></div>' +
       '<div class="blk"><h4>' + ui.routineAdvice + '</h4><p><span class="sched">' + rec.schedule + '</span>' + rec.advice + '</p></div>' +
       reverseNoteHtml +
-      '<p class="ev">' + ui.disclaimer + '</p></div></div>';
+      '<p class="ev">' + ui.disclaimer + '</p></div>' +
+      actionsHtml +
+      '</div>';
 
     requestAnimationFrame(function () {
       requestAnimationFrame(function () {
@@ -986,7 +1015,7 @@
       });
     });
 
-    out.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "nearest" });
+    out.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: window.innerWidth <= 768 ? "start" : "nearest" });
   }
 
   function initMatrixEvents() {
