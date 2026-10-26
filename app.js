@@ -15,9 +15,10 @@
   /* ---------- CLOCK ---------- */
   function clock() {
     var el = $("clock");
-    if (el) {
-      el.textContent = new Date().toISOString().slice(11, 19) + " UTC";
+    if (!el || (document.visibilityState && document.visibilityState === "hidden") || window.innerWidth <= 960) {
+      return;
     }
+    el.textContent = new Date().toISOString().slice(11, 19) + " UTC";
   }
 
   /* ---------- SPOTLIGHT & TILT SYSTEM ----------
@@ -69,6 +70,9 @@
     clock();
   }
   setInterval(clock, 1000);
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "visible") clock();
+  });
 
   /* ---------- EXPORT ---------- */
   window.DermAudit = {
