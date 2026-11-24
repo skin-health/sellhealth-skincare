@@ -143,6 +143,30 @@
       "reviewUrl": "/dermefface-fx7-review.html",
       "price": "$59.95 / tube",
       "guarantee": "90-Day Guarantee"
+    },
+    {
+      "key": "hydrossential",
+      "name": "Hydrossential™",
+      "brand": "Hydrossential",
+      "category": "Botanical Hydration",
+      "active": "Jojoba, Gotu Kola & Aloe",
+      "img": "/img/optimized/hydrossential.png",
+      "width": 540,
+      "height": 900,
+      "score": 76,
+      "verdict": "Lightweight 30 ml botanical serum pairing jojoba wax esters, gotu kola, green tea, and aloe vera; exact percentages are undisclosed in a proprietary blend.",
+      "pros": [
+        "Fast-absorbing 1 fl oz dropper serum with aloe, jojoba, gotu kola, and green tea",
+        "Multi-bottle bundles drop price to $49/bottle with 60-day ClickBank guarantee"
+      ],
+      "cons": [
+        "Uses a proprietary blend — exact active percentages are not published online",
+        "Witch hazel and herbal/citrus extracts can irritate sensitive or dry skin"
+      ],
+      "affiliateUrl": "https://21ac6covthykdn0bzbwe5hhh1d.hop.clickbank.net",
+      "reviewUrl": "/hydrossential-review.html",
+      "price": "$69.00 / bottle",
+      "guarantee": "60-Day Guarantee"
     }
   ],
   "es": [
@@ -270,6 +294,30 @@
       "reviewUrl": "/es/dermefface-fx7-review.html",
       "price": "$59.95 / tubo",
       "guarantee": "Garantía de 90 días"
+    },
+    {
+      "key": "hydrossential",
+      "name": "Hydrossential™",
+      "brand": "Hydrossential",
+      "category": "Hidratación Botánica",
+      "active": "Jojoba, Gotu Kola y Aloe Vera",
+      "img": "/img/optimized/hydrossential.png",
+      "width": 540,
+      "height": 900,
+      "score": 76,
+      "verdict": "Sérum ligero de 30 ml con extractos de jojoba, aloe vera, gotu kola y té verde. Las proporciones exactas permanecen en una mezcla patentada.",
+      "pros": [
+        "Sérum ligero con gotero de 30 ml de rápida absorción",
+        "Packs múltiples bajan el precio a $49 por frasco"
+      ],
+      "cons": [
+        "Mezcla patentada sin porcentajes exactos en línea",
+        "Hamamelis y extractos herbales pueden irritar pieles sensibles"
+      ],
+      "affiliateUrl": "https://21ac6covthykdn0bzbwe5hhh1d.hop.clickbank.net",
+      "reviewUrl": "/es/hydrossential-review.html",
+      "price": "$69.00 / frasco",
+      "guarantee": "Garantía de 60 días"
     }
   ],
   "de": [
@@ -397,6 +445,30 @@
       "reviewUrl": "/de/dermefface-fx7-review.html",
       "price": "$59.95 / Tube",
       "guarantee": "90 Tage Garantie"
+    },
+    {
+      "key": "hydrossential",
+      "name": "Hydrossential™",
+      "brand": "Hydrossential",
+      "category": "Botanische Feuchtigkeit",
+      "active": "Jojoba, Gotu Kola & Aloe Vera",
+      "img": "/img/optimized/hydrossential.png",
+      "width": 540,
+      "height": 900,
+      "score": 76,
+      "verdict": "Leichtes 30-ml-Serum mit Jojobaöl, Aloe Vera, Gotu Kola und Grüntee. Exakte Prozentanteile werden in einer geschützten Mischung nicht veröffentlicht.",
+      "pros": [
+        "Leichtes 30-ml-Pipettenserum, zieht schnell ein",
+        "Mehrfachpakete senken den Preis auf $49 pro Flasche"
+      ],
+      "cons": [
+        "Geschützte Mischung ohne exakte Prozentangaben online",
+        "Zaubernuss & Kräuterextrakte können sensible Haut reizen"
+      ],
+      "affiliateUrl": "https://21ac6covthykdn0bzbwe5hhh1d.hop.clickbank.net",
+      "reviewUrl": "/de/hydrossential-review.html",
+      "price": "$69.00 / Flasche",
+      "guarantee": "60 Tage Garantie"
     }
   ],
   "fr": [
@@ -524,6 +596,30 @@
       "reviewUrl": "/fr/dermefface-fx7-review.html",
       "price": "$59.95 / tube",
       "guarantee": "Garantie de 90 jours"
+    },
+    {
+      "key": "hydrossential",
+      "name": "Hydrossential™",
+      "brand": "Hydrossential",
+      "category": "Hydratation Botanique",
+      "active": "Jojoba, Gotu Kola & Aloe Vera",
+      "img": "/img/optimized/hydrossential.png",
+      "width": 540,
+      "height": 900,
+      "score": 76,
+      "verdict": "Sérum léger de 30 ml à l'huile de jojoba, aloe vera, gotu kola et thé vert. Les pourcentages exacts restent non divulgués dans un mélange exclusif.",
+      "pros": [
+        "Sérum pipette léger de 30 ml à absorption rapide",
+        "Les lots abaissent le prix à $49 par flacon"
+      ],
+      "cons": [
+        "Mélange exclusif sans pourcentages exacts en ligne",
+        "Hamamélis & extraits herbacés peuvent irriter les peaux sensibles"
+      ],
+      "affiliateUrl": "https://21ac6covthykdn0bzbwe5hhh1d.hop.clickbank.net",
+      "reviewUrl": "/fr/hydrossential-review.html",
+      "price": "$69.00 / flacon",
+      "guarantee": "Garantie de 60 jours"
     }
   ]
 };
