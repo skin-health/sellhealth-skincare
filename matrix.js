@@ -208,7 +208,7 @@
         95,
         "Strong",
         "Same routine",
-        "The old niacin-flush warning came from high-heat lab reactions and is not relevant to normal skincare. Each active works independently, and combined brightening is plausible but not clearly proven.",
+        "The old niacin-flush warning came from high-heat lab reactions and is not relevant to normal skincare. Each active works independently, and combined brightening is plausible but not clearly established.",
         "Use freely together. If you feel flushing, separate them by a few minutes or time of day."
       ],
       "PEP|RET": [
@@ -241,100 +241,100 @@
     },
     "DIR": {
       "BPO|VC": {
-        "irritation": 4,
+        "irritation": 8,
         "potency": 20,
-        "schedule": "Separate AM / PM",
+        "schedule": "Split AM / PM",
         "mechanism": "Residual benzoyl peroxide oxidizes subsequently applied L-ascorbic acid on the skin, collapsing antioxidant potency.",
         "advice": "Use Vitamin C in the morning and benzoyl peroxide in the evening, or thoroughly cleanse before applying antioxidants."
       },
       "VC|BPO": {
-        "irritation": 4,
+        "irritation": 8,
         "potency": 30,
-        "schedule": "Separate AM / PM",
+        "schedule": "Split AM / PM",
         "mechanism": "L-ascorbic acid reduces benzoyl peroxide, blunting antibacterial activity while oxidizing and degrading the ascorbate.",
         "advice": "Separate application routines: reserve Vitamin C for the morning and benzoyl peroxide for the evening."
       },
       "AHA|RET": {
-        "irritation": 4,
+        "irritation": 9,
         "potency": 40,
         "schedule": "Alternate nights",
         "mechanism": "Glycolic acid lowers stratum corneum pH below the optimal range (5.5–6.5) for retinol dehydrogenase, impairing conversion while raising penetration and irritation.",
         "advice": "Never layer directly; alternate evenings between AHA and retinol to protect conversion enzymes and barrier integrity."
       },
       "RET|AHA": {
-        "irritation": 4,
+        "irritation": 8,
         "potency": 60,
         "schedule": "Alternate nights",
         "mechanism": "Retinol absorbs into lipid membranes first, preserving greater enzymatic conversion, though subsequent acid exfoliation still amplifies irritation.",
         "advice": "Even with partial conversion preserved, alternate nights to avoid cumulative epidermal barrier breakdown."
       },
       "BHA|RET": {
-        "irritation": 3,
+        "irritation": 8,
         "potency": 55,
         "schedule": "Alternate nights",
         "mechanism": "Salicylic acid mildly acidifies follicular lipids, reducing retinol dehydrogenase efficiency while moderately increasing retinoid flux and drying.",
         "advice": "Alternate evenings or use BHA in the morning and retinol at night to balance pore clearing with retinoid tolerance."
       },
       "RET|BHA": {
-        "irritation": 3,
+        "irritation": 7,
         "potency": 70,
         "schedule": "Alternate nights",
         "mechanism": "Applying retinol first permits cellular uptake at baseline pH; subsequent BHA causes milder irritation with retinoid conversion mostly preserved.",
         "advice": "Space applications or preferably alternate evenings to avoid stripping surface lipids."
       },
       "AHA|BPO": {
-        "irritation": 4,
+        "irritation": 8,
         "potency": 35,
-        "schedule": "Separate AM / PM",
+        "schedule": "Split AM / PM",
         "mechanism": "Glycolic acid exfoliation thins the stratum corneum barrier before peroxide application, raising benzoyl peroxide penetration and chemical burn risk.",
         "advice": "Never apply benzoyl peroxide immediately after an AHA; separate them into morning and evening routines."
       },
       "BPO|AHA": {
-        "irritation": 4,
+        "irritation": 7,
         "potency": 45,
-        "schedule": "Separate AM / PM",
+        "schedule": "Split AM / PM",
         "mechanism": "Benzoyl peroxide dries and desquamates the surface; subsequent glycolic acid stings compromised skin, though deeper penetration risk is slightly lower.",
         "advice": "Split routines: use benzoyl peroxide in the morning or as a wash, and glycolic acid on alternate evenings."
       },
       "RET|BPO": {
-        "irritation": 4,
+        "irritation": 8,
         "potency": 45,
-        "schedule": "Separate AM / PM",
+        "schedule": "Split AM / PM",
         "mechanism": "Retinol absorbs into deeper epidermal layers first; subsequently applied peroxide oxidizes only residual unabsorbed surface retinol.",
         "advice": "Do not layer in the same session; split into retinol at night and benzoyl peroxide in the morning to preserve retinoid activity."
       },
       "BPO|RET": {
-        "irritation": 4,
+        "irritation": 9,
         "potency": 30,
-        "schedule": "Separate AM / PM",
+        "schedule": "Split AM / PM",
         "mechanism": "Residual benzoyl peroxide on the skin oxidizes retinol immediately on contact, degrading the molecule before transdermal absorption.",
         "advice": "Strictly separate routines: apply benzoyl peroxide in the morning or as a wash-off product and retinol at night."
       },
       "VC|PEP": {
         "irritation": 3,
         "potency": 30,
-        "schedule": "Separate AM / PM",
+        "schedule": "Split AM / PM",
         "mechanism": "Low-pH L-ascorbic acid (pH ≤ 3.5) hydrolyzes susceptible amide bonds in topically applied peptides, neutralizing signaling efficacy.",
         "advice": "Apply Vitamin C in the morning and reserve peptide serums for the evening to maintain structural stability."
       },
       "PEP|VC": {
         "irritation": 3,
         "potency": 60,
-        "schedule": "Separate AM / PM",
+        "schedule": "Split AM / PM",
         "mechanism": "Peptide serum absorbs into viable tissue first; subsequently applied acidic ascorbate harms only surface residue.",
         "advice": "Wait at least 15–20 minutes after peptide absorption before applying acidic serums, or separate routines entirely."
       },
       "AHA|VC": {
-        "irritation": 4,
+        "irritation": 6,
         "potency": 50,
-        "schedule": "Separate AM / PM",
+        "schedule": "Split AM / PM",
         "mechanism": "Layering two low-pH acids overwhelms skin buffering, driving neurosensory irritation and acute barrier stress despite potential penetration gains.",
         "advice": "Avoid stacking: apply Vitamin C in the morning under sunscreen and use glycolic acid in the evening 2–3 times a week."
       },
       "VC|AHA": {
-        "irritation": 4,
+        "irritation": 6,
         "potency": 70,
-        "schedule": "Separate AM / PM",
+        "schedule": "Split AM / PM",
         "mechanism": "L-ascorbic acid absorbs and establishes intracellular antioxidant stores first; later glycolic acid exfoliates with less ascorbate degradation but similar irritation.",
         "advice": "While ascorbate potency is better preserved, split them across morning and evening routines to avoid cumulative irritation."
       }
@@ -569,70 +569,70 @@
     },
     "DIR": {
       "BPO|VC": {
-        "irritation": 4,
+        "irritation": 8,
         "potency": 20,
         "schedule": "Dividir AM / PM",
         "mechanism": "El peróxido de benzoilo residual en la piel oxida el ácido L-ascórbico aplicado después, anulando casi toda la potencia antioxidante.",
         "advice": "Aplique la vitamina C por la mañana y el peróxido de benzoilo por la noche, o aclare bien el limpiador antes del sérum."
       },
       "VC|BPO": {
-        "irritation": 4,
+        "irritation": 8,
         "potency": 30,
         "schedule": "Dividir AM / PM",
         "mechanism": "El ácido L-ascórbico reduce el peróxido de benzoilo, atenuando su acción antibacteriana mientras el ascorbato se oxida.",
         "advice": "Separe los momentos de aplicación: use la vitamina C por la mañana y el peróxido de benzoilo por la noche."
       },
       "AHA|RET": {
-        "irritation": 4,
+        "irritation": 9,
         "potency": 40,
         "schedule": "Noches alternas",
         "mechanism": "El ácido glicólico acidifica la capa córnea por debajo del pH 5.5–6.5 requerido por la retinol deshidrogenasa, mermando su conversión y elevando la irritación.",
         "advice": "No superponga ambos productos; alterne noches entre AHA y retinol para preservar las enzimas de conversión."
       },
       "RET|AHA": {
-        "irritation": 4,
+        "irritation": 8,
         "potency": 60,
         "schedule": "Noches alternas",
         "mechanism": "El retinol penetra las estructuras lipídicas antes del ácido, preservando mayor conversión enzimática, aunque la exfoliación posterior aún eleva la irritación.",
         "advice": "Aunque la conversión se conserve mejor, alterne noches para prevenir la desestabilización de la barrera cutánea."
       },
       "BHA|RET": {
-        "irritation": 3,
+        "irritation": 8,
         "potency": 55,
         "schedule": "Noches alternas",
         "mechanism": "El ácido salicílico acidifica levemente la piel y disuelve lípidos foliculares, reduciendo la eficiencia enzimática y aumentando el flujo del retinoide.",
         "advice": "Alterne noches o aplique el BHA por la mañana y el retinol por la noche para mantener la tolerancia."
       },
       "RET|BHA": {
-        "irritation": 3,
+        "irritation": 7,
         "potency": 70,
         "schedule": "Noches alternas",
         "mechanism": "Aplicar primero el retinol permite su absorción a pH fisiológico; la aplicación posterior de BHA genera menor irritación y conserva la conversión.",
         "advice": "Espacie al menos 30 minutos si los combina, o preferiblemente alterne noches para proteger los lípidos cutáneos."
       },
       "AHA|BPO": {
-        "irritation": 4,
+        "irritation": 8,
         "potency": 35,
         "schedule": "Dividir AM / PM",
         "mechanism": "La exfoliación con ácido glicólico afina el estrato córneo, facilitando una penetración excesiva del peróxido de benzoilo y riesgo de quemazón.",
         "advice": "Nunca aplique peróxido de benzoilo inmediatamente tras un AHA; sepárelos en rutinas de mañana y noche."
       },
       "BPO|AHA": {
-        "irritation": 4,
+        "irritation": 7,
         "potency": 45,
         "schedule": "Dividir AM / PM",
         "mechanism": "El peróxido de benzoilo reseca la superficie cutánea; la aplicación posterior de AHA provoca ardor inmediato en piel sensibilizada.",
         "advice": "Divida las aplicaciones: utilice el peróxido por la mañana o como limpiador, y el AHA en noches alternas."
       },
       "RET|BPO": {
-        "irritation": 4,
+        "irritation": 8,
         "potency": 45,
         "schedule": "Dividir AM / PM",
         "mechanism": "Permitir que el retinol se absorba primero internaliza parte del activo, dejando vulnerable a la oxidación solo el residuo superficial.",
         "advice": "No superponga en la misma rutina; use retinol por la noche y peróxido de benzoilo por la mañana."
       },
       "BPO|RET": {
-        "irritation": 4,
+        "irritation": 9,
         "potency": 30,
         "schedule": "Dividir AM / PM",
         "mechanism": "Los residuos de peróxido de benzoilo degradan el retinol al contacto antes de que penetre, provocando una pérdida sustancial de eficacia.",
@@ -653,14 +653,14 @@
         "advice": "Espere al menos 15–20 minutos tras el sérum de péptidos antes del ácido ascórbico, o separe las rutinas por completo."
       },
       "AHA|VC": {
-        "irritation": 4,
+        "irritation": 6,
         "potency": 50,
         "schedule": "Dividir AM / PM",
         "mechanism": "Superponer dos ácidos de bajo pH supera la capacidad tampón cutánea, provocando ardor y estrés de la barrera cutánea.",
         "advice": "Evite superponerlos: aplique la vitamina C por la mañana con fotoprotección y el ácido glicólico 2–3 noches por semana."
       },
       "VC|AHA": {
-        "irritation": 4,
+        "irritation": 6,
         "potency": 70,
         "schedule": "Dividir AM / PM",
         "mechanism": "El ácido L-ascórbico se absorbe primero estableciendo reservas antioxidantes; el glicólico posterior conserva la potencia pero mantiene una alta irritación.",
@@ -897,70 +897,70 @@
     },
     "DIR": {
       "BPO|VC": {
-        "irritation": 4,
+        "irritation": 8,
         "potency": 20,
         "schedule": "Aufteilung AM / PM",
         "mechanism": "Rückstände von Benzoylperoxid oxidieren nachfolgend aufgetragene L-Ascorbinsäure sofort auf der Haut und zerstören deren Wirksamkeit nahezu vollständig.",
         "advice": "Vitamin C morgens und Benzoylperoxid abends anwenden oder Peroxid-Waschgele vor der Serumapplikation gründlich abspülen."
       },
       "VC|BPO": {
-        "irritation": 4,
+        "irritation": 8,
         "potency": 30,
         "schedule": "Aufteilung AM / PM",
         "mechanism": "L-Ascorbinsäure reduziert Benzoylperoxid, wodurch die antibakterielle Wirkung geschwächt wird und das Vitamin C selbst oxidiert.",
         "advice": "Trennen Sie die Anwendungen: Vitamin C morgens und Benzoylperoxid abends auftragen."
       },
       "AHA|RET": {
-        "irritation": 4,
+        "irritation": 9,
         "potency": 40,
         "schedule": "Abwechselnde Abende",
         "mechanism": "Glykolsäure senkt den pH-Wert der Hornschicht unter das Wirkoptimum (pH 5.5–6.5) der Retinol-Dehydrogenase, was die Umwandlung hemmt und Irritationen steigert.",
         "advice": "Niemals in derselben Routine schichten; wechseln Sie die Abende zwischen AHA und Retinol ab."
       },
       "RET|AHA": {
-        "irritation": 4,
+        "irritation": 8,
         "potency": 60,
         "schedule": "Abwechselnde Abende",
         "mechanism": "Retinol zieht vor der Säure in die Lipidstrukturen ein und erhält so mehr Umwandlungskapazität, dennoch verstärkt die nachfolgende Säure die Reizung.",
         "advice": "Trotz besserer Erhaltung der Umwandlung sollten Sie die Abende abwechseln, um die Barriere zu schonen."
       },
       "BHA|RET": {
-        "irritation": 3,
+        "irritation": 8,
         "potency": 55,
         "schedule": "Abwechselnde Abende",
         "mechanism": "Salicylsäure senkt den pH-Wert moderat und löst Follikellipide, was die enzymatische Retinolumwandlung dämpft und die Reizbereitschaft leicht erhöht.",
         "advice": "Abende abwechseln oder BHA morgens und Retinol abends verwenden, um Reizungen zu vermeiden."
       },
       "RET|BHA": {
-        "irritation": 3,
+        "irritation": 7,
         "potency": 70,
         "schedule": "Abwechselnde Abende",
         "mechanism": "Retinol zieht bei normalem Haut-pH ein; nachfolgendes BHA erzeugt geringere Irritationen, während die enzymatische Umwandlung weitgehend stabil bleibt.",
         "advice": "Mindestens 30 Minuten Abstand einhalten oder vorzugsweise an getrennten Abenden anwenden."
       },
       "AHA|BPO": {
-        "irritation": 4,
+        "irritation": 8,
         "potency": 35,
         "schedule": "Aufteilung AM / PM",
         "mechanism": "Glykolsäure verdünnt die schützende Hornschicht, wodurch Benzoylperoxid tiefer eindringt und das Risiko für Verätzungen und Rötungen deutlich steigt.",
         "advice": "Niemals Benzoylperoxid direkt nach einem AHA auftragen; strikt auf Morgen- und Abendroutine aufteilen."
       },
       "BPO|AHA": {
-        "irritation": 4,
+        "irritation": 7,
         "potency": 45,
         "schedule": "Aufteilung AM / PM",
         "mechanism": "Benzoylperoxid trocknet die Oberfläche aus; nachfolgende Glykolsäure brennt stark auf der gereizten Haut, birgt aber etwas geringere Tiefenpenetration.",
         "advice": "Routinen vollständig trennen: Benzoylperoxid morgens oder als Wash, Glykolsäure an separaten Abenden nutzen."
       },
       "RET|BPO": {
-        "irritation": 4,
+        "irritation": 8,
         "potency": 45,
         "schedule": "Aufteilung AM / PM",
         "mechanism": "Zieht Retinol zuerst ein, gelangt ein Teil in die Epidermis; das nachfolgende Peroxid oxidiert primär an der Oberfläche verbliebene Reste.",
         "advice": "Nicht in einer Sitzung schichten; Retinol abends und Benzoylperoxid morgens anwenden."
       },
       "BPO|RET": {
-        "irritation": 4,
+        "irritation": 9,
         "potency": 30,
         "schedule": "Aufteilung AM / PM",
         "mechanism": "Verbleibendes Benzoylperoxid oxidiert Retinol direkt beim Auftragen und zerstört den Wirkstoff, bevor er absorbiert werden kann.",
@@ -981,18 +981,18 @@
         "advice": "Nach dem Peptidserum mindestens 15–20 Minuten warten oder die Wirkstoffe komplett auf AM und PM verteilen."
       },
       "AHA|VC": {
-        "irritation": 4,
+        "irritation": 6,
         "potency": 50,
         "schedule": "Aufteilung AM / PM",
         "mechanism": "Das Schichten zweier Niedrig-pH-Säuren überfordert den Hautpuffer und löst akuten Barrierestress und Brennen aus.",
         "advice": "Nicht schichten: Vitamin C morgens unter Sonnenschutz und Glykolsäure 2–3 Abende pro Woche anwenden."
       },
       "VC|AHA": {
-        "irritation": 4,
+        "irritation": 6,
         "potency": 70,
         "schedule": "Aufteilung AM / PM",
-        "mechanism": "L-Ascorbinsäure zieht zuerst ein und baut ein Reservoir auf; spätere Glykolsäure bewahrt die Ascorbatpotenz, reizt die Haut aber dennoch spürbar.",
-        "advice": "Obwohl die Potenz besser erhalten bleibt, sollten beide Wirkstoffe auf Morgen und Abend aufgeteilt werden."
+        "mechanism": "L-Ascorbinsäure zieht zuerst ein und baut ein Reservoir auf; spätere Glykolsäure bewahrt die Ascorbatwirksamkeit, reizt die Haut aber dennoch spürbar.",
+        "advice": "Obwohl die Wirksamkeit besser erhalten bleibt, sollten beide Wirkstoffe auf Morgen und Abend aufgeteilt werden."
       }
     }
   },
@@ -1225,70 +1225,70 @@
     },
     "DIR": {
       "BPO|VC": {
-        "irritation": 4,
+        "irritation": 8,
         "potency": 20,
         "schedule": "Séparer AM / PM",
         "mechanism": "Les résidus de peroxyde de benzoyle oxydent immédiatement l'acide L-ascorbique appliqué ensuite, effondrant la puissance antioxydante de l'ascorbate.",
         "advice": "Appliquez la vitamine C le matin et le peroxyde de benzoyle le soir, ou rincez abondamment le peroxyde avant le sérum."
       },
       "VC|BPO": {
-        "irritation": 4,
+        "irritation": 8,
         "potency": 30,
         "schedule": "Séparer AM / PM",
         "mechanism": "L'acide L-ascorbique réduit le peroxyde de benzoyle, affaiblissant l'action antibactérienne tout en provoquant l'oxydation de l'ascorbate.",
         "advice": "Séparez les applications : réservez la vitamine C au matin et le peroxyde de benzoyle au soir."
       },
       "AHA|RET": {
-        "irritation": 4,
+        "irritation": 9,
         "potency": 40,
         "schedule": "Soirs alternés",
         "mechanism": "L'acide glycolique acidifie la couche cornée sous le pH optimal (5.5–6.5) de la rétinol déshydrogénase, réduisant la conversion tout en augmentant l'irritation.",
         "advice": "Ne superposez pas ces actifs ; alternez les soirs entre AHA et rétinol pour préserver l'efficacité enzymatique."
       },
       "RET|AHA": {
-        "irritation": 4,
+        "irritation": 8,
         "potency": 60,
         "schedule": "Soirs alternés",
         "mechanism": "Le rétinol pénètre les structures lipidiques avant l'acide, préservant une meilleure conversion enzymatique, bien que l'exfoliation suivante amplifie l'irritation.",
         "advice": "Même avec une conversion partiellement préservée, alternez les soirs pour éviter toute rupture de barrière."
       },
       "BHA|RET": {
-        "irritation": 3,
+        "irritation": 8,
         "potency": 55,
         "schedule": "Soirs alternés",
         "mechanism": "L'acide salicylique acidifie modérément la peau et dissout les lipides folliculaires, diminuant l'efficacité enzymatique tout en augmentant l'absorption.",
         "advice": "Alternez les soirs ou utilisez le BHA le matin et le rétinol le soir pour préserver la tolérance cutanée."
       },
       "RET|BHA": {
-        "irritation": 3,
+        "irritation": 7,
         "potency": 70,
         "schedule": "Soirs alternés",
         "mechanism": "Appliquer le rétinol d'abord permet son absorption au pH cutané de base ; le BHA appliqué ensuite limite l'irritation tout en préservant la conversion.",
         "advice": "Espacez d'au moins 30 minutes si superposés, ou alternez de préférence les soirs."
       },
       "AHA|BPO": {
-        "irritation": 4,
+        "irritation": 8,
         "potency": 35,
         "schedule": "Séparer AM / PM",
         "mechanism": "L'exfoliation aux AHA affine la couche cornée, permettant au peroxyde de benzoyle de pénétrer trop profondément avec un risque élevé de brûlure cutanée.",
         "advice": "N'appliquez jamais de peroxyde de benzoyle directement après un AHA ; séparez matin et soir."
       },
       "BPO|AHA": {
-        "irritation": 4,
+        "irritation": 7,
         "potency": 45,
         "schedule": "Séparer AM / PM",
         "mechanism": "Le peroxyde de benzoyle assèche la surface ; l'acide glycolique appliqué ensuite provoque des picotements intenses sur une peau sensibilisée.",
         "advice": "Séparez totalement : utilisez le peroxyde le matin ou en nettoyant, et l'AHA certains soirs."
       },
       "RET|BPO": {
-        "irritation": 4,
+        "irritation": 8,
         "potency": 45,
         "schedule": "Séparer AM / PM",
         "mechanism": "Laisser le rétinol pénétrer d'abord permet d'absorber une partie de l'actif ; le peroxyde n'oxyde alors que les résidus de surface.",
         "advice": "Ne superposez pas dans la même séance ; appliquez le rétinol le soir et le peroxyde de benzoyle le matin."
       },
       "BPO|RET": {
-        "irritation": 4,
+        "irritation": 9,
         "potency": 30,
         "schedule": "Séparer AM / PM",
         "mechanism": "Les résidus de peroxyde de benzoyle dégradent le rétinol dès l'application avant toute pénétration, entraînant une perte d'efficacité majeure.",
@@ -1309,14 +1309,14 @@
         "advice": "Attendez au moins 15 à 20 minutes après les peptides avant d'appliquer l'acide, ou séparez complètement les routines."
       },
       "AHA|VC": {
-        "irritation": 4,
+        "irritation": 6,
         "potency": 50,
         "schedule": "Séparer AM / PM",
         "mechanism": "Superposer deux acides à pH bas sature le pouvoir tampon cutané, provoquant brûlure neurosensorielle et stress de la barrière.",
         "advice": "Évitez la superposition : vitamine C le matin sous protection solaire et acide glycolique deux à trois soirs par semaine."
       },
       "VC|AHA": {
-        "irritation": 4,
+        "irritation": 6,
         "potency": 70,
         "schedule": "Séparer AM / PM",
         "mechanism": "L'acide L-ascorbique pénètre d'abord et crée une réserve antioxydante ; l'AHA appliqué ensuite préserve l'activité mais maintient une forte irritation.",

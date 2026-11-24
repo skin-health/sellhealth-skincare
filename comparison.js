@@ -82,6 +82,20 @@
       "guarantee": "90-Day Money-Back Guarantee",
       "affiliateUrl": "https://www.dermeffacefx7.com/ct/282956",
       "reviewUrl": "/dermefface-fx7-review.html"
+    },
+    {
+      "key": "hydrossential",
+      "name": "Hydrossential™",
+      "brand": "Hydrossential",
+      "category": "Botanical Hydration",
+      "active": "Jojoba, Gotu Kola & Aloe",
+      "img": "/img/optimized/hydrossential.webp",
+      "score": 76,
+      "concern": "Daily Hydration & Botanical Barrier Support",
+      "price": "$69.00 / bottle",
+      "guarantee": "60-Day Money-Back Guarantee",
+      "affiliateUrl": "https://21ac6covthykdn0bzbwe5hhh1d.hop.clickbank.net",
+      "reviewUrl": "/hydrossential-review.html"
     }
   ],
   "es": [
@@ -146,7 +160,7 @@
       "name": "Dermefface FX7®",
       "brand": "Skinception",
       "category": "Remodelación de Cicatrices",
-      "active": "Symglucan® 10.0% + Pro-Coll-One+",
+      "active": "10,0% Symglucan® + Pro-Coll-One+",
       "img": "/img/optimized/dermafacereal.webp",
       "score": 92,
       "concern": "Remodelación de Cicatrices y Recuperación Dérmica",
@@ -154,6 +168,20 @@
       "guarantee": "Garantía de devolución de 90 días",
       "affiliateUrl": "https://www.dermeffacefx7.com/ct/282956",
       "reviewUrl": "/es/dermefface-fx7-review.html"
+    },
+    {
+      "key": "hydrossential",
+      "name": "Hydrossential™",
+      "brand": "Hydrossential",
+      "category": "Hidratación Botánica",
+      "active": "Jojoba, Gotu Kola y Aloe Vera",
+      "img": "/img/optimized/hydrossential.webp",
+      "score": 76,
+      "concern": "Hidratación Diaria y Soporte Botánico",
+      "price": "$69.00 / frasco",
+      "guarantee": "Garantía de devolución de 60 días",
+      "affiliateUrl": "https://21ac6covthykdn0bzbwe5hhh1d.hop.clickbank.net",
+      "reviewUrl": "/es/hydrossential-review.html"
     }
   ],
   "de": [
@@ -226,6 +254,20 @@
       "guarantee": "90-Tage Geld-zurück-Garantie",
       "affiliateUrl": "https://www.dermeffacefx7.com/ct/282956",
       "reviewUrl": "/de/dermefface-fx7-review.html"
+    },
+    {
+      "key": "hydrossential",
+      "name": "Hydrossential™",
+      "brand": "Hydrossential",
+      "category": "Botanische Feuchtigkeit",
+      "active": "Jojoba, Gotu Kola & Aloe Vera",
+      "img": "/img/optimized/hydrossential.webp",
+      "score": 76,
+      "concern": "Tägliche Feuchtigkeit & Botanische Pflege",
+      "price": "$69.00 / Flakon",
+      "guarantee": "60-Tage Geld-zurück-Garantie",
+      "affiliateUrl": "https://21ac6covthykdn0bzbwe5hhh1d.hop.clickbank.net",
+      "reviewUrl": "/de/hydrossential-review.html"
     }
   ],
   "fr": [
@@ -238,7 +280,7 @@
       "img": "/img/optimized/kollagen_boxbottle_lg.webp",
       "score": 94,
       "concern": "Rides Faciales & Perte de Collagène",
-      "price": "$59.95 / pot",
+      "price": "59,95 $ / pot",
       "guarantee": "Garantie de remboursement de 90 jours",
       "affiliateUrl": "https://www.kollagenintensiv.com/ct/282956",
       "reviewUrl": "/fr/kollagen-intensiv-review.html"
@@ -252,7 +294,7 @@
       "img": "/img/optimized/synevra.webp",
       "score": 91,
       "concern": "Rides d'Expression & Sillons Frontaux",
-      "price": "$79.00 / unité",
+      "price": "79,00 $ / unité",
       "guarantee": "Garantie de remboursement de 60 jours",
       "affiliateUrl": "https://fa90bat349vj5m8h47ps5z4k7l.hop.clickbank.net",
       "reviewUrl": "/fr/synevra-ultralift-review.html"
@@ -266,7 +308,7 @@
       "img": "/img/optimized/illuminatural6i_icon001_600x600.webp",
       "score": 90,
       "concern": "Taches Solaires, Mélasma & Hyperpigmentation",
-      "price": "$59.95 / flacon",
+      "price": "59,95 $ / flacon",
       "guarantee": "Garantie de remboursement de 90 jours",
       "affiliateUrl": "https://www.illuminatural6i.com/ct/282956",
       "reviewUrl": "/fr/illuminatural-6i-review.html"
@@ -280,7 +322,7 @@
       "img": "/img/optimized/eyelasticity800.webp",
       "score": 89,
       "concern": "Cernes Péri-Orbitaires & Poches Sous les Yeux",
-      "price": "$59.95 / flacon",
+      "price": "59,95 $ / flacon",
       "guarantee": "Garantie de remboursement de 67 jours",
       "affiliateUrl": "https://www.naturalhealthsource.com/products/eyelasticity-age-defying-eye-therapy/?aid=282956",
       "reviewUrl": "/fr/eyelasticity-review.html"
@@ -294,10 +336,24 @@
       "img": "/img/optimized/dermafacereal.webp",
       "score": 92,
       "concern": "Remodelage des Cicatrices & Réparation Cutanée",
-      "price": "$59.95 / tube",
+      "price": "59,95 $ / tube",
       "guarantee": "Garantie de remboursement de 90 jours",
       "affiliateUrl": "https://www.dermeffacefx7.com/ct/282956",
       "reviewUrl": "/fr/dermefface-fx7-review.html"
+    },
+    {
+      "key": "hydrossential",
+      "name": "Hydrossential™",
+      "brand": "Hydrossential",
+      "category": "Hydratation Botanique",
+      "active": "Jojoba, Gotu Kola & Aloe Vera",
+      "img": "/img/optimized/hydrossential.webp",
+      "score": 76,
+      "concern": "Hydratation Quotidienne & Barrière Botanique",
+      "price": "69,00 $ / flacon",
+      "guarantee": "Garantie de remboursement de 60 jours",
+      "affiliateUrl": "https://21ac6covthykdn0bzbwe5hhh1d.hop.clickbank.net",
+      "reviewUrl": "/fr/hydrossential-review.html"
     }
   ]
 };
@@ -312,6 +368,7 @@
   function renderTable() {
     var tbody = document.getElementById("comparison-tbody");
     if (!tbody) return;
+    if (tbody.querySelector("tr")) return;
 
     var curLang = getLang();
     var list = PRODUCTS[curLang] || PRODUCTS.en;
@@ -320,25 +377,25 @@
     var html = list.map(function (p) {
       return '<tr>' +
         '<td>' +
-        '<div style="display:flex;align-items:center;gap:.75rem;">' +
-        '<img src="' + p.img + '" alt="' + p.name + '" width="48" height="48" style="object-fit:cover;border-radius:8px;border:1px solid var(--line);background:rgba(0,0,0,.3);" loading="lazy">' +
+        '<div class="comp-prod">' +
+        '<img class="comp-thumb" src="' + p.img + '" alt="' + p.name + '" width="48" height="48" loading="lazy" decoding="async">' +
         '<div>' +
-        '<strong style="display:block;color:var(--text);font-size:.95rem;">' + p.name + '</strong>' +
-        '<span style="font-size:.75rem;color:var(--mute);font-family:var(--mono);">' + p.brand + '</span>' +
+        '<strong class="comp-name">' + p.name + '</strong> ' +
+        '<span class="comp-brand">' + p.brand + '</span>' +
         '</div>' +
         '</div>' +
         '</td>' +
-        '<td><span class="tag" style="font-size:.78rem;">' + p.active + '</span></td>' +
-        '<td style="color:var(--text);font-size:.88rem;">' + p.concern + '</td>' +
+        '<td><span class="tag comp-tag">' + p.active + '</span></td>' +
+        '<td class="comp-concern">' + p.concern + '</td>' +
         '<td>' +
-        '<div style="font-family:var(--display);font-weight:700;font-size:1.15rem;color:var(--sci);">' + p.score + '<small style="font-size:.75rem;color:var(--mute);">/100</small></div>' +
+        '<div class="comp-score">' + p.score + '<small>/100</small></div>' +
         '</td>' +
-        '<td style="font-family:var(--mono);font-size:.85rem;color:var(--text);">' + p.price + '</td>' +
-        '<td><span style="font-size:.82rem;color:var(--safe);">' + p.guarantee + '</span></td>' +
+        '<td class="comp-price">' + p.price + '</td>' +
+        '<td><span class="comp-guar">' + p.guarantee + '</span></td>' +
         '<td>' +
-        '<div style="display:flex;flex-direction:column;gap:.35rem;">' +
-        '<a class="btn btn-primary affiliate-link" href="' + p.affiliateUrl + '" rel="noopener nofollow sponsored" target="_blank" data-product="' + p.key + '" data-placement="comparison-row" style="padding:.35rem .6rem;font-size:.75rem;text-align:center;">' + lbl.viewOffer + ' <i class="fa-solid fa-arrow-up-right-from-square"></i></a>' +
-        '<a class="btn btn-ghost" href="' + p.reviewUrl + '" style="padding:.35rem .6rem;font-size:.75rem;text-align:center;">' + lbl.review + '</a>' +
+        '<div class="comp-actions">' +
+        '<a class="btn btn-primary comp-btn affiliate-link" href="' + p.affiliateUrl + '" rel="noopener nofollow sponsored" target="_blank" data-product="' + p.key + '" data-placement="comparison-row">' + lbl.viewOffer + ' <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>' +
+        '<a class="btn btn-ghost comp-btn" href="' + p.reviewUrl + '">' + lbl.review + '</a>' +
         '</div>' +
         '</td>' +
         '</tr>';

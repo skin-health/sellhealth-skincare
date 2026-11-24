@@ -15,7 +15,7 @@
   /* ---------- CLOCK ---------- */
   function clock() {
     var el = $("clock");
-    if (!el || (document.visibilityState && document.visibilityState === "hidden") || window.innerWidth <= 960) {
+    if (!el || (document.visibilityState && document.visibilityState === "hidden") || window.innerWidth <= 1280 || el.offsetParent === null) {
       return;
     }
     el.textContent = new Date().toISOString().slice(11, 19) + " UTC";
@@ -115,6 +115,10 @@
   document.addEventListener("visibilitychange", function () {
     if (document.visibilityState === "visible") clock();
   });
+  if (window.matchMedia) {
+    var mqClock = window.matchMedia("(min-width: 1281px)");
+    if (mqClock.addEventListener) mqClock.addEventListener("change", clock);
+  }
 
   /* ---------- EXPORT ---------- */
   window.DermAudit = {

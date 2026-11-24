@@ -64,7 +64,7 @@
     },
     {
       "@type": "ItemList",
-      "@id": "https://dermaudit.com/es/#top-picks",
+      "@id": "https://dermaudit.com/es/#reviews-section",
       "name": "Mejores Soluciones Clínicas Antiedad, Manchas y Recuperación",
       "description": "Análisis basado en evidencia de cremas de colágeno, sérums tensores, correctores de manchas, contorno de ojos y remodelación dérmica.",
       "itemListElement": [
@@ -291,7 +291,7 @@
                 "name": "Derm Audit Journal"
               },
               "datePublished": "2026-09-03",
-              "reviewBody": "Multi-peptide eye therapy delivering significant reduction in periorbital puffiness and dark circle chromophore accumulation within 28 days."
+              "reviewBody": "Terapia multipeptídica para el contorno de ojos; el fabricante informa reducción significativa de hinchazón periorbital y ojeras en 28 días."
             },
             "offers": {
               "@type": "Offer",
@@ -511,10 +511,10 @@
           <span class="flag" aria-hidden="true">🇪🇸</span> ES
         </button>
         <ul id="lang-menu" hidden>
-          <li><a href="https://dermaudit.com/" lang="en"><span class="flag" aria-hidden="true">🇺🇸</span> English</a></li>
-          <li><a href="https://dermaudit.com/es/" lang="es" aria-current="page"><span class="flag" aria-hidden="true">🇪🇸</span> Español</a></li>
-          <li><a href="https://dermaudit.com/de/" lang="de"><span class="flag" aria-hidden="true">🇩🇪</span> Deutsch</a></li>
-          <li><a href="https://dermaudit.com/fr/" lang="fr"><span class="flag" aria-hidden="true">🇫🇷</span> Français</a></li>
+          <li><a href="/" lang="en"><span class="flag" aria-hidden="true">🇺🇸</span> English</a></li>
+          <li><a href="/es/" lang="es" aria-current="page"><span class="flag" aria-hidden="true">🇪🇸</span> Español</a></li>
+          <li><a href="/de/" lang="de"><span class="flag" aria-hidden="true">🇩🇪</span> Deutsch</a></li>
+          <li><a href="/fr/" lang="fr"><span class="flag" aria-hidden="true">🇫🇷</span> Français</a></li>
         </ul>
       </div>
     </div>
@@ -528,9 +528,9 @@
         <h1 id="hero-title">Analice <span class="accent">conflictos</span> y <span class="accent">sinergias</span> entre activos</h1>
         <p class="hero-sub">Seleccione sus activos. Obtenga veredictos basados en evidencia. Diseñe su rutina.</p>
         <div class="stats">
-          <div class="glass stat"><span class="num">6</span><span class="lbl">Fórmulas analizadas</span></div>
-          <div class="glass stat"><span class="num" data-matrix-count="ordered">42</span><span class="lbl">Comprobaciones por orden</span></div>
-          <div class="glass stat"><span class="num">60–90</span><span class="lbl">Días de garantía</span></div>
+          <div class="glass stat"><span class="num">6</span> <span class="lbl">Fórmulas analizadas</span></div>
+          <div class="glass stat"><span class="num" data-matrix-count="ordered">42</span> <span class="lbl">Comprobaciones por orden</span></div>
+          <div class="glass stat"><span class="num">60–90</span> <span class="lbl">Días de garantía</span></div>
         </div>
       </section>
       
@@ -541,9 +541,9 @@
           <div class="glass panel">
             <h3>Seleccionar activos <small id="count">0 / 2</small></h3>
             <div class="slots">
-              <div class="slot" id="slot-a"><span>Espacio A</span><strong>Vacío</strong></div>
+              <div class="slot" id="slot-a"><span>Espacio A</span> <strong>Vacío</strong></div>
               <div class="x" aria-hidden="true">×</div>
-              <div class="slot" id="slot-b"><span>Espacio B</span><strong>Vacío</strong></div>
+              <div class="slot" id="slot-b"><span>Espacio B</span> <strong>Vacío</strong></div>
             </div>
             <label for="filter-a" class="slot-label">Ingrediente A</label>
             <input id="filter-a" class="search" type="search" placeholder="Filtrar: retinol, ácido, BHA..." autocomplete="off">
@@ -554,7 +554,7 @@
             <div class="btns">
               <button type="button" class="btn" id="run-btn" disabled>Analizar <i class="fa-solid fa-crosshairs" aria-hidden="true"></i></button>
               <button type="button" class="btn ghost" id="swap-btn" disabled>Intercambiar</button>
-              <button type="button" class="btn ghost" id="clear-btn"><i class="fa-solid fa-rotate-left"></i> Limpiar</button>
+              <button type="button" class="btn ghost" id="clear-btn"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i> Limpiar</button>
             </div>
           </div>
           <div class="glass panel">
@@ -572,6 +572,7 @@
           <output class="glass out" id="output" aria-live="polite" hidden>
             <p class="idle">&gt; esperando selección. Elige dos activos o toca una celda para analizar.</p>
           </output>
+          <noscript><p class="idle">Se requiere JavaScript para la Matriz de Conflictos interactiva. Consulte la <a href="/es/ingredients/">Guía de Activos Clave</a> para ver las reglas de compatibilidad.</p></noscript>
         </div>
       </section>
       
@@ -581,7 +582,14 @@
           <h2 id="reviews-title" class="section-title">Fórmulas destacadas por categoría</h2>
           <a href="/es/reviews/" class="btn btn-ghost">Todos los análisis <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-        <div class="cards" id="reviews-grid"></div>
+        <div class="cards" id="reviews-grid">
+          <article class="glass rev"><div class="top"><div><h3>Kollagen Intensiv™</h3><div class="brandn">Skinception · Antienvejecimiento y Arrugas</div></div><div class="score" aria-label="Puntuación 94 de 100">94<small>/100</small></div></div><div class="m" role="img" aria-label="Medidor de puntuación"><i style="width:94%;background:linear-gradient(90deg,var(--violet),var(--sci));box-shadow:0 0 10px var(--sci)"></i></div><div class="tags"><span class="tag">Syn-Coll® (Palmitoil Tripéptido-5)</span> <span class="tag">Garantía de 90 días</span></div><div class="pc"><span><b class="p">+</b> Aumento del +354% de colágeno con Syn-Coll® informado por el fabricante</span> <span><b class="q">−</b> Requiere de 30 a 84 días para la remodelación dérmica completa</span></div><p class="verdict">El fabricante informa que el péptido suizo Syn-Coll® acelera la síntesis de colágeno un 354% para alisar arrugas profundas.</p><div class="rev-actions"><a class="btn affiliate-link" href="https://www.kollagenintensiv.com/ct/282956" rel="noopener nofollow sponsored" target="_blank" data-product="kollagen" data-placement="home-card">Ver Oferta <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a><a class="btn ghost" href="/es/kollagen-intensiv-review.html">Análisis</a></div><div class="price">$59.95 / tarro · Garantía de 90 días</div></article>
+          <article class="glass rev"><div class="top"><div><h3>Synevra UltraLift™</h3><div class="brandn">Synevra Clinical · Líneas de Expresión y Entrecejo</div></div><div class="score" aria-label="Puntuación 91 de 100">91<small>/100</small></div></div><div class="m" role="img" aria-label="Medidor de puntuación"><i style="width:91%;background:linear-gradient(90deg,var(--violet),var(--sci));box-shadow:0 0 10px var(--sci)"></i></div><div class="tags"><span class="tag">Complejo Dipéptido SYN-AKE®</span> <span class="tag">Garantía de 60 días</span></div><div class="pc"><span><b class="p">+</b> El fabricante informa hasta un 82% menos de frecuencia de contracción</span> <span><b class="q">−</b> Requiere aplicación diaria constante</span></div><p class="verdict">Sérum tópico dirigido con dipéptido SYN-AKE® para relajar microcontracciones y suavizar surcos y patas de gallo.</p><div class="rev-actions"><a class="btn affiliate-link" href="https://fa90bat349vj5m8h47ps5z4k7l.hop.clickbank.net" rel="noopener nofollow sponsored" target="_blank" data-product="synevra" data-placement="home-card">Ver Oferta <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a><a class="btn ghost" href="/es/synevra-ultralift-review.html">Análisis</a></div><div class="price">$79.00 / unidad · Garantía de 60 días</div></article>
+          <article class="glass rev"><div class="top"><div><h3>Illuminatural 6i™</h3><div class="brandn">Skinception · Manchas y Tono de Piel</div></div><div class="score" aria-label="Puntuación 90 de 100">90<small>/100</small></div></div><div class="m" role="img" aria-label="Medidor de puntuación"><i style="width:90%;background:linear-gradient(90deg,var(--violet),var(--sci));box-shadow:0 0 10px var(--sci)"></i></div><div class="tags"><span class="tag">Alfa-Arbutina y 5% Niacinamida</span> <span class="tag">Garantía de 90 días</span></div><div class="pc"><span><b class="p">+</b> 4 aclaradores botánicos sinérgicos (cero hidroquinona o lejías)</span> <span><b class="q">−</b> Ciclos de renovación de melanina tardan entre 30 y 90 días</span></div><p class="verdict">Diseñado con 4 activos botánicos para bloquear la tirosinasa y aclarar manchas solares y melasma sin lejías tóxicas.</p><div class="rev-actions"><a class="btn affiliate-link" href="https://www.illuminatural6i.com/ct/282956" rel="noopener nofollow sponsored" target="_blank" data-product="illuminatural" data-placement="home-card">Ver Oferta <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a><a class="btn ghost" href="/es/illuminatural-6i-review.html">Análisis</a></div><div class="price">$59.95 / frasco · Garantía de 90 días</div></article>
+          <article class="glass rev"><div class="top"><div><h3>Eyelasticity™</h3><div class="brandn">Skinception · Ojeras y Bolsas</div></div><div class="score" aria-label="Puntuación 89 de 100">89<small>/100</small></div></div><div class="m" role="img" aria-label="Medidor de puntuación"><i style="width:89%;background:linear-gradient(90deg,var(--violet),var(--sci));box-shadow:0 0 10px var(--sci)"></i></div><div class="tags"><span class="tag">Eyeseryl® (Tetrapéptido-5) + Regu®-Age</span> <span class="tag">Garantía de 67 días</span></div><div class="pc"><span><b class="p">+</b> Favorece el drenaje linfático y reduce la microcongestión</span> <span><b class="q">−</b> Formulado exclusivamente para la zona periorbital delicada</span></div><p class="verdict">Terapia multipeptídica para el contorno de ojos; el fabricante informa reducción significativa de hinchazón periorbital y ojeras en 28 días.</p><div class="rev-actions"><a class="btn affiliate-link" href="https://www.naturalhealthsource.com/products/eyelasticity-age-defying-eye-therapy/?aid=282956" rel="noopener nofollow sponsored" target="_blank" data-product="eyelasticity" data-placement="home-card">Ver Oferta <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a><a class="btn ghost" href="/es/eyelasticity-review.html">Análisis</a></div><div class="price">$59.95 / frasco · Garantía de 67 días</div></article>
+          <article class="glass rev"><div class="top"><div><h3>Dermefface FX7®</h3><div class="brandn">Skinception · Remodelación de Cicatrices</div></div><div class="score" aria-label="Puntuación 92 de 100">92<small>/100</small></div></div><div class="m" role="img" aria-label="Medidor de puntuación"><i style="width:92%;background:linear-gradient(90deg,var(--violet),var(--sci));box-shadow:0 0 10px var(--sci)"></i></div><div class="tags"><span class="tag">10,0% Symglucan® + Pro-Coll-One+</span> <span class="tag">Garantía de 90 días</span></div><div class="pc"><span><b class="p">+</b> Symglucan al 10% para acelerar la renovación celular biológica</span> <span><b class="q">−</b> Cicatrices maduras requieren entre 3 y 6 meses de constancia</span></div><p class="verdict">Formulado con Symglucan al 10% y Pro-Coll-One+; el fabricante informa un aumento del 1.190% en síntesis de colágeno para aplanar cicatrices.</p><div class="rev-actions"><a class="btn affiliate-link" href="https://www.dermeffacefx7.com/ct/282956" rel="noopener nofollow sponsored" target="_blank" data-product="dermefface" data-placement="home-card">Ver Oferta <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a><a class="btn ghost" href="/es/dermefface-fx7-review.html">Análisis</a></div><div class="price">$59.95 / tubo · Garantía de 90 días</div></article>
+          <article class="glass rev"><div class="top"><div><h3>Hydrossential™</h3><div class="brandn">Hydrossential · Hidratación Botánica</div></div><div class="score" aria-label="Puntuación 76 de 100">76<small>/100</small></div></div><div class="m" role="img" aria-label="Medidor de puntuación"><i style="width:76%;background:linear-gradient(90deg,var(--violet),var(--sci));box-shadow:0 0 10px var(--sci)"></i></div><div class="tags"><span class="tag">Jojoba, Gotu Kola y Aloe Vera</span> <span class="tag">Garantía de 60 días</span></div><div class="pc"><span><b class="p">+</b> Sérum ligero con gotero de 30 ml de rápida absorción</span> <span><b class="q">−</b> Mezcla patentada sin porcentajes exactos en línea</span></div><p class="verdict">Sérum ligero de 30 ml con extractos de jojoba, aloe vera, gotu kola y té verde. Las proporciones exactas permanecen en una mezcla patentada.</p><div class="rev-actions"><a class="btn affiliate-link" href="https://21ac6covthykdn0bzbwe5hhh1d.hop.clickbank.net" rel="noopener nofollow sponsored" target="_blank" data-product="hydrossential" data-placement="home-card">Ver Oferta <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a><a class="btn ghost" href="/es/hydrossential-review.html">Análisis</a></div><div class="price">$69.00 / frasco · Garantía de 60 días</div></article>
+        </div>
       </section>
       
       <!-- Latest Research / Blog Section -->
@@ -590,7 +598,11 @@
           <h2 id="blog-title" class="section-title">Últimas investigaciones</h2>
           <a href="/es/blog/" class="btn btn-ghost">Todos los artículos <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-        <div class="posts" id="blog-grid"></div>
+        <div class="posts" id="blog-grid">
+          <article class="glass post"><div class="meta"><span class="cat">Neuropéptidos</span> <time datetime="2026-10-10"><span>10 de octubre de 2026</span></time> <span>7 min de lectura</span></div><h3>SYN-AKE frente a Argireline: Comparativa de péptidos para líneas de expresión</h3><p>Comparativa bioquímica en profundidad del dipéptido biomimético frente a Acetyl Hexapeptide-8 para relajar las arrugas dinámicas del rostro.</p><a class="more" href="/es/syn-ake-vs-argireline.html" aria-label="Leer el artículo: SYN-AKE frente a Argireline: Comparativa de péptidos para líneas de expresión">Leer el artículo <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></article>
+          <article class="glass post"><div class="meta"><span class="cat">Ciencia Periorbital</span> <time datetime="2026-09-26"><span>26 de septiembre de 2026</span></time> <span>6 min de lectura</span></div><h3>Ojeras y microcirculación periorbital: Tratamiento de congestión vascular</h3><p>Cómo la permeabilidad vascular, acumulación de biliverdina y drenaje linfático deficiente provocan ojeras oscuras, y los péptidos que las atenúan.</p><a class="more" href="/es/blog-under-eye-circles-microcirculation.html" aria-label="Leer el artículo: Ojeras y microcirculación periorbital: Tratamiento de congestión vascular">Leer el artículo <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></article>
+          <article class="glass post"><div class="meta"><span class="cat">Ciencia de Formulación</span> <time datetime="2026-09-07"><span>7 de septiembre de 2026</span></time> <span>7 min de lectura</span></div><h3>Alfa-Arbutina frente a Hidroquinona: Inhibición de melanina sin toxicidad</h3><p>Por qué la alfa-arbutina inhibe eficazmente la tirosinasa sin los riesgos citotóxicos, ocronosis y efecto rebote asociados a la hidroquinona.</p><a class="more" href="/es/blog-alpha-arbutin-vs-hydroquinone.html" aria-label="Leer el artículo: Alfa-Arbutina frente a Hidroquinona: Inhibición de melanina sin toxicidad">Leer el artículo <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></article>
+        </div>
       </section>
     </div>
   </main>
@@ -603,7 +615,7 @@
           <h2 class="fg-title">DermAudit Journal</h2>
           <p>Análisis de ingredientes para el cuidado de la piel y auditorías de fórmulas clínicas basadas en evidencia. Sin artificios comerciales.</p>
           <p class="fine-print">
-            <strong>Divulgación de afiliados:</strong> Colaboramos con SellHealth, ClickBank y Natural Health Source. Los enlaces a Kollagen Intensiv, Synevra UltraLift, Illuminatural 6i, Eyelasticity y Dermefface FX7 son enlaces de afiliados. Podemos recibir una comisión sin coste adicional para usted. Todos los productos incluyen garantías de devolución de 60 a 90 días según la política del fabricante.
+            <strong>Divulgación de afiliados:</strong> Colaboramos con SellHealth, ClickBank y Natural Health Source. Los enlaces a Kollagen Intensiv, Synevra UltraLift, Illuminatural 6i, Eyelasticity, Dermefface FX7 e Hydrossential son enlaces de afiliados. Podemos recibir una comisión sin coste adicional para usted. Todos los productos incluyen garantías de devolución de 60 a 90 días según la política del fabricante.
           </p>
         </div>
         <div class="fg-col">

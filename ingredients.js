@@ -17,12 +17,12 @@
       "code": "RET",
       "name": "Retinol (Vitamin A)",
       "cat": "Retinoid / Cellular Turnover",
-      "icon": "fa-solid fa-arrows-rotate",
+      "icon": "fa-solid fa-rotate-left",
       "desc": "Gold standard active for accelerating epidermal cellular shedding, activating fibroblasts, promoting Type I collagen transcription, and smoothing deep expression lines.",
       "synergies": "Niacinamide (buffers irritation), Peptides (complementary matrix repair), Hyaluronic Acid",
       "conflicts": "AHA/BHA (extreme barrier overload), Benzoyl Peroxide (oxidation/breakdown), Direct Vitamin C in same layer",
       "timing": "PM Evening Routine strictly; follow with daily morning broad-spectrum SPF",
-      "pairLink": "/tools/skincare-conflict-matrix.html?actives=retinol"
+      "pairLink": "/?a=RET#matrix"
     },
     {
       "code": "VC",
@@ -33,7 +33,7 @@
       "synergies": "Ferulic Acid, Vitamin E, Niacinamide (routine safe), Sunscreen",
       "conflicts": "High-pH formulas, Copper Peptides (oxidation hazard), Heavy direct acid stacking",
       "timing": "AM Morning Routine under broad-spectrum sunscreen for photoprotective defense",
-      "pairLink": "/tools/skincare-conflict-matrix.html?actives=l-ascorbic-acid"
+      "pairLink": "/?a=VC#matrix"
     },
     {
       "code": "NIA",
@@ -44,18 +44,18 @@
       "synergies": "Retinol (dramatically lowers retinization irritation), Salicylic Acid, Glycolic Acid, Peptides",
       "conflicts": "Essentially non-colliding; chemically robust across a broad physiologic pH spectrum (4.5–7.0)",
       "timing": "AM & PM versatile; ideal as a calming layer following acid or retinoid treatments",
-      "pairLink": "/tools/skincare-conflict-matrix.html?actives=niacinamide"
+      "pairLink": "/?a=NIA#matrix"
     },
     {
       "code": "BHA",
       "name": "BHA (Salicylic Acid)",
       "cat": "Lipophilic Exfoliant / Pore Decongestion",
-      "icon": "fa-solid fa-flask-vial",
+      "icon": "fa-solid fa-flask",
       "desc": "Oil-soluble beta hydroxy acid capable of penetrating through sebum-filled follicles to dissolve intercellular lipid cement, break down keratinocyte plugs, and relieve inflamed blemishes.",
       "synergies": "Niacinamide (soothes post-exfoliation pore linings), Hydrating barrier serums",
       "conflicts": "Retinol (severe stratum corneum stripping), Glycolic Acid (chemical over-exfoliation)",
       "timing": "AM or PM (2–3 evenings per week); avoid stacking with other strong exfoliators",
-      "pairLink": "/tools/skincare-conflict-matrix.html?actives=salicylic-acid"
+      "pairLink": "/?a=BHA#matrix"
     },
     {
       "code": "AHA",
@@ -66,7 +66,7 @@
       "synergies": "Niacinamide (strengthens lipid synthesis post-acid), Hyaluronic Acid, Barrier moisturizers",
       "conflicts": "Retinoids (multiplies peeling and erythema), Benzoyl Peroxide, Peptides (acid hydrolysis)",
       "timing": "PM Evening Routine strictly; always require morning sun protection due to photo-sensitization",
-      "pairLink": "/tools/skincare-conflict-matrix.html?actives=glycolic-acid"
+      "pairLink": "/?a=AHA#matrix"
     },
     {
       "code": "BPO",
@@ -77,7 +77,7 @@
       "synergies": "Niacinamide (offsets barrier peeling), Non-comedogenic barrier creams",
       "conflicts": "Retinol / Tretinoin (oxidizes and degrades the retinoid molecule), Peptides",
       "timing": "AM Morning treatment or short-contact wash; keep separated from evening retinoid routines",
-      "pairLink": "/tools/skincare-conflict-matrix.html?actives=benzoyl-peroxide"
+      "pairLink": "/?a=BPO#matrix"
     },
     {
       "code": "PEP",
@@ -88,7 +88,7 @@
       "synergies": "Retinol (complementary collagen gene signaling), Niacinamide, Hyaluronic Acid",
       "conflicts": "Direct low-pH exfoliating acids (pH < 3.5 can hydrolyze peptides), Strong oxidizers",
       "timing": "AM & PM routines; apply after water-light serums and before occlusive creams",
-      "pairLink": "/tools/skincare-conflict-matrix.html?actives=peptides"
+      "pairLink": "/?a=PEP#matrix"
     }
   ],
   "es": [
@@ -96,12 +96,12 @@
       "code": "RET",
       "name": "Retinol (Vitamina A)",
       "cat": "Retinoide / Renovación Celular",
-      "icon": "fa-solid fa-arrows-rotate",
+      "icon": "fa-solid fa-rotate-left",
       "desc": "Estándar de oro para acelerar la renovación epidérmica, activar fibroblastos, promover la síntesis de colágeno Tipo I y suavizar líneas profundas de expresión.",
       "synergies": "Niacinamida (amortigua irritación), Péptidos (remodelación complementaria), Ácido Hialurónico",
       "conflicts": "AHA/BHA (sobrecarga severa de barrera), Peróxido de Benzoilo (oxidación y ruptura), Vitamina C directa en la misma capa",
       "timing": "Rutina nocturna PM estrictamente; aplicar protección solar de amplio espectro por la mañana",
-      "pairLink": "/es/skincare-conflict-matrix.html?actives=retinol"
+      "pairLink": "/es/?a=RET#matrix"
     },
     {
       "code": "VC",
@@ -112,7 +112,7 @@
       "synergies": "Ácido Ferúlico, Vitamina E, Niacinamida (rutina compatible), Protector Solar",
       "conflicts": "Fórmulas de pH alcalino, Péptidos de Cobre (riesgo redox), Coaplicación directa con ácidos fuertes",
       "timing": "Rutina matutina AM bajo protector solar de amplio espectro para defensa fotoprotectora",
-      "pairLink": "/es/skincare-conflict-matrix.html?actives=l-ascorbic-acid"
+      "pairLink": "/es/?a=VC#matrix"
     },
     {
       "code": "NIA",
@@ -123,18 +123,18 @@
       "synergies": "Retinol (reduce sustancialmente la irritación de retinización), Ácido Salicílico, Ácido Glicólico, Péptidos",
       "conflicts": "Esencialmente sin colisiones; químicamente estable en un amplio rango fisiológico de pH (4.5–7.0)",
       "timing": "Versátil en AM y PM; ideal como capa calmante tras tratamientos exfoliantes o retinoides",
-      "pairLink": "/es/skincare-conflict-matrix.html?actives=niacinamide"
+      "pairLink": "/es/?a=NIA#matrix"
     },
     {
       "code": "BHA",
       "name": "BHA (Ácido Salicílico)",
       "cat": "Exfoliante Liposoluble / Descongestión de Poros",
-      "icon": "fa-solid fa-flask-vial",
+      "icon": "fa-solid fa-flask",
       "desc": "Beta hidroxiácido soluble en lípidos capaz de penetrar folículos sebáceos para disolver el sebo acumulado, eliminar tapones de queratinocitos y calmar brotes e imperfecciones.",
       "synergies": "Niacinamida (calma la pared del poro post-exfoliación), Sérums hidratantes de barrera",
       "conflicts": "Retinol (descamación aguda del estrato córneo), Ácido Glicólico (sobreexfoliación química)",
       "timing": "AM o PM (2–3 noches por semana); evitar combinar con otros exfoliantes potentes",
-      "pairLink": "/es/skincare-conflict-matrix.html?actives=salicylic-acid"
+      "pairLink": "/es/?a=BHA#matrix"
     },
     {
       "code": "AHA",
@@ -145,7 +145,7 @@
       "synergies": "Niacinamida (refuerza síntesis lipídica tras la exfoliación), Ácido Hialurónico, Hidratantes de barrera",
       "conflicts": "Retinoides (multiplica irritación y descamación), Peróxido de Benzoilo, Péptidos (hidrólisis ácida)",
       "timing": "Rutina nocturna PM estrictamente; requiere fotoprotección estricta por la mañana",
-      "pairLink": "/es/skincare-conflict-matrix.html?actives=glycolic-acid"
+      "pairLink": "/es/?a=AHA#matrix"
     },
     {
       "code": "BPO",
@@ -156,7 +156,7 @@
       "synergies": "Niacinamida (contrarresta sequedad y descamación), Hidratantes no comedogénicos",
       "conflicts": "Retinol / Tretinoína (oxida y degrada la molécula retinoide), Péptidos",
       "timing": "Tratamiento matutino AM o limpiador con aclarado; mantener separado de retinoides nocturnos",
-      "pairLink": "/es/skincare-conflict-matrix.html?actives=benzoyl-peroxide"
+      "pairLink": "/es/?a=BPO#matrix"
     },
     {
       "code": "PEP",
@@ -167,7 +167,7 @@
       "synergies": "Retinol (señalización complementaria de genes de colágeno), Niacinamida, Ácido Hialurónico",
       "conflicts": "Ácidos exfoliantes directos de pH bajo (pH < 3.5 hidroliza péptidos), Oxidantes fuertes",
       "timing": "Rutinas AM y PM; aplicar tras sérums acuosos y antes de cremas oclusivas",
-      "pairLink": "/es/skincare-conflict-matrix.html?actives=peptides"
+      "pairLink": "/es/?a=PEP#matrix"
     }
   ],
   "de": [
@@ -175,12 +175,12 @@
       "code": "RET",
       "name": "Retinol (Vitamin A)",
       "cat": "Retinoid / Zelluläre Erneuerung",
-      "icon": "fa-solid fa-arrows-rotate",
+      "icon": "fa-solid fa-rotate-left",
       "desc": "Goldstandard zur Beschleunigung der epidermalen Zellerneuerung, Fibroblasten-Aktivierung, Förderung der Typ-I-Kollagensynthese und Glättung tiefer Mimikfalten.",
       "synergies": "Niacinamid (puffert Hautreizungen ab), Peptide (komplementärer Matrix-Umbau), Hyaluronsäure",
       "conflicts": "AHA/BHA (extreme Barriere-Überlastung), Benzoylperoxid (Oxidation/Abbau), Direktes Vitamin C in derselben Schicht",
       "timing": "Strikt für die Abend-Routine (PM); tagsüber konsequent Breitspektrum-Sonnenschutz verwenden",
-      "pairLink": "/de/skincare-conflict-matrix.html?actives=retinol"
+      "pairLink": "/de/?a=RET#matrix"
     },
     {
       "code": "VC",
@@ -191,7 +191,7 @@
       "synergies": "Ferulasäure, Vitamin E, Niacinamid (routinesicher), Sonnenschutz",
       "conflicts": "Hohe pH-Werte, Kupferpeptide (Redox-Oxidationsgefahr), Starke direkte Säureschichtung",
       "timing": "Morgen-Routine (AM) unter Breitspektrum-Sonnenschutz für optimalen Zellschutz",
-      "pairLink": "/de/skincare-conflict-matrix.html?actives=l-ascorbic-acid"
+      "pairLink": "/de/?a=VC#matrix"
     },
     {
       "code": "NIA",
@@ -202,18 +202,18 @@
       "synergies": "Retinol (senkt Retinisierungs-Irritationen drastisch), Salicylsäure, Glykolsäure, Peptide",
       "conflicts": "Weitgehend konfliktfrei; chemisch stabil in einem breiten physiologischen pH-Bereich (4,5–7,0)",
       "timing": "Vielseitig in AM & PM; ideal als beruhigende Schicht nach Säure- oder Retinoidbehandlungen",
-      "pairLink": "/de/skincare-conflict-matrix.html?actives=niacinamide"
+      "pairLink": "/de/?a=NIA#matrix"
     },
     {
       "code": "BHA",
       "name": "BHA (Salicylsäure)",
       "cat": "Öllösliches Peeling / Porenklärung",
-      "icon": "fa-solid fa-flask-vial",
+      "icon": "fa-solid fa-flask",
       "desc": "Öllösliche Beta-Hydroxysäure, die tief in talggefüllte Poren eindringt, Verhornungen löst und entzündliche Unreinheiten sichtbar mildert.",
       "synergies": "Niacinamid (beruhigt gereizte Porenwände), Feuchtigkeits-Barriere-Seren",
       "conflicts": "Retinol (starke Schuppung des Stratum corneum), Glykolsäure (chemische Überpeeling-Gefahr)",
       "timing": "AM oder PM (2–3 Abende pro Woche); nicht mit anderen starken Peelings kombinieren",
-      "pairLink": "/de/skincare-conflict-matrix.html?actives=salicylic-acid"
+      "pairLink": "/de/?a=BHA#matrix"
     },
     {
       "code": "AHA",
@@ -224,7 +224,7 @@
       "synergies": "Niacinamid (stärkt Lipidsynthese nach Säureeinwirkung), Hyaluronsäure, Barrierecremes",
       "conflicts": "Retinoide (verstärkt Rötungen und Schuppung), Benzoylperoxid, Peptide (Säurehydrolyse)",
       "timing": "Strikt für die Abend-Routine (PM); morgens stets Sonnenschutz wegen Photosensibilisierung tragen",
-      "pairLink": "/de/skincare-conflict-matrix.html?actives=glycolic-acid"
+      "pairLink": "/de/?a=AHA#matrix"
     },
     {
       "code": "BPO",
@@ -235,7 +235,7 @@
       "synergies": "Niacinamid (wirkt Barriere-Trockenheit entgegen), Nicht-komedogene Pflegecremes",
       "conflicts": "Retinol / Tretinoin (oxidiert und zerstört das Retinoidmolekül), Peptide",
       "timing": "Morgens als Behandlung oder kurzes Waschpeeling; getrennt von abendlichen Retinoiden anwenden",
-      "pairLink": "/de/skincare-conflict-matrix.html?actives=benzoyl-peroxide"
+      "pairLink": "/de/?a=BPO#matrix"
     },
     {
       "code": "PEP",
@@ -246,7 +246,7 @@
       "synergies": "Retinol (ergänzende Signalisierung der Kollagengene), Niacinamid, Hyaluronsäure",
       "conflicts": "Direkte säurehaltige Peelings mit niedrigem pH (<3,5 hydrolysiert Peptide), Starke Oxidationsmittel",
       "timing": "AM & PM Routinen; nach wässrigen Seren und vor reichhaltigen Versiegelungscremes auftragen",
-      "pairLink": "/de/skincare-conflict-matrix.html?actives=peptides"
+      "pairLink": "/de/?a=PEP#matrix"
     }
   ],
   "fr": [
@@ -254,12 +254,12 @@
       "code": "RET",
       "name": "Rétinol (Vitamine A)",
       "cat": "Rétinoïde / Renouvellement Cellulaire",
-      "icon": "fa-solid fa-arrows-rotate",
+      "icon": "fa-solid fa-rotate-left",
       "desc": "Actif de référence pour accélérer le renouvellement épidermique, activer les fibroblastes, stimuler le collagène de Type I et lisser les rides profondes.",
       "synergies": "Niacinamide (tamponne les irritations), Peptides (réparation matricielle complémentaire), Acide Hyaluronique",
       "conflicts": "AHA/BHA (surcharge sévère de la barrière), Peroxyde de Benzoyle (dégradation par oxydation), Vitamine C pure superposée",
       "timing": "Strictement en routine du soir (PM) ; appliquer impérativement un SPF à large spectre le matin",
-      "pairLink": "/fr/skincare-conflict-matrix.html?actives=retinol"
+      "pairLink": "/fr/?a=RET#matrix"
     },
     {
       "code": "VC",
@@ -270,7 +270,7 @@
       "synergies": "Acide Férulique, Vitamine E, Niacinamide (compatible en routine), Crème Solaire",
       "conflicts": "Formules à pH alcalin, Peptides de Cuivre (oxydation redox), Superposition directe avec acides forts",
       "timing": "Routine du matin (AM) sous protection solaire à large spectre pour un bouclier antioxydant",
-      "pairLink": "/fr/skincare-conflict-matrix.html?actives=l-ascorbic-acid"
+      "pairLink": "/fr/?a=VC#matrix"
     },
     {
       "code": "NIA",
@@ -281,18 +281,18 @@
       "synergies": "Rétinol (réduit drastiquement l'inconfort de rétinisation), Acide Salicylique, Acide Glycolique, Peptides",
       "conflicts": "Quasiment aucun conflit ; excellente stabilité chimique sur une large plage de pH (4,5–7,0)",
       "timing": "Polyvalent matin et soir ; idéal en couche apaisante après un peeling ou un rétinoïde",
-      "pairLink": "/fr/skincare-conflict-matrix.html?actives=niacinamide"
+      "pairLink": "/fr/?a=NIA#matrix"
     },
     {
       "code": "BHA",
       "name": "BHA (Acide Salicylique)",
       "cat": "Exfoliant Lipophile / Désincrustant des Pores",
-      "icon": "fa-solid fa-flask-vial",
+      "icon": "fa-solid fa-flask",
       "desc": "Bêta-hydroxyacide liposoluble capable de pénétrer le sébum des follicules pour dissoudre les bouchons de kératine et soulager les imperfections inflammatoires.",
       "synergies": "Niacinamide (apaise la paroi des pores après exfoliation), Sérums hydratants réparateurs",
       "conflicts": "Rétinol (desquamation sévère de la couche cornée), Acide Glycolique (risque de surexfoliation chimique)",
       "timing": "Matin ou soir (2 à 3 fois par semaine) ; éviter d'associer avec d'autres exfoliants puissants",
-      "pairLink": "/fr/skincare-conflict-matrix.html?actives=salicylic-acid"
+      "pairLink": "/fr/?a=BHA#matrix"
     },
     {
       "code": "AHA",
@@ -303,7 +303,7 @@
       "synergies": "Niacinamide (stimule la synthèse lipidique post-acide), Acide Hyaluronique, Crèmes barrières",
       "conflicts": "Rétinoïdes (multiplie les rougeurs et la desquamation), Peroxyde de Benzoyle, Peptides (hydrolyse acide)",
       "timing": "Strictement en routine du soir (PM) ; nécessite une protection solaire le matin contre la photosensibilité",
-      "pairLink": "/fr/skincare-conflict-matrix.html?actives=glycolic-acid"
+      "pairLink": "/fr/?a=AHA#matrix"
     },
     {
       "code": "BPO",
@@ -314,7 +314,7 @@
       "synergies": "Niacinamide (compense le dessèchement cutané), Crèmes hydratantes non comédogènes",
       "conflicts": "Rétinol / Trétinoïne (oxyde et détruit la molécule de rétinoïde), Peptides",
       "timing": "Traitement du matin ou nettoyant à rincer ; séparer strictement des rétinoïdes du soir",
-      "pairLink": "/fr/skincare-conflict-matrix.html?actives=benzoyl-peroxide"
+      "pairLink": "/fr/?a=BPO#matrix"
     },
     {
       "code": "PEP",
@@ -325,7 +325,7 @@
       "synergies": "Rétinol (signalisation complémentaire de la synthèse de collagène), Niacinamide, Acide Hyaluronique",
       "conflicts": "Acides exfoliants directs à pH acide (<3,5 hydrolyse les liaisons peptidiques), Oxydants puissants",
       "timing": "Routines du matin et du soir ; appliquer après les sérums aqueux et avant les crèmes riches",
-      "pairLink": "/fr/skincare-conflict-matrix.html?actives=peptides"
+      "pairLink": "/fr/?a=PEP#matrix"
     }
   ]
 };
@@ -335,66 +335,108 @@
       synergies: "Key Synergies:",
       conflicts: "Key Conflicts:",
       timing: "Recommended Timing:",
-      launchMatrix: "Launch in Conflict Matrix"
+      launchMatrix: "Launch in Conflict Matrix",
+      noMatch: "No matching active ingredients found."
     },
     es: {
       synergies: "Sinergias Clave:",
       conflicts: "Conflictos Clave:",
       timing: "Horario Recomendado:",
-      launchMatrix: "Ver en la Matriz de Conflictos"
+      launchMatrix: "Ver en la Matriz de Conflictos",
+      noMatch: "No se encontraron activos coincidentes."
     },
     de: {
       synergies: "Wichtige Synergien:",
       conflicts: "Wichtige Konflikte:",
       timing: "Empfohlene Anwendungszeit:",
-      launchMatrix: "In Konflikt-Matrix öffnen"
+      launchMatrix: "In Konflikt-Matrix öffnen",
+      noMatch: "Keine passenden Wirkstoffe gefunden."
     },
     fr: {
       synergies: "Synergies Clés :",
       conflicts: "Conflits Clés :",
       timing: "Application Conseillée :",
-      launchMatrix: "Ouvrir dans la Matrice"
+      launchMatrix: "Ouvrir dans la Matrice",
+      noMatch: "Aucun actif correspondant trouvé."
     }
   };
+
+  function norm(s) {
+    return (s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  }
 
   function renderIngredients() {
     var grid = document.getElementById("ingredients-grid");
     if (!grid) return;
+    if (grid.querySelector(".ing-card")) return;
 
     var curLang = getLang();
     var list = INGREDIENTS_BY_LANG[curLang] || INGREDIENTS_BY_LANG.en;
     var lbl = LABELS[curLang] || LABELS.en;
 
     var html = list.map(function (ing) {
-      return '<article class="glass ing-card">' +
-        '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;">' +
-        '<div style="display:flex;align-items:center;gap:.75rem;">' +
-        '<div style="width:40px;height:40px;border-radius:10px;background:rgba(166,107,255,.12);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--violet-hi);">' +
-        '<i class="' + ing.icon + '"></i>' +
+      return '<article class="glass ing-card" data-code="' + ing.code + '">' +
+        '<div class="ing-head">' +
+        '<div class="ing-title-group">' +
+        '<div class="ing-badge-icon">' +
+        '<i class="' + ing.icon + '" aria-hidden="true"></i>' +
         '</div>' +
         '<div>' +
-        '<h3 style="font-size:1.2rem;margin:0;">' + ing.name + '</h3>' +
-        '<span style="font-family:var(--mono);font-size:.78rem;color:var(--mute);">' + ing.cat + '</span>' +
+        '<h3 class="ing-name">' + ing.name + '</h3>' +
+        '<span class="ing-cat">' + ing.cat + '</span>' +
         '</div>' +
         '</div>' +
         '<span class="tag">' + ing.code + '</span>' +
         '</div>' +
-        '<p style="font-size:.9rem;color:var(--text);line-height:1.55;margin-bottom:1.2rem;">' + ing.desc + '</p>' +
-        '<div style="background:rgba(255,255,255,.02);border:1px solid var(--line);border-radius:8px;padding:.85rem;margin-bottom:1.2rem;display:flex;flex-direction:column;gap:.5rem;font-size:.82rem;">' +
-        '<div><strong style="color:var(--safe);"><i class="fa-solid fa-plus-circle"></i> ' + lbl.synergies + '</strong> <span style="color:var(--text);">' + ing.synergies + '</span></div>' +
-        '<div><strong style="color:var(--bad);"><i class="fa-solid fa-triangle-exclamation"></i> ' + lbl.conflicts + '</strong> <span style="color:var(--text);">' + ing.conflicts + '</span></div>' +
-        '<div><strong style="color:var(--sci);"><i class="fa-solid fa-clock"></i> ' + lbl.timing + '</strong> <span style="color:var(--text);">' + ing.timing + '</span></div>' +
+        '<p class="ing-desc">' + ing.desc + '</p>' +
+        '<div class="ing-meta-box">' +
+        '<div><strong class="ing-syn"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> ' + lbl.synergies + '</strong> <span>' + ing.synergies + '</span></div>' +
+        '<div><strong class="ing-con"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> ' + lbl.conflicts + '</strong> <span>' + ing.conflicts + '</span></div>' +
+        '<div><strong class="ing-time"><i class="fa-solid fa-clock" aria-hidden="true"></i> ' + lbl.timing + '</strong> <span>' + ing.timing + '</span></div>' +
         '</div>' +
-        '<a href="' + ing.pairLink + '" class="btn btn-ghost" style="width:100%;text-align:center;">' + lbl.launchMatrix + ' <i class="fa-solid fa-arrow-right"></i></a>' +
+        '<a href="' + ing.pairLink + '" class="btn btn-ghost ing-cta">' + lbl.launchMatrix + ' <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>' +
         '</article>';
     }).join("");
 
     grid.innerHTML = html;
   }
 
+  function initSearch() {
+    var inp = document.getElementById("ing-search");
+    var grid = document.getElementById("ingredients-grid");
+    if (!inp || !grid) return;
+
+    var curLang = getLang();
+    var lbl = LABELS[curLang] || LABELS.en;
+    var emptyEl = document.getElementById("ing-empty");
+    if (!emptyEl) {
+      emptyEl = document.createElement("p");
+      emptyEl.id = "ing-empty";
+      emptyEl.className = "idle";
+      emptyEl.hidden = true;
+      emptyEl.setAttribute("role", "status");
+      emptyEl.textContent = lbl.noMatch;
+      grid.parentNode.insertBefore(emptyEl, grid.nextSibling);
+    }
+
+    inp.addEventListener("input", function () {
+      var q = norm(this.value.trim());
+      var cards = grid.querySelectorAll(".ing-card");
+      var visible = 0;
+      cards.forEach(function (card) {
+        var hay = norm(card.textContent + " " + (card.dataset.code || ""));
+        var match = q === "" || hay.indexOf(q) !== -1;
+        card.hidden = !match;
+        if (match) visible++;
+      });
+      emptyEl.hidden = visible > 0;
+    });
+  }
+
   /* Spotlight, tilt, telemetry clock and language switcher live in app.js (single owner). */
   function init() {
     renderIngredients();
+    initSearch();
     if (window.DermAudit) {
       if (typeof window.DermAudit.initTilt === "function") window.DermAudit.initTilt();
       if (typeof window.DermAudit.initLangSwitcher === "function") window.DermAudit.initLangSwitcher();

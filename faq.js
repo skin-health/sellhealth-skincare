@@ -23,7 +23,7 @@
     },
     {
       "q": "What are the Money-Back Guarantees on these products?",
-      "a": "All 5 featured solutions carry satisfaction guarantees. Skinception products (Kollagen Intensiv, Illuminatural 6i, Dermefface FX7) include a 90-day money-back guarantee. Eyelasticity includes a 67-day guarantee, and Synevra UltraLift is backed by a 60-day money-back policy directly through its official merchant portal."
+      "a": "All 6 featured solutions carry manufacturer satisfaction guarantees. Skinception products (Kollagen Intensiv, Illuminatural 6i, Dermefface FX7) include a 90-day money-back guarantee. Eyelasticity includes a 67-day guarantee, while Synevra UltraLift and Hydrossential are backed by a 60-day money-back policy through ClickBank."
     },
     {
       "q": "Are these formulas safe for sensitive skin types?",
@@ -41,7 +41,7 @@
     },
     {
       "q": "¿Qué garantías de devolución ofrecen estos productos?",
-      "a": "Las 5 fórmulas evaluadas cuentan con garantías completas de satisfacción. Los productos de Skinception (Kollagen Intensiv, Illuminatural 6i, Dermefface FX7) incluyen 90 días de garantía. Eyelasticity incluye 67 días de garantía y Synevra UltraLift ofrece 60 días de devolución total a través de su portal oficial."
+      "a": "Las 6 fórmulas evaluadas cuentan con garantías de satisfacción del fabricante. Los productos de Skinception (Kollagen Intensiv, Illuminatural 6i, Dermefface FX7) incluyen 90 días de garantía. Eyelasticity incluye 67 días de garantía, y Synevra UltraLift junto con Hydrossential ofrecen 60 días de devolución a través de ClickBank."
     },
     {
       "q": "¿Son seguras estas fórmulas para pieles sensibles?",
@@ -59,7 +59,7 @@
     },
     {
       "q": "Welche Garantien gelten für diese Produkte?",
-      "a": "Alle 5 vorgestellten Lösungen bieten Zufriedenheitsgarantien. Skinception (Kollagen Intensiv, Illuminatural 6i, Dermefface FX7) gewährt 90 Tage volle Erstattung. Eyelasticity bietet 67 Tage Garantie, und Synevra UltraLift gewährt 60 Tage Geld-zurück-Garantie direkt über den Hersteller."
+      "a": "Alle 6 vorgestellten Lösungen bieten Zufriedenheitsgarantien gemäß Herstellerrichtlinie. Skinception (Kollagen Intensiv, Illuminatural 6i, Dermefface FX7) gewährt 90 Tage Erstattung. Eyelasticity bietet 67 Tage Garantie, während Synevra UltraLift und Hydrossential eine 60-Tage-Geld-zurück-Garantie über ClickBank bieten."
     },
     {
       "q": "Sind die Formeln für sensible Haut geeignet?",
@@ -77,7 +77,7 @@
     },
     {
       "q": "Quelles sont les garanties de remboursement ?",
-      "a": "Les 5 solutions disposent de garanties de satisfaction complètes. Les soins Skinception (Kollagen Intensiv, Illuminatural 6i, Dermefface FX7) incluent 90 jours de garantie de remboursement. Eyelasticity offre 67 jours de garantie, et Synevra UltraLift propose 60 jours de garantie fabricant."
+      "a": "Les 6 solutions présentées disposent de garanties de satisfaction selon la politique du fabricant. Les soins Skinception (Kollagen Intensiv, Illuminatural 6i, Dermefface FX7) incluent 90 jours de garantie de remboursement. Eyelasticity offre 67 jours de garantie, tandis que Synevra UltraLift et Hydrossential bénéficient d'une garantie de 60 jours via ClickBank."
     },
     {
       "q": "Ces formules conviennent-elles aux peaux sensibles ?",

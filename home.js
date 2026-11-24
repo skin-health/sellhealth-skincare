@@ -16,7 +16,7 @@
   var ORDER = MATRIX.ORDER;
   function getMatrix() { return MATRIX.getMatrix(); }
 
-  /* ---------- REVIEWS DATA BY LANGUAGE (5 products) ---------- */
+  /* ---------- REVIEWS DATA BY LANGUAGE (6 products) ---------- */
   var PRODUCTS_BY_LANG = {
   "en": [
     {
@@ -104,7 +104,7 @@
       "width": 798,
       "height": 800,
       "score": 89,
-      "verdict": "Multi-peptide eye therapy delivering significant reduction in periorbital puffiness and dark circle chromophore accumulation within 28 days.",
+      "verdict": "Multi-peptide eye therapy; the manufacturer reports significant reduction in periorbital puffiness and dark circle chromophore accumulation within 28 days.",
       "pros": [
         "Targets vascular leakage and lymphatic micro-drainage",
         "Non-migrating gel safe for sensitive eye contours",
@@ -150,14 +150,15 @@
       "brand": "Hydrossential",
       "category": "Botanical Hydration",
       "active": "Jojoba, Gotu Kola & Aloe",
-      "img": "/img/optimized/hydrossential.png",
+      "img": "/img/optimized/hydrossential.webp",
       "width": 540,
       "height": 900,
       "score": 76,
       "verdict": "Lightweight 30 ml botanical serum pairing jojoba wax esters, gotu kola, green tea, and aloe vera; exact percentages are undisclosed in a proprietary blend.",
       "pros": [
         "Fast-absorbing 1 fl oz dropper serum with aloe, jojoba, gotu kola, and green tea",
-        "Multi-bottle bundles drop price to $49/bottle with 60-day ClickBank guarantee"
+        "Multi-bottle bundles drop price to $49/bottle with 60-day ClickBank guarantee",
+        "Plant-based formula free of harsh synthetic bleach or parabens"
       ],
       "cons": [
         "Uses a proprietary blend — exact active percentages are not published online",
@@ -255,7 +256,7 @@
       "width": 798,
       "height": 800,
       "score": 89,
-      "verdict": "Terapia multipeptídica para el contorno de ojos con reducción significativa de hinchazón periorbital y ojeras en 28 días.",
+      "verdict": "Terapia multipeptídica para el contorno de ojos; el fabricante informa reducción significativa de hinchazón periorbital y ojeras en 28 días.",
       "pros": [
         "Favorece el drenaje linfático y reduce la microcongestión",
         "Textura gel ligera no grasa segura para ojos sensibles",
@@ -275,7 +276,7 @@
       "name": "Dermefface FX7®",
       "brand": "Skinception",
       "category": "Remodelación de Cicatrices",
-      "active": "Symglucan® 10.0% + Pro-Coll-One+",
+      "active": "10,0% Symglucan® + Pro-Coll-One+",
       "img": "/img/optimized/dermafacereal.webp",
       "width": 419,
       "height": 747,
@@ -301,14 +302,15 @@
       "brand": "Hydrossential",
       "category": "Hidratación Botánica",
       "active": "Jojoba, Gotu Kola y Aloe Vera",
-      "img": "/img/optimized/hydrossential.png",
+      "img": "/img/optimized/hydrossential.webp",
       "width": 540,
       "height": 900,
       "score": 76,
       "verdict": "Sérum ligero de 30 ml con extractos de jojoba, aloe vera, gotu kola y té verde. Las proporciones exactas permanecen en una mezcla patentada.",
       "pros": [
         "Sérum ligero con gotero de 30 ml de rápida absorción",
-        "Packs múltiples bajan el precio a $49 por frasco"
+        "Packs múltiples bajan el precio a $49 por frasco",
+        "Fórmula vegetal sin blanqueadores sintéticos ni parabenos"
       ],
       "cons": [
         "Mezcla patentada sin porcentajes exactos en línea",
@@ -406,7 +408,7 @@
       "width": 798,
       "height": 800,
       "score": 89,
-      "verdict": "Multipeptid-Augenpflege zur deutlichen Reduktion von Schwellungen und vaskulären Augenringen innerhalb von 28 Tagen.",
+      "verdict": "Multipeptid-Augenpflege; laut Hersteller deutliche Reduktion von Schwellungen und vaskulären Augenringen innerhalb von 28 Tagen.",
       "pros": [
         "Fördert den Mikrolymphtransport und stärkt Kapillaren",
         "Schnell einziehende Geltextur für die empfindliche Augenpartie",
@@ -452,14 +454,15 @@
       "brand": "Hydrossential",
       "category": "Botanische Feuchtigkeit",
       "active": "Jojoba, Gotu Kola & Aloe Vera",
-      "img": "/img/optimized/hydrossential.png",
+      "img": "/img/optimized/hydrossential.webp",
       "width": 540,
       "height": 900,
       "score": 76,
       "verdict": "Leichtes 30-ml-Serum mit Jojobaöl, Aloe Vera, Gotu Kola und Grüntee. Exakte Prozentanteile werden in einer geschützten Mischung nicht veröffentlicht.",
       "pros": [
         "Leichtes 30-ml-Pipettenserum, zieht schnell ein",
-        "Mehrfachpakete senken den Preis auf $49 pro Flasche"
+        "Mehrfachpakete senken den Preis auf $49 pro Flasche",
+        "Pflanzliche Formel ohne synthetische Bleichmittel oder Parabene"
       ],
       "cons": [
         "Geschützte Mischung ohne exakte Prozentangaben online",
@@ -467,7 +470,7 @@
       ],
       "affiliateUrl": "https://21ac6covthykdn0bzbwe5hhh1d.hop.clickbank.net",
       "reviewUrl": "/de/hydrossential-review.html",
-      "price": "$69.00 / Flasche",
+      "price": "$69.00 / Flakon",
       "guarantee": "60 Tage Garantie"
     }
   ],
@@ -494,7 +497,7 @@
       ],
       "affiliateUrl": "https://www.kollagenintensiv.com/ct/282956",
       "reviewUrl": "/fr/kollagen-intensiv-review.html",
-      "price": "$59.95 / pot",
+      "price": "59,95 $ / pot",
       "guarantee": "Garantie de 90 jours"
     },
     {
@@ -519,7 +522,7 @@
       ],
       "affiliateUrl": "https://fa90bat349vj5m8h47ps5z4k7l.hop.clickbank.net",
       "reviewUrl": "/fr/synevra-ultralift-review.html",
-      "price": "$79.00 / unité",
+      "price": "79,00 $ / unité",
       "guarantee": "Garantie de 60 jours"
     },
     {
@@ -544,7 +547,7 @@
       ],
       "affiliateUrl": "https://www.illuminatural6i.com/ct/282956",
       "reviewUrl": "/fr/illuminatural-6i-review.html",
-      "price": "$59.95 / flacon",
+      "price": "59,95 $ / flacon",
       "guarantee": "Garantie de 90 jours"
     },
     {
@@ -557,7 +560,7 @@
       "width": 798,
       "height": 800,
       "score": 89,
-      "verdict": "Soin contour des yeux multi-peptides réduisant significativement les poches liquidiennes et les cernes sombres en 28 jours.",
+      "verdict": "Soin contour des yeux multi-peptides ; le fabricant indique une réduction significative des poches liquidiennes et des cernes sombres en 28 jours.",
       "pros": [
         "Stimule le micro-drainage lymphatique péri-oculaire",
         "Gel non migrant sécuritaire pour les contours délicats",
@@ -569,7 +572,7 @@
       ],
       "affiliateUrl": "https://www.naturalhealthsource.com/products/eyelasticity-age-defying-eye-therapy/?aid=282956",
       "reviewUrl": "/fr/eyelasticity-review.html",
-      "price": "$59.95 / flacon",
+      "price": "59,95 $ / flacon",
       "guarantee": "Garantie de 67 jours"
     },
     {
@@ -594,7 +597,7 @@
       ],
       "affiliateUrl": "https://www.dermeffacefx7.com/ct/282956",
       "reviewUrl": "/fr/dermefface-fx7-review.html",
-      "price": "$59.95 / tube",
+      "price": "59,95 $ / tube",
       "guarantee": "Garantie de 90 jours"
     },
     {
@@ -603,14 +606,15 @@
       "brand": "Hydrossential",
       "category": "Hydratation Botanique",
       "active": "Jojoba, Gotu Kola & Aloe Vera",
-      "img": "/img/optimized/hydrossential.png",
+      "img": "/img/optimized/hydrossential.webp",
       "width": 540,
       "height": 900,
       "score": 76,
       "verdict": "Sérum léger de 30 ml à l'huile de jojoba, aloe vera, gotu kola et thé vert. Les pourcentages exacts restent non divulgués dans un mélange exclusif.",
       "pros": [
         "Sérum pipette léger de 30 ml à absorption rapide",
-        "Les lots abaissent le prix à $49 par flacon"
+        "Les lots abaissent le prix à 49 $ par flacon",
+        "Formule végétale sans agents décapants synthétiques ni parabènes"
       ],
       "cons": [
         "Mélange exclusif sans pourcentages exacts en ligne",
@@ -618,7 +622,7 @@
       ],
       "affiliateUrl": "https://21ac6covthykdn0bzbwe5hhh1d.hop.clickbank.net",
       "reviewUrl": "/fr/hydrossential-review.html",
-      "price": "$69.00 / flacon",
+      "price": "69,00 $ / flacon",
       "guarantee": "Garantie de 60 jours"
     }
   ]
@@ -628,118 +632,118 @@
   var POSTS_BY_LANG = {
   "en": [
     {
+      "title": "SYN-AKE vs Argireline: Expression Line Peptides Compared",
+      "category": "Neuro-Peptides",
+      "date": "Oct 10, 2026",
+      "iso": "2026-10-10",
+      "readTime": "7 min read",
+      "excerpt": "In-depth clinical comparison of the Temple Viper venom mimic dipeptide vs acetyl hexapeptide-8 for relaxing dynamic forehead wrinkles.",
+      "url": "/syn-ake-vs-argireline.html"
+    },
+    {
+      "title": "Under-Eye Dark Circles & Microcirculation",
+      "category": "Periorbital Science",
+      "date": "Sep 26, 2026",
+      "iso": "2026-09-26",
+      "readTime": "6 min read",
+      "excerpt": "How vascular leakage, biliverdin pigment accumulation, and sluggish lymphatic drainage create under-eye shadows, and the peptides that target them.",
+      "url": "/blog-under-eye-circles-microcirculation.html"
+    },
+    {
       "title": "Alpha-Arbutin vs Hydroquinone: Safe Melanin Inhibition",
       "category": "Formulation Science",
-      "date": "Oct 14, 2026",
-      "iso": "2026-10-14",
+      "date": "Sep 7, 2026",
+      "iso": "2026-09-07",
       "readTime": "7 min read",
       "excerpt": "Why alpha-arbutin safely inhibits tyrosinase activity without the cytotoxic, ochronosis, and rebound hyperpigmentation risks associated with hydroquinone.",
       "url": "/blog-alpha-arbutin-vs-hydroquinone.html"
-    },
-    {
-      "title": "How to Fade Acne Scars: Remodeling the Dermal Matrix",
-      "category": "Scar Remodeling",
-      "date": "Oct 8, 2026",
-      "iso": "2026-10-08",
-      "readTime": "6 min read",
-      "excerpt": "The biological stages of wound recovery, fibroblast migration, and how 10% Symglucan plus pro-collagen peptides accelerate scar remodeling.",
-      "url": "/blog-how-to-fade-acne-scars.html"
-    },
-    {
-      "title": "Syn-Coll vs Retinol: Peptide Collagen Synthesis",
-      "category": "Peptide Science",
-      "date": "Oct 2, 2026",
-      "iso": "2026-10-02",
-      "readTime": "6 min read",
-      "excerpt": "Comparing Palmitoyl Tripeptide-5 against retinol for cellular matrix remodeling, TGF-beta activation, and barrier tolerance without retinoid peeling.",
-      "url": "/blog-syn-coll-vs-retinol.html"
     }
   ],
   "es": [
     {
+      "title": "SYN-AKE frente a Argireline: Comparativa de péptidos para líneas de expresión",
+      "category": "Neuropéptidos",
+      "date": "10 de octubre de 2026",
+      "iso": "2026-10-10",
+      "readTime": "7 min de lectura",
+      "excerpt": "Comparativa bioquímica en profundidad del dipéptido biomimético frente a Acetyl Hexapeptide-8 para relajar las arrugas dinámicas del rostro.",
+      "url": "/es/syn-ake-vs-argireline.html"
+    },
+    {
+      "title": "Ojeras y microcirculación periorbital: Tratamiento de congestión vascular",
+      "category": "Ciencia Periorbital",
+      "date": "26 de septiembre de 2026",
+      "iso": "2026-09-26",
+      "readTime": "6 min de lectura",
+      "excerpt": "Cómo la permeabilidad vascular, acumulación de biliverdina y drenaje linfático deficiente provocan ojeras oscuras, y los péptidos que las atenúan.",
+      "url": "/es/blog-under-eye-circles-microcirculation.html"
+    },
+    {
       "title": "Alfa-Arbutina frente a Hidroquinona: Inhibición de melanina sin toxicidad",
       "category": "Ciencia de Formulación",
-      "date": "14 de octubre de 2026",
-      "iso": "2026-10-14",
+      "date": "7 de septiembre de 2026",
+      "iso": "2026-09-07",
       "readTime": "7 min de lectura",
       "excerpt": "Por qué la alfa-arbutina inhibe eficazmente la tirosinasa sin los riesgos citotóxicos, ocronosis y efecto rebote asociados a la hidroquinona.",
       "url": "/es/blog-alpha-arbutin-vs-hydroquinone.html"
-    },
-    {
-      "title": "Cómo atenuar cicatrices de acné: Remodelación de la matriz dérmica",
-      "category": "Remodelación Tisular",
-      "date": "8 de octubre de 2026",
-      "iso": "2026-10-08",
-      "readTime": "6 min de lectura",
-      "excerpt": "Fases biológicas de la cicatrización, migración de fibroblastos y cómo el Symglucan al 10% con péptidos acelera la remodelación del tejido.",
-      "url": "/es/blog-how-to-fade-acne-scars.html"
-    },
-    {
-      "title": "Syn-Coll frente a Retinol: Síntesis de colágeno sin descamación",
-      "category": "Ciencia de Péptidos",
-      "date": "2 de octubre de 2026",
-      "iso": "2026-10-02",
-      "readTime": "6 min de lectura",
-      "excerpt": "Comparativa de Palmitoyl Tripeptide-5 frente al retinol en remodelación de la matriz, activación de TGF-beta y tolerancia de la barrera cutánea.",
-      "url": "/es/blog-syn-coll-vs-retinol.html"
     }
   ],
   "de": [
     {
+      "title": "SYN-AKE vs. Argireline: Mimikfalten-Peptide im klinischen Vergleich",
+      "category": "Neuropeptide",
+      "date": "10. Oktober 2026",
+      "iso": "2026-10-10",
+      "readTime": "7 Min. Lesezeit",
+      "excerpt": "Biochemischer Vergleich zwischen dem biomimetischen Schlangengift-Dipeptid und Acetyl Hexapeptide-8 zur Entspannung dynamischer Stirnfalten.",
+      "url": "/de/syn-ake-vs-argireline.html"
+    },
+    {
+      "title": "Dunkle Augenringe & Mikrozirkulation: Vaskuläre und lymphatische Ursachen",
+      "category": "Periorbitale Pflege",
+      "date": "26. September 2026",
+      "iso": "2026-09-26",
+      "readTime": "6 Min. Lesezeit",
+      "excerpt": "Wie Gefäßdurchlässigkeit, Biliverdin-Pigmente und träge Lymphdrainage periorbitale Schatten erzeugen und welche Peptide gezielt ansetzen.",
+      "url": "/de/blog-under-eye-circles-microcirculation.html"
+    },
+    {
       "title": "Alpha-Arbutin vs. Hydrochinon: Sichere Melaninhemmung ohne Zytotoxizität",
       "category": "Formel-Wissenschaft",
-      "date": "14. Oktober 2026",
-      "iso": "2026-10-14",
+      "date": "7. September 2026",
+      "iso": "2026-09-07",
       "readTime": "7 Min. Lesezeit",
       "excerpt": "Warum Alpha-Arbutin die Tyrosinase sicher hemmt, ohne die zytotoxischen Ochronose- und Rebound-Risiken von herkömmlichem Hydrochinon.",
       "url": "/de/blog-alpha-arbutin-vs-hydroquinone.html"
-    },
-    {
-      "title": "Aknenarben glätten: Umbau der extrazellulären Matrix durch Peptide",
-      "category": "Narbenreparatur",
-      "date": "8. Oktober 2026",
-      "iso": "2026-10-08",
-      "readTime": "6 Min. Lesezeit",
-      "excerpt": "Die biologischen Phasen der Wundheilung, Fibroblasten-Migration und wie 10% Symglucan plus Pro-Kollagen-Peptide Narbengewebe regenerieren.",
-      "url": "/de/blog-how-to-fade-acne-scars.html"
-    },
-    {
-      "title": "Syn-Coll vs. Retinol: Peptid-Kollagensynthese ohne Retinoid-Reizung",
-      "category": "Peptid-Wissenschaft",
-      "date": "2. Oktober 2026",
-      "iso": "2026-10-02",
-      "readTime": "6 Min. Lesezeit",
-      "excerpt": "Palmitoyl Tripeptide-5 im direkten Vergleich mit Retinol: TGF-beta-Aktivierung, Matrix-Remodellierung und Barriereverträglichkeit ohne Schuppung.",
-      "url": "/de/blog-syn-coll-vs-retinol.html"
     }
   ],
   "fr": [
     {
+      "title": "SYN-AKE vs Argireline : Comparatif des peptides pour rides d'expression",
+      "category": "Neuropeptides",
+      "date": "10 octobre 2026",
+      "iso": "2026-10-10",
+      "readTime": "7 min de lecture",
+      "excerpt": "Analyse biochimique comparative détaillée entre le dipéptide biomimétique et l'Acétyl Hexapeptide-8 pour relâcher les tensions musculaires du visage.",
+      "url": "/fr/syn-ake-vs-argireline.html"
+    },
+    {
+      "title": "Cernes vasculaires et microcirculation : Résorption des pigments sanguins",
+      "category": "Science Péri-Orbitaire",
+      "date": "26 septembre 2026",
+      "iso": "2026-09-26",
+      "readTime": "6 min de lecture",
+      "excerpt": "Origine des cernes péri-orbitaires : fuites capillaires, stagnation de biliverdine et drainage lymphatique, et les peptides ciblés.",
+      "url": "/fr/blog-under-eye-circles-microcirculation.html"
+    },
+    {
       "title": "Alpha-Arbutine vs Hydroquinone : Dépigmentation sans cytotoxicité",
       "category": "Science de la Formulation",
-      "date": "14 octobre 2026",
-      "iso": "2026-10-14",
+      "date": "7 septembre 2026",
+      "iso": "2026-09-07",
       "readTime": "7 min de lecture",
       "excerpt": "Pourquoi l'alpha-arbutine neutralise l'activité de la tyrosinase sans les risques d'ochronose et d'effet rebond associés à l'hydroquinone.",
       "url": "/fr/blog-alpha-arbutin-vs-hydroquinone.html"
-    },
-    {
-      "title": "Atténuer les cicatrices d'acné : Remodelage de la matrice dermique",
-      "category": "Réparation Cutanée",
-      "date": "8 octobre 2026",
-      "iso": "2026-10-08",
-      "readTime": "6 min de lecture",
-      "excerpt": "Les étapes biologiques de la cicatrisation, la migration fibroblastique et l'apport de 10% de Symglucan et de peptides régénérants.",
-      "url": "/fr/blog-how-to-fade-acne-scars.html"
-    },
-    {
-      "title": "Syn-Coll vs Rétinol : Synthèse de collagène par peptides sans desquamation",
-      "category": "Science des Peptides",
-      "date": "2 octobre 2026",
-      "iso": "2026-10-02",
-      "readTime": "6 min de lecture",
-      "excerpt": "Comparatif du Palmitoyl Tripeptide-5 face au rétinol : activation du TGF-bêta, synthèse de collagène et tolérance sans irritation.",
-      "url": "/fr/blog-syn-coll-vs-retinol.html"
     }
   ]
 };
@@ -750,6 +754,11 @@
       review: "Review",
       readMore: "Read the article",
       empty: "Empty",
+      initScan: "> initializing scan…",
+      colon: ": ",
+      scoreAria: "Score {s} out of 100",
+      meterAria: "Score meter",
+      noMatch: "No matching actives.",
       steps: [
         "Loading molecular profiles",
         "Comparing formulation pH windows",
@@ -778,6 +787,11 @@
       review: "Análisis",
       readMore: "Leer el artículo",
       empty: "Vacío",
+      initScan: "> iniciando análisis…",
+      colon: ": ",
+      scoreAria: "Puntuación {s} de 100",
+      meterAria: "Medidor de puntuación",
+      noMatch: "Sin activos coincidentes.",
       steps: [
         "Cargando perfiles moleculares",
         "Comparando ventanas de pH de formulación",
@@ -806,6 +820,11 @@
       review: "Testbericht",
       readMore: "Artikel lesen",
       empty: "Leer",
+      initScan: "> Analyse wird gestartet…",
+      colon: ": ",
+      scoreAria: "Bewertung {s} von 100",
+      meterAria: "Bewertungsanzeige",
+      noMatch: "Keine passenden Wirkstoffe.",
       steps: [
         "Molekulare Profile laden",
         "pH-Fenster der Formulierung abgleichen",
@@ -821,11 +840,11 @@
       awaitingInput: "> warte auf Eingabe. Wählen Sie zwei Wirkstoffe oder tippen Sie eine Zelle an.",
       orderNote: "Die umgekehrte Reihenfolge ändert das Ergebnis:",
       swapHint: "Zum Vergleichen „Tauschen“ drücken.",
-      reversePotency: "Potenz",
+      reversePotency: "Wirksamkeit",
       cellLabel: "{a} zuerst angewendet, {b} danach angewendet: {v}",
       nextSteps: "Nächste Schritte",
       openPlanner: "Routine im Planer erstellen",
-      auditedFormulas: "Geprüfte Formeln ansehen",
+      auditedFormulas: "Analysierte Formeln ansehen",
       plannerHref: "/de/tools/routine-planner.html",
       reviewsHref: "/de/reviews/"
     },
@@ -834,6 +853,11 @@
       review: "Avis",
       readMore: "Lire l'article",
       empty: "Vide",
+      initScan: "> initialisation de l'analyse…",
+      colon: " : ",
+      scoreAria: "Note {s} sur 100",
+      meterAria: "Indicateur de note",
+      noMatch: "Aucun actif correspondant.",
       steps: [
         "Chargement des profils moléculaires",
         "Comparaison des fenêtres de pH",
@@ -849,7 +873,7 @@
       awaitingInput: "> en attente de sélection. Choisissez deux actifs ou touchez une case pour analyser.",
       orderNote: "L'ordre inverse change le résultat :",
       swapHint: "Appuyez sur Inverser pour comparer.",
-      reversePotency: "Potence",
+      reversePotency: "Efficacité",
       cellLabel: "{a} appliqué en premier, {b} appliqué ensuite : {v}",
       nextSteps: "Étapes suivantes",
       openPlanner: "Créer une routine dans le planificateur",
@@ -1019,13 +1043,13 @@
     var a = activeA;
     var b = activeB;
     var steps = [
-      ui.steps[0] + ": " + ING[a].n + " → " + ING[b].n,
+      ui.steps[0] + ui.colon + ING[a].n + " → " + ING[b].n,
       ui.steps[1],
       ui.steps[2],
       ui.steps[3]
     ];
 
-    out.innerHTML = '<div class="scan"><p>&gt; initializing scan…</p><div class="bar"><i id="bi"></i></div><div id="log"></div></div>';
+    out.innerHTML = '<div class="scan"><p>' + ui.initScan + '</p><div class="bar"><i id="bi"></i></div><div id="log"></div></div>';
     var i = 0;
     var gap = reduce ? 0 : 350;
 
@@ -1078,7 +1102,7 @@
       var revBadge = (revV === "s" ? "✔" : revV === "c" ? "⚠" : "●") + " " + (VERD[revV] || revV);
       reverseNoteHtml = '<div class="order-diff">' +
         '<strong>' + ui.orderNote + '</strong> ' +
-        ING[b].n + ' → ' + ING[a].n + ' (' + revBadge + ', ' + ui.reversePotency + ': ' + rev.potency + '%). ' +
+        ING[b].n + ' → ' + ING[a].n + ' (' + revBadge + ', ' + ui.reversePotency + ui.colon + rev.potency + '%). ' +
         '<span class="ev">' + ui.swapHint + '</span>' +
         '</div>';
     }
@@ -1096,8 +1120,8 @@
       meter(ui.irritationLoad, rec.irritation, 10, irCol, "/10") +
       meter(ui.potencyRetained, rec.potency, 100, poCol, "%") +
       '<p class="ev">' + ui.evidence + rec.evidence + '</p></div><div>' +
-      '<div class="blk"><h4>' + ui.mechanism + '</h4><p>' + rec.mechanism + '</p></div>' +
-      '<div class="blk"><h4>' + ui.routineAdvice + '</h4><p><span class="sched">' + rec.schedule + '</span>' + rec.advice + '</p></div>' +
+      '<div class="blk"><h3 class="lbl">' + ui.mechanism + '</h3><p>' + rec.mechanism + '</p></div>' +
+      '<div class="blk"><h3 class="lbl">' + ui.routineAdvice + '</h3><p><span class="sched">' + rec.schedule + '</span> ' + rec.advice + '</p></div>' +
       reverseNoteHtml +
       '<p class="ev">' + ui.disclaimer + '</p></div>' +
       actionsHtml +
@@ -1131,18 +1155,32 @@
       });
     }
 
-    /* Per-slot filter inputs. Matches on key, name and category. */
+    /* Per-slot filter inputs with Unicode diacritic folding. */
+    function norm(s) {
+      return (s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    }
     var ING = getMatrix().ING;
+    var filterUi = UI[getLang()] || UI.en;
     [["filter-a", "chips-a"], ["filter-b", "chips-b"]].forEach(function (pair) {
       var inp = $(pair[0]);
-      if (!inp) return;
+      var box = $(pair[1]);
+      if (!inp || !box) return;
+      var emptyMsg = document.createElement("span");
+      emptyMsg.className = "idle";
+      emptyMsg.hidden = true;
+      emptyMsg.textContent = filterUi.noMatch;
+      box.appendChild(emptyMsg);
       inp.addEventListener("input", function () {
-        var q = this.value.trim().toLowerCase();
-        document.querySelectorAll("#" + pair[1] + " .chip").forEach(function (c) {
+        var q = norm(this.value.trim());
+        var shown = 0;
+        box.querySelectorAll(".chip").forEach(function (c) {
           var k = c.dataset.k;
-          var hay = (k + " " + ING[k].n + " " + ING[k].c).toLowerCase();
-          c.hidden = q !== "" && hay.indexOf(q) === -1;
+          var hay = norm(k + " " + ING[k].n + " " + ING[k].c);
+          var hide = q !== "" && hay.indexOf(q) === -1;
+          c.hidden = hide;
+          if (!hide) shown++;
         });
+        emptyMsg.hidden = shown > 0;
       });
     });
 
@@ -1177,20 +1215,21 @@
         else if (e.key === "ArrowUp") step = -7;
 
         if (e.key === "Home") {
-          c = 0;
-          if (r === 0) c = 1;
+          c = (r === 0) ? 1 : 0;
         } else if (e.key === "End") {
-          c = 6;
-          if (r === 6) c = 5;
+          c = (r === 6) ? 5 : 6;
+        } else if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+          var dc = (e.key === "ArrowRight") ? 1 : -1;
+          var nc = c + dc;
+          if (nc === r) nc += dc;
+          if (nc < 0 || nc > 6) return;
+          c = nc;
         } else {
-          var total = 49;
-          var idx = r * 7 + c;
-          for (var guard = 0; guard < total; guard++) {
-            idx += step;
-            if (idx < 0 || idx >= total) return;
-            var nr = Math.floor(idx / 7), nc = idx % 7;
-            if (nr !== nc) { r = nr; c = nc; break; }
-          }
+          var dr = (e.key === "ArrowDown") ? 1 : -1;
+          var nr = r + dr;
+          if (nr === c) nr += dr;
+          if (nr < 0 || nr > 6) return;
+          r = nr;
         }
 
         if (r === c) return;
@@ -1234,6 +1273,7 @@
         var out = $("output");
         if (out) {
           out.innerHTML = '<p class="idle">' + ui.awaitingInput + '</p>';
+          out.setAttribute("hidden", "");
         }
       });
     }
@@ -1243,6 +1283,7 @@
   function renderReviews() {
     var grid = $("reviews-grid");
     if (!grid) return;
+    if (grid.querySelector("article.rev")) return;
 
     var curLang = getLang();
     var list = PRODUCTS_BY_LANG[curLang] || PRODUCTS_BY_LANG.en;
@@ -1255,18 +1296,18 @@
         '<h3>' + p.name + '</h3>' +
         '<div class="brandn">' + p.brand + ' · ' + p.category + '</div>' +
         '</div>' +
-        '<div class="score" aria-label="Score ' + p.score + ' out of 100">' + p.score + '<small>/100</small></div>' +
+        '<div class="score" aria-label="' + ui.scoreAria.replace("{s}", p.score) + '">' + p.score + '<small>/100</small></div>' +
         '</div>' +
-        '<div class="m" role="img" aria-label="Score meter"><i style="width:' + p.score + '%;background:linear-gradient(90deg,var(--violet),var(--sci));box-shadow:0 0 10px var(--sci)"></i></div>' +
-        '<div class="tags"><span class="tag">' + p.active + '</span><span class="tag">' + p.guarantee + '</span></div>' +
+        '<div class="m" role="img" aria-label="' + ui.meterAria + '"><i style="width:' + p.score + '%;background:linear-gradient(90deg,var(--violet),var(--sci));box-shadow:0 0 10px var(--sci)"></i></div>' +
+        '<div class="tags"><span class="tag">' + p.active + '</span> <span class="tag">' + p.guarantee + '</span></div>' +
         '<div class="pc">' +
-        '<span><b class="p">+</b> ' + p.pros[0] + '</span>' +
+        '<span><b class="p">+</b> ' + p.pros[0] + '</span> ' +
         '<span><b class="q">−</b> ' + p.cons[0] + '</span>' +
         '</div>' +
-        '<p class="verdict">"' + p.verdict + '"</p>' +
-        '<div style="display:flex;gap:.5rem;margin-top:auto;">' +
-        '<a class="btn affiliate-link" href="' + p.affiliateUrl + '" rel="noopener nofollow sponsored" target="_blank" data-product="' + p.key + '" data-placement="home-card" style="flex:1;text-align:center;">' + ui.viewOffer + ' <i class="fa-solid fa-arrow-up-right-from-square"></i></a>' +
-        '<a class="btn ghost" href="' + p.reviewUrl + '" style="text-align:center;">' + ui.review + '</a>' +
+        '<p class="verdict">' + p.verdict + '</p>' +
+        '<div class="rev-actions">' +
+        '<a class="btn affiliate-link" href="' + p.affiliateUrl + '" rel="noopener nofollow sponsored" target="_blank" data-product="' + p.key + '" data-placement="home-card">' + ui.viewOffer + ' <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>' +
+        '<a class="btn ghost" href="' + p.reviewUrl + '">' + ui.review + '</a>' +
         '</div>' +
         '<div class="price">' + p.price + ' · ' + p.guarantee + '</div>' +
         '</article>';
@@ -1279,6 +1320,7 @@
   function renderBlog() {
     var grid = $("blog-grid");
     if (!grid) return;
+    if (grid.querySelector("article.post")) return;
 
     var curLang = getLang();
     var list = POSTS_BY_LANG[curLang] || POSTS_BY_LANG.en;
@@ -1287,13 +1329,13 @@
     var html = list.map(function (p) {
       return '<article class="glass post">' +
         '<div class="meta">' +
-        '<span class="cat">' + p.category + '</span>' +
-        '<time datetime="' + p.iso + '"><span>' + p.date + '</span></time>' +
+        '<span class="cat">' + p.category + '</span> ' +
+        '<time datetime="' + p.iso + '"><span>' + p.date + '</span></time> ' +
         '<span>' + p.readTime + '</span>' +
         '</div>' +
         '<h3>' + p.title + '</h3>' +
         '<p>' + p.excerpt + '</p>' +
-        '<a class="more" href="' + p.url + '" aria-label="' + ui.readMore + ': ' + p.title + '">' + ui.readMore + ' <i class="fa-solid fa-arrow-right"></i></a>' +
+        '<a class="more" href="' + p.url + '" aria-label="' + ui.readMore + ui.colon + p.title + '">' + ui.readMore + ' <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>' +
         '</article>';
     }).join("");
 
@@ -1311,6 +1353,41 @@
     });
   }
 
+  function resolveActiveCode(val) {
+    if (!val) return null;
+    var v = val.trim().toUpperCase();
+    if (ORDER.indexOf(v) !== -1) return v;
+    var slugMap = {
+      "RETINOL": "RET",
+      "L-ASCORBIC-ACID": "VC",
+      "VITAMIN-C": "VC",
+      "NIACINAMIDE": "NIA",
+      "SALICYLIC-ACID": "BHA",
+      "BHA": "BHA",
+      "GLYCOLIC-ACID": "AHA",
+      "AHA": "AHA",
+      "BENZOYL-PEROXIDE": "BPO",
+      "BPO": "BPO",
+      "PEPTIDES": "PEP"
+    };
+    return slugMap[v] || null;
+  }
+
+  function applyQueryParams() {
+    if (!window.location.search || typeof URLSearchParams === "undefined") return;
+    var params = new URLSearchParams(window.location.search);
+    var aCode = resolveActiveCode(params.get("a") || params.get("actives"));
+    var bCode = resolveActiveCode(params.get("b"));
+    if (aCode) activeA = aCode;
+    if (bCode && bCode !== activeA) activeB = bCode;
+    if (aCode || bCode) {
+      updateUI();
+      if (activeA && activeB && activeA !== activeB) {
+        runCheck();
+      }
+    }
+  }
+
   /* ---------- INITIALIZATION ---------- */
   function init() {
     updateMatrixCounts();
@@ -1319,6 +1396,7 @@
     initMatrixEvents();
     renderReviews();
     renderBlog();
+    applyQueryParams();
   }
 
   if (document.readyState === "loading") {

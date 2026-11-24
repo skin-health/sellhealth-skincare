@@ -1,10 +1,10 @@
-# Derm Audit Journal — Comprehensive Technical Reference
+# DermAudit Journal — Comprehensive Technical Reference
 
-> Independent, evidence-based skincare review and ingredient analysis journal evaluating anti-aging peptide creams, expression line serums, botanical skin brighteners, under-eye formulas, and scar remodeling gels.
+> Independent, evidence-based skincare review and ingredient analysis journal evaluating anti-aging peptide creams, expression line serums, botanical skin brighteners, under-eye formulas, scar remodeling gels, and botanical hydration serums.
 
 ## System & Portfolio Overview
 - **Domain**: https://dermaudit.com
-- **Reviewed Portfolio**: 5 Flagship Skincare Formulations across 3 Core Treatment Categories.
+- **Reviewed Portfolio**: 6 Flagship Skincare Formulations across Core Treatment Categories.
 - **Supported Languages**: English (`/`), Spanish (`/es/`), German (`/de/`), French (`/fr/`).
 - **Indexable Pages**: inventory is authoritative in https://dermaudit.com/sitemap.xml; every URL carries reciprocal `hreflang` across EN, ES, DE and FR.
 
@@ -14,13 +14,14 @@
 | :--- | :--- | :--- | :--- | :--- |
 | **Kollagen Intensiv™** | Anti-Aging Cream | Syn-Coll® (Palmitoyl Tripeptide-5), Shea Butter, Retinyl Palmitate | The manufacturer reports up to a 354% boost in collagen synthesis and an 84% reduction in wrinkle appearance. | $59.95 |
 | **Synevra UltraLift™** | Expression Line Protocol | SYN-AKE® Dipeptide, VitaLock™ Oral Beauty Nutrients | The manufacturer reports up to an 82% reduction in muscle micro-contractions to smooth forehead furrows without needles. | $79.00 |
-| **Illuminatural 6i™** | Dark Spot Corrector | Alpha-Arbutin, Niacinamide, Whitonyl®, Magnesium Ascorbyl Phosphate | 6-active botanical tyrosinase inhibition; the manufacturer reports gradual brightening of hyperpigmentation without hydroquinone. | $59.95 |
+| **Illuminatural 6i™** | Dark Spot Corrector | Alpha-Arbutin, Niacinamide, Whitonyl®, Magnesium Ascorbyl Phosphate | 4-active botanical tyrosinase inhibition; the manufacturer reports gradual brightening of hyperpigmentation without hydroquinone. | $59.95 |
 | **Eyelasticity™** | Under-Eye Therapy | Eyeseryl® (Tetrapeptide-5), Regu®-Age, Syn-Coll®, Pro-Coll-One+ | The manufacturer reports reduced under-eye fluid puffiness, dark circle appearance, and crow's feet within 15 to 28 days. | $59.95 |
 | **Dermefface FX7®** | Scar Reduction Therapy | Symglucan (10%), Pro-Coll-One+ (2%), Pentavitin (5%), DL-Panthenol | The manufacturer reports up to a 1,190% increase in Type I collagen synthesis to help flatten surgical and acne scars. | $59.95 |
+| **Hydrossential™** | Botanical Hydration | Jojoba Oil, Gotu Kola, Aloe Vera, Green Tea, Japanese Witch Hazel | Lightweight 30 ml botanical serum; exact percentages are undisclosed in a proprietary blend (60-day ClickBank guarantee). | $69.00 |
 
 ## Core Website Architecture
-- [Review Portal](https://dermaudit.com/): Landing page comparing all 5 products, with the conflict matrix.
-- [Review Library](https://dermaudit.com/reviews/): Index of all 5 formulation reviews.
+- [Review Portal](https://dermaudit.com/): Landing page comparing all 6 products, with the conflict matrix.
+- [Review Library](https://dermaudit.com/reviews/): Index of all 6 formulation reviews.
 - [Key Ingredients](https://dermaudit.com/ingredients/): Mechanism, conflict and synergy notes for the 7 actives.
 - [Comparison Matrix](https://dermaudit.com/comparison.html): 3 dedicated side-by-side formulation matchup tables.
 - [Skincare Conflict Matrix](https://dermaudit.com/#matrix): Interactive order-aware compatibility engine over 7 actives, 21 pairs and 42 ordered checks.
@@ -40,7 +41,7 @@
 - [Affiliate Disclosure](https://dermaudit.com/affiliate-disclosure.html): SellHealth, ClickBank and Natural Health Source commissions.
 
 ## Multilingual Hubs
-Each locale carries its own home, review library, ingredient guide, FAQ, comparison table, five reviews, research journal with four studies, conflict matrix, peptide study and full legal set.
+Each locale carries its own home, review library, ingredient guide, FAQ, comparison table, six reviews, research journal with four studies, conflict matrix, peptide study and full legal set.
 - **Spanish Hub**: https://dermaudit.com/es/
 - **German Hub**: https://dermaudit.com/de/
 - **French Hub**: https://dermaudit.com/fr/
@@ -54,7 +55,7 @@ A: Kollagen Intensiv is formulated with the Swiss peptide Syn-Coll® (Palmitoyl 
 A: Synevra UltraLift uses SYN-AKE® dipeptide technology; the manufacturer reports that it inhibits muscular micro-contractions by up to 82% to help smooth dynamic expression furrows on the forehead and around the eyes.
 
 ### Q: Does Illuminatural 6i contain bleaching chemicals?
-A: No. According to the manufacturer, Illuminatural 6i contains zero hydroquinone, mercury, or harsh bleaching agents, and instead uses 6 botanical brighteners (including Alpha-Arbutin and Niacinamide) to interrupt melanin production and surface transfer.
+A: No. According to the manufacturer, Illuminatural 6i contains zero hydroquinone, mercury, or harsh bleaching agents, and instead uses 4 botanical brighteners (including Alpha-Arbutin and Niacinamide) to interrupt melanin production and surface transfer.
 
 ### Q: How does Eyelasticity address under-eye bags and dark circles?
 A: Eyelasticity combines Eyeseryl® and Regu®-Age with Syn-Coll®; the manufacturer reports reduced under-eye fluid puffiness, improved micro-capillary support, and smoother crow's feet within 15 to 28 days without heavy oils.

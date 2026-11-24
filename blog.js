@@ -14,10 +14,28 @@
   var POSTS_BY_LANG = {
   "en": [
     {
+      "title": "SYN-AKE vs Argireline: Expression Line Peptides Compared",
+      "category": "Neuro-Peptides",
+      "date": "Oct 10, 2026",
+      "iso": "2026-10-10",
+      "readTime": "7 min read",
+      "excerpt": "In-depth clinical comparison of the Temple Viper venom mimic dipeptide vs acetyl hexapeptide-8 for relaxing dynamic forehead wrinkles.",
+      "url": "/syn-ake-vs-argireline.html"
+    },
+    {
+      "title": "Under-Eye Dark Circles & Microcirculation",
+      "category": "Periorbital Science",
+      "date": "Sep 26, 2026",
+      "iso": "2026-09-26",
+      "readTime": "6 min read",
+      "excerpt": "How vascular leakage, biliverdin pigment accumulation, and sluggish lymphatic drainage create under-eye shadows, and the peptides that target them.",
+      "url": "/blog-under-eye-circles-microcirculation.html"
+    },
+    {
       "title": "Alpha-Arbutin vs Hydroquinone: Safe Melanin Inhibition",
       "category": "Formulation Science",
-      "date": "Oct 14, 2026",
-      "iso": "2026-10-14",
+      "date": "Sep 7, 2026",
+      "iso": "2026-09-07",
       "readTime": "7 min read",
       "excerpt": "Why alpha-arbutin safely inhibits tyrosinase activity without the cytotoxic, ochronosis, and rebound hyperpigmentation risks associated with hydroquinone.",
       "url": "/blog-alpha-arbutin-vs-hydroquinone.html"
@@ -25,46 +43,46 @@
     {
       "title": "How to Fade Acne Scars: Remodeling the Dermal Matrix",
       "category": "Scar Remodeling",
-      "date": "Oct 8, 2026",
-      "iso": "2026-10-08",
-      "readTime": "6 min read",
+      "date": "Aug 4, 2026",
+      "iso": "2026-08-04",
+      "readTime": "7 min read",
       "excerpt": "The biological stages of wound recovery, fibroblast migration, and how 10% Symglucan plus pro-collagen peptides accelerate scar remodeling.",
       "url": "/blog-how-to-fade-acne-scars.html"
     },
     {
       "title": "Syn-Coll vs Retinol: Peptide Collagen Synthesis",
       "category": "Peptide Science",
-      "date": "Oct 2, 2026",
-      "iso": "2026-10-02",
+      "date": "Aug 4, 2026",
+      "iso": "2026-08-04",
       "readTime": "6 min read",
       "excerpt": "Comparing Palmitoyl Tripeptide-5 against retinol for cellular matrix remodeling, TGF-beta activation, and barrier tolerance without retinoid peeling.",
       "url": "/blog-syn-coll-vs-retinol.html"
-    },
-    {
-      "title": "Under-Eye Dark Circles & Microcirculation",
-      "category": "Periorbital Science",
-      "date": "Sep 21, 2026",
-      "iso": "2026-09-21",
-      "readTime": "5 min read",
-      "excerpt": "How vascular leakage, biliverdin pigment accumulation, and sluggish lymphatic drainage create under-eye shadows, and the peptides that target them.",
-      "url": "/blog-under-eye-circles-microcirculation.html"
-    },
-    {
-      "title": "SYN-AKE vs Argireline: Expression Line Peptides Compared",
-      "category": "Neuro-Peptides",
-      "date": "Sep 10, 2026",
-      "iso": "2026-09-10",
-      "readTime": "8 min read",
-      "excerpt": "In-depth clinical comparison of the Temple Viper venom mimic dipeptide vs acetyl hexapeptide-8 for relaxing dynamic forehead wrinkles.",
-      "url": "/syn-ake-vs-argireline.html"
     }
   ],
   "es": [
     {
+      "title": "SYN-AKE frente a Argireline: Comparativa de péptidos para líneas de expresión",
+      "category": "Neuropéptidos",
+      "date": "10 de octubre de 2026",
+      "iso": "2026-10-10",
+      "readTime": "7 min de lectura",
+      "excerpt": "Comparativa bioquímica en profundidad del dipéptido biomimético frente a Acetyl Hexapeptide-8 para relajar las arrugas dinámicas del rostro.",
+      "url": "/es/syn-ake-vs-argireline.html"
+    },
+    {
+      "title": "Ojeras y microcirculación periorbital: Tratamiento de congestión vascular",
+      "category": "Ciencia Periorbital",
+      "date": "26 de septiembre de 2026",
+      "iso": "2026-09-26",
+      "readTime": "6 min de lectura",
+      "excerpt": "Cómo la permeabilidad vascular, acumulación de biliverdina y drenaje linfático deficiente provocan ojeras oscuras, y los péptidos que las atenúan.",
+      "url": "/es/blog-under-eye-circles-microcirculation.html"
+    },
+    {
       "title": "Alfa-Arbutina frente a Hidroquinona: Inhibición de melanina sin toxicidad",
       "category": "Ciencia de Formulación",
-      "date": "14 de octubre de 2026",
-      "iso": "2026-10-14",
+      "date": "7 de septiembre de 2026",
+      "iso": "2026-09-07",
       "readTime": "7 min de lectura",
       "excerpt": "Por qué la alfa-arbutina inhibe eficazmente la tirosinasa sin los riesgos citotóxicos, ocronosis y efecto rebote asociados a la hidroquinona.",
       "url": "/es/blog-alpha-arbutin-vs-hydroquinone.html"
@@ -72,46 +90,46 @@
     {
       "title": "Cómo atenuar cicatrices de acné: Remodelación de la matriz dérmica",
       "category": "Remodelación Tisular",
-      "date": "8 de octubre de 2026",
-      "iso": "2026-10-08",
-      "readTime": "6 min de lectura",
+      "date": "4 de agosto de 2026",
+      "iso": "2026-08-04",
+      "readTime": "7 min de lectura",
       "excerpt": "Fases biológicas de la cicatrización, migración de fibroblastos y cómo el Symglucan al 10% con péptidos acelera la remodelación del tejido.",
       "url": "/es/blog-how-to-fade-acne-scars.html"
     },
     {
       "title": "Syn-Coll frente a Retinol: Síntesis de colágeno sin descamación",
       "category": "Ciencia de Péptidos",
-      "date": "2 de octubre de 2026",
-      "iso": "2026-10-02",
+      "date": "4 de agosto de 2026",
+      "iso": "2026-08-04",
       "readTime": "6 min de lectura",
       "excerpt": "Comparativa de Palmitoyl Tripeptide-5 frente al retinol en remodelación de la matriz, activación de TGF-beta y tolerancia de la barrera cutánea.",
       "url": "/es/blog-syn-coll-vs-retinol.html"
-    },
-    {
-      "title": "Ojeras y microcirculación periorbital: Tratamiento de congestión vascular",
-      "category": "Ciencia Periorbital",
-      "date": "21 de septiembre de 2026",
-      "iso": "2026-09-21",
-      "readTime": "5 min de lectura",
-      "excerpt": "Cómo la permeabilidad vascular, acumulación de biliverdina y drenaje linfático deficiente provocan ojeras oscuras, y los péptidos que las atenúan.",
-      "url": "/es/blog-under-eye-circles-microcirculation.html"
-    },
-    {
-      "title": "SYN-AKE frente a Argireline: Comparativa de péptidos para líneas de expresión",
-      "category": "Neuropéptidos",
-      "date": "10 de septiembre de 2026",
-      "iso": "2026-09-10",
-      "readTime": "8 min de lectura",
-      "excerpt": "Comparativa bioquímica en profundidad del dipéptido biomimético frente a Acetyl Hexapeptide-8 para relajar las arrugas dinámicas del rostro.",
-      "url": "/es/syn-ake-vs-argireline.html"
     }
   ],
   "de": [
     {
+      "title": "SYN-AKE vs. Argireline: Mimikfalten-Peptide im klinischen Vergleich",
+      "category": "Neuropeptide",
+      "date": "10. Oktober 2026",
+      "iso": "2026-10-10",
+      "readTime": "7 Min. Lesezeit",
+      "excerpt": "Biochemischer Vergleich zwischen dem biomimetischen Schlangengift-Dipeptid und Acetyl Hexapeptide-8 zur Entspannung dynamischer Stirnfalten.",
+      "url": "/de/syn-ake-vs-argireline.html"
+    },
+    {
+      "title": "Dunkle Augenringe & Mikrozirkulation: Vaskuläre und lymphatische Ursachen",
+      "category": "Periorbitale Pflege",
+      "date": "26. September 2026",
+      "iso": "2026-09-26",
+      "readTime": "6 Min. Lesezeit",
+      "excerpt": "Wie Gefäßdurchlässigkeit, Biliverdin-Pigmente und träge Lymphdrainage periorbitale Schatten erzeugen und welche Peptide gezielt ansetzen.",
+      "url": "/de/blog-under-eye-circles-microcirculation.html"
+    },
+    {
       "title": "Alpha-Arbutin vs. Hydrochinon: Sichere Melaninhemmung ohne Zytotoxizität",
       "category": "Formel-Wissenschaft",
-      "date": "14. Oktober 2026",
-      "iso": "2026-10-14",
+      "date": "7. September 2026",
+      "iso": "2026-09-07",
       "readTime": "7 Min. Lesezeit",
       "excerpt": "Warum Alpha-Arbutin die Tyrosinase sicher hemmt, ohne die zytotoxischen Ochronose- und Rebound-Risiken von herkömmlichem Hydrochinon.",
       "url": "/de/blog-alpha-arbutin-vs-hydroquinone.html"
@@ -119,46 +137,46 @@
     {
       "title": "Aknenarben glätten: Umbau der extrazellulären Matrix durch Peptide",
       "category": "Narbenreparatur",
-      "date": "8. Oktober 2026",
-      "iso": "2026-10-08",
-      "readTime": "6 Min. Lesezeit",
+      "date": "4. August 2026",
+      "iso": "2026-08-04",
+      "readTime": "7 Min. Lesezeit",
       "excerpt": "Die biologischen Phasen der Wundheilung, Fibroblasten-Migration und wie 10% Symglucan plus Pro-Kollagen-Peptide Narbengewebe regenerieren.",
       "url": "/de/blog-how-to-fade-acne-scars.html"
     },
     {
       "title": "Syn-Coll vs. Retinol: Peptid-Kollagensynthese ohne Retinoid-Reizung",
       "category": "Peptid-Wissenschaft",
-      "date": "2. Oktober 2026",
-      "iso": "2026-10-02",
+      "date": "4. August 2026",
+      "iso": "2026-08-04",
       "readTime": "6 Min. Lesezeit",
       "excerpt": "Palmitoyl Tripeptide-5 im direkten Vergleich mit Retinol: TGF-beta-Aktivierung, Matrix-Remodellierung und Barriereverträglichkeit ohne Schuppung.",
       "url": "/de/blog-syn-coll-vs-retinol.html"
-    },
-    {
-      "title": "Dunkle Augenringe & Mikrozirkulation: Vaskuläre und lymphatische Ursachen",
-      "category": "Periorbitale Pflege",
-      "date": "21. September 2026",
-      "iso": "2026-09-21",
-      "readTime": "5 Min. Lesezeit",
-      "excerpt": "Wie Gefäßdurchlässigkeit, Biliverdin-Pigmente und träge Lymphdrainage periorbitale Schatten erzeugen und welche Peptide gezielt ansetzen.",
-      "url": "/de/blog-under-eye-circles-microcirculation.html"
-    },
-    {
-      "title": "SYN-AKE vs. Argireline: Mimikfalten-Peptide im klinischen Vergleich",
-      "category": "Neuropeptide",
-      "date": "10. September 2026",
-      "iso": "2026-09-10",
-      "readTime": "8 Min. Lesezeit",
-      "excerpt": "Biochemischer Vergleich zwischen dem biomimetischen Schlangengift-Dipeptid und Acetyl Hexapeptide-8 zur Entspannung dynamischer Stirnfalten.",
-      "url": "/de/syn-ake-vs-argireline.html"
     }
   ],
   "fr": [
     {
+      "title": "SYN-AKE vs Argireline : Comparatif des peptides pour rides d'expression",
+      "category": "Neuropeptides",
+      "date": "10 octobre 2026",
+      "iso": "2026-10-10",
+      "readTime": "7 min de lecture",
+      "excerpt": "Analyse biochimique comparative détaillée entre le dipéptide biomimétique et l'Acétyl Hexapeptide-8 pour relâcher les tensions musculaires du visage.",
+      "url": "/fr/syn-ake-vs-argireline.html"
+    },
+    {
+      "title": "Cernes vasculaires et microcirculation : Résorption des pigments sanguins",
+      "category": "Science Péri-Orbitaire",
+      "date": "26 septembre 2026",
+      "iso": "2026-09-26",
+      "readTime": "6 min de lecture",
+      "excerpt": "Origine des cernes péri-orbitaires : fuites capillaires, stagnation de biliverdine et drainage lymphatique, et les peptides ciblés.",
+      "url": "/fr/blog-under-eye-circles-microcirculation.html"
+    },
+    {
       "title": "Alpha-Arbutine vs Hydroquinone : Dépigmentation sans cytotoxicité",
       "category": "Science de la Formulation",
-      "date": "14 octobre 2026",
-      "iso": "2026-10-14",
+      "date": "7 septembre 2026",
+      "iso": "2026-09-07",
       "readTime": "7 min de lecture",
       "excerpt": "Pourquoi l'alpha-arbutine neutralise l'activité de la tyrosinase sans les risques d'ochronose et d'effet rebond associés à l'hydroquinone.",
       "url": "/fr/blog-alpha-arbutin-vs-hydroquinone.html"
@@ -166,52 +184,35 @@
     {
       "title": "Atténuer les cicatrices d'acné : Remodelage de la matrice dermique",
       "category": "Réparation Cutanée",
-      "date": "8 octobre 2026",
-      "iso": "2026-10-08",
-      "readTime": "6 min de lecture",
+      "date": "4 août 2026",
+      "iso": "2026-08-04",
+      "readTime": "7 min de lecture",
       "excerpt": "Les étapes biologiques de la cicatrisation, la migration fibroblastique et l'apport de 10% de Symglucan et de peptides régénérants.",
       "url": "/fr/blog-how-to-fade-acne-scars.html"
     },
     {
       "title": "Syn-Coll vs Rétinol : Synthèse de collagène par peptides sans desquamation",
       "category": "Science des Peptides",
-      "date": "2 octobre 2026",
-      "iso": "2026-10-02",
+      "date": "4 août 2026",
+      "iso": "2026-08-04",
       "readTime": "6 min de lecture",
       "excerpt": "Comparatif du Palmitoyl Tripeptide-5 face au rétinol : activation du TGF-bêta, synthèse de collagène et tolérance sans irritation.",
       "url": "/fr/blog-syn-coll-vs-retinol.html"
-    },
-    {
-      "title": "Cernes vasculaires et microcirculation : Résorption des pigments sanguins",
-      "category": "Science Péri-Orbitaire",
-      "date": "21 septembre 2026",
-      "iso": "2026-09-21",
-      "readTime": "5 min de lecture",
-      "excerpt": "Origine des cernes péri-orbitaires : fuites capillaires, stagnation de biliverdine et drainage lymphatique, et les peptides ciblés.",
-      "url": "/fr/blog-under-eye-circles-microcirculation.html"
-    },
-    {
-      "title": "SYN-AKE vs Argireline : Comparatif des peptides pour rides d'expression",
-      "category": "Neuropeptides",
-      "date": "10 septembre 2026",
-      "iso": "2026-09-10",
-      "readTime": "8 min de lecture",
-      "excerpt": "Analyse biochimique comparative détaillée entre le dipéptide biomimétique et l'Acétyl Hexapeptide-8 pour relâcher les tensions musculaires du visage.",
-      "url": "/fr/syn-ake-vs-argireline.html"
     }
   ]
 };
 
   var LABELS = {
-    en: { readMore: "Read the article" },
-    es: { readMore: "Leer el artículo" },
-    de: { readMore: "Artikel lesen" },
-    fr: { readMore: "Lire l'article" }
+    en: { readMore: "Read the article", sep: ": " },
+    es: { readMore: "Leer el artículo", sep: ": " },
+    de: { readMore: "Artikel lesen", sep: ": " },
+    fr: { readMore: "Lire l'article", sep: " : " }
   };
 
   function renderBlog() {
     var grid = document.getElementById("blog-grid");
     if (!grid) return;
+    if (grid.querySelector("article.post")) return;
 
     var curLang = getLang();
     var list = POSTS_BY_LANG[curLang] || POSTS_BY_LANG.en;
@@ -220,13 +221,13 @@
     var html = list.map(function (p) {
       return '<article class="glass post">' +
         '<div class="meta">' +
-        '<span class="cat">' + p.category + '</span>' +
-        '<time datetime="' + p.iso + '"><span>' + p.date + '</span></time>' +
+        '<span class="cat">' + p.category + '</span> ' +
+        '<time datetime="' + p.iso + '"><span>' + p.date + '</span></time> ' +
         '<span>' + p.readTime + '</span>' +
         '</div>' +
         '<h3>' + p.title + '</h3>' +
         '<p>' + p.excerpt + '</p>' +
-        '<a class="more" href="' + p.url + '" aria-label="' + lbl.readMore + ': ' + p.title + '">' + lbl.readMore + ' <i class="fa-solid fa-arrow-right"></i></a>' +
+        '<a class="more" href="' + p.url + '" aria-label="' + lbl.readMore + lbl.sep + p.title + '">' + lbl.readMore + ' <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>' +
         '</article>';
     }).join("");
 

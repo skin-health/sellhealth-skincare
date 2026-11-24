@@ -94,7 +94,7 @@
 </head>
 <body>
   <!-- Skip link -->
-  <a href="#main" class="skip-link">Skip to main content</a>
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
   
   <!-- Header / Nav -->
   <header class="nav" role="banner">
@@ -103,12 +103,12 @@
         <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3l11 6v12l-11 8-11-8V9z" fill="none" stroke="#a66bff" stroke-width="2.2"/><circle cx="16" cy="15" r="3.2" fill="#4fdcff"/></svg>
         Derm<b>Audit</b>
       </a>
-      <div class="tele" aria-label="System telemetry">
+      <div class="tele" aria-label="Telemetría del sistema">
         <span><i class="dot"></i>Motor en línea</span>
         <span class="hide-s" id="clock">--:--:-- UTC</span>
         <span class="hide-s">7 activos clave</span>
       </div>
-      <nav class="links" aria-label="Primary navigation">
+      <nav class="links" aria-label="Navegación principal">
         <a href="/es/#matrix">Matriz</a>
         <a href="/es/reviews/">Análisis</a>
         <a href="/es/tools/routine-planner.html">Planificador</a>
@@ -117,14 +117,14 @@
         <a href="/es/blog/">Revista</a>
       </nav>
       <div class="lang-switcher">
-        <button type="button" class="lang-btn" aria-expanded="false" aria-controls="lang-menu" aria-label="Idioma">
+        <button type="button" class="lang-btn" aria-expanded="false" aria-controls="lang-menu" aria-label="ES — Idioma: Español">
           <span class="flag" aria-hidden="true">🇪🇸</span> ES
         </button>
-        <ul id="lang-menu" role="listbox" hidden>
-          <li role="option"><a href="https://dermaudit.com/ingredients/" lang="en"><span class="flag" aria-hidden="true">🇺🇸</span> English</a></li>
-          <li role="option" aria-selected="true"><a href="https://dermaudit.com/es/ingredients/" lang="es"><span class="flag" aria-hidden="true">🇪🇸</span> Español</a></li>
-          <li role="option"><a href="https://dermaudit.com/de/ingredients/" lang="de"><span class="flag" aria-hidden="true">🇩🇪</span> Deutsch</a></li>
-          <li role="option"><a href="https://dermaudit.com/fr/ingredients/" lang="fr"><span class="flag" aria-hidden="true">🇫🇷</span> Français</a></li>
+        <ul id="lang-menu" hidden>
+          <li><a href="/ingredients/" lang="en"><span class="flag" aria-hidden="true">🇺🇸</span> English</a></li>
+          <li><a href="/es/ingredients/" lang="es" aria-current="page"><span class="flag" aria-hidden="true">🇪🇸</span> Español</a></li>
+          <li><a href="/de/ingredients/" lang="de"><span class="flag" aria-hidden="true">🇩🇪</span> Deutsch</a></li>
+          <li><a href="/fr/ingredients/" lang="fr"><span class="flag" aria-hidden="true">🇫🇷</span> Français</a></li>
         </ul>
       </div>
     </div>
@@ -140,14 +140,22 @@
       
       <!-- Filter Input -->
       <div style="max-width:540px;margin:0 auto 2.5rem auto;">
-        <label for="ing-search" class="sr-only">Filter ingredients</label>
+        <label for="ing-search" class="sr-only">Filtrar ingredientes</label>
         <input type="search" id="ing-search" class="search" placeholder="Filtrar por nombre o beneficio (ej. 'barrera', 'ácido', 'colágeno')…" autocomplete="off">
       </div>
       
       <!-- Ingredients Cards Grid -->
       <section class="cards-section" aria-labelledby="ing-heading" style="padding-top:0;">
-        <h2 id="ing-heading" class="sr-only">Active Ingredient Profiles</h2>
-        <div class="cards" id="ingredients-grid"></div>
+        <h2 id="ing-heading" class="sr-only">Perfiles de ingredientes activos</h2>
+        <div class="cards" id="ingredients-grid">
+          <article class="glass ing-card" data-code="RET"><div class="ing-head"><div class="ing-title-group"><div class="ing-badge-icon"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i></div><div><h3 class="ing-name">Retinol (Vitamina A)</h3><span class="ing-cat">Retinoide / Renovación Celular</span></div></div><span class="tag">RET</span></div><p class="ing-desc">Estándar de oro para acelerar la renovación epidérmica, activar fibroblastos, promover la síntesis de colágeno Tipo I y suavizar líneas profundas de expresión.</p><div class="ing-meta-box"><div><strong class="ing-syn"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Sinergias Clave:</strong> <span>Niacinamida (amortigua irritación), Péptidos (remodelación complementaria), Ácido Hialurónico</span></div><div><strong class="ing-con"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Conflictos Clave:</strong> <span>AHA/BHA (sobrecarga severa de barrera), Peróxido de Benzoilo (oxidación y ruptura), Vitamina C directa en la misma capa</span></div><div><strong class="ing-time"><i class="fa-solid fa-clock" aria-hidden="true"></i> Horario Recomendado:</strong> <span>Rutina nocturna PM estrictamente; aplicar protección solar de amplio espectro por la mañana</span></div></div><a href="/es/?a=RET#matrix" class="btn btn-ghost ing-cta">Ver en la Matriz de Conflictos <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></article>
+          <article class="glass ing-card" data-code="VC"><div class="ing-head"><div class="ing-title-group"><div class="ing-badge-icon"><i class="fa-solid fa-sun" aria-hidden="true"></i></div><div><h3 class="ing-name">Vitamina C (Ácido L-Ascórbico)</h3><span class="ing-cat">Antioxidante / Defensa Ambiental</span></div></div><span class="tag">VC</span></div><p class="ing-desc">Potente antioxidante que neutraliza el estrés oxidativo provocado por la radiación UV, suprime la tirosinasa para atenuar manchas y actúa como cofactor esencial en la síntesis de colágeno.</p><div class="ing-meta-box"><div><strong class="ing-syn"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Sinergias Clave:</strong> <span>Ácido Ferúlico, Vitamina E, Niacinamida (rutina compatible), Protector Solar</span></div><div><strong class="ing-con"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Conflictos Clave:</strong> <span>Fórmulas de pH alcalino, Péptidos de Cobre (riesgo redox), Coaplicación directa con ácidos fuertes</span></div><div><strong class="ing-time"><i class="fa-solid fa-clock" aria-hidden="true"></i> Horario Recomendado:</strong> <span>Rutina matutina AM bajo protector solar de amplio espectro para defensa fotoprotectora</span></div></div><a href="/es/?a=VC#matrix" class="btn btn-ghost ing-cta">Ver en la Matriz de Conflictos <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></article>
+          <article class="glass ing-card" data-code="NIA"><div class="ing-head"><div class="ing-title-group"><div class="ing-badge-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div><div><h3 class="ing-name">Niacinamida (Vitamina B3)</h3><span class="ing-cat">Reparación de Barrera / Regulación Sebácea</span></div></div><span class="tag">NIA</span></div><p class="ing-desc">Vitamina hidrosoluble multifuncional que incrementa la síntesis de ceramidas epidérmicas y ácidos grasos, reduce la pérdida transepidérmica de agua (TEWL) y calma rojeces.</p><div class="ing-meta-box"><div><strong class="ing-syn"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Sinergias Clave:</strong> <span>Retinol (reduce sustancialmente la irritación de retinización), Ácido Salicílico, Ácido Glicólico, Péptidos</span></div><div><strong class="ing-con"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Conflictos Clave:</strong> <span>Esencialmente sin colisiones; químicamente estable en un amplio rango fisiológico de pH (4.5–7.0)</span></div><div><strong class="ing-time"><i class="fa-solid fa-clock" aria-hidden="true"></i> Horario Recomendado:</strong> <span>Versátil en AM y PM; ideal como capa calmante tras tratamientos exfoliantes o retinoides</span></div></div><a href="/es/?a=NIA#matrix" class="btn btn-ghost ing-cta">Ver en la Matriz de Conflictos <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></article>
+          <article class="glass ing-card" data-code="BHA"><div class="ing-head"><div class="ing-title-group"><div class="ing-badge-icon"><i class="fa-solid fa-flask" aria-hidden="true"></i></div><div><h3 class="ing-name">BHA (Ácido Salicílico)</h3><span class="ing-cat">Exfoliante Liposoluble / Descongestión de Poros</span></div></div><span class="tag">BHA</span></div><p class="ing-desc">Beta hidroxiácido soluble en lípidos capaz de penetrar folículos sebáceos para disolver el sebo acumulado, eliminar tapones de queratinocitos y calmar brotes e imperfecciones.</p><div class="ing-meta-box"><div><strong class="ing-syn"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Sinergias Clave:</strong> <span>Niacinamida (calma la pared del poro post-exfoliación), Sérums hidratantes de barrera</span></div><div><strong class="ing-con"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Conflictos Clave:</strong> <span>Retinol (descamación aguda del estrato córneo), Ácido Glicólico (sobreexfoliación química)</span></div><div><strong class="ing-time"><i class="fa-solid fa-clock" aria-hidden="true"></i> Horario Recomendado:</strong> <span>AM o PM (2–3 noches por semana); evitar combinar con otros exfoliantes potentes</span></div></div><a href="/es/?a=BHA#matrix" class="btn btn-ghost ing-cta">Ver en la Matriz de Conflictos <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></article>
+          <article class="glass ing-card" data-code="AHA"><div class="ing-head"><div class="ing-title-group"><div class="ing-badge-icon"><i class="fa-solid fa-droplet" aria-hidden="true"></i></div><div><h3 class="ing-name">AHA (Ácido Glicólico)</h3><span class="ing-cat">Exfoliante Hidrosoluble / Renovación de Luminosidad</span></div></div><span class="tag">AHA</span></div><p class="ing-desc">Alfa hidroxiácido de menor peso molecular que penetra profundamente para debilitar uniones entre células muertas, acelerando la exfoliación y restaurando la luminosidad superficial.</p><div class="ing-meta-box"><div><strong class="ing-syn"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Sinergias Clave:</strong> <span>Niacinamida (refuerza síntesis lipídica tras la exfoliación), Ácido Hialurónico, Hidratantes de barrera</span></div><div><strong class="ing-con"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Conflictos Clave:</strong> <span>Retinoides (multiplica irritación y descamación), Peróxido de Benzoilo, Péptidos (hidrólisis ácida)</span></div><div><strong class="ing-time"><i class="fa-solid fa-clock" aria-hidden="true"></i> Horario Recomendado:</strong> <span>Rutina nocturna PM estrictamente; requiere fotoprotección estricta por la mañana</span></div></div><a href="/es/?a=AHA#matrix" class="btn btn-ghost ing-cta">Ver en la Matriz de Conflictos <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></article>
+          <article class="glass ing-card" data-code="BPO"><div class="ing-head"><div class="ing-title-group"><div class="ing-badge-icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></div><div><h3 class="ing-name">Peróxido de Benzoilo</h3><span class="ing-cat">Antibacteriano Oxidante / Anti-Imperfecciones</span></div></div><span class="tag">BPO</span></div><p class="ing-desc">Agente bactericida lipofílico que libera oxígeno dentro de los folículos sebáceos, destruyendo la bacteria anaerobia Cutibacterium acnes sin inducir resistencia bacteriana.</p><div class="ing-meta-box"><div><strong class="ing-syn"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Sinergias Clave:</strong> <span>Niacinamida (contrarresta sequedad y descamación), Hidratantes no comedogénicos</span></div><div><strong class="ing-con"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Conflictos Clave:</strong> <span>Retinol / Tretinoína (oxida y degrada la molécula retinoide), Péptidos</span></div><div><strong class="ing-time"><i class="fa-solid fa-clock" aria-hidden="true"></i> Horario Recomendado:</strong> <span>Tratamiento matutino AM o limpiador con aclarado; mantener separado de retinoides nocturnos</span></div></div><a href="/es/?a=BPO#matrix" class="btn btn-ghost ing-cta">Ver en la Matriz de Conflictos <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></article>
+          <article class="glass ing-card" data-code="PEP"><div class="ing-head"><div class="ing-title-group"><div class="ing-badge-icon"><i class="fa-solid fa-dna" aria-hidden="true"></i></div><div><h3 class="ing-name">Péptidos (Syn-Coll® y Eyeseryl®)</h3><span class="ing-cat">Péptidos Señalizadores / Remodelación Matricial</span></div></div><span class="tag">PEP</span></div><p class="ing-desc">Cadenas cortas de aminoácidos biomiméticos que actúan como señales biológicas para estimular a los fibroblastos a producir nuevo colágeno y mejorar el drenaje linfático periorbital.</p><div class="ing-meta-box"><div><strong class="ing-syn"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Sinergias Clave:</strong> <span>Retinol (señalización complementaria de genes de colágeno), Niacinamida, Ácido Hialurónico</span></div><div><strong class="ing-con"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Conflictos Clave:</strong> <span>Ácidos exfoliantes directos de pH bajo (pH < 3.5 hidroliza péptidos), Oxidantes fuertes</span></div><div><strong class="ing-time"><i class="fa-solid fa-clock" aria-hidden="true"></i> Horario Recomendado:</strong> <span>Rutinas AM y PM; aplicar tras sérums acuosos y antes de cremas oclusivas</span></div></div><a href="/es/?a=PEP#matrix" class="btn btn-ghost ing-cta">Ver en la Matriz de Conflictos <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></article>
+        </div>
       </section>
     </div>
   </main>
@@ -160,7 +168,7 @@
           <h2 class="fg-title">DermAudit Journal</h2>
           <p>Análisis de ingredientes para el cuidado de la piel y auditorías de fórmulas clínicas basadas en evidencia. Sin artificios comerciales.</p>
           <p class="fine-print">
-            <strong>Divulgación de afiliados:</strong> Colaboramos con SellHealth, ClickBank y Natural Health Source. Los enlaces a Kollagen Intensiv, Synevra UltraLift, Illuminatural 6i, Eyelasticity y Dermefface FX7 son enlaces de afiliados. Podemos recibir una comisión sin coste adicional para usted. Todos los productos incluyen garantías de devolución de 60 a 90 días según la política del fabricante.
+            <strong>Divulgación de afiliados:</strong> Colaboramos con SellHealth, ClickBank y Natural Health Source. Los enlaces a Kollagen Intensiv, Synevra UltraLift, Illuminatural 6i, Eyelasticity, Dermefface FX7 e Hydrossential son enlaces de afiliados. Podemos recibir una comisión sin coste adicional para usted. Todos los productos incluyen garantías de devolución de 60 a 90 días según la política del fabricante.
           </p>
         </div>
         <div class="fg-col">

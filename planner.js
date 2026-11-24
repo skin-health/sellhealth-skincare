@@ -73,7 +73,7 @@
       "active": "Alpha-Arbutin & 5% Niacinamide (Zero Hydroquinone)",
       "badge": "OPTIMAL MATCH: BOTANICAL BRIGHTENING",
       "score": 90,
-      "hook": "The manufacturer reports that its 6 plant-based brighteners (Alpha-Arbutin, Whitonyl®, Niacinamide) inhibit tyrosinase melanin synthesis without toxic bleaching agents.",
+      "hook": "The manufacturer reports that its 4 botanical brighteners (Alpha-Arbutin, Whitonyl®, Niacinamide) inhibit tyrosinase melanin synthesis without toxic bleaching agents.",
       "img": "/img/optimized/illuminatural6i_icon001_600x600.webp",
       "affiliateUrl": "https://www.illuminatural6i.com/ct/282956",
       "reviewUrl": "/illuminatural-6i-review.html",
@@ -141,6 +141,32 @@
         "Gentle barrier cream if area feels tight"
       ],
       "caution": "Wait until surgical incisions or open wounds are fully closed before initiating topical scar therapy. Consistent daily application over 60–90 days is essential."
+    },
+    "hydration": {
+      "key": "hydrossential",
+      "name": "Hydrossential™ Botanical Hydration Serum",
+      "brand": "Hydrossential",
+      "active": "Jojoba, Gotu Kola, Aloe Vera & Green Tea",
+      "badge": "OPTIMAL MATCH: BOTANICAL HYDRATION",
+      "score": 76,
+      "hook": "Lightweight 30 ml botanical dropper serum pairing jojoba wax esters, gotu kola, green tea, and aloe vera; exact active percentages are undisclosed in a proprietary blend.",
+      "img": "/img/optimized/hydrossential.webp",
+      "affiliateUrl": "https://21ac6covthykdn0bzbwe5hhh1d.hop.clickbank.net",
+      "reviewUrl": "/hydrossential-review.html",
+      "price": "$69.00 / bottle",
+      "guarantee": "60-Day Money-Back Guarantee",
+      "am": [
+        "Gentle hydrating cleanser (non-stripping)",
+        "Hydrossential™ (2–3 drops pressed into damp skin)",
+        "Barrier moisturizer if skin feels dry",
+        "Daily broad-spectrum SPF 30+ sunscreen"
+      ],
+      "pm": [
+        "Mild evening cleanse",
+        "Hydrossential™ (apply evenly across face and neck)",
+        "Ceramide night cream to seal in hydration"
+      ],
+      "caution": "Uses a proprietary botanical blend that includes Japanese witch hazel and herbal extracts; patch test first if you have reactive or very dry skin."
     }
   },
   "es": {
@@ -252,7 +278,7 @@
       "key": "dermefface",
       "name": "Dermefface FX7® Terapia de Remodelación de Cicatrices",
       "brand": "Skinception",
-      "active": "Symglucan® 10.0% + Pro-Coll-One+",
+      "active": "10,0% Symglucan® + Pro-Coll-One+",
       "badge": "COINCIDENCIA ÓPTIMA: GEL DE REMODELACIÓN DÉRMICA",
       "score": 92,
       "hook": "Formulado con Symglucan al 10% y Pro-Coll-One+; el fabricante informa un aumento del 1.190% en síntesis de colágeno Tipo I para normalizar y aplanar cicatrices.",
@@ -272,6 +298,32 @@
         "Crema emoliente si la zona presenta tirantez"
       ],
       "caution": "Espere a que las incisiones quirúrgicas o heridas abiertas estén totalmente cerradas antes de aplicar. La constancia diaria durante 60–90 días es clave."
+    },
+    "hydration": {
+      "key": "hydrossential",
+      "name": "Hydrossential™ Sérum de Hidratación Botánica",
+      "brand": "Hydrossential",
+      "active": "Jojoba, Gotu Kola, Aloe Vera y Té Verde",
+      "badge": "COINCIDENCIA ÓPTIMA: HIDRATACIÓN BOTÁNICA",
+      "score": 76,
+      "hook": "Sérum ligero con gotero de 30 ml que combina ésteres de jojoba, gotu kola, té verde y aloe vera; los porcentajes exactos no se divulgan en una mezcla patentada.",
+      "img": "/img/optimized/hydrossential.webp",
+      "affiliateUrl": "https://21ac6covthykdn0bzbwe5hhh1d.hop.clickbank.net",
+      "reviewUrl": "/es/hydrossential-review.html",
+      "price": "$69.00 / frasco",
+      "guarantee": "Garantía de 60 días",
+      "am": [
+        "Limpiador hidratante suave (sin sulfatos agresivos)",
+        "Hydrossential™ (2–3 gotas sobre piel ligeramente húmeda)",
+        "Crema de barrera si la piel lo requiere",
+        "Protector solar diario de amplio espectro SPF 30+"
+      ],
+      "pm": [
+        "Limpieza nocturna suave",
+        "Hydrossential™ (aplicar uniformemente en rostro y cuello)",
+        "Crema nocturna con ceramidas para sellar la hidratación"
+      ],
+      "caution": "Contiene una mezcla botánica patentada con hamamelis japonés y extractos herbales; realice una prueba de parche si tiene piel sensible o muy seca."
     }
   },
   "de": {
@@ -335,7 +387,7 @@
       "active": "Alpha-Arbutin & 5% Niacinamid (Ohne Hydrochinon)",
       "badge": "OPTIMALE FORMEL: PFLANZLICHE AUFHELLUNG",
       "score": 90,
-      "hook": "Laut Hersteller hemmen 6 pflanzliche Aufheller (Alpha-Arbutin, Niacinamid) die Tyrosinase-Melaninsynthese ohne aggressive chemische Bleichmittel.",
+      "hook": "Laut Hersteller hemmen 4 pflanzliche Aufheller (Alpha-Arbutin, Niacinamid) die Tyrosinase-Melaninsynthese ohne aggressive chemische Bleichmittel.",
       "img": "/img/optimized/illuminatural6i_icon001_600x600.webp",
       "affiliateUrl": "https://www.illuminatural6i.com/ct/282956",
       "reviewUrl": "/de/illuminatural-6i-review.html",
@@ -403,6 +455,32 @@
         "Sanfte Barrierecreme bei Spannungsgefühl"
       ],
       "caution": "Erst auftragen, wenn Wunden vollständig verheilt und Fäden gezogen sind. Eine kontinuierliche Anwendung über 60–90 Tage ist für sichtbare Glättung essenziell."
+    },
+    "hydration": {
+      "key": "hydrossential",
+      "name": "Hydrossential™ Botanisches Feuchtigkeitsserum",
+      "brand": "Hydrossential",
+      "active": "Jojoba, Gotu Kola, Aloe Vera & Grüntee",
+      "badge": "OPTIMALE FORMEL: BOTANISCHE FEUCHTIGKEIT",
+      "score": 76,
+      "hook": "Leichtes 30-ml-Pipettenserum mit Jojobaöl, Gotu Kola, Grüntee und Aloe Vera; exakte Prozentangaben werden in einer geschützten Mischung nicht veröffentlicht.",
+      "img": "/img/optimized/hydrossential.webp",
+      "affiliateUrl": "https://21ac6covthykdn0bzbwe5hhh1d.hop.clickbank.net",
+      "reviewUrl": "/de/hydrossential-review.html",
+      "price": "$69.00 / Flakon",
+      "guarantee": "60 Tage Geld-zurück-Garantie",
+      "am": [
+        "Milder, feuchtigkeitsspendender Reiniger",
+        "Hydrossential™ (2–3 Tropfen sanft auf leicht feuchte Haut drücken)",
+        "Barrierecreme bei trockenem Hautgefühl",
+        "Täglicher Breitspektrum-Sonnenschutz SPF 30+"
+      ],
+      "pm": [
+        "Sanfte Abendreinigung",
+        "Hydrossential™ (gleichmäßig auf Gesicht und Hals auftragen)",
+        "Ceramid-Nachtcreme zum Versiegeln der Feuchtigkeit"
+      ],
+      "caution": "Enthält eine geschützte Mischung mit japanischer Zaubernuss und Kräuterextrakten; bei sensibler oder sehr trockener Haut vorab einen Patch-Test durchführen."
     }
   },
   "fr": {
@@ -417,7 +495,7 @@
       "img": "/img/optimized/kollagen_boxbottle_lg.webp",
       "affiliateUrl": "https://www.kollagenintensiv.com/ct/282956",
       "reviewUrl": "/fr/kollagen-intensiv-review.html",
-      "price": "$59.95 / pot",
+      "price": "59,95 $ / pot",
       "guarantee": "Garantie de 90 jours",
       "am": [
         "Nettoyant doux hydratant (pH physiologique)",
@@ -444,7 +522,7 @@
       "img": "/img/optimized/synevra.webp",
       "affiliateUrl": "https://fa90bat349vj5m8h47ps5z4k7l.hop.clickbank.net",
       "reviewUrl": "/fr/synevra-ultralift-review.html",
-      "price": "$79.00 / unité",
+      "price": "79,00 $ / unité",
       "guarantee": "Garantie de 60 jours",
       "am": [
         "Nettoyant visage doux",
@@ -466,11 +544,11 @@
       "active": "Alpha-Arbutine & 5% Niacinamide (Sans Hydroquinone)",
       "badge": "CHOIX OPTIMAL : ÉCLAT BOTANIQUE",
       "score": 90,
-      "hook": "Le fabricant rapporte que ses 6 actifs botaniques (Alpha-Arbutine, Niacinamide) neutralisent la tyrosinase sans substances décapantes nocives.",
+      "hook": "Le fabricant rapporte que ses 4 actifs botaniques (Alpha-Arbutine, Niacinamide) neutralisent la tyrosinase sans substances décapantes nocives.",
       "img": "/img/optimized/illuminatural6i_icon001_600x600.webp",
       "affiliateUrl": "https://www.illuminatural6i.com/ct/282956",
       "reviewUrl": "/fr/illuminatural-6i-review.html",
-      "price": "$59.95 / flacon",
+      "price": "59,95 $ / flacon",
       "guarantee": "Garantie de 90 jours",
       "am": [
         "Nettoyant équilibrant doux",
@@ -496,7 +574,7 @@
       "img": "/img/optimized/eyelasticity800.webp",
       "affiliateUrl": "https://www.naturalhealthsource.com/products/eyelasticity-age-defying-eye-therapy/?aid=282956",
       "reviewUrl": "/fr/eyelasticity-review.html",
-      "price": "$59.95 / flacon",
+      "price": "59,95 $ / flacon",
       "guarantee": "Garantie de 67 jours",
       "am": [
         "Rafraîchir le visage à l'eau fraîche ou avec un nettoyant doux",
@@ -521,7 +599,7 @@
       "img": "/img/optimized/dermafacereal.webp",
       "affiliateUrl": "https://www.dermeffacefx7.com/ct/282956",
       "reviewUrl": "/fr/dermefface-fx7-review.html",
-      "price": "$59.95 / tube",
+      "price": "59,95 $ / tube",
       "guarantee": "Garantie de 90 jours",
       "am": [
         "Nettoyer soigneusement la zone cicatricielle",
@@ -534,6 +612,32 @@
         "Crème barrière apaisante en cas de tiraillement"
       ],
       "caution": "Attendre la fermeture intégrale de la plaie ou le retrait des points avant d'entamer l'application. Une régularité quotidienne sur 60 à 90 jours est indispensable."
+    },
+    "hydration": {
+      "key": "hydrossential",
+      "name": "Hydrossential™ Sérum d'Hydratation Botanique",
+      "brand": "Hydrossential",
+      "active": "Jojoba, Gotu Kola, Aloe Vera & Thé Vert",
+      "badge": "CHOIX OPTIMAL : HYDRATATION BOTANIQUE",
+      "score": 76,
+      "hook": "Sérum pipette léger de 30 ml associant huile de jojoba, gotu kola, thé vert et aloe vera ; les pourcentages exacts restent non divulgués dans un mélange exclusif.",
+      "img": "/img/optimized/hydrossential.webp",
+      "affiliateUrl": "https://21ac6covthykdn0bzbwe5hhh1d.hop.clickbank.net",
+      "reviewUrl": "/fr/hydrossential-review.html",
+      "price": "69,00 $ / flacon",
+      "guarantee": "Garantie de 60 jours",
+      "am": [
+        "Nettoyant doux hydratant",
+        "Hydrossential™ (2 à 3 gouttes sur peau légèrement humide)",
+        "Crème barrière si la peau tiraille",
+        "Protection solaire quotidienne SPF 30+"
+      ],
+      "pm": [
+        "Nettoyage doux du soir",
+        "Hydrossential™ (appliquer uniformément sur visage et cou)",
+        "Crème de nuit aux céramides pour sceller l'hydratation"
+      ],
+      "caution": "Contient un mélange exclusif avec hamamélis du Japon et extraits végétaux ; réalisez un test cutané préalable sur peau réactive ou très sèche."
     }
   }
 };
@@ -548,7 +652,26 @@
       evening: "Evening (PM) Schedule",
       cautionHeading: "Interaction & Collision Guidance:",
       resetBtn: "Retake Routine Assessment",
-      step: "Step"
+      backBtn: "Previous Step",
+      step: "Step",
+      colon: ": ",
+      profileSummary: "Profile: {sens} · {fmt} · {exp}",
+      sensLabels: { resilient: "Normal / Resilient", sensitive: "Sensitive / Reactive", dry: "Dry / Depleted", oily: "Combination / Oil-Prone" },
+      fmtLabels: { cream: "Cream preference", serum: "Serum preference", specialized: "Targeted gel preference" },
+      expLabels: { minimalist: "Minimalist (1–2 steps)", intermediate: "Balanced (3–4 steps)", advanced: "Advanced (5+ steps)" },
+      sensNotes: {
+        resilient: "Resilient barrier: standard twice-daily active cadence is well tolerated.",
+        sensitive: "Sensitive barrier: start every other evening for 14 days and buffer over moisturizer after a 24-hour patch test.",
+        dry: "Dry barrier: apply on slightly damp skin and seal with a ceramide-rich occlusive cream.",
+        oily: "Oil-prone skin: keep base layers lightweight and non-comedogenic; avoid heavy facial oils."
+      },
+      fmtNotes: {
+        cream: "Texture fit: layer lightweight water serums before richer cream steps.",
+        serum: "Texture fit: apply serum-weight formulas first on clean skin before moisturizer.",
+        specialized: "Texture fit: pat targeted treatments along localized zones without rubbing."
+      },
+      advStepAM: "Optional antioxidant or niacinamide booster (wait 10–15 min between low-pH layers)",
+      advStepPM: "Verify multi-active pairing order in the Conflict Matrix before layering acids or retinoids"
     },
     es: {
       viewOffer: "Ver Oferta Verificada",
@@ -559,10 +682,29 @@
       evening: "Protocolo Nocturno (Rutina PM)",
       cautionHeading: "Guía de Interacciones y Prevención de Colisiones:",
       resetBtn: "Repetir Evaluación de Rutina",
-      step: "Paso"
+      backBtn: "Paso anterior",
+      step: "Paso",
+      colon: ": ",
+      profileSummary: "Perfil: {sens} · {fmt} · {exp}",
+      sensLabels: { resilient: "Normal / Resistente", sensitive: "Sensible / Reactiva", dry: "Seca / Deshidratada", oily: "Mixta / Grasa" },
+      fmtLabels: { cream: "Preferencia crema", serum: "Preferencia sérum", specialized: "Preferencia gel localizado" },
+      expLabels: { minimalist: "Minimalista (1–2 pasos)", intermediate: "Equilibrada (3–4 pasos)", advanced: "Avanzada (5+ pasos)" },
+      sensNotes: {
+        resilient: "Barrera resistente: la frecuencia estándar de dos veces al día suele tolerarse bien.",
+        sensitive: "Piel sensible: comience en noches alternas durante 14 días y amortigüe con hidratante tras prueba de parche de 24 h.",
+        dry: "Piel seca: aplique sobre piel ligeramente húmeda y selle con crema rica en ceramidas.",
+        oily: "Piel grasa: priorice capas ligeras no comedogénicas y evite aceites pesados."
+      },
+      fmtNotes: {
+        cream: "Ajuste de textura: aplique sérums acuosos antes de cremas más densas.",
+        serum: "Ajuste de textura: aplique fórmulas en sérum sobre piel limpia antes de la hidratante.",
+        specialized: "Ajuste de textura: aplique con toques suaves en zonas localizadas sin frotar."
+      },
+      advStepAM: "Refuerzo antioxidante o niacinamida opcional (espere 10–15 min entre capas ácidas)",
+      advStepPM: "Verifique el orden de activos en la Matriz de Conflictos antes de combinar ácidos o retinoides"
     },
     de: {
-      viewOffer: "Geprüftes Angebot ansehen",
+      viewOffer: "Offizielles Angebot ansehen",
       readReview: "Vollständigen Testbericht lesen",
       scheduleHeading: "Ihr evidenzbasierter Pflegeplan",
       scheduleSub: "Abgestimmt auf Ihr Hautbarriere-Profil.",
@@ -570,7 +712,26 @@
       evening: "Abend-Routine (PM)",
       cautionHeading: "Leitfaden zu Wirkstoffinteraktionen:",
       resetBtn: "Routine-Bewertung wiederholen",
-      step: "Schritt"
+      backBtn: "Vorheriger Schritt",
+      step: "Schritt",
+      colon: ": ",
+      profileSummary: "Profil: {sens} · {fmt} · {exp}",
+      sensLabels: { resilient: "Normal / Robust", sensitive: "Sensibel / Reaktiv", dry: "Trocken / Feuchtigkeitsarm", oily: "Mischhaut / Ölig" },
+      fmtLabels: { cream: "Creme-Präferenz", serum: "Serum-Präferenz", specialized: "Präzisions-Gel" },
+      expLabels: { minimalist: "Minimalistisch (1–2 Schritte)", intermediate: "Ausgewogen (3–4 Schritte)", advanced: "Fortgeschritten (5+ Schritte)" },
+      sensNotes: {
+        resilient: "Robuste Barriere: zweimal tägliche Anwendung wird meist gut vertragen.",
+        sensitive: "Sensible Haut: in den ersten 14 Tagen nur jeden zweiten Abend anwenden und nach 24h-Patch-Test über Feuchtigkeitscreme puffern.",
+        dry: "Trockene Haut: auf leicht feuchte Haut auftragen und mit Ceramid-Creme versiegeln.",
+        oily: "Ölige Haut: leichte, nicht-komedogene Texturen wählen und schwere Gesichtsöle weglassen."
+      },
+      fmtNotes: {
+        cream: "Textur-Hinweis: wässrige Seren stets vor reichhaltigeren Cremes auftragen.",
+        serum: "Textur-Hinweis: leichte Seren direkt nach der Reinigung vor der Pflege anwenden.",
+        specialized: "Textur-Hinweis: gezielte Pflege sanft auf lokale Zonen einklopfen."
+      },
+      advStepAM: "Optionales Antioxidans- oder Niacinamid-Serum (10–15 Min. Abstand bei niedrigem pH)",
+      advStepPM: "Schichtungsreihenfolge vor Kombination mit Säuren oder Retinoiden in der Konflikt-Matrix prüfen"
     },
     fr: {
       viewOffer: "Voir l'Offre Vérifiée",
@@ -581,11 +742,30 @@
       evening: "Protocole Soir (Routine PM)",
       cautionHeading: "Conseils sur les Interactions & Prévention des Conflits :",
       resetBtn: "Recommencer le Diagnostic",
-      step: "Étape"
+      backBtn: "Étape précédente",
+      step: "Étape",
+      colon: " : ",
+      profileSummary: "Profil : {sens} · {fmt} · {exp}",
+      sensLabels: { resilient: "Normale / Résistante", sensitive: "Sensible / Réactive", dry: "Sèche / Déshydratée", oily: "Mixte / Grasse" },
+      fmtLabels: { cream: "Préférence crème", serum: "Préférence sérum", specialized: "Gel ciblé" },
+      expLabels: { minimalist: "Minimaliste (1–2 étapes)", intermediate: "Équilibrée (3–4 étapes)", advanced: "Avancée (5+ étapes)" },
+      sensNotes: {
+        resilient: "Barrière résistante : la fréquence standard matin et soir est généralement bien tolérée.",
+        sensitive: "Peau sensible : débutez un soir sur deux pendant 14 jours et tamponnez sur une crème après un test cutané de 24 h.",
+        dry: "Peau sèche : appliquez sur peau légèrement humide puis scellez avec une crème aux céramides.",
+        oily: "Peau grasse : privilégiez des textures légères non comédogènes et évitez les huiles riches."
+      },
+      fmtNotes: {
+        cream: "Conseil texture : appliquez les sérums aqueux avant les crèmes plus riches.",
+        serum: "Conseil texture : appliquez le sérum sur peau propre avant votre soin hydratant.",
+        specialized: "Conseil texture : tapotez délicatement sur les zones ciblées sans frotter."
+      },
+      advStepAM: "Sérum antioxydant ou niacinamide en option (patienter 10 à 15 min entre couches acides)",
+      advStepPM: "Vérifiez l'ordre des actifs dans la Matrice de Conflits avant d'associer acides ou rétinoïdes"
     }
   };
 
-  var state = {
+  var DEFAULT_STATE = {
     step: 1,
     concern: "wrinkles",
     sensitivity: "resilient",
@@ -593,11 +773,39 @@
     experience: "intermediate"
   };
 
-  function updateStepUI() {
+  var state = Object.assign({}, DEFAULT_STATE);
+
+  function buildCalibratedSteps(match, ui) {
+    var am = match.am.slice();
+    var pm = match.pm.slice();
+
+    if (state.sensitivity === "oily") {
+      pm = pm.filter(function (s) { return !/facial oil|aceite facial|Gesichtsöl|Huile visage/i.test(s); });
+    }
+    if (state.experience === "minimalist") {
+      am = [am[0], am[am.length - 1]];
+      if (match.am.length >= 3 && am.indexOf(match.am[match.am.length - 2]) === -1) {
+        am = [am[0], match.am[match.am.length - 2], am[am.length - 1]];
+      }
+      pm = [pm[0], pm[1] || pm[pm.length - 1]];
+    } else if (state.experience === "advanced") {
+      if (am.length < 4) am.splice(1, 0, ui.advStepAM);
+      pm.push(ui.advStepPM);
+    }
+    return { am: am, pm: pm };
+  }
+
+  function updateStepUI(moveFocus) {
     var totalSteps = 4;
+    var clamped = Math.min(state.step, totalSteps);
+    var pct = Math.min(100, Math.round((clamped / totalSteps) * 100));
+    var prog = document.querySelector(".quiz-progress");
     var bar = document.getElementById("quiz-progress-bar");
     if (bar) {
-      bar.style.width = (state.step / totalSteps * 100) + "%";
+      bar.style.width = pct + "%";
+    }
+    if (prog) {
+      prog.setAttribute("aria-valuenow", String(pct));
     }
 
     document.querySelectorAll(".quiz-step").forEach(function (el) {
@@ -611,8 +819,22 @@
         res.style.display = "block";
         renderResultView();
         res.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        if (moveFocus) {
+          var rh = res.querySelector("h3");
+          if (rh) {
+            rh.setAttribute("tabindex", "-1");
+            rh.focus();
+          }
+        }
       } else {
         res.style.display = "none";
+        if (moveFocus) {
+          var activeStep = document.querySelector(".quiz-step.active .quiz-step-title");
+          if (activeStep) {
+            activeStep.setAttribute("tabindex", "-1");
+            activeStep.focus();
+          }
+        }
       }
     }
   }
@@ -625,74 +847,111 @@
     var catalog = CATALOG_BY_LANG[curLang] || CATALOG_BY_LANG.en;
     var ui = UI_STRINGS[curLang] || UI_STRINGS.en;
     var match = catalog[state.concern] || catalog.wrinkles;
+    var calibrated = buildCalibratedSteps(match, ui);
 
-    var html = '<div class="badge" style="color:var(--safe);border-color:var(--safe);background:rgba(55,245,176,.08);margin-bottom:.8rem;">' + match.badge + '</div>' +
-      '<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:1rem;">' +
+    var profileText = ui.profileSummary
+      .replace("{sens}", ui.sensLabels[state.sensitivity] || state.sensitivity)
+      .replace("{fmt}", ui.fmtLabels[state.format] || state.format)
+      .replace("{exp}", ui.expLabels[state.experience] || state.experience);
+
+    var sensNote = ui.sensNotes[state.sensitivity] || "";
+    var fmtNote = ui.fmtNotes[state.format] || "";
+
+    var html = '<div class="badge s quiz-badge-ok">' + match.badge + '</div>' +
+      '<div class="quiz-res-head">' +
       '<div>' +
-      '<h3 style="font-size:1.6rem;margin-bottom:.3rem;">' + match.name + '</h3>' +
-      '<span style="font-family:var(--mono);font-size:.82rem;color:var(--violet-hi);">' + match.active + '</span>' +
+      '<h3 class="quiz-res-title">' + match.name + '</h3>' +
+      '<span class="quiz-res-active">' + match.active + '</span>' +
       '</div>' +
-      '<div style="font-family:var(--display);font-size:2rem;font-weight:700;color:var(--sci);">' + match.score + '<small style="font-size:1rem;color:var(--mute);">/100</small></div>' +
+      '<div class="quiz-res-score">' + match.score + '<small>/100</small></div>' +
       '</div>' +
-      '<p style="color:var(--text);font-size:.95rem;line-height:1.6;margin-bottom:1.5rem;border-left:3px solid var(--violet);padding-left:.85rem;">"' + match.hook + '"</p>' +
-      '<div style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center;margin-bottom:2rem;">' +
-      '<a class="btn btn-primary affiliate-link" href="' + match.affiliateUrl + '" rel="noopener nofollow sponsored" target="_blank" data-product="' + match.key + '" data-placement="quiz-result">' +
-      ui.viewOffer + ' <i class="fa-solid fa-arrow-up-right-from-square"></i></a>' +
+      '<p class="quiz-profile-line">' + profileText + '</p>' +
+      '<p class="quiz-res-hook">' + match.hook + '</p>' +
+      '<div class="quiz-res-ctas">' +
+      '<a class="btn btn-primary affiliate-link" href="' + match.affiliateUrl + '" rel="noopener nofollow sponsored" target="_blank" data-product="' + match.key + '" data-placement="planner-result">' +
+      ui.viewOffer + ' <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>' +
       '<a class="btn btn-ghost" href="' + match.reviewUrl + '">' + ui.readReview + '</a>' +
-      '<span style="font-family:var(--mono);font-size:.82rem;color:var(--mute);">' + match.price + ' · ' + match.guarantee + '</span>' +
+      '<span class="quiz-res-price">' + match.price + ' · ' + match.guarantee + '</span>' +
       '</div>' +
-      '<hr style="border:none;border-top:1px solid var(--line);margin:1.5rem 0;">' +
-      '<h4 style="font-size:1.25rem;margin-bottom:.5rem;">' + ui.scheduleHeading + '</h4>' +
-      '<p style="color:var(--mute);font-size:.88rem;margin-bottom:1.5rem;">' + ui.scheduleSub + '</p>' +
+      '<hr class="quiz-sep">' +
+      '<h4 class="quiz-sched-title">' + ui.scheduleHeading + '</h4>' +
+      '<p class="quiz-sched-sub">' + ui.scheduleSub + '</p>' +
       '<div class="routine-grid">' +
       '<div class="routine-box">' +
-      '<h4><i class="fa-solid fa-sun" style="color:var(--warn)"></i> ' + ui.morning + '</h4>' +
+      '<h5><i class="fa-solid fa-sun icon-warn" aria-hidden="true"></i> ' + ui.morning + '</h5>' +
       '<ul class="routine-steps">' +
-      match.am.map(function (s, i) { return '<li><strong>' + ui.step + ' ' + (i + 1) + ':</strong> ' + s + '</li>'; }).join("") +
+      calibrated.am.map(function (s, i) { return '<li><strong>' + ui.step + ' ' + (i + 1) + ui.colon + '</strong> ' + s + '</li>'; }).join("") +
       '</ul>' +
       '</div>' +
       '<div class="routine-box">' +
-      '<h4><i class="fa-solid fa-moon" style="color:var(--sci)"></i> ' + ui.evening + '</h4>' +
+      '<h5><i class="fa-solid fa-clock icon-sci" aria-hidden="true"></i> ' + ui.evening + '</h5>' +
       '<ul class="routine-steps">' +
-      match.pm.map(function (s, i) { return '<li><strong>' + ui.step + ' ' + (i + 1) + ':</strong> ' + s + '</li>'; }).join("") +
+      calibrated.pm.map(function (s, i) { return '<li><strong>' + ui.step + ' ' + (i + 1) + ui.colon + '</strong> ' + s + '</li>'; }).join("") +
       '</ul>' +
       '</div>' +
       '</div>' +
-      '<div style="margin-top:1.5rem;padding:1.2rem;border-radius:10px;background:rgba(255,177,59,.08);border:1px solid rgba(255,177,59,.3);">' +
-      '<strong style="color:var(--warn);display:block;margin-bottom:.35rem;"><i class="fa-solid fa-triangle-exclamation"></i> ' + ui.cautionHeading + '</strong>' +
-      '<p style="font-size:.88rem;color:var(--text);margin:0;line-height:1.5;">' + match.caution + '</p>' +
+      '<div class="quiz-caution">' +
+      '<strong class="quiz-caution-head"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> ' + ui.cautionHeading + '</strong>' +
+      '<p>' + match.caution + '</p>' +
+      '<p class="quiz-caution-note">' + sensNote + ' ' + fmtNote + '</p>' +
       '</div>' +
-      '<div style="margin-top:2rem;text-align:center;">' +
-      '<button type="button" class="btn btn-ghost" id="quiz-reset-btn"><i class="fa-solid fa-rotate-left"></i> ' + ui.resetBtn + '</button>' +
+      '<div class="quiz-reset-wrap">' +
+      '<button type="button" class="btn btn-ghost" id="quiz-back-result-btn"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> ' + ui.backBtn + '</button>' +
+      '<button type="button" class="btn btn-ghost" id="quiz-reset-btn"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i> ' + ui.resetBtn + '</button>' +
       '</div>';
 
     res.innerHTML = html;
 
+    var backResultBtn = document.getElementById("quiz-back-result-btn");
+    if (backResultBtn) {
+      backResultBtn.addEventListener("click", function () {
+        state.step = 4;
+        updateStepUI(true);
+      });
+    }
+
     var resetBtn = document.getElementById("quiz-reset-btn");
     if (resetBtn) {
       resetBtn.addEventListener("click", function () {
-        state.step = 1;
-        updateStepUI();
+        state = Object.assign({}, DEFAULT_STATE);
+        updateStepUI(true);
       });
     }
   }
 
   function initQuizEvents() {
+    var curLang = getLang();
+    var ui = UI_STRINGS[curLang] || UI_STRINGS.en;
+
     document.querySelectorAll(".quiz-step").forEach(function (stepEl) {
+      var stepNum = parseInt(stepEl.dataset.step, 10);
+      if (stepNum > 1 && !stepEl.querySelector(".quiz-back-btn")) {
+        var nav = document.createElement("div");
+        nav.className = "quiz-nav";
+        var backBtn = document.createElement("button");
+        backBtn.type = "button";
+        backBtn.className = "btn btn-ghost quiz-back-btn";
+        backBtn.innerHTML = '<i class="fa-solid fa-arrow-left" aria-hidden="true"></i> ' + ui.backBtn;
+        backBtn.addEventListener("click", function () {
+          state.step = Math.max(1, stepNum - 1);
+          updateStepUI(true);
+        });
+        nav.appendChild(backBtn);
+        stepEl.appendChild(nav);
+      }
+
       stepEl.addEventListener("click", function (e) {
         var opt = e.target.closest(".quiz-option");
         if (!opt) return;
 
-        var stepNum = parseInt(stepEl.dataset.step, 10);
         var val = opt.dataset.val;
-
         if (stepNum === 1) state.concern = val;
         if (stepNum === 2) state.sensitivity = val;
         if (stepNum === 3) state.format = val;
         if (stepNum === 4) state.experience = val;
 
         state.step = stepNum + 1;
-        updateStepUI();
+        updateStepUI(true);
       });
     });
   }
@@ -703,7 +962,7 @@
     if (window.DermAudit && typeof window.DermAudit.initLangSwitcher === "function") {
       window.DermAudit.initLangSwitcher();
     }
-    updateStepUI();
+    updateStepUI(false);
   }
 
   if (document.readyState === "loading") {

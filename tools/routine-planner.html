@@ -10,9 +10,9 @@
   <link rel="canonical" href="https://dermaudit.com/tools/routine-planner.html">
   <link rel="alternate" href="https://dermaudit.com/tools/routine-planner.html" hreflang="x-default">
   <link rel="alternate" href="https://dermaudit.com/tools/routine-planner.html" hreflang="en">
-  <link rel="alternate" href="https://dermaudit.com/es/" hreflang="es">
-  <link rel="alternate" href="https://dermaudit.com/de/" hreflang="de">
-  <link rel="alternate" href="https://dermaudit.com/fr/" hreflang="fr">
+  <link rel="alternate" href="https://dermaudit.com/es/tools/routine-planner.html" hreflang="es">
+  <link rel="alternate" href="https://dermaudit.com/de/tools/routine-planner.html" hreflang="de">
+  <link rel="alternate" href="https://dermaudit.com/fr/tools/routine-planner.html" hreflang="fr">
   
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -115,14 +115,14 @@
         <a href="/blog/">Research</a>
       </nav>
       <div class="lang-switcher">
-        <button type="button" class="lang-btn" aria-expanded="false" aria-controls="lang-menu" aria-label="Language">
+        <button type="button" class="lang-btn" aria-expanded="false" aria-controls="lang-menu" aria-label="EN — Language: English">
           <span class="flag" aria-hidden="true">🇺🇸</span> EN
         </button>
-        <ul id="lang-menu" role="listbox" hidden>
-          <li role="option"><a href="/tools/routine-planner.html" lang="en"><span class="flag" aria-hidden="true">🇺🇸</span> English</a></li>
-          <li role="option"><a href="/es/" lang="es"><span class="flag" aria-hidden="true">🇪🇸</span> Español</a></li>
-          <li role="option"><a href="/de/" lang="de"><span class="flag" aria-hidden="true">🇩🇪</span> Deutsch</a></li>
-          <li role="option"><a href="/fr/" lang="fr"><span class="flag" aria-hidden="true">🇫🇷</span> Français</a></li>
+        <ul id="lang-menu" hidden>
+          <li><a href="/tools/routine-planner.html" lang="en" aria-current="page"><span class="flag" aria-hidden="true">🇺🇸</span> English</a></li>
+          <li><a href="/es/tools/routine-planner.html" lang="es"><span class="flag" aria-hidden="true">🇪🇸</span> Español</a></li>
+          <li><a href="/de/tools/routine-planner.html" lang="de"><span class="flag" aria-hidden="true">🇩🇪</span> Deutsch</a></li>
+          <li><a href="/fr/tools/routine-planner.html" lang="fr"><span class="flag" aria-hidden="true">🇫🇷</span> Français</a></li>
         </ul>
       </div>
     </div>
@@ -141,7 +141,7 @@
         <h2 id="quiz-heading" class="sr-only">4-Step Skin Routine Assessment</h2>
         
         <div class="glass quiz-card" id="quiz-card">
-          <div class="quiz-progress" aria-hidden="true">
+          <div class="quiz-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25">
             <div class="quiz-progress-bar" id="quiz-progress-bar"></div>
           </div>
           
@@ -184,6 +184,13 @@
                 <div>
                   <strong>Dermal Scars &amp; Textural Marks</strong>
                   <span>Normalizing collagen matrix production for acne marks or surgery scars</span>
+                </div>
+              </button>
+              <button type="button" class="quiz-option" data-val="hydration">
+                <i class="fa-solid fa-droplet" aria-hidden="true"></i>
+                <div>
+                  <strong>Botanical Hydration &amp; Barrier Comfort</strong>
+                  <span>Lightweight plant-based humectant &amp; antioxidant serum support</span>
                 </div>
               </button>
             </div>
@@ -287,6 +294,7 @@
           </div>
           
           <!-- Result Container (Populated via planner.js) -->
+          <noscript><p class="idle">JavaScript is required to run the interactive Routine Planner. Visit <a href="/reviews/">Audited Formulas</a> to compare all 6 products.</p></noscript>
           <div id="quiz-result" class="quiz-result-view" style="display:none;" aria-live="polite"></div>
         </div>
       </section>
@@ -301,7 +309,7 @@
           <h2 class="fg-title">DermAudit Journal</h2>
           <p>Evidence-based skincare ingredient analysis and clinical formula audits. No marketing fluff.</p>
           <p class="fine-print">
-            <strong>Affiliate disclosure:</strong> We partner with SellHealth, ClickBank, and Natural Health Source. Links to Kollagen Intensiv, Synevra UltraLift, Illuminatural 6i, Eyelasticity, and Dermefface FX7 are affiliate links. We may earn a commission at no extra cost to you. All products carry 60–90 day money-back guarantees per manufacturer policy.
+            <strong>Affiliate disclosure:</strong> We partner with SellHealth, ClickBank, and Natural Health Source. Links to Hydrossential, Kollagen Intensiv, Synevra UltraLift, Illuminatural 6i, Eyelasticity, and Dermefface FX7 are affiliate links. We may earn a commission at no extra cost to you. All products carry 60–90 day money-back guarantees per manufacturer policy.
           </p>
         </div>
         <div class="fg-col">

@@ -15,11 +15,9 @@
         var isExpanded = btn.getAttribute("aria-expanded") === "true";
         if (isExpanded) {
           ans.removeAttribute("hidden");
-          ans.style.maxHeight = ans.scrollHeight + "px";
         } else {
           btn.setAttribute("aria-expanded", "false");
           ans.setAttribute("hidden", "");
-          ans.style.maxHeight = "0px";
         }
       }
 
@@ -29,12 +27,10 @@
         var expanded = btn.getAttribute("aria-expanded") === "true";
         if (expanded) {
           btn.setAttribute("aria-expanded", "false");
-          answer.style.maxHeight = "0px";
           answer.setAttribute("hidden", "");
         } else {
           btn.setAttribute("aria-expanded", "true");
           answer.removeAttribute("hidden");
-          answer.style.maxHeight = answer.scrollHeight + "px";
         }
       });
     });
@@ -45,8 +41,10 @@
     var bar = document.querySelector(".mobile-buy-bar");
     if (!bar) return;
 
-    var target = document.querySelector(".cta-band") || document.querySelector(".product-hero");
-    if (!target) {
+    var hero = document.querySelector(".product-hero");
+    var cta = document.querySelector(".cta-band");
+    var footer = document.querySelector("footer");
+    if (!hero && !cta) {
       bar.classList.add("is-visible");
       return;
     }
@@ -56,17 +54,27 @@
       return;
     }
 
+    var state = { heroVisible: !!hero, ctaVisible: false, footerVisible: false };
+    function sync() {
+      var pastHero = !hero || hero.getBoundingClientRect().bottom <= 0;
+      var show = pastHero && !state.ctaVisible && !state.footerVisible;
+      bar.classList.toggle("is-visible", show);
+    }
+
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          bar.classList.remove("is-visible");
-        } else {
-          bar.classList.add("is-visible");
-        }
+        if (entry.target === hero) state.heroVisible = entry.isIntersecting;
+        else if (entry.target === cta) state.ctaVisible = entry.isIntersecting;
+        else if (entry.target === footer) state.footerVisible = entry.isIntersecting;
       });
+      sync();
     }, { rootMargin: "0px" });
 
-    observer.observe(target);
+    if (hero) observer.observe(hero);
+    if (cta) observer.observe(cta);
+    if (footer) observer.observe(footer);
+    window.addEventListener("scroll", sync, { passive: true });
+    sync();
   }
 
   /* ---------- LANGUAGE SWITCHER ---------- */
@@ -80,15 +88,6 @@
   function initClock() {
     if (window.DermAudit && typeof window.DermAudit.clock === "function") {
       window.DermAudit.clock();
-      return;
-    }
-    var el = document.getElementById("clock");
-    if (el) {
-      var update = function () {
-        el.textContent = new Date().toISOString().slice(11, 19) + " UTC";
-      };
-      update();
-      setInterval(update, 1000);
     }
   }
 
